@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use RippleLogic in academic work, please cite it using this metadata."
+title: "RippleLogic (MathGov)"
+type: software
+license: "Apache-2.0"
+repository-code: "https://github.com/MathGov/ripple-logic"
+abstract: "RippleLogic is a rights-first, union-based ethical operating system for high-stakes decision-making and governance. It combines non-compensable rights floors, tail-risk bounding, and union-scoped ripple impact scoring, supported by audit-friendly release artifacts and integrity checks."
+keywords:
+  - ethics
+  - governance
+  - decision-support
+  - AI alignment
+  - risk
+  - rights
+authors:
+  - family-names: "McGaughran"
+    given-names: "James"
+    orcid: ""
+version: "8.1"
+date-released: "2026-02-14"
+preferred-citation:
+  type: software
+  title: "RippleLogic (MathGov)"
+  authors:
+    - family-names: "McGaughran"
+      given-names: "James"
+  version: "8.1"
+  date-released: "2026-02-14"
+  url: "https://github.com/MathGov/ripple-logic"

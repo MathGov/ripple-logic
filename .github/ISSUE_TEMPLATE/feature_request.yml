@@ -1,0 +1,40 @@
+name: Feature request
+description: Propose an improvement (docs, schemas, verification workflow, evaluation assets)
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please keep proposals aligned with RippleLogic public claims:
+        - Rights floors are non-compensable
+        - Tier claims must stay conservative unless verified
+        - Canon is defined by tagged releases + matching artifacts
+  - type: input
+    id: scope
+    attributes:
+      label: Scope
+      placeholder: "Docs / Schemas / Verification / Evaluation / Repo structure"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What change do you want, specifically?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this valuable? Who benefits?
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints / guardrails (optional)
+      description: Any non-negotiables (rights floor language, auditability, etc.)
+    validations:
+      required: false
