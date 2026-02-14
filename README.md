@@ -1,7 +1,12 @@
 # RippleLogic (MathGov)
 
-RippleLogic is a safety-first decision framework for humans and AI systems making high-stakes choices. It works like a governance seatbelt: it rejects any option that violates basic rights, then rules out options with unacceptable catastrophic tail risk, then protects the integrity of the systems that must keep functioning, and only then ranks the remaining options by net welfare impact across stakeholders. Stakeholders are modeled as seven nested unions (Self through Biosphere), and impacts are recorded in a transparent 49-cell matrix. RippleLogic is built for verification, not belief. You do not have to take it on faith. You can audit how it got the answer: claims are limited to Tier 1–3 evaluation, outputs are reconstructible by independent reviewers, and falsification criteria specify what evidence would show the framework fails. The canonical v8.1 specification and companion artifacts are published for open review and pilot testing at ripplelogic.org.
+RippleLogic is a safety-first decision framework for humans and AI systems making high-stakes choices. It works like a governance seatbelt: it rejects any option that violates basic rights, then rules out options with unacceptable catastrophic tail risk, then protects the integrity of the systems that must keep functioning, and only then ranks the remaining options by net welfare impact across stakeholders.
 
+Stakeholders are modeled as seven nested unions (from Self through Biosphere), and impacts are recorded in a transparent 49-cell matrix.
+
+RippleLogic is built for verification, not belief. You do not have to trust it. You can audit how it reached its conclusion. Claims are limited to Tier 1–3 evaluation, outputs are reconstructible by independent reviewers, and explicit falsification criteria define what evidence would show the framework fails.
+
+The canonical v8.1 specification and companion artifacts are published for open review and pilot testing at ripplelogic.org.
 ------------------------------------------------------------------------
 
 ## Current Canon Release
