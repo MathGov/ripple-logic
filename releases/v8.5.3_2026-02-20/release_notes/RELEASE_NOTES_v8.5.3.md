@@ -24,3 +24,9 @@ These are included because the Agent System document’s completion statement de
 ## Integrity
 All files are hash-bound via `manifest/release_manifest_v8.5.3.json` and `manifest/SHA256SUMS.txt`.
 See `manifest/VERIFY.md` for a two-step human verification procedure.
+
+## Post-release note (documentation-only)
+
+After publishing tag v8.5.3, the repository release folder received a documentation-only hardening update:
+the human-readable manifest (MANIFEST_v8.5.3.md) was aligned to repo-relative paths and verification pointers.
+No release assets or canonical artifact hashes were changed.
