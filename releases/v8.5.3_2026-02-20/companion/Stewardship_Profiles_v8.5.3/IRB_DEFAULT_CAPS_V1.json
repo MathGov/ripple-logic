@@ -1,0 +1,17 @@
+{
+  "profile_id": "IRB_DEFAULT_CAPS_V1",
+  "profile_type": "IRB",
+  "version": "1.0",
+  "harm_point_caps": {
+    "BIOHAZARD": 0,
+    "WEAPONIZATION": 0,
+    "SELF_HARM": 0,
+    "ILLEGAL_ACTIVITY": 0
+  },
+  "policy": {
+    "default_action": "REFUSE_AND_REDIRECT",
+    "review_required": true,
+    "log_code_prefix": "IRB_DEFAULT_CAPS_V1"
+  },
+  "notes": "Default caps are conservative. Implementers may tighten further per deployment context."
+}

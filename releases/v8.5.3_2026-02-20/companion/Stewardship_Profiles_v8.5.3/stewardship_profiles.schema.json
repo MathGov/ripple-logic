@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ripplelogic.org/schemas/stewardship_profiles.schema.json",
+  "title": "RippleLogic Stewardship Profiles & Taxonomy (v1)",
+  "oneOf": [
+    {
+      "title": "Domain Boundary Declaration (DBD) Profile",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id",
+        "profile_type",
+        "version",
+        "authority_domains",
+        "enforcement"
+      ],
+      "properties": {
+        "profile_id": {
+          "type": "string",
+          "pattern": "^DBD_"
+        },
+        "profile_type": {
+          "type": "string",
+          "const": "DBD"
+        },
+        "version": {
+          "type": "string"
+        },
+        "authority_domains": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "enforcement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "policy",
+            "operator_override_allowed",
+            "refusal_rule_id_prefix"
+          ],
+          "properties": {
+            "policy": {
+              "type": "string"
+            },
+            "operator_override_allowed": {
+              "type": "boolean"
+            },
+            "refusal_rule_id_prefix": {
+              "type": "string"
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "Immediate Risk Boundary (IRB) Caps Profile",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id",
+        "profile_type",
+        "version",
+        "harm_point_caps",
+        "policy"
+      ],
+      "properties": {
+        "profile_id": {
+          "type": "string",
+          "pattern": "^IRB_"
+        },
+        "profile_type": {
+          "type": "string",
+          "const": "IRB"
+        },
+        "version": {
+          "type": "string"
+        },
+        "harm_point_caps": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "default_action",
+            "review_required"
+          ],
+          "properties": {
+            "default_action": {
+              "type": "string"
+            },
+            "review_required": {
+              "type": "boolean"
+            },
+            "log_code_prefix": {
+              "type": "string"
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "title": "Stewardship Taxonomy",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profile_id",
+        "profile_type",
+        "version",
+        "authority_domain_codes",
+        "harm_point_trigger_codes"
+      ],
+      "properties": {
+        "profile_id": {
+          "type": "string",
+          "const": "STEWARD_TAXONOMY_V1"
+        },
+        "profile_type": {
+          "type": "string",
+          "const": "TAXONOMY"
+        },
+        "version": {
+          "type": "string"
+        },
+        "authority_domain_codes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "description"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "harm_point_trigger_codes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "description"
+            ],
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

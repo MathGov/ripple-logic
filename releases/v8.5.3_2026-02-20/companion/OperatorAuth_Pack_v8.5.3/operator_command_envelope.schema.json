@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ripplelogic.org/schemas/operator_command_envelope.schema.json",
+  "title": "RippleLogic Operator Command Envelope (OACP-1.0)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "payload",
+    "sig"
+  ],
+  "properties": {
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "meta",
+        "command"
+      ],
+      "properties": {
+        "meta": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "schema_version",
+            "jcs",
+            "sig_alg",
+            "kid",
+            "nonce",
+            "issued_utc",
+            "expires_utc"
+          ],
+          "properties": {
+            "schema_version": {
+              "type": "string",
+              "const": "OACP-1.0"
+            },
+            "jcs": {
+              "type": "string",
+              "const": "RFC8785"
+            },
+            "sig_alg": {
+              "type": "string",
+              "const": "Ed25519"
+            },
+            "kid": {
+              "type": "string",
+              "minLength": 1
+            },
+            "nonce": {
+              "type": "string",
+              "minLength": 8
+            },
+            "issued_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "expires_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "skew_sec": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "retention_window_sec": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "framework_pin": {
+              "type": "string"
+            },
+            "agent_system_pin": {
+              "type": "string"
+            }
+          }
+        },
+        "command": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "action"
+          ],
+          "properties": {
+            "action": {
+              "type": "string",
+              "minLength": 1
+            },
+            "params": {
+              "type": "object",
+              "additionalProperties": true
+            },
+            "reason": {
+              "type": "string"
+            },
+            "request_id": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sig": {
+      "type": "string",
+      "description": "Base64url (no padding) raw Ed25519 signature bytes (64 bytes).",
+      "pattern": "^[A-Za-z0-9_-]+$",
+      "minLength": 86,
+      "maxLength": 88
+    }
+  }
+}

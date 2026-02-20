@@ -1,0 +1,16 @@
+{
+  "profile_id": "DBD_DEFAULT_V1",
+  "profile_type": "DBD",
+  "version": "1.0",
+  "authority_domains": [
+    "MEDICAL_FINALITY",
+    "LEGAL_FINALITY",
+    "FINANCIAL_FINALITY"
+  ],
+  "enforcement": {
+    "policy": "REFUSE_FINALITY_PROVIDE_OPTIONS",
+    "operator_override_allowed": true,
+    "refusal_rule_id_prefix": "DBD_DEFAULT_V1"
+  },
+  "notes": "Default boundary profile for high-authority domains. Operator override requires authenticated OperatorAuth envelope and logged justification."
+}

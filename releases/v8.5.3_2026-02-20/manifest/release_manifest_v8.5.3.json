@@ -1,0 +1,87 @@
+{
+  "release": "RippleLogic_Release_v8.5.3",
+  "generated_utc": "2026-02-20T13:49:53.869861Z",
+  "entries": [
+    {
+      "path": "companion/OperatorAuth_Pack_v8.5.3/VERIFY.md",
+      "sha256": "c5e0a7757469b608bdb4f12f2072848599710514ca4daa958bd4386736c25b0a"
+    },
+    {
+      "path": "companion/OperatorAuth_Pack_v8.5.3/command_example_01.json",
+      "sha256": "00cefbf34041d5d6c1679c9d3fd859e5a5ee6f41aec76843e43d2c9f276718e3"
+    },
+    {
+      "path": "companion/OperatorAuth_Pack_v8.5.3/jwks.schema.json",
+      "sha256": "03f12f36146b517a953de84cd2626085a119cd8eb372e76b59b46d76e5dcee0b"
+    },
+    {
+      "path": "companion/OperatorAuth_Pack_v8.5.3/jwks_example.json",
+      "sha256": "caf89c82e20ac9789870b7a8a1d2005eb6489494334fefcd8f06730e5cfcb91b"
+    },
+    {
+      "path": "companion/OperatorAuth_Pack_v8.5.3/manifest.json",
+      "sha256": "286203e873dd2a6c05374b8ef4068c1bbfa47129e24271c932e47b0b28efaf94"
+    },
+    {
+      "path": "companion/OperatorAuth_Pack_v8.5.3/operator_command_envelope.schema.json",
+      "sha256": "0fe2c8b4fb0be044325f51f583ee42942f2120645af9722778bcdc7371b51c5b"
+    },
+    {
+      "path": "companion/Stewardship_Profiles_v8.5.3/DBD_DEFAULT_V1.json",
+      "sha256": "1abc9d68e50465e298cb0fcfad7239fe47a4a1c551c825bcb133ac6c5ae83fa2"
+    },
+    {
+      "path": "companion/Stewardship_Profiles_v8.5.3/IRB_DEFAULT_CAPS_V1.json",
+      "sha256": "70e10dd2f7d892bdc05115583c15900c0e3a31d28a3dd919599819d37abaf66d"
+    },
+    {
+      "path": "companion/Stewardship_Profiles_v8.5.3/STEWARD_TAXONOMY_V1.json",
+      "sha256": "dbfebd41eb2002a07e9ab777195aa837aaa3378291f6c9ad48ae91f356a16556"
+    },
+    {
+      "path": "companion/Stewardship_Profiles_v8.5.3/manifest.json",
+      "sha256": "013eccc5ee110fe21f3ce4bf03e1a9976c3d0d0be46d1ed861a869796f13fa10"
+    },
+    {
+      "path": "companion/Stewardship_Profiles_v8.5.3/stewardship_profiles.schema.json",
+      "sha256": "852f137b71c80bc00f1407320fab54969bc5e17b4a8d616243a2d05138fe145d"
+    },
+    {
+      "path": "docs/RippleLogic_Agent_System_v8.5.3_CANON_FINAL.docx",
+      "sha256": "727cf660622c7ab6873a357fafc7dca2110902b394094b32847f81e8b9f77c52"
+    },
+    {
+      "path": "docs/RippleLogic_Agent_System_v8.5.3_CANON_FINAL.pdf",
+      "sha256": "6a3ad5ee90f2454a3ffb20bda66f24f48c5b1e79017085cb9d7d3f701fb82f64"
+    },
+    {
+      "path": "docs/Ripple_Logic v8.5.3_CANON.docx",
+      "sha256": "3f0d84951af8632bf6b9f3272557781173008ce7f682a7920277cc86dc234aee"
+    },
+    {
+      "path": "docs/Ripple_Logic v8.5.3_CANON.pdf",
+      "sha256": "340daef806a1ecc0a6e3acb91a2eb2c15f42e71882a0470b66ee3131c0559fd6"
+    },
+    {
+      "path": "docs/SGP_v4.2.3_CANON.docx",
+      "sha256": "4331d55be80291e269a4d26eb802f4f61b00dd46ca11a9206d223282eed553b7"
+    },
+    {
+      "path": "docs/SGP_v4.2.3_CANON.pdf",
+      "sha256": "6a8d87e13673624b10faf5f3aceaa4b8edc16fb0f4b907bf7b155e4620adcadb"
+    },
+    {
+      "path": "manifest/VERIFY.md",
+      "sha256": "66c6e2ed924128a3c6c7b1fa1944e306bc097540b8d673ff11904ebc8982a2b1"
+    },
+    {
+      "path": "release_notes/RELEASE_NOTES_v8.5.3.md",
+      "sha256": "0f7ce59c14a96d9e850dfee210857ae7fea2abd74992ef74fd18570276f9ea96"
+    },
+    {
+      "path": "tools/Ripple_Aligners_Sheet_v1_8_3_CANON.xlsx",
+      "sha256": "9e7715e317b45e6e2e6fb0055169b4bb94c0aaed022d0b36f015db5b2d51b891"
+    }
+  ],
+  "notes": "SHA-256 values are for individual files. No folder-only hashing."
+}
