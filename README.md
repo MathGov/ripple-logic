@@ -1,110 +1,79 @@
 # RippleLogic (MathGov)
 
-RippleLogic is a rights-first, union-based ethical operating system for
-high-stakes decision-making and governance.\
-It combines (1) non-compensable rights floors, (2) tail-risk bounding,
-and (3) union-scoped ripple impact scoring, supported by audit-friendly
-release artifacts and integrity checks.
+If you only read one thing: RippleLogic is a filter-first decision process. It eliminates unsafe options before scoring “best.”
 
-------------------------------------------------------------------------
+**A safety-first “governance seatbelt” for high-stakes decisions:**  
+reject rights violations → bound catastrophic risk → protect system integrity → then optimize welfare.
 
-## Current Canon Release
+RippleLogic is a safety-first decision framework for humans and AI systems making consequential choices.  
+It works in a strict order:
 
-**RippleLogic v8.1 (2026-02-14)** is the current canonical specification
-set.
+1. **Reject** any option that violates basic rights.
+2. **Rule out** options with unacceptable catastrophic tail risk.
+3. **Protect** the structural integrity of the systems that must keep functioning.
+4. **Only then rank** remaining options by their net welfare impact.
 
-Start here: - `releases/v8.1_2026-02-14/`
+Stakeholders are modeled as **seven nested unions** (Self through Biosphere).  
+Impacts are recorded in a transparent **49-cell matrix** (7 unions × 7 welfare dimensions).
 
-This release folder contains: - Core specification (Ripple_Logic_v8.1) -
-Sentience Gradient Protocol (SGP v4.2.3) - Agent System specification -
-Ripple Aligners Tier-2 worked exemplar - ProofPack skeleton - SHA256
-integrity file - Full release bundle (optional)
+## What RippleLogic is (in plain terms)
 
-------------------------------------------------------------------------
+RippleLogic prevents “good outcomes” from being used to justify **unacceptable means**.  
+It blocks rights-violating or catastrophe-prone options first, and only then compares what remains.
 
-## What RippleLogic Claims (and What It Does Not)
+## What RippleLogic claims (and what it does not)
 
-### Tier Claims
+RippleLogic is built for **verification, not belief**. You do not have to trust it. You can inspect how it reached a conclusion.
 
-RippleLogic supports Tier 1--3 usage and evaluation based on released
-artifacts and worked examples.
+- **Evaluation scope:** Claims are limited to **Tier 1–3** evaluation.
+- **Auditability:** Outputs are designed to be **reconstructible by independent reviewers**.
+- **Falsifiability:** Explicit criteria define what evidence would show the framework fails.
 
-Tier 4 is a design target only.\
-No Tier-4 determinism or guaranteed alignment claims are made in this
-repository.
+No Tier-4 determinism or predictive governance guarantees are claimed.
 
-### Core Guarantee Boundary
+## Start here (v8.1 canonical release)
 
-RippleLogic is designed to: - Protect non-compensable rights floors -
-Bound catastrophic tail-risk - Make tradeoffs explicit and auditable
-across unions
+- **Release page:** https://github.com/MathGov/ripple-logic/releases/tag/v8.1  
+- **Canonical release folder:** `releases/v8.1_2026-02-14/`
 
-RippleLogic does not claim: - omniscience - perfect prediction - moral
-infallibility - unconstrained optimization
+That release contains:
+- Core specification (RippleLogic v8.1)
+- Sentience Gradient Protocol (SGP v4.2.3)
+- Agent System specification
+- Worked exemplar (Ripple Aligners Tier-2)
+- ProofPack skeleton / verification artifacts
+- SHA256 integrity file (checksums)
 
-------------------------------------------------------------------------
+## Integrity verification (quick)
 
-## Conceptual Overview
+1. Download the release assets (or the full bundle, if provided).
+2. Locate the **SHA256 checksums** file in the release artifacts.
+3. Compute SHA256 locally and confirm it matches the published checksums.
 
-RippleLogic evaluates decisions using a rights-first lexicographic
-cascade:
+(If you publish a one-command verification script later, link it here.)
 
-1.  NCRC (Non-Compensatory Rights Constraint)\
-2.  TRC (Tail-Risk Constraint)\
-3.  Containment (prevent runaway propagation of harm)\
-4.  RLS (Ripple Logic Score across unions and welfare dimensions)\
-5.  UCI/HOI (uncertainty and horizon-impact handling)
+## Website
 
-RippleLogic operates across nested operational unions and structured
-welfare dimensions, implemented in exemplar form in the Ripple Aligners
-sheet.
+Project home and public docs: https://ripplelogic.org
 
-------------------------------------------------------------------------
+## Contributing
 
-## Repository Structure
+See `CONTRIBUTING.md`.  
+Please use Issues for:
+- clarity gaps / confusion points (especially “what did you mean by X?”)
+- test vectors and counterexamples
+- falsification attempts
+- pilot deployment notes
 
-All publishable canonical artifacts are stored under versioned release
-folders:
+## Security
 
-releases/ v7.4.5_2026-01-25/ v8.1_2026-02-14/
-
-Each release folder is: - complete - auditable - versioned and
-date-stamped
-
-------------------------------------------------------------------------
-
-## Integrity Verification
-
-Each release includes a SHA256SUMS file for verifying artifact
-integrity.
-
-Example (macOS/Linux): sha256sum -c SHA256SUMS_file.txt
-
-Windows (PowerShell): Get-FileHash .`\filename`{=tex}.ext -Algorithm
-SHA256
-
-------------------------------------------------------------------------
+See `SECURITY.md` for how to report vulnerabilities or safety issues.
 
 ## License
 
-See LICENSE.
+Apache-2.0 (see `LICENSE`).
 
-------------------------------------------------------------------------
+---
 
-## Provenance
-
-RippleLogic / MathGov originates from a vertically stacked provenance
-chain:
-
-James McGaughran (originator, system architect, accountability) →\
-Digital intelligence tools (synthesis and amplification instruments) →\
-Humanity (knowledge substrate) →\
-Lived reality and constraints (empirical pressure and training signal)
-
-------------------------------------------------------------------------
-
-## Canonical Links
-
--   ripplelogic.org\
--   mathgov.org\
--   GitHub: MathGov/ripple-logic
+**In one sentence:**  
+RippleLogic prevents rights violations and catastrophic decisions before optimizing outcomes.
