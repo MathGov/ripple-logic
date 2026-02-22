@@ -1,0 +1,153 @@
+{
+  "proofpack": {
+    "name": "RippleLogic ProofPack-Lite",
+    "version": "v8.5.3-beta.1",
+    "pack_type": "LITE",
+    "conformance_profile": "LITE_BETA_STRICT",
+    "hash_algorithm": "SHA-256"
+  },
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "v4.2.3",
+    "aligners_sheet_version": "v1.8.3",
+    "agent_system_version": "v8.5.3"
+  },
+  "upstream_artifacts": {
+    "ripplelogic_canon_docx": {
+      "path": "/mnt/data/Ripple_Logic v8.5.3_CANON.docx",
+      "filename": "Ripple_Logic v8.5.3_CANON.docx",
+      "sha256": "3f0d84951af8632bf6b9f3272557781173008ce7f682a7920277cc86dc234aee",
+      "size_bytes": 219520
+    },
+    "sgp_canon_docx": {
+      "path": "/mnt/data/SGP_v4.2.3_CANON.docx",
+      "filename": "SGP_v4.2.3_CANON.docx",
+      "sha256": "4331d55be80291e269a4d26eb802f4f61b00dd46ca11a9206d223282eed553b7",
+      "size_bytes": 78099
+    },
+    "agent_system_canon_docx": {
+      "path": "/mnt/data/RippleLogic_Agent_System_v8.5.3_CANON_FINAL.docx",
+      "filename": "RippleLogic_Agent_System_v8.5.3_CANON_FINAL.docx",
+      "sha256": "727cf660622c7ab6873a357fafc7dca2110902b394094b32847f81e8b9f77c52",
+      "size_bytes": 91969
+    },
+    "aligners_sheet_xlsx": {
+      "path": "/mnt/data/Ripple_Aligners_Sheet_v1_8_3_CANON.xlsx",
+      "filename": "Ripple_Aligners_Sheet_v1_8_3_CANON.xlsx",
+      "sha256": "9e7715e317b45e6e2e6fb0055169b4bb94c0aaed022d0b36f015db5b2d51b891",
+      "size_bytes": 108530
+    },
+    "release_bundle_zip": {
+      "path": "/mnt/data/RippleLogic_Release_v8.5.3.zip",
+      "filename": "RippleLogic_Release_v8.5.3.zip",
+      "sha256": "bc788fbf83b6a91e825bbc783b920b849cb2031bbf807f63114ebc95176f64af",
+      "size_bytes": 1745933
+    },
+    "legacy_proofpack_reference_zip": {
+      "path": "/mnt/data/MathGov_ProofPack_5.0i_rev14.29.zip",
+      "filename": "MathGov_ProofPack_5.0i_rev14.29.zip",
+      "sha256": "1467c9a96ce5888a38ef1770d7ec147d0c6ddbd1a0881c4d947d1319ec876e20",
+      "size_bytes": 705866
+    }
+  },
+  "schemas": [
+    {
+      "id": "decision_input",
+      "path": "schemas/decision_input.schema.json",
+      "sha256": "4d56f9e04df48158a90fb1e7aaf9b71669ff6517e1586432913ba1a68b75eece"
+    },
+    {
+      "id": "decision_output",
+      "path": "schemas/decision_output.schema.json",
+      "sha256": "c78292d41062e06f77425b860b9cb7bd5d8625dd6447655367ddee470f5b9882"
+    },
+    {
+      "id": "weights",
+      "path": "schemas/weights.schema.json",
+      "sha256": "04694015c8d33a7fab166b1f96af337960cd12a61e20e96af75133b79a872e1e"
+    },
+    {
+      "id": "rights_coverage",
+      "path": "schemas/rights_coverage.schema.json",
+      "sha256": "af0ea30fee0742086fe7f8a1a64de62309f7a45342d17a2979a57083e069b9e6"
+    },
+    {
+      "id": "uci_structural_input",
+      "path": "schemas/uci_structural_input.schema.json",
+      "sha256": "31bdc4100262406531090124fe68dc00a2b451e409515f85001e05ce872a2446"
+    },
+    {
+      "id": "audit_flags",
+      "path": "schemas/audit_flags.schema.json",
+      "sha256": "5d01882423d0857097fde1fe8bc4773acf9840feb37bf5b6056b44c112218c04"
+    }
+  ],
+  "test_vectors": [
+    {
+      "vector_id": "TV-0001",
+      "name": "simple_admissible",
+      "folder": "test_vectors/TV-0001_simple_admissible",
+      "input_path": "test_vectors/TV-0001_simple_admissible/input.json",
+      "expected_output_path": "test_vectors/TV-0001_simple_admissible/expected_output.json",
+      "notes_path": "test_vectors/TV-0001_simple_admissible/notes.md",
+      "sha256": {
+        "input": "ade36bddafc2f5d3087ec559b3a52bc7e55e7e1b833fc1a58da9cbccd11d36c2",
+        "expected_output": "f557fc9076b0cdaa0d8b8abcec4767e278171843fb2b4bea12fa9badaac1cc02",
+        "notes": "88ee41640d11fc81f18984693454cad6f2ce06e4be2d247f3055b531cb3b7067"
+      }
+    },
+    {
+      "vector_id": "TV-0002",
+      "name": "rights_fail",
+      "folder": "test_vectors/TV-0002_rights_fail",
+      "input_path": "test_vectors/TV-0002_rights_fail/input.json",
+      "expected_output_path": "test_vectors/TV-0002_rights_fail/expected_output.json",
+      "notes_path": "test_vectors/TV-0002_rights_fail/notes.md",
+      "sha256": {
+        "input": "b0638a297796e6b8ec35d0088f213dafbd017797c0b5bfe744b3c9b98085c984",
+        "expected_output": "937c03aae538a97990024f06de16d0361469ce7320afdac53bf03cd166f57932",
+        "notes": "a3be235e0096e44513a3bbd45512a687e371f48232518c82d65ecbabb34742c6"
+      }
+    },
+    {
+      "vector_id": "TV-0003",
+      "name": "trc_tail_risk",
+      "folder": "test_vectors/TV-0003_trc_tail_risk",
+      "input_path": "test_vectors/TV-0003_trc_tail_risk/input.json",
+      "expected_output_path": "test_vectors/TV-0003_trc_tail_risk/expected_output.json",
+      "notes_path": "test_vectors/TV-0003_trc_tail_risk/notes.md",
+      "sha256": {
+        "input": "c1d6bb3994a864b9b677b79bf4437b03d309b372415caf988b18dd55ec831883",
+        "expected_output": "1cdc7cc752ad3d85e9ac8d9d369797c809f5069fddcc32cad96bdacef56de993",
+        "notes": "788235a76ebd08edf0c8d9ce87a30da5b94a9a5974d38c0c99fc9431f7c26ed4"
+      }
+    },
+    {
+      "vector_id": "TV-0004",
+      "name": "containment_trigger",
+      "folder": "test_vectors/TV-0004_containment_trigger",
+      "input_path": "test_vectors/TV-0004_containment_trigger/input.json",
+      "expected_output_path": "test_vectors/TV-0004_containment_trigger/expected_output.json",
+      "notes_path": "test_vectors/TV-0004_containment_trigger/notes.md",
+      "sha256": {
+        "input": "5803f90e8b6be6dcdcbdfe2e91abbb1e66dbb2a4ca42e0abb27c1e7ca64e5358",
+        "expected_output": "3ba7c618cc76ae13d0bb1668cb401b3a047b81f06fc21be14dcf91c36e65efc5",
+        "notes": "17f406f25a1e809a5902692821e0526aaea8d2e943dd7d1fa5bccc855d2827a9"
+      }
+    },
+    {
+      "vector_id": "TV-0005",
+      "name": "non_decisive_review",
+      "folder": "test_vectors/TV-0005_non_decisive_review",
+      "input_path": "test_vectors/TV-0005_non_decisive_review/input.json",
+      "expected_output_path": "test_vectors/TV-0005_non_decisive_review/expected_output.json",
+      "notes_path": "test_vectors/TV-0005_non_decisive_review/notes.md",
+      "sha256": {
+        "input": "bc90b8c86be28f7b3a1ea8d1f142b5d66935cc2b3e3a29068e4e841e3e2c97d8",
+        "expected_output": "1558225c026a8349d6010b7b3bd9849c4f48258754648199bb089b3c9deb7a20",
+        "notes": "848e51848e8e55af0df0b4eeb09337ca8c91b8ac8416f0257354058b61488d2b"
+      }
+    }
+  ],
+  "generated_utc": "2026-02-22T00:00:00Z"
+}

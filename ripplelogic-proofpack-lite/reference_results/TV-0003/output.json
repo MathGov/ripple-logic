@@ -1,0 +1,45 @@
+{
+  "schema_id": "decision_output",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0003",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "admissibility_status": "REVIEW_REQUIRED",
+  "decision_classification": "REVIEW_REQUIRED",
+  "primary_decision_path": [
+    "NCRC_PASS",
+    "TRC_TRIGGERED_OR_BOUNDING",
+    "CONTAINMENT_NOT_TRIGGERED",
+    "RLS_COMPUTED",
+    "REVIEW_REQUIRED",
+    "UCI_DECLARED_UNAVAILABLE"
+  ],
+  "required_flags": [
+    "TRC_EVALUATED",
+    "TRC_TAIL_RISK_MATERIAL",
+    "TRC_BOUND_APPLIED",
+    "REVIEW_REQUIRED"
+  ],
+  "uci_status": "DECLARED_UNAVAILABLE",
+  "conformance_payload": {
+    "proofpack_version": "v8.5.3-beta.1",
+    "comparison_profile": "LITE_BETA_STRICT",
+    "numeric_mode": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy": "ROUND_HALF_UP_4DP"
+  },
+  "diagnostic_metrics": {
+    "rls_value": "OPTIONAL_IN_BETA",
+    "trc_state": "BOUNDING_APPLIED_REVIEW_ESCALATION"
+  },
+  "diagnostic_flags": [],
+  "selected_alternative_id": "ALT-1",
+  "review_actions_recommended": [
+    "Request stronger evidence on downside distribution",
+    "Re-run with bounded assumptions and updated evidence quality inputs"
+  ],
+  "human_readable_explanation": "NCRC passes, but TRC identifies material tail risk and applies bounding. Containment is not triggered, but the case remains non-decisive and requires review."
+}

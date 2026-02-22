@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "rights_coverage.schema.json",
+  "title": "RightsCoverage",
+  "type": "object",
+  "required": [
+    "rights_evaluation_mode",
+    "rights_floor_status",
+    "rights_violations",
+    "coverage_sufficiency"
+  ],
+  "properties": {
+    "rights_evaluation_mode": {
+      "type": "string"
+    },
+    "rights_floor_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "rights_violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "description"
+        ],
+        "properties": {
+          "violation_id": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string"
+          },
+          "union_scope": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rights_non_compensatory": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "coverage_sufficiency": {
+      "type": "string"
+    },
+    "rights_evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rights_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,38 @@
+{
+  "ripplelogic_canon_docx": {
+    "path": "/mnt/data/Ripple_Logic v8.5.3_CANON.docx",
+    "filename": "Ripple_Logic v8.5.3_CANON.docx",
+    "sha256": "3f0d84951af8632bf6b9f3272557781173008ce7f682a7920277cc86dc234aee",
+    "size_bytes": 219520
+  },
+  "sgp_canon_docx": {
+    "path": "/mnt/data/SGP_v4.2.3_CANON.docx",
+    "filename": "SGP_v4.2.3_CANON.docx",
+    "sha256": "4331d55be80291e269a4d26eb802f4f61b00dd46ca11a9206d223282eed553b7",
+    "size_bytes": 78099
+  },
+  "agent_system_canon_docx": {
+    "path": "/mnt/data/RippleLogic_Agent_System_v8.5.3_CANON_FINAL.docx",
+    "filename": "RippleLogic_Agent_System_v8.5.3_CANON_FINAL.docx",
+    "sha256": "727cf660622c7ab6873a357fafc7dca2110902b394094b32847f81e8b9f77c52",
+    "size_bytes": 91969
+  },
+  "aligners_sheet_xlsx": {
+    "path": "/mnt/data/Ripple_Aligners_Sheet_v1_8_3_CANON.xlsx",
+    "filename": "Ripple_Aligners_Sheet_v1_8_3_CANON.xlsx",
+    "sha256": "9e7715e317b45e6e2e6fb0055169b4bb94c0aaed022d0b36f015db5b2d51b891",
+    "size_bytes": 108530
+  },
+  "release_bundle_zip": {
+    "path": "/mnt/data/RippleLogic_Release_v8.5.3.zip",
+    "filename": "RippleLogic_Release_v8.5.3.zip",
+    "sha256": "bc788fbf83b6a91e825bbc783b920b849cb2031bbf807f63114ebc95176f64af",
+    "size_bytes": 1745933
+  },
+  "legacy_proofpack_reference_zip": {
+    "path": "/mnt/data/MathGov_ProofPack_5.0i_rev14.29.zip",
+    "filename": "MathGov_ProofPack_5.0i_rev14.29.zip",
+    "sha256": "1467c9a96ce5888a38ef1770d7ec147d0c6ddbd1a0881c4d947d1319ec876e20",
+    "size_bytes": 705866
+  }
+}

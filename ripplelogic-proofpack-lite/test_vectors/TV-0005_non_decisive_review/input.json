@@ -1,0 +1,130 @@
+{
+  "schema_id": "decision_input",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0005",
+  "vector_name": "non_decisive_review",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "decision_context": {
+    "decision_case_id": "CASE-TV-0005",
+    "decision_case_type": "REVIEW_REQUIRED",
+    "description": "Non-decisive review vector where NCRC passes and containment is not triggered, but the case remains procedurally unresolved and requires human review.",
+    "evaluation_mode": "PROOFPACK_TEST",
+    "actor_scope": [
+      "TEST"
+    ],
+    "time_horizon": "MEDIUM"
+  },
+  "alternatives": [
+    {
+      "alternative_id": "ALT-1",
+      "label": "Provisionally plausible option with unresolved decision confidence",
+      "is_target_alternative": true,
+      "welfare_impacts": {
+        "completeness_status": "COMPLETE_FOR_VECTOR",
+        "by_union_dimension": [
+          {
+            "union": "Self",
+            "dimension": "Agency",
+            "impact_value": "0.05",
+            "evidence_quality": "MEDIUM"
+          },
+          {
+            "union": "Household",
+            "dimension": "Material",
+            "impact_value": "0.05",
+            "evidence_quality": "MEDIUM"
+          },
+          {
+            "union": "Community",
+            "dimension": "Social",
+            "impact_value": "0.00",
+            "evidence_quality": "LOW"
+          },
+          {
+            "union": "Organization",
+            "dimension": "Knowledge",
+            "impact_value": "0.03",
+            "evidence_quality": "LOW"
+          }
+        ]
+      }
+    }
+  ],
+  "weights": {
+    "weight_mode": "VECTOR_FIXED_TEST_WEIGHTS",
+    "union_weights": [
+      {
+        "union": "Self",
+        "weight": "0.25"
+      },
+      {
+        "union": "Household",
+        "weight": "0.25"
+      },
+      {
+        "union": "Community",
+        "weight": "0.25"
+      },
+      {
+        "union": "Organization",
+        "weight": "0.25"
+      }
+    ],
+    "dimension_weights": [
+      {
+        "dimension": "Agency",
+        "weight": "0.25"
+      },
+      {
+        "dimension": "Material",
+        "weight": "0.25"
+      },
+      {
+        "dimension": "Social",
+        "weight": "0.25"
+      },
+      {
+        "dimension": "Knowledge",
+        "weight": "0.25"
+      }
+    ],
+    "normalization_check": {
+      "union_weights_sum": "1.00",
+      "dimension_weights_sum": "1.00",
+      "union_weights_expected_sum": "1.00",
+      "dimension_weights_expected_sum": "1.00",
+      "normalization_pass_declared": true
+    },
+    "weight_source": "ProofPack-Lite beta fixed vector weights",
+    "weight_notes": "Balanced weights used to keep the case non-extreme. The mechanism under test is procedural review, not rights failure or containment."
+  },
+  "rights_coverage": {
+    "rights_evaluation_mode": "VECTOR_DECLARED",
+    "rights_floor_status": "PASS",
+    "rights_violations": [],
+    "coverage_sufficiency": "SUFFICIENT",
+    "rights_notes": "No explicit non-compensatory rights violation. NCRC should pass."
+  },
+  "uncertainty_profile": {
+    "trc_relevance": true,
+    "tail_risk_material": false,
+    "uncertainty_level": "MODERATE",
+    "evidence_sufficiency": "LIMITED",
+    "containment_trigger_expected": false,
+    "review_trigger_expected": true
+  },
+  "uci_structural_input": null,
+  "evaluation_options": {
+    "emit_primary_decision_path": true,
+    "emit_required_flags_only": true,
+    "numeric_mode_declared": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy_declared": "ROUND_HALF_UP_4DP",
+    "strict_schema_mode": true
+  },
+  "notes": "TV-0005 review vector. Distinct from TV-0003 and TV-0004: tail risk is not material, containment is not triggered, but evidence/discrimination is insufficient for a responsible final classification."
+}

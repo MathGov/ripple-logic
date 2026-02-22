@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weights.schema.json",
+  "title": "Weights",
+  "type": "object",
+  "required": [
+    "weight_mode",
+    "union_weights",
+    "dimension_weights",
+    "normalization_check"
+  ],
+  "properties": {
+    "weight_mode": {
+      "type": "string"
+    },
+    "union_weights": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "union",
+          "weight"
+        ],
+        "properties": {
+          "union": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "dimension_weights": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "dimension",
+          "weight"
+        ],
+        "properties": {
+          "dimension": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "normalization_check": {
+      "type": "object",
+      "required": [
+        "union_weights_sum",
+        "dimension_weights_sum",
+        "union_weights_expected_sum",
+        "dimension_weights_expected_sum",
+        "normalization_pass_declared"
+      ],
+      "properties": {
+        "union_weights_sum": {
+          "type": "string"
+        },
+        "dimension_weights_sum": {
+          "type": "string"
+        },
+        "union_weights_expected_sum": {
+          "type": "string"
+        },
+        "dimension_weights_expected_sum": {
+          "type": "string"
+        },
+        "normalization_pass_declared": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "weight_source": {
+      "type": "string"
+    },
+    "weight_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

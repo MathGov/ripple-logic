@@ -1,0 +1,32 @@
+{
+  "schema_id": "decision_output",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0002",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "admissibility_status": "REJECTED",
+  "decision_classification": "REJECTED_NCRC",
+  "primary_decision_path": [
+    "NCRC_FAIL",
+    "REJECT"
+  ],
+  "required_flags": [
+    "NCRC_FAIL",
+    "RIGHTS_VIOLATION"
+  ],
+  "uci_status": "NOT_APPLICABLE",
+  "conformance_payload": {
+    "proofpack_version": "v8.5.3-beta.1",
+    "comparison_profile": "LITE_BETA_STRICT",
+    "numeric_mode": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy": "ROUND_HALF_UP_4DP"
+  },
+  "diagnostic_metrics": {},
+  "diagnostic_flags": [],
+  "selected_alternative_id": "ALT-1",
+  "human_readable_explanation": "NCRC fails due to explicit non-compensatory rights-floor violation. Scenario is rejected without compensation by aggregate welfare."
+}

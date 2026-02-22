@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "uci_structural_input.schema.json",
+  "title": "UCIStructuralInput",
+  "description": "Nullable placeholder schema for ProofPack-Lite beta. Full UCI payloads arrive in later packs.",
+  "oneOf": [
+    {
+      "type": "null"
+    },
+    {
+      "type": "object",
+      "required": [
+        "uci_input_status"
+      ],
+      "properties": {
+        "uci_input_status": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  ]
+}
