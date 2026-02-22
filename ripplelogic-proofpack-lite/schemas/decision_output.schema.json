@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decision_output.schema.json",
+  "title": "DecisionOutput",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "schema_version",
+    "vector_id",
+    "version_pins",
+    "admissibility_status",
+    "decision_classification",
+    "primary_decision_path",
+    "required_flags",
+    "uci_status",
+    "conformance_payload"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "decision_output"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "vector_id": {
+      "type": "string",
+      "pattern": "^TV-\\d{4}$"
+    },
+    "version_pins": {
+      "type": "object"
+    },
+    "admissibility_status": {
+      "type": "string"
+    },
+    "decision_classification": {
+      "type": "string"
+    },
+    "primary_decision_path": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_flags": {
+      "$ref": "audit_flags.schema.json"
+    },
+    "uci_status": {
+      "type": "string"
+    },
+    "conformance_payload": {
+      "type": "object",
+      "required": [
+        "proofpack_version",
+        "comparison_profile",
+        "numeric_mode",
+        "rounding_policy"
+      ],
+      "properties": {
+        "proofpack_version": {
+          "type": "string"
+        },
+        "comparison_profile": {
+          "type": "string"
+        },
+        "numeric_mode": {
+          "type": "string"
+        },
+        "rounding_policy": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "diagnostic_metrics": {
+      "type": "object"
+    },
+    "diagnostic_flags": {
+      "$ref": "audit_flags.schema.json"
+    },
+    "selected_alternative_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_actions_recommended": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "containment_actions_allowed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_readable_explanation": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

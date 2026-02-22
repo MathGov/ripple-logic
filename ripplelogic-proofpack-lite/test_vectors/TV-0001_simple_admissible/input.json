@@ -1,0 +1,116 @@
+{
+  "schema_id": "decision_input",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0001",
+  "vector_name": "simple_admissible",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "decision_context": {
+    "decision_case_id": "CASE-TV-0001",
+    "decision_case_type": "ADMISSIBLE_BASELINE",
+    "description": "Baseline admissible conformance vector with rights pass, low uncertainty, and no containment trigger.",
+    "evaluation_mode": "PROOFPACK_TEST",
+    "actor_scope": [
+      "TEST"
+    ],
+    "time_horizon": "SHORT"
+  },
+  "alternatives": [
+    {
+      "alternative_id": "ALT-1",
+      "label": "Baseline option",
+      "is_target_alternative": true,
+      "welfare_impacts": {
+        "completeness_status": "COMPLETE_FOR_VECTOR",
+        "by_union_dimension": [
+          {
+            "union": "Self",
+            "dimension": "Health",
+            "impact_value": "0.20",
+            "evidence_quality": "HIGH"
+          },
+          {
+            "union": "Household",
+            "dimension": "Material",
+            "impact_value": "0.10",
+            "evidence_quality": "MEDIUM"
+          },
+          {
+            "union": "Community",
+            "dimension": "Social",
+            "impact_value": "0.05",
+            "evidence_quality": "MEDIUM"
+          }
+        ]
+      }
+    }
+  ],
+  "weights": {
+    "weight_mode": "VECTOR_FIXED_TEST_WEIGHTS",
+    "union_weights": [
+      {
+        "union": "Self",
+        "weight": "0.50"
+      },
+      {
+        "union": "Household",
+        "weight": "0.30"
+      },
+      {
+        "union": "Community",
+        "weight": "0.20"
+      }
+    ],
+    "dimension_weights": [
+      {
+        "dimension": "Health",
+        "weight": "0.40"
+      },
+      {
+        "dimension": "Material",
+        "weight": "0.40"
+      },
+      {
+        "dimension": "Social",
+        "weight": "0.20"
+      }
+    ],
+    "normalization_check": {
+      "union_weights_sum": "1.00",
+      "dimension_weights_sum": "1.00",
+      "union_weights_expected_sum": "1.00",
+      "dimension_weights_expected_sum": "1.00",
+      "normalization_pass_declared": true
+    },
+    "weight_source": "ProofPack-Lite beta fixed vector weights",
+    "weight_notes": "Simple normalized weights for deterministic baseline vector."
+  },
+  "rights_coverage": {
+    "rights_evaluation_mode": "VECTOR_DECLARED",
+    "rights_floor_status": "PASS",
+    "rights_violations": [],
+    "coverage_sufficiency": "SUFFICIENT",
+    "rights_notes": "No non-compensatory rights violations present in baseline vector."
+  },
+  "uncertainty_profile": {
+    "trc_relevance": true,
+    "tail_risk_material": false,
+    "uncertainty_level": "LOW",
+    "evidence_sufficiency": "SUFFICIENT",
+    "containment_trigger_expected": false,
+    "review_trigger_expected": false
+  },
+  "uci_structural_input": null,
+  "evaluation_options": {
+    "emit_primary_decision_path": true,
+    "emit_required_flags_only": true,
+    "numeric_mode_declared": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy_declared": "ROUND_HALF_UP_4DP",
+    "strict_schema_mode": true
+  },
+  "notes": "TV-0001 baseline admissible vector. UCI is intentionally unavailable in this beta vector to test explicit declared-unavailable path behavior."
+}

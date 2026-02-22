@@ -1,0 +1,126 @@
+{
+  "schema_id": "decision_input",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0002",
+  "vector_name": "rights_fail",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "decision_context": {
+    "decision_case_id": "CASE-TV-0002",
+    "decision_case_type": "RIGHTS_FAIL",
+    "description": "NCRC rejection vector with explicit non-compensatory rights violation, even though aggregate welfare impacts may appear positive.",
+    "evaluation_mode": "PROOFPACK_TEST",
+    "actor_scope": [
+      "TEST"
+    ],
+    "time_horizon": "SHORT"
+  },
+  "alternatives": [
+    {
+      "alternative_id": "ALT-1",
+      "label": "High-benefit but rights-violating option",
+      "is_target_alternative": true,
+      "welfare_impacts": {
+        "completeness_status": "COMPLETE_FOR_VECTOR",
+        "by_union_dimension": [
+          {
+            "union": "Organization",
+            "dimension": "Material",
+            "impact_value": "0.60",
+            "evidence_quality": "HIGH"
+          },
+          {
+            "union": "Community",
+            "dimension": "Material",
+            "impact_value": "0.20",
+            "evidence_quality": "MEDIUM"
+          },
+          {
+            "union": "Self",
+            "dimension": "Agency",
+            "impact_value": "-0.40",
+            "evidence_quality": "HIGH"
+          }
+        ]
+      }
+    }
+  ],
+  "weights": {
+    "weight_mode": "VECTOR_FIXED_TEST_WEIGHTS",
+    "union_weights": [
+      {
+        "union": "Self",
+        "weight": "0.40"
+      },
+      {
+        "union": "Community",
+        "weight": "0.30"
+      },
+      {
+        "union": "Organization",
+        "weight": "0.30"
+      }
+    ],
+    "dimension_weights": [
+      {
+        "dimension": "Agency",
+        "weight": "0.50"
+      },
+      {
+        "dimension": "Material",
+        "weight": "0.50"
+      }
+    ],
+    "normalization_check": {
+      "union_weights_sum": "1.00",
+      "dimension_weights_sum": "1.00",
+      "union_weights_expected_sum": "1.00",
+      "dimension_weights_expected_sum": "1.00",
+      "normalization_pass_declared": true
+    },
+    "weight_source": "ProofPack-Lite beta fixed vector weights",
+    "weight_notes": "Includes positive aggregate-looking material impacts to demonstrate anti-compensation under NCRC."
+  },
+  "rights_coverage": {
+    "rights_evaluation_mode": "VECTOR_DECLARED",
+    "rights_floor_status": "FAIL",
+    "rights_violations": [
+      {
+        "violation_id": "RV-0002-01",
+        "code": "NCRC_RIGHTS_FLOOR_BREACH",
+        "description": "Explicit non-compensatory rights-floor violation present in scenario.",
+        "severity": "BLOCK",
+        "union_scope": [
+          "Self"
+        ],
+        "rights_non_compensatory": true
+      }
+    ],
+    "coverage_sufficiency": "SUFFICIENT",
+    "rights_evidence_refs": [
+      "VECTOR_DECLARATION_ONLY_BETA"
+    ],
+    "rights_notes": "This vector must reject under NCRC regardless of aggregate welfare benefits."
+  },
+  "uncertainty_profile": {
+    "trc_relevance": false,
+    "tail_risk_material": false,
+    "uncertainty_level": "LOW",
+    "evidence_sufficiency": "SUFFICIENT",
+    "containment_trigger_expected": false,
+    "review_trigger_expected": false
+  },
+  "uci_structural_input": null,
+  "evaluation_options": {
+    "emit_primary_decision_path": true,
+    "emit_required_flags_only": true,
+    "numeric_mode_declared": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy_declared": "ROUND_HALF_UP_4DP",
+    "strict_schema_mode": true
+  },
+  "notes": "TV-0002 anti-compensation proof vector. Rights-floor failure is explicit and should terminate admissibility immediately."
+}

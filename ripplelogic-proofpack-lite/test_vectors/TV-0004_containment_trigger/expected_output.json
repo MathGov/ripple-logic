@@ -1,0 +1,43 @@
+{
+  "schema_id": "decision_output",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0004",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "admissibility_status": "CONTAINMENT_REQUIRED",
+  "decision_classification": "CONTAINMENT_REQUIRED",
+  "primary_decision_path": [
+    "NCRC_PASS",
+    "TRC_TRIGGERED_OR_BOUNDING",
+    "CONTAINMENT_TRIGGERED",
+    "UCI_DECLARED_UNAVAILABLE"
+  ],
+  "required_flags": [
+    "TRC_EVALUATED",
+    "TRC_TAIL_RISK_MATERIAL",
+    "CONTAINMENT_TRIGGERED",
+    "EVIDENCE_INSUFFICIENT"
+  ],
+  "uci_status": "DECLARED_UNAVAILABLE",
+  "conformance_payload": {
+    "proofpack_version": "v8.5.3-beta.1",
+    "comparison_profile": "LITE_BETA_STRICT",
+    "numeric_mode": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy": "ROUND_HALF_UP_4DP"
+  },
+  "diagnostic_metrics": {
+    "trc_state": "SEVERE_UNCERTAINTY",
+    "containment_reason_count": 2
+  },
+  "diagnostic_flags": [],
+  "selected_alternative_id": "ALT-1",
+  "containment_actions_allowed": [
+    "Defer decision pending evidence improvement",
+    "Run bounded pilot only under explicit safeguards"
+  ],
+  "human_readable_explanation": "NCRC passes, but severe uncertainty and insufficient evidence trigger containment. Normal admissibility classification is withheld."
+}

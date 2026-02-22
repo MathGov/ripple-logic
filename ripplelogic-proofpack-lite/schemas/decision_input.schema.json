@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decision_input.schema.json",
+  "title": "DecisionInput",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "schema_version",
+    "vector_id",
+    "vector_name",
+    "version_pins",
+    "decision_context",
+    "alternatives",
+    "weights",
+    "rights_coverage",
+    "uncertainty_profile",
+    "uci_structural_input",
+    "evaluation_options"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "decision_input"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "vector_id": {
+      "type": "string",
+      "pattern": "^TV-\\d{4}$"
+    },
+    "vector_name": {
+      "type": "string"
+    },
+    "version_pins": {
+      "type": "object",
+      "required": [
+        "ripplelogic_canon_version",
+        "sgp_version",
+        "aligners_sheet_version",
+        "proofpack_version"
+      ],
+      "properties": {
+        "ripplelogic_canon_version": {
+          "type": "string"
+        },
+        "sgp_version": {
+          "type": "string"
+        },
+        "aligners_sheet_version": {
+          "type": "string"
+        },
+        "proofpack_version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "decision_context": {
+      "type": "object",
+      "required": [
+        "decision_case_id",
+        "decision_case_type",
+        "description",
+        "evaluation_mode"
+      ],
+      "properties": {
+        "decision_case_id": {
+          "type": "string"
+        },
+        "decision_case_type": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "evaluation_mode": {
+          "type": "string"
+        },
+        "actor_scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "time_horizon": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "alternatives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "alternative_id",
+          "label",
+          "is_target_alternative",
+          "welfare_impacts"
+        ],
+        "properties": {
+          "alternative_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "is_target_alternative": {
+            "type": "boolean"
+          },
+          "welfare_impacts": {
+            "type": "object",
+            "required": [
+              "completeness_status",
+              "by_union_dimension"
+            ],
+            "properties": {
+              "completeness_status": {
+                "type": "string"
+              },
+              "by_union_dimension": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "union",
+                    "dimension",
+                    "impact_value",
+                    "evidence_quality"
+                  ],
+                  "properties": {
+                    "union": {
+                      "type": "string"
+                    },
+                    "dimension": {
+                      "type": "string"
+                    },
+                    "impact_value": {
+                      "type": "string",
+                      "pattern": "^-?\\d+(\\.\\d+)?$"
+                    },
+                    "evidence_quality": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "weights": {
+      "$ref": "weights.schema.json"
+    },
+    "rights_coverage": {
+      "$ref": "rights_coverage.schema.json"
+    },
+    "uncertainty_profile": {
+      "type": "object",
+      "required": [
+        "trc_relevance",
+        "tail_risk_material",
+        "uncertainty_level",
+        "evidence_sufficiency",
+        "containment_trigger_expected",
+        "review_trigger_expected"
+      ],
+      "properties": {
+        "trc_relevance": {
+          "type": "boolean"
+        },
+        "tail_risk_material": {
+          "type": "boolean"
+        },
+        "uncertainty_level": {
+          "type": "string"
+        },
+        "evidence_sufficiency": {
+          "type": "string"
+        },
+        "containment_trigger_expected": {
+          "type": "boolean"
+        },
+        "review_trigger_expected": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "uci_structural_input": {
+      "$ref": "uci_structural_input.schema.json"
+    },
+    "evaluation_options": {
+      "type": "object",
+      "required": [
+        "emit_primary_decision_path",
+        "emit_required_flags_only",
+        "numeric_mode_declared",
+        "rounding_policy_declared",
+        "strict_schema_mode"
+      ],
+      "properties": {
+        "emit_primary_decision_path": {
+          "type": "boolean"
+        },
+        "emit_required_flags_only": {
+          "type": "boolean"
+        },
+        "numeric_mode_declared": {
+          "type": "string"
+        },
+        "rounding_policy_declared": {
+          "type": "string"
+        },
+        "strict_schema_mode": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

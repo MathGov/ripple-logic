@@ -1,0 +1,130 @@
+{
+  "schema_id": "decision_input",
+  "schema_version": "0.1.0",
+  "vector_id": "TV-0003",
+  "vector_name": "trc_tail_risk",
+  "version_pins": {
+    "ripplelogic_canon_version": "v8.5.3",
+    "sgp_version": "NOT_USED_IN_VECTOR",
+    "aligners_sheet_version": "v1.8.3",
+    "proofpack_version": "v8.5.3-beta.1"
+  },
+  "decision_context": {
+    "decision_case_id": "CASE-TV-0003",
+    "decision_case_type": "TRC_TAIL_RISK",
+    "description": "TRC-sensitive vector where NCRC passes but material tail risk prevents a clean admissible decision and triggers review.",
+    "evaluation_mode": "PROOFPACK_TEST",
+    "actor_scope": [
+      "TEST"
+    ],
+    "time_horizon": "MEDIUM"
+  },
+  "alternatives": [
+    {
+      "alternative_id": "ALT-1",
+      "label": "Potentially beneficial but uncertainty-sensitive option",
+      "is_target_alternative": true,
+      "welfare_impacts": {
+        "completeness_status": "COMPLETE_FOR_VECTOR",
+        "by_union_dimension": [
+          {
+            "union": "Self",
+            "dimension": "Material",
+            "impact_value": "0.15",
+            "evidence_quality": "MEDIUM"
+          },
+          {
+            "union": "Household",
+            "dimension": "Health",
+            "impact_value": "0.10",
+            "evidence_quality": "LOW"
+          },
+          {
+            "union": "Community",
+            "dimension": "Environment",
+            "impact_value": "-0.05",
+            "evidence_quality": "LOW"
+          },
+          {
+            "union": "Organization",
+            "dimension": "Knowledge",
+            "impact_value": "0.20",
+            "evidence_quality": "MEDIUM"
+          }
+        ]
+      }
+    }
+  ],
+  "weights": {
+    "weight_mode": "VECTOR_FIXED_TEST_WEIGHTS",
+    "union_weights": [
+      {
+        "union": "Self",
+        "weight": "0.30"
+      },
+      {
+        "union": "Household",
+        "weight": "0.25"
+      },
+      {
+        "union": "Community",
+        "weight": "0.25"
+      },
+      {
+        "union": "Organization",
+        "weight": "0.20"
+      }
+    ],
+    "dimension_weights": [
+      {
+        "dimension": "Material",
+        "weight": "0.30"
+      },
+      {
+        "dimension": "Health",
+        "weight": "0.30"
+      },
+      {
+        "dimension": "Environment",
+        "weight": "0.20"
+      },
+      {
+        "dimension": "Knowledge",
+        "weight": "0.20"
+      }
+    ],
+    "normalization_check": {
+      "union_weights_sum": "1.00",
+      "dimension_weights_sum": "1.00",
+      "union_weights_expected_sum": "1.00",
+      "dimension_weights_expected_sum": "1.00",
+      "normalization_pass_declared": true
+    },
+    "weight_source": "ProofPack-Lite beta fixed vector weights",
+    "weight_notes": "Weights chosen to support a plausible positive baseline while TRC risk remains material."
+  },
+  "rights_coverage": {
+    "rights_evaluation_mode": "VECTOR_DECLARED",
+    "rights_floor_status": "PASS",
+    "rights_violations": [],
+    "coverage_sufficiency": "SUFFICIENT",
+    "rights_notes": "No explicit non-compensatory rights violation. The key mechanism under test is TRC, not NCRC."
+  },
+  "uncertainty_profile": {
+    "trc_relevance": true,
+    "tail_risk_material": true,
+    "uncertainty_level": "HIGH",
+    "evidence_sufficiency": "LIMITED",
+    "containment_trigger_expected": false,
+    "review_trigger_expected": true
+  },
+  "uci_structural_input": null,
+  "evaluation_options": {
+    "emit_primary_decision_path": true,
+    "emit_required_flags_only": true,
+    "numeric_mode_declared": "fixed_precision_with_disclosed_rounding",
+    "rounding_policy_declared": "ROUND_HALF_UP_4DP",
+    "strict_schema_mode": true
+  },
+  "notes": "TV-0003 TRC-focused vector. NCRC passes. Tail risk is material and should be surfaced through TRC pathing, resulting in REVIEW_REQUIRED without containment trigger."
+}

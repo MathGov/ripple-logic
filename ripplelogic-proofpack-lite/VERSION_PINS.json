@@ -1,0 +1,10 @@
+{
+  "proofpack_name": "RippleLogic ProofPack-Lite",
+  "proofpack_version": "v8.5.3-beta.1",
+  "conformance_profile": "LITE_BETA_STRICT",
+  "ripplelogic_canon_version": "v8.5.3",
+  "sgp_version": "v4.2.3",
+  "aligners_sheet_version": "v1.8.3",
+  "agent_system_version": "v8.5.3",
+  "build_date": "2026-02-22"
+}
