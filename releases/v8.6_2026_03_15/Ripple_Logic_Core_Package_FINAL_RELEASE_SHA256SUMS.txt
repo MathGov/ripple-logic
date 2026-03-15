@@ -1,0 +1,9 @@
+# Ripple_Logic Core Package — Final Audit-Ready Canonical Release
+# Release date: 2026-03-15
+# SHA-256 checksums for the five-file system
+
+24741d46339073bb01331e7595e090bae38eadac1ab28e4a4909428d9a4b63b5  Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx
+656a1542531fdac86b5783b70270137183014347e4eed15e929c04e2d4bdafa9  SGP_v4.3_CANON_FINAL_RELEASE.docx
+49f73382732ac151dc4b1cf5e65aedd33def7bfae327134bffda7664ba1b433d  ripple_md_Standard_v2.0_CANON_FINAL_RELEASE.docx
+346916c505dd998708d36f6cd2d1d6375942348e7ac066c1fb5d168efa6a223d  RippleLogic_Agent_System_v8.6_CANON_FINAL_RELEASE.docx
+292c71ae33ad71e8e97c5cad4ca3829ac486de2829c8a8b60346b7ac88bf1037  Ripple_Aligners_Sheet_v2.2_CANON_FINAL_RELEASE.xlsx
