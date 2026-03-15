@@ -7,7 +7,7 @@ ethical governance**
 |---|---|
 | **Version** | v8.6 |
 | **Status** | Architecturally complete — Tier 1–3 implementable now from the Foundation Paper — Tier 4 non-claimable until ProofPack is publicly replayable |
-| **License** | CC BY 4.0 (text) · MIT (reference implementations and schemas) |
+| **License** | CC BY-ND 4.0 (spec text) · MIT (code) · CC BY 4.0 (examples)|
 | **Canonical sites** | ripplelogic.org · mathgov.org |
 | **Repository** | github.com/MathGov/ripple-logic |
 | **Author** | James McGaughran · ORCID: 0009-0005-3324-7290 |
@@ -339,7 +339,7 @@ each artifact type.
 **Specification text** (Foundation Paper, SGP, ripple.md Standard, Agent
 System Specification, and all normative written specification content) is
 released under **Creative Commons Attribution-NoDerivatives 4.0 International
-(CC BY-ND 4.0)**. You may share, redistribute, implement, teach from, and
+(CC BY-ND 4.0 (spec text) · MIT (code) · CC BY 4.0 (examples))**. You may share, redistribute, implement, teach from, and
 quote this material freely with attribution, but you may not publish modified
 versions of the specification text. This protects the integrity of the
 canonical framework against ethical dilution through derivative specifications
