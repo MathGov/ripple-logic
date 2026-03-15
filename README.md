@@ -58,7 +58,48 @@ E --> F
 F --> G
 G --> H
 ```
+## Quick Example
 
+**Scenario:** A government is evaluating construction of a hydroelectric dam.
+
+Ripple_Logic evaluates the proposal step by step.
+
+### Step 1 — NCRC  
+Check whether the proposal violates fundamental rights.
+
+Result: No non-compensatory rights violation identified in the admissible version of the project → **Pass**
+
+### Step 2 — TRC  
+Check whether the proposal creates unacceptable catastrophic tail risk.
+
+Result: Tail risk remains within acceptable bounds under the engineered version of the project → **Pass**
+
+### Step 3 — Containment  
+Apply structural safeguards:
+
+- environmental mitigation
+- relocation protections
+- engineering monitoring
+- rollback and governance controls
+
+Result: Safeguards implemented → **Pass**
+
+### Step 4 — RLS  
+Compare admissible options using the Ripple Logic Score.
+
+Example:
+
+- Option A: +42
+- Option B: +18
+
+### Step 5 — UCI / HOI  
+Compare structural integrity.
+
+Result: Option A preserves stronger union coherence and lower hollowing-out risk.
+
+### Decision
+
+**Option A** is selected as the Ripple_Logic-aligned decision.
 ---
 
 # Canonical Five-File System
@@ -124,12 +165,12 @@ Evaluates impacts across stakeholder unions using a structured scoring model.
 
 ### Stage 5 — UCI / HOI
 
-If multiple options pass all constraints, final selection uses:
+If multiple options pass all prior constraints, Ripple_Logic uses structural diagnostics to compare long-run integrity.
 
-• Union Coherence Index  
-• Hollowing-Out Index
+• **Union Coherence Index (UCI)** evaluates structural coherence and is used in tie-breaks and containment logic.  
+• **Hollowing-Out Index (HOI)** is a monitoring diagnostic that flags welfare-up / coherence-down drift over time.
 
-to evaluate structural coherence and detect systemic degradation risk.
+Together, these help distinguish between options that appear beneficial in the short term and options that preserve the containing system over time.
 
 ---
 
@@ -174,7 +215,7 @@ Requires:
 
 # Repository Structure
 
-```
+```text
 .github/
 releases/
 ripplelogic-proofpack-lite/
@@ -186,11 +227,15 @@ Agent System Specification
 Ripple Aligners Workbook
 
 README.md
+START_HERE.md
+VALIDATION_STATUS.md
 RELEASE_HISTORY.md
 RELEASE_POLICY.md
 SECURITY.md
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+LICENSE
+CITATION.cff
 ```
 
 ---
