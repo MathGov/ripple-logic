@@ -329,11 +329,11 @@ Canonical sites: ripplelogic.org · mathgov.org
 Repository: github.com/MathGov/ripple-logic
 License: CC BY-ND 4.0 (spec text) · MIT (code) · CC BY 4.0 (examples)
 
-
 Pin downstream work to the canonical filename + SHA-256 hash from the
 release manifest, per Section 0.6 of the Foundation Paper. Do not cite
 variant copies, forks, or regenerated versions — only the byte-identical
 canonical artifact is authoritative.
+
 
 ---
 
@@ -378,3 +378,4 @@ ORCID: 0009-0005-3324-7290
 
 *Ripple_Logic v8.6 · ripplelogic.org · mathgov.org*
 *github.com/MathGov/ripple-logic*
+
