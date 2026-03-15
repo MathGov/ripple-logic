@@ -1,19 +1,39 @@
 # RippleLogic
-Decision Engine of the MathGov Ethical Governance Framework
-Rights-constrained ripple-aware decision architecture
 
-## System Architecture
+Decision Engine of the MathGov Ethical Governance Framework  
+A rights-constrained, ripple-aware ethical decision architecture.
+
+RippleLogic provides a structured decision operating system designed to evaluate actions across multiple stakeholders while enforcing non-negotiable rights constraints.
+
+The framework integrates ethical theory, systems thinking, and decision analysis into a transparent architecture suitable for:
+
+• governance analysis  
+• AI alignment research  
+• policy evaluation  
+• complex systems decision-making
+
+---
+
+# System Architecture
 
 ```mermaid
 flowchart TD
-A[MathGov Framework]
+
+A[MathGov Ethical Governance Framework]
+
 B[RippleLogic Decision Engine]
 
-C[NCRC<br/>Non-Compensatory Rights Constraint]
-D[TRC<br/>Threshold Risk Constraint]
-E[Containment<br/>High-Risk Safeguards]
-F[RLS<br/>Ripple Logic Scoring]
-G[UCI / HOI<br/>Union Coherence Index & Harm Optimization Index]
+C[NCRC<br>Non-Compensatory Rights Constraint]
+
+D[TRC<br>Tail-Risk Constraint]
+
+E[Containment<br>Precautionary Safeguards]
+
+F[RLS<br>Ripple Life Score Evaluation]
+
+G[UCI / HOI<br>Utility or Harm Optimization Index]
+
+H[Operational Decision Output]
 
 A --> B
 B --> C
@@ -21,145 +41,195 @@ C --> D
 D --> E
 E --> F
 F --> G
-
-**Latest stable release:** v8.6  
-Release page: https://github.com/MathGov/ripple-logic/releases/tag/v8.6
-
----
-
-## If you only read one thing
-
-RippleLogic is a filter-first decision system.  
-It eliminates unsafe options before scoring what is “best.”
-
-It is a safety-first governance architecture for high-stakes human and AI decisions.
-
-Order of operation:
-
-1. Reject rights violations (Non-Compensatory Rights Constraint, NCRC).
-2. Bound unacceptable catastrophic tail risk.
-3. Protect structural system integrity.
-4. Only then optimize welfare across stakeholders.
-
-Unsafe options are removed before optimization begins.
+G --> H
+```
 
 ---
 
-## What RippleLogic Is
+# Canonical Five-File System
 
-RippleLogic is a rights-first, union-based ethical operating system for consequential decision-making.
+RippleLogic is implemented through a five-document canonical specification set.
 
-It is designed for:
+1. **Foundation Canon**  
+   Core philosophical and structural specification of the MathGov ethical operating system.
 
-- AI alignment environments
-- Policy and governance decisions
-- Multi-stakeholder tradeoff analysis
-- High-risk infrastructure systems
+2. **Sentience Gradient Protocol (SGP)**  
+   Defines ethical weight assignment across different forms of sentience.
 
-Stakeholders are modeled as seven nested unions:
+3. **ripple.md Standard**  
+   Machine-readable schema for encoding RippleLogic decision analysis.
 
-Self → Household → Community → Organization → Polity → Humanity → Biosphere
+4. **Agent System Specification**  
+   Defines how autonomous agents can implement RippleLogic safely.
 
-Impacts are recorded in a transparent 49-cell evaluation matrix  
-(7 unions × 7 welfare dimensions).
+5. **Ripple Aligners Workbook**  
+   Operational Excel framework used for pilot testing and scenario evaluation.
 
-The system is explicitly auditable, falsifiable, and reconstruction-ready.
-
----
-
-## What RippleLogic Does Not Claim
-
-RippleLogic does not claim:
-
-- Deterministic governance guarantees
-- Predictive omniscience
-- Tier-4 full automation authority
-- Replacement of human moral agency
-
-Evaluation claims are limited to Tier 1–3 structured evaluation.
+Together these documents form the **complete RippleLogic decision architecture.**
 
 ---
 
-## Canonical Artifacts (v8.5.3)
+# Ethical Decision Cascade
 
-This release contains:
+RippleLogic operates through a strict lexicographic cascade.
 
-- Ripple_Logic v8.5.3 CANON (DOCX + PDF)
-- Sentience Gradient Protocol v4.2.3 (DOCX + PDF)
-- RippleLogic Agent System v8.5.3 (DOCX + PDF)
-- Ripple Aligners Sheet v1.8.3
-- Release assets with SHA-256 integrity hashes
+Each stage must pass before the next stage is evaluated.
 
-Each version is tag-bound and immutable.
+```
+NCRC → TRC → Containment → RLS → UCI/HOI
+```
 
-Tags are treated as frozen public artifacts.
+### Stage 1 — NCRC
+Non-Compensatory Rights Constraint
 
----
-
-## Integrity and Verification
-
-All release assets display SHA-256 hashes directly on the GitHub release page.
-
-To verify integrity:
-
-1. Download the asset.
-2. Compute SHA-256 locally.
-3. Confirm it matches the published hash in the release.
-
-No hidden binaries.  
-No opaque execution layers.
+Actions violating fundamental rights are rejected immediately.  
+No trade-off or benefit can compensate for a rights violation.
 
 ---
 
-## Version Discipline
+### Stage 2 — TRC
+Tail-Risk Constraint
 
-RippleLogic follows structured semantic versioning:
-
-MAJOR.MINOR.PATCH
-
-- Major: structural architectural changes
-- Minor: functional expansion without structural break
-- Patch: clarifications, consistency fixes, tightening
-
-Canonical artifacts are never modified retroactively once tagged.
+Actions with unacceptable catastrophic risk are rejected even if expected value is positive.
 
 ---
 
-## Website
+### Stage 3 — Containment
 
-https://ripplelogic.org
-
----
-
-## Contributing
-
-See CONTRIBUTING.md.
-
-We welcome:
-
-- Clarity challenges
-- Counterexamples
-- Edge-case tests
-- Formal falsification attempts
-- Structured deployment notes
+If risk is uncertain, containment safeguards must be applied before proceeding.
 
 ---
 
-## Security
+### Stage 4 — RLS
+Ripple Life Score
 
-See SECURITY.md.
-
-This is a normative decision framework.  
-Security reports concern structural inconsistencies, misinterpretations, or exploit-prone ambiguity.
+Evaluates impacts across stakeholder unions using a structured scoring model.
 
 ---
 
-## License
+### Stage 5 — UCI / HOI
 
-Apache-2.0
+If multiple options pass all constraints, final selection uses:
+
+• Utility Coordination Index  
+• Harm Optimization Index
+
+to choose the best available option.
 
 ---
 
-## In One Sentence
+# Intended Use
 
-RippleLogic prevents rights violations and catastrophic decisions before optimizing outcomes.
+RippleLogic is designed for evaluation of:
+
+• public policy decisions  
+• AI governance problems  
+• environmental resource conflicts  
+• strategic organizational decisions  
+• complex ethical dilemmas
+
+The framework allows decision processes to be:
+
+• transparent  
+• auditable  
+• structured  
+• reproducible
+
+---
+
+# Validation Status
+
+Current validation stage:
+
+**Tier 1 — Conceptual Architecture**  
+Formal specification completed.
+
+**Tier 2 — Pilot Testing**  
+Operational workbook supports experimental scenarios.
+
+**Tier 3 — Operational Deployment (Future)**  
+Requires:
+
+• empirical calibration  
+• inter-rater reliability testing  
+• standardized UCI instruments  
+• institutional implementation trials
+
+---
+
+# Repository Structure
+
+```
+.github/
+releases/
+ripplelogic-proofpack-lite/
+
+Foundation Canon
+Sentience Gradient Protocol
+ripple.md Standard
+Agent System Specification
+Ripple Aligners Workbook
+
+README.md
+RELEASE_HISTORY.md
+RELEASE_POLICY.md
+SECURITY.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+```
+
+---
+
+# Release Status
+
+Latest stable release: **RippleLogic v8.6**
+
+This release provides the first complete specification of the RippleLogic ethical decision operating system.
+
+The framework is architecturally complete and ready for:
+
+• academic peer review  
+• open-source inspection  
+• Tier 1–2 pilot testing
+
+---
+
+# Relationship to MathGov
+
+RippleLogic is the **decision engine** of the broader MathGov ethical governance framework.
+
+MathGov defines the philosophical and ethical foundations.  
+RippleLogic implements the operational decision mechanism.
+
+---
+
+# Citation
+
+If using RippleLogic in research:
+
+```
+McGaughran, J. (2026)
+RippleLogic: A Rights-Constrained Ripple-Aware Ethical Decision Operating System
+MathGov Institute
+```
+
+---
+
+# License
+
+This project is released under the repository license.
+
+See `LICENSE` for details.
+
+---
+
+# Author
+
+James McGaughran  
+Creator of MathGov and RippleLogic
+
+---
+
+# Project Goal
+
+The long-term objective of RippleLogic is to provide a transparent ethical decision architecture capable of supporting governance systems, autonomous agents, and complex human institutions while protecting fundamental rights and minimizing systemic harm.
