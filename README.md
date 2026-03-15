@@ -321,7 +321,13 @@ within the Foundation Paper itself, not in a separate document above it.
 
 ## Citation
 
-McGaughran, J. (2026). Ripple_Logic Framework v8.6 [Specification]. MathGov Institute for Ethical Systems Design. Canonical filename: Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx ORCID: 0009-0005-3324-7290 Canonical sites: ripplelogic.org · mathgov.org Repository: github.com/MathGov/ripple-logic License: CC BY 4.0
+McGaughran, J. (2026). *Ripple_Logic Framework v8.6* [Specification].
+MathGov Institute for Ethical Systems Design.
+Canonical filename: Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx
+ORCID: 0009-0005-3324-7290
+Canonical sites: ripplelogic.org · mathgov.org
+Repository: github.com/MathGov/ripple-logic
+License: CC BY-ND 4.0 (spec text) · MIT (code) · CC BY 4.0 (examples)
 
 
 Pin downstream work to the canonical filename + SHA-256 hash from the
