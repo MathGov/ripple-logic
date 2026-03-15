@@ -37,8 +37,6 @@ It is intended for use in:
 
 ## System Architecture
 
-## System Architecture
-
 Ripple_Logic operates as a strict lexicographic cascade:
 
 ```text
