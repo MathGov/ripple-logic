@@ -42,4 +42,14 @@ If you add or modify binary artifacts in a release folder:
 - Keep filenames stable and versioned.
 
 ## License
-By contributing, you agree your contributions are licensed under the repository’s license (see `LICENSE`).
+
+By contributing, you agree your contributions are licensed under the
+applicable layer of the repository's three-layer license (see `LICENSE`):
+
+- Contributions to specification text (Foundation Paper, normative content):
+  **CC BY-ND 4.0**
+- Contributions to code, schemas, templates, and test fixtures:
+  **MIT License**
+- Contributions to worked examples and teaching materials:
+  **CC BY 4.0**
+

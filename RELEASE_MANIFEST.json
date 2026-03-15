@@ -1,0 +1,31 @@
+{
+    "current_canonical_release": "v8.6",
+    "release_date": "2026-03-15",
+    "release_folder": "releases/v8.6_2026_03_15",
+    "manifest": "releases/v8.6_2026_03_15/Ripple_Logic_Core_Package_FINAL_RELEASE_MANIFEST.json",
+    "sha256sums": "releases/v8.6_2026_03_15/Ripple_Logic_Core_Package_FINAL_RELEASE_SHA256SUMS.txt",
+    "hash_pack": "releases/v8.6_2026_03_15/Ripple_Logic_Core_Package_HASH_PACK.txt",
+    "foundation_paper": {
+      "filename": "Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx",
+      "sha256": "24741d46339073bb01331e7595e090bae38eadac1ab28e4a4909428d9a4b63b5",
+      "size_bytes": 222372,
+      "license": "CC-BY-ND-4.0"
+    },
+    "canonical_sites": [
+      "ripplelogic.org",
+      "mathgov.org"
+    ],
+    "repository": "github.com/MathGov/ripple-logic",
+    "author": {
+      "name": "James McGaughran",
+      "orcid": "https://orcid.org/0009-0005-3324-7290",
+      "affiliation": "MathGov Institute for Ethical Systems Design"
+    },
+    "pinning_note": "Downstream implementations must pin to the canonical filename and SHA-256 above per Section 0.6 of the Foundation Paper. Do not treat variant copies, forks, or regenerated versions as authoritative.",
+    "tier_status": {
+      "tier_1_2": "IMPLEMENTABLE_AND_CLAIMABLE",
+      "tier_3": "ARCHITECTURALLY_SPECIFIED_EMPIRICAL_VALIDATION_PENDING",
+      "tier_4": "DESIGN_TARGET_ONLY_CLAIMS_PROHIBITED"
+    }
+  }
+  

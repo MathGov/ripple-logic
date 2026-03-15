@@ -96,7 +96,6 @@ Options are filtered in strict order. An option eliminated at any stage is
 not scored at later stages. Later benefits **cannot** compensate for
 earlier failures.
 
-Copy
 ┌─────────────────────────────────────────────────────┐ │ NCRC Non-Compensatory Rights Constraint │ │ → eliminates rights-violating options │ └───────────────────────┬─────────────────────────────┘ │ admissible options only ▼ ┌─────────────────────────────────────────────────────┐ │ TRC Tail-Risk Constraint (CVaR) │ │ → eliminates options with unacceptable tail risk │ └───────────────────────┬─────────────────────────────┘ │ admissible options only ▼ ┌─────────────────────────────────────────────────────┐ │ Containment Structural Integrity Gate │ │ → eliminates options that degrade containing │ │ Union Scopes beyond governed tolerance │ └───────────────────────┬─────────────────────────────┘ │ selectable options only ▼ ┌─────────────────────────────────────────────────────┐ │ RLS Ripple Logic Score │ │ → ranks selectable options by weighted welfare │ │ improvement across all 49 cells │ └───────────────────────┬─────────────────────────────┘ │ top-ranked option ▼ ┌─────────────────────────────────────────────────────┐ │ UCI / HOI Structural Diagnostics │ │ → tie-breaking and long-run monitoring │ └───────────────────────┬─────────────────────────────┘ │ ▼ Selected option + PCC (audit record)
 
 
@@ -334,13 +333,32 @@ canonical artifact is authoritative.
 
 ## License
 
-The text of the Foundation Paper is released under
-**Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+Ripple_Logic uses a three-layer license structure that matches the nature of
+each artifact type.
 
-Reference implementations, schemas, and test fixtures are released under
-the **MIT License**.
+**Specification text** (Foundation Paper, SGP, ripple.md Standard, Agent
+System Specification, and all normative written specification content) is
+released under **Creative Commons Attribution-NoDerivatives 4.0 International
+(CC BY-ND 4.0)**. You may share, redistribute, implement, teach from, and
+quote this material freely with attribution, but you may not publish modified
+versions of the specification text. This protects the integrity of the
+canonical framework against ethical dilution through derivative specifications
+that weaken its normative architecture.
 
-See `LICENSE` for details.
+**Implementation rights clarification:** CC BY-ND does not restrict
+implementation. Any party may implement Ripple_Logic in software, institutional
+processes, governance systems, or any other form without restriction. The
+NoDerivatives clause applies only to redistribution of modified versions of
+the specification text itself.
+
+**Reference implementations, schemas, code, templates, and test fixtures** are
+released under the **MIT License**. Maximum permissiveness for the tooling layer.
+
+**Worked examples, teaching materials, and translations** are released under
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**. Adapt, translate,
+and redistribute freely with attribution.
+
+See `LICENSE` for full terms.
 
 ---
 
