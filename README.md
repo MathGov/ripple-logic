@@ -1,7 +1,29 @@
-# RippleLogic (formerly MathGov)
+# RippleLogic
+Decision Engine of the MathGov Ethical Governance Framework
+Rights-constrained ripple-aware decision architecture
 
-**Latest stable release:** v8.5.3  
-Release page: https://github.com/MathGov/ripple-logic/releases/tag/v8.5.3  
+## System Architecture
+
+```mermaid
+flowchart TD
+A[MathGov Framework]
+B[RippleLogic Decision Engine]
+
+C[NCRC<br/>Non-Compensatory Rights Constraint]
+D[TRC<br/>Threshold Risk Constraint]
+E[Containment<br/>High-Risk Safeguards]
+F[RLS<br/>Ripple Logic Scoring]
+G[UCI / HOI<br/>Union Coherence Index & Harm Optimization Index]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+
+**Latest stable release:** v8.6  
+Release page: https://github.com/MathGov/ripple-logic/releases/tag/v8.6
 
 ---
 
