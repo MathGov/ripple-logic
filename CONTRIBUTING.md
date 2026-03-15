@@ -12,7 +12,7 @@ That means:
 
 ### 1) Report an issue (recommended starting point)
 Please open a GitHub Issue and include:
-- **What you observed** (include exact file name + version folder, e.g., `releases/v8.1_2026-02-14/...`)
+- **What you observed** (include exact file name + version folder, e.g., `releases/v8.6_2026_03_15/...`)
 - **Expected behavior**
 - **Steps to reproduce** (if applicable)
 - **Why it matters** (risk, rights-floor implications, audit clarity, implementability)
