@@ -111,7 +111,7 @@ If risk is uncertain, containment safeguards must be applied before proceeding.
 ---
 
 ### Stage 4 — RLS
-Ripple Life Score
+Ripple Logic Score
 
 Evaluates impacts across stakeholder unions using a structured scoring model.
 
@@ -121,10 +121,10 @@ Evaluates impacts across stakeholder unions using a structured scoring model.
 
 If multiple options pass all constraints, final selection uses:
 
-• Utility Coordination Index  
-• Harm Optimization Index
+• Union Coherence Index  
+• Hollowing-Out Index
 
-to choose the best available option.
+to evaluate structural coherence and detect systemic degradation risk.
 
 ---
 
