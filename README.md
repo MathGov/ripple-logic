@@ -39,25 +39,25 @@ It is intended for use in:
 
 ```mermaid
 flowchart TD
+    A["MathGov Historical Lineage"]
+    B["Ripple_Logic Canonical System"]
 
-A[MathGov Historical Lineage]
-B[Ripple_Logic Canonical System]
+    C["NCRC: Non-Compensatory Rights Constraint"]
+    D["TRC: Tail-Risk Constraint"]
+    E["Containment: Structural Safeguards"]
+    F["RLS: Ripple Logic Score"]
+    G["UCI / HOI: Union Coherence Index and Hollowing-Out Index"]
+    H["Operational Decision Output"]
 
-C[NCRC<br>Non-Compensatory Rights Constraint]
-D[TRC<br>Tail-Risk Constraint]
-E[Containment<br>Structural Safeguards]
-F[RLS<br>Ripple Logic Score]
-G[UCI / HOI<br>Union Coherence Index and Hollowing-Out Index]
-H[Operational Decision Output]
-
-A --> B
-B --> C
-C --> D
-D --> E
-E --> F
-F --> G
-G --> H
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
 ```
+---
 ## Quick Example
 
 **Scenario:** A government is evaluating construction of a hydroelectric dam.
