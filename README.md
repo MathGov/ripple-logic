@@ -2,6 +2,11 @@
 
 **Canonical decision operating system within the broader MathGov lineage**
 
+**Version:** v8.6  
+**Status:** Architecturally complete specification  
+**License:** See LICENSE  
+**Validation:** Tier-1 complete, Tier-2 pilot testing, Tier-3 future deployment
+
 Ripple_Logic is a rights-constrained, ripple-aware ethical decision operating system for governance, AI alignment, and auditable multi-stakeholder decision-making.
 
 **Canonical status:** Ripple_Logic is the canonical name of this system from v8.6 forward. MathGov is a historical umbrella term used in earlier materials and affiliated lineage contexts.  
