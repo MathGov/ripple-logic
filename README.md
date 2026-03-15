@@ -1,38 +1,48 @@
-# RippleLogic
+# Ripple_Logic
 
-**Decision Engine of the MathGov Ethical Governance Framework**
+**Canonical decision operating system within the broader MathGov lineage**
 
-A **rights-constrained, ripple-aware ethical decision operating system** designed to evaluate complex decisions across multiple stakeholders while enforcing non-negotiable rights constraints.
+Ripple_Logic is a rights-constrained, ripple-aware ethical decision operating system for governance, AI alignment, and auditable multi-stakeholder decision-making.
 
-RippleLogic integrates ethical theory, systems thinking, and structured decision analysis into a transparent architecture suitable for:
-
-- governance analysis
-- AI alignment research
-- policy evaluation
-- institutional decision-making
-- complex ethical dilemmas
+**Canonical status:** Ripple_Logic is the canonical name of this system from v8.6 forward. MathGov is a historical umbrella term used in earlier materials and affiliated lineage contexts.  
+**Current stable release:** v8.6  
+**Release page:** https://github.com/MathGov/ripple-logic/releases/tag/v8.6
 
 ---
 
-# System Architecture
+## What Ripple_Logic Is
+
+Ripple_Logic is a general-purpose ethical operating system designed to evaluate options across nested unions while enforcing:
+
+- non-compensatory rights floors
+- catastrophic tail-risk control
+- containment against structural degradation
+- welfare ranking only among admissible options
+- structural diagnostics for coherence and hollowing-out drift
+
+It is intended for use in:
+
+- governance and public policy analysis
+- AI alignment and safety evaluation
+- institutional and organizational decision-making
+- high-stakes tradeoff analysis
+- auditable ethical reasoning under uncertainty
+
+---
+
+## System Architecture
 
 ```mermaid
 flowchart TD
 
-A[MathGov Ethical Governance Framework]
-
-B[RippleLogic Decision Engine]
+A[MathGov Historical Lineage]
+B[Ripple_Logic Canonical System]
 
 C[NCRC<br>Non-Compensatory Rights Constraint]
-
 D[TRC<br>Tail-Risk Constraint]
-
-E[Containment<br>Precautionary Safeguards]
-
-F[RLS<br>Ripple Life Score Evaluation]
-
-G[UCI / HOI<br>Union Coherence Index and Hollowing Out Index]
-
+E[Containment<br>Structural Safeguards]
+F[RLS<br>Ripple Logic Score]
+G[UCI / HOI<br>Union Coherence Index and Hollowing-Out Index]
 H[Operational Decision Output]
 
 A --> B
