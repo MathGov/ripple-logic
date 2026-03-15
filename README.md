@@ -41,7 +41,6 @@ It is intended for use in:
 flowchart TD
     A["MathGov Historical Lineage"]
     B["Ripple_Logic Canonical System"]
-
     C["NCRC: Non-Compensatory Rights Constraint"]
     D["TRC: Tail-Risk Constraint"]
     E["Containment: Structural Safeguards"]
