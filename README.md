@@ -37,26 +37,32 @@ It is intended for use in:
 
 ## System Architecture
 
-```mermaid
-flowchart TD
-    A["MathGov Historical Lineage"]
-    B["Ripple_Logic Canonical System"]
-    C["NCRC: Non-Compensatory Rights Constraint"]
-    D["TRC: Tail-Risk Constraint"]
-    E["Containment: Structural Safeguards"]
-    F["RLS: Ripple Logic Score"]
-    G["UCI / HOI: Union Coherence Index and Hollowing-Out Index"]
-    H["Operational Decision Output"]
+## System Architecture
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
+Ripple_Logic operates as a strict lexicographic cascade:
+
+```text
+MathGov Historical Lineage
+        ↓
+Ripple_Logic Canonical System
+        ↓
+NCRC: Non-Compensatory Rights Constraint
+        ↓
+TRC: Tail-Risk Constraint
+        ↓
+Containment: Structural Safeguards
+        ↓
+RLS: Ripple Logic Score
+        ↓
+UCI / HOI: Union Coherence Index and Hollowing-Out Index
+        ↓
+Operational Decision Output
 ```
+
+Stages must pass sequentially. Later benefits cannot compensate for earlier failures.
+
 ---
+
 ## Quick Example
 
 **Scenario:** A government is evaluating construction of a hydroelectric dam.
