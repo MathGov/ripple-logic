@@ -1,298 +1,356 @@
 # Ripple_Logic
 
-**Canonical decision operating system within the broader MathGov lineage**
+**Canonical decision operating system for rights-constrained, ripple-aware
+ethical governance**
 
-**Version:** v8.6  
-**Status:** Architecturally complete specification  
-**License:** See LICENSE  
-**Validation:** Tier-1 complete, Tier-2 pilot testing, Tier-3 future deployment
-
-Ripple_Logic is a rights-constrained, ripple-aware ethical decision operating system for governance, AI alignment, and auditable multi-stakeholder decision-making.
-
-**Canonical status:** Ripple_Logic is the canonical name of this system from v8.6 forward. MathGov is a historical umbrella term used in earlier materials and affiliated lineage contexts.  
-**Current stable release:** v8.6  
-**Release page:** https://github.com/MathGov/ripple-logic/releases/tag/v8.6
+| | |
+|---|---|
+| **Version** | v8.6 |
+| **Status** | Architecturally complete — Tier 1–3 implementable now from the Foundation Paper — Tier 4 non-claimable until ProofPack is publicly replayable |
+| **License** | CC BY 4.0 (text) · MIT (reference implementations and schemas) |
+| **Canonical sites** | ripplelogic.org · mathgov.org |
+| **Repository** | github.com/MathGov/ripple-logic |
+| **Author** | James McGaughran · ORCID: 0009-0005-3324-7290 |
 
 ---
 
 ## What Ripple_Logic Is
 
-Ripple_Logic is a general-purpose ethical operating system designed to evaluate options across nested unions while enforcing:
+Ripple_Logic is a general-purpose ethical operating system that evaluates
+decisions across nested stakeholder scopes while enforcing:
 
-- non-compensatory rights floors
-- catastrophic tail-risk control
-- containment against structural degradation
-- welfare ranking only among admissible options
-- structural diagnostics for coherence and hollowing-out drift
+- **Non-compensatory rights floors** — rights violations cannot be traded
+  away for aggregate benefit elsewhere
+- **Catastrophic tail-risk control** — using Conditional Value-at-Risk
+  (CVaR) over a governed scenario library, not expected value
+- **Containment** — local gains may not degrade the coherence of containing
+  Union Scopes beyond governed tolerance
+- **Welfare ranking** — only among options that pass the above gates,
+  scored across a 7 × 7 welfare matrix of Union Scopes × Welfare Dimensions
+- **Structural diagnostics** — Union Coherence Index (UCI) and
+  Hollowing-Out Index (HOI) for long-run integrity monitoring and
+  tie-breaking
 
-It is intended for use in:
+It is designed for use in governance and public policy analysis, AI
+alignment and safety evaluation, institutional and organizational
+decision-making, and any high-stakes situation requiring auditable,
+rights-respecting reasoning under uncertainty.
 
-- governance and public policy analysis
-- AI alignment and safety evaluation
-- institutional and organizational decision-making
-- high-stakes tradeoff analysis
-- auditable ethical reasoning under uncertainty
+**Canonical name:** Ripple_Logic is the canonical name from v8.6 forward.
+MathGov is the historical umbrella term for the broader lineage and
+ecosystem and remains a valid narrative reference.
 
----
-
-## System Architecture
-
-Ripple_Logic operates as a strict lexicographic cascade:
-
-```text
-MathGov Historical Lineage
-        ↓
-Ripple_Logic Canonical System
-        ↓
-NCRC: Non-Compensatory Rights Constraint
-        ↓
-TRC: Tail-Risk Constraint
-        ↓
-Containment: Structural Safeguards
-        ↓
-RLS: Ripple Logic Score
-        ↓
-UCI / HOI: Union Coherence Index and Hollowing-Out Index
-        ↓
-Operational Decision Output
-```
-
-Stages must pass sequentially. Later benefits cannot compensate for earlier failures.
+**Single source of truth:** The Foundation Paper
+(`Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx`) is the single canonical
+artifact for v8.6. In case of any conflict between this README and the
+Foundation Paper, the Foundation Paper governs per Section 0.1.
 
 ---
 
-## Quick Example
+## The 7 × 7 Welfare Matrix
 
-**Scenario:** A government is evaluating construction of a hydroelectric dam.
+Every decision is evaluated across **49 cells**:
+**7 Union Scopes (rows) × 7 Welfare Dimensions (columns)**.
 
-Ripple_Logic evaluates the proposal step by step.
+Impact instances from real stakeholders feed each cell. Union Scopes are
+the stable aggregation rows. Rights-covered and catastrophe cells are
+**non-maskable** — they cannot be excluded from admissibility evaluation
+or welfare ranking regardless of scope or masking choices.
 
-### Step 1 — NCRC  
-Check whether the proposal violates fundamental rights.
+### Union Scopes (rows)
 
-Result: No non-compensatory rights violation identified in the admissible version of the project → **Pass**
+| Code | Scope | Timescale |
+|------|-------|-----------|
+| U1 | Self | Seconds to decades |
+| U2 | Household | Days to decades |
+| U3 | Community | Months to generations |
+| U4 | Organization | Years to centuries |
+| U5 | Polity | Decades to centuries |
+| U6 | Humanity / CMIU | Generations to millennia |
+| U7 | Biosphere | Centuries to epochs |
 
-### Step 2 — TRC  
-Check whether the proposal creates unacceptable catastrophic tail risk.
+Canonical nesting chain: U1 ⊂ U2 ⊂ U3 ⊂ U4 ⊂ U5 ⊂ U6 ⊂ U7
 
-Result: Tail risk remains within acceptable bounds under the engineered version of the project → **Pass**
+### Welfare Dimensions (columns)
 
-### Step 3 — Containment  
-Apply structural safeguards:
+| Code | Dimension | What it measures |
+|------|-----------|-----------------|
+| D1 | Material | Resources, income, economic security |
+| D2 | Health | Physical and mental wellbeing, safety |
+| D3 | Social | Trust, belonging, relational integrity |
+| D4 | Knowledge | Epistemic access, information quality, learning |
+| D5 | Agency | Autonomy, freedom from coercion, self-determination |
+| D6 | Meaning | Purpose, coherence, valued projects |
+| D7 | Environment | Ecological and infrastructure integrity |
 
-- environmental mitigation
-- relocation protections
-- engineering monitoring
-- rollback and governance controls
-
-Result: Safeguards implemented → **Pass**
-
-### Step 4 — RLS  
-Compare admissible options using the Ripple Logic Score.
-
-Example:
-
-- Option A: +42
-- Option B: +18
-
-### Step 5 — UCI / HOI  
-Compare structural integrity.
-
-Result: Option A preserves stronger union coherence and lower hollowing-out risk.
-
-### Decision
-
-**Option A** is selected as the Ripple_Logic-aligned decision.
----
-
-# Canonical Five-File System
-
-RippleLogic is implemented through a five-document canonical specification set.
-
-1. **Foundation Canon**  
-   Core philosophical and structural specification of the MathGov ethical operating system.
-
-2. **Sentience Gradient Protocol (SGP)**  
-   Defines ethical weight assignment across different forms of sentience.
-
-3. **ripple.md Standard**  
-   Machine-readable schema for encoding RippleLogic decision analysis.
-
-4. **Agent System Specification**  
-   Defines how autonomous agents can implement RippleLogic safely.
-
-5. **Ripple Aligners Workbook**  
-   Operational Excel framework used for pilot testing and scenario evaluation.
-
-Together these documents form the **complete RippleLogic decision architecture.**
+All welfare impacts are computed and compared on the canonical **[−1, +1]
+scale** (baseline-zero: 0 means no change from baseline). A UI points
+display (×100) is a non-normative presentation layer only — all gates and
+RLS must be computed on the canonical scale.
 
 ---
 
-# Ethical Decision Cascade
+## The Five-Level Lexicographic Cascade
 
-RippleLogic operates through a strict lexicographic cascade.
+Options are filtered in strict order. An option eliminated at any stage is
+not scored at later stages. Later benefits **cannot** compensate for
+earlier failures.
 
-Each stage must pass before the next stage is evaluated.
+Copy
+┌─────────────────────────────────────────────────────┐ │ NCRC Non-Compensatory Rights Constraint │ │ → eliminates rights-violating options │ └───────────────────────┬─────────────────────────────┘ │ admissible options only ▼ ┌─────────────────────────────────────────────────────┐ │ TRC Tail-Risk Constraint (CVaR) │ │ → eliminates options with unacceptable tail risk │ └───────────────────────┬─────────────────────────────┘ │ admissible options only ▼ ┌─────────────────────────────────────────────────────┐ │ Containment Structural Integrity Gate │ │ → eliminates options that degrade containing │ │ Union Scopes beyond governed tolerance │ └───────────────────────┬─────────────────────────────┘ │ selectable options only ▼ ┌─────────────────────────────────────────────────────┐ │ RLS Ripple Logic Score │ │ → ranks selectable options by weighted welfare │ │ improvement across all 49 cells │ └───────────────────────┬─────────────────────────────┘ │ top-ranked option ▼ ┌─────────────────────────────────────────────────────┐ │ UCI / HOI Structural Diagnostics │ │ → tie-breaking and long-run monitoring │ └───────────────────────┬─────────────────────────────┘ │ ▼ Selected option + PCC (audit record)
 
-```
-NCRC → TRC → Containment → RLS → UCI/HOI
-```
-
-### Stage 1 — NCRC
-Non-Compensatory Rights Constraint
-
-Actions violating fundamental rights are rejected immediately.  
-No trade-off or benefit can compensate for a rights violation.
 
 ---
 
-### Stage 2 — TRC
-Tail-Risk Constraint
+### Level 1 — NCRC: Non-Compensatory Rights Constraint
 
-Actions with unacceptable catastrophic risk are rejected even if expected value is positive.
+Eight canonical rights are checked across their coverage sets in the
+welfare matrix. For rights-covered cells, the **worst-off subgroup**
+impact is used — aggregate averages cannot mask harm to vulnerable groups.
 
----
+Any option that drives the worst-off subgroup below a rights threshold is
+**eliminated**, regardless of aggregate benefit elsewhere.
 
-### Stage 3 — Containment
+**Gate baseline rule:** Rights and catastrophe cells are evaluated against
+a **floor-reference baseline** — what rights-safe conditions require — not
+merely the status quo. An option that merely maintains an ongoing
+rights-violating status quo does not pass NCRC.
 
-If risk is uncertain, containment safeguards must be applied before proceeding.
-
----
-
-### Stage 4 — RLS
-Ripple Logic Score
-
-Evaluates impacts across stakeholder unions using a structured scoring model.
-
----
-
-### Stage 5 — UCI / HOI
-
-If multiple options pass all prior constraints, Ripple_Logic uses structural diagnostics to compare long-run integrity.
-
-• **Union Coherence Index (UCI)** evaluates structural coherence and is used in tie-breaks and containment logic.  
-• **Hollowing-Out Index (HOI)** is a monitoring diagnostic that flags welfare-up / coherence-down drift over time.
-
-Together, these help distinguish between options that appear beneficial in the short term and options that preserve the containing system over time.
+| Right | Code | Threshold θ_r |
+|-------|------|---------------|
+| Life | LIFE | −0.90 |
+| Bodily Integrity | BODY | −0.70 |
+| Liberty | LBTY | −0.65 |
+| Ecological Integrity | ECOL | −0.65 |
+| Dignity | DIGN | −0.55 |
+| Basic Needs | NEED | −0.50 |
+| Due Process | PROC | −0.45 |
+| Information | INFO | −0.40 |
 
 ---
 
-# Intended Use
+### Level 2 — TRC: Tail-Risk Constraint
 
-RippleLogic is designed for evaluation of:
+TRC bounds catastrophic exposure using **CVaR** (Conditional Value-at-Risk)
+over a governed scenario library, evaluated across three base catastrophe
+cells:
 
-• public policy decisions  
-• AI governance problems  
-• environmental resource conflicts  
-• strategic organizational decisions  
-• complex ethical dilemmas
+- **(U6 × D2)** — Humanity/CMIU Health: civilizational health viability
+- **(U6 × D7)** — Humanity/CMIU Environment: civilization-scale habitability
+- **(U7 × D7)** — Biosphere Environment: Earth-system integrity
 
-The framework allows decision processes to be:
+Five mandatory tail categories must appear with per-category probability
+≥ 0.02 each: pandemic/biological disruption, climate tipping cascade,
+financial system collapse, major conflict escalation, and critical
+infrastructure failure.
 
-• transparent  
-• auditable  
-• structured  
-• reproducible
-
----
-
-# Validation Status
-
-Current validation stage:
-
-**Tier 1 — Conceptual Architecture**  
-Formal specification completed.
-
-**Tier 2 — Pilot Testing**  
-Operational workbook supports experimental scenarios.
-
-**Tier 3 — Operational Deployment (Future)**  
-Requires:
-
-• empirical calibration  
-• inter-rater reliability testing  
-• standardized UCI instruments  
-• institutional implementation trials
+TRC uses the **Base stream** only (sentience multiplier s_k := 1).
+Welfare-stream impacts must not be used for TRC.
 
 ---
 
-# Repository Structure
+### Level 3 — Containment
 
-```text
-.github/
-releases/
-ripplelogic-proofpack-lite/
+Containment prevents pathological local optimization. A sub-union scope
+may not improve its own welfare by degrading the coherence or viability of
+its containing Union Scopes beyond governed tolerance (default τ_c = −0.10
+on the UCI scale).
 
-Foundation Canon
-Sentience Gradient Protocol
-ripple.md Standard
-Agent System Specification
-Ripple Aligners Workbook
-
-README.md
-START_HERE.md
-VALIDATION_STATUS.md
-RELEASE_HISTORY.md
-RELEASE_POLICY.md
-SECURITY.md
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
-LICENSE
-CITATION.cff
-```
+Assessed via **ΔUCI** (prospective change in Union Coherence Index) for
+containing scopes. At Tier 3, Containment Mode A is a **binding gate**,
+not an advisory check.
 
 ---
 
-# Release Status
+### Level 4 — RLS: Ripple Logic Score
 
-Latest stable release: **RippleLogic v8.6**
+Among selectable options, RLS ranks by weighted welfare improvement across
+the 49-cell matrix using the **Welfare stream**:
 
-This release provides the first complete specification of the RippleLogic ethical decision operating system.
 
-The framework is architecturally complete and ready for:
+$$\text{RLS}(a) = \sum_{u}\sum_{d}\, w_u \times v_d \times m(u,d) \times I_{\text{prop,welfare}}(u,d,a)$$
 
-• academic peer review  
-• open-source inspection  
-• Tier 1–2 pilot testing
-
----
-
-# Relationship to MathGov
-
-RippleLogic is the **decision engine** of the broader MathGov ethical governance framework.
-
-MathGov defines the philosophical and ethical foundations.  
-RippleLogic implements the operational decision mechanism.
+Weights are governed by **Hybrid Democratic Weighting (HDW)** with
+constitutional floor minimums that cannot be reduced to zero regardless of
+democratic input. Rights-covered and catastrophe cells remain
+**non-maskable** in RLS aggregation.
 
 ---
 
-# Citation
+### Level 5 — UCI / HOI: Structural Diagnostics
 
-If using RippleLogic in research:
+**Union Coherence Index (UCI)** measures structural health of each Union
+Scope across four components — Cohesion, Flow, Resilience, and Equity.
+Used in Containment evaluation and RLS tie-breaking.
 
-```
-McGaughran, J. (2026)
-RippleLogic: A Rights-Constrained Ripple-Aware Ethical Decision Operating System
-MathGov Institute
-```
+**Hollowing-Out Index (HOI)** is a monitoring diagnostic that detects
+welfare-up / coherence-down drift over time. It feeds the **NCAR Reflect**
+cycle and flags situations where apparent welfare gains are masking
+structural erosion.
 
 ---
 
-# License
+## Stream Binding
 
-This project is released under the repository license.
+Two impact streams are maintained throughout every run:
+
+| Stream | Sentience multiplier | Used by |
+|--------|---------------------|---------|
+| Base stream | s_k := 1 (fixed for all instances) | NCRC, TRC, Containment |
+| Welfare stream | s_k from SGP interface (= 1 for all humans, Human Plateau Rule) | RLS only |
+
+These must never be mixed. The Human Plateau Rule is non-overridable:
+every human person has s_k := 1.0 regardless of any SGP scoring outcome.
+
+---
+
+## Auditability — PCC and NCAR
+
+Every Tier 2–3 run produces a **Provenance and Compliance Certificate
+(PCC)** — a structured, immutable record of all inputs, intermediate
+computations, gate outcomes, weights, scenario tables, stakeholder
+instances, redundancy handling declarations, sensitivity results, and
+audit flags.
+
+The PCC enables decisions to be reconstructed, challenged, and corrected.
+It includes a **Five-Sentence Public Rationale (5SPR)** accessible to
+affected stakeholders.
+
+All runs are embedded in the **NCAR learning loop**:
+
+Notice → Choose → Act → Reflect
+
+
+NCAR Reflect feeds observed outcomes back into kernels, scenario
+libraries, and weight governance through versioned, auditable updates.
+
+---
+
+## Implementation Tiers
+
+Tier 1–3 are **implementable and claimable now** from the Foundation Paper
+and its appendices. Tier 4 is a design target only.
+
+| Requirement | Tier 1 (Heuristic) | Tier 2 (Core) | Tier 3 (Auditable) |
+|-------------|-------------------|---------------|-------------------|
+| NCRC | Heuristic screen | Required | Required + subgroup disaggregation |
+| TRC | Optional qualitative | Required when catastrophe relevance plausible (≥ 5 scenarios) | Required (≥ 20 scenarios) |
+| Containment Mode A | Optional | Recommended | Required — binding gate |
+| RLS | Optional | Required | Required |
+| Uncertainty / discrimination | Optional | Required (active cells) | Required |
+| Sensitivity analysis | Optional | Recommended | Required |
+| PCC | Optional | Required (basic) | Required (full) |
+| Stakeholder instances (SCI) | Optional | SCI ≥ 1 required | SCI ≥ 2 required |
+| Stewardship | Optional | Required if Stw_req = 1 | Required (Stw_req = 1 by default) |
+
+**Tier 4** — deterministic hash-bound replayability via ProofPack —
+is a design target. Tier 4 compliance claims are **prohibited** until a
+public ProofPack is independently replayable.
+
+---
+
+## Worked Example
+
+[`examples/ai_alignment_example.md`](examples/ai_alignment_example.md)
+presents a full Tier 2 illustrative run evaluating three options for
+frontier AI model deployment by a national government.
+
+It shows the complete cascade with:
+
+- stakeholder instance mapping to Union Scopes
+- rights coverage sets, threshold checks, and floor-reference baseline
+- TRC scenario table (8 scenarios across all 5 mandatory categories),
+  CVaR computation, and the "unioning" redesign that turns B into B+
+- RLS calculation with declared weights, cell-level impacts, and
+  decisiveness test (Gap ≈ 4.5 σ)
+- ΔUCI / HOI monitoring flags at U3, U6, and U7
+- Five-Sentence Public Rationale (5SPR)
+
+---
+
+## Repository Structure
+
+Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx ← Single canonical Foundation Paper examples/ ai_alignment_example.md ← Tier 2 illustrative run releases/ ripplelogic-proofpack-lite/ README.md START_HERE.md VALIDATION_STATUS.md RELEASE_HISTORY.md RELEASE_POLICY.md SECURITY.md CODE_OF_CONDUCT.md CONTRIBUTING.md LICENSE CITATION.cff
+
+
+---
+
+## Companion Artifacts
+
+The Foundation Paper is the single normative source of truth. The
+following companion artifacts extend or operationalize it. In case of
+conflict, the Foundation Paper governs.
+
+| Artifact | Version | Role |
+|----------|---------|------|
+| Sentience Gradient Protocol (SGP) | v4.3 | Sentience scoring and rights-of-protection gating; consumed by Ripple_Logic via Appendix G binding interface |
+| ripple.md Standard | v2.0 | Portable alignment contract, Decision Notes, feasibility gates, interface between ripple.md and Ripple_Logic cascade |
+| RippleLogic Agent System | v8.6 | Operational agent controls, verification obligations, and stewardship instrumentation |
+| Ripple Aligners Sheet | v2.2 | Tier 2 worked-run and local-scope tool; configured for two-option comparison |
+
+---
+
+## Validation Status
+
+Ripple_Logic v8.6 is **architecturally complete**. Tiers 1–3 are
+implementable and claimable now from the Foundation Paper.
+
+| Phase | Status |
+|-------|--------|
+| Foundation Paper — formal specification complete | ✅ Complete |
+| Tier 1–2 illustrative runs and reference test vectors (Appendix P, R) | ✅ Complete |
+| Inter-rater reliability study (required before Tier 3 operational-readiness claim) | 🔲 Planned |
+| Empirical validation — Phase 1: formal verification and implementation testing | 🔲 Planned |
+| Empirical validation — Phase 2: measurement validation | 🔲 Planned |
+| Empirical validation — Phase 3: controlled pilots | 🔲 Planned |
+| ProofPack publication (required for Tier 4 claims) | 🔲 Not yet published — Tier 4 claims prohibited |
+
+---
+
+## Relationship to MathGov
+
+MathGov is the historical umbrella term for the lineage and ecosystem from
+which Ripple_Logic emerged. It remains a valid narrative reference in
+lineage documents, affiliated publications, and prior PCCs.
+
+From v8.6 forward, **Ripple_Logic** is the canonical name of the
+specification. Union-Based Reality (UBR) and Union-Based Ethics (UBE) —
+the ontological and normative foundations of the system — are defined
+within the Foundation Paper itself, not in a separate document above it.
+
+---
+
+## Citation
+
+McGaughran, J. (2026). Ripple_Logic Framework v8.6 [Specification]. MathGov Institute for Ethical Systems Design. Canonical filename: Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx ORCID: 0009-0005-3324-7290 Canonical sites: ripplelogic.org · mathgov.org Repository: github.com/MathGov/ripple-logic License: CC BY 4.0
+
+
+Pin downstream work to the canonical filename + SHA-256 hash from the
+release manifest, per Section 0.6 of the Foundation Paper. Do not cite
+variant copies, forks, or regenerated versions — only the byte-identical
+canonical artifact is authoritative.
+
+---
+
+## License
+
+The text of the Foundation Paper is released under
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+Reference implementations, schemas, and test fixtures are released under
+the **MIT License**.
 
 See `LICENSE` for details.
 
 ---
 
-# Author
+## Author
 
-James McGaughran  
-Creator of MathGov and RippleLogic
+**James McGaughran**
+Creator and system architect of Ripple_Logic and the MathGov lineage.
+ORCID: 0009-0005-3324-7290
 
 ---
 
-# Project Goal
-
-The long-term objective of RippleLogic is to provide a transparent ethical decision architecture capable of supporting governance systems, autonomous agents, and complex human institutions while protecting fundamental rights and minimizing systemic harm.
+*Ripple_Logic v8.6 · ripplelogic.org · mathgov.org*
+*github.com/MathGov/ripple-logic*
