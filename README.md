@@ -1,16 +1,16 @@
 # RippleLogic
 
-Decision Engine of the MathGov Ethical Governance Framework  
-A rights-constrained, ripple-aware ethical decision architecture.
+**Decision Engine of the MathGov Ethical Governance Framework**
 
-RippleLogic provides a structured decision operating system designed to evaluate actions across multiple stakeholders while enforcing non-negotiable rights constraints.
+A **rights-constrained, ripple-aware ethical decision operating system** designed to evaluate complex decisions across multiple stakeholders while enforcing non-negotiable rights constraints.
 
-The framework integrates ethical theory, systems thinking, and decision analysis into a transparent architecture suitable for:
+RippleLogic integrates ethical theory, systems thinking, and structured decision analysis into a transparent architecture suitable for:
 
-• governance analysis  
-• AI alignment research  
-• policy evaluation  
-• complex systems decision-making
+- governance analysis
+- AI alignment research
+- policy evaluation
+- institutional decision-making
+- complex ethical dilemmas
 
 ---
 
@@ -31,7 +31,7 @@ E[Containment<br>Precautionary Safeguards]
 
 F[RLS<br>Ripple Life Score Evaluation]
 
-G[UCI / HOI<br>Utility or Harm Optimization Index]
+G[UCI / HOI<br>Union Coherence Index and Hollowing Out Index]
 
 H[Operational Decision Output]
 
