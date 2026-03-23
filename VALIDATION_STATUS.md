@@ -1,23 +1,21 @@
-# Validation Status — Ripple_Logic v8.6
+# Validation Status — RippleLogic v9.0
 
-Last updated: 2026-03-15
+Last updated: 2026-03-24
 
 ---
 
 ## Current Status
 
-Ripple_Logic v8.6 is **architecturally complete**. The Foundation Paper
-provides a full normative specification including canonical equations,
-rights thresholds and coverage sets, TRC mechanics, containment semantics,
-PCC templates, audit flags, reference test vectors (Appendix R), and a
-complete Tier 2 worked run (Appendix P).
+RippleLogic v9.0 is **freeze-ready as the core synced document/workbook set**.
 
-**Tiers 1–3 are implementable and claimable now** from the Foundation Paper
-and its appendices. No additional artifacts are required to claim Tier 1,
-2, or 3 compliance.
+The current release line provides:
 
-**Tier 4 compliance claims are prohibited** until a public ProofPack is
-independently replayable. See Section 0.2 of the Foundation Paper.
+- a governing canon document (`RippleLogic_v9.0_Canon.docx`)
+- synced companion artifacts across SGP, ripple.md, the Agent System, and the Aligners Sheet
+- a workbook with clean claimability and publication surfaces
+- release manifest and SHA-256 assets suitable for GitHub release publication and website distribution
+
+**Tier 4 compliance claims remain prohibited** until validator/schema surfaces and any optional executable replay assets are separately published and pinned.
 
 ---
 
@@ -25,73 +23,67 @@ independently replayable. See Section 0.2 of the Foundation Paper.
 
 | Phase | Description | Status |
 |-------|-------------|--------|
-| Formal specification | Foundation Paper v8.6 complete | ✅ Complete |
-| Reference test vectors | Appendix R — Tier 1–3 normative test vectors | ✅ Complete |
-| Tier 2 worked run | Appendix P — Digital Rights & Platform Governance | ✅ Complete |
-| Illustrative examples | `examples/ai_alignment_example.md` — Tier 2 illustrative run | ✅ Complete |
-| Inter-rater reliability (IRR) | Required before Tier 3 operational-readiness claim | 🔲 Planned |
-| Phase 1 — Formal verification | Independent implementation of Tier 2–3 algorithms from spec; unit tests; adversarial tests | 🔲 Planned |
-| Phase 2 — Measurement validation | Indicator reliability; welfare dimension and UCI component calibration | 🔲 Planned |
-| Phase 3 — Controlled pilots | Pilot deployments; comparison vs baseline governance processes | 🔲 Planned |
-| Phase 4 — Field studies | Longitudinal UCI/HOI monitoring; kernel calibration | 🔲 Planned |
-| ProofPack publication | Required for Tier 4 claims | 🔲 Not yet published |
+| Core freeze line | Synced canon + workbook + release manifest/hash package | ✅ Complete |
+| Formal specification | Canon and companion documents aligned for v9.0 release line | ✅ Complete |
+| Workbook publication clean state | Claimability and publish-ready surfaces resolved | ✅ Complete |
+| Release packaging | Manifest, SHA-256 files, and integrity documentation prepared | ✅ Complete |
+| Inter-rater reliability (IRR) | Required before stronger operational-readiness claims | 🔲 Planned |
+| Phase 1 — Formal verification | Independent implementation and adversarial testing surfaces | 🔲 Planned |
+| Phase 2 — Measurement validation | Indicator reliability and UCI calibration work | 🔲 Planned |
+| Phase 3 — Controlled pilots | Comparison against baseline governance processes | 🔲 Planned |
+| Phase 4 — Field studies | Longitudinal monitoring and kernel calibration | 🔲 Planned |
+| Tier 4 replay publication | Validator/schema and replay-grade bundle publication | 🔲 Not yet published |
 
 ---
 
-## What "Architecturally Complete" Means
+## What "Freeze-Ready Core Canon Line" Means
 
-The specification is complete in the sense that a competent analyst can
-implement Tier 1–3 runs using only the Foundation Paper and its appendices.
-The canonical equations are executable (Appendix B), the PCC template is
-specified (Appendix H), the rights and TRC canon packs are normative
-(Appendices C and D), and reference test vectors confirm expected outputs
-(Appendix R).
+The v9.0 line is complete enough to serve as the authoritative public document/workbook release for the core RippleLogic stack.
 
-"Architecturally complete" does not mean empirically validated. The
-framework makes testable hypotheses (Section 17.1) and specifies explicit
-falsification criteria (Section 17.2). Until empirical pilots are completed,
-Ripple_Logic is a theory-to-practice system with bounded claims: tier
-compliance is claimable, real-world performance superiority is not.
+That means:
+
+- the main specification and core companions are version-synchronized
+- the workbook is calculable and publication-clean
+- the release can be pinned through hashes and manifests
+- GitHub and website publication can proceed without internal sync blockers
+
+It does **not** mean that empirical superiority has been established, nor that the current package alone is a full replay-grade system release.
 
 ---
 
-## IRR Commitment
+## What Remains Outside This Claim Boundary
 
-Before Tier 3 operational-readiness claims are made, the framework will
-publish or register at least one inter-rater reliability (IRR) study on a
-representative case set covering welfare-cell anchoring, rights-floor
-evaluation, and local-scope usage. See Section 17.4A of the Foundation Paper.
+The following remain outside the claim boundary of the core freeze package alone:
+
+- full replay-grade validator/schema publication
+- optional executable companion assets
+- formal inter-rater reliability studies
+- controlled pilots and broader external validation
+- longer-horizon operational evidence
 
 ---
 
-## How to Contribute to Validation
+## Contribution Priorities
 
-The most valuable contributions right now are:
+The most valuable next contributions are:
 
-- **Independent implementation** of the Tier 1–3 algorithms from the spec
-- **Pre-registered empirical pilots** using the templates in Appendix J
-- **IRR studies** on welfare-cell scoring and rights-floor evaluation
-- **Challenger reviews** of the worked examples and reference test vectors
+- independent implementation of the published Tier 1–3 logic surfaces
+- validator/schema publication and review
+- inter-rater reliability studies
+- controlled pilot designs
+- challenger audits of worked examples, workbook runs, and audit surfaces
 
 See `CONTRIBUTING.md` for submission guidance.
 
 ---
 
-## Falsification Criteria
+## Falsification and Revision Posture
 
-The framework specifies explicit conditions under which components must be
-revised or rejected. See Section 17.2 of the Foundation Paper for the full
-set. Summary:
+RippleLogic remains a falsifiable governance framework. Freeze-readiness of the core release line does not remove the need for revision when empirical or adversarial evidence demonstrates failure, drift, loopholes, or poor predictive performance.
 
-| Criterion | Condition for revision |
-|-----------|----------------------|
-| F1 — NCRC failure | NCRC-passing decisions systematically produce worse rights outcomes than NCRC-failing decisions |
-| F2 — TRC failure | TRC-constrained decisions show no reduction in realized tail losses |
-| F3 — Ripple predictiveness | Sign accuracy remains < 60% across successive NCAR cycles for key cells |
-| F4 — Structural safeguard failure | UCI/HOI do not correlate with or predict meaningful degradation |
-| F5 — Anti-gaming failure | Red-team exercises repeatedly exploit predictable loopholes in > 30% of adversarial runs |
+Future revisions should remain versioned, pinned, and auditable rather than silently mutating the v9.0 line.
 
 ---
 
-*Ripple_Logic v8.6 · ripplelogic.org · mathgov.org*
+*RippleLogic v9.0 · ripplelogic.org · mathgov.org*  
 *github.com/MathGov/ripple-logic*
