@@ -57,7 +57,7 @@ Stronger claims require separately published evidence, schemas, validators, refe
 From the repository root:
 
 ```bash
-sha256sum -c RELEASE_INTEGRITY/SHA256_MANIFEST_GITHUB_FINAL.txt
+sha256sum -c releases/v10.6_2026-06-05/RELEASE_INTEGRITY/SHA256_MANIFEST_GITHUB_FINAL.txt
 ```
 
 Office artifacts were checked for valid OOXML ZIP integrity. DOCX comments and tracked-change insertion/deletion/move markers were scanned. The workbook was imported and formula-error scanned.
