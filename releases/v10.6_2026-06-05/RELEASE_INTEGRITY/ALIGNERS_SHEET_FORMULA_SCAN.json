@@ -1,0 +1,15 @@
+{
+  "file": "COMPANIONS/RippleLogic_Aligners_Sheet_v3.4_FINAL_RELEASE_READY.xlsx",
+  "searched_terms": [
+    "#REF!",
+    "#DIV/0!",
+    "#VALUE!",
+    "#NAME?",
+    "#N/A",
+    "#NULL!",
+    "#NUM!"
+  ],
+  "matches": 0,
+  "artifact_tool_scan_message": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "note": "Scanned through artifact_tool after final repository package rebuild."
+}

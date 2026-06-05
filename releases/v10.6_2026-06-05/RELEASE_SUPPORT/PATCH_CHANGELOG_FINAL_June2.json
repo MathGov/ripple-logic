@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "agent_docx_md",
+    "change": "Updated live export manifest example from the prior 10.4 package-version value to the current 10.6 value."
+  },
+  {
+    "scope": "agent_docx_md",
+    "change": "Split Appendix G malformed mixed glossary/version-history table into G.2 Quick-Reference Glossary and G.3 Historical Version Table."
+  },
+  {
+    "scope": "ripple_md_docx_md",
+    "change": "Clarified combined cascade phrase as wrapped audit-packaging flow, not computational reordering."
+  },
+  {
+    "scope": "aligners_sheet",
+    "change": "Updated v10.5 tooling-line language to post-core ProofPack-prep tooling line."
+  },
+  {
+    "scope": "aligners_sheet",
+    "change": "Changed worked_run_publishable_master value to YES and added governing_wrapper_version note."
+  },
+  {
+    "scope": "aligners_sheet",
+    "change": "Added Sanity_Checklist note for non-contiguous SC IDs and active formula-backed count semantics."
+  },
+  {
+    "scope": "markdown",
+    "change": "Regenerated Markdown from final DOCX artifacts and added Markdown release-boundary note."
+  },
+  {
+    "scope": "package",
+    "change": "Built final GitHub repository package, full release bundle, Markdown source set, SHA-256 manifests, verification transcript, and release reports."
+  },
+  {
+    "scope": "release_packaging",
+    "change": "Rebuilt final GitHub package on 2026-06-05 with fresh SHA-256 manifest, verification output, robust Markdown symbol scan, and stale-string false-positive cleanup."
+  }
+]
