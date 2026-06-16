@@ -1,134 +1,83 @@
 # RippleLogic Release History
 
+This file summarizes major public release milestones for the RippleLogic / MathGov repository. Historical release folders remain preserved for transparency. The current governing release is v10.6 + SGP v5.3.
+
+## v10.6 + SGP v5.3 — Core-Foundation Release
+
+**Release date:** 2026-06-05
+**Status:** Current core release
+**Release folder:** `releases/v10.6_2026-06-05/`
+**GitHub release tag:** `v10.6-sgp-v5.3`
+
+### Summary
+
+MathGov / RippleLogic v10.6 + SGP v5.3 is the current Tier 1–3 core-foundation and synchronized companion release.
+
+This release establishes the governing RippleLogic Canon v10.6, Sentience Gradient Protocol v5.3, ripple.md Standard v3.4, RippleLogic Agent System v10.6, Foundations Primer v2.4, Aligners Sheet v3.4, release-support reports, and SHA-256 integrity verification package.
+
+### Included components
+
+* RippleLogic Canon v10.6
+* Sentience Gradient Protocol (SGP) v5.3
+* ripple.md Standard v3.4
+* RippleLogic Agent System v10.6
+* Foundations Primer v2.4
+* RippleLogic Aligners Sheet v3.4
+* Methodology Completion and Companion Synchronization Summary
+* SHA-256 manifest and verification outputs
+* GitHub/world-release support reports
+
+### Claim boundary
+
+This release is architecture-complete within its declared Tier 1–3 scope. It does not claim Tier 4 readiness, ProofPack completeness, empirical validation, legal certification, deployment certification, completed biological SGP measurement, machine-verifiable ecosystem completeness, or current-AI sentience.
+
+---
+
+## v9.6.4 — Core Stabilization Release
+
+**Release date:** 2026-05-01
+**Status:** Historical release
+**Release folder:** `releases/v9.6.4_2026-05-01/`
+
+### Summary
+
+RippleLogic v9.6.4 was a stabilization and refinement release in the v9 release line. It helped prepare the framework for later synchronization into the v10.6 / SGP v5.3 core-foundation package.
+
+---
+
+## v9.5 — Canonical Tier 1–3 Release
+
+**Release date:** 2026-04-16
+**Status:** Historical release
+**Release folder:** `releases/v9.5_2026-04-16/`
+
+### Summary
+
+RippleLogic v9.5 served as a prior Tier 1–3 canonical release with synchronized document/workbook structure and integrity support.
+
 ---
 
 ## v9.0 — Core Freeze Release
-Release date: 2026-03-24
+
+**Release date:** 2026-03-24
+**Status:** Historical release
+**Release folder:** `releases/v9.0_2026-03-24/`
 
 ### Summary
 
-RippleLogic v9.0 is the first release in this repository explicitly packaged as a **freeze-ready core canon line** with a synced document/workbook set, release manifests, SHA-256 hashes, and GitHub/website-ready release packaging.
+RippleLogic v9.0 was the first release in this repository explicitly packaged as a freeze-ready core canon line with a synchronized document/workbook set, release manifests, SHA-256 hashes, and GitHub/web-ready release packaging.
 
-This release is intended for:
-
-- canonical public release
-- open-source inspection
-- academic and technical review
-- policy, governance, and alignment discussion using the frozen core line
-
-It is a strong publication release for the core artifact set, but it is **not by itself** a full independent replay-grade bundle.
+It was intended for public release, open-source inspection, academic and technical review, policy discussion, and governance/alignment evaluation using the frozen core line.
 
 ---
 
-### Included Components
+## Earlier release folders
 
-- RippleLogic Canon v9.0
-- Sentience Gradient Protocol (SGP) v4.3
-- ripple.md Standard v2.0
-- RippleLogic Agent System v9.0
-- RippleLogic Aligners Sheet v2.3
-- Release manifest and SHA-256 package
-- ProofPack release-integrity documentation
+Earlier release folders remain preserved for lineage and transparency:
 
----
+* `releases/v7.4.5_2026-01-25/`
+* `releases/v8.1_2026-02-14/`
+* `releases/v8.5.3_2026-02-20/`
+* `releases/v8.6_2026_03_15/`
 
-### What Improved in v9.0
-
-- the document stack is now release-line synchronized at v9.0
-- the Agent System mode-escalation language is aligned across the operational ladder and public-facing Agent Card
-- the workbook claimability and publish-ready surfaces resolve cleanly
-- the workbook now acts as a publication-clean companion artifact rather than a partially patched workbook
-- the release package now includes machine-readable manifest and hash surfaces suitable for GitHub releases and website distribution
-
----
-
-### Validation Status
-
-The v9.0 line is best described as:
-
-- **freeze-ready core canon line**
-- **core synced document/workbook set complete**
-- **not yet a full replay-grade bundle by itself**
-
-Empirical validation, replay-grade validator/schema publication, and any optional executable companion assets remain separate layers of work.
-
----
-
-### Further Work Beyond the Core Freeze Line
-
-Before claiming a full replay-grade public bundle, the following remain relevant:
-
-- validator/schema publication and pinning
-- optional executable harness assets where applicable
-- inter-rater reliability testing
-- controlled pilots and broader field validation
-- additional measurement validation for operational-readiness claims
-
----
-
-### Ethical Decision Cascade (Canonical)
-
-```text
-NCRC → TRC → Containment → RLS → UCI / HOI
-```
-
----
-
-## v8.6 — Canon Final Release
-Release date: 2026-03-15
-
-### Summary
-
-Ripple_Logic v8.6 represented the first architecturally complete specification of the Ripple_Logic ethical decision system.
-
-This release defined the system architecture, ethical decision cascade, and operational scoring framework across a coherent five-artifact package.
-
-It was intended for:
-
-- academic peer review
-- open-source inspection
-- Tier-1 and Tier-2 pilot testing
-
-It was not yet validated for unrestricted real-world deployment.
-
----
-
-### Included Components
-
-- Ripple_Logic Foundation Canon v8.6
-- Sentience Gradient Protocol (SGP) v4.3
-- ripple.md Standard v2.0
-- Ripple_Logic Agent System v8.6
-- Ripple Aligners Workbook v2.2
-
----
-
-### Validation Status
-
-The system was considered architecturally complete, including:
-
-- defined ethical decision cascade
-- operational ripple scoring workflow
-- multi-union welfare modeling
-- coherent five-artifact architecture
-
-However, the system still required empirical validation before broader operational deployment.
-
----
-
-### Further Work Required
-
-Before broader deployment, the following work remained necessary:
-
-- inter-rater reliability testing
-- standardized Union Coherence Index (UCI) measurement instruments
-- controlled pilot studies
-- real-world deployment validation
-
----
-
-### Ethical Decision Cascade (Canonical)
-
-```text
-NCRC → TRC → Containment → RLS → UCI / HOI
-```
+These are historical artifacts and should not be treated as the current governing release.
