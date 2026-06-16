@@ -1,5 +1,3 @@
-# RippleLogic Release History
-
 # Release History
 
 ## Core Release 2026.06 — Canon v10.7.4 + SGP v5.4.4
@@ -25,7 +23,7 @@ This release applies the Root Reality Doctrine Patch and final Canon/SGP precisi
 
 Architecture-complete within Tier 1-3. Not empirical validation, ProofPack readiness, Tier 4 readiness, legal certification, deployment certification, completed biological SGP measurement, current-AI sentience, solved AI alignment, or deterministic framework selection for non-decisive runs.
 
-This file summarizes major public release milestones for the RippleLogic / MathGov repository. Historical release folders remain preserved for transparency. The current governing release is v10.6 + SGP v5.3.
+...
 
 ## v10.6 + SGP v5.3 — Core-Foundation Release
 
