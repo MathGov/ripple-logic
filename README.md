@@ -4,131 +4,170 @@ Canonical decision operating system for rights-constrained, ripple-aware ethical
 
 ## Current Release
 
-**Latest core release:** MathGov / RippleLogic v10.6 + SGP v5.3
-**Release status:** Tier 1–3 core-foundation and synchronized companion package
-**Release folder:** `releases/v10.6_2026-06-05/`
-**GitHub release tag:** `v10.6-sgp-v5.3`
-**Canonical sites:** ripplelogic.org · mathgov.org
-**Author / lead architect:** James McGaughran · ORCID: 0009-0005-3324-7290
+**Latest core release:** MathGov / RippleLogic Core Release 2026.06
+**Release status:** Final Locked · Tier 1-3 architecture-complete · Public review and pilot/shadow-mode ready
 
-Start here:
+**Core anchors:**
 
-`releases/v10.6_2026-06-05/README.md`
+* **RippleLogic Canon:** v10.7.4
+* **Sentience Gradient Protocol / SGP:** v5.4.4
+
+**Full synchronized package:**
+
+* ripple.md Standard: v3.5.4
+* RippleLogic Agent System: v10.7.4
+* Foundations Primer: v2.5.4
+* RippleLogic Aligners Sheet: v3.5.5
+
+**Release folder:** [`releases/v10.7.4_2026-06-16`](releases/v10.7.4_2026-06-16)
+
+**GitHub release tag:** `v2026.06-canon-10.7.4-sgp-5.4.4`
 
 ## What RippleLogic Is
 
-RippleLogic is a general-purpose ethical operating system for consequential decision-making. It evaluates candidate actions across nested stakeholder scopes while enforcing non-compensatory rights floors, catastrophic tail-risk control, containment against larger-system degradation, auditable welfare ranking, and structured review.
+RippleLogic is the MathGov decision engine: a rights-first, tail-risk-bounded, containment-aware framework for auditable decision-making across governance, AI alignment, institutions, and high-stakes public choices.
 
-The framework is designed for governance, public policy analysis, AI alignment, institutional decision-making, agent governance, and other high-stakes environments where ethical reasoning must be rights-respecting, evidence-aware, uncertainty-aware, and inspectable.
+It asks a simple sequence:
 
-MathGov is the broader framework lineage and ecosystem. RippleLogic is the canonical decision-engine release line.
+1. Do not violate non-compensatory rights floors.
+2. Do not pass unacceptable catastrophic tail-risk thresholds.
+3. Do not improve a local system by degrading its containing systems.
+4. Rank only the surviving options through auditable welfare and structural analysis.
+5. Record the decision so it can be reviewed, challenged, replayed, and improved.
 
-## Current v10.6 / SGP v5.3 Package
+RippleLogic does not replace human judgment, law, democratic legitimacy, scientific review, or professional responsibility. It makes consequential judgment more transparent, less arbitrary, more evidence-aware, and more accountable to the full field of consequences.
 
-The current release includes:
+## Reality-Contact Doctrine
 
-* `RippleLogic Canon v10.6`: governing decision architecture
-* `Sentience Gradient Protocol (SGP) v5.3`: moral-status and protection protocol
-* `ripple.md Standard v3.4`: portable assurance wrapper
-* `RippleLogic Agent System v10.6`: AI/hybrid-agent runtime governance specification
-* `Foundations Primer v2.4`: human-readable doorway into MathGov / RippleLogic / SGP
-* `RippleLogic Aligners Sheet v3.4`: worked-run spreadsheet exemplar
-* Release-support reports, SHA-256 manifests, and verification outputs
+MathGov defines reality, for decision-making, as the evaluator-independent field of constrained structures that, under transition, produce consequences.
 
-The strict governing core is:
+A decision never captures the whole territory. It captures a reality surface. Evidence is traceable contact with that surface. Claims must remain inside the boundary of that contact. Where the surface is insufficient for a material claim, the system must narrow, escalate, handle conservatively, or refuse.
 
-* `releases/v10.6_2026-06-05/GOVERNING_CORE/RippleLogic_v10.6_Canon_FINAL_RELEASE_READY.docx`
-* `releases/v10.6_2026-06-05/GOVERNING_CORE/SGP_v5.3_FINAL_RELEASE_READY.docx`
+Public teaching line:
 
-For this release, Markdown files are GitHub-readable derivatives. If a Markdown rendering differs from the corresponding DOCX, the manifest-pinned DOCX controls.
+> Reality is the territory. Structure is its arrangement. Constraint is its law. Consequence is its answer. Evidence is our contact. Ethics is how we act without pretending the surface is the whole.
 
-## The Core Decision Cascade
+## Core Architecture
 
-RippleLogic filters and ranks options in a fixed lexicographic order:
+RippleLogic evaluates candidate actions through a strict cascade:
 
-`NCRC → TRC → Containment → RLS → UCI / HOI`
+```text
+Stakeholder / Union Mapping
+        ↓
+NCRC — Non-Compensatory Rights Constraint
+        ↓
+TRC — Tail-Risk Constraint
+        ↓
+Containment Gate
+        ↓
+RLS — RippleLogic Score
+        ↓
+UCI / HOI — Structural Diagnostics
+        ↓
+PCC / NCAR — Audit, Provenance, and Learning
+```
 
-* **NCRC** removes options that violate non-compensatory rights floors.
-* **TRC** removes options with unacceptable catastrophic tail-risk exposure.
-* **Containment** blocks local optimization that degrades larger containing systems.
-* **RLS** ranks only the surviving selectable options across a 7 × 7 welfare matrix.
-* **UCI / HOI** provide structural diagnostics, tie-breaking support, and long-run integrity monitoring.
+Rights, catastrophic risk, and containment are checked before benefit scoring. A high welfare score cannot compensate for a rights-floor breach, catastrophic-risk failure, or containment failure.
 
-Later-stage gains cannot compensate for earlier-stage failure.
+## MathGov System Stack
+
+**MathGov** is the broader ethical operating-system architecture.
+**RippleLogic** is its decision engine.
+**SGP** is its moral-status and protection protocol.
+**ripple.md** is the portable assurance wrapper.
+**RL_Agent** is the agent-control specification.
+**The Foundations Primer** is the human doorway.
+**The Aligners Sheet** is the worked-run exemplar and implementation aid.
+
+## Release Files
+
+The latest release folder contains:
+
+* `RippleLogic_v10.7.4_Canon.docx`
+* `SGP_v5.4.4.docx`
+* `ripple_md_Standard_v3.5.4.docx`
+* `ripple_md_Standard_v3.5.4.md`
+* `RippleLogic_Agent_System_v10.7.4.docx`
+* `RippleLogic_Foundations_Primer_v2.5.4.docx`
+* `RippleLogic_Aligners_Sheet_v3.5.5.xlsx`
+* `README_RELEASE.md`
+* `CANON_SGP_PRECISION_HARDENING_REPORT.md`
+* `SHA256SUMS.txt`
+* `VERIFY_RELEASE.py`
+
+## Verification
+
+From inside the extracted release folder, run:
+
+```bash
+python VERIFY_RELEASE.py
+```
+
+On Windows, if needed:
+
+```bash
+py VERIFY_RELEASE.py
+```
+
+The verifier checks:
+
+* SHA-256 manifest integrity
+* DOCX/XLSX OOXML container integrity
+* workbook formula-error-token absence
+* workbook internal sanity status
+* Canon/SGP precision-hardening tokens
+* SPR terminology standardization as Stewardship/Power Readiness
 
 ## Claim Boundary
 
-This repository currently provides a Tier 1–3 framework specification and synchronized companion package.
+This release is architecture-complete within its declared Tier 1-3 scope.
 
-It does **not** claim:
+It is **not**:
 
+* empirical validation
+* ProofPack readiness
 * Tier 4 readiness
-* ProofPack completeness
-* Empirical validation
-* Legal-compliance certification
-* Deployment-readiness certification
-* Machine-verifiable ecosystem completeness
-* Completed biological SGP measurement
-* Current-AI sentience
+* legal certification
+* deployment certification
+* completed biological SGP measurement
+* current-AI sentience
+* solved AI alignment
+* deterministic framework selection for non-decisive runs
 
-Stronger claims require separately published evidence, schemas, validators, reference calculators, test vectors, replay instructions, legal localization, pilots, independent review, and/or domain-specific validation.
+Architecture-final is not ProofPack-final. This release is the stable foundation for validation, tooling, pilots, independent critique, and replayable evidence.
 
 ## Recommended Reading Path
 
-For the current release:
+1. Start with `RippleLogic_Foundations_Primer_v2.5.4.docx`.
+2. Read `RippleLogic_v10.7.4_Canon.docx` for the governing decision architecture.
+3. Read `SGP_v5.4.4.docx` for moral-status and protection handling.
+4. Use `ripple_md_Standard_v3.5.4.md` or `.docx` for assurance wrappers and Decision Notes.
+5. Use `RippleLogic_Agent_System_v10.7.4.docx` for AI/hybrid agent governance.
+6. Use `RippleLogic_Aligners_Sheet_v3.5.5.xlsx` as a worked-run exemplar, not as certification.
 
-1. Start with the Foundations Primer for orientation.
-2. Read the RippleLogic Canon for the governing decision architecture.
-3. Read SGP for moral-status and protection handling.
-4. Use ripple.md when implementing assurance wrappers or decision-note protocols.
-5. Use the Agent System when building or evaluating RippleLogic-governed AI/hybrid agents.
-6. Use the Aligners Sheet only as a worked-run exemplar, not as a validator or deployment certification.
+## Next Phase
 
-## Integrity Verification
+The next phase is not stronger claims. It is stronger evidence.
 
-From the repository root:
+Future work includes:
 
-```bash
-sha256sum -c releases/v10.6_2026-06-05/RELEASE_INTEGRITY/SHA256_MANIFEST_GITHUB_FINAL.txt
-```
+* ProofPack schemas
+* reference calculator
+* machine-readable test vectors
+* semantic validator
+* independent replay evidence
+* pilot/shadow-mode runs
+* biological SGP annexes
+* public critique and review
+* tooling for Decision Notes, PCC records, and audit trails
 
-Office artifacts were checked for valid OOXML ZIP integrity. DOCX comments and tracked-change insertion/deletion/move markers were scanned. The workbook was imported and formula-error scanned.
+## Author / Lead Architect
 
-## Repository Structure
+James McGaughran
+MathGov Institute for Ethical Systems Design
+ORCID: 0009-0005-3324-7290
 
-```text
-.github/
-examples/
-releases/
-  v7.4.5_2026-01-25/
-  v8.1_2026-02-14/
-  v8.5.3_2026-02-20/
-  v8.6_2026_03_15/
-  v9.0_2026-03-24/
-  v9.5_2026-04-16/
-  v9.6.4_2026-05-01/
-  v10.6_2026-06-05/
-ripplelogic-proofpack-lite/
-README.md
-RELEASE_HISTORY.md
-RELEASE_MANIFEST.json
-RELEASE_POLICY.md
-START_HERE.md
-VALIDATION_STATUS.md
-```
+Canonical sites:
 
-## License
-
-See `LICENSE` for repository-level licensing and `releases/v10.6_2026-06-05/LICENSE_NOTICE.md` for the current release notice.
-
-Unless otherwise stated in an individual artifact, the v10.6 / SGP v5.3 specification text and documentation are provided under Creative Commons Attribution 4.0 International (CC BY 4.0). Future software tooling, validators, reference calculators, schemas, scripts, or implementation code should use an explicit software license, recommended default: Apache License 2.0.
-
-## Citation
-
-See `CITATION.cff` and the release-specific citation file in:
-
-`releases/v10.6_2026-06-05/CITATION.cff`
-
-## About
-
-RippleLogic is part of the MathGov framework: a rights-constrained, ripple-aware ethical decision operating system for governance, AI alignment, and institutional decision-making.
+* https://ripplelogic.org
+* https://mathgov.org
