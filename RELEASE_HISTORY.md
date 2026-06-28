@@ -1,5 +1,45 @@
 # Release History
 
+## v11.4 — MathGov Core Final Complete Ready
+
+**Release path:** [`releases/v11.4_2026_06_28/`](releases/v11.4_2026_06_28/)
+**Status:** Current release
+**Release type:** Tier 1-3 source/framework release
+
+MathGov Core v11.4 is the current complete source/framework release for the MathGov framework and RippleLogic decision architecture.
+
+It consolidates the current public cascade:
+
+**Reality Grounding → Rights Floor → TRC → CSV → RLS**
+
+Formal shorthand:
+
+**RG/RSG → RF/NCRC → TRC → CSV → RLS**
+
+### Main contents
+
+* RippleLogic Canon v11.4
+* SGP v6.4, Sentience Gradient Protocol
+* RippleLogic Agent System v11.4
+* ripple.md Standard v4.4
+* Foundations Primer v3.4
+* Cascade and CSV standards
+* Aligners Sheet worked-run companion
+* validation scaffolding
+* release support files
+* claims/non-claims
+* roadmap
+* reviewer guidance
+
+### Release status
+
+This release is suitable for public review, controlled external review, teaching, implementation study, and future validation planning.
+
+It does not claim empirical validation, legal certification, deployment certification, ProofPack readiness, reference-calculator status, or automated moral truth.
+
+---
+
+
 This file summarizes major public release milestones for the RippleLogic / MathGov repository. Historical release folders remain preserved for transparency.
 
 The current governing release is:
