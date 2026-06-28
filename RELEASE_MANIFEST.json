@@ -1,54 +1,32 @@
 {
-"latest_release": "v2026.07-canon-10.8-sgp-5.5",
-"latest_release_name": "MathGov / RippleLogic Core Release 2026.07",
-"latest_release_folder": "releases/v10.8_2026-06-19/",
-"release_date": "2026-06-19",
-"release_status": "Final public documentation/source release; Tier 1-3 implementation framework; public review and shadow-mode pilot ready",
-"component_pins": {
-"ripplelogic_canon": "v10.8",
-"sentience_gradient_protocol": "v5.5",
-"ripple_md_standard": "v3.6",
-"ripplelogic_agent_system": "v10.8",
-"foundations_primer": "v2.6",
-"ripplelogic_aligners_sheet": "v3.6"
-},
+"current_release": {
+"version": "11.4",
+"name": "MathGov Core v11.4 Final Complete Ready",
+"release_path": "releases/v11.4_2026_06_28/",
+"status": "Tier 1-3 source/framework release",
+"cascade": "Reality Grounding -> Rights Floor -> TRC -> CSV -> RLS",
+"formal_shorthand": "RG/RSG -> RF/NCRC -> TRC -> CSV -> RLS",
 "governing_core": [
-"releases/v10.8_2026-06-19/docs/canon/RippleLogic_v10.8_Canon.md",
-"releases/v10.8_2026-06-19/docs/canon/RippleLogic_v10.8_Canon.docx",
-"releases/v10.8_2026-06-19/docs/sgp/SGP_v5.5.md",
-"releases/v10.8_2026-06-19/docs/sgp/SGP_v5.5.docx"
+"RippleLogic Canon v11.4",
+"SGP v6.4, Sentience Gradient Protocol"
 ],
-"synchronized_companions": [
-"releases/v10.8_2026-06-19/docs/standards/ripple_md_Standard_v3.6.md",
-"releases/v10.8_2026-06-19/docs/standards/ripple_md_Standard_v3.6.docx",
-"releases/v10.8_2026-06-19/docs/agents/RippleLogic_Agent_System_v10.8.md",
-"releases/v10.8_2026-06-19/docs/agents/RippleLogic_Agent_System_v10.8.docx",
-"releases/v10.8_2026-06-19/docs/primer/RippleLogic_Foundations_Primer_v2.6.md",
-"releases/v10.8_2026-06-19/docs/primer/RippleLogic_Foundations_Primer_v2.6.docx",
-"releases/v10.8_2026-06-19/docs/aligners/RippleLogic_Aligners_Sheet_v3.6.xlsx"
+"recommended_use": [
+"public review",
+"controlled external review",
+"teaching",
+"implementation study",
+"validation study design",
+"future reference-calculator development"
 ],
-"verification": {
-"verify_release": "releases/v10.8_2026-06-19/release/VERIFY_RELEASE.md",
-"sha256sums": "releases/v10.8_2026-06-19/release/SHA256SUMS.txt"
-},
-"method": {
-"public_method": "Reality Grounding -> Rights Floor -> Tail-Risk Bound -> Containment -> Ripple Score",
-"formal_method": "RSG -> NCRC -> TRC -> Containment -> RLS",
-"category_grounding": "Category Grounding and Primitive Audit are required subdisciplines of Reality Grounding when material.",
-"uci_hoi": "UCI/HOI are structural diagnostics inside Containment when material and special-case residual tie-break or monitoring evidence only when RLS is tied, close, uncertainty-overlapped, or non-decisive."
-},
-"claim_boundary": {
-"tier_1_3_framework_specification": true,
-"shadow_mode_pilot_ready": true,
-"tier_4_ready": false,
-"proofpack_complete": false,
-"empirically_validated": false,
-"legal_certification": false,
-"deployment_certification": false,
-"completed_biological_sgp_measurement": false,
-"machine_verifiable_ecosystem_complete": false,
-"current_ai_sentience_claim": false,
-"solved_ai_alignment": false,
-"deterministic_framework_selection_for_non_decisive_runs": false
+"non_claims": [
+"empirical validation",
+"legal certification",
+"deployment certification",
+"ProofPack readiness",
+"Tier 4 readiness",
+"reference-calculator status",
+"automated moral truth",
+"policy authorization"
+]
 }
 }
