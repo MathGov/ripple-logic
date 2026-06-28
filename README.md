@@ -30,7 +30,7 @@ This is a **Tier 1-3 source/framework release** for public review, controlled ex
 
 It does **not** claim empirical validation, legal certification, deployment certification, ProofPack readiness, reference-calculator status, or automated moral truth.
 
-HISTORY of Versions
+Past Versions
 
 (releases/v10.8_2026-06-19/README.md)
 
