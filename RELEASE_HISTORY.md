@@ -1,6 +1,36 @@
 # Release History
 
-## v11.4 — MathGov Core Final Complete Ready
+## v11.4_2026_07_02 — MathGov Core v11.4 Final Complete Ready
+
+**Release date:** 2026-07-02  
+**Status:** Current canonical release  
+**Release path:** `releases/v11.4_2026_07_02/`
+
+### Summary
+
+MathGov Core v11.4 strengthens the public framing, governance posture, and scientific humility of the MathGov / RippleLogic framework.
+
+This release presents MathGov not as ownership of a final answer, but as a proposed formalization of recurring principles of flourishing governance, drawn from ethics, systems science, democratic theory, rights protection, ecology, AI alignment, risk governance, and lived human experience.
+
+### Current cascade
+
+`RG → RF → TRC → CSV → RLS`
+
+Plain-language version:
+
+1. Ground reality.
+2. Protect rights.
+3. Bound ruin.
+4. Preserve the structure.
+5. Score the ripples.
+
+### Claim boundary
+
+This is a Tier 1-3 source/framework release for public review, controlled external review, teaching, implementation study, tooling development, and independent critique.
+
+It does not claim empirical validation, legal certification, deployment certification, ProofPack completeness, reference-calculator status, automated moral truth, solved AI alignment, or Tier 4 readiness.
+
+## v11.4 — MathGov Core Complete Ready
 
 **Release path:** [`releases/v11.4_2026_06_28/`](releases/v11.4_2026_06_28/)
 **Status:** Current release
