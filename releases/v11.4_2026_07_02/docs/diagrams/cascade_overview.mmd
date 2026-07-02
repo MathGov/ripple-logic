@@ -1,0 +1,10 @@
+flowchart LR
+    GEN[Computed/generated possibilities<br/>not selectable by default] --> A[Candidate decision options] --> RG[RG: Reality Grounding<br/>claim support and evidence boundary]
+    RG --> RF[RF: Rights Floor<br/>NCRC non-compensatory predicate]
+    RF --> TRC[TRC: Tail-Risk Constraint<br/>ruin cannot be averaged away]
+    TRC --> CSV[CSV: Containment and Structural Viability<br/>contain harms and verify structure]
+    CSV --> RLS[RLS: RippleLogic Score<br/>rank selectable residual welfare]
+    RLS --> OUT[Decision note / PCC / monitor / revise]
+    RF -. fail .-> STOP1[Refuse / redesign / escalate]
+    TRC -. fail .-> STOP2[Refuse / redesign / emergency-provisional]
+    CSV -. fail .-> STOP3[Refuse / contain / redesign]

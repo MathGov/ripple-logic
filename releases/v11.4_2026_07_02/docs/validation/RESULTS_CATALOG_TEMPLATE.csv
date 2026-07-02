@@ -1,0 +1,2 @@
+run_id,date,framework_version,case_name,domain,tier,reviewers,gate_status,rls_status,framework_verdict,authority_selection,independent_replay_status,notes
+example-001,YYYY-MM-DD,v11.4,example case,example domain,Tier 2,reviewer names,pass/non-decisive,non-decisive,REFUSE_DETERMINISTIC_SELECTION,documented separately,not_started,template row only

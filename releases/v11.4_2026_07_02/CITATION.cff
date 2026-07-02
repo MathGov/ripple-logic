@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "MathGov Core Release 2026.09"
+message: "If you use this framework, cite the MathGov Core Release and the RippleLogic Canon."
+type: software
+authors:
+  - family-names: McGaughran
+    given-names: James
+version: "v11.4"
+date-released: "2026-06-23"
+repository-code: "https://github.com/"
