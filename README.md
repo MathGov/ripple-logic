@@ -4,9 +4,35 @@ Canonical decision operating system for rights-constrained, ripple-aware ethical
 
 ...
 
-Start here:
+# MathGov / RippleLogic
 
-[Start with the release README](releases/v10.8_2026-06-19/README.md)
+**Current release:** MathGov Core v11.4 Final Complete Ready  
+**Release path:** [`releases/v11.4_2026_06_28/`](releases/v11.4_2026_06_28/)
+
+MathGov is an open ethical-governance framework using the RippleLogic decision architecture:
+
+**Reality Grounding → Rights Floor → TRC → CSV → RLS**
+
+RippleLogic is a rights-constrained, tail-risk-aware, structurally viable, auditable decision architecture for governance, AI alignment, institutional decision-making, and high-consequence choice.
+
+## Start here
+
+- [`MATHGOV_ESSENTIALS.md`](releases/v11.4_2026_06_28/MATHGOV_ESSENTIALS.md) — short orientation.
+- [`README.md`](releases/v11.4_2026_06_28/README.md) — full release overview.
+- [`docs/canon/`](releases/v11.4_2026_06_28/docs/canon/) — RippleLogic Canon v11.4.
+- [`docs/sgp/`](releases/v11.4_2026_06_28/docs/sgp/) — Sentience Gradient Protocol v6.4.
+- [`docs/agents/`](releases/v11.4_2026_06_28/docs/agents/) — RippleLogic Agent System.
+- [`docs/aligners/`](releases/v11.4_2026_06_28/docs/aligners/) — Aligners Sheet worked-run companion.
+
+## Release status
+
+This is a **Tier 1-3 source/framework release** for public review, controlled external review, teaching, and implementation study.
+
+It does **not** claim empirical validation, legal certification, deployment certification, ProofPack readiness, reference-calculator status, or automated moral truth.
+
+Past Versions
+
+(releases/v10.8_2026-06-19/README.md)
 
 ## Core Anchors
 

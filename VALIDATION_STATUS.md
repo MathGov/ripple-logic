@@ -1,5 +1,16 @@
 # Validation Status
 
+**Current release:** MathGov Core v11.4 Final Complete Ready  
+**Release path:** `releases/v11.4_2026_06_28/`
+
+MathGov Core v11.4 is architecture/specification-ready for public review, controlled external review, teaching, implementation study, and validation study design.
+
+It is not an empirically validated decision instrument, legal certification system, deployment certification system, reference calculator, ProofPack, Tier 4 package, or automated moral-truth system.
+
+The Aligners Sheet is a worked-run/training companion, not a validator.
+
+Future validation work includes a reference calculator, schemas, test vectors, independent workbook formula audit, RLS inter-rater reliability studies, UCI/HOI measurement annexes, SGP biological/artificial evaluation annexes, pilot protocols, and external review.
+
 Current Release
 
 MathGov / RippleLogic Core Release 2026.07 — Canon v10.8 + SGP v5.5
