@@ -1,0 +1,278 @@
+package: MathGov_Core_2026_09_GitHub_Release_v12_4_SGP_V8_3_FINAL_WORLD_INTRODUCTION_GITHUB_PILOT_READY
+release_line: MathGov Core Release 2026.09 v12.4 / SGP v8.3 - Calculability, Type-Integrity, and Cross-Artifact Synchronization
+  Public Research Source Release
+release_train: '2026.09'
+publication_date: '2026-07-20'
+repository: https://github.com/MathGov/ripple-logic
+license: Apache-2.0
+governing_cascade: RG -> RF/NCRC -> TRC -> CSV -> RLS
+principal_governing_sources:
+  RippleLogic Canon: v12.4
+  SGP: v8.3
+component_versions:
+  ripple.md Standard: v5.3
+  RippleLogic Agent System: v12.2
+  CSV Gate Standard: v2.2
+  RippleLogic Cascade Standard: v2.4
+  Reproducibility and Use Standard: v1.2
+  WDBIP: v1.4
+  RLS Validation Protocol: v2.4
+  RLS Validation Workbook: v0.2
+  Foundations Primer: v4.2
+  Public Introduction: v12.4
+  Physical/Causal Admissibility Evidence Profile: v2.1
+  Methodological Falsifiability and Dependency Integrity Standard: v2.1
+  Source-Coupling Integrity Standard: v2.1
+  RippleLogic Aligners Sheet: v5.4
+selected_core_15:
+  docx_count: 14
+  xlsx_count: 1
+  directory: core_15/
+  coordination_map: docs/CORE_COMPONENT_MAP.md
+machine_interfaces:
+  run_schema: schemas/mathgov_run_record_v2.schema.json
+  run_validator: release/VALIDATE_MATHGOV_RUN.py
+  state_registry: docs/implementation/CANONICAL_STATE_REGISTRY_v1.0.yaml
+  transition_matrix: docs/implementation/STATE_TRANSITION_MATRIX_v1.0.json
+  sgp_rmcp_schema: schemas/sgp_rmcp_record_v8_3.schema.json
+  wdbip_schema: docs/standards/wdbip/wdbip_record_v1_4.schema.json
+  wdbip_validator: docs/standards/wdbip/validate_wdbip_v1_4.py
+verification:
+  master_verifier: release/VERIFY_RELEASE.py
+  hash_ledger: release/SHA256SUMS.txt
+  baseline_loss_audit: release/CANON_SGP_BASELINE_LOSS_AUDIT_v12_4_v8_3.md
+  final_report: release/FINAL_VERIFICATION_REPORT.md
+  citation_verification_report: release/CITATION_VERIFICATION_REPORT.md
+  feedback_disposition_report: release/GPTPRO_FEEDBACK_DISPOSITION_AND_RELEASE_LOCK_REPORT_v12_4_v8_3.md
+  state_semantics_and_non_dilution: release/VERIFY_STATE_SEMANTICS_AND_NON_DILUTION.py
+  fruition_finalization_report: release/FRUITION_FINALIZATION_REPORT_v12_4_v8_3.md
+claim_boundary: Release, structural, semantic, formula-interface, schema, state, and procedural conformance is not empirical
+  validation, evidence truth, legal authority, physical or medical safety, consciousness detection, metaphysical proof, framework
+  superiority, moral truth, production deployment certification, or Tier 4.
+active_files:
+- file: .github/ISSUE_TEMPLATE/calculation_or_workbook_issue.md
+- file: .github/ISSUE_TEMPLATE/claim_boundary_issue.md
+- file: .github/ISSUE_TEMPLATE/release_integrity_issue.md
+- file: .github/ISSUE_TEMPLATE/source_coupling_issue.md
+- file: .github/ISSUE_TEMPLATE/terminology_or_cascade_issue.md
+- file: .github/PULL_REQUEST_TEMPLATE.md
+- file: .github/workflows/release-verify.yml
+- file: ARTIFACT_ROLE_MAP.md
+- file: CAPABILITIES_AND_BOUNDARIES.md
+- file: CHANGELOG.md
+- file: CITATION.cff
+- file: CLAIMS_AND_NONCLAIMS.md
+- file: CODE_OF_CONDUCT.md
+- file: CONTRIBUTING.md
+- file: FUTURE_WORK_ROADMAP.md
+- file: GLOSSARY_AND_ACRONYM_INDEX.md
+- file: GOVERNANCE.md
+- file: LICENSE
+- file: LINEAGE.md
+- file: MATHGOV_ESSENTIALS.md
+- file: MISSING_BY_DESIGN.md
+- file: NOTICE
+- file: QUICKSTART.md
+- file: README.md
+- file: RELEASE_CLAIMS_AND_NON_CLAIMS.md
+- file: REVIEWER_QUICK_START.md
+- file: ROADMAP.md
+- file: SECURITY.md
+- file: SOURCE_HIERARCHY.md
+- file: START_HERE.md
+- file: START_HERE_RELEASE_INDEX_v12.4.md
+- file: VALIDATION_STATUS.md
+- file: VERIFICATION_LOG.md
+- file: VERSION_MANIFEST.yaml
+- file: core_15/CSV_Gate_Standard_v2.2.docx
+- file: core_15/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_4.docx
+- file: core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.2.docx
+- file: core_15/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.1.docx
+- file: core_15/Physical_Causal_Admissibility_Evidence_Profile_v2.1.docx
+- file: core_15/README.md
+- file: core_15/RippleLogic_Agent_System_v12.2.docx
+- file: core_15/RippleLogic_Aligners_Sheet_v5.4.xlsx
+- file: core_15/RippleLogic_Cascade_Standard_v2.4.docx
+- file: core_15/RippleLogic_Foundations_Primer_v4.2.docx
+- file: core_15/RippleLogic_RLS_Validation_Protocol_v2_4.docx
+- file: core_15/RippleLogic_v12.4_Canon.docx
+- file: core_15/SGP_v8.3.docx
+- file: core_15/Source_Coupling_Integrity_Standard_v2.1.docx
+- file: core_15/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.4.docx
+- file: core_15/ripple_md_Standard_v5.3.docx
+- file: docs/CORE_COMPONENT_MAP.docx
+- file: docs/CORE_COMPONENT_MAP.md
+- file: docs/CORE_COMPONENT_MAP.pdf
+- file: docs/agents/RippleLogic_Agent_System_v12.2.docx
+- file: docs/agents/RippleLogic_Agent_System_v12.2.md
+- file: docs/agents/RippleLogic_Agent_System_v12.2.pdf
+- file: docs/aligners/RippleLogic_Aligners_Sheet_v5.4.xlsx
+- file: docs/assurance/AGENTIC_SECURITY_ACCEPTANCE_PACK_TEMPLATE.md
+- file: docs/assurance/ALIGNMENT_SCOPE_AND_CONTROL_LAYER_BOUNDARY.md
+- file: docs/assurance/DISTRIBUTION_SHIFT_AND_REQUALIFICATION_PROTOCOL.md
+- file: docs/assurance/DOMAIN_PROFILE_TEMPLATE.md
+- file: docs/assurance/GOVERNANCE_PARAMETER_ATTACK_MODEL.md
+- file: docs/assurance/INDEPENDENT_REPLAY_PACKET_TEMPLATE.md
+- file: docs/assurance/MEASUREMENT_AND_PARAMETER_MATURITY_REGISTER_v1.0.md
+- file: docs/assurance/PARAMETER_AND_AUTHORITY_LOCK_RECORD.schema.yaml
+- file: docs/assurance/README.md
+- file: docs/assurance/REFERENCE_SEMANTICS_ROADMAP.md
+- file: docs/assurance/RELEASE_REALITY_REGISTER_v1.0.yaml
+- file: docs/assurance/SCIENTIFIC_MATURITY_LADDER.md
+- file: docs/assurance/TRIGGERED_RECORD_SURFACE_MATRIX_v1.0.md
+- file: docs/canon/AD_49_Cell_Welfare_Dictionary.csv
+- file: docs/canon/CANONICAL_MAP.md
+- file: docs/canon/RippleLogic_v12.4_Canon.docx
+- file: docs/canon/RippleLogic_v12.4_Canon.md
+- file: docs/canon/RippleLogic_v12.4_Canon.pdf
+- file: docs/diagrams/artifact_hierarchy.mmd
+- file: docs/diagrams/cascade_overview.mmd
+- file: docs/diagrams/decision_record_lifecycle.mmd
+- file: docs/examples/PCC_LITE_WORKED_EXAMPLE_REUSABLE_CUPS.md
+- file: docs/examples/PC_AEP_HIGH_STAKES_WORKED_EXAMPLE.md
+- file: docs/examples/TIER1_TWO_MINUTE_RIPPLE_CHECK_EXAMPLE.md
+- file: docs/examples/ai_tutor_adoption_example.md
+- file: docs/examples/congestion_pricing_example.md
+- file: docs/examples/remote_work_policy_example.md
+- file: docs/examples/reproducibility/REPRODUCIBLE_RUN_WALKTHROUGH_v2.md
+- file: docs/examples/reproducibility/reusable_cups_run_v2.json
+- file: docs/guides/COMPUTABILITY_VS_REALIZABILITY_BRIDGE.md
+- file: docs/guides/EMERGENCY_MODE_LEAST_RIGHTS_INFRINGING_PROTOCOL.md
+- file: docs/guides/GATE_BOUNDARY_DISCRIMINATOR_TRC_CSV_RLS.md
+- file: docs/guides/HDW_PARTICIPATION_AND_CAPTURE_GUIDE.md
+- file: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_4.docx
+- file: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_4.md
+- file: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_4.pdf
+- file: docs/guides/META_UNION_FIREWALL.md
+- file: docs/guides/PCC_PROFILE_GUIDE.md
+- file: docs/guides/PHYSICAL_ADMISSIBILITY_AND_EXECUTION_BOUNDARY.md
+- file: docs/guides/PUBLICATION_LANGUAGE.md
+- file: docs/guides/README.md
+- file: docs/guides/RIPPLELOGIC_IMPLEMENTATION_SCAFFOLDING.md
+- file: docs/guides/RIPPLELOGIC_PLAIN_ENGLISH_SUMMARY.md
+- file: docs/guides/STEWARDSHIP_EVASION_AUDIT.md
+- file: docs/guides/SUBGROUP_DISCOVERY_AND_WORST_AFFECTED_GROUPS.md
+- file: docs/implementation/CANONICAL_STATE_REGISTRY_v1.0.yaml
+- file: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.2.docx
+- file: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.2.md
+- file: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.2.pdf
+- file: docs/implementation/NORMATIVE_KERNEL_INDEX_v1.0.yaml
+- file: docs/implementation/STATE_TRANSITION_MATRIX_v1.0.json
+- file: docs/implementation/STATE_TRANSITION_MATRIX_v1.0.md
+- file: docs/primer/RippleLogic_Foundations_Primer_v4.2.docx
+- file: docs/primer/RippleLogic_Foundations_Primer_v4.2.md
+- file: docs/primer/RippleLogic_Foundations_Primer_v4.2.pdf
+- file: docs/research/RIPPLELOGIC_COMPARATIVE_POSITIONING_AND_RELATED_WORK.md
+- file: docs/sgp/SGP_v8.3.docx
+- file: docs/sgp/SGP_v8.3.md
+- file: docs/sgp/SGP_v8.3.pdf
+- file: docs/sgp/SGP_v8.3_Improvement_Map.md
+- file: docs/standards/CSV_Gate_Standard_v2.2.docx
+- file: docs/standards/CSV_Gate_Standard_v2.2.md
+- file: docs/standards/CSV_Gate_Standard_v2.2.pdf
+- file: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.1.docx
+- file: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.1.md
+- file: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.1.pdf
+- file: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.docx
+- file: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.md
+- file: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.pdf
+- file: docs/standards/RippleLogic_Cascade_Standard_v2.4.docx
+- file: docs/standards/RippleLogic_Cascade_Standard_v2.4.md
+- file: docs/standards/RippleLogic_Cascade_Standard_v2.4.pdf
+- file: docs/standards/Source_Coupling_Integrity_Standard_v2.1.docx
+- file: docs/standards/Source_Coupling_Integrity_Standard_v2.1.md
+- file: docs/standards/Source_Coupling_Integrity_Standard_v2.1.pdf
+- file: docs/standards/ripple_md_Standard_v5.3.docx
+- file: docs/standards/ripple_md_Standard_v5.3.md
+- file: docs/standards/ripple_md_Standard_v5.3.pdf
+- file: docs/standards/wdbip/LICENSE
+- file: docs/standards/wdbip/README.md
+- file: docs/standards/wdbip/WDBIP_DIMENSION_SET_MIGRATION_STANDARD_v1.0.md
+- file: docs/standards/wdbip/WDBIP_PROVISIONAL_VALIDATION_TRIGGERS_v1.0.yaml
+- file: docs/standards/wdbip/WDBIP_VALIDATION_STUDY_PROTOCOL_v1.0.md
+- file: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.4.docx
+- file: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.4.md
+- file: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.4.pdf
+- file: docs/standards/wdbip/tests/fail_allocation_residual_unexplained.json
+- file: docs/standards/wdbip/tests/fail_contestation_no_review.json
+- file: docs/standards/wdbip/tests/fail_dimension_migration_no_crosswalk.json
+- file: docs/standards/wdbip/tests/fail_enum_namespace.json
+- file: docs/standards/wdbip/tests/fail_interaction_window_without_temporal_model.json
+- file: docs/standards/wdbip/tests/fail_missing_pcc.json
+- file: docs/standards/wdbip/tests/fail_not_material_without_rationale.json
+- file: docs/standards/wdbip/tests/fail_pcc_locator_missing.json
+- file: docs/standards/wdbip/tests/fail_reduced_scope_no_declaration.json
+- file: docs/standards/wdbip/tests/fail_scope_allocation_over_one.json
+- file: docs/standards/wdbip/tests/fail_scope_relation_mismatch.json
+- file: docs/standards/wdbip/tests/fail_sgp_applicable_without_ref.json
+- file: docs/standards/wdbip/tests/fail_subgroup_masking.json
+- file: docs/standards/wdbip/tests/fail_tier3_weight_not_tested.json
+- file: docs/standards/wdbip/tests/fail_time_mismatch_unresolved.json
+- file: docs/standards/wdbip/tests/fail_unknown_as_zero.json
+- file: docs/standards/wdbip/tests/fail_weight_sensitive_no_authority_ref.json
+- file: docs/standards/wdbip/tests/pass_green_corridor_v1_4.json
+- file: docs/standards/wdbip/validate_wdbip_v1_4.py
+- file: docs/standards/wdbip/wdbip_record_v1_4.schema.json
+- file: docs/standards/wdbip/wdbip_worked_example_green_corridor_v1_4.json
+- file: docs/validation/REPLAY_INSTRUCTIONS.md
+- file: docs/validation/RESULTS_CATALOG_TEMPLATE.csv
+- file: docs/validation/RLS_SPRINT_RESULTS_TEMPLATE.md
+- file: docs/validation/V12_4_SAFETY_CONFORMANCE_VECTORS.md
+- file: docs/validation/VALIDATION_INDEX.md
+- file: docs/validation/WORKED_RUN_REGISTRY.md
+- file: docs/validation/csv/CSV_MEASUREMENT_MATURITY_NOTE_v1_0.md
+- file: docs/validation/rights/RIGHTS_THRESHOLD_GOVERNANCE_NOTE_v1_0.md
+- file: docs/validation/rls/RLS_Calibration_Note_v1_0_TEMPLATE.md
+- file: docs/validation/rls/RLS_Validation_Package_README.md
+- file: docs/validation/rls/RLS_Validation_Workbook_v0_2.xlsx
+- file: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_4.docx
+- file: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_4.md
+- file: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_4.pdf
+- file: docs/validation/sgp/SGP_VALIDATION_PROTOCOL_v2_1.md
+- file: docs/validation/trc/TRC_SCENARIO_DISCOVERY_PROTOCOL_v1_0.md
+- file: docs/workbooks/ALIGNERS_SHEET_USER_GUIDE.md
+- file: release/CITATION_VERIFICATION_REPORT.md
+- file: release/CANON_SGP_BASELINE_LOSS_AUDIT_v12_4_v8_3.docx
+- file: release/CANON_SGP_BASELINE_LOSS_AUDIT_v12_4_v8_3.md
+- file: release/CANON_SGP_BASELINE_LOSS_AUDIT_v12_4_v8_3.pdf
+- file: release/FINAL_VERIFICATION_REPORT.docx
+- file: release/FINAL_VERIFICATION_REPORT.md
+- file: release/FINAL_VERIFICATION_REPORT.pdf
+- file: release/FRUITION_FINALIZATION_REPORT_v12_4_v8_3.docx
+- file: release/FRUITION_FINALIZATION_REPORT_v12_4_v8_3.md
+- file: release/FRUITION_FINALIZATION_REPORT_v12_4_v8_3.pdf
+- file: release/FRUITION_VERIFICATION_OUTPUT.txt
+- file: release/GPTPRO_FEEDBACK_DISPOSITION_AND_RELEASE_LOCK_REPORT_v12_4_v8_3.docx
+- file: release/GPTPRO_FEEDBACK_DISPOSITION_AND_RELEASE_LOCK_REPORT_v12_4_v8_3.md
+- file: release/GPTPRO_FEEDBACK_DISPOSITION_AND_RELEASE_LOCK_REPORT_v12_4_v8_3.pdf
+- file: release/MATHGOV_V12_4_SGP_V8_3_AUDIT_RESPONSE_AND_FINALIZATION_REPORT.docx
+- file: release/MATHGOV_V12_4_SGP_V8_3_AUDIT_RESPONSE_AND_FINALIZATION_REPORT.md
+- file: release/MATHGOV_V12_4_SGP_V8_3_AUDIT_RESPONSE_AND_FINALIZATION_REPORT.pdf
+- file: release/RELEASE_NOTES.md
+- file: release/VALIDATE_MATHGOV_RUN.py
+- file: release/VERIFY_CURRENT_PINS.py
+- file: release/VERIFY_FORMAT_AND_REPRODUCIBILITY.py
+- file: release/VERIFY_FORMULA_INTERFACE_INTEGRITY.py
+- file: release/VERIFY_RELEASE.py
+- file: release/VERIFY_SEMANTIC_SURFACES.py
+- file: release/VERIFY_STATE_SEMANTICS_AND_NON_DILUTION.py
+- file: release/_verify_utils.py
+- file: release/release_manifest.yml
+- file: requirements.txt
+- file: schemas/mathgov_run_record_v2.schema.json
+- file: schemas/sgp_rmcp_record_v8_3.schema.json
+- file: tests/run_records/fail_decisive_contradiction.json
+- file: tests/run_records/fail_emergency_masquerades_normal.json
+- file: tests/run_records/fail_execution_without_authority.json
+- file: tests/run_records/fail_rank_nonselectable.json
+- file: tests/run_records/fail_schema_additional_property.json
+- file: tests/run_records/fail_schema_invalid_stakes.json
+- file: tests/run_records/fail_schema_missing_reversibility.json
+- file: tests/run_records/fail_short_circuit_rg.json
+- file: tests/run_records/fail_trc_not_triggered_missing_assessment.json
+- file: tests/run_records/fail_unknown_parameter.json
+- file: tests/run_records/pass_reusable_cups.json
+- file: tests/run_records/pass_trc_not_triggered.json
+- file: tests/sgp_rmcp/fail_rmcp_missing_misuse_field_v8_3.json
+- file: tests/sgp_rmcp/pass_rmcp_record_v8_3.json
+archived_lineage_file_count: 97

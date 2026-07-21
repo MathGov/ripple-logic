@@ -1,0 +1,78 @@
+{
+  "release_id": "MathGov_Core_2026_09_GitHub_Release_v12_2_SGP_V8_1_ATTESTATION_CALCULATION_AND_RELEASE_TRUTH_HARDENED_FINAL",
+  "publication_date": "2026-07-13",
+  "component_versions_changed": false,
+  "cascade_changed": false,
+  "accepted_findings": [
+    {
+      "id": "A1",
+      "finding": "Canon release checklist and active current-line references required re-execution and origin-stamp clarification",
+      "action": "rewrote M.5, added M.5A, corrected active current-line surfaces"
+    },
+    {
+      "id": "A2",
+      "finding": "R.19 sigma_RLS result lacked an explicit reproducible derivation",
+      "action": "published pre-saturation Method B derivation and rounding convention",
+      "result": "0.0004269569677 -> 0.000427"
+    },
+    {
+      "id": "A3",
+      "finding": "workbook audit summaries and selected flags were declarations rather than live formulas",
+      "action": "formula-driven audit/sanity surfaces and formula-presence detector"
+    },
+    {
+      "id": "A4",
+      "finding": "v5.2 lacked explicit full recalculation metadata",
+      "action": "set calcMode=auto, fullCalcOnLoad=1, forceFullCalc=1"
+    },
+    {
+      "id": "A5",
+      "finding": "claim boundary did not distinguish limited bundled validator/schema from full machine ecosystem",
+      "action": "clarified limited conformance tooling versus unbuilt ProofPack/reference ecosystem"
+    },
+    {
+      "id": "A6",
+      "finding": "companion/package alignment wording could be clearer",
+      "action": "added current package synchronization wording and Public Intro release line"
+    }
+  ],
+  "rejected_findings": [
+    {
+      "id": "R1",
+      "claim": "current companions still require v7 SG_norm scalar interface",
+      "reason": "not present in supplied current files"
+    },
+    {
+      "id": "R2",
+      "claim": "active DOCX files are raw Markdown mislabeled as DOCX",
+      "reason": "all 14 are valid OOXML and render correctly"
+    },
+    {
+      "id": "R3",
+      "claim": "Component Map misversions current components",
+      "reason": "already corrected in supplied package"
+    },
+    {
+      "id": "R4",
+      "claim": "README/LICENSE/manifest/hashes absent",
+      "reason": "all are bundled"
+    },
+    {
+      "id": "R5",
+      "claim": "two active workbook versions create ambiguity",
+      "reason": "only v5.2 is active; older versions are not in the active core set"
+    }
+  ],
+  "verified_counts": {
+    "active_docx_pdf_pairs": 14,
+    "active_pdf_pages": 479,
+    "active_docx_tables": 239,
+    "workbook_sheets": 78,
+    "workbook_formulas": 2624,
+    "workbook_merges": 71,
+    "workbook_data_validations": 19,
+    "workbook_conditional_formatting_blocks": 1,
+    "appendix_ad_cells": "49/49"
+  },
+  "claim_boundary": "procedural/source conformance only; not evidence truth, empirical validation, legal or deployment certification, ProofPack/Tier 4, full reference calculator, metaphysical proof, framework superiority, or automated moral truth"
+}

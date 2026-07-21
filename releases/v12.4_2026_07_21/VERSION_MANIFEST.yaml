@@ -1,0 +1,62 @@
+release_id: MathGov_Core_2026_09_v12.4_SGP_v8.3
+release_date: '2026-07-20'
+release_line: v12.4
+exact_release_version: v12.4
+package_name: MathGov_Core_2026_09_GitHub_Release_v12_4_SGP_V8_3_FINAL_WORLD_INTRODUCTION_GITHUB_PILOT_READY
+principal_governing_sources:
+- path: docs/canon/RippleLogic_v12.4_Canon.md
+  version: v12.4
+- path: docs/sgp/SGP_v8.3.md
+  version: v8.3
+normative_implementation_companions:
+- path: docs/standards/ripple_md_Standard_v5.3.md
+  version: v5.3
+- path: docs/standards/RippleLogic_Cascade_Standard_v2.4.md
+  version: v2.4
+- path: docs/standards/CSV_Gate_Standard_v2.2.md
+  version: v2.2
+- path: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.2.md
+  version: v1.2
+- path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.4.md
+  version: v1.4
+- path: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.md
+  version: v2.1
+- path: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.1.md
+  version: v2.1
+- path: docs/standards/Source_Coupling_Integrity_Standard_v2.1.md
+  version: v2.1
+operational_companions:
+- path: docs/agents/RippleLogic_Agent_System_v12.2.md
+  version: v12.2
+- path: docs/aligners/RippleLogic_Aligners_Sheet_v5.4.xlsx
+  version: v5.4
+validation_surfaces:
+- path: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_4.md
+  version: v2.4
+- path: docs/validation/rls/RLS_Validation_Workbook_v0_2.xlsx
+  version: v0.2
+informative_doorways:
+- path: docs/primer/RippleLogic_Foundations_Primer_v4.2.md
+  version: v4.2
+- path: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_4.md
+  version: v12.4
+- path: docs/CORE_COMPONENT_MAP.md
+  version: v12.4
+machine_interface:
+  run_schema: schemas/mathgov_run_record_v2.schema.json
+  validator: release/VALIDATE_MATHGOV_RUN.py
+  state_registry: docs/implementation/CANONICAL_STATE_REGISTRY_v1.0.yaml
+  transition_matrix: docs/implementation/STATE_TRANSITION_MATRIX_v1.0.json
+  sgp_rmcp_schema: schemas/sgp_rmcp_record_v8_3.schema.json
+  wdbip_schema: docs/standards/wdbip/wdbip_record_v1_4.schema.json
+claim_boundary: Structural, semantic, formula-interface, state, schema, and release conformance is not empirical validation,
+  evidence truth, legal authority, physical safety, consciousness detection, metaphysical proof, moral truth, deployment certification,
+  or Tier 4.
+release_lock_integrity_pass:
+  date: '2026-07-20'
+  component_versions_retained: true
+  reason: Pre-publication state-semantics, catastrophe-profile non-dilution, uncertainty-interface, locator-integrity, and
+    cross-artifact finalization; no sixth gate, protection-threshold change, or empirical-validity claim.
+  report: release/FRUITION_FINALIZATION_REPORT_v12_4_v8_3.md
+release_full_title: MathGov Core Release 2026.09 v12.4 / SGP v8.3 - Calculability, Type-Integrity, and Cross-Artifact Synchronization
+  Public Research Source Release

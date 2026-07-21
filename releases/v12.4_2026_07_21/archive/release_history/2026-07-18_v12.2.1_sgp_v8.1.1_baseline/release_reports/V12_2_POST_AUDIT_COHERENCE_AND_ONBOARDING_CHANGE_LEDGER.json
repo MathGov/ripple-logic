@@ -1,0 +1,26 @@
+{
+  "release": "MathGov_Core_2026_09_GitHub_Release_v12_2_SGP_V8_1_POST_AUDIT_COHERENCE_ONBOARDING_HARDENED_FINAL",
+  "date": "2026-07-13",
+  "component_versions_changed": false,
+  "cascade_changed": false,
+  "accepted_findings": [
+    "Residual active version drift is release-damaging.",
+    "The exact 14-file core review set should be explicit and machine-auditable.",
+    "Measurement maturity for UCI/HOI, RLS, and RMCP/P100 should be visible at the top level.",
+    "Internal package references must resolve after archival moves.",
+    "RMCP/P100 must always remain separate from moral worth, wisdom, CMIU membership, and authority."
+  ],
+  "already_addressed_findings": [
+    "Release entry point and manifest already existed.",
+    "Acronym/glossary card already existed.",
+    "Short worked examples already existed.",
+    "SGP v8.0 was already archived outside active paths.",
+    "Validation protocols were already labelled as designs rather than results."
+  ],
+  "rejected_or_deferred": [
+    "Do not merge MFDI and Source-Coupling Integrity in this patch.",
+    "Do not remove the full Aligners workbook.",
+    "Do not add a sixth gate or alter the five-stage cascade.",
+    "Do not claim empirical validation or deployment readiness."
+  ]
+}
