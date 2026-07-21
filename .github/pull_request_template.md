@@ -1,17 +1,27 @@
-## Summary
-What does this PR change, and why?
+## Change summary
 
-## Scope
-- [ ] Docs only
-- [ ] Repo structure / templates
-- [ ] Release packaging / checksums
-- [ ] Other (explain)
+## Change class
 
-## Alignment checklist
-- [ ] Does not weaken or blur rights-floor language (NCRC / TRC / containment)
-- [ ] Does not introduce Tier-4 determinism claims without verified artifacts
-- [ ] Improves auditability or reduces ambiguity
-- [ ] References exact versions / file paths when relevant
+- [ ] Patch
+- [ ] Minor version
+- [ ] Major version / normative change
 
-## Notes for reviewers
-Anything you want reviewers to pay special attention to?
+## Affected sources
+
+List canonical sections, companions, workbooks, schemas, and derived renderings.
+
+## Claim and evidence discipline
+
+- [ ] Claim type identified
+- [ ] Evidence or rationale supplied
+- [ ] Uncertainty and counterarguments recorded
+- [ ] Rights, tail-risk, containment, and dependency effects checked where material
+- [ ] No unsupported certification or validation claim introduced
+
+## Compatibility and regeneration
+
+- [ ] Equation/gate/threshold impact stated
+- [ ] Markdown-DOCX-PDF mirrors synchronized where applicable
+- [ ] Manifests/checksums regenerated
+- [ ] Verification scripts pass
+- [ ] Commit includes DCO sign-off (`Signed-off-by:`)

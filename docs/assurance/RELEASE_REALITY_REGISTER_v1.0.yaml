@@ -1,0 +1,23 @@
+schema_version: RELEASE_REALITY_REGISTER_v1.0
+status: CANDIDATE_TEMPLATE_REQUIRES_HASH_LAST_POPULATION
+rule: A referenced artifact is AVAILABLE only when the exact path and SHA-256 hash exist in the same release. Roadmap language must use FUTURE or UNAVAILABLE.
+artifacts:
+  - artifact_id: WDBIP_v1_2
+    status: AVAILABLE_IN_WDBIP_PACKAGE
+    expected_paths:
+      - Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.2.md
+      - Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.2.docx
+      - Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.2.pdf
+      - wdbip_record_v1_2.schema.json
+      - validate_wdbip_v1_2.py
+    sha256_status: COMPUTE_AT_RELEASE
+  - artifact_id: MPMR_v1_0
+    status: CANDIDATE_NOT_CORE_INTEGRATED
+    expected_paths:
+      - core_integration_candidate/MEASUREMENT_AND_PARAMETER_MATURITY_REGISTER_v1.0.md
+      - core_integration_candidate/measurement_and_parameter_maturity_register_v1_0.json
+    sha256_status: COMPUTE_AT_RELEASE
+  - artifact_id: ProofPack_Tier4
+    status: UNAVAILABLE_DESIGN_TARGET
+    expected_paths: []
+    sha256_status: NOT_APPLICABLE

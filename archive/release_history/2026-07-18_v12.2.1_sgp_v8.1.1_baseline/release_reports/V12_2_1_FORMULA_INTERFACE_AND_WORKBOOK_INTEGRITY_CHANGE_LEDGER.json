@@ -1,0 +1,57 @@
+{
+  "release": "MathGov Core v12.2.1 / SGP v8.2 Formula, Interface, and Workbook Integrity Hardened Final",
+  "date": "2026-07-14",
+  "feedback_source": "GPT-5.5 Pro audit supplied by user",
+  "accepted": [
+    "workbook_sanity_summary",
+    "mps_hypothesis_binding",
+    "uci_u7_na_unknown",
+    "rls_q_normalization",
+    "stream_symbol_h",
+    "csv_tier_enum",
+    "three_channel_ncrc_examples",
+    "plss_claim_boundary",
+    "agent_self_audit",
+    "right_cell_mapping_wording"
+  ],
+  "partial": [
+    "rmcp_heuristic_summary_retained_with_warning",
+    "bounded_machine_reproducibility"
+  ],
+  "rejected": [
+    "invalid_docx_claim",
+    "missing_release_support_claim",
+    "stale_component_map_claim",
+    "ncrc_not_linked_to_rights_hardening_claim",
+    "sixth_gate_or_redesign"
+  ],
+  "versions": {
+    "canon": "v12.2.1",
+    "sgp": "v8.1.1",
+    "sgp_validation_protocol": "v2.1",
+    "agent_system": "v12.0.1",
+    "primer": "v4.0",
+    "ripple_md": "v5.0",
+    "aligners_sheet": "v5.2.1",
+    "cascade_standard": "v2.2.1",
+    "csv_gate_standard": "v2.0.1",
+    "pc_aep": "v2.0",
+    "source_coupling_integrity": "v2.0",
+    "mfdi": "v2.0",
+    "rls_validation_protocol": "v2.2.1",
+    "core_component_map": "v12.2.1",
+    "public_intro_3r_1_2": "v12.2.1",
+    "reproducibility_use_standard": "v1.0"
+  },
+  "cascade_changed": false,
+  "sixth_gate_added": false,
+  "workbook": {
+    "sheets": 78,
+    "formulas": 2612,
+    "merges": 71,
+    "sanity_pass": 83,
+    "sanity_fail": 0,
+    "review_items": 2,
+    "plss_robustness": "unresolved"
+  }
+}

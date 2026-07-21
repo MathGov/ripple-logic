@@ -1,0 +1,71 @@
+{
+  "version": "STATE_TRANSITION_MATRIX_v1.0",
+  "release": "MathGov_v12.4",
+  "normal_rules": [
+    {
+      "when": {
+        "rg": "RG_REFUSED"
+      },
+      "require": {
+        "rf": "RF_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+        "trc": "TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+        "csv": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+        "selectable": false
+      }
+    },
+    {
+      "when": {
+        "rf": [
+          "RF_FAIL",
+          "RF_ESCALATE"
+        ]
+      },
+      "require": {
+        "trc": "TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+        "csv": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+        "selectable": false
+      }
+    },
+    {
+      "when": {
+        "trc": [
+          "TRC_FAIL",
+          "TRC_ESCALATE"
+        ]
+      },
+      "require": {
+        "csv": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+        "selectable": false
+      }
+    },
+    {
+      "when": {
+        "rg": [
+          "RG_SUPPORTED",
+          "RG_NARROWED"
+        ],
+        "rf": "RF_PASS",
+        "trc": [
+          "TRC_PASS",
+          "TRC_NOT_TRIGGERED"
+        ],
+        "csv": [
+          "CSV_PASS",
+          "CSV_PASS_WITH_CONTROLS",
+          "CSV_NOT_MATERIAL"
+        ]
+      },
+      "require": {
+        "selectable": true
+      }
+    }
+  ],
+  "emergency": {
+    "profile": "TAIL_EMERGENCY",
+    "trc": "TRC_EMERGENCY_PROVISIONAL",
+    "csv": "CSV_EMERGENCY_PROVISIONAL",
+    "ordinary_selectable": false,
+    "ordinary_ranking": false,
+    "final_state": "EMERGENCY_PROVISIONAL"
+  }
+}
