@@ -1,55 +1,17 @@
-# Contributing to RippleLogic
+# Contributing and Review
 
-Thanks for your interest in improving RippleLogic.
+Contributions should identify the affected artifact, cite the relevant Canon section, and distinguish content changes from release-engineering changes.
 
-RippleLogic is published as **versioned canon releases**. The canonical snapshot is defined by the **GitHub Release tag + attached assets**, mirrored under `releases/<version>_<YYYY-MM-DD>/`.
+Useful issue categories: claim-boundary issue, terminology/collapse issue, calculation issue, citation issue, release-integrity issue, workbook issue, and implementation question.
 
-That means:
-- You can open issues and propose changes at any time.
-- Changes are considered “canon” only when included in a tagged Release and its matching release folder.
+Do not propose Tier 4, ProofPack, empirical-validation, legal-certification, deployment-certification, current-AI-sentience, or automatic moral-truth claims unless the required evidence package exists.
 
-## Ways to contribute
+## Governance, conduct, and sign-off
 
-### 1) Report an issue (recommended starting point)
-Please open a GitHub Issue and include:
-- **What you observed** (include exact file name + version folder, e.g., `releases/v8.6_2026_03_15/...`)
-- **Expected behavior**
-- **Steps to reproduce** (if applicable)
-- **Why it matters** (risk, rights-floor implications, audit clarity, implementability)
+Contributions are governed by `GOVERNANCE.md` and `CODE_OF_CONDUCT.md`. Commits must include Developer Certificate of Origin sign-off:
 
-### 2) Propose a change (Pull Request)
-A good PR includes:
-- **Summary** of the change and motivation
-- **Scope** (doc-only / schemas / templates / release packaging)
-- **Impact** on:
-  - rights floors / constraints language (NCRC, TRC, containment)
-  - tier claims (avoid Tier-4 determinism claims)
-  - auditability and reproducibility
-- If editing release artifacts: propose changes against the next release folder, not retroactively rewriting past canon.
+```text
+Signed-off-by: Your Name <your.email@example.com>
+```
 
-## Style and guardrails
-- Prefer clarity over cleverness.
-- Avoid overstating capabilities. RippleLogic does not claim omniscience or deterministic Tier-4 proofs in public releases unless explicitly supported by verified artifacts.
-- Keep “canon” language aligned across:
-  - Core spec
-  - SGP
-  - Agent System
-  - Release notes and checksums
-
-## Integrity and verification
-If you add or modify binary artifacts in a release folder:
-- Update the release checksum list (SHA256SUMS) and ensure it matches the exact bytes of uploaded assets.
-- Keep filenames stable and versioned.
-
-## License
-
-By contributing, you agree your contributions are licensed under the
-applicable layer of the repository's three-layer license (see `LICENSE`):
-
-- Contributions to specification text (Foundation Paper, normative content):
-  **CC BY-ND 4.0**
-- Contributions to code, schemas, templates, and test fixtures:
-  **MIT License**
-- Contributions to worked examples and teaching materials:
-  **CC BY 4.0**
-
+Use `git commit -s` to add the line. Sign-off asserts that you have the right to submit the contribution under Apache-2.0; it is not a claim that MathGov has validated or certified the contribution.

@@ -1,28 +1,18 @@
-# Security Policy
+# Security and Misuse Reporting
 
-## Supported Versions
-RippleLogic is a specification repository with versioned releases. Security-sensitive issues may involve:
-- tampered release artifacts
-- checksum mismatch
-- misleading claims in release notes that could cause unsafe implementation
+This repository is a framework/source release, not a deployed system. Still, misuse can occur if someone claims certification, legal authorization, ethical approval, or automated moral truth based on partial or incorrect implementation.
 
-We treat the **latest tagged Release** as the primary supported public snapshot.
+Please report issues involving:
 
-## Reporting a Vulnerability
-If you believe you’ve found a security issue, please do not open a public issue immediately.
+- false public claims of MathGov certification;
+- misuse of RLS to override failed rights, tail-risk, or CSV gates;
+- claims that SGP grants governance authority;
+- unsafe autonomous-agent deployment claims;
+- workbook formula bugs affecting admissibility or score outputs;
+- security-sensitive disclosure problems in examples or audit records.
 
-Instead:
-1) Contact the maintainers privately with:
-   - a clear description
-   - affected version/tag
-   - reproduction steps or proof (if applicable)
-   - suggested mitigation (if known)
-2) We will acknowledge receipt and coordinate a fix and disclosure timeline.
+Do not publish exploit-enabling details if a vulnerability could create harm. Open an issue with a safe summary and request maintainer contact for responsible disclosure.
 
-## What counts as a security issue here
-- Release artifact integrity problems (mismatched hashes, incorrect assets)
-- Malicious or confusing packaging that could lead to unsafe downstream use
-- Vulnerabilities in any scripts/tools that may be added to support verification or evaluation
+## Agentic security acceptance
 
-## Disclosure
-We aim for responsible disclosure: verify, patch, and publish a note in a tagged Release when appropriate.
+The Agent System already contains an OWASP-aligned agentic threat map. `docs/assurance/AGENTIC_SECURITY_ACCEPTANCE_PACK_TEMPLATE.md` adds a test-evidence surface so conceptual controls can be exercised against attack fixtures, telemetry requirements, pass/fail rules, and regression cases. A completed mapping without executed tests is not deployment assurance.
