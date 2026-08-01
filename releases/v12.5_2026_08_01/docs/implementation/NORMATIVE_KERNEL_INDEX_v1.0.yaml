@@ -1,0 +1,87 @@
+schema_name: MathGovNormativeKernelIndex
+schema_version: "1.0"
+status: normative_index_not_alternate_canon
+canon_pin: RippleLogic v12.5
+sgp_pin: SGP v8.4
+reproducibility_standard_pin: MathGov Reproducibility and Use Standard v1.3
+purpose: >-
+  Compact machine-readable index of the controlling rules needed to identify,
+  implement, and test a MathGov run. The cited source controls if wording differs.
+rules:
+  - id: K01
+    name: run_identity_and_scope
+    source: RippleLogic Canon v12.5, specification contract and run-object sections
+    required_fields: [decision_id, baseline, options, stakeholders, tier, stakes, authority_boundary]
+    failure_state: INCOMPLETE_RUN
+  - id: K02
+    name: parameter_and_authority_lock
+    source: Canon PCC/parameter governance; PARAMETER_AND_AUTHORITY_LOCK_RECORD.schema.yaml
+    required_fields: [evidence_cutoff, parameter_lock_time, weights, thresholds, masks, scenarios, reviewers, authority_basis]
+    failure_state: PARAMETER_LOCK_FAILURE
+  - id: K03
+    name: reality_grounding
+    source: Canon Section 2.1B-2.1F
+    required_fields: [reality_surface, evidence_trace, material_unknowns, consequence_pathways, claim_boundary, rg_status]
+    failure_state: REFUSE_INSUFFICIENT_GROUNDING
+  - id: K04
+    name: rights_floor
+    source: Canon Rights Floor / NCRC sections
+    pass_states: [RF_PASS]
+    nonpass_states: [RF_FAIL, RF_ESCALATE]
+    compensation_prohibited: true
+  - id: K05
+    name: tail_risk_constraint
+    source: Canon TRC sections
+    pass_states: [TRC_PASS]
+    nonpass_states: [TRC_FAIL, TRC_ESCALATE]
+    compensation_prohibited: true
+  - id: K06
+    name: containment_and_structural_viability
+    source: Canon CSV sections and CSV Gate Standard v2.3
+    selectable_states: [CSV_PASS, CSV_PASS_WITH_CONTROLS, CSV_NOT_MATERIAL]
+    nonselectable_states: [CSV_FAIL, CSV_REDESIGN_REQUIRED, CSV_ESCALATE]
+  - id: K07
+    name: selectable_set
+    source: Canon selectable-set rule
+    formula: RG_SUPPORT AND RF_PASS AND TRC_PASS AND CSV_SELECTABLE
+  - id: K08
+    name: residual_ranking_only
+    source: Canon RLS sections
+    rule: RLS applies only to selectable options
+  - id: K09
+    name: decision_state
+    source: Canon non-decisive, refusal, emergency, and authority-selection sections
+    allowed_states:
+      - SELECTED_DECISIVE
+      - SELECTED_BY_AUTHORITY_NON_DECISIVE
+      - PROVISIONAL_WITH_CONTROLS
+      - DELAY
+      - REDESIGN
+      - ESCALATE
+      - REFUSE
+      - NO_SELECTABLE_OPTION
+      - EMERGENCY_PROVISIONAL
+  - id: K10
+    name: authority_and_execution_separation
+    source: Canon authority and execution boundary; Agent System where applicable
+    rule: selection_does_not_imply_execution_authority
+  - id: K11
+    name: monitoring_controls_and_appeal
+    source: Canon CSV/PCC and Agent System
+    required_when_material: [controls, monitoring, review_date, appeal, shutdown, reopen_triggers]
+  - id: K12
+    name: append_only_audit_and_requalification
+    source: Canon PCC, distribution-shift protocol, independent replay template
+    rule: material_change_requires_new_version_and_affected_stage_replay
+noncollapse:
+  - [RG, RF]
+  - [RF, RLS]
+  - [TRC, CSV]
+  - [CSV, RLS]
+  - [selection, authority]
+  - [authority, physical_safety]
+  - [MPS, FPP]
+  - [FPP, GPR]
+  - [ICP, MPS]
+  - [RMCP_P100, FPP]
+  - [P100, authority]

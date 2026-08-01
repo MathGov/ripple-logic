@@ -1,0 +1,107 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.5_SGP_v8.4",
+  "date": "2026-07-30",
+  "version_changed": false,
+  "architecture_changed": false,
+  "items": [
+    {
+      "id": "D1",
+      "status": "INTEGRATED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Govern beta and beta_RF; add sensitivity and RIGHTS_SATURATION_SENSITIVE."
+    },
+    {
+      "id": "D2",
+      "status": "NARROWED_INTEGRATED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Disclose mode discontinuity and require mode/saturation sensitivity; no equation change."
+    },
+    {
+      "id": "D3",
+      "status": "INTEGRATED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Add nonlinear baseline sensitivity and BASELINE_RANK_SENSITIVE."
+    },
+    {
+      "id": "D4",
+      "status": "INTEGRATED_AS_DISCLOSURE",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Require effective-maximum CVaR disclosure and sensitivity."
+    },
+    {
+      "id": "D5",
+      "status": "INTEGRATED_WITH_DEFAULT_PRESERVED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Bound emergency order as provisional and require alternative-order sensitivity."
+    },
+    {
+      "id": "D6",
+      "status": "INTEGRATED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Separate phantom point confidence and uncertainty confidence."
+    },
+    {
+      "id": "D7",
+      "status": "INTEGRATED_AS_CONSTRUCT_EXCEPTION",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx",
+        "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.md",
+        "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.docx"
+      ],
+      "change": "Type U7/D5 and U7/D6 as scope-specific construct exceptions."
+    },
+    {
+      "id": "D8",
+      "status": "INTEGRATED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Correct HOI interpretation."
+    },
+    {
+      "id": "D9",
+      "status": "INTEGRATED",
+      "files": [
+        "docs/agents/RippleLogic_Agent_System_v12.3.md",
+        "docs/agents/RippleLogic_Agent_System_v12.3.docx",
+        "docs/standards/ripple_md_Standard_v5.4.md",
+        "docs/standards/ripple_md_Standard_v5.4.docx"
+      ],
+      "change": "End historical-lineage scope before current appendices."
+    },
+    {
+      "id": "D10",
+      "status": "INTEGRATED",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ],
+      "change": "Synchronize exact Core 15 matrix and separate extended support artifacts."
+    },
+    {
+      "id": "REMOVE_MPS_INTERVALS_RMCI_L",
+      "status": "REJECTED_FOR_THIS_RELEASE",
+      "reason": "Requires SGP-specific empirical and construct review; not a minor closure correction."
+    }
+  ]
+}
