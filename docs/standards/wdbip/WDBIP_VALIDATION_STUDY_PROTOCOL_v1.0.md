@@ -2,10 +2,10 @@
 
 ## Status and purpose
 
-This companion converts the WDBIP v1.4 validation and falsification program into a runnable preregistration template. It does not claim that the seven welfare dimensions, instruments, pathways, or decision effects are already validated.
+This companion converts the WDBIP v1.5 validation and falsification program into a runnable preregistration template. It does not claim that the seven welfare dimensions, instruments, pathways, or decision effects are already validated.
 
 **Owner:** WDBIP  
-**Applies to:** WDBIP v1.4 and `WELFARE_DIMENSION_SET_7D_V1`  
+**Applies to:** WDBIP v1.5 and `WELFARE_DIMENSION_SET_7D_V1`  
 **Controlling conflict rule:** RippleLogic Canon controls admissibility, RLS, Union Scopes, weights, and authority. WDBIP controls only the measurement and conformance surfaces it owns.
 
 ## 1. Study questions

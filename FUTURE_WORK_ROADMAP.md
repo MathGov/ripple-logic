@@ -1,6 +1,6 @@
-# Future Work Roadmap: Not Yet Ready for Current v12.3 Release
+# Future Work Roadmap: Not Yet Ready for Current v12.5 Release
 
-This roadmap lists high-value work that should not be folded into the v12.2 core as if already complete. These items are future validation, tooling, and companion-package tasks. Their absence is intentional and does not weaken the v12.2 Tier 1-3 source/framework release as long as no stronger claim is made.
+This roadmap lists high-value work that should not be folded into the v12.5 core as if already complete. These items are future validation, tooling, and companion-package tasks. Their absence is intentional and does not weaken the v12.5 Tier 1-3 source/framework release as long as no stronger claim is made.
 
 ## 1. mathgov-reference v0.1
 
@@ -76,8 +76,8 @@ This roadmap lists high-value work that should not be folded into the v12.2 core
 
 ## Current-release boundary
 
-None of the above items should be treated as shipped, validated, or required for the current v12.3 Tier 1-3 source/framework release unless bundled later with hashes, release notes, and explicit claim boundaries.
+None of the above items should be treated as shipped, validated, or required for the current v12.5 Tier 1-3 source/framework release unless bundled later with hashes, release notes, and explicit claim boundaries.
 
 ## Assurance scaffolding now shipped
 
-The v12.2 package now includes non-normative operational-assurance templates under `docs/assurance/`. These templates narrow several implementation gaps, but the underlying reference evaluator, executed security suite, independent replay, calibrated domain profiles, and empirical studies remain future work.
+The v12.5 package includes non-normative operational-assurance templates under `docs/assurance/`. These templates narrow several implementation gaps, but the underlying reference evaluator, executed security suite, independent replay, calibrated domain profiles, and empirical studies remain future work.

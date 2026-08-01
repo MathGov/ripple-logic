@@ -1,62 +1,90 @@
-release_id: MathGov_Core_2026_09_v12.4_SGP_v8.3
-release_date: '2026-07-20'
-release_line: v12.4
-exact_release_version: v12.4
-package_name: MathGov_Core_2026_09_GitHub_Release_v12_4_SGP_V8_3_FINAL_WORLD_INTRODUCTION_GITHUB_PILOT_READY
+release_id: MathGov_Core_2026_09_v12.5_SGP_v8.4
+release_date: '2026-07-23'
+release_line: v12.5
+exact_release_version: v12.5
+package_name: MathGov_Core_2026_09_v12_5_SGP_v8_4_FINAL_CORE15_EXTENDED_BOUNDARY_AND_REFERENCE_VERIFIED
+governing_cascade: RG -> RF/NCRC -> TRC -> CSV -> RLS
 principal_governing_sources:
-- path: docs/canon/RippleLogic_v12.4_Canon.md
-  version: v12.4
-- path: docs/sgp/SGP_v8.3.md
-  version: v8.3
-normative_implementation_companions:
-- path: docs/standards/ripple_md_Standard_v5.3.md
-  version: v5.3
-- path: docs/standards/RippleLogic_Cascade_Standard_v2.4.md
-  version: v2.4
-- path: docs/standards/CSV_Gate_Standard_v2.2.md
-  version: v2.2
-- path: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.2.md
-  version: v1.2
-- path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.4.md
-  version: v1.4
-- path: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.md
-  version: v2.1
-- path: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.1.md
-  version: v2.1
-- path: docs/standards/Source_Coupling_Integrity_Standard_v2.1.md
-  version: v2.1
-operational_companions:
-- path: docs/agents/RippleLogic_Agent_System_v12.2.md
-  version: v12.2
-- path: docs/aligners/RippleLogic_Aligners_Sheet_v5.4.xlsx
-  version: v5.4
-validation_surfaces:
-- path: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_4.md
-  version: v2.4
-- path: docs/validation/rls/RLS_Validation_Workbook_v0_2.xlsx
-  version: v0.2
-informative_doorways:
-- path: docs/primer/RippleLogic_Foundations_Primer_v4.2.md
-  version: v4.2
-- path: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_4.md
-  version: v12.4
-- path: docs/CORE_COMPONENT_MAP.md
-  version: v12.4
+- path: docs/canon/RippleLogic_v12.5_Canon.md
+  version: v12.5
+- path: docs/sgp/SGP_v8.4.md
+  version: v8.4
+component_versions:
+  ripple.md Standard:
+    version: v5.4
+    path: docs/standards/ripple_md_Standard_v5.4.md
+  RippleLogic Agent System:
+    version: v12.3
+    path: docs/agents/RippleLogic_Agent_System_v12.3.md
+  CSV Gate Standard:
+    version: v2.3
+    path: docs/standards/CSV_Gate_Standard_v2.3.md
+  RippleLogic Cascade Standard:
+    version: v2.5
+    path: docs/standards/RippleLogic_Cascade_Standard_v2.5.md
+  Reproducibility and Use Standard:
+    version: v1.3
+    path: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.md
+  WDBIP:
+    version: v1.5
+    path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.md
+  RLS Validation Protocol:
+    version: v2.5
+    path: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_5.md
+  RLS Validation Workbook:
+    version: v0.3
+    path: docs/validation/rls/RLS_Validation_Workbook_v0_3.xlsx
+  Foundations Primer:
+    version: v4.3
+    path: docs/primer/RippleLogic_Foundations_Primer_v4.3.md
+  Public Introduction:
+    version: v12.5
+    path: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.md
+  PC-AEP:
+    version: v2.2
+    path: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.md
+  MFDI Standard:
+    version: v2.2
+    path: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.md
+  Source-Coupling Integrity Standard:
+    version: v2.2
+    path: docs/standards/Source_Coupling_Integrity_Standard_v2.2.md
+  RippleLogic Aligners Sheet:
+    version: v5.5
+    path: docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx
 machine_interface:
-  run_schema: schemas/mathgov_run_record_v2.schema.json
+  run_schema: schemas/mathgov_run_record_v3.schema.json
   validator: release/VALIDATE_MATHGOV_RUN.py
-  state_registry: docs/implementation/CANONICAL_STATE_REGISTRY_v1.0.yaml
-  transition_matrix: docs/implementation/STATE_TRANSITION_MATRIX_v1.0.json
-  sgp_rmcp_schema: schemas/sgp_rmcp_record_v8_3.schema.json
-  wdbip_schema: docs/standards/wdbip/wdbip_record_v1_4.schema.json
-claim_boundary: Structural, semantic, formula-interface, state, schema, and release conformance is not empirical validation,
-  evidence truth, legal authority, physical safety, consciousness detection, metaphysical proof, moral truth, deployment certification,
-  or Tier 4.
-release_lock_integrity_pass:
-  date: '2026-07-20'
-  component_versions_retained: true
-  reason: Pre-publication state-semantics, catastrophe-profile non-dilution, uncertainty-interface, locator-integrity, and
-    cross-artifact finalization; no sixth gate, protection-threshold change, or empirical-validity claim.
-  report: release/FRUITION_FINALIZATION_REPORT_v12_4_v8_3.md
-release_full_title: MathGov Core Release 2026.09 v12.4 / SGP v8.3 - Calculability, Type-Integrity, and Cross-Artifact Synchronization
-  Public Research Source Release
+  sgp_rmcp_schema: schemas/sgp_rmcp_record_v8_4.schema.json
+  wdbip_schema: docs/standards/wdbip/wdbip_record_v1_5.schema.json
+  audit_flag_registry: docs/implementation/CANONICAL_AUDIT_FLAG_REGISTRY_v1.0.yaml
+  audit_flag_verifier: release/VERIFY_AUDIT_FLAG_REGISTRY.py
+configuration_assurance_release:
+  configuration_bound_assurance: true
+  capability_state_separation: true
+  state_transition_post_state: true
+  qualification_continuity: true
+  frozen_evaluation_binding: true
+  future_safe_option_space: true
+  open_assurance_dependency_rule: true
+  implementation_milestone_claim_boundary: true
+  carried_obligation_integrity: true
+  carrier_nonperformance_visibility: true
+  hidden_human_compensation_csv_diagnostic: true
+  dependency_localized_falsification: true
+no_change:
+- five-stage cascade
+- seven Union Scopes
+- seven Welfare Dimensions
+- numerical defaults
+- SGP protection floors
+- rights non-compensation
+- TRC and CSV separation
+- refusal under underdetermination
+claim_boundary: Release, structural, semantic, formula-interface, schema, state, and
+  procedural conformance is not empirical validation, evidence truth, legal authority,
+  physical safety, consciousness detection, metaphysical proof, framework superiority,
+  moral truth, deployment certification, or Tier 4.
+canonical_release_title: MathGov Core Release 2026.09 v12.5 / SGP v8.4 - Configuration-Bound
+  Assurance Public Research Source Release
+same_version_patch_date: '2026-07-31'

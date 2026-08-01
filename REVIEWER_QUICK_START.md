@@ -1,8 +1,8 @@
 # Reviewer Quick Start
 
-The active release is organized by typed artifact sets in `START_HERE_RELEASE_INDEX_v12.4.md`; the Canon and SGP are the two principal governing sources, with subordinate standards, operational companions, validation tools, guides, and lineage clearly separated.
+The active release is organized by typed artifact sets in `START_HERE_RELEASE_INDEX_v12.5.md`; the Canon and SGP are the two principal governing sources, with subordinate standards, operational companions, validation tools, guides, and lineage clearly separated.
 
-> **Release index:** Start with `START_HERE_RELEASE_INDEX_v12.4.md` for the shortest source map, reader lanes, claims/non-claims, and release-boundary summary.
+> **Release index:** Start with `START_HERE_RELEASE_INDEX_v12.5.md` for the shortest source map, reader lanes, claims/non-claims, and release-boundary summary.
 Use this file to audit the package quickly without losing the source hierarchy.
 
 ## 1. Check the active architecture
@@ -17,8 +17,8 @@ Primary files:
 
 - `README.md`
 - `MATHGOV_ESSENTIALS.md`
-- `docs/standards/RippleLogic_Cascade_Standard_v2.4.md`
-- `docs/canon/RippleLogic_v12.4_Canon.md`
+- `docs/standards/RippleLogic_Cascade_Standard_v2.5.md`
+- `docs/canon/RippleLogic_v12.5_Canon.md`
 
 ## 2. Check claim boundaries
 
@@ -46,7 +46,7 @@ Primary files:
 
 Primary files:
 
-- `docs/aligners/RippleLogic_Aligners_Sheet_v5.4.xlsx`
+- `docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx`
 - `docs/workbooks/ALIGNERS_SHEET_USER_GUIDE.md`
 - `docs/validation/rls/`
 
@@ -56,9 +56,9 @@ Reviewer warning: the Aligners Sheet is a worked-run and training companion. It 
 
 Primary files:
 
-- `docs/agents/RippleLogic_Agent_System_v12.2.docx`
-- `docs/agents/RippleLogic_Agent_System_v12.2.pdf`
-- `docs/agents/RippleLogic_Agent_System_v12.2.md`
+- `docs/agents/RippleLogic_Agent_System_v12.3.docx`
+- `docs/agents/RippleLogic_Agent_System_v12.3.pdf`
+- `docs/agents/RippleLogic_Agent_System_v12.3.md`
 
 The DOCX/PDF reading copy has table readability improvements: repeated header rows, professional spacing, top-aligned cells, narrower margins, landscape orientation, and clearer column sizing.
 

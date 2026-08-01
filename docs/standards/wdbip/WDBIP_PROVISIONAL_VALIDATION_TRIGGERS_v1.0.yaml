@@ -1,7 +1,7 @@
 schema_version: WDBIP_PROVISIONAL_VALIDATION_TRIGGERS_v1.0
 status: PROVISIONAL_GOVERNANCE_REVIEW_TRIGGERS_NOT_VALIDATION_CONSTANTS
 applies_to:
-  wdbip: v1.2
+  wdbip: v1.5
   welfare_dimension_set: WELFARE_DIMENSION_SET_7D_V1
 classification_reliability:
   primary_dimension:

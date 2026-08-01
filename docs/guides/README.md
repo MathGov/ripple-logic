@@ -22,4 +22,4 @@ Canon controls if any guide conflicts with the governing source.
 Research companion: `docs/research/RIPPLELOGIC_COMPARATIVE_POSITIONING_AND_RELATED_WORK.md` positions RippleLogic against related decision and governance traditions. It is informative and non-normative.
 
 
-- `docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.md`: v12.0 compact evidence profile inside Reality Grounding and CSV for material physical or causal action. Canon controls if conflict occurs.
+- `docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.md`: v12.0 compact evidence profile inside Reality Grounding and CSV for material physical or causal action. Canon controls if conflict occurs.

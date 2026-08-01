@@ -1,10 +1,10 @@
 {
-  "protocol_version": "WDBIP v1.4",
-  "schema_version": "wdbip_record_v1_4",
-  "canon_version": "RippleLogic v12.4",
+  "protocol_version": "WDBIP v1.5",
+  "schema_version": "wdbip_record_v1_5",
+  "canon_version": "RippleLogic v12.5",
   "sgp_link": {
     "applicable": true,
-    "version": "SGP v8.3",
+    "version": "SGP v8.4",
     "record_ref": "SGP_GREEN_CORRIDOR_BEARERS_001",
     "note": "Human FPP protections remain full; WDBIP does not infer standing."
   },
@@ -16,7 +16,7 @@
       "D3-to-D6 place-meaning pathway requires mixed-method evidence"
     ],
     "gate_routing_summary": "CSV reopened for accessibility, maintenance capacity, and road-safety controls.",
-    "artifact_locator": "release://WDBIP-v1.4/wdbip_worked_example_green_corridor_v1_4.json"
+    "artifact_locator": "release://WDBIP-v1.4/wdbip_worked_example_green_corridor_v1_5.json"
   },
   "run_id": "GREEN_CORRIDOR_EXAMPLE_001",
   "option_id": "SCHOOL_GREEN_CORRIDOR",

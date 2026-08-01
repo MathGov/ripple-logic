@@ -1,0 +1,88 @@
+{
+  "release": "MathGov v12.5 / SGP v8.4",
+  "package_name": "MathGov_Core_2026_09_v12_5_SGP_v8_4_FINAL_FINISHING_TOUCHES_AND_SINGLE_SOURCE_INTEGRITY_VERIFIED",
+  "status": "PASS",
+  "version_changes": false,
+  "accepted": [
+    {
+      "id": "FT-01",
+      "finding": "Workbook current-state surfaces diverged from canonical RLS uncertainty aggregation and tokens.",
+      "action": "Linked Gap, decisiveness, selection, flags, sanity, dashboards, PCC, and publishability to canonical live formulas.",
+      "files": [
+        "docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx",
+        "release/VERIFY_FORMULA_INTERFACE_INTEGRITY.py",
+        "release/VERIFY_WORKBOOK_LIVE_RECALCULATION.py"
+      ]
+    },
+    {
+      "id": "FT-02",
+      "finding": "Reach conservatism was not sign-safe.",
+      "action": "Added sign-aware conservative endpoint rule.",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx",
+        "docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx"
+      ]
+    },
+    {
+      "id": "FT-03",
+      "finding": "Worked example discussed a later gate after an earlier short-circuit without an explicit state boundary.",
+      "action": "Separated canonical NOT_EVALUATED state from counterfactual/audit-only calculation.",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx"
+      ]
+    },
+    {
+      "id": "FT-04",
+      "finding": "Reviewer RG statuses lacked one compact normative machine-state mapping.",
+      "action": "Added anti-outcome-shopping reviewer-to-machine crosswalk.",
+      "files": [
+        "docs/canon/RippleLogic_v12.5_Canon.md",
+        "docs/canon/RippleLogic_v12.5_Canon.docx",
+        "docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.md",
+        "docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.docx"
+      ]
+    },
+    {
+      "id": "FT-05",
+      "finding": "ripple.md cited GSN Community Standard Version 2.",
+      "action": "Updated to Goal Structuring Notation Community Standard Version 3 and exact attribution.",
+      "files": [
+        "docs/standards/ripple_md_Standard_v5.4.md",
+        "docs/standards/ripple_md_Standard_v5.4.docx"
+      ]
+    }
+  ],
+  "rejected_or_boundary": [
+    {
+      "id": "FT-R1",
+      "item": "Major architecture or version change",
+      "reason": "Not justified by bounded finishing findings."
+    },
+    {
+      "id": "FT-R2",
+      "item": "Empirical/deployment completion",
+      "reason": "Requires external studies and domain authority, not document editing."
+    },
+    {
+      "id": "FT-R3",
+      "item": "Missing machine-release artifacts",
+      "reason": "False for the full package; those artifacts are present and verified."
+    }
+  ],
+  "verification": {
+    "formula_count": 2974,
+    "serialized_results": 2618,
+    "intentional_blank_results": 356,
+    "live_formula_errors": 0,
+    "invalid_flags": 0,
+    "escalate_flags": 0,
+    "review_flags": 0,
+    "sanity_failures": 0,
+    "docx_pdf_surfaces": 15,
+    "tables": 287,
+    "headings": 1629,
+    "pages": 563
+  }
+}

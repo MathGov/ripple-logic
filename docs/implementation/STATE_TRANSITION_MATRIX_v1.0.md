@@ -1,6 +1,6 @@
 # State Transition Matrix v1.0
 
-This human-readable surface mirrors `STATE_TRANSITION_MATRIX_v1.0.json`. It controls deterministic short-circuit behavior for run-record v2.
+This human-readable surface mirrors `STATE_TRANSITION_MATRIX_v1.0.json`. It controls deterministic short-circuit behavior for run-record v3.
 
 | Trigger | Required later states | Selectable |
 |---|---|---|

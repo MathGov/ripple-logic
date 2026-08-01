@@ -2,7 +2,7 @@
 
 ## Status
 
-Candidate Canon-owned registry for the next synchronized MathGov core release. This file does not alter an already released Canon until listed in that release's manifest and source hierarchy.
+Active informative Canon mirror included in MathGov Core v12.5 and identified by the release manifest and SHA-256 ledger. This register does not independently create or alter normative obligations. The RippleLogic Canon controls where any conflict or ambiguity occurs; this file types and exposes the maturity and claim boundaries already established by the governing sources.
 
 ## Purpose
 
@@ -39,9 +39,9 @@ This register therefore assigns every listed object a **status class**, **maturi
 
 SGP-owned rows are synchronized mirrors. SGP controls their definitions and statuses.
 
-## Hard claim-boundary rule
+## Controlling claim-boundary rule mirrored from the Canon
 
-A framework-level empirical performance, validation, superiority, or deployment-readiness claim SHALL NOT rest decisively on an empirical construct or model component below the maturity required by that claim. A normative prior or governance convention SHALL NOT be presented as an empirical finding.
+The following is an informative restatement of the governing Canon rule, not an independent source of authority: a framework-level empirical performance, validation, superiority, or deployment-readiness claim MUST NOT rest decisively on an empirical construct or model component below the maturity required by that claim. A normative prior or governance convention MUST NOT be presented as an empirical finding. Where this register and the Canon differ, the Canon controls.
 
 Run-level conformance is distinct from framework-level empirical validation.
 

@@ -1,6 +1,6 @@
 # Glossary and Acronym Index
 
-Release: MathGov Core Release 2026.09 v12.3 SGP v8.3 Reality-Management Calibration Integration Public Research Source Release
+Release: MathGov Core Release 2026.09 v12.5 / SGP v8.4 - Configuration-Bound Assurance Public Research Source Release
 
 Status: reader-support index. If this file conflicts with the RippleLogic Canon, SGP, or a compact standard, the controlling source governs.
 
@@ -22,6 +22,8 @@ This file gives first-time readers a compact way to decode MathGov terms, Ripple
 | ICP         | Intelligence Capacity Profile covering learning, generalization, grounding, causal reasoning, planning, metacognition, robustness, and efficiency. | Informative competence profile; not sentience. |
 | CMIU        | Collective Managing Intelligence Union: Canon-defined governance-coordination view within U6.                                                        | Membership/roles require governance rules; not granted by FPP or MPS. |
 | AIU         | All-Encompassing Infinite Union (AIU). Horizon orientation and meta-union language.                                                                                      | Not a Tier 1-3 scoring object. |
+| Material obligation | A control, review, intervention, appeal, monitoring, repair, communication, or requalification duty on which admissibility, selectability, execution, or remedy materially depends. | Recorded through Responsibility Continuity and CSV; a declaration or named owner alone is insufficient. |
+| Human compensation load | Undocumented or under-specified human judgment, exception handling, reconciliation, memory, relationship work, recovery work, or weak-signal detection that materially preserves system functioning. | A CSV structural-dependency diagnostic; not a claim that all human adaptation is defective. |
 | Union Scope | A stakeholder or affected-union lens used to identify who or what is affected by a decision.                                                                             | Decision-mapping concept.      |
 | PCC         | Public Checkpoint / Participatory Calibration and Correction record, depending on context. In this release, use the local file context to determine the exact expansion. | Audit/recordkeeping surface.   |
 
@@ -115,7 +117,7 @@ Shortest operational rule: qualify first, rank second.
 
 
 ### RMCP — Reality-Management Capacity Profile
-An informative, multidimensional SGP v8.3 profile of reality-grounded modelling, cumulative knowledge, coordination, intervention breadth, cross-scale consequence tracking, and Recursive Union Awareness. RMCP is not sentience, moral worth, FPP, wise performance, or authority.
+An informative, multidimensional SGP v8.4 profile of reality-grounded modelling, cumulative knowledge, coordination, intervention breadth, cross-scale consequence tracking, and Recursive Union Awareness. RMCP is not sentience, moral worth, FPP, wise performance, or authority.
 
 ### P100 — Open Reality-Management Plateau
 The open top-band designation for functional equivalence to or greater integrated reality-management capacity than the current human collective calibration anchor. P100 is not a permanent species monopoly, perfection, a metaphysical maximum, or unrestricted power.
@@ -135,6 +137,6 @@ Every human person receives FPP-100 protection; humanity collectively serves as 
 - **Requalification:** reopening affected stages after a material change in evidence, scope, parameters, system behavior, or distribution.
 
 
-## v12.3 integration note (Lineage)
+## v12.5 integration note
 
-WDBIP v1.3 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.2 controls its wrapper assurance surface. Run-record v2 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.
+WDBIP v1.5 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.4 controls its wrapper assurance surface. Run-record schema v3 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.

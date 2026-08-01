@@ -70,9 +70,9 @@ MathGov may require claim-type discrimination, dependency records, falsification
 MathGov distinguishes governance permission from physical admissibility. For consequence-bearing physical systems, approval, certification, conformity, documentation, monitoring, or authority do not by themselves demonstrate that execution is safe. MathGov can require and audit a Physical/Causal Admissibility Evidence Profile, but domain-specific physical admissibility must come from formal verification, validated simulation, empirical testing, standards-based safety cases, certified controller envelopes, qualified domain warrant, regulator-recognized method, or another explicitly declared objective method. If that evidence is missing or outside validity domain, the correct MathGov action is narrow, control, redesign, escalate, or refuse, not ordinary physical-execution selection.
 
 
-## SGP v8.3 dual-anchor and open-P100 guardrail
+## SGP v8.4 dual-anchor and open-P100 guardrail
 
-SGP v8.3 separates two uses of the top plateau. **FPP-100** is the full, equal, non-downgradable rights-of-protection status held by every human person, independent of measured intelligence, age, disability, communication, wakefulness, or usefulness. **RMCP-P100** is an informative, open calibration plateau for integrated reality-management capacity. Humanity as a collective is the provisional current reference calibration anchor because of its cumulative language, mathematics and science, intergenerational knowledge, technology, institutional coordination, planetary monitoring, cross-scale intervention, and capacity for Recursive Union Awareness.
+SGP v8.4 separates two uses of the top plateau. **FPP-100** is the full, equal, non-downgradable rights-of-protection status held by every human person, independent of measured intelligence, age, disability, communication, wakefulness, or usefulness. **RMCP-P100** is an informative, open calibration plateau for integrated reality-management capacity. Humanity as a collective is the provisional current reference calibration anchor because of its cumulative language, mathematics and science, intergenerational knowledge, technology, institutional coordination, planetary monitoring, cross-scale intervention, and capacity for Recursive Union Awareness.
 
 The two anchors MUST NOT be collapsed. RMCP/P100 does not establish sentience, moral worth, FPP, CMIU membership, wise performance, lawful mandate, or authority. P100 is not a permanent human monopoly: a biological, digital, hybrid, collective, or extraterrestrial intelligence may reach, equal, exceed, or already exist at the open plateau when admissible evidence supports the assignment. Greater capability creates greater responsibility, not permission to dominate, consume, erase, own, or convert protected beings into resources.
 
@@ -80,3 +80,8 @@ The two anchors MUST NOT be collapsed. RMCP/P100 does not establish sentience, m
 ## Universal OS aspiration boundary
 
 MathGov may state a long-horizon aim to become a broadly universalizable, union-grounded ethical operating architecture for intelligence-aligned decision-making. The current release must distinguish that aspiration from present evidence. It is a Tier 1-3 research/source specification and assurance scaffold, not scientific proof that it is the uniquely best OS for reality, a completed full-stack AI-alignment solution, or universal moral consensus.
+
+## Formal-systems boundary
+
+MathGov does not bypass limitations applicable to its formal representations, algorithms, proof systems, schemas, or computational implementations. Distinguishing reality from representation does not exempt a formalized representation from formal limits. The framework therefore does not claim to escape incompleteness, undecidability, undefinability, algorithmic-information limits, model non-identification, or other applicable limits merely by grounding claims in reality.
+

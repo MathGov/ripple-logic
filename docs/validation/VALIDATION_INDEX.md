@@ -22,4 +22,4 @@ The non-normative `docs/assurance/` directory provides the parameter lock, attac
 
 ## Run-record conformance
 
-`release/VALIDATE_MATHGOV_RUN.py` and `tests/run_records/` provide executable R0/R1 conformance vectors for the minimum run record and cascade semantics. This is software/conformance testing, not empirical outcome validation.
+`release/VALIDATE_MATHGOV_RUN.py` and `tests/run_records/` provide executable R0/R1 conformance vectors for the minimum run record, cascade semantics, material-obligation integrity, carrier nonperformance, control-change boundaries, and hidden-human-compensation routing. This is software/conformance testing, not empirical outcome validation.

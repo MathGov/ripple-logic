@@ -2,7 +2,7 @@
 
 **Status:** Informative claim-boundary and research-planning companion.
 
-| Level | Evidence question | Current v12.3 status |
+| Level | Evidence question | Current v12.5 status |
 |---|---|---|
 | L0 Source integrity | Are artifacts readable, versioned, hash-pinned, and reproducible as files? | Strong internally after final verification; public canonical status still requires repository and website synchronization |
 | L1 Formal conformance | Does an independent implementation reproduce equations, typed states, and vectors? | Partial; workbook and vectors exist, reference semantics/evaluator remain future work |

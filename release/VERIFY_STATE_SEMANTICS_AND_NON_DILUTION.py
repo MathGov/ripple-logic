@@ -9,24 +9,24 @@ def ck(cond,msg):
     if not cond: fail.append(msg)
 
 registry=yaml.safe_load((ROOT/'docs/implementation/CANONICAL_STATE_REGISTRY_v1.0.yaml').read_text())
-ck(registry.get('release')=='MathGov_v12.4','state registry release is not v12.4')
+ck(registry.get('release')=='MathGov_v12.5','state registry release is not v12.5')
 ck('TRC_NOT_TRIGGERED' in registry['canonical_tokens']['trc'],'TRC_NOT_TRIGGERED absent from canonical registry')
 
 matrix=json.loads((ROOT/'docs/implementation/STATE_TRANSITION_MATRIX_v1.0.json').read_text())
-ck(matrix.get('release')=='MathGov_v12.4','transition matrix release is not v12.4')
+ck(matrix.get('release')=='MathGov_v12.5','transition matrix release is not v12.5')
 normal=[r for r in matrix['normal_rules'] if r.get('require',{}).get('selectable') is True]
 ck(len(normal)==1,'expected one normal selectable rule')
 if normal:
     trc=normal[0]['when'].get('trc')
     ck(set(trc if isinstance(trc,list) else [trc])=={'TRC_PASS','TRC_NOT_TRIGGERED'},'selectable transition does not use exact TRC qualifying states')
 
-schema=json.loads((ROOT/'schemas/mathgov_run_record_v2.schema.json').read_text())
+schema=json.loads((ROOT/'schemas/mathgov_run_record_v3.schema.json').read_text())
 item=schema['properties']['gate_results']['items']
 ck('TRC_NOT_TRIGGERED' in item['properties']['trc']['enum'],'schema lacks TRC_NOT_TRIGGERED')
 ck('trc_trigger_assessment' in item['properties'],'schema lacks trigger assessment record')
 ck(any(x.get('if',{}).get('properties',{}).get('trc',{}).get('const')=='TRC_NOT_TRIGGERED' for x in item.get('allOf',[])),'schema does not conditionally require trigger assessment')
 
-canon=(ROOT/'docs/canon/RippleLogic_v12.4_Canon.md').read_text()
+canon=(ROOT/'docs/canon/RippleLogic_v12.5_Canon.md').read_text()
 for token in ['RG_qualified(a)','TRC_qualified(a)','TRC_NOT_TRIGGERED','Non-dilution rule for catastrophe profiles','Catastrophe-profile non-dilution test']:
     ck(token in canon,f'Canon missing {token}')
 
@@ -52,6 +52,23 @@ for rel, expect_fail in [('tests/run_records/pass_trc_not_triggered.json',False)
             print(f'PASS positive conformance vector: {rel}')
     else:
         print(cp.stdout,end='')
+
+# Appendix R.19 claim-state guard: an incomplete mandatory-tail library may
+# expose an arithmetic survivor but may not emit an ordinary complete-run selection.
+r19_path=ROOT/'tests/canon_vectors/fail_incomplete_tail_library_allows_selection.json'
+r19=json.loads(r19_path.read_text(encoding='utf-8'))
+ordinary_verdicts={'ALLOW_FRAMEWORK_SELECTION'}
+ordinary_states={'SELECTED_DECISIVE','SELECTED_BY_AUTHORITY_NON_DECISIVE','PROVISIONAL_WITH_CONTROLS'}
+claim=r19.get('claim_bearing_result',{})
+contradiction=(r19.get('mandatory_tail_library_complete') is False and
+               'MANDATORY_TAIL_CATEGORY_MISSING' in r19.get('audit_flags',[]) and
+               (claim.get('framework_verdict') in ordinary_verdicts or
+                claim.get('decision_state') in ordinary_states or
+                claim.get('selected_option_id') is not None))
+ck(contradiction and r19.get('expected_result')=='REJECT',
+   'R.19 incomplete-tail ordinary-selection rejection vector did not expose the required contradiction')
+if contradiction:
+    print(f'PASS expected rejection vector: {r19_path.relative_to(ROOT)}')
 
 if fail:
     print('FAIL state-semantics and non-dilution verification:')

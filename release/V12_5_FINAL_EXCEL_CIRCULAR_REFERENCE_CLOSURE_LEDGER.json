@@ -1,0 +1,32 @@
+{
+  "release_line": "MathGov v12.5 / SGP v8.4",
+  "versions_changed": false,
+  "finding": {
+    "status": "CONFIRMED",
+    "artifact": "docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx",
+    "sheet": "Audit_Flags",
+    "cells": ["B21", "B22", "B23", "B24"],
+    "defect": "Each summary formula counted B5:B33, a range containing the summary cells themselves, creating direct and indirect circular references."
+  },
+  "correction": {
+    "B21": "=COUNTIFS(B5:B18,\"YES\",C5:C18,\"INVALID\")+COUNTIFS(B25:B33,\"YES\",C25:C33,\"INVALID\")",
+    "B22": "=COUNTIFS(B5:B18,\"YES\",C5:C18,\"ESCALATE\")+COUNTIFS(B25:B33,\"YES\",C25:C33,\"ESCALATE\")",
+    "B23": "=COUNTIFS(B5:B18,\"YES\",C5:C18,\"REVIEW\")+COUNTIFS(B25:B33,\"YES\",C25:C33,\"REVIEW\")",
+    "B24": "=COUNTIF(B5:B18,\"YES\")+COUNTIF(B25:B33,\"YES\")"
+  },
+  "preserved": [
+    "all component versions",
+    "all workbook formatting and sheet structure",
+    "all DOCX/PDF content and table formatting",
+    "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "all thresholds, scopes, dimensions, rights and SGP protections"
+  ],
+  "verification": {
+    "formula_count": 2974,
+    "direct_self_references": 0,
+    "formula_cycles": 0,
+    "cached_formula_errors": 0,
+    "audit_summary_values": [0, 0, 0, 0],
+    "workbook_mirror_exact": true
+  }
+}

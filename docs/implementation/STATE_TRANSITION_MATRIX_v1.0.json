@@ -1,6 +1,6 @@
 {
   "version": "STATE_TRANSITION_MATRIX_v1.0",
-  "release": "MathGov_v12.4",
+  "release": "MathGov_v12.5",
   "normal_rules": [
     {
       "when": {

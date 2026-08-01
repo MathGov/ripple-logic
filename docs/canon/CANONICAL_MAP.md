@@ -1,4 +1,4 @@
-# Canonical Map for RippleLogic Canon v12.4
+# Canonical Map for RippleLogic Canon v12.5
 
 This file is a reader map for the governing Canon. It does not replace the Canon and does not create new rules.
 
@@ -42,7 +42,7 @@ The Canon has many appendices because it is a source specification. Public reade
 If a short guide, example, workbook, or companion document appears to conflict with the Canon, use the Canon for cascade semantics and use the source hierarchy files to identify which artifact controls the disputed issue.
 
 
-- `docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.1.md`: v12.0 compact evidence profile inside Reality Grounding and CSV for material physical or causal action. Canon controls if conflict occurs.
+- `docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.md`: v12.0 compact evidence profile inside Reality Grounding and CSV for material physical or causal action. Canon controls if conflict occurs.
 
 
 - Appendix AN: Methodological Falsifiability and Dependency Integrity Standard. Normative v12.0 hardening patch for claim-type discrimination, falsification/revision triggers, alternatives, dependency ledgers, and re-derivation scope.

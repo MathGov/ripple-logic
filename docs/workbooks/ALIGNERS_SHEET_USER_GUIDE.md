@@ -4,7 +4,7 @@ The Aligners Sheet is a worked-run and training companion for RippleLogic. It is
 
 ## Current workbook status
 
-- Workbook: `docs/aligners/RippleLogic_Aligners_Sheet_v5.4.xlsx`
+- Workbook: `docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx`
 - Formula-error scan in this release polish found no visible `#REF!`, `#DIV/0!`, `#VALUE!`, `#NAME?`, or `#N/A` cells in the imported workbook surface.
 - This is a sanity check, not a full formula audit.
 
@@ -52,3 +52,12 @@ For review or replay:
 5. report engine/version and any formula differences in the run record.
 
 The workbook remains a worked-run exemplar, not a reference calculator or repository-level validator.
+
+
+## Material obligation integrity
+
+When `CSV_PASS_WITH_CONTROLS` depends on a control, complete the `Responsibility_Continuity` material-obligation table. Record the accountable authority, operational carrier or execution path, authority/capacity basis, trigger, scope, required action, response window, evidence, review/expiry, challenge route, accepted delegation, backup, nonperformance escalation, amendment/waiver authority, change-control rule, residual responsibility, obligation status, and effectiveness status. A named owner or completed checklist alone does not establish control effectiveness.
+
+## Hidden human compensation
+
+Use `Human_Compensation_Load` before automation, scaling, outsourcing, or role removal when current performance may depend on undocumented overrides, exception handling, reconciliation, memory, relationships, recovery work, weak-signal detection, or informal escalation. `NOT_MATERIAL` requires a bounded rationale and reopen trigger. Material hidden dependence routes to support, documentation, redistribution, binding controls, redesign, or escalation inside CSV; it is not a sixth gate.

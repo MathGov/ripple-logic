@@ -3,7 +3,7 @@
 
 For the expanded future-work list, see `FUTURE_WORK_ROADMAP.md`. Items listed there are intentionally not claimed as complete in this release.
 
-## Current v12.3 / SGP v8.3 public research/source release
+## Current v12.5 / SGP v8.4 public research/source release
 
 Current status: source/specification and validation-preparation package hardened for public review, teaching, controlled pilot design, and structured critique. It is not empirically validated or deployment-certified. Next work should prioritize evidence: RLS rater sprints, UCI/HOI measurement development, SGP and RMCP/P100 validation studies, independent replay, reference-calculator planning, and low-risk pilot design.
 
@@ -65,7 +65,7 @@ The seven welfare dimensions should be treated as a minimal conceptual covering 
 
 ## v12.2 Operational Assurance Programme
 
-Current v12.3 source work is frozen after same-version release-integrity hardening. The next workstream is evidence and implementation, not another broad philosophical rewrite:
+Current v12.5 source work is frozen after same-version release-integrity hardening. The next workstream is evidence and implementation, not another broad philosophical rewrite:
 
 1. reference semantics and deterministic evaluator;
 2. parameter and authority locking;

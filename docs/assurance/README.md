@@ -1,6 +1,6 @@
 # MathGov Operational Assurance Companions
 
-**Status:** Informative and implementation-preparation companions for MathGov Core v12.4. The RippleLogic Canon controls if conflict occurs.
+**Status:** Informative and implementation-preparation companions for MathGov Core v12.5. The RippleLogic Canon controls if conflict occurs.
 
 These files strengthen replay, anti-gaming, drift response, domain localization, and security testing without adding a sixth gate, changing component versions, or claiming empirical validation.
 
@@ -20,4 +20,4 @@ These files strengthen replay, anti-gaming, drift response, domain localization,
 
 ## Authority rule
 
-These artifacts do not grant permission, legal authority, deployment certification, ProofPack status, Tier 4 status, reference-calculator status, or automated moral truth. They prepare stronger implementation and validation. Canon v12.4, SGP v8.3, the release manifest, and exact hashes remain controlling within their declared roles.
+These artifacts do not grant permission, legal authority, deployment certification, ProofPack status, Tier 4 status, reference-calculator status, or automated moral truth. They prepare stronger implementation and validation. Canon v12.5, SGP v8.4, the release manifest, and exact hashes remain controlling within their declared roles.

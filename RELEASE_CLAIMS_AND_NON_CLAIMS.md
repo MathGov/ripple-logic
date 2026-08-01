@@ -28,14 +28,14 @@ Not claimable: this release does not implement a realizability-native computer a
 Not claimable: this release does not prove that a different compute class is necessary or sufficient for AI safety. It only requires that consequence-bearing execution claims distinguish candidate-generation sources from domain admissibility warrants and refuse to treat downstream orchestration, approval, or filtering as physical-safety proof.
 
 
-## Historical lineage — v12.2 SGP v8.3 Reality-Management Calibration Integration
+## Historical lineage — v12.2 SGP v8.4 Reality-Management Calibration Integration
 
 This patch may claim final documentation-source polishing before validation work. It may not claim empirical validation, legal certification, deployment certification, ProofPack readiness, Tier 4 readiness, reference-calculator status, or automated moral truth.
 
 
 ## Source-Coupling Integrity note
 
-This release includes `docs/standards/Source_Coupling_Integrity_Standard_v2.1.md` and Canon Appendix AL as a MathGov-native Reality Grounding and CSV hardening diagnostic. It is not a sixth gate, does not import any external ontology, and defines Source-Coupling Integrity entirely in MathGov-native language.
+This release includes `docs/standards/Source_Coupling_Integrity_Standard_v2.2.md` and Canon Appendix AL as a MathGov-native Reality Grounding and CSV hardening diagnostic. It is not a sixth gate, does not import any external ontology, and defines Source-Coupling Integrity entirely in MathGov-native language.
 
 
 ## Tier 1-3 source-ready boundary
@@ -43,9 +43,9 @@ This release includes `docs/standards/Source_Coupling_Integrity_Standard_v2.1.md
 Where older release notes use “Complete Ready,” the intended meaning is Tier 1-3 source-ready and review-ready: document-package readiness for the declared Tier 1-3 architectural/source release. It does not mean empirical validation, deployment certification, legal certification, ProofPack readiness, Tier 4 readiness, machine-verifiable ecosystem completeness, or automated moral truth.
 
 
-## SGP v8.3 dual-anchor and open-P100 guardrail
+## SGP v8.4 dual-anchor and open-P100 guardrail
 
-SGP v8.3 separates two uses of the top plateau. **FPP-100** is the full, equal, non-downgradable rights-of-protection status held by every human person, independent of measured intelligence, age, disability, communication, wakefulness, or usefulness. **RMCP-P100** is an informative, open calibration plateau for integrated reality-management capacity. Humanity as a collective is the provisional current reference calibration anchor because of its cumulative language, mathematics and science, intergenerational knowledge, technology, institutional coordination, planetary monitoring, cross-scale intervention, and capacity for Recursive Union Awareness.
+SGP v8.4 separates two uses of the top plateau. **FPP-100** is the full, equal, non-downgradable rights-of-protection status held by every human person, independent of measured intelligence, age, disability, communication, wakefulness, or usefulness. **RMCP-P100** is an informative, open calibration plateau for integrated reality-management capacity. Humanity as a collective is the provisional current reference calibration anchor because of its cumulative language, mathematics and science, intergenerational knowledge, technology, institutional coordination, planetary monitoring, cross-scale intervention, and capacity for Recursive Union Awareness.
 
 The two anchors MUST NOT be collapsed. RMCP/P100 does not establish sentience, moral worth, FPP, CMIU membership, wise performance, lawful mandate, or authority. P100 is not a permanent human monopoly: a biological, digital, hybrid, collective, or extraterrestrial intelligence may reach, equal, exceed, or already exist at the open plateau when admissible evidence supports the assignment. Greater capability creates greater responsibility, not permission to dominate, consume, erase, own, or convert protected beings into resources.
 
@@ -61,9 +61,9 @@ MathGov distinguishes governance permission from physical admissibility. For con
 
 ## Publication synchronization boundary
 
-This package can be internally release-ready while repository tags, public websites, or mirrors remain unsynchronized. A claim that v12.4 is the currently published canonical release requires an accessible tagged release, matching manifest, and matching SHA-256 set. Publication-state verification is external to the framework calculations.
+This package can be internally release-ready while repository tags, public websites, or mirrors remain unsynchronized. A claim that v12.5 is the currently published canonical release requires an accessible tagged release, matching manifest, and matching SHA-256 set. Publication-state verification is external to the framework calculations.
 
 
-## v12.3 integration note
+## v12.5 integration note
 
-WDBIP v1.4 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.3 controls its wrapper assurance surface. Run-record v2 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.
+WDBIP v1.5 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.4 controls its wrapper assurance surface. Run-record schema v3 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.

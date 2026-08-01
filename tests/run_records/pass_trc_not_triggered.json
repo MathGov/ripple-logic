@@ -3,12 +3,12 @@
     "run_id": "MG-EXAMPLE-CUPS-001",
     "run_version": "1.0",
     "parent_run_id": null,
-    "package_release_id": "MathGov_Core_2026_09_v12.4_SGP_v8.3",
+    "package_release_id": "MathGov_Core_2026_09_v12.5_SGP_v8.4",
     "package_sha256_reference": null,
-    "canon_version": "v12.4",
+    "canon_version": "v12.5",
     "sgp_version": "NOT_TRIGGERED",
     "created_utc": "2026-07-19T00:00:00Z",
-    "ripple_md_version": "v5.3",
+    "ripple_md_version": "v5.4",
     "wdbip_version": "NOT_TRIGGERED"
   },
   "decision": {
@@ -299,6 +299,65 @@
     "communication_owner": "Worked-example decision owner",
     "remedy_owner": "Worked-example decision owner",
     "residual_responsibility": "Worked-example decision owner",
-    "legal_liability_determined_separately": true
+    "legal_liability_determined_separately": true,
+    "material_obligations": [
+      {
+        "obligation_id": "MO-SANITATION-001",
+        "obligation": "Maintain sanitation and fallback controls required for CSV_PASS_WITH_CONTROLS.",
+        "accountable_authority": "Facilities manager",
+        "operational_carrier_or_execution_path": "Named shift lead using the sanitation checklist and fallback-supply release process",
+        "authority_and_capacity_basis": "Role has stop authority, checklist access, scheduled time, supplies, and escalation access.",
+        "activation_trigger": "Reusable-cup trial active or sanitation exception detected.",
+        "scope": "Pilot site and pilot operating hours.",
+        "required_action": "Verify sanitation, stop affected service when thresholds fail, and release fallback supply.",
+        "response_deadline_or_window": "Before service and immediately on exception.",
+        "evidence_of_discharge": "Signed checklist, exception log, and fallback-release record.",
+        "review_or_expiry": "Review weekly; expires at pilot end or on material configuration change.",
+        "challenge_route": "Staff or affected user may escalate to site manager and reviewer.",
+        "delegation_acceptance": "Any substitute must explicitly accept the shift duty in the roster.",
+        "backup_or_successor": "Site manager or designated backup shift lead.",
+        "nonperformance_trigger": "Missing checklist, missed exception response, unavailable carrier, or unresolved sanitation alert.",
+        "missed_duty_escalation": "Pause reusable-cup service, use fallback supply, notify site manager, and reopen CSV controls.",
+        "amendment_waiver_suspension_retirement_authority": "Facilities manager with reviewer sign-off; the operating carrier may not self-waive.",
+        "change_control_rule": "Material change creates a logged run amendment and requalification before continued controlled selectability.",
+        "residual_responsibility": "Deploying organization remains responsible if a contractor or shift carrier fails.",
+        "effectiveness_status": "EFFECTIVE_WITHIN_SCOPE",
+        "obligation_status": "ACTIVE"
+      }
+    ],
+    "human_compensation_load": {
+      "status": "NOT_MATERIAL",
+      "trigger_rationale": "No material hidden-human-compensation dependency identified within this bounded test vector; reopen on automation, scale, role removal, repeated override, or workload evidence.",
+      "carrier_role_classes": [],
+      "hidden_work_and_workflow_gap": null,
+      "burden_and_recovery_indicators": [],
+      "single_person_dependency": null,
+      "consequence_if_compensation_stops": null,
+      "evidence_sources": [],
+      "privacy_and_non_retaliation_controls": null,
+      "preservation_or_redesign_action": null,
+      "review_trigger": "Automation, scaling, outsourcing, role removal, repeated manual override, or material workload/recovery signal."
+    }
+  },
+  "configuration_assurance": {
+    "configuration_id": "CFG-EXAMPLE-001",
+    "configuration_hash": null,
+    "configuration_summary": "Frozen example configuration for schema and semantic conformance testing.",
+    "operating_envelope": "Declared test or illustrative environment only.",
+    "active_tools_permissions": [],
+    "active_controls": [
+      "human review"
+    ],
+    "capability_state": "NOT_APPLICABLE",
+    "current_state_status": "VALID",
+    "transition_status": "ADMISSIBLE",
+    "post_state_status": "VIABLE",
+    "future_safe_option_space_effect": "PRESERVES",
+    "qualification_status": "CURRENT",
+    "requalification_triggers": [
+      "material configuration, evidence, control, authority, or environment change"
+    ],
+    "trigger_events": [],
+    "opaque_dependency_status": "NONE"
   }
 }

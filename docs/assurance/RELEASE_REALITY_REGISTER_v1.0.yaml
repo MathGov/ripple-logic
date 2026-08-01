@@ -1,23 +1,34 @@
 schema_version: RELEASE_REALITY_REGISTER_v1.0
-status: CANDIDATE_TEMPLATE_REQUIRES_HASH_LAST_POPULATION
-rule: A referenced artifact is AVAILABLE only when the exact path and SHA-256 hash exist in the same release. Roadmap language must use FUTURE or UNAVAILABLE.
+status: ACTIVE_RELEASE_REGISTRY
+release_id: MathGov_Core_2026_09_v12.5_SGP_v8.4
+rule: An artifact is AVAILABLE only when its exact path exists in the active release
+  and its SHA-256 value matches this registry and the release ledger. Roadmap language
+  must use FUTURE or UNAVAILABLE.
+authority_boundary: This registry controls release-availability claims only. It does
+  not create gates, empirical validity, legal authority, deployment authorization,
+  or normative rules beyond the governing sources.
 artifacts:
-  - artifact_id: WDBIP_v1_2
-    status: AVAILABLE_IN_WDBIP_PACKAGE
-    expected_paths:
-      - Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.2.md
-      - Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.2.docx
-      - Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.2.pdf
-      - wdbip_record_v1_2.schema.json
-      - validate_wdbip_v1_2.py
-    sha256_status: COMPUTE_AT_RELEASE
-  - artifact_id: MPMR_v1_0
-    status: CANDIDATE_NOT_CORE_INTEGRATED
-    expected_paths:
-      - core_integration_candidate/MEASUREMENT_AND_PARAMETER_MATURITY_REGISTER_v1.0.md
-      - core_integration_candidate/measurement_and_parameter_maturity_register_v1_0.json
-    sha256_status: COMPUTE_AT_RELEASE
-  - artifact_id: ProofPack_Tier4
-    status: UNAVAILABLE_DESIGN_TARGET
-    expected_paths: []
-    sha256_status: NOT_APPLICABLE
+- artifact_id: WDBIP_v1_5
+  status: AVAILABLE_IN_CORE
+  authority: CANON_SUBORDINATE_NORMATIVE_IMPLEMENTATION_COMPANION
+  files:
+  - path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.md
+    sha256: 2950f965d9a690afe085e03126799a2c87ed0f14a8db80f1dc83b26ee1dc65b6
+  - path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.docx
+    sha256: 3e6c71f67d30082d0a3d375557655db109ec2a787dd9603cf1317e53065bf01d
+  - path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.pdf
+    sha256: b35e3b702800864be0c0c913d202bc85c299564e11117a8df4b270e98f94057a
+  - path: docs/standards/wdbip/wdbip_record_v1_5.schema.json
+    sha256: 8f6097de01a8895a1f2bd005995e06f1a28d0fe371097488525dee5bb6c72fbf
+  - path: docs/standards/wdbip/validate_wdbip_v1_5.py
+    sha256: f2575619bc39d1a33ac4206840ec94bf2a6d876656ebfd960db93423e0b9da4c
+- artifact_id: MPMR_v1_0
+  status: AVAILABLE_IN_CORE
+  authority: INFORMATIVE_CANON_MIRROR
+  files:
+  - path: docs/assurance/MEASUREMENT_AND_PARAMETER_MATURITY_REGISTER_v1.0.md
+    sha256: 7dd03c4f0ffc97d306080cfca63921f3e16884e5500b21d2d872e0df483a0cdd
+- artifact_id: ProofPack_Tier4
+  status: UNAVAILABLE_DESIGN_TARGET
+  authority: NONE
+  files: []

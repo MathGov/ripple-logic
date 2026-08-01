@@ -1,79 +1,153 @@
 schema_name: MathGovParameterAndAuthorityLockRecord
-schema_version: "0.1"
+schema_version: '0.1'
 status: informative_template_not_a_validator
-canon_pin: RippleLogic v12.4
-purpose: >-
-  Freeze decision-material configuration, evidence cutoffs, reviewers, and authority
-  before outcome-sensitive ranking. Any material amendment creates a new run version.
+canon_pin: RippleLogic v12.5
+purpose: Freeze decision-material configuration, evidence cutoffs, reviewers, and
+  authority before outcome-sensitive ranking. Any material amendment creates a new
+  run version.
 required:
-  - record_id
-  - run_id
-  - run_version
-  - package_release_id
-  - package_sha256_reference
-  - decision_statement
-  - baseline
-  - options
-  - affected_populations
-  - evidence_cutoff_utc
-  - parameter_lock_utc
-  - weights
-  - thresholds
-  - masks
-  - scenario_library
-  - welfare_inclusion_hypotheses
-  - reviewers
-  - authority_basis
-  - permitted_amendments
-  - amendment_policy
+- record_id
+- run_id
+- run_version
+- package_release_id
+- package_sha256_reference
+- decision_statement
+- baseline
+- options
+- affected_populations
+- evidence_cutoff_utc
+- parameter_lock_utc
+- weights
+- thresholds
+- masks
+- scenario_library
+- welfare_inclusion_hypotheses
+- reviewers
+- authority_basis
+- permitted_amendments
+- amendment_policy
 properties:
-  record_id: {type: string}
-  run_id: {type: string}
-  parent_run_id: {type: [string, "null"]}
-  run_version: {type: string}
-  package_release_id: {type: string}
-  package_sha256_reference: {type: string}
-  exact_component_pins: {type: object}
-  decision_statement: {type: string}
-  baseline: {type: object}
-  options: {type: array}
-  no_action_and_delay_options: {type: array}
-  affected_populations: {type: array}
-  protected_subgroups: {type: array}
-  scope_membership_and_dependencies: {type: array}
-  evidence_cutoff_utc: {type: string, format: date-time}
-  evidence_registry_hash: {type: string}
-  parameter_lock_utc: {type: string, format: date-time}
+  record_id:
+    type: string
+  run_id:
+    type: string
+  parent_run_id:
+    type:
+    - string
+    - 'null'
+  run_version:
+    type: string
+  package_release_id:
+    type: string
+  package_sha256_reference:
+    type: string
+  exact_component_pins:
+    type: object
+  decision_statement:
+    type: string
+  baseline:
+    type: object
+  options:
+    type: array
+  no_action_and_delay_options:
+    type: array
+  affected_populations:
+    type: array
+  protected_subgroups:
+    type: array
+  scope_membership_and_dependencies:
+    type: array
+  evidence_cutoff_utc:
+    type: string
+    format: date-time
+  evidence_registry_hash:
+    type: string
+  parameter_lock_utc:
+    type: string
+    format: date-time
   weights:
     type: object
-    fields: [union_weights, dimension_weights, cell_multipliers, provenance, participation_record]
+    fields:
+    - union_weights
+    - dimension_weights
+    - cell_multipliers
+    - provenance
+    - participation_record
   thresholds:
     type: object
-    fields: [rights_floors, categorical_prohibitions, severe_hazard_triggers, trc_corridor, csv_materiality, discrimination_delta]
+    fields:
+    - rights_floors
+    - categorical_prohibitions
+    - severe_hazard_triggers
+    - trc_corridor
+    - csv_materiality
+    - discrimination_delta
   masks:
     type: object
-    fields: [active_cells, non_maskable_cells, rationale]
+    fields:
+    - active_cells
+    - non_maskable_cells
+    - rationale
   scenario_library:
     type: object
-    fields: [library_id, version, hash, dependence_assumptions, rejected_scenario_log]
+    fields:
+    - library_id
+    - version
+    - hash
+    - dependence_assumptions
+    - rejected_scenario_log
   welfare_inclusion_hypotheses:
     type: object
-    fields: [sgp_record_ids, admissible_hypotheses, preregistration_rationale]
+    fields:
+    - sgp_record_ids
+    - admissible_hypotheses
+    - preregistration_rationale
   reviewers:
     type: array
-    item_fields: [role, identity_or_pseudonymous_id, qualification, conflict_of_interest, independence_status]
+    item_fields:
+    - role
+    - identity_or_pseudonymous_id
+    - qualification
+    - conflict_of_interest
+    - independence_status
   authority_basis:
     type: object
-    fields: [role, lawful_or_governed_mandate, domain, limits, revocation_path, appeal_path]
-  permitted_amendments: {type: array}
+    fields:
+    - role
+    - lawful_or_governed_mandate
+    - domain
+    - limits
+    - revocation_path
+    - appeal_path
+    - control_change_authority
+    - waiver_authority
+    - suspension_authority
+    - retirement_authority
+    - carrier_substitution_authority
+  permitted_amendments:
+    type: array
   amendment_policy:
     type: object
-    fields: [material_change_requires_new_run, immaterial_correction_rule, change_log, challenger_review]
-  signatures_or_attestations: {type: array}
-  record_hash: {type: string}
+    fields:
+    - material_change_requires_new_run
+    - immaterial_correction_rule
+    - change_log
+    - challenger_review
+    - material_control_change_requires_requalification
+    - carrier_nonperformance_rule
+    - delegation_acceptance_rule
+    - challenger_or_separation_review
+    - rollback_path
+  signatures_or_attestations:
+    type: array
+  record_hash:
+    type: string
 rules:
   post_outcome_parameter_tuning_without_new_run: prohibited
   silent_replacement_of_prior_record: prohibited
   unresolved_material_conflict_of_interest: escalate_or_refuse
   missing_authority_basis: no_execution_authority
   passing_lock_record_proves_validity: false
+  material_control_change_without_requalification: prohibited
+  silent_carrier_substitution: prohibited
+  self_waiver_by_constrained_system: prohibited

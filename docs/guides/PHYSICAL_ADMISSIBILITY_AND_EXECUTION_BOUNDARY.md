@@ -1,6 +1,6 @@
 # Physical Admissibility and Execution Boundary
 
-Release: MathGov Core Release 2026.09 v12.3 SGP v8.3 Reality-Management Calibration Integration Public Research Source Release
+Release: MathGov Core Release 2026.09 v12.5 / SGP v8.4 - Configuration-Bound Assurance Public Research Source Release
 
 This guide states the v12.0 boundary for consequence-bearing physical execution.
 
