@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt lxml
       - run: sudo apt-get update && sudo apt-get install -y libreoffice-calc
       - run: python release/VERIFY_CURRENT_PINS.py .
       - run: python release/VERIFY_SEMANTIC_SURFACES.py .
