@@ -89,3 +89,10 @@ python release/VERIFY_RELEASE.py
 ## Claim boundary
 
 Passing the included checks establishes package, schema, formula, rendering, and tested-interface conformance. It does not prove evidence truth, empirical effectiveness, physical safety, legal authority, consciousness, moral truth, framework superiority, or deployment readiness.
+## Related MathGov Repositories
+
+- **MHIOS — MathGov Human Interface and Orchestration Standard**  
+  Operationalizes the human-interface, orchestration, authority, computational-context, and execution-control layer around MathGov / RippleLogic decisions.  
+  https://github.com/MathGov/mhios
+
+MHIOS does not redefine the RippleLogic Canon. It provides a distinct implementation and orchestration layer synchronized with the current MathGov Core baseline.
