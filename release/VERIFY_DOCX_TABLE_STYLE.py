@@ -28,8 +28,8 @@ def fail(msg: str) -> None:
     raise SystemExit(f'FAIL DOCX table style: {msg}')
 
 main_docs = {}
-for path in ROOT.rglob('*.docx'):
-    if 'core_15' not in path.parts and path.name in PRIMARY_NAMES:
+for path in (ROOT / 'docs').rglob('*.docx'):
+    if path.name in PRIMARY_NAMES:
         if path.name in main_docs:
             fail(f'duplicate primary {path.name}')
         main_docs[path.name] = path
