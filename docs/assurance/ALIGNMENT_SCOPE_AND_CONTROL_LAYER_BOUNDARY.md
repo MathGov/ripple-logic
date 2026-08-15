@@ -1,6 +1,6 @@
 # Alignment Scope and Control-Layer Boundary
 
-**Status:** Informative boundary companion for MathGov Core v12.5.
+**Status:** Informative boundary companion for MathGov Core v12.6.
 
 ## Current grounded claim
 
@@ -10,7 +10,7 @@ MathGov is not, by itself, a training algorithm, an inner-alignment proof, a mec
 
 ## Long-horizon aspiration and present evidence boundary
 
-The long-horizon design target is a broadly universalizable, union-grounded ethical operating architecture for intelligence-aligned decision-making in shared reality. That is an aspiration and research direction. The current v12.5 claim is narrower: a Tier 1-3 public research/source specification, assurance scaffold, and pilot-preparation architecture.
+The long-horizon design target is a broadly universalizable, union-grounded ethical operating architecture for intelligence-aligned decision-making in shared reality. That is an aspiration and research direction. The current v12.6 claim is narrower: a Tier 1-3 public research/source specification, assurance scaffold, and pilot-preparation architecture.
 
 ## Descriptive-to-normative bridge
 

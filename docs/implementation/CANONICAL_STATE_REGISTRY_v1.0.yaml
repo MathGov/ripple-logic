@@ -1,5 +1,5 @@
 version: CANONICAL_STATE_REGISTRY_v1.0
-release: MathGov_v12.5
+release: MathGov_v12.6
 canonical_tokens:
   rg:
   - RG_SUPPORTED
@@ -40,7 +40,7 @@ canonical_tokens:
 deprecated_input_aliases:
   CSV_REDESIGN:
     normalize_to: CSV_REDESIGN_REQUIRED
-    warning: CSV_REDESIGN is deprecated and must not be emitted by v12.5 systems.
+    warning: CSV_REDESIGN is deprecated and must not be emitted by v12.6 systems.
 framework_verdict_crosswalk:
   ALLOW_FRAMEWORK_SELECTION: SELECTED_DECISIVE
   REFUSE_DETERMINISTIC_SELECTION+AUTHORITY_SELECTION: SELECTED_BY_AUTHORITY_NON_DECISIVE

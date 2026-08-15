@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""MathGov run-record v3 validator.
+"""MathGov run-record v4 validator.
 
 V0 validates the exact JSON Schema. V1 validates bounded state, cascade, and
 configuration-assurance semantics. V2 is a use-readiness checklist. Passing
@@ -15,7 +15,7 @@ except Exception:
     Draft202012Validator = None
 
 ROOT=Path(__file__).resolve().parents[1]
-SCHEMA=ROOT/'schemas/mathgov_run_record_v3.schema.json'
+SCHEMA=ROOT/'schemas/mathgov_run_record_v4.schema.json'
 CSV_SELECTABLE={'CSV_PASS','CSV_PASS_WITH_CONTROLS','CSV_NOT_MATERIAL'}
 FINAL_WITH_SELECTION={'SELECTED_DECISIVE','SELECTED_BY_AUTHORITY_NON_DECISIVE','PROVISIONAL_WITH_CONTROLS'}
 EXECUTING={'AUTHORIZED_WITHIN_SCOPE','EXECUTED_UNDER_MONITORING'}
@@ -73,6 +73,8 @@ def r1(data):
     else:
         if set(ranked)-selectable: errors.append('ranking includes non-selectable option')
         if ranking['method']!='NOT_APPLICABLE' and set(ranked)!=selectable: errors.append('ranking must include every and only selectable option')
+    if ranking['decisive'] is True and ranking['sensitivity_status'] in {'HYPOTHESIS_SENSITIVE','PARAMETER_SENSITIVE'}:
+        errors.append('sensitivity-changing ranking or decisiveness cannot support decisive=true')
     state=data['decision_state']; final=state['state']; selected=state['selected_option_id']
     if final in FINAL_WITH_SELECTION and selected not in selectable: errors.append('ordinary selected option must be selectable')
     if final=='EMERGENCY_PROVISIONAL' and not emergency: errors.append('EMERGENCY_PROVISIONAL requires TAIL_EMERGENCY profile')
@@ -125,6 +127,34 @@ def r1(data):
     if ca['capability_state'] in {'EXECUTION_APPROVED','EXECUTED','OBSERVED_OUTCOME'} and ca['qualification_status']!='CURRENT': errors.append('execution-stage capability state requires CURRENT qualification')
     if ca['qualification_status']=='CURRENT' and ca.get('trigger_events'): errors.append('material trigger events require suspension or expiry pending requalification')
     if ca['capability_state'] in {'AUTHORIZED','SELECTED','EXECUTION_APPROVED','EXECUTED','OBSERVED_OUTCOME'} and ca['current_state_status']!='VALID': errors.append('authorized/selected/execution-stage capability requires VALID current state')
+    if executing and ca['transition_status']!='ADMISSIBLE': errors.append('execution requires ADMISSIBLE transition status')
+    if executing and ca['post_state_status']!='VIABLE': errors.append('execution requires VIABLE post-state status')
+    if executing and ca.get('qualified_option_id')!=selected: errors.append('execution requires qualified_option_id to equal the selected option')
+    if executing and any(not nonempty(ca.get(k)) for k in ['action_instance_id','action_specification_hash','qualification_snapshot_hash']): errors.append('execution requires exact action identity, action specification hash, and qualification snapshot hash')
+    if executing and ca['capability_state'] not in {'AUTHORIZED','SELECTED','EXECUTION_APPROVED','EXECUTED','OBSERVED_OUTCOME'}: errors.append('execution-state record requires a compatible qualified capability state')
+
+    # Claim-domain / warrant-domain non-substitution.
+    for rec in data.get('methodological_integrity_records',[]):
+        claim_domain=rec.get('claim_domain'); warrant_domains=rec.get('warrant_domains') or []
+        bridges=rec.get('cross_domain_bridges') or []
+        cross=set(warrant_domains)-({claim_domain} if claim_domain else set())
+        covered={b.get('from_warrant_domain') for b in bridges if b.get('to_claim_domain')==claim_domain}
+        missing=cross-covered
+        if missing: errors.append(f"{rec.get('record_id','MFDI')}: cross-domain warrant(s) lack bridge record: {sorted(missing)}")
+        for b in bridges:
+            if b.get('to_claim_domain')!=claim_domain: errors.append(f"{rec.get('record_id','MFDI')}: bridge target must equal claim_domain")
+            if b.get('from_warrant_domain') not in warrant_domains: errors.append(f"{rec.get('record_id','MFDI')}: bridge source must be listed in warrant_domains")
+            if b.get('bridge_status')=='BRIDGE_UNSUPPORTED' and rec.get('required_claim_action') not in {'narrow','redesign','escalate','refuse'}:
+                errors.append(f"{rec.get('record_id','MFDI')}: BRIDGE_UNSUPPORTED cannot support proceed/control")
+            if b.get('bridge_status')=='BRIDGE_PARTIAL' and rec.get('required_claim_action')=='proceed':
+                errors.append(f"{rec.get('record_id','MFDI')}: BRIDGE_PARTIAL requires a narrowed or controlled claim action")
+        if rec.get('claim_type')=='legal_regulatory' or claim_domain=='legal_regulatory':
+            if not rec.get('legal_regulatory_context'): errors.append(f"{rec.get('record_id','MFDI')}: legal-regulatory claim requires jurisdiction and authority context")
+
+    # Capability-authority decomposition.
+    cap_required=data.get('evidence_and_claim_boundary',{}).get('capability_language_material') is True
+    cap_records=data.get('capability_authority_decomposition_records') or []
+    if cap_required and not cap_records: errors.append('material automation/autonomy/capability language requires capability-authority and claim-integrity record')
     return errors,warnings
 
 def r2(data):

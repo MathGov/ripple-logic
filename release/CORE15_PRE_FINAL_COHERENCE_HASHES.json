@@ -1,18 +1,22 @@
 {
-  "CSV_Gate_Standard_v2.3.docx": "13b56af0b8799281d9f389075fe9dd8c07571d5997d2fbfe416bbd75730ba797",
-  "MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.docx": "9a31ec5b2ddba51c46a9d59e314796c50a733171ad774840185ee26b0bd47d3f",
-  "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.docx": "0208e4e182b3258003c803fcb6b617948d6daba9dacbf95074d1c9134e14ef56",
-  "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.docx": "82b34bef34612b5451fadc94486cf4fc78e8fb4a7570f45db0ce52e526aaeaaa",
-  "Physical_Causal_Admissibility_Evidence_Profile_v2.2.docx": "6cd820c26d156ab2ce0c520a2b0315342b4d6dd43a3586904e7e285c4ba85fc6",
-  "README.md": "ccbe4240535eab985b3e3d50a639cab736b52c078fcf0626a50bd0bb2681b6f6",
-  "RippleLogic_Agent_System_v12.3.docx": "ca4252eda66274e12f5282501356f730f9059876540e5e7cf065e5915d19dc28",
-  "RippleLogic_Aligners_Sheet_v5.5.xlsx": "70c4e5a8bab10fc6d331216b6ec38f02e73fb7e8aeff69eb2b93f0b77f61b35c",
-  "RippleLogic_Cascade_Standard_v2.5.docx": "04c9feb1045c2137968ea082d1ebe23349e9989b601b0b7f09781ca1a96f7968",
-  "RippleLogic_Foundations_Primer_v4.3.docx": "acd81f01d96847fe9653a9217e91b7ad61e9eac43b33800bdba1ca5703865da1",
-  "RippleLogic_RLS_Validation_Protocol_v2_5.docx": "ffb00cb5be6de26e0bc527278efab5014064408a18a800dea324373a12da7ea1",
-  "RippleLogic_v12.5_Canon.docx": "33c967ffe70e2f0e9eef66ba843f6adc1ffe7eb50bd87fb0c55e1200cbae23f3",
-  "SGP_v8.4.docx": "13b9dc4cc7f06ba3020bf8e1c91ccd53a8487100623d6200426b05b2adbb7c73",
-  "Source_Coupling_Integrity_Standard_v2.2.docx": "9b764461a59f7d2dabb1e89319ffeca4e2c240ecb7edbc0472cf2729e9bfde72",
-  "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.docx": "3e6c71f67d30082d0a3d375557655db109ec2a787dd9603cf1317e53065bf01d",
-  "ripple_md_Standard_v5.4.docx": "2f32e55015190a4e8a5a83b7b2f98b5ebfaec0fbaa96c066aabfc725dc627216"
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+  "build_id": "2026.08.15.3",
+  "generated_on": "2026-08-15",
+  "files": {
+    "CSV_Gate_Standard_v2.4.docx": "7ac9dfa53709f7d11a70663c950ee178cfea6ebe8bc80a7c5cce8c4e6cbc19a2",
+    "MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6.docx": "a351b1f78b62a9f4be00a3765d54941265a826778cd4cbc83495deea3e34a4ca",
+    "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.4.docx": "9e0785a9c619ba4744ca7fda5b8ee200d1595d5cec6fa8b691c28db6f682e153",
+    "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.3.docx": "6467f83870713c7167c6084bf37c0e5c0069643a290edb7ea0d50116f0577c3b",
+    "Physical_Causal_Admissibility_Evidence_Profile_v2.3.docx": "c00bacf68c73e847e785eb84743c5371e1ddfbc27cf52ed346e86dbac8272751",
+    "RippleLogic_Agent_System_v12.5.docx": "ad395483d07451defcac2141a71861cf449fcf6a673ca2b082fce5896339c66e",
+    "RippleLogic_Aligners_Sheet_v5.6.xlsx": "df8065600ed044b8b4b6bf7ab4ea1eddeb3f4556cdecfcee64615d404eb22088",
+    "RippleLogic_Cascade_Standard_v2.6.docx": "2cd51102b87b9b0df7f342950af266616c73b6bea9d1aa27a4940030b20213f4",
+    "RippleLogic_Foundations_Primer_v4.4.docx": "d088ddc6f8380a511ce07a74da8bfd7a5895afea30208f6aafac6b58e6cefabd",
+    "RippleLogic_RLS_Validation_Protocol_v2_6.docx": "6d7dab31342c2a5373bcf5b9c08158aff89a3ce3ae30bdf8b8c3b86d18e86313",
+    "RippleLogic_v12.6_Canon.docx": "d836f8e4ec23c3f25e97c73bbcd9de23e55f4873a32e39ecbe5711b4032206ac",
+    "SGP_v8.5.docx": "08dce47ac11a6cbd6f17c02a75454e3d14e35405d78d3d2f144de78b0f092bf1",
+    "Source_Coupling_Integrity_Standard_v2.3.docx": "15962ffcbe8a8ddd6a9106816d31134f066713d25a59d68b1000ce66da5e0702",
+    "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.docx": "6644e9a91bb11862c6de592dcb4419c6b8caf601b50d1b013054c80011fc4fce",
+    "ripple_md_Standard_v5.5.docx": "4be3ffbd3b6ba168b3cd0bbe81dbf2ee6e4380060d2bc002320698414e206445"
+  }
 }

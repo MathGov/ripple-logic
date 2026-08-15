@@ -1,10 +1,10 @@
 {
-  "protocol_version": "WDBIP v1.5",
-  "schema_version": "wdbip_record_v1_5",
-  "canon_version": "RippleLogic v12.5",
+  "protocol_version": "WDBIP v1.6",
+  "schema_version": "wdbip_record_v1_6",
+  "canon_version": "RippleLogic v12.6",
   "sgp_link": {
     "applicable": true,
-    "version": "SGP v8.4",
+    "version": "SGP v8.5",
     "note": "Human FPP protections remain full; WDBIP does not infer standing."
   },
   "pcc_link": {

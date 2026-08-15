@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite the MathGov / RippleLogic v12.5 public research-source release."
-title: "MathGov Core Release 2026.09: RippleLogic Canon v12.5 and SGP v8.4"
-version: 12.5
-date-released: 2026-07-23
+message: Please cite the MathGov / RippleLogic v12.6 public research-source release.
+title: 'MathGov Core Release 2026.09: RippleLogic Canon v12.6 and SGP v8.5'
+version: '12.6'
+date-released: '2026-08-15'
 authors:
-  - family-names: McGaughran
-    given-names: James
-    orcid: https://orcid.org/0009-0005-3324-7290
+- family-names: McGaughran
+  given-names: James
+  orcid: https://orcid.org/0009-0005-3324-7290
 repository-code: https://github.com/MathGov/ripple-logic
 url: https://ripplelogic.org
 license: Apache-2.0

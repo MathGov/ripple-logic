@@ -1,57 +1,47 @@
-# Final Verification Report — MathGov Core v12.5 / SGP v8.4
+# Final Verification Report - MathGov Core v12.6 / SGP v8.5
 
-**Package:** `MathGov_Core_2026_09_v12_5_SGP_v8_4_FINAL_CORE15_EXTENDED_BOUNDARY_AND_REFERENCE_VERIFIED`  
-**Release ID:** `MathGov_Core_2026_09_v12.5_SGP_v8.4`  
-**Verification date:** 31 July 2026
+**Exact release:** `MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3`  
+**Verification date:** 15 August 2026  
+**Disposition:** `PUBLICATION-READY STABILIZATION BUILD`  
+**Construct validity:** `UNTESTED`
 
-## Result
+## Verified inventory
 
-`FINAL VERIFICATION: PASS`
+- Exact 15-file Core 15 inventory plus explanatory README.
+- 15 current Markdown/DOCX/PDF reading triples: 14 primary components plus the component map.
+- RippleLogic Agent System v12.5 with Computational Context Preflight and Successor Integrity Runtime Extension.
+- Run-record schema v4, validator, positive/expected-failure fixtures, and active reference replay examples.
+- SGP RMCP machine interface and WDBIP v1.6 machine interface.
+- Aligners Sheet v5.6 with 87 worksheets; the final user-approved workbook mirror is byte-identical in `docs/aligners/` and `core_15/`.
+- Current release-reality register, source-verification log, active manifest, SHA-256 ledgers, accessibility/layout audits, PDF preflight, final change ledger, and release-readiness report.
 
+## Final independent-audit closure
 
-## Core 15 / extended-support boundary closure
+The external Core-15 audit found no architectural defect and no mathematical error. Its blocking observations were release-surface issues. The current repository closes the applicable issues while preserving completed framework substance:
 
-- Root README distinguishes exact Core 15 pins from extended release-support artifacts.
-- Aligners `v12_5_Sync` separates the Core 15 from the RLS Validation Workbook and run-record schema.
-- Aligners `Core_Component_Map` correctly pins ripple.md v5.4.
-- Official OWASP and NIST/CAISI external-security references were checked and recorded.
-- MHIOS v0.2 was reviewed; no file change was justified because its v0.2, candidate-companion, and `ASSUMPTION_BOUND / TEST_REQUIRED` boundaries are already correct.
+- every Core 15 `.docx` is genuine OOXML;
+- SGP v8.5 states its actual Governing Core / binding-interface status while remaining explicitly not a cascade admissibility gate and not an authority grant;
+- current live companion pins use Agent System v12.5;
+- the Aligners Sheet labels build-frozen calculation surfaces truthfully and the matching Canon/SGP pin checks report PASS;
+- the D6/D7 rights-routing rule remains substantively unchanged but is now backed by `RIGHTS_RELEVANT_EFFECT_UNROUTED` in the Canon registry and WDBIP validator surfaces;
+- provisional UCI cannot alone determine a high-stakes CSV pass/fail or manufacture deterministic selection;
+- constitutional weight floors are labelled next to the numbers as chosen, challengeable governance priors;
+- public RMCI_L rendering is constrained against percentage, cardinal-rank, moral-rank, leaderboard, or authority interpretations;
+- recent/high-risk source identity is recorded in `release/SOURCE_VERIFICATION_LOG.md`;
+- Canon v12.6 enters a six-month stabilization window rather than continuing feature churn.
 
-## Final same-version release-reality and authority-coherence closure
+## Publication QA
 
-The release integrates only findings that survived direct mathematical, semantic and cross-file review:
+The governing Canon, SGP, and WDBIP publication files were regenerated from their final DOCX sources after the final substantive edits. The Canon static linked TOC was repaginated to the final **277-page** PDF. Changed/high-risk pages were rendered and inspected, including the Canon TOC, UCI boundary, constitutional-prior disclosure, audit-flag registry, final completion statement, the SGP status/RMCI safeguards, and WDBIP rights-routing enforcement. No confirmed clipping, overlap, unreadable table, malformed footer, missing glyph, or page-boundary failure was observed on those changed surfaces.
 
-- active release-reality registry synchronized to WDBIP v1.5 and MPMR v1.0;
-- exact path-and-hash availability binding for active assurance artifacts;
-- explicit informative-mirror authority boundary for the maturity register;
-- dedicated release-reality coherence verifier integrated into the master gate;
+## Workbook QA boundary
 
-- governed sensitivity for `beta` and `beta_RF`;
-- explicit NONE/QUICK mode-comparability boundary without changing equations;
-- nonlinear baseline-sensitivity disclosure;
-- high-alpha effective-maximum CVaR disclosure;
-- emergency rights-order sensitivity;
-- corrected phantom uncertainty;
-- U7 construct-exception typing;
-- corrected HOI interpretation;
-- explicit end of historical-lineage scope;
-- exact Core 15 companion matrix.
+The final workbook supplied for release preserves the same 87-sheet mathematical/formula graph and load-bearing values as the immediately preceding independently audited workbook. A byte-level OOXML comparison found no changes to the formula-bearing sheets or the RLS/TRC/NCRC/Dashboard/Audit_Flags/Reproducibility/Parameters/Rights-Coverage load-bearing values; the latest change is limited to reader guidance on build-frozen surfaces and recalculation/viewer behavior. No formula, threshold, RLS value, CVaR value, or verdict rule was changed in this final packaging step. The prior independent recalculation evidence therefore remains the relevant formula-graph evidence, while the present build does not overclaim a new independent recalculation.
 
-No gate, threshold, formula, Union Scope, Welfare Dimension, state machine, rights protection, SGP protection rule, workbook formula or table layout was changed.
+## Master verifier result
 
-## Verified release surfaces
-
-- 15 exact Core artifacts.
-- 14 Markdown/DOCX/PDF specification triples.
-- 287 native DOCX tables.
-- 1,633 styled headings.
-- 566 rendered PDF pages.
-- 70 controlling audit-flag tokens.
-- 2,974 Aligners Sheet formulas with zero formula errors and zero circular-dependency groups.
-- All run-record, SGP, WDBIP and safety-conformance vectors.
-- Complete active-file and Core 15 SHA-256 ledgers.
-- Clean-directory extraction and replay.
+`python release/VERIFY_RELEASE.py` returned **FINAL VERIFICATION: PASS** on the finalized build tree after all publication corrections. The final release ledger covers 313 active files plus the exact Core 15 ledger. A clean-extraction replay is required again after ZIP packaging and is recorded separately from this build-tree result.
 
 ## Claim boundary
 
-This result establishes internal and artifact-level conformance for the declared Tier 1–3 public research specification. It does not establish empirical superiority, threshold calibration, legal authority, physical safety, construct validity, production security, Tier 4 or ProofPack completion.
+Publication-ready means artifact-complete and internally synchronized for public research release. It does not establish empirical effectiveness, construct validity, legal authority, physical safety, consciousness, moral truth, framework superiority, or deployment readiness.

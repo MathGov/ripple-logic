@@ -1,0 +1,47 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.2",
+  "build_id": "2026.08.15.2",
+  "semantic_versions_changed": false,
+  "freeze_posture": "Canon v12.6 stabilization window: 2026-08-15 through 2027-02-15; defects and material evidence only",
+  "changes": [
+    {
+      "area": "UCI maturity",
+      "class": "normative clarification / same-line hardening",
+      "change": "Structural coherence remains load-bearing while provisional UCI is explicitly diagnostic and may not by itself determine high-stakes CSV passage/failure or convert non-decisive RLS into deterministic selection."
+    },
+    {
+      "area": "RMCP public rendering",
+      "class": "presentation safeguard",
+      "change": "RMCI_L remains an optional heuristic over ordinal profile levels; public summaries omit it by default and may not render it as percentage capacity, cardinal rank, moral rank, leaderboard, or authority score. Qualified RMCP-P100 reference terms are preferred."
+    },
+    {
+      "area": "constitutional weight floors",
+      "class": "epistemic clarification",
+      "change": "Weight floors are labelled adjacent to the values as chosen, challengeable governance priors rather than discovered empirical constants; post-outcome tuning is prohibited."
+    },
+    {
+      "area": "rights-routing enforcement",
+      "class": "machine conformance hardening of an existing rule",
+      "change": "Added RIGHTS_RELEVANT_EFFECT_UNROUTED to the Canon registry and WDBIP schema/validator, with one positive example update and one expected-failure fixture."
+    },
+    {
+      "area": "citation verification",
+      "class": "release integrity",
+      "change": "Added a whole-corpus Source Verification Log, manually verified recent/high-risk references, and removed literal placeholder URLs."
+    },
+    {
+      "area": "version stability",
+      "class": "release governance",
+      "change": "Declared a six-month Canon v12.6 stabilization window prioritizing independent replay, inter-rater studies, RLS/WDBIP/UCI measurement work, and pilots over specification churn."
+    }
+  ],
+  "explicit_nonchanges": [
+    "No change to RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "No change to rights thresholds or rights coverage sets",
+    "No change to TRC equations, alpha values, p_floor, or corridors",
+    "No change to RLS equations or decisiveness threshold",
+    "No removal of RMCP, RMCI_L, or RMCP-P100; only bounded public-rendering safeguards",
+    "No new gate, Union Scope, Welfare Dimension, right, authority layer, or ontology"
+  ],
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS"
+}

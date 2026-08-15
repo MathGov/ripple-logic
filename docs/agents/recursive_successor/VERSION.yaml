@@ -1,0 +1,11 @@
+component: RippleLogic Agent System
+version: '12.5'
+release_id: RippleLogic_Agent_System_v12.5+2026.08.15.3
+date: '2026-08-15'
+canon_pin: RippleLogic Canon v12.6
+sgp_pin: SGP v8.5
+tested_core_release_id: MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+status: COMPANION_RUNTIME_SPECIFICATION
+core_semantics_changed: false
+construct_validity: UNTESTED
+build_id: 2026.08.15.3

@@ -1,193 +1,401 @@
 #!/usr/bin/env python3
-from pathlib import Path
-from zipfile import ZipFile
-from lxml import etree
-from jsonschema import Draft202012Validator
-import hashlib, json, subprocess, sys, yaml, os
-from concurrent.futures import ThreadPoolExecutor
-sys.dont_write_bytecode=True
-ROOT=Path(__file__).resolve().parents[1]
-SKIP_SUBORDINATES='--skip-subordinates' in sys.argv
-SKIP_HASHES='--skip-hashes' in sys.argv
-CORE={'RippleLogic_Aligners_Sheet_v5.5.xlsx', 'RippleLogic_Foundations_Primer_v4.3.docx', 'Physical_Causal_Admissibility_Evidence_Profile_v2.2.docx', 'RippleLogic_RLS_Validation_Protocol_v2_5.docx', 'ripple_md_Standard_v5.4.docx', 'Source_Coupling_Integrity_Standard_v2.2.docx', 'SGP_v8.4.docx', 'MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.docx', 'Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.docx', 'Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.docx', 'RippleLogic_Cascade_Standard_v2.5.docx', 'MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.docx', 'RippleLogic_v12.5_Canon.docx', 'RippleLogic_Agent_System_v12.3.docx', 'CSV_Gate_Standard_v2.3.docx'}
-TRIPLES=[('docs/canon/RippleLogic_v12.5_Canon.md', 'docs/canon/RippleLogic_v12.5_Canon.docx', 'docs/canon/RippleLogic_v12.5_Canon.pdf'), ('docs/sgp/SGP_v8.4.md', 'docs/sgp/SGP_v8.4.docx', 'docs/sgp/SGP_v8.4.pdf'), ('docs/agents/RippleLogic_Agent_System_v12.3.md', 'docs/agents/RippleLogic_Agent_System_v12.3.docx', 'docs/agents/RippleLogic_Agent_System_v12.3.pdf'), ('docs/standards/CSV_Gate_Standard_v2.3.md', 'docs/standards/CSV_Gate_Standard_v2.3.docx', 'docs/standards/CSV_Gate_Standard_v2.3.pdf'), ('docs/standards/RippleLogic_Cascade_Standard_v2.5.md', 'docs/standards/RippleLogic_Cascade_Standard_v2.5.docx', 'docs/standards/RippleLogic_Cascade_Standard_v2.5.pdf'), ('docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.md', 'docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.docx', 'docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.pdf'), ('docs/primer/RippleLogic_Foundations_Primer_v4.3.md', 'docs/primer/RippleLogic_Foundations_Primer_v4.3.docx', 'docs/primer/RippleLogic_Foundations_Primer_v4.3.pdf'), ('docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.md', 'docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.docx', 'docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.pdf'), ('docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.md', 'docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.docx', 'docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.pdf'), ('docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.md', 'docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.docx', 'docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.pdf'), ('docs/standards/Source_Coupling_Integrity_Standard_v2.2.md', 'docs/standards/Source_Coupling_Integrity_Standard_v2.2.docx', 'docs/standards/Source_Coupling_Integrity_Standard_v2.2.pdf'), ('docs/standards/ripple_md_Standard_v5.4.md', 'docs/standards/ripple_md_Standard_v5.4.docx', 'docs/standards/ripple_md_Standard_v5.4.pdf'), ('docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.md', 'docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.docx', 'docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.pdf'), ('docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_5.md', 'docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_5.docx', 'docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_5.pdf')]
+"""Master verifier for MathGov Core v12.6 / SGP v8.5 build 2026.08.15.3."""
+from __future__ import annotations
 
-def fail(msg): print('FAIL:',msg); raise SystemExit(1)
-def ok(msg): print('PASS:',msg)
-# Run the seven subordinate conformance verifiers unless a caller has already run them separately.
-if not SKIP_SUBORDINATES:
-    for verifier in ['VERIFY_CURRENT_PINS.py','VERIFY_AUDIT_FLAG_REGISTRY.py','VERIFY_SEMANTIC_SURFACES.py','VERIFY_STATE_SEMANTICS_AND_NON_DILUTION.py','VERIFY_FORMULA_INTERFACE_INTEGRITY.py','VERIFY_WORKBOOK_LIVE_RECALCULATION.py','VERIFY_FORMAT_AND_REPRODUCIBILITY.py','VERIFY_RELEASE_REALITY_COHERENCE.py']:
-        env=dict(__import__('os').environ); env['PYTHONDONTWRITEBYTECODE']='1'
-        cp=subprocess.run([sys.executable,str(ROOT/'release'/verifier),str(ROOT)],capture_output=True,text=True,env=env)
-        if cp.returncode: fail(f'{verifier}: {cp.stdout}{cp.stderr}')
-        print(cp.stdout.strip())
-    ok('eight subordinate conformance verifiers')
-else:
-    ok('subordinate conformance verifiers externally completed (split replay mode)')
-# identities, manifests, and public-source hygiene
-vm=yaml.safe_load((ROOT/'VERSION_MANIFEST.yaml').read_text(encoding='utf-8'))
-release_id='MathGov_Core_2026_09_v12.5_SGP_v8.4'
-if vm.get('release_id')!=release_id or vm.get('exact_release_version')!='v12.5' or vm.get('release_line')!='v12.5': fail('VERSION_MANIFEST release identity')
-if vm.get('governing_cascade')!='RG -> RF/NCRC -> TRC -> CSV -> RLS': fail('canonical cascade')
-for p in ROOT.rglob('*'):
-    if p.is_file() and p.suffix.lower() in {'.pyc','.pyo'}: fail(f'compiled artifact in source release {p.relative_to(ROOT)}')
-    if p.is_dir() and p.name=='__pycache__': fail(f'bytecode directory in source release {p.relative_to(ROOT)}')
-ok('release identity, cascade, and public-source hygiene')
-yaml.safe_load((ROOT/'CITATION.cff').read_text(encoding='utf-8')); ok('CITATION.cff parses')
-# exact Core 15
-actual={p.name for p in (ROOT/'core_15').iterdir() if p.is_file() and p.name!='README.md'}
-if actual!=CORE: fail(f'Core 15 set mismatch missing={CORE-actual} extra={actual-CORE}')
-for p in (ROOT/'core_15').iterdir():
-    if p.suffix.lower() in {'.docx','.xlsx'} and p.read_bytes()[:4]!=b'PK\x03\x04': fail(f'OOXML magic {p}')
-ok('exact Core 15 and genuine OOXML')
-# triples and PDF magic
-for tri in TRIPLES:
-    for rel in tri:
-        p=ROOT/rel
-        if not p.is_file() or p.stat().st_size==0: fail(f'missing/empty {rel}')
-    if (ROOT/tri[1]).read_bytes()[:4]!=b'PK\x03\x04': fail(f'DOCX magic {tri[1]}')
-    if (ROOT/tri[2]).read_bytes()[:4]!=b'%PDF': fail(f'PDF magic {tri[2]}')
-ok('14 Markdown/DOCX/PDF triples')
-# Final table/layout audit and supporting RLS validation workbook title.
-audit=json.loads((ROOT/'release/DOCX_TABLE_AND_LAYOUT_AUDIT_v12_5.json').read_text(encoding='utf-8'))
-if audit.get('status')!='PASS': fail('DOCX table/layout audit status')
-expected_audit={'documents':15,'tables':287,'pages':566}
-for k,v in expected_audit.items():
-    if audit.get('totals',{}).get(k)!=v: fail(f'DOCX table/layout audit {k}')
-for k,v in audit.get('totals',{}).items():
-    if k not in {'documents','tables','headings','pages'} and v: fail(f'DOCX table/layout residual defect {k}={v}')
-rls_validation=ROOT/'docs/validation/rls/RLS_Validation_Workbook_v0_3.xlsx'
-with ZipFile(rls_validation) as z:
-    xblob=' '.join(z.read(n).decode('utf-8','ignore') for n in z.namelist() if n.endswith('.xml'))
-if 'RLS VALIDATION WORKBOOK v0.3 - LEVEL 1 STUDY INSTRUMENT' not in xblob: fail('RLS validation workbook visible title')
-ok('final DOCX/PDF audit metrics and visible RLS validation-workbook title')
-# JSON/YAML schemas
-for p in list((ROOT/'schemas').glob('*.json'))+list((ROOT/'docs/standards/wdbip').glob('*.json'))+list((ROOT/'docs/standards/wdbip').glob('*.yaml')):
-    if p.suffix=='.json': json.loads(p.read_text(encoding='utf-8'))
-    else: yaml.safe_load(p.read_text(encoding='utf-8'))
-ok('machine-readable schemas and registers parse')
-run_schema=json.loads((ROOT/'schemas/mathgov_run_record_v3.schema.json').read_text(encoding='utf-8'))
-if run_schema['properties']['identity']['properties']['package_release_id'].get('const')!=release_id: fail('run-record v3 package release const')
-# Run-record vectors and active walkthrough example.  Execute independent vectors
-# concurrently so clean-release verification remains bounded without changing semantics.
-val=ROOT/'release/VALIDATE_MATHGOV_RUN.py'
-example=ROOT/'docs/examples/reproducibility/reusable_cups_run_v3.json'
-if not example.is_file(): fail('missing active schema-v3 reproducibility example')
-env=dict(os.environ); env['PYTHONDONTWRITEBYTECODE']='1'
-jobs=[]
-for pth in sorted((ROOT/'tests/run_records').glob('pass_*.json')):
-    jobs.append(('run pass vector',pth,[sys.executable,str(val),str(pth)]))
-for pth in sorted((ROOT/'tests/run_records').glob('fail_*.json')):
-    jobs.append(('run fail vector',pth,[sys.executable,str(val),str(pth),'--expect-fail']))
-jobs.append(('active reproducibility example',example,[sys.executable,str(val),str(example)]))
-def run_job(job):
-    label,pth,cmd=job
-    r=subprocess.run(cmd,capture_output=True,text=True,env=env)
-    return label,pth,r
-with ThreadPoolExecutor(max_workers=min(8,max(1,os.cpu_count() or 1))) as pool:
-    for label,pth,r in pool.map(run_job,jobs):
-        if r.returncode: fail(f'{label} {pth.name}: {r.stdout}{r.stderr}')
-if (ROOT/'docs/examples/reproducibility/reusable_cups_run_v2.json').exists(): fail('obsolete v2 reproducibility example remains active')
-ok('run-record v3 pass/fail vectors and active walkthrough example')
-# SGP RMCP vectors
-sgps=json.loads((ROOT/'schemas/sgp_rmcp_record_v8_4.schema.json').read_text(encoding='utf-8')); sv=Draft202012Validator(sgps)
-for p in sorted((ROOT/'tests/sgp_rmcp').glob('pass_*.json')):
-    e=list(sv.iter_errors(json.loads(p.read_text(encoding='utf-8'))))
-    if e: fail(f'SGP pass vector {p.name}: {e[0].message}')
-for p in sorted((ROOT/'tests/sgp_rmcp').glob('fail_*.json')):
-    e=list(sv.iter_errors(json.loads(p.read_text(encoding='utf-8'))))
-    if not e: fail(f'SGP fail vector unexpectedly passed {p.name}')
-ok('SGP RMCP v8.4 vectors')
-# WDBIP vectors
+import hashlib
 import importlib.util
-wv_path=ROOT/'docs/standards/wdbip/validate_wdbip_v1_5.py'
-spec=importlib.util.spec_from_file_location('wdbip_validator',wv_path); wv=importlib.util.module_from_spec(spec); spec.loader.exec_module(wv)
-wdbip_schema=ROOT/'docs/standards/wdbip/wdbip_record_v1_5.schema.json'
-for p in sorted((ROOT/'docs/standards/wdbip/tests').glob('pass_*.json')):
-    e=wv.validate(p,wdbip_schema)
-    if e: fail(f'WDBIP pass vector {p.name}: {e[0]}')
-for p in sorted((ROOT/'docs/standards/wdbip/tests').glob('fail_*.json')):
-    e=wv.validate(p,wdbip_schema)
-    if not e: fail(f'WDBIP fail vector unexpectedly passed {p.name}')
-ok('WDBIP v1.5 vectors')
-# Aligners workbook formulas, serialized results, intentional-blank audit, and recalc metadata.
-# OOXML permits a formula cell that evaluates to the empty string to omit <v>.  The
-# release therefore rejects every uncached nonblank result while permitting only the
-# exact cells independently recalculated through artifact_tool and pinned below.
-xp=ROOT/'docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx'
-NS={'m':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
-RNS='http://schemas.openxmlformats.org/officeDocument/2006/relationships'
-fc=errs=0; missing=[]
-with ZipFile(xp) as z:
-    wr=etree.fromstring(z.read('xl/workbook.xml'))
-    rels=etree.fromstring(z.read('xl/_rels/workbook.xml.rels'))
-    relmap={r.get('Id'):r.get('Target') for r in rels}
-    for s in wr.find('{%s}sheets'%NS['m']):
-        sheet=s.get('name'); target=relmap[s.get('{%s}id'%RNS)].lstrip('/')
-        if not target.startswith('xl/'): target='xl/'+target
-        xr=etree.fromstring(z.read(target))
-        for c in xr.xpath('.//m:c[m:f]',namespaces=NS):
-            fc+=1; v=c.find('{%s}v'%NS['m']); f=c.find('{%s}f'%NS['m'])
-            if v is None or v.text is None: missing.append((sheet,c.get('r'),f.text or ''))
-            elif c.get('t')=='e' or (v.text and v.text.startswith('#')): errs+=1
-    calc=wr.find('{%s}calcPr'%NS['m'])
-audit_path=ROOT/'release/WORKBOOK_FORMULA_CACHE_AUDIT.json'
-audit=json.loads(audit_path.read_text(encoding='utf-8'))
-audited=[(x['sheet'],x['cell'],x['formula']) for x in audit.get('cells',[])]
-if fc!=2974 or errs: fail(f'workbook formulas={fc} cached_errors={errs}')
-if sorted(missing)!=sorted(audited): fail('workbook uncached-formula set differs from artifact_tool blank-result audit')
-if audit.get('formula_count')!=fc or audit.get('formula_cells_without_serialized_cache')!=len(missing): fail('workbook cache-audit counts')
-if audit.get('live_recalculation_nonblank_count')!=0 or audit.get('live_recalculation_blank_count')!=len(missing): fail('workbook cache-audit recalculation result')
-if any(not x.get('intentional_blank') or x.get('recalculated_value') not in ('',None) for x in audit.get('cells',[])): fail('workbook cache audit contains a nonblank uncached result')
-# calcPr is optional and may be rewritten by the independent recalculation engine.
-# Iterative calculation is forbidden because the workbook is required to be acyclic.
-# The controlling freshness checks are the exact cached-result audit plus the mandatory
-# hard recalculation verifier, so engine-specific omission of calcMode/fullCalcOnLoad is
-# not treated as a release failure.
-if calc is not None and calc.get('iterate') not in (None,'0','false','False'): fail('workbook iterative calculation enabled')
-if hashlib.sha256(xp.read_bytes()).hexdigest()!=hashlib.sha256((ROOT/'core_15/RippleLogic_Aligners_Sheet_v5.5.xlsx').read_bytes()).hexdigest(): fail('Aligners workbook mirror mismatch')
-ok(f'Aligners Sheet 2974 formulas, {fc-len(missing)} serialized results + {len(missing)} independently recalculated intentional blanks, no errors, acyclic formula graph, and exact mirror')
-# Required content / no architectural drift
-for rel in ['docs/canon/RippleLogic_v12.5_Canon.md','docs/standards/ripple_md_Standard_v5.4.md']:
-    t=(ROOT/rel).read_text(encoding='utf-8').lower()
-    if 'configuration' not in t or 'assurance' not in t: fail(f'configuration assurance absent {rel}')
-agent_text=(ROOT/'docs/agents/RippleLogic_Agent_System_v12.3.md').read_text(encoding='utf-8').lower()
-if not all(x in agent_text for x in ['capability-state','requalification']): fail('Agent capability-state and requalification interface')
-sgp_text=(ROOT/'docs/sgp/SGP_v8.4.md').read_text(encoding='utf-8').lower()
-if not all(x in sgp_text for x in ['computational','functional','epistemic','phenomenal']): fail('SGP capability-language boundary')
-canon=(ROOT/'docs/canon/RippleLogic_v12.5_Canon.md').read_text(encoding='utf-8')
-for phrase in ['RG -> RF/NCRC -> TRC -> CSV -> RLS','No sixth gate','seven Welfare Dimensions','Reality-reference boundary','Material obligation integrity','Hidden human compensation load','Dependency-localized falsification rule']:
-    if phrase.lower() not in canon.lower(): fail(f'Canon required phrase {phrase}')
-csv_text=(ROOT/'docs/standards/CSV_Gate_Standard_v2.3.md').read_text(encoding='utf-8').lower()
-ripple_text=(ROOT/'docs/standards/ripple_md_Standard_v5.4.md').read_text(encoding='utf-8').lower()
-if not all(x in csv_text for x in ['binding-control minimum','hidden human compensation load','does not establish that its intended protective effect occurred']): fail('CSV carried-obligation/human-compensation interface')
-if not all(x in ripple_text for x in ['material_obligations','human_compensation_load','ab.3b material-obligation integrity']): fail('ripple.md carried-obligation machine interface')
-if not all(x in agent_text for x in ['carrier-nonperformance rule','hidden-human-compensation rule','affected obligation id']): fail('Agent carried-obligation runtime interface')
-rc_props=run_schema['properties']['responsibility_continuity']['properties']
-if not {'material_obligations','human_compensation_load'} <= set(rc_props): fail('run-record v3 obligation-integrity schema fields')
-ok('configuration and carried-obligation assurance integrated without cascade expansion')
-# Full active-file hash ledger
+import json
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+import yaml
+from jsonschema import Draft202012Validator
+
+sys.dont_write_bytecode = True
+ROOT = Path(__file__).resolve().parents[1]
+SKIP_HASHES = "--skip-hashes" in sys.argv
+RELEASE_ID = "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3"
+PACKAGE_NAME = "MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_15_3_FINAL_PUBLICATION_READY"
+BUILD_ID = "2026.08.15.3"
+SCHEMA_CONTRACT = "v4-build-2026.08.15.3"
+
+
+def fail(message: str) -> None:
+    raise SystemExit(f"VERIFY FAIL: {message}")
+
+
+def run(command: list[str], label: str) -> None:
+    env = dict(os.environ)
+    env["PYTHONDONTWRITEBYTECODE"] = "1"
+    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, env=env)
+    if result.returncode:
+        fail(f"{label}\n{result.stdout}{result.stderr}")
+    if result.stdout.strip():
+        print(result.stdout.strip())
+
+
+required_reports = [
+    "release/MATHGOV_V12_6_CLAUDE_ADVERSARIAL_AUDIT_DISPOSITION_2026_08_11.md",
+    "release/MATHGOV_V12_6_CLAUDE_ADVERSARIAL_AUDIT_DISPOSITION_2026_08_11.docx",
+    "release/MATHGOV_V12_6_CLAUDE_ADVERSARIAL_AUDIT_DISPOSITION_2026_08_11.pdf",
+    "release/V12_6_BUILD_2026_08_11_2_CHANGE_LEDGER.json",
+    "release/V12_6_BUILD_2026_08_15_3_CHANGE_LEDGER.json",
+    "release/GITHUB_AND_WEBSITE_RELEASE_READINESS_REPORT_2026_08_15.md",
+    "release/FABLE_FINAL_RELEASE_AUDIT.md",
+    "release/FINAL_VERIFICATION_REPORT.md",
+    "release/RELEASE_NOTES.md",
+    "release/DOCX_TABLE_AND_LAYOUT_AUDIT_v12_6.json",
+    "release/WORKBOOK_FORMULA_CACHE_AUDIT.json",
+    "release/DOCX_ACCESSIBILITY_AUDIT.json",
+    "release/PDF_PREFLIGHT_ALL_FINAL.json",
+]
+for rel in required_reports:
+    if not (ROOT / rel).is_file():
+        fail(f"missing release artifact {rel}")
+
+for rel in (
+    "docs/agents/recursive_successor/profiles/RECURSIVE_SUCCESSOR_RUNTIME_PROFILE_v1_0.yaml",
+    "docs/agents/recursive_successor/schemas/successor_integrity_record_v1_0.schema.json",
+    "docs/agents/recursive_successor/tests/validate_successor_profile.py",
+):
+    if not (ROOT / rel).is_file():
+        fail(f"missing Agent v12.5 successor-integrity artifact {rel}")
+
+
+manifest = yaml.safe_load((ROOT / "VERSION_MANIFEST.yaml").read_text(encoding="utf-8"))
+if manifest.get("release_id") != RELEASE_ID or manifest.get("exact_release_version") != "v12.6":
+    fail("release identity")
+if manifest.get("governing_cascade") != "RG -> RF/NCRC -> TRC -> CSV -> RLS":
+    fail("governing cascade")
+if manifest.get("release_date") != "2026-08-15" or manifest.get("publication_date") != "2026-08-15":
+    fail("release or publication date")
+if manifest.get("package_name") != PACKAGE_NAME:
+    fail("package name")
+if manifest.get("build_id") != BUILD_ID or manifest.get("build_date") != "2026-08-15":
+    fail("build identity")
+if manifest.get("schema_contract_revision") != SCHEMA_CONTRACT:
+    fail("schema contract revision")
+
+ledger = json.loads((ROOT / "release/V12_6_BUILD_2026_08_15_3_CHANGE_LEDGER.json").read_text(encoding="utf-8"))
+if ledger.get("release_id") != RELEASE_ID or ledger.get("build_id") != BUILD_ID:
+    fail("change-ledger identity")
+if ledger.get("semantic_versions_changed") is not False:
+    fail("final-freeze build semantic-version declaration")
+if ledger.get("governing_cascade") != "RG -> RF/NCRC -> TRC -> CSV -> RLS":
+    fail("change-ledger cascade")
+
+cff = yaml.safe_load((ROOT / "CITATION.cff").read_text(encoding="utf-8"))
+if str(cff.get("version")) != "12.6" or str(cff.get("date-released")) != "2026-08-15":
+    fail("citation metadata")
+
+configuration = manifest.get("configuration_assurance_release", {})
+required_flags = (
+    "evidence_stage_non_substitution",
+    "projection_locked_test_boundary",
+    "capability_claim_integrity",
+    "composition_reductionism_non_substitution",
+    "sensitivity_non_decisiveness_enforced",
+    "measurement_resolution_declared",
+    "appendix_b_standalone_completeness",
+    "empty_set_dispositions_explicit",
+    "nondefault_catastrophe_weight_governance",
+    "post_saturation_threshold_scale_clarified",
+    "emergency_tie_ordering_clarified",
+    "rights_relevance_routing_clarified",
+    "computational_context_preflight",
+    "computational_context_derived_view",
+    "consequence_interface_authority_noncollapse",
+)
+for flag in required_flags:
+    if configuration.get(flag) is not True:
+        fail(f"configuration flag {flag}")
+
+maturity = (ROOT / "docs/assurance/SCIENTIFIC_MATURITY_LADDER.md").read_text(encoding="utf-8")
+for token in (
+    "## Evidence-stage non-substitution matrix",
+    "Implementation conformance",
+    "Projection and calibration lock",
+    "Controlled empirical contact",
+    "Operational qualification",
+    "Outcome and requalification evidence",
+    "**No-upward-inference rule.**",
+):
+    if token not in maturity:
+        fail(f"scientific maturity ladder missing {token}")
+
+canon = (ROOT / "docs/canon/RippleLogic_v12.6_Canon.md").read_text(encoding="utf-8")
+canon_tokens = (
+    "Gate-numbering clarification (Normative). Formal gate numbering counts only the three hard admissibility/selectability gates",
+    "Cross-tier computed-sensitivity rule (Normative).",
+    "Measurement-resolution rule (Normative).",
+    "RLS_NO_ACTIVE_MASS",
+    "CONTAINMENT_MAP_INCOMPLETE",
+    "UCI_UNAVAILABLE",
+    "Rights-relevance cue",
+    "Catastrophe-weight governance (Normative).",
+    "Threshold-scale clarification (Normative).",
+    "Emergency comparison tie rule (Normative).",
+    "G_RF` MUST NOT be empty for a material rights-covered cell",
+)
+for token in canon_tokens:
+    if token not in canon:
+        fail(f"Canon correction surface missing: {token}")
+
+wdbip = (ROOT / "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.md").read_text(encoding="utf-8")
+for token in (
+    "Rights-routing clarification (Normative).",
+    "D6 records experiential meaning and cultural continuity",
+    "D7 records environmental condition",
+):
+    if token.lower() not in wdbip.lower():
+        fail(f"WDBIP rights-routing surface missing: {token}")
+
+ripple = (ROOT / "docs/standards/ripple_md_Standard_v5.5.md").read_text(encoding="utf-8")
+agent = (ROOT / "docs/agents/RippleLogic_Agent_System_v12.5.md").read_text(encoding="utf-8")
+for token in ("Computational Context Preflight", "Section 50A: Computational Context Preflight before authorization", "Consequence interface ≠ legitimate authority"):
+    if token not in agent:
+        fail(f"Agent System computational-context surface missing: {token}")
+if "Capability Claim Integrity and Capability-Authority Fields (Conditional; Canon §2.1C)" not in ripple:
+    fail("ripple.md Capability Claim Integrity discoverability")
+for token in ("Computational Context Decision Note View", "computational_context:", "A consequence-bearing output path and legitimate authority are separate properties"):
+    if token not in ripple:
+        fail(f"ripple.md computational-context surface missing: {token}")
+sgp = (ROOT / "docs/sgp/SGP_v8.5.md").read_text(encoding="utf-8")
+if "Capability Claim Integrity cross-reference (Normative; Canon §2.1C)" not in sgp:
+    fail("SGP Capability Claim Integrity discoverability")
+
+release_report = (ROOT / "release/GITHUB_AND_WEBSITE_RELEASE_READINESS_REPORT_2026_08_15.md").read_text(encoding="utf-8")
+for token in (
+    f"**Exact build:** `{RELEASE_ID}`",
+    "Computational Context Preflight",
+    "Consequence interface is not legitimate authority",
+    "do not create a sixth gate",
+):
+    if token not in release_report:
+        fail(f"current release-readiness report drift: {token}")
+
+examples_index = (ROOT / "docs/examples/README.md").read_text(encoding="utf-8")
+for token in (
+    "Bounded AI-tutor pilot",
+    "Controlled congestion-pricing pilot",
+    "NEGATIVE_EXAMPLES_INDEX.md",
+    "SCIENTIFIC_MATURITY_LADDER.md",
+):
+    if token not in examples_index:
+        fail(f"examples index missing {token}")
+negative_index = (ROOT / "docs/examples/NEGATIVE_EXAMPLES_INDEX.md").read_text(encoding="utf-8")
+for token in ("fail_rank_nonselectable.json", "fail_execution_without_authority.json", "fail_capability_material_without_record.json"):
+    if token not in negative_index:
+        fail(f"negative-example index missing {token}")
+for asset in ("release/assets/cascade_overview.svg", "release/assets/cascade_overview.png"):
+    if not (ROOT / asset).is_file():
+        fail(f"missing cascade asset {asset}")
+print("PASS exact release identity, change ledger, correction surfaces, and claim boundaries")
+
+subordinates = [
+    "VERIFY_CURRENT_PINS.py",
+    "VERIFY_AUDIT_FLAG_REGISTRY.py",
+    "VERIFY_SEMANTIC_SURFACES.py",
+    "VERIFY_STATE_SEMANTICS_AND_NON_DILUTION.py",
+    "VERIFY_FORMULA_INTERFACE_INTEGRITY.py",
+    "VERIFY_WORKBOOK_LIVE_RECALCULATION.py",
+    "VERIFY_FORMAT_AND_REPRODUCIBILITY.py",
+    "VERIFY_DOCX_TABLE_STYLE.py",
+    "VERIFY_RELEASE_REALITY_COHERENCE.py",
+]
+for name in subordinates:
+    run([sys.executable, str(ROOT / "release" / name), str(ROOT)], name)
+print("PASS nine subordinate verification surfaces")
+
+expected_core = {
+    "CSV_Gate_Standard_v2.4.docx",
+    "MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6.docx",
+    "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.4.docx",
+    "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.3.docx",
+    "Physical_Causal_Admissibility_Evidence_Profile_v2.3.docx",
+    "RippleLogic_Agent_System_v12.5.docx",
+    "RippleLogic_Aligners_Sheet_v5.6.xlsx",
+    "RippleLogic_Cascade_Standard_v2.6.docx",
+    "RippleLogic_Foundations_Primer_v4.4.docx",
+    "RippleLogic_RLS_Validation_Protocol_v2_6.docx",
+    "RippleLogic_v12.6_Canon.docx",
+    "SGP_v8.5.docx",
+    "Source_Coupling_Integrity_Standard_v2.3.docx",
+    "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.docx",
+    "ripple_md_Standard_v5.5.docx",
+}
+actual_core = {p.name for p in (ROOT / "core_15").iterdir() if p.is_file() and p.name != "README.md"}
+if actual_core != expected_core:
+    fail(f"Core 15 inventory missing={expected_core-actual_core} extra={actual_core-expected_core}")
+for name in expected_core:
+    path = ROOT / "core_15" / name
+    if path.suffix.lower() in {".docx", ".xlsx"} and path.read_bytes()[:4] != b"PK\x03\x04":
+        fail(f"invalid OOXML {name}")
+print("PASS exact Core 15 inventory and OOXML integrity")
+
+run_validator_path = ROOT / "release/VALIDATE_MATHGOV_RUN.py"
+run_validator_spec = importlib.util.spec_from_file_location("mathgov_run_validator", run_validator_path)
+if run_validator_spec is None or run_validator_spec.loader is None:
+    fail("run-record validator import")
+run_validator = importlib.util.module_from_spec(run_validator_spec)
+sys.modules[run_validator_spec.name] = run_validator
+run_validator_spec.loader.exec_module(run_validator)
+
+
+def validate_run_record(path: Path, expect_fail: bool) -> None:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        if expect_fail:
+            print(f"PASS expected rejection vector: {path.relative_to(ROOT)} (parse: {exc})")
+            return
+        fail(f"run pass {path.name}: parse: {exc}")
+    v0_errors, _ = run_validator.r0(data)
+    v1_errors = []
+    if not v0_errors:
+        v1_errors, _ = run_validator.r1(data)
+    rejected = bool(v0_errors or v1_errors)
+    if expect_fail:
+        if not rejected:
+            fail(f"expected-failure vector unexpectedly conformed: {path.relative_to(ROOT)}")
+        print(f"PASS expected rejection vector: {path.relative_to(ROOT)}")
+        return
+    if rejected:
+        fail(f"positive run vector {path.relative_to(ROOT)}\n" + "\n".join(v0_errors + v1_errors))
+    readiness = run_validator.r2(data)
+    print(f"PASS run vector: {path.relative_to(ROOT)}; V2={'REVIEW_REQUIRED' if readiness else 'NO_AUTOMATED_ISSUES_DETECTED'}")
+
+
+pass_runs = sorted((ROOT / "tests/run_records").glob("pass_*.json"))
+fail_runs = sorted((ROOT / "tests/run_records").glob("fail_*.json"))
+if len(pass_runs) != 6 or len(fail_runs) != 30:
+    fail(f"run-vector inventory {len(pass_runs)} pass/{len(fail_runs)} fail")
+for path in pass_runs:
+    validate_run_record(path, expect_fail=False)
+for path in fail_runs:
+    validate_run_record(path, expect_fail=True)
+examples = [
+    ROOT / "docs/examples/reproducibility/reusable_cups_run_v4.json",
+    ROOT / "docs/examples/reference_replays/ai_tutor_pilot/run_record_v4.json",
+    ROOT / "docs/examples/reference_replays/congestion_pricing_pilot/run_record_v4.json",
+]
+for example in examples:
+    validate_run_record(example, expect_fail=False)
+print("PASS run-record v4 fixtures: 6 positive / 30 expected failures / 3 active reference replay examples")
+
+sgp_schema = json.loads((ROOT / "schemas/sgp_rmcp_record_v8_4.schema.json").read_text(encoding="utf-8"))
+sgp_validator = Draft202012Validator(sgp_schema)
+sgp_pass = sorted((ROOT / "tests/sgp_rmcp").glob("pass_*.json"))
+sgp_fail = sorted((ROOT / "tests/sgp_rmcp").glob("fail_*.json"))
+if len(sgp_pass) != 1 or len(sgp_fail) != 1:
+    fail("SGP RMCP vector inventory")
+for path in sgp_pass:
+    if list(sgp_validator.iter_errors(json.loads(path.read_text(encoding="utf-8")))):
+        fail(f"SGP positive fixture {path.name}")
+for path in sgp_fail:
+    if not list(sgp_validator.iter_errors(json.loads(path.read_text(encoding="utf-8")))):
+        fail(f"SGP expected-failure fixture {path.name}")
+print("PASS SGP RMCP v8.4 fixtures: 1 positive / 1 expected failure")
+
+wdbip_validator_path = ROOT / "docs/standards/wdbip/validate_wdbip_v1_6.py"
+spec = importlib.util.spec_from_file_location("wdbip_validator", wdbip_validator_path)
+if spec is None or spec.loader is None:
+    fail("WDBIP validator import")
+wdbip_module = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = wdbip_module
+spec.loader.exec_module(wdbip_module)
+wdbip_schema = ROOT / "docs/standards/wdbip/wdbip_record_v1_6.schema.json"
+wdbip_pass = sorted((ROOT / "docs/standards/wdbip/tests").glob("pass_*.json"))
+wdbip_fail = sorted((ROOT / "docs/standards/wdbip/tests").glob("fail_*.json"))
+if len(wdbip_pass) != 1 or len(wdbip_fail) != 18:
+    fail("WDBIP vector inventory")
+for path in wdbip_pass:
+    if wdbip_module.validate(path, wdbip_schema):
+        fail(f"WDBIP positive fixture {path.name}")
+for path in wdbip_fail:
+    if not wdbip_module.validate(path, wdbip_schema):
+        fail(f"WDBIP expected-failure fixture {path.name}")
+print("PASS WDBIP v1.6 fixtures: 1 positive / 18 expected failures")
+
+layout = json.loads((ROOT / "release/DOCX_TABLE_AND_LAYOUT_AUDIT_v12_6.json").read_text(encoding="utf-8"))
+totals = layout.get("totals", {})
+if layout.get("status") != "PASS":
+    fail("layout audit status")
+expected_layout = {
+    "documents": 15,
+    "tables": 287,
+    "table_rows": 2444,
+    "headings": 1646,
+    "pages": 595,
+    "toc_entries": 125,
+}
+for key, value in expected_layout.items():
+    if totals.get(key) != value:
+        fail(f"layout audit metric {key}: {totals.get(key)} != {value}")
+for key in ("comments_parts", "tracked_changes", "content_controls", "blank_pdf_pages", "confirmed_page_boundary_failures", "tiny_font_spans_under_6pt"):
+    if totals.get(key) != 0:
+        fail(f"layout audit defect {key}")
+
+a11y = json.loads((ROOT / "release/DOCX_ACCESSIBILITY_AUDIT.json").read_text(encoding="utf-8"))
+sev = a11y.get("totals", {}).get("findings_by_severity", {})
+if a11y.get("release_id") != RELEASE_ID or sev != {"high": 0, "medium": 0, "low": 72}:
+    fail("DOCX accessibility audit")
+
+workbook = json.loads((ROOT / "release/WORKBOOK_FORMULA_CACHE_AUDIT.json").read_text(encoding="utf-8"))
+if workbook.get("release_id") != RELEASE_ID or workbook.get("status") != "PASS":
+    fail("workbook audit identity or status")
+if workbook.get("worksheet_count") != 87 or workbook.get("formula_count") != 1643 or workbook.get("formula_error_cells") != 0:
+    fail("workbook audit metrics")
+if workbook.get("independent_recalculation", {}).get("status") != "PASS" or workbook.get("mirror", {}).get("byte_identical") is not True:
+    fail("workbook live recalculation or exact mirror")
+
+preflight = json.loads((ROOT / "release/PDF_PREFLIGHT_ALL_FINAL.json").read_text(encoding="utf-8"))
+if preflight.get("release_id") != RELEASE_ID or preflight.get("status") != "PASS":
+    fail("PDF preflight identity or status")
+if preflight.get("documents") != 16 or preflight.get("pages") != 610 or preflight.get("warning_count") != 0:
+    fail("PDF preflight metrics")
+print("PASS publication, accessibility, workbook, and PDF-preflight metrics")
+
+for path in ROOT.rglob("*"):
+    if path.is_dir() and path.name == "__pycache__":
+        fail(f"bytecode directory {path.relative_to(ROOT)}")
+    if path.is_file() and path.suffix.lower() in {".pyc", ".pyo", ".tmp", ".bak", ".swp"}:
+        fail(f"ephemeral source artifact {path.relative_to(ROOT)}")
+    if path.is_file() and (path.name.startswith(".~lock.") or path.name.startswith("~$") or path.name in {".DS_Store", "Thumbs.db"}):
+        fail(f"ephemeral office or editor artifact {path.relative_to(ROOT)}")
+print("PASS public-source hygiene")
+
 if not SKIP_HASHES:
-    ledger=ROOT/'release/SHA256SUMS.txt'; entries={}
-    for line in ledger.read_text(encoding='utf-8').splitlines():
-        if not line.strip(): continue
-        h,rel=line.split('  ',1); entries[rel]=h
-    for rel,h in entries.items():
-        p=ROOT/rel
-        if not p.is_file(): fail(f'hash path absent {rel}')
-        if hashlib.sha256(p.read_bytes()).hexdigest()!=h: fail(f'hash mismatch {rel}')
-    manifest=yaml.safe_load((ROOT/'release/release_manifest.yml').read_text(encoding='utf-8'))
-    listed=set(manifest['active_files'])
-    if listed!=set(entries): fail('release manifest active_files differs from SHA256SUMS')
-    ok(f'full active-file SHA-256 ledger ({len(entries)} files)')
-    # Core 15 ledger
-    core_entries={}
-    for line in (ROOT/'release/SHA256SUMS_CORE15.txt').read_text(encoding='utf-8').splitlines():
-        h,rel=line.split('  ',1); core_entries[rel]=h
-    if {Path(x).name for x in core_entries}!=CORE: fail('Core 15 hash ledger set')
-    for rel,h in core_entries.items():
-        if hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()!=h: fail(f'Core hash mismatch {rel}')
-    ok('Core 15 SHA-256 ledger')
+    release_manifest = yaml.safe_load((ROOT / "release/release_manifest.yml").read_text(encoding="utf-8"))
+    if release_manifest.get("release_id") != RELEASE_ID or release_manifest.get("build_id") != BUILD_ID:
+        fail("release manifest identity")
+    active_files = set(release_manifest.get("active_files", []))
+    ledger_entries: dict[str, str] = {}
+    for line in (ROOT / "release/SHA256SUMS.txt").read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            digest, rel = line.split("  ", 1)
+            ledger_entries[rel] = digest
+    if active_files != set(ledger_entries):
+        fail("release manifest and SHA-256 ledger inventory differ")
+    for rel, digest in ledger_entries.items():
+        path = ROOT / rel
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+            fail(f"SHA-256 mismatch {rel}")
+    core_entries: dict[str, str] = {}
+    for line in (ROOT / "release/SHA256SUMS_CORE15.txt").read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            digest, rel = line.split("  ", 1)
+            core_entries[rel] = digest
+    if {Path(rel).name for rel in core_entries} != expected_core:
+        fail("Core 15 hash-ledger inventory")
+    for rel, digest in core_entries.items():
+        if hashlib.sha256((ROOT / rel).read_bytes()).hexdigest() != digest:
+            fail(f"Core 15 SHA-256 mismatch {rel}")
+    print(f"PASS release SHA-256 ledger ({len(ledger_entries)} files) and Core 15 ledger")
 else:
-    ok('hash verification skipped by explicit flag')
-print('FINAL VERIFICATION: PASS')
+    print("PASS hash verification explicitly skipped")
+
+print("FINAL VERIFICATION: PASS")
+print("Claim boundary: artifact and tested-interface conformance only; construct validity remains UNTESTED.")

@@ -1,6 +1,6 @@
 # Glossary and Acronym Index
 
-Release: MathGov Core Release 2026.09 v12.5 / SGP v8.4 - Configuration-Bound Assurance Public Research Source Release
+Release: MathGov Core Release 2026.09 v12.6 / SGP v8.5 - Configuration-Bound Assurance Public Research Source Release
 
 Status: reader-support index. If this file conflicts with the RippleLogic Canon, SGP, or a compact standard, the controlling source governs.
 
@@ -62,6 +62,12 @@ Formal shorthand: `RG/RSG -> RF/NCRC -> TRC -> CSV -> RLS`
 | boundary_conditions          | Initial, environmental, operational, legal, resource, dependency, and interface constraints.                              | Must be visible for material claims.                                                                 |
 | residual_unknowns            | Material unknowns remaining after review.                                                                                 | May require narrow, control, redesign, escalate, or refuse.                                          |
 | monitoring_and_shutoff_path  | How the action is observed, interrupted, rolled back, sandboxed, contained, or stopped if assumptions fail.               | Required for high-stakes physical/causal action.                                                     |
+| capability-authority decomposition | A vector recording the operational definition, observable criteria, system composition, evidence surface, validity conditions, alternatives, falsifier, maturity, permitted claim, explicit nonclaims, candidate generation, reference and constraint sources, objective source and change authority, admissibility warrants, execution interface and scope, execution authority, revocation, safe state, and requalification trigger. | Replaces ambiguous scalar capability or autonomy labels for material claims. |
+| Capability Claim Integrity | The Reality Grounding and MFDI discipline that limits a capability claim to what is operationally defined, observably demonstrated, valid under declared conditions, distinguishable from material alternatives, and supported at the stated evidence maturity. | A functional capability does not by itself establish consciousness, moral agency, generality, safety, legality, or authority. |
+| operational capability | A bounded system-level ability demonstrated under declared conditions and criteria, regardless of whether it is implemented through probabilistic, deterministic, memory, planning, tool, feedback, or human-control components. | Component decomposition does not itself refute the capability; the capability does not imply unrestricted autonomy or moral status. |
+| system-level agency or autonomy | A functional description of bounded goal-directed selection and action by a configured system across time, used only with an explicit operational definition and evidence boundary. | Not a claim of consciousness, personhood, intrinsic motivation, moral agency, general intelligence, or legitimate authority. |
+| claim domain                 | The primary authority domain in which a conclusion is asserted, such as scientific-empirical, engineering-operational, formal-mathematical, legal-regulatory, normative-ethical, institutional-governance, commercial-descriptive, anthropomorphic-social, or metaphysical-horizon. | A materially mixed conclusion should be split into separately typed claims. |
+| warrant domain               | One of the declared domains from which support for a claim is drawn. A claim may require more than one warrant domain. | Each material cross-domain relationship requires a separately recorded and reviewable bridge. |
 
 PC-AEP status values include `PCAE_SUPPORTED`, `PCAE_ASSUMPTION_BOUND`, `PCAE_PARTIAL`, `PCAE_CONTESTED`, `PCAE_UNKNOWN`, `PCAE_VERIFICATION_REQUIRED`, `PCAE_CONTROL_REQUIRED`, `PCAE_REDESIGN_REQUIRED`, and `PCAE_REFUSE_OR_BLOCK`.
 
@@ -75,7 +81,7 @@ Physical execution claim ladder values include `PHYSICAL_ADMISSIBILITY_SUPPORTED
 | SourceCouplingRecord | Record of claimed capability, source evidence, enabling conditions, boundaries, inherited assumptions, compensating controls, and action. | Audit support, not a sixth gate.                                                                                    |
 | SOURCE_COUPLED       | Source evidence and capability claim remain properly coupled inside stated limits.                                                        | Still must pass other gates.                                                                                        |
 | SOURCE_DEBT_RISK     | The claim depends on weak, inherited, circular, or inadequately coupled source evidence.                                                  | May require narrow, control, redesign, escalate, or refuse.                                                         |
-| MFDI                 | Methodological Falsifiability and Dependency Integrity Standard.                                                                          | Claim-type discrimination, falsification/revision triggers, alternatives, dependency rerun scope. Not a sixth gate. |
+| MFDI                 | Methodological Falsifiability and Dependency Integrity Standard.                                                                          | Claim/warrant-domain discrimination, bridge status, falsification/revision triggers, alternatives, and dependency rerun scope. Not a sixth gate. |
 
 ## SGP terms and guardrails
 
@@ -117,7 +123,7 @@ Shortest operational rule: qualify first, rank second.
 
 
 ### RMCP — Reality-Management Capacity Profile
-An informative, multidimensional SGP v8.4 profile of reality-grounded modelling, cumulative knowledge, coordination, intervention breadth, cross-scale consequence tracking, and Recursive Union Awareness. RMCP is not sentience, moral worth, FPP, wise performance, or authority.
+An informative, multidimensional SGP v8.5 profile of reality-grounded modelling, cumulative knowledge, coordination, intervention breadth, cross-scale consequence tracking, and Recursive Union Awareness. RMCP is not sentience, moral worth, FPP, wise performance, or authority.
 
 ### P100 — Open Reality-Management Plateau
 The open top-band designation for functional equivalence to or greater integrated reality-management capacity than the current human collective calibration anchor. P100 is not a permanent species monopoly, perfection, a metaphysical maximum, or unrestricted power.
@@ -137,6 +143,6 @@ Every human person receives FPP-100 protection; humanity collectively serves as 
 - **Requalification:** reopening affected stages after a material change in evidence, scope, parameters, system behavior, or distribution.
 
 
-## v12.5 integration note
+## v12.6 integration note
 
-WDBIP v1.5 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.4 controls its wrapper assurance surface. Run-record schema v3 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.
+WDBIP v1.6 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.5 controls its wrapper assurance surface. Run-record schema v4 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.

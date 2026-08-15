@@ -1,16 +1,16 @@
 schema_name: MathGovNormativeKernelIndex
 schema_version: "1.0"
 status: normative_index_not_alternate_canon
-canon_pin: RippleLogic v12.5
-sgp_pin: SGP v8.4
-reproducibility_standard_pin: MathGov Reproducibility and Use Standard v1.3
+canon_pin: RippleLogic v12.6
+sgp_pin: SGP v8.5
+reproducibility_standard_pin: MathGov Reproducibility and Use Standard v1.4
 purpose: >-
   Compact machine-readable index of the controlling rules needed to identify,
   implement, and test a MathGov run. The cited source controls if wording differs.
 rules:
   - id: K01
     name: run_identity_and_scope
-    source: RippleLogic Canon v12.5, specification contract and run-object sections
+    source: RippleLogic Canon v12.6, specification contract and run-object sections
     required_fields: [decision_id, baseline, options, stakeholders, tier, stakes, authority_boundary]
     failure_state: INCOMPLETE_RUN
   - id: K02
@@ -21,7 +21,7 @@ rules:
   - id: K03
     name: reality_grounding
     source: Canon Section 2.1B-2.1F
-    required_fields: [reality_surface, evidence_trace, material_unknowns, consequence_pathways, claim_boundary, rg_status]
+    required_fields: [reality_surface, evidence_trace, material_unknowns, transition_or_action_boundary, consequence_pathways, claim_boundary, rg_status]
     failure_state: REFUSE_INSUFFICIENT_GROUNDING
   - id: K04
     name: rights_floor
@@ -37,7 +37,7 @@ rules:
     compensation_prohibited: true
   - id: K06
     name: containment_and_structural_viability
-    source: Canon CSV sections and CSV Gate Standard v2.3
+    source: Canon CSV sections and CSV Gate Standard v2.4
     selectable_states: [CSV_PASS, CSV_PASS_WITH_CONTROLS, CSV_NOT_MATERIAL]
     nonselectable_states: [CSV_FAIL, CSV_REDESIGN_REQUIRED, CSV_ESCALATE]
   - id: K07

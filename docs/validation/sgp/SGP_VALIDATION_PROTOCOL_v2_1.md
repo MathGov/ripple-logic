@@ -1,10 +1,10 @@
 # SGP Validation Protocol v2.1
 
-**Status:** companion validation protocol for **Sentience Gradient Protocol v8.1.1**. SGP v8.4 and RippleLogic Canon v12.5 control if conflict occurs.
+**Status:** companion validation protocol for **Sentience Gradient Protocol v8.1.1**. SGP v8.5 and RippleLogic Canon v12.6 control if conflict occurs.
 
 ## Purpose and boundary
 
-This protocol evaluates whether SGP v8.4 can be applied reliably, transparently, and without construct collapse. It does not validate consciousness itself, assign legal personhood, certify current AI sentience, establish metaphysical oneness, or grant authority. It validates the evidence-governance process, MPS band assignment, FPP protection decisions, participation design, role-specific power controls, and the informative Reality-Management Capacity Profile (RMCP) and open P100 calibration process.
+This protocol evaluates whether SGP v8.5 can be applied reliably, transparently, and without construct collapse. It does not validate consciousness itself, assign legal personhood, certify current AI sentience, establish metaphysical oneness, or grant authority. It validates the evidence-governance process, MPS band assignment, FPP protection decisions, participation design, role-specific power controls, and the informative Reality-Management Capacity Profile (RMCP) and open P100 calibration process.
 
 ## Constructs that must remain separate
 
@@ -153,7 +153,7 @@ The protocol must be revised if: raters cannot exceed preregistered reliability 
 
 ## Interface conformance vectors
 
-The binding minimum cases are SGP v8.4 Appendix I and Canon v12.5 Appendix G/R. A validation release must report each vector as PASS, FAIL, INDETERMINATE, or NOT TESTED.
+The binding minimum cases are SGP v8.5 Appendix I and Canon v12.6 Appendix G/R. A validation release must report each vector as PASS, FAIL, INDETERMINATE, or NOT TESTED.
 
 ## Plain-language rule
 

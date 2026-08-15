@@ -1,62 +1,62 @@
-release_id: MathGov_Core_2026_09_v12.5_SGP_v8.4
-release_date: '2026-07-23'
-release_line: v12.5
-exact_release_version: v12.5
-package_name: MathGov_Core_2026_09_v12_5_SGP_v8_4_FINAL_CORE15_EXTENDED_BOUNDARY_AND_REFERENCE_VERIFIED
+release_id: MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+release_date: '2026-08-15'
+release_line: v12.6
+exact_release_version: v12.6
+package_name: MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_15_3_FINAL_PUBLICATION_READY
 governing_cascade: RG -> RF/NCRC -> TRC -> CSV -> RLS
 principal_governing_sources:
-- path: docs/canon/RippleLogic_v12.5_Canon.md
-  version: v12.5
-- path: docs/sgp/SGP_v8.4.md
-  version: v8.4
+- path: docs/canon/RippleLogic_v12.6_Canon.md
+  version: v12.6
+- path: docs/sgp/SGP_v8.5.md
+  version: v8.5
 component_versions:
   ripple.md Standard:
-    version: v5.4
-    path: docs/standards/ripple_md_Standard_v5.4.md
+    version: v5.5
+    path: docs/standards/ripple_md_Standard_v5.5.md
   RippleLogic Agent System:
-    version: v12.3
-    path: docs/agents/RippleLogic_Agent_System_v12.3.md
+    version: v12.5
+    path: docs/agents/RippleLogic_Agent_System_v12.5.md
   CSV Gate Standard:
-    version: v2.3
-    path: docs/standards/CSV_Gate_Standard_v2.3.md
+    version: v2.4
+    path: docs/standards/CSV_Gate_Standard_v2.4.md
   RippleLogic Cascade Standard:
-    version: v2.5
-    path: docs/standards/RippleLogic_Cascade_Standard_v2.5.md
+    version: v2.6
+    path: docs/standards/RippleLogic_Cascade_Standard_v2.6.md
   Reproducibility and Use Standard:
-    version: v1.3
-    path: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.3.md
+    version: v1.4
+    path: docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.4.md
   WDBIP:
-    version: v1.5
-    path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.5.md
+    version: v1.6
+    path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.md
   RLS Validation Protocol:
-    version: v2.5
-    path: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_5.md
+    version: v2.6
+    path: docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_6.md
   RLS Validation Workbook:
     version: v0.3
     path: docs/validation/rls/RLS_Validation_Workbook_v0_3.xlsx
   Foundations Primer:
-    version: v4.3
-    path: docs/primer/RippleLogic_Foundations_Primer_v4.3.md
+    version: v4.4
+    path: docs/primer/RippleLogic_Foundations_Primer_v4.4.md
   Public Introduction:
-    version: v12.5
-    path: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_5.md
+    version: v12.6
+    path: docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6.md
   PC-AEP:
-    version: v2.2
-    path: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.2.md
+    version: v2.3
+    path: docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.3.md
   MFDI Standard:
-    version: v2.2
-    path: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.2.md
+    version: v2.3
+    path: docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.3.md
   Source-Coupling Integrity Standard:
-    version: v2.2
-    path: docs/standards/Source_Coupling_Integrity_Standard_v2.2.md
+    version: v2.3
+    path: docs/standards/Source_Coupling_Integrity_Standard_v2.3.md
   RippleLogic Aligners Sheet:
-    version: v5.5
-    path: docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx
+    version: v5.6
+    path: docs/aligners/RippleLogic_Aligners_Sheet_v5.6.xlsx
 machine_interface:
-  run_schema: schemas/mathgov_run_record_v3.schema.json
+  run_schema: schemas/mathgov_run_record_v4.schema.json
   validator: release/VALIDATE_MATHGOV_RUN.py
   sgp_rmcp_schema: schemas/sgp_rmcp_record_v8_4.schema.json
-  wdbip_schema: docs/standards/wdbip/wdbip_record_v1_5.schema.json
+  wdbip_schema: docs/standards/wdbip/wdbip_record_v1_6.schema.json
   audit_flag_registry: docs/implementation/CANONICAL_AUDIT_FLAG_REGISTRY_v1.0.yaml
   audit_flag_verifier: release/VERIFY_AUDIT_FLAG_REGISTRY.py
 configuration_assurance_release:
@@ -64,14 +64,46 @@ configuration_assurance_release:
   capability_state_separation: true
   state_transition_post_state: true
   qualification_continuity: true
+  exact_action_instance_binding: true
+  action_specification_hash_binding: true
+  qualification_snapshot_hash_binding: true
+  outcome_observation_and_requalification: true
   frozen_evaluation_binding: true
   future_safe_option_space: true
   open_assurance_dependency_rule: true
   implementation_milestone_claim_boundary: true
+  evidence_stage_non_substitution: true
+  projection_locked_test_boundary: true
   carried_obligation_integrity: true
   carrier_nonperformance_visibility: true
   hidden_human_compensation_csv_diagnostic: true
   dependency_localized_falsification: true
+  reality_grounding_transition_record_enforced: true
+  claim_warrant_domain_non_substitution: true
+  autonomy_capability_authority_decomposition: true
+  determinism_boundary_clarified: true
+  claim_domain_warrant_domain_non_substitution: true
+  multi_warrant_bridge_records: true
+  capability_authority_decomposition: true
+  capability_claim_integrity: true
+  capability_claim_operationalization: true
+  composition_reductionism_non_substitution: true
+  sensitivity_non_decisiveness_enforced: true
+  measurement_resolution_declared: true
+  appendix_b_standalone_completeness: true
+  empty_set_dispositions_explicit: true
+  nondefault_catastrophe_weight_governance: true
+  post_saturation_threshold_scale_clarified: true
+  emergency_tie_ordering_clarified: true
+  rights_relevance_routing_clarified: true
+  computational_context_preflight: true
+  computational_context_derived_view: true
+  consequence_interface_authority_noncollapse: true
+  successor_integrity_runtime: true
+  authority_noninheritance_across_material_successors: true
+  successor_requalification_record: true
+  recursive_generation_depth_control: true
+  alignment_adaptation_profile: true
 no_change:
 - five-stage cascade
 - seven Union Scopes
@@ -81,10 +113,13 @@ no_change:
 - rights non-compensation
 - TRC and CSV separation
 - refusal under underdetermination
-claim_boundary: Release, structural, semantic, formula-interface, schema, state, and
-  procedural conformance is not empirical validation, evidence truth, legal authority,
-  physical safety, consciousness detection, metaphysical proof, framework superiority,
+- canonical rights-coverage sets
+- catastrophe-cell sets
+claim_boundary: Release, structural, semantic, formula-interface, schema, state, and procedural conformance is not empirical
+  validation, evidence truth, legal authority, physical safety, consciousness detection, metaphysical proof, framework superiority,
   moral truth, deployment certification, or Tier 4.
-canonical_release_title: MathGov Core Release 2026.09 v12.5 / SGP v8.4 - Configuration-Bound
-  Assurance Public Research Source Release
-same_version_patch_date: '2026-07-31'
+canonical_release_title: MathGov Core Release 2026.09 v12.6 / SGP v8.5 - Publication-Ready Stabilization Build
+publication_date: '2026-08-15'
+build_id: 2026.08.15.3
+build_date: '2026-08-15'
+schema_contract_revision: v4-build-2026.08.15.3

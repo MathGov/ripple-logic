@@ -1,7 +1,10 @@
-# Citation Verification Report - MathGov v12.5 / SGP v8.4
+# Citation Verification Report — MathGov v12.6 / SGP v8.5
 
-**Date:** 25 July 2026  
+**Original bibliographic review:** 25 July 2026  
+**Current-pin review:** 15 August 2026  
 **Status:** PASS WITH DECLARED SCOPE
+
+**Current exact release:** `MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3`
 
 ## Scope
 
@@ -12,7 +15,7 @@ This release-hygiene pass reviewed the active Markdown reference surfaces in the
 - Fourteen active Markdown core surfaces scanned.
 - Eighteen DOI links detected in the angle-bracket reference surfaces; all eighteen are unique and match the standard `10.<registrant>/<suffix>` DOI syntax.
 - No malformed DOI token was detected in the scanned active reference surfaces.
-- The controlling WDBIP citation points to **Sentience Gradient Protocol v8.4**; earlier SGP pins remain lineage only where explicitly historical.
+- The controlling current surfaces point to **Sentience Gradient Protocol v8.5** and **WDBIP v1.6**; earlier pins remain historical lineage only.
 
 ## Current and advance-online references checked
 
@@ -48,4 +51,9 @@ Official records checked:
 
 ## Boundary
 
-This PASS establishes that the scanned DOI strings and selected recent-reference metadata are internally and externally consistent at the time of review. It does not establish that every URL will remain permanently available, that every cited proposition is correct, that the bibliography is exhaustive, or that MathGov has been empirically validated.
+This PASS establishes that the scanned DOI strings, selected recent-reference metadata, and current internal version pins are consistent within the declared review scope. It does not establish that every URL will remain permanently available, that every cited proposition is correct, that the bibliography is exhaustive, or that MathGov has been empirically validated.
+
+
+## Final 15 August 2026 source-integrity closure
+
+The complete active public-source scan and the higher-risk recent-reference review are recorded in `release/SOURCE_VERIFICATION_LOG.md`. The final pass additionally verified the current Agent System references to METR task horizons, Anthropic's Automated Weak-to-Strong Researcher, and Field, Douglas, and Krueger (arXiv:2603.03338); removed literal placeholder URLs from ripple.md examples; and found no unresolved `Finke` or `Mednick` attribution in the active Core corpus. No unresolved citation-identity blocker remains within the declared review scope.

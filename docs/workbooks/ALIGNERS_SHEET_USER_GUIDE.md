@@ -4,7 +4,7 @@ The Aligners Sheet is a worked-run and training companion for RippleLogic. It is
 
 ## Current workbook status
 
-- Workbook: `docs/aligners/RippleLogic_Aligners_Sheet_v5.5.xlsx`
+- Workbook: `docs/aligners/RippleLogic_Aligners_Sheet_v5.6.xlsx`
 - Formula-error scan in this release polish found no visible `#REF!`, `#DIV/0!`, `#VALUE!`, `#NAME?`, or `#N/A` cells in the imported workbook surface.
 - This is a sanity check, not a full formula audit.
 
@@ -41,7 +41,7 @@ Before stronger public claims, the workbook needs:
 
 ## Calculation behavior and viewer boundary
 
-The released workbook preserves its original formulas and is configured for automatic full recalculation when opened in a spreadsheet engine that supports OOXML calculation. Formula caches are not treated as an authoritative source surface. GitHub previewers and data-only readers may therefore show blanks or stale values until a compatible engine recalculates the workbook.
+The released workbook preserves its formula-bearing surfaces, but its OOXML calculation metadata and cached display values are not treated as an authoritative source surface. Some formula caches may be absent, and GitHub previewers or data-only readers may therefore show blanks or stale values until a compatible spreadsheet engine recalculates the workbook. Reviewers SHOULD explicitly recalculate before relying on rendered formula outputs; the workbook remains a bounded worked-run exemplar rather than a reference calculator or repository-level validator.
 
 For review or replay:
 

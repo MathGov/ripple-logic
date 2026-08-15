@@ -1,6 +1,6 @@
 # Gate Boundary Discriminator: TRC, CSV, and RLS
 
-**Status:** companion hardening guide for MathGov Core Release 2026.09 v12.5. Canon controls if conflict occurs.
+**Status:** companion hardening guide for MathGov Core Release 2026.09 v12.6. Canon controls if conflict occurs.
 
 ## Purpose
 

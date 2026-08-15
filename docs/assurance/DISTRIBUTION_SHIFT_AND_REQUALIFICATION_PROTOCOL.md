@@ -1,6 +1,6 @@
 # Distribution Shift and Requalification Protocol
 
-**Status:** Informative implementation companion for MathGov Core v12.5.
+**Status:** Informative implementation companion for MathGov Core v12.6.
 
 A prior pass is not permanent. A material change can invalidate the evidence, scenario, structural, or authority surface on which the run depended.
 

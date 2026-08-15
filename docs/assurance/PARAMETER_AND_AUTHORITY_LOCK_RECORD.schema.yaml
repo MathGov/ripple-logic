@@ -1,7 +1,7 @@
 schema_name: MathGovParameterAndAuthorityLockRecord
 schema_version: '0.1'
 status: informative_template_not_a_validator
-canon_pin: RippleLogic v12.5
+canon_pin: RippleLogic v12.6
 purpose: Freeze decision-material configuration, evidence cutoffs, reviewers, and
   authority before outcome-sensitive ranking. Any material amendment creates a new
   run version.

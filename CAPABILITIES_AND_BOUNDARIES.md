@@ -1,11 +1,11 @@
-# Capabilities and Boundaries - MathGov Core v12.5
+# Capabilities and Boundaries - MathGov Core v12.6
 
-> **Release index:** Start with `START_HERE_RELEASE_INDEX_v12.5.md` for the shortest source map, reader lanes, claims/non-claims, and release-boundary summary.
+> **Release index:** Start with `START_HERE_RELEASE_INDEX_v12.6.md` for the shortest source map, reader lanes, claims/non-claims, and release-boundary summary.
 This file states what the package can and cannot honestly do today. It is a release-facing claim-boundary card, not a new gate, new standard, or replacement for the Canon.
 
 ## What this package is
 
-MathGov Core v12.5 is a Tier 1-3 source-ready specification and research architecture for ethical decision review, structured reasoning, worked-run learning, pilot design, and validation planning. MathGov is the umbrella framework. RippleLogic is the decision architecture inside MathGov.
+MathGov Core v12.6 is a Tier 1-3 source-ready specification and research architecture for ethical decision review, structured reasoning, worked-run learning, pilot design, and validation planning. MathGov is the umbrella framework. RippleLogic is the decision architecture inside MathGov.
 
 ## What you can do today
 
@@ -19,6 +19,10 @@ MathGov Core v12.5 is a Tier 1-3 source-ready specification and research archite
 | Use PC-AEP                          | Ready as evidence-profile requirement | PC-AEP can require domain evidence and force narrow/control/redesign/escalate/refuse actions. It does not create physical proof by itself. |
 | AI-agent governance design          | Specification-ready                   | The Agent System can guide control design, but deployment still requires local security, safety, legal, and domain review.                 |
 
+## Capability-claim integrity boundary
+
+Material terms such as agentic, autonomous, reasoning, understanding, self-improving, and intelligent are claimable only in a bounded functional sense when the operational definition, observable criteria, configured mechanism or system composition, evidence surface, validity conditions, alternative explanations, falsification or revision trigger, evidence maturity, permitted wording, and explicit nonclaims are recorded. A coordinated system may possess a real bounded capability even though it is built from ordinary components. That capability does not establish consciousness, personhood, intrinsic goals, moral agency, general intelligence, safety, lawful mandate, or execution authority.
+
 ## What you cannot claim today
 
 Do not claim that this package is empirically validated, legally certifying, deployment-certified, ProofPack-ready, Tier 4-ready, a reference calculator, a machine-verifiable conformance ecosystem, automated moral truth, universal consent, or evidence that MathGov-conformant decisions are empirically superior.
@@ -29,7 +33,7 @@ RLS reliability, UCI/HOI measurement, SGP biological and artificial-entity scori
 
 ## Practical rule
 
-Use MathGov Core v12.5 as a disciplined governance and decision-assurance architecture and research program. Do not use it as a substitute for law, domain engineering, clinical judgment, safety certification, democratic authority, or empirical validation.
+Use MathGov Core v12.6 as a disciplined governance and decision-assurance architecture and research program. Do not use it as a substitute for law, domain engineering, clinical judgment, safety certification, democratic authority, or empirical validation.
 
 
 ## Public release claim wording
@@ -39,7 +43,7 @@ This release is ready for public review, educational use, specification critique
 
 ## Publication synchronization boundary
 
-This package can be internally release-ready while repository tags, public websites, or mirrors remain unsynchronized. A claim that v12.5 is the currently published canonical release requires an accessible tagged release, matching manifest, and matching SHA-256 set. Publication-state verification is external to the framework calculations.
+This package can be internally release-ready while repository tags, public websites, or mirrors remain unsynchronized. A claim that v12.6 is the currently published canonical release requires an accessible tagged release, matching manifest, and matching SHA-256 set. Publication-state verification is external to the framework calculations.
 
 ## Full-stack alignment boundary
 
@@ -52,6 +56,6 @@ The phrase "universal ethical operating system" is a long-horizon design aspirat
 This release can mechanically check whether a supplied run record contains required objects and whether its selectability, ranking, decisiveness, authority, execution, and requalification states contradict the cascade. It cannot determine whether the evidence is true, whether a rights interpretation is legally correct, whether an instrument is empirically valid, or whether an action is safe to execute.
 
 
-## v12.5 integration note
+## v12.6 integration note
 
-WDBIP v1.5 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.4 controls its wrapper assurance surface. Run-record schema v3 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.
+WDBIP v1.6 is included as a Canon-subordinate normative implementation companion beneath RLS. ripple.md v5.5 controls its wrapper assurance surface. Run-record schema v4 separates V0 schema validity, V1 semantic conformance, and V2 evidence/use review. The two principal governing sources remain the Canon and SGP.

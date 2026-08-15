@@ -7,7 +7,7 @@
   "target_type": "DECLARED",
   "collective_or_system_boundary": "DECLARED",
   "evaluation_window": "DECLARED",
-  "specification_version": "SGP v8.4",
+  "specification_version": "SGP v8.5",
   "domain_profile": "DECLARED",
   "capacity_dimensions": [
     "DECLARED"

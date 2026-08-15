@@ -2,7 +2,7 @@
 
 ## Status
 
-Active informative Canon mirror included in MathGov Core v12.5 and identified by the release manifest and SHA-256 ledger. This register does not independently create or alter normative obligations. The RippleLogic Canon controls where any conflict or ambiguity occurs; this file types and exposes the maturity and claim boundaries already established by the governing sources.
+Active informative Canon mirror included in MathGov Core v12.6 and identified by the release manifest and SHA-256 ledger. This register does not independently create or alter normative obligations. The RippleLogic Canon controls where any conflict or ambiguity occurs; this file types and exposes the maturity and claim boundaries already established by the governing sources.
 
 ## Purpose
 

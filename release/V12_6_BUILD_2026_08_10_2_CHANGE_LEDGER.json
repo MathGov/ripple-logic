@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.1",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.10.2",
+  "prior_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.10.1",
+  "publication_date": "2026-08-10",
+  "semantic_versions_changed": false,
+  "build_increment_only": true,
+  "audit_disposition": "READY_WITH_BOUNDED_OPEN_WORK_CONCEPTUAL_FREEZE_RETAINED",
+  "architectural_invariants": {
+    "cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "gate_count": 5,
+    "union_scope_count": 7,
+    "welfare_dimension_count": 7,
+    "rights_noncompensatory": true,
+    "catastrophe_non_dilution": true,
+    "qualification_distinct_from_authorization": true,
+    "sgp_protection_separate_from_capability_and_authority": true
+  },
+  "changes": [
+    {
+      "id": "C2-01",
+      "severity": "MEDIUM",
+      "area": "Reality-grounding claim discipline",
+      "where": [
+        "docs/assurance/SCIENTIFIC_MATURITY_LADDER.md",
+        "docs/assurance/README.md",
+        "VERSION_MANIFEST.yaml"
+      ],
+      "what": "Added an informative evidence-stage non-substitution matrix spanning definition and derivation, computational realization, implementation conformance, projection lock, controlled empirical contact, operational qualification, and outcome/requalification evidence.",
+      "why": "The existing rules were distributed across the Canon, MFDI, PC-AEP, replay, and requalification materials. A single matrix makes clear that success at one stage cannot silently establish a stronger later-stage claim.",
+      "downstream": [
+        "public claim boundaries",
+        "reviewer workflow",
+        "implementation and pilot reporting"
+      ],
+      "verification": [
+        "VERIFY_RELEASE.py evidence-boundary assertions",
+        "manual source crosscheck"
+      ]
+    },
+    {
+      "id": "C2-02",
+      "severity": "MEDIUM",
+      "area": "Independent external-method crosscheck",
+      "where": [
+        "release/MATHGOV_V12_6_AND_MHIOS_V0_7_INDEPENDENT_RELEASE_REPORT.*",
+        "release documentation"
+      ],
+      "what": "Crosschecked frozen evaluation, milestone-claim discipline, projection integrity, replay, falsification, monitoring, execution binding, and outcome requalification against newly supplied external materials while importing no external formula, primitive, taxonomy, verdict system, architecture, or proprietary term.",
+      "why": "External comparison is useful only when it tests for a genuine missing requirement rather than creating novelty pressure or intellectual-property contamination.",
+      "downstream": [
+        "no canonical gate or component change",
+        "conceptual freeze retained"
+      ],
+      "verification": [
+        "active-source lineage scan",
+        "release report review"
+      ]
+    },
+    {
+      "id": "C2-03",
+      "severity": "MEDIUM",
+      "area": "Release identity and verifier closure",
+      "where": [
+        "VERSION_MANIFEST.yaml",
+        "schemas and run fixtures",
+        "release verifiers",
+        "release manifests and ledgers"
+      ],
+      "what": "Advanced only the correction build identifier to 2026.08.10.2, synchronized exact release pins, and made the master verifier fail if the evidence-stage matrix or current crosscheck/report metrics disappear or drift.",
+      "why": "A modified package requires a distinct reproducible build identity, and informative claim-boundary hardening should be regression-tested like other release surfaces.",
+      "downstream": [
+        "Core build pin",
+        "MHIOS compatibility pin",
+        "SHA-256 ledgers"
+      ],
+      "verification": [
+        "clean-extraction master replay",
+        "full ledger comparison"
+      ]
+    }
+  ],
+  "rejected_changes": [
+    "No sixth gate or new score",
+    "No import of external ontology, formulas, admissibility semantics, verdict labels, hardware stack, or proprietary terminology",
+    "No deterministic-only requirement",
+    "No replacement of rights, tail-risk, structural-viability, SGP, or RLS layers",
+    "No empirical, physical-safety, or deployment-readiness claim"
+  ],
+  "remaining_open_work": [
+    "Independent implementation conformance",
+    "Inter-rater reliability",
+    "Construct and decision validity",
+    "Domain calibration and external validity",
+    "Low-stakes pilots and comparator studies",
+    "Adversarial deployment assurance"
+  ],
+  "claim_boundary": "This build strengthens evidence-stage reporting and release integrity. It does not establish evidence truth, construct validity, legal authority, physical safety, framework superiority, or deployment readiness."
+}

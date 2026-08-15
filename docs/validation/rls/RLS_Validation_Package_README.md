@@ -1,6 +1,6 @@
 # RLS Validation Package v1.0
 
-Companion validation package for MathGov Core Release 2026.09 v12.5 and the RippleLogic Canon v12.5.
+Companion validation package for MathGov Core Release 2026.09 v12.6 and the RippleLogic Canon v12.6.
 
 ## Contents
 

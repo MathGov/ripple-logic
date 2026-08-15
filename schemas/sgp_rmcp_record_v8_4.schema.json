@@ -74,7 +74,7 @@
       "minLength": 1
     },
     "specification_version": {
-      "const": "SGP v8.4"
+      "const": "SGP v8.5"
     },
     "domain_profile": {
       "type": "string",

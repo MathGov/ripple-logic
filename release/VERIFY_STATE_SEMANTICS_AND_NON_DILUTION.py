@@ -9,24 +9,24 @@ def ck(cond,msg):
     if not cond: fail.append(msg)
 
 registry=yaml.safe_load((ROOT/'docs/implementation/CANONICAL_STATE_REGISTRY_v1.0.yaml').read_text())
-ck(registry.get('release')=='MathGov_v12.5','state registry release is not v12.5')
+ck(registry.get('release')=='MathGov_v12.6','state registry release is not v12.6')
 ck('TRC_NOT_TRIGGERED' in registry['canonical_tokens']['trc'],'TRC_NOT_TRIGGERED absent from canonical registry')
 
 matrix=json.loads((ROOT/'docs/implementation/STATE_TRANSITION_MATRIX_v1.0.json').read_text())
-ck(matrix.get('release')=='MathGov_v12.5','transition matrix release is not v12.5')
+ck(matrix.get('release')=='MathGov_v12.6','transition matrix release is not v12.6')
 normal=[r for r in matrix['normal_rules'] if r.get('require',{}).get('selectable') is True]
 ck(len(normal)==1,'expected one normal selectable rule')
 if normal:
     trc=normal[0]['when'].get('trc')
     ck(set(trc if isinstance(trc,list) else [trc])=={'TRC_PASS','TRC_NOT_TRIGGERED'},'selectable transition does not use exact TRC qualifying states')
 
-schema=json.loads((ROOT/'schemas/mathgov_run_record_v3.schema.json').read_text())
+schema=json.loads((ROOT/'schemas/mathgov_run_record_v4.schema.json').read_text())
 item=schema['properties']['gate_results']['items']
 ck('TRC_NOT_TRIGGERED' in item['properties']['trc']['enum'],'schema lacks TRC_NOT_TRIGGERED')
 ck('trc_trigger_assessment' in item['properties'],'schema lacks trigger assessment record')
 ck(any(x.get('if',{}).get('properties',{}).get('trc',{}).get('const')=='TRC_NOT_TRIGGERED' for x in item.get('allOf',[])),'schema does not conditionally require trigger assessment')
 
-canon=(ROOT/'docs/canon/RippleLogic_v12.5_Canon.md').read_text()
+canon=(ROOT/'docs/canon/RippleLogic_v12.6_Canon.md').read_text()
 for token in ['RG_qualified(a)','TRC_qualified(a)','TRC_NOT_TRIGGERED','Non-dilution rule for catastrophe profiles','Catastrophe-profile non-dilution test']:
     ck(token in canon,f'Canon missing {token}')
 

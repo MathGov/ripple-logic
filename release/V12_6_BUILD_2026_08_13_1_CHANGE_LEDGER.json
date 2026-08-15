@@ -1,0 +1,105 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.13.1",
+  "build_id": "2026.08.13.1",
+  "build_date": "2026-08-13",
+  "semantic_versions_changed": false,
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+  "purpose": "Final GitHub and website release-readiness build. Adds no gate, formula, threshold, right, Union Scope, Welfare Dimension, SGP floor, or authority layer.",
+  "changes": [
+    {
+      "id": "GH-1",
+      "type": "release_hygiene",
+      "files": [
+        "docs/standards/RippleLogic_Cascade_Standard_v2.6.md",
+        "docs/standards/RippleLogic_Cascade_Standard_v2.6.docx",
+        "docs/standards/RippleLogic_Cascade_Standard_v2.6.pdf",
+        "core_15/RippleLogic_Cascade_Standard_v2.6.docx"
+      ],
+      "change": "Corrected the final wrapper pin from ripple.md v5.4 to v5.5.",
+      "why": "Removes the last stale companion pin."
+    },
+    {
+      "id": "GH-2",
+      "type": "release_hygiene",
+      "files": [
+        "docs/examples/reproducibility/REPRODUCIBLE_RUN_WALKTHROUGH_v4.md"
+      ],
+      "change": "Corrected the visible walkthrough heading from v3 to v4.",
+      "why": "Aligns the human-readable title with the file and schema-bound record."
+    },
+    {
+      "id": "GH-3",
+      "type": "reference_replay",
+      "files": [
+        "docs/examples/reference_replays/ai_tutor_pilot/",
+        "docs/examples/reference_replays/congestion_pricing_pilot/"
+      ],
+      "change": "Added two synthetic, schema-valid reference replay packets with walkthroughs, PCC records, decision notes, public summaries, validator output, replay notes, and hashes.",
+      "why": "Provides cross-domain positive replay surfaces without changing the normative Core or claiming empirical validation."
+    },
+    {
+      "id": "GH-4",
+      "type": "navigation",
+      "files": [
+        "docs/examples/README.md",
+        "docs/examples/NEGATIVE_EXAMPLES_INDEX.md",
+        "docs/validation/WORKED_RUN_REGISTRY.md"
+      ],
+      "change": "Added an examples index, negative-example catalog, and populated worked-run registry.",
+      "why": "Makes existing positive and expected-failure evidence discoverable and removes a placeholder registry."
+    },
+    {
+      "id": "GH-5",
+      "type": "visual",
+      "files": [
+        "release/assets/cascade_overview.svg",
+        "release/assets/cascade_overview.png"
+      ],
+      "change": "Rendered the existing canonical Mermaid cascade into publication-ready SVG and PNG assets.",
+      "why": "Improves GitHub and website comprehension without adding a new conceptual diagram."
+    },
+    {
+      "id": "GH-6",
+      "type": "navigation",
+      "files": [
+        "README.md",
+        "START_HERE.md",
+        "START_HERE_RELEASE_INDEX_v12.6.md",
+        "REVIEWER_QUICK_START.md"
+      ],
+      "change": "Surfaced the replay packets, negative examples, maturity ladder, physical-execution materials, and cascade visual.",
+      "why": "Directs public and independent reviewers to the strongest existing assets."
+    },
+    {
+      "id": "GH-7",
+      "type": "release_contract",
+      "files": [
+        "VERSION_MANIFEST.yaml",
+        "CITATION.cff",
+        "schemas/mathgov_run_record_v4.schema.json",
+        "tests/run_records/",
+        "release/"
+      ],
+      "change": "Advanced the exact immutable build identity and synchronized schema-bound run records, reports, manifests, and verifiers while preserving all semantic versions.",
+      "why": "Changed bytes require a new exact build contract."
+    }
+  ],
+  "explicit_nonchanges": [
+    "Canon v12.6",
+    "SGP v8.5",
+    "ripple.md v5.5",
+    "Agent System v12.4",
+    "CSV v2.4",
+    "Cascade v2.6",
+    "Reproducibility v1.4",
+    "WDBIP v1.6",
+    "RLS Validation v2.6",
+    "Primer v4.4",
+    "PC-AEP/MFDI/Source-Coupling v2.3",
+    "Aligners Sheet v5.6",
+    "canonical rights-coverage sets",
+    "catastrophe-cell sets",
+    "all equations and numerical defaults"
+  ],
+  "claim_boundary": "This build strengthens release navigation and replayability. It does not establish evidence truth, construct validity, empirical effectiveness, legal authority, physical safety, moral truth, framework superiority, or deployment readiness."
+}

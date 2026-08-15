@@ -2,7 +2,7 @@
 from pathlib import Path
 import re, sys, yaml
 ROOT=Path(__file__).resolve().parents[1]
-CANON=(ROOT/"docs/canon/RippleLogic_v12.5_Canon.md").read_text(encoding="utf-8")
+CANON=(ROOT/"docs/canon/RippleLogic_v12.6_Canon.md").read_text(encoding="utf-8")
 REG=yaml.safe_load((ROOT/"docs/implementation/CANONICAL_AUDIT_FLAG_REGISTRY_v1.0.yaml").read_text(encoding="utf-8"))
 tokens={x["token"] for x in REG["flags"]}
 required={
@@ -14,7 +14,8 @@ required={
 "RLS_NO_ACTIVE_MASS","UNCERTAINTY_DECISIVENESS_SENSITIVE","PLSS_PROMINENCE_SENSITIVE",
 "CLAIM_EXCEEDS_CLOSURE_BOUNDARY","CATEGORY_COLLAPSE_FLAG","PCC_MATURITY_SURFACE_INCOMPLETE",
 "REALITY_GROUNDING_RECORD_MISSING","REALITY_GROUNDING_STATUS_UNSUPPORTED",
-"NORMATIVE_INPUT_PROVENANCE_MISSING","COMPUTABLE_BUT_INADMISSIBLE"}
+"NORMATIVE_INPUT_PROVENANCE_MISSING","COMPUTABLE_BUT_INADMISSIBLE",
+"CROSS_DOMAIN_WARRANT_SUBSTITUTION"}
 missing=sorted(required-tokens)
 not_in_canon=sorted(t for t in tokens if t not in CANON)
 if missing or not_in_canon:

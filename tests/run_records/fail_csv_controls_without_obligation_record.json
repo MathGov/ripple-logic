@@ -3,12 +3,12 @@
     "run_id": "RUN-OBLIGATION-MISSING-FAIL",
     "run_version": "1.0",
     "parent_run_id": null,
-    "package_release_id": "MathGov_Core_2026_09_v12.5_SGP_v8.4",
+    "package_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
     "package_sha256_reference": null,
-    "canon_version": "v12.5",
+    "canon_version": "v12.6",
     "sgp_version": "NOT_TRIGGERED",
     "created_utc": "2026-07-19T00:00:00Z",
-    "ripple_md_version": "v5.4",
+    "ripple_md_version": "v5.5",
     "wdbip_version": "NOT_TRIGGERED"
   },
   "decision": {
@@ -69,7 +69,8 @@
       "supplier rights and safety"
     ],
     "claim_boundary": "Local reversible trial decision only; no general lifecycle or citywide policy claim.",
-    "rg_status": "ASSUMPTION_BOUND"
+    "rg_status": "ASSUMPTION_BOUND",
+    "transition_or_action_boundary": "Choose whether and how the cafe changes its cup system through a bounded, reversible local trial."
   },
   "parameter_lock": {
     "locked": true,
@@ -302,7 +303,7 @@
     "active_controls": [
       "human review"
     ],
-    "capability_state": "NOT_APPLICABLE",
+    "capability_state": "AUTHORIZED",
     "current_state_status": "VALID",
     "transition_status": "ADMISSIBLE",
     "post_state_status": "VIABLE",
@@ -312,6 +313,10 @@
       "material configuration, evidence, control, authority, or environment change"
     ],
     "trigger_events": [],
-    "opaque_dependency_status": "NONE"
+    "opaque_dependency_status": "NONE",
+    "qualified_option_id": "B",
+    "action_instance_id": "ACT-VECTOR-001",
+    "action_specification_hash": "9b72e971c95b64bee4018d44f85c12739692e8040abf1ff2e329f28081f06f2d",
+    "qualification_snapshot_hash": "de4af97047eb7f67b16b624b7b33d66c7937552b391caea63f672e2447923237"
   }
 }

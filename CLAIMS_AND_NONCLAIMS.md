@@ -18,6 +18,12 @@ Public memory line:
 
 The package is claimable as a structured, auditable decision-specification and release bundle. The Aligners Sheet is claimable as a worked-run/training companion, not as a validator or reference calculator.
 
+## Capability-language claim boundary
+
+Claimable: a configured system may be described as agentic, autonomous, reasoning, understanding, self-improving, or intelligent in a bounded operational sense when the term is explicitly defined, tied to observable criteria and evidence, limited to declared validity conditions, tested against alternative explanations, and accompanied by a falsifier, evidence maturity, permitted claim, and explicit nonclaims.
+
+Not claimable from that functional description alone: consciousness, personhood, intrinsic motivation, moral agency, general intelligence, unrestricted autonomy, physical safety, lawful authority, ethical legitimacy, or permission to execute.
+
 ## Not claimable now
 
 This release is not empirical validation, not legal certification, not deployment certification, not ProofPack, not Tier 4, not reference-calculator status, not autonomous governance authority, and not automated moral truth.
@@ -70,9 +76,9 @@ MathGov may require claim-type discrimination, dependency records, falsification
 MathGov distinguishes governance permission from physical admissibility. For consequence-bearing physical systems, approval, certification, conformity, documentation, monitoring, or authority do not by themselves demonstrate that execution is safe. MathGov can require and audit a Physical/Causal Admissibility Evidence Profile, but domain-specific physical admissibility must come from formal verification, validated simulation, empirical testing, standards-based safety cases, certified controller envelopes, qualified domain warrant, regulator-recognized method, or another explicitly declared objective method. If that evidence is missing or outside validity domain, the correct MathGov action is narrow, control, redesign, escalate, or refuse, not ordinary physical-execution selection.
 
 
-## SGP v8.4 dual-anchor and open-P100 guardrail
+## SGP v8.5 dual-anchor and open-P100 guardrail
 
-SGP v8.4 separates two uses of the top plateau. **FPP-100** is the full, equal, non-downgradable rights-of-protection status held by every human person, independent of measured intelligence, age, disability, communication, wakefulness, or usefulness. **RMCP-P100** is an informative, open calibration plateau for integrated reality-management capacity. Humanity as a collective is the provisional current reference calibration anchor because of its cumulative language, mathematics and science, intergenerational knowledge, technology, institutional coordination, planetary monitoring, cross-scale intervention, and capacity for Recursive Union Awareness.
+SGP v8.5 separates two uses of the top plateau. **FPP-100** is the full, equal, non-downgradable rights-of-protection status held by every human person, independent of measured intelligence, age, disability, communication, wakefulness, or usefulness. **RMCP-P100** is an informative, open calibration plateau for integrated reality-management capacity. Humanity as a collective is the provisional current reference calibration anchor because of its cumulative language, mathematics and science, intergenerational knowledge, technology, institutional coordination, planetary monitoring, cross-scale intervention, and capacity for Recursive Union Awareness.
 
 The two anchors MUST NOT be collapsed. RMCP/P100 does not establish sentience, moral worth, FPP, CMIU membership, wise performance, lawful mandate, or authority. P100 is not a permanent human monopoly: a biological, digital, hybrid, collective, or extraterrestrial intelligence may reach, equal, exceed, or already exist at the open plateau when admissible evidence supports the assignment. Greater capability creates greater responsibility, not permission to dominate, consume, erase, own, or convert protected beings into resources.
 
