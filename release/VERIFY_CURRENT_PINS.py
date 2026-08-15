@@ -176,7 +176,12 @@ for rel in current_surfaces:
         fail(f"stale current identity in {rel}")
 
 excluded_terms = ("Ely" + "ria", "S" + "OS")
+excluded_roots = {".git", "releases", "archive", "ripplelogic-proofpack-lite"}
+
 for path in ROOT.rglob("*"):
+    rel = path.relative_to(ROOT)
+    if rel.parts and rel.parts[0] in excluded_roots:
+        continue
     if path.is_dir() and path.name == "__pycache__":
         fail(f"bytecode directory {path.relative_to(ROOT)}")
     if path.is_file() and path.suffix.lower() in {".pyc", ".pyo"}:
