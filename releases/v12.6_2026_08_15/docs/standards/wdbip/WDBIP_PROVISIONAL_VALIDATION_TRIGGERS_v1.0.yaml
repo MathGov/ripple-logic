@@ -1,0 +1,27 @@
+schema_version: WDBIP_PROVISIONAL_VALIDATION_TRIGGERS_v1.0
+status: PROVISIONAL_GOVERNANCE_REVIEW_TRIGGERS_NOT_VALIDATION_CONSTANTS
+applies_to:
+  wdbip: v1.6
+  welfare_dimension_set: WELFARE_DIMENSION_SET_7D_V1
+classification_reliability:
+  primary_dimension:
+    development_target: 0.70
+    high_stakes_target: 0.80
+    review_if_lower_confidence_bound_below: 0.60
+  pathway_type:
+    development_target: 0.70
+    high_stakes_target: 0.80
+  evidence_status:
+    development_target: 0.70
+    high_stakes_target: 0.80
+  scope_treatment:
+    development_target: 0.70
+    high_stakes_target: 0.80
+boundary_contestation:
+  ordinary_review_trigger_rate: 0.20
+  high_stakes_decision_critical_review_trigger_rate: 0.10
+notes:
+  - Select the agreement statistic before observing results.
+  - Report confidence intervals and prevalence.
+  - Threshold attainment does not establish construct validity.
+  - Domain-specific thresholds may be stricter or may use decision-error costs, but must be preregistered.

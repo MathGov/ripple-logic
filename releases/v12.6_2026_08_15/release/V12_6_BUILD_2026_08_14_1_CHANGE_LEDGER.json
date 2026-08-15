@@ -1,0 +1,34 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.14.1",
+  "build_id": "2026.08.14.1",
+  "date": "2026-08-14",
+  "semantic_versions_changed": false,
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+  "change_class": "clarification_and_interface_hardening",
+  "changes": [
+    {
+      "artifact": "RippleLogic Agent System v12.4",
+      "change": "Added Computational Context Preflight as a derived runtime/pre-action view and qualification-continuity check."
+    },
+    {
+      "artifact": "ripple.md Standard v5.5",
+      "change": "Added portable computational_context Decision Note view with source-record references and authority/interface non-collapse."
+    },
+    {
+      "artifact": "Release package",
+      "change": "Synchronized Markdown, DOCX, PDF, Core 15 mirrors, manifests, hashes, verification reports, and publication assets."
+    }
+  ],
+  "no_change": [
+    "five-stage cascade",
+    "Canon equations and thresholds",
+    "rights system",
+    "TRC",
+    "CSV",
+    "RLS",
+    "Union Scopes",
+    "Welfare Dimensions",
+    "SGP v8.5"
+  ],
+  "claim_boundary": "The patch improves visibility and interface discipline. It does not establish capability truth, legitimate authority, physical safety, empirical validity, or deployment readiness."
+}

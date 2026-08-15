@@ -1,0 +1,4 @@
+PASS V0 schema validity
+PASS V1 semantic conformance
+V2 USE-READINESS: REVIEW_REQUIRED
+- MO-CONGESTION-CONTROLS-001: control effectiveness not yet established

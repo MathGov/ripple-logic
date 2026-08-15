@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.09.1",
+  "publication_date": "2026-08-09",
+  "independence": {
+    "status": "INDEPENDENT_OPEN_SOURCE_IMPLEMENTATION",
+    "imported_comparison_content": false,
+    "method": "User-designated copyrighted comparison materials were segregated from the active source tree. Improvements were expressed only through MathGov architecture, terminology, schemas, tests, and independently written release documentation."
+  },
+  "architectural_invariants": {
+    "cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "gate_count": 5,
+    "union_scope_count": 7,
+    "welfare_dimension_count": 7,
+    "rights_noncompensatory": true,
+    "catastrophe_non_dilution": true,
+    "sgp_protection_separate_from_authority": true
+  },
+  "changes": [
+    {
+      "area": "Canon",
+      "where": ["docs/canon/RippleLogic_v12.6_Canon.md Appendix T", "docs/canon/RippleLogic_v12.6_Canon.md Appendix U"],
+      "what": "Added qualification continuity for consequence-bearing action and outcome observation/requalification.",
+      "why": "A prior option-level decision is insufficient when the real action, configuration, transition, post-state, or context differs."
+    },
+    {
+      "area": "Agent runtime",
+      "where": ["docs/agents/RippleLogic_Agent_System_v12.4.md Part XV"],
+      "what": "Added exact action binding, mismatch blocking, capability/authority separation, requalification triggers, and post-action observation.",
+      "why": "To prevent qualification from being reused as a transferable execution permit."
+    },
+    {
+      "area": "Machine interface",
+      "where": ["schemas/mathgov_run_record_v4.schema.json", "release/VALIDATE_MATHGOV_RUN.py", "tests/run_records/"],
+      "what": "Required qualified option, action instance, action-specification hash, and qualification-snapshot hash for execution; added three adversarial fixtures.",
+      "why": "To make action continuity auditable and reject structurally inconsistent execution records."
+    },
+    {
+      "area": "Human-readable record standard",
+      "where": ["docs/standards/ripple_md_Standard_v5.5.md Appendix M", "docs/standards/ripple_md_Standard_v5.5.md Appendix O"],
+      "what": "Added action-bound qualification and outcome-requalification records.",
+      "why": "To keep the narrative record synchronized with the machine contract."
+    },
+    {
+      "area": "Workbook",
+      "where": ["docs/aligners/RippleLogic_Aligners_Sheet_v5.6.xlsx"],
+      "what": "Added Qualification_Continuity, Outcome_Requalification, and v12_6_Sync worksheets.",
+      "why": "To make the action lifecycle visible and checkable in the worked-run exemplar."
+    },
+    {
+      "area": "Welfare-dimension protocol",
+      "where": ["docs/standards/wdbip/"],
+      "what": "Advanced the parent document and machine contract to v1.6 with synchronized schema, validator, example, and vectors.",
+      "why": "To keep affected normative and executable interfaces version-consistent."
+    },
+    {
+      "area": "MHIOS companion",
+      "where": ["separate MHIOS v0.7 package"],
+      "what": "Replaced inherited execution terminology with MathGov-native execution-mandate currency and exact action binding.",
+      "why": "To preserve independent MathGov terminology and align orchestration records with Core v12.6."
+    }
+  ],
+  "explicit_nonchanges": [
+    "No sixth gate",
+    "No eighth welfare dimension",
+    "No authority grant",
+    "No empirical-validity claim",
+    "No legal or physical-safety certification",
+    "No consciousness determination",
+    "No deployment-readiness claim"
+  ]
+}

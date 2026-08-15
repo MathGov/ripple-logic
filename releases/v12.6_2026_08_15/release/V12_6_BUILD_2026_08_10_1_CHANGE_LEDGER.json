@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.1",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.10.1",
+  "publication_date": "2026-08-10",
+  "semantic_versions_changed": false,
+  "build_increment_only": true,
+  "audit_disposition": "READY_WITH_BOUNDED_OPEN_WORK_CONCEPTUAL_FREEZE_RECOMMENDED",
+  "architectural_invariants": {
+    "cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "gate_count": 5,
+    "union_scope_count": 7,
+    "welfare_dimension_count": 7,
+    "rights_noncompensatory": true,
+    "catastrophe_non_dilution": true,
+    "qualification_distinct_from_authorization": true,
+    "sgp_protection_separate_from_capability_and_authority": true
+  },
+  "changes": [
+    {
+      "id": "C-01",
+      "severity": "HIGH",
+      "area": "Release identity and citation",
+      "where": [
+        "CITATION.cff",
+        "VERSION_MANIFEST.yaml",
+        "release metadata"
+      ],
+      "what": "Corrected stale v12.5/23 July citation data and advanced the correction build to 2026.08.10.1 without changing the v12.6 semantic version.",
+      "why": "A canonical package cannot be reproducibly cited or dependency-pinned when its citation and build surfaces disagree.",
+      "downstream": [
+        "README/start surfaces",
+        "schemas and fixtures with exact release IDs",
+        "release verifier",
+        "manifests and ledgers"
+      ],
+      "verification": [
+        "VERIFY_CURRENT_PINS.py",
+        "VERIFY_RELEASE.py",
+        "exact metadata assertions"
+      ]
+    },
+    {
+      "id": "C-02",
+      "severity": "HIGH",
+      "area": "Active companion pins",
+      "where": [
+        "START_HERE.md",
+        "START_HERE_RELEASE_INDEX_v12.6.md",
+        "docs/CORE_COMPONENT_MAP.*",
+        "Canon Appendix AC",
+        "Agent System current-release block",
+        "SGP current-conformance block",
+        "NORMATIVE_KERNEL_INDEX_v1.0.yaml"
+      ],
+      "what": "Synchronized current references to SGP v8.5, ripple.md v5.5, Agent v12.4, Cascade v2.6, CSV v2.4, RLS Validation v2.6, WDBIP v1.6, PC-AEP/MFDI/Source Coupling v2.3, and Aligners v5.6.",
+      "why": "Current human-readable mirrors were mixing historical and current pins, creating a material implementation and citation ambiguity.",
+      "downstream": [
+        "DOCX/PDF mirrors",
+        "Core 15 mirrors",
+        "pin verifier"
+      ],
+      "verification": [
+        "active mirror token checks",
+        "post-repair PDF text diff",
+        "full-resolution review of changed pages"
+      ]
+    },
+    {
+      "id": "C-03",
+      "severity": "MEDIUM",
+      "area": "RLS baseline-zero semantics",
+      "where": [
+        "Canon §5.1 and synchronized DOCX/PDF/Core15 mirror"
+      ],
+      "what": "Clarified zero as zero net represented baseline-relative change at cell level, not proof that every subgroup, indicator, pathway, or time window is unchanged.",
+      "why": "The prior biconditional was stronger than aggregation semantics justified and could support hidden offsetting harms.",
+      "downstream": [
+        "RLS interpretation",
+        "distributional disclosure",
+        "rights/TRC/CSV/peak-harm non-masking"
+      ],
+      "verification": [
+        "semantic-surface inspection",
+        "mirror synchronization",
+        "visual render review"
+      ]
+    },
+    {
+      "id": "C-04",
+      "severity": "LOW",
+      "area": "Canon text integrity",
+      "where": [
+        "Canon §5.3A"
+      ],
+      "what": "Removed an accidental table fragment appended to the peak-harm paragraph.",
+      "why": "The fragment was malformed source text and could confuse readers or downstream converters.",
+      "downstream": [
+        "DOCX/PDF/Core15 mirror"
+      ],
+      "verification": [
+        "text diff",
+        "render inspection"
+      ]
+    },
+    {
+      "id": "C-05",
+      "severity": "MEDIUM",
+      "area": "Package hygiene",
+      "where": [
+        "docs/canon/.~lock.RippleLogic_v12.6_Canon.pdf#",
+        "release verifiers"
+      ],
+      "what": "Removed a shipped LibreOffice lock file and made office/editor lock artifacts a hard verification failure.",
+      "why": "Ephemeral lock files undermine clean-source claims and can disclose workstation state or cause tooling errors.",
+      "downstream": [
+        "source hygiene",
+        "clean extraction replay"
+      ],
+      "verification": [
+        "recursive hygiene scan",
+        "VERIFY_CURRENT_PINS.py",
+        "VERIFY_RELEASE.py"
+      ]
+    },
+    {
+      "id": "C-06",
+      "severity": "MEDIUM",
+      "area": "Professional document system",
+      "where": [
+        "14 primary Core DOCX artifacts and component map"
+      ],
+      "what": "Restored restrained light-blue headers, subtle banding, borders, spacing, repeated header rows, and consistent table readability without changing equations or substantive text.",
+      "why": "All primary tables had regressed to generic unstyled output, reducing scanability and professional usability.",
+      "downstream": [
+        "all current PDFs",
+        "Core15 DOCX mirrors",
+        "style verifier"
+      ],
+      "verification": [
+        "287-table OOXML style check",
+        "596-page render review",
+        "zero blank/boundary defects"
+      ]
+    },
+    {
+      "id": "C-07",
+      "severity": "MEDIUM",
+      "area": "Verifier closure",
+      "where": [
+        "VERIFY_CURRENT_PINS.py",
+        "VERIFY_RELEASE.py",
+        "VERIFY_RELEASE_REALITY_COHERENCE.py",
+        "VERIFY_DOCX_TABLE_STYLE.py"
+      ],
+      "what": "Added exact citation/build, current-mirror, release-reality, lock-file, table-style, and bounded in-process run-vector replay assertions.",
+      "why": "The original verification did not fail on all detected release-surface drift, and repeated interpreter spawning made the master fixture replay unnecessarily slow and vulnerable to timeout without adding independence.",
+      "downstream": [
+        "future release gating"
+      ],
+      "verification": [
+        "full master verifier",
+        "all nine subordinate surfaces",
+        "6 positive/29 negative/1 active run-record replay",
+        "fresh manifest/hash verification"
+      ]
+    },
+    {
+      "id": "C-08",
+      "severity": "LOW",
+      "area": "Claim discipline and reporting",
+      "where": [
+        "release reports",
+        "VALIDATION_STATUS.md",
+        "RELEASE_NOTES.md"
+      ],
+      "what": "Updated page/test counts and made the distinction between artifact integrity, construct validity, empirical effectiveness, legal authority, and deployment readiness explicit.",
+      "why": "Tests and hashes verify artifacts, not real-world governance efficacy.",
+      "downstream": [
+        "public claims",
+        "pilot design"
+      ],
+      "verification": [
+        "report review",
+        "master verifier required-artifact checks"
+      ]
+    }
+  ],
+  "rejected_changes": [
+    "Sixth gate",
+    "TRC/CSV merger",
+    "Eighth Union Scope or Welfare Dimension",
+    "RLS as cardinal moral utility",
+    "Weakening rights noncompensation",
+    "Universalizing current default thresholds as scientific constants",
+    "SGP consciousness detector",
+    "AI execution or normative authority",
+    "Semantic-version churn without a changed contract"
+  ],
+  "remaining_open_work": [
+    "Inter-rater reliability",
+    "Construct and criterion validity",
+    "Field calibration of defaults and thresholds",
+    "Usability and burden measurement",
+    "Anti-capture and anti-theater performance",
+    "Legal and domain validation",
+    "Comparative pilots against simpler baselines",
+    "Outcome monitoring and distribution-shift evidence"
+  ],
+  "claim_boundary": "This ledger records demonstrated artifact and architecture corrections. It does not establish empirical superiority, moral truth, legal validity, physical safety, or deployment readiness."
+}
