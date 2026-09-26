@@ -30,6 +30,8 @@ The active workflow is the repository-root `.github/workflows/verify.yml`. The f
 
 ## Platform scope
 
+On Windows with a legacy default text encoding, the frozen workbook, document, and release checks can raise `UnicodeDecodeError` when reading UTF-8 files. Set `$env:PYTHONUTF8 = '1'` in PowerShell before invoking the verifier so the setting reaches all child processes. See the complete [Windows commands](INSTALLATION.md#from-the-github-repository). This environment correction preserves every frozen byte.
+
 The supplied loopback HTTP test can race with Windows file locking when it deletes a file immediately after serving it. The reference CI therefore uses the publication's intended Ubuntu environment. A Windows file-lock failure must not be described as a successful run. No new native Excel or LibreOffice recalculation is claimed.
 
 ## Release and hosted-byte evidence

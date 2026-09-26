@@ -13,7 +13,18 @@ python -m pip install -r requirements-ci.txt
 python -B releases/v13.0-release-i/verify_all.py --output-dir ../mathgov-results
 ```
 
-On Windows PowerShell, activate with `.\.venv\Scripts\Activate.ps1`, or invoke `.\.venv\Scripts\python.exe` directly if activation is restricted. One supplied loopback HTTP test can encounter a Windows file-deletion race. Ubuntu hosted checks are the reference; a Windows failure must be inspected rather than dismissed as a pass.
+On Windows PowerShell, use these commands after cloning and entering the repository. Direct invocation works even when script activation is restricted:
+
+```powershell
+python -m venv .venv
+$env:PYTHONUTF8 = '1'
+.\.venv\Scripts\python.exe -m pip install -r requirements-ci.txt
+.\.venv\Scripts\python.exe -B releases/v13.0-release-i/verify_all.py --output-dir ../mathgov-results
+```
+
+Set `PYTHONUTF8` in each new PowerShell session before verification. Several frozen checks read UTF-8 manifests and HTML with Python's default encoding; on Windows installations using a legacy encoding such as CP1252, they otherwise fail with `UnicodeDecodeError`. The environment variable also reaches the verifier's child processes. It changes the execution environment without editing the frozen publication.
+
+One supplied loopback HTTP test can encounter a Windows file-deletion race. Ubuntu hosted checks are the reference; a Windows failure must be inspected rather than dismissed as a pass.
 
 ## From the original publication ZIP
 
@@ -35,6 +46,8 @@ Extract to a new directory. Create and activate a virtual environment **outside*
 python -m pip install -r /path/to/downloaded/requirements-ci.txt
 python -B verify_all.py --output-dir ../mathgov-results
 ```
+
+On Windows, set `$env:PYTHONUTF8 = '1'` before running these checks too, and use the Python executable from your external virtual environment.
 
 Replace `/path/to/downloaded/requirements-ci.txt` with your actual path. The maintained environment updates lxml and PyMuPDF separately from the frozen specification, and every update must pass the supplied checks. The original release assets retain the first publication environment. To reproduce that historical dependency set specifically:
 
