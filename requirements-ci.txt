@@ -1,7 +1,7 @@
 # Maintained CI environment; do not update frozen publication requirements.
 jsonschema==4.26.0
 lxml==6.1.1
-PyMuPDF==1.26.7
+PyMuPDF==1.28.2
 # Enable jsonschema's date-time checker; omitted by the original package.
 rfc3339-validator==0.1.4
 six==1.17.0
