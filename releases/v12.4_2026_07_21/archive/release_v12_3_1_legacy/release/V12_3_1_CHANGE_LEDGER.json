@@ -1,0 +1,57 @@
+{
+  "release": "MathGov v12.3.1 / SGP v8.2.1",
+  "date": "2026-07-19",
+  "change_class": "bounded_patch",
+  "architecture_changed": false,
+  "rejected_findings": [
+    {
+      "id": "AUDIT-P0-1",
+      "finding": "active DOCX files are plain text renamed as DOCX",
+      "disposition": "rejected",
+      "basis": "direct ZIP inspection confirms valid OOXML Word packages"
+    },
+    {
+      "id": "AUDIT-P0-2",
+      "finding": "Reproducibility and Use Standard v1.1 is absent",
+      "disposition": "rejected",
+      "basis": "DOCX, Markdown, and PDF are present in docs/implementation"
+    },
+    {
+      "id": "AUDIT-P2-7",
+      "finding": "password-protect all formula cells as primary integrity boundary",
+      "disposition": "reframed",
+      "basis": "weak worksheet passwords are not security; formula signatures, hashes, and an edit-integrity map are used instead"
+    }
+  ],
+  "corrected_findings": [
+    "workbook current-version split-brain",
+    "fragile workbook self-check",
+    "sanity summary omitted error states",
+    "machine named-range off-by-one",
+    "hardcoded values labeled computed",
+    "stale cross-file pins",
+    "ripple.md companion-matrix duplication and invalid WDBIP pin",
+    "Public Introduction stale release boundary",
+    "Agent Card and operator-kit stale pins",
+    "RLS Validation stale vector headings",
+    "WDBIP missing H1",
+    "RLS display equation missing normalization divisor",
+    "Dashboard incomplete five-level linkage",
+    "TRC worked-run CVaR provenance",
+    "workbook recalculation-on-open posture",
+    "exact 15-file review bundle"
+  ],
+  "preserved_invariants": [
+    "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "seven Union Scopes",
+    "seven Welfare Dimensions",
+    "rights non-compensability",
+    "tail-risk non-averaging",
+    "WDBIP beneath RLS",
+    "UCI and HOI inside CSV",
+    "Human FPP-100",
+    "open P100 with no P101",
+    "capacity does not imply moral worth or authority",
+    "selection does not imply authorization or execution"
+  ]
+}

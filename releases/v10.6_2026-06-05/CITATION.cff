@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "MathGov / RippleLogic v10.6 + SGP v5.3 Core Release"
+message: "If you use this framework, please cite this release."
+type: software
+authors:
+  - family-names: McGaughran
+    given-names: James
+    orcid: "https://orcid.org/0009-0005-3324-7290"
+version: "v10.6-sgp-v5.3"
+date-released: "2026-06-02"
+repository-code: "https://github.com/MathGov/ripple-logic"
+url: "https://ripplelogic.org"
+abstract: "Public release package for RippleLogic Canon v10.6 and Sentience Gradient Protocol v5.3, including synchronized companions, Markdown derivatives, worked-run exemplar, and release-integrity materials."
+keywords:
+  - MathGov
+  - RippleLogic
+  - Union-Based Ethics
+  - AI governance
+  - AI alignment
+  - rights floors
+  - tail risk
+  - auditability
+license: "CC-BY-4.0"

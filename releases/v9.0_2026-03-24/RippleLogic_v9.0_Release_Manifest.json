@@ -1,0 +1,88 @@
+{
+  "package_id": "RippleLogic_v9.0_Core_Freeze_Package",
+  "release_line": "RippleLogic v9.0",
+  "release_date": "2026-03-23",
+  "status": "freeze-ready core synced document/workbook set",
+  "boundary": "Not by itself a full independent replay bundle; validator/schema surfaces and optional executable companion assets remain separately publishable.",
+  "core_artifacts": [
+    "RippleLogic_v9.0_Canon.docx",
+    "SGP_4.3.docx",
+    "ripple_md_Standard_v2.0.docx",
+    "RippleLogic_Agent_System_v9.0.docx",
+    "RippleLogic_Aligners_Sheet_v2.3.xlsx"
+  ],
+  "artifacts": [
+    {
+      "filename": "README_RELEASE.md",
+      "sha256": "356426310aff156e5d084451ecaadfd9106e75cfd7d7f20fc21e444731bcc43c",
+      "bytes": 705,
+      "role": "support"
+    },
+    {
+      "filename": "RELEASE_NOTES.md",
+      "sha256": "a4b0b26e24ef78e90441eef5a143f86f424997c8df2c8fe13d89cf60295710e2",
+      "bytes": 838,
+      "role": "support"
+    },
+    {
+      "filename": "RippleLogic_Agent_System_v9.0.docx",
+      "sha256": "25a87479eff68b35f06ed497e69143544c5fa0f9daa5f70609802580e1273432",
+      "bytes": 98311,
+      "role": "core"
+    },
+    {
+      "filename": "RippleLogic_Aligners_Sheet_v2.3.xlsx",
+      "sha256": "a94baa0d3254909e5badb6fd44bcdeaf5956a6361c743e69bc8c091bfbeb26c1",
+      "bytes": 102435,
+      "role": "core"
+    },
+    {
+      "filename": "RippleLogic_v9.0_Canon.docx",
+      "sha256": "b9ef677498b46a2b0b3b2e2df47c2e3cdddb5dc3b382f64e0050aa5f125cbba4",
+      "bytes": 266316,
+      "role": "core"
+    },
+    {
+      "filename": "RippleLogic_v9.0_ProofPack_Release_Integrity.docx",
+      "sha256": "380d2fe193f72125dc62d5d10cf05a50ba2cb8bf2d2631b92333e93880d65d17",
+      "bytes": 37795,
+      "role": "support"
+    },
+    {
+      "filename": "RippleLogic_v9.0_Release_Manifest.json",
+      "sha256": "fdd1c8534c65119483a29c7a4e1f73382006dee8a163b0352fcf78b7b4d96a3c",
+      "bytes": 2309,
+      "role": "support"
+    },
+    {
+      "filename": "RippleLogic_v9.0_Release_Manifest.yaml",
+      "sha256": "1b46411acf05dc25acd51f7c00302711404b9715e39c7a42b46795993ca2a430",
+      "bytes": 1902,
+      "role": "support"
+    },
+    {
+      "filename": "RippleLogic_v9.0_Release_Manifest_SHA256.docx",
+      "sha256": "65a4ca2434fe779a8c76934c8a3e8e07886d0f592d402a5571389420096a986c",
+      "bytes": 37973,
+      "role": "support"
+    },
+    {
+      "filename": "RippleLogic_v9.0_SHA256SUMS.txt",
+      "sha256": "5bc1097e4b8e5b130511f9b177adcafc8bb9a7c9bf829a050aa36ec2f52a6dc6",
+      "bytes": 1077,
+      "role": "support"
+    },
+    {
+      "filename": "SGP_4.3.docx",
+      "sha256": "92433534c2c5b6f1ad5c62b1b56d18a57ec13859f885cd1bb21834a939033a2e",
+      "bytes": 78681,
+      "role": "core"
+    },
+    {
+      "filename": "ripple_md_Standard_v2.0.docx",
+      "sha256": "258ae8851045c7d175cd724e089ae1ffc1f5f32fb59e3ea8a562c7fc2dffdd61",
+      "bytes": 69812,
+      "role": "core"
+    }
+  ]
+}

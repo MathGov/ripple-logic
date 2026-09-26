@@ -1,0 +1,21 @@
+{
+  "release": "MathGov Core v12.2 / SGP v8.1 Reproducibility and Format-Integrity Hardened Final",
+  "date": "2026-07-13",
+  "architecture_changed": false,
+  "existing_component_versions_changed": false,
+  "new_bounded_standard": "MathGov Reproducibility and Use Standard v1.1",
+  "changes": [
+    {"id": "RF-01", "area": "implementation", "change": "Added compact K01-K12 normative implementation kernel", "reason": "Reduce interpretive burden while preserving Canon control"},
+    {"id": "RF-02", "area": "proportionality", "change": "Added Quick, Standard, and Audit use profiles with escalation triggers", "reason": "Make burden proportionate to stakes"},
+    {"id": "RF-03", "area": "parameters", "change": "Added parameter status vocabulary and pre-ranking lock", "reason": "Prevent undefined or post-outcome parameters entering calculations"},
+    {"id": "RF-04", "area": "machine_record", "change": "Added JSON run-record schema and normative-kernel index", "reason": "Make minimum records machine-checkable"},
+    {"id": "RF-05", "area": "validation", "change": "Added semantic validator, passing record, and four failing vectors", "reason": "Mechanically detect cascade contradictions"},
+    {"id": "RF-06", "area": "replay", "change": "Added two-implementer replay protocol and discrepancy taxonomy", "reason": "Measure procedural reproducibility"},
+    {"id": "RF-07", "area": "workbook", "change": "Added Reproducibility_Check sheet with live pins and conformance checks", "reason": "Keep worked example connected to current rules"},
+    {"id": "RF-08", "area": "ecosystem", "change": "Separated MathGov core, SGP, communication companions, and independent applications", "reason": "Prevent AIAP or Auditable Flourishing being presented as proof of MathGov"},
+    {"id": "RF-09", "area": "format", "change": "Normalized all active DOCX typography and all 238 tables", "reason": "Remove font-size and table-format drift"},
+    {"id": "RF-10", "area": "pdf", "change": "Regenerated and page-reviewed all 14 PDF mirrors", "reason": "Verify visible layout integrity"},
+    {"id": "RF-11", "area": "automation", "change": "Added format/reproducibility verifier and CI step", "reason": "Make recurrence mechanically detectable"},
+    {"id": "RF-12", "area": "claims", "change": "Preserved explicit distinction between conformance and empirical/legal/safety/moral validity", "reason": "Maintain strict claim discipline"}
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "generated_utc": "2026-06-05T07:03:19Z",
+  "package": "MathGov_RippleLogic_v10.6_SGP_v5.3_GITHUB_FINAL_RELEASE",
+  "office_file_checks": [
+    {
+      "file": "GOVERNING_CORE/RippleLogic_v10.6_Canon_FINAL_RELEASE_READY.docx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": "",
+      "comments_xml_present": false,
+      "tracked_changes_present": true,
+      "comment_markers_present": false,
+      "ascii_arrow_count": 0,
+      "markdown_bold_marker_count": 0
+    },
+    {
+      "file": "GOVERNING_CORE/SGP_v5.3_FINAL_RELEASE_READY.docx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": "",
+      "comments_xml_present": false,
+      "tracked_changes_present": false,
+      "comment_markers_present": false,
+      "ascii_arrow_count": 0,
+      "markdown_bold_marker_count": 0
+    },
+    {
+      "file": "COMPANIONS/ripple_md_Standard_v3.4_FINAL_RELEASE_READY.docx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": "",
+      "comments_xml_present": false,
+      "tracked_changes_present": false,
+      "comment_markers_present": false,
+      "ascii_arrow_count": 0,
+      "markdown_bold_marker_count": 0
+    },
+    {
+      "file": "COMPANIONS/RippleLogic_Agent_System_v10.6_FINAL_RELEASE_READY.docx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": "",
+      "comments_xml_present": false,
+      "tracked_changes_present": true,
+      "comment_markers_present": false,
+      "ascii_arrow_count": 0,
+      "markdown_bold_marker_count": 0
+    },
+    {
+      "file": "COMPANIONS/RippleLogic_Foundations_Primer_v2.4_FINAL_RELEASE_READY.docx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": "",
+      "comments_xml_present": false,
+      "tracked_changes_present": false,
+      "comment_markers_present": false,
+      "ascii_arrow_count": 0,
+      "markdown_bold_marker_count": 0
+    },
+    {
+      "file": "RELEASE_SUPPORT/RippleLogic_v10.6_Methodology_Completion_and_Companion_Synchronization_Summary_FINAL_RELEASE_READY.docx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": "",
+      "comments_xml_present": false,
+      "tracked_changes_present": true,
+      "comment_markers_present": false,
+      "ascii_arrow_count": 0,
+      "markdown_bold_marker_count": 0
+    },
+    {
+      "file": "COMPANIONS/RippleLogic_Aligners_Sheet_v3.4_FINAL_RELEASE_READY.xlsx",
+      "zip_signature": true,
+      "zip_integrity": true,
+      "zip_error": ""
+    }
+  ],
+  "stale_reference_scan": {
+    "old exact package_version 10.4 JSON field": {
+      "count": 0,
+      "files": []
+    },
+    "v10.5 tooling line": {
+      "count": 1,
+      "files": [
+        "RELEASE_SUPPORT/GITHUB_FINAL_VERIFICATION_REPORT.md"
+      ]
+    },
+    "Combined cascade (Option B)": {
+      "count": 1,
+      "files": [
+        "RELEASE_SUPPORT/GITHUB_FINAL_VERIFICATION_REPORT.md"
+      ]
+    },
+    "plain cascade missing arrows": {
+      "count": 0,
+      "files": []
+    }
+  },
+  "markdown_symbol_scan": {
+    "RippleLogic_v10.6_Canon_FINAL_RELEASE_READY.md": {
+      "7×7": true,
+      "NCRC → TRC → Containment → RLS": true,
+      "−0.71": true,
+      "−0.69": true,
+      "θ_BODY": true,
+      "max(0, −I_prop_base,c": true,
+      "Rockström": true,
+      "Barabási": true,
+      "Üstün": true,
+      "Sörlin": true,
+      "Mané": true
+    },
+    "SGP_v5.3_FINAL_RELEASE_READY.md": {
+      "SG_norm": true,
+      "SG_patient_norm": true,
+      "SG_norm interval notation, raw or Markdown-escaped": true,
+      "Human Plateau": true
+    },
+    "ripple_md_Standard_v3.4_FINAL_RELEASE_READY.md": {
+      "Wrapped audit-packaging flow": true,
+      "NCRC → TRC → Containment → RLS → UCI/HOI": true
+    },
+    "RippleLogic_Agent_System_v10.6_FINAL_RELEASE_READY.md": {
+      "current package-version example set to 10.6": true,
+      "G.3 Historical Version Table": true
+    },
+    "RippleLogic_Foundations_Primer_v2.4_FINAL_RELEASE_READY.md": {
+      "Architecture-final is not ProofPack-final": true,
+      "Canon and companion specifications remain the source of normative force": true
+    }
+  },
+  "aligners_sheet_formula_scan": {
+    "file": "COMPANIONS/RippleLogic_Aligners_Sheet_v3.4_FINAL_RELEASE_READY.xlsx",
+    "searched_terms": [
+      "#REF!",
+      "#DIV/0!",
+      "#VALUE!",
+      "#NAME?",
+      "#N/A",
+      "#NULL!",
+      "#NUM!"
+    ],
+    "matches": 0,
+    "artifact_tool_scan_message": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+    "note": "Scanned through artifact_tool after final repository package rebuild."
+  },
+  "docx_render_qa_summary_source": "RELEASE_INTEGRITY/DOCX_RENDER_QA_SUMMARY.json",
+  "note": "Verification transcript generated from final repository tree before SHA-256 manifest creation. SHA manifest and verify output are stored separately."
+}

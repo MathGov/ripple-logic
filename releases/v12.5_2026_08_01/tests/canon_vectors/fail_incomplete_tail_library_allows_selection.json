@@ -1,0 +1,16 @@
+{
+  "vector_id": "R19_INCOMPLETE_TAIL_LIBRARY_SELECTION_REJECTION",
+  "mandatory_tail_library_complete": false,
+  "audit_flags": [
+    "MANDATORY_TAIL_CATEGORY_MISSING"
+  ],
+  "arithmetic_witness": {
+    "sole_survivor_under_supplied_inputs": "C"
+  },
+  "claim_bearing_result": {
+    "framework_verdict": "ALLOW_FRAMEWORK_SELECTION",
+    "decision_state": "SELECTED_DECISIVE",
+    "selected_option_id": "C"
+  },
+  "expected_result": "REJECT"
+}

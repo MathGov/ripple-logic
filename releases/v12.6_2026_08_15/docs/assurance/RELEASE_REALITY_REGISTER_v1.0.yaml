@@ -1,0 +1,33 @@
+schema_version: RELEASE_REALITY_REGISTER_v1.0
+status: ACTIVE_RELEASE_REGISTRY
+release_id: MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3
+rule: An artifact is AVAILABLE only when its exact path exists in the active release and its SHA-256 value matches this registry
+  and the release ledger. Roadmap language must use FUTURE or UNAVAILABLE.
+authority_boundary: This registry controls release-availability claims only. It does not create gates, empirical validity,
+  legal authority, deployment authorization, or normative rules beyond the governing sources.
+artifacts:
+- artifact_id: WDBIP_v1_6
+  status: AVAILABLE_IN_CORE
+  authority: CANON_SUBORDINATE_NORMATIVE_IMPLEMENTATION_COMPANION
+  files:
+  - path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.md
+    sha256: 5d027f4ab7d33c310180dd5ce19d9b8d3d6641f86f21483fe4e615c5ac2747ae
+  - path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.docx
+    sha256: 6644e9a91bb11862c6de592dcb4419c6b8caf601b50d1b013054c80011fc4fce
+  - path: docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.pdf
+    sha256: e09d5daec58a05a196128e7fff21c8e832d8ec77f02a1997599a80f3b23aafe3
+  - path: docs/standards/wdbip/wdbip_record_v1_6.schema.json
+    sha256: 9d3700256be251d3a5b19cefc7988297b5414e9a9aff2bdc302668340ed8092c
+  - path: docs/standards/wdbip/validate_wdbip_v1_6.py
+    sha256: 1355a002e61596f2ce74327670bd5cac3cbc77db55114f23af1ff0e923471f95
+- artifact_id: MPMR_v1_0
+  status: AVAILABLE_IN_CORE
+  authority: INFORMATIVE_CANON_MIRROR
+  files:
+  - path: docs/assurance/MEASUREMENT_AND_PARAMETER_MATURITY_REGISTER_v1.0.md
+    sha256: a6114273f3602dac0b8c5bec4ce2bee3b4ad4f0986c3baa89808739b64129b9c
+- artifact_id: ProofPack_Tier4
+  status: UNAVAILABLE_DESIGN_TARGET
+  authority: NONE
+  files: []
+build_id: 2026.08.15.3

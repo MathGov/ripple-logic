@@ -1,0 +1,64 @@
+{
+  "release": "MathGov Core Release 2026.09 v12.2 SGP v8.1 Reality-Management Calibration Integration Public Research Source Release",
+  "date": "2026-07-13",
+  "status": "integrated_source_release_candidate",
+  "versions": {
+    "canon": "v12.2",
+    "sgp": "v8.1",
+    "sgp_validation_protocol": "v2.1",
+    "agent_system": "v12.0",
+    "primer": "v4.0",
+    "ripple_md": "v5.0",
+    "aligners_sheet": "v5.2"
+  },
+  "decisions": [
+    {
+      "id": "V81-01",
+      "change": "Add RMCP",
+      "accepted": true,
+      "boundary": "informative profile; not MPS/FPP/authority"
+    },
+    {
+      "id": "V81-02",
+      "change": "Add open P100",
+      "accepted": true,
+      "boundary": "open across substrates; no supremacy caste"
+    },
+    {
+      "id": "V81-03",
+      "change": "Human dual anchor",
+      "accepted": true,
+      "boundary": "individual FPP-100 distinct from collective RMCP-P100"
+    },
+    {
+      "id": "V81-04",
+      "change": "Recursive Union Awareness",
+      "accepted": true,
+      "boundary": "functional evidence; not metaphysical proof"
+    },
+    {
+      "id": "V81-05",
+      "change": "Non-consumption/non-resource conversion",
+      "accepted": true,
+      "boundary": "FPP default; exact governed exceptions and emergencies apply"
+    },
+    {
+      "id": "V81-06",
+      "change": "Make intelligence a sentience prerequisite",
+      "accepted": false,
+      "reason": "would under-protect welfare-bearing beings"
+    },
+    {
+      "id": "V81-07",
+      "change": "Make P100 an authority grant",
+      "accepted": false,
+      "reason": "authority remains role-specific under Canon/SPR/lawful mandate"
+    },
+    {
+      "id": "V81-08",
+      "change": "Create a sixth RippleLogic gate",
+      "accepted": false,
+      "reason": "RMCP remains evidence/profile input; cascade unchanged"
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "protocol_version": "WDBIP v1.4",
+  "schema_version": "wdbip_record_v1_4",
+  "canon_version": "RippleLogic v12.4",
+  "sgp_link": {
+    "applicable": true,
+    "version": "SGP v8.3",
+    "record_ref": "SGP_GREEN_CORRIDOR_BEARERS_001",
+    "note": "Human FPP protections remain full; WDBIP does not infer standing."
+  },
+  "pcc_link": {
+    "pcc_record_id": "PCC_GREEN_CORRIDOR_001",
+    "wdbip_record_id": "WDBIP_GREEN_CORRIDOR_001",
+    "attachment_mode": "PCC_IMMUTABLE_LOCATOR",
+    "unresolved_boundary_items": [
+      "D3-to-D6 place-meaning pathway requires mixed-method evidence"
+    ],
+    "gate_routing_summary": "CSV reopened for accessibility, maintenance capacity, and road-safety controls.",
+    "artifact_locator": "release://WDBIP-v1.4/wdbip_worked_example_green_corridor_v1_4.json"
+  },
+  "run_id": "GREEN_CORRIDOR_EXAMPLE_001",
+  "option_id": "SCHOOL_GREEN_CORRIDOR",
+  "baseline": "CURRENT_TRAFFIC_CORRIDOR",
+  "declared_scopes": [
+    "U1_SELF",
+    "U2_HOUSEHOLD",
+    "U3_COMMUNITY",
+    "U4_ORGANIZATION",
+    "U5_POLITY",
+    "U6_HUMANITY_GLOBAL_COORDINATION",
+    "U7_BIOSPHERE"
+  ],
+  "scope_mode": "FULL_SCOPE",
+  "population": "Students, households, school staff, nearby residents, road users, and affected ecological systems",
+  "time_horizon": "Construction through 10 years",
+  "effect_tokens": [
+    {
+      "token_id": "E1",
+      "claim": "Roadside particulate exposure decreases",
+      "primary_dimension": "D7_ENVIRONMENT",
+      "boundary_status": "BOUNDARY_RESOLVED",
+      "scope_assignment": {
+        "represented_scopes": [
+          "U3_COMMUNITY"
+        ],
+        "redundancy_method": "NOT_APPLICABLE",
+        "rationale": "The immediate environmental exposure state is measured at the school-corridor community scale."
+      },
+      "bearer": "School corridor environment and exposed populations",
+      "evidence_status": "EVIDENCE_EMPIRICALLY_ESTIMATED",
+      "uncertainty": "Moderate; requires post-implementation monitoring",
+      "time_window": {
+        "window_id": "W_ENV_1",
+        "period": "0-10 years",
+        "state_timing": "MULTI_PERIOD",
+        "lag_note": "See temporal model.",
+        "duration_note": "Monitored over declared horizon.",
+        "reversibility_note": "Varies by token and implementation."
+      },
+      "profile": {
+        "state": "Roadside particulate exposure decreases",
+        "functioning": "Defined in domain-specific monitoring plan.",
+        "capacity_resilience": "Requires implementation and maintenance review.",
+        "drivers_enabling_conditions": "Program delivery, accessibility, maintenance, local context, and external trends.",
+        "lived_experience": "Affected-party evidence collected where relevant.",
+        "distribution_worst_affected": "Subgroup review linked at record level.",
+        "uncertainty_evidence_status": "Moderate; requires post-implementation monitoring",
+        "aggregate_sign": "BENEFICIAL",
+        "worst_subgroup_sign": "UNKNOWN",
+        "worst_affected_subgroups": [
+          "See subgroup review"
+        ]
+      }
+    },
+    {
+      "token_id": "E2",
+      "claim": "Respiratory symptom burden decreases",
+      "primary_dimension": "D2_HEALTH",
+      "boundary_status": "BOUNDARY_RESOLVED",
+      "scope_assignment": {
+        "represented_scopes": [
+          "U1_SELF"
+        ],
+        "redundancy_method": "NOT_APPLICABLE",
+        "rationale": "The health state is borne by individuals; household and community consequences require separate tokens."
+      },
+      "bearer": "Students and nearby residents",
+      "evidence_status": "EVIDENCE_HYPOTHESIZED",
+      "uncertainty": "High until longitudinal health data are available",
+      "time_window": {
+        "window_id": "W_HEALTH_1",
+        "period": "6 months-10 years",
+        "state_timing": "MULTI_PERIOD",
+        "lag_note": "See temporal model.",
+        "duration_note": "Monitored over declared horizon.",
+        "reversibility_note": "Varies by token and implementation."
+      },
+      "profile": {
+        "state": "Respiratory symptom burden decreases",
+        "functioning": "Defined in domain-specific monitoring plan.",
+        "capacity_resilience": "Requires implementation and maintenance review.",
+        "drivers_enabling_conditions": "Program delivery, accessibility, maintenance, local context, and external trends.",
+        "lived_experience": "Affected-party evidence collected where relevant.",
+        "distribution_worst_affected": "Subgroup review linked at record level.",
+        "uncertainty_evidence_status": "High until longitudinal health data are available",
+        "aggregate_sign": "BENEFICIAL",
+        "worst_subgroup_sign": "UNKNOWN",
+        "worst_affected_subgroups": [
+          "See subgroup review"
+        ]
+      }
+    },
+    {
+      "token_id": "E3",
+      "claim": "Safe walking route choice increases",
+      "primary_dimension": "D5_AGENCY",
+      "boundary_status": "BOUNDARY_RESOLVED",
+      "scope_assignment": {
+        "primary_scope": "U1_SELF",
+        "represented_scopes": [
+          "U1_SELF",
+          "U2_HOUSEHOLD"
+        ],
+        "redundancy_method": "DEDUPLICATION",
+        "rationale": "The same route-choice capability is logged once at the individual locus; household coordination consequences are separate."
+      },
+      "bearer": "Students and households",
+      "evidence_status": "EVIDENCE_PARTICIPATORY",
+      "uncertainty": "Moderate",
+      "time_window": {
+        "window_id": "W_AGENCY_1",
+        "period": "immediate-3 years",
+        "state_timing": "MULTI_PERIOD",
+        "lag_note": "See temporal model.",
+        "duration_note": "Monitored over declared horizon.",
+        "reversibility_note": "Varies by token and implementation."
+      },
+      "profile": {
+        "state": "Safe walking route choice increases",
+        "functioning": "Defined in domain-specific monitoring plan.",
+        "capacity_resilience": "Requires implementation and maintenance review.",
+        "drivers_enabling_conditions": "Program delivery, accessibility, maintenance, local context, and external trends.",
+        "lived_experience": "Affected-party evidence collected where relevant.",
+        "distribution_worst_affected": "Subgroup review linked at record level.",
+        "uncertainty_evidence_status": "Moderate",
+        "aggregate_sign": "BENEFICIAL",
+        "worst_subgroup_sign": "HARMFUL",
+        "worst_affected_subgroups": [
+          "See subgroup review"
+        ]
+      }
+    },
+    {
+      "token_id": "E4A",
+      "claim": "Individual nature connection increases",
+      "primary_dimension": "D6_MEANING",
+      "boundary_status": "BOUNDARY_CONTESTED",
+      "scope_assignment": {
+        "represented_scopes": [
+          "U1_SELF"
+        ],
+        "redundancy_method": "NOT_APPLICABLE",
+        "rationale": "The immediate meaning state is experienced by individual users."
+      },
+      "bearer": "Students and individual community users",
+      "evidence_status": "EVIDENCE_HYPOTHESIZED",
+      "uncertainty": "High; culturally sensitive mixed-method assessment required",
+      "time_window": {
+        "window_id": "W_MEANING_SELF_1",
+        "period": "6 months-5 years",
+        "state_timing": "MULTI_PERIOD",
+        "lag_note": "See temporal model.",
+        "duration_note": "Monitored over declared horizon.",
+        "reversibility_note": "Varies by token and implementation."
+      },
+      "profile": {
+        "state": "Individual nature connection increases",
+        "functioning": "Defined in domain-specific monitoring plan.",
+        "capacity_resilience": "Requires implementation and maintenance review.",
+        "drivers_enabling_conditions": "Program delivery, accessibility, maintenance, local context, and external trends.",
+        "lived_experience": "Affected-party evidence collected where relevant.",
+        "distribution_worst_affected": "Subgroup review linked at record level.",
+        "uncertainty_evidence_status": "High; culturally sensitive mixed-method assessment required",
+        "aggregate_sign": "BENEFICIAL",
+        "worst_subgroup_sign": "UNKNOWN",
+        "worst_affected_subgroups": [
+          "See subgroup review"
+        ]
+      }
+    },
+    {
+      "token_id": "E4B",
+      "claim": "Community place identity increases",
+      "primary_dimension": "D6_MEANING",
+      "boundary_status": "BOUNDARY_CONTESTED",
+      "scope_assignment": {
+        "represented_scopes": [
+          "U3_COMMUNITY"
+        ],
+        "redundancy_method": "NOT_APPLICABLE",
+        "rationale": "Community place identity is a distinct collective meaning state requiring separate evidence from individual nature connection."
+      },
+      "bearer": "School community and nearby residents",
+      "evidence_status": "EVIDENCE_HYPOTHESIZED",
+      "uncertainty": "High; culturally sensitive mixed-method assessment required",
+      "time_window": {
+        "window_id": "W_MEANING_COMM_1",
+        "period": "1-10 years",
+        "state_timing": "MULTI_PERIOD",
+        "lag_note": "See temporal model.",
+        "duration_note": "Monitored over declared horizon.",
+        "reversibility_note": "Varies by token and implementation."
+      },
+      "profile": {
+        "state": "Community place identity increases",
+        "functioning": "Defined in domain-specific monitoring plan.",
+        "capacity_resilience": "Requires implementation and maintenance review.",
+        "drivers_enabling_conditions": "Program delivery, accessibility, maintenance, local context, and external trends.",
+        "lived_experience": "Affected-party evidence collected where relevant.",
+        "distribution_worst_affected": "Subgroup review linked at record level.",
+        "uncertainty_evidence_status": "High; culturally sensitive mixed-method assessment required",
+        "aggregate_sign": "BENEFICIAL",
+        "worst_subgroup_sign": "UNKNOWN",
+        "worst_affected_subgroups": [
+          "See subgroup review"
+        ]
+      }
+    },
+    {
+      "token_id": "E5",
+      "claim": "Construction and maintenance costs increase",
+      "primary_dimension": "D1_MATERIAL",
+      "boundary_status": "BOUNDARY_RESOLVED",
+      "scope_assignment": {
+        "represented_scopes": [
+          "U5_POLITY"
+        ],
+        "redundancy_method": "NOT_APPLICABLE",
+        "rationale": "The immediate budget state is borne by the city polity."
+      },
+      "bearer": "City budget and taxpayers",
+      "evidence_status": "EVIDENCE_EMPIRICALLY_ESTIMATED",
+      "uncertainty": "Moderate",
+      "time_window": {
+        "window_id": "W_COST_1",
+        "period": "construction and annual maintenance",
+        "state_timing": "MULTI_PERIOD",
+        "lag_note": "See temporal model.",
+        "duration_note": "Monitored over declared horizon.",
+        "reversibility_note": "Varies by token and implementation."
+      },
+      "profile": {
+        "state": "Construction and maintenance costs increase",
+        "functioning": "Defined in domain-specific monitoring plan.",
+        "capacity_resilience": "Requires implementation and maintenance review.",
+        "drivers_enabling_conditions": "Program delivery, accessibility, maintenance, local context, and external trends.",
+        "lived_experience": "Affected-party evidence collected where relevant.",
+        "distribution_worst_affected": "Subgroup review linked at record level.",
+        "uncertainty_evidence_status": "Moderate",
+        "aggregate_sign": "HARMFUL",
+        "worst_subgroup_sign": "HARMFUL",
+        "worst_affected_subgroups": [
+          "See subgroup review"
+        ]
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "path_id": "P1",
+      "source_token": "E1",
+      "target_token": "E2",
+      "pathway_type": "PATHWAY_CAUSAL_MEDIATED",
+      "scope_relation": "CROSS_SCOPE",
+      "mechanism": "Reduced inhaled particulate exposure lowers respiratory risk",
+      "direction": "DIRECTION_BENEFICIAL",
+      "time_lag": "Months to years",
+      "magnitude": "Not yet calibrated locally",
+      "evidence_status": "EVIDENCE_EMPIRICALLY_ESTIMATED",
+      "alternative_explanations": [
+        "Background air-quality change",
+        "Health-care access changes"
+      ],
+      "uncertainty": "Moderate to high",
+      "source_window_id": "W_ENV_1",
+      "target_window_id": "W_HEALTH_1",
+      "temporal_model_ref": "GREEN_CORRIDOR_TEMPORAL_MODEL_001"
+    },
+    {
+      "path_id": "P2",
+      "source_token": "E3",
+      "target_token": "E4A",
+      "pathway_type": "PATHWAY_HYPOTHESIZED",
+      "scope_relation": "SAME_SCOPE",
+      "mechanism": "Autonomous and repeated use of safe shared space may increase individual place attachment",
+      "direction": "DIRECTION_BENEFICIAL",
+      "time_lag": "Months",
+      "magnitude": "Unknown",
+      "evidence_status": "EVIDENCE_HYPOTHESIZED",
+      "alternative_explanations": [
+        "Pre-existing community cohesion"
+      ],
+      "uncertainty": "High",
+      "source_window_id": "W_AGENCY_1",
+      "target_window_id": "W_MEANING_SELF_1",
+      "temporal_model_ref": "GREEN_CORRIDOR_TEMPORAL_MODEL_001"
+    },
+    {
+      "path_id": "P3",
+      "source_token": "E4A",
+      "target_token": "E4B",
+      "pathway_type": "PATHWAY_HYPOTHESIZED",
+      "scope_relation": "CROSS_SCOPE",
+      "mechanism": "Repeated individual experiences and shared use may contribute to community place identity, but the collective state requires separate evidence.",
+      "direction": "DIRECTION_BENEFICIAL",
+      "time_lag": "Months to years",
+      "magnitude": "Unknown",
+      "evidence_status": "EVIDENCE_HYPOTHESIZED",
+      "alternative_explanations": [
+        "Pre-existing place identity",
+        "Concurrent community programming"
+      ],
+      "uncertainty": "High",
+      "source_window_id": "W_MEANING_SELF_1",
+      "target_window_id": "W_MEANING_COMM_1",
+      "temporal_model_ref": "GREEN_CORRIDOR_TEMPORAL_MODEL_001"
+    }
+  ],
+  "dependence_review": {
+    "shared_causes": [
+      "Program implementation"
+    ],
+    "duplicates_merged": true,
+    "scope_redundancy_review": "Completed",
+    "note": "Environmental exposure and health outcome are distinct but dependent. Individual health is not repeated across household and community scopes."
+  },
+  "routing": {
+    "reopen_RF_NCRC": false,
+    "reopen_TRC": false,
+    "reopen_CSV": true,
+    "reason": "Accessibility, maintenance capacity, and road-safety controls require CSV review."
+  },
+  "record_status": "WDBIP_RECORD_COMPLETE_WITH_UNCERTAINTY",
+  "reviewer": {
+    "identity": "Illustrative reviewer",
+    "independence_status": "EXAMPLE_ONLY"
+  },
+  "welfare_dimension_set_version": "WELFARE_DIMENSION_SET_7D_V1",
+  "tier": 2,
+  "use_class": "SINGLE_RUN",
+  "time_window_alignment": {
+    "status": "TIME_MODEL_DECLARED",
+    "baseline_period": "Current traffic-corridor conditions before construction",
+    "comparison_horizon": "Construction through 10 years",
+    "temporal_model_ref": "GREEN_CORRIDOR_TEMPORAL_MODEL_001",
+    "mismatch_rationale": "Environmental, behavior, health, and meaning outcomes occur on different lags and are not treated as contemporaneous.",
+    "sensitivity_ref": "GREEN_CORRIDOR_TIME_SENSITIVITY_001",
+    "monitoring_points": [
+      "construction completion",
+      "6 months",
+      "1 year",
+      "3 years",
+      "5 years",
+      "10 years"
+    ],
+    "reopen_trigger": "Observed timing or persistence materially differs from the declared model."
+  },
+  "subgroup_review": {
+    "completed": true,
+    "aggregate_sign": "BENEFICIAL",
+    "worst_subgroup_sign": "HARMFUL",
+    "worst_affected_subgroups": [
+      "Disabled road users if accessible routing is degraded",
+      "Low-income households if fees or displacement increase"
+    ],
+    "severe_harm_status": "CSV_MATERIAL",
+    "gate_routing_ref": "PCC_GREEN_CORRIDOR_001/CSV_ACCESSIBILITY_AND_SAFETY_REVIEW",
+    "masking_review_completed": false,
+    "note": "Potential concentrated accessibility and displacement harms are not offset by average environmental benefits."
+  },
+  "weight_sensitivity": {
+    "material": true,
+    "status": "NOT_TESTED",
+    "tested_weight_sets": [],
+    "analysis_ref": "GREEN_CORRIDOR_WEIGHT_SENSITIVITY_PLANNED_001",
+    "note": "Worked example demonstrates record construction, not a final RLS selection."
+  },
+  "dimension_migration": {
+    "applicable": false,
+    "record_dimension_set": "WELFARE_DIMENSION_SET_7D_V1",
+    "comparability_status": "NOT_APPLICABLE",
+    "rerun_required": false,
+    "note": "No dimension-set migration in this example."
+  },
+  "boundary_reliability": {
+    "applicable": false,
+    "review_status": "NOT_APPLICABLE"
+  }
+}

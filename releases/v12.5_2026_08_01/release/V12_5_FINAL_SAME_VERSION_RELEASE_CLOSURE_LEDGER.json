@@ -1,0 +1,97 @@
+{
+  "release": "MathGov v12.5 / SGP v8.4",
+  "same_version_patch_date": "2026-07-29",
+  "package_name": "MathGov_Core_2026_09_v12_5_SGP_v8_4_FINAL_CLAUDE_OPUS_SCIENTIFIC_CLOSURE_VERIFIED",
+  "accepted": [
+    {
+      "id": "CLOSURE-01",
+      "surface": "Aligners Sheet v5.5 Sanity_Checklist",
+      "change": "Cross-engine exact-prefix summary formulas and independent census verification",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-02",
+      "surface": "Canon Appendix R.19.8",
+      "change": "Arithmetic-witness versus claim-bearing disposition separation",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-03",
+      "surface": "tests/canon_vectors",
+      "change": "Incomplete-tail ordinary-selection rejection vector",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-04",
+      "surface": "MFDI v2.2",
+      "change": "Machine enum metaphysical_horizon; display alias retained",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-05",
+      "surface": "Canon CSV labels",
+      "change": "Whole-gate terminology cleanup; Mode A subtest preserved",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-06",
+      "surface": "Canon Rights Emergency Mode",
+      "change": "Alternative-generation and least-infringing precondition",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-07",
+      "surface": "Canon RLS specification",
+      "change": "Constructed-index claim-boundary warning",
+      "architecture_change": false
+    },
+    {
+      "id": "CLOSURE-08",
+      "surface": "core_15/README.md",
+      "change": "Core 15 versus extended release-support boundary clarification",
+      "architecture_change": false
+    }
+  ],
+  "workbook_expected_census": {
+    "active_checks": 89,
+    "pass": 44,
+    "fail": 0,
+    "live_check": 42,
+    "independent_recompute": 2,
+    "declared_assertion": 45,
+    "tautological_pass": 0
+  },
+  "preserved": {
+    "versions": true,
+    "table_formatting": true,
+    "cascade": true,
+    "defaults": true,
+    "rights": true,
+    "sgp_protections": true
+  },
+  "claim_boundary": "Release conformance is not empirical validation, legal authority, physical safety, deployment certification, moral truth, ProofPack completion, or Tier 4.",
+  "final_reader_first_patch_date": "2026-07-30",
+  "additional_closure_actions": [
+    {
+      "surface": "RippleLogic Canon v12.5",
+      "action": "reader_first_front_matter_relocation",
+      "change": "Visible title made version-neutral; date/version and release-delta front matter relocated to Appendix AQ-1/AR; concise Appendix AC precedence pointer retained before the abstract.",
+      "semantic_change": false,
+      "version_change": false
+    },
+    {
+      "surface": "Sentience Gradient Protocol v8.4",
+      "action": "reader_first_front_matter_relocation",
+      "change": "Visible title made version-neutral; minor-release, release-status, configuration-delta, and current-release tables relocated to Appendix E; abstract, plain-language summary, and safety note now lead.",
+      "semantic_change": false,
+      "version_change": false
+    },
+    {
+      "surface": "Core 15",
+      "action": "non_target_preservation",
+      "change": "The remaining thirteen Core artifacts, including the Aligners Sheet, were not altered.",
+      "semantic_change": false,
+      "version_change": false
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mathgov.org/schemas/sgp_rmcp_record_v8_4.schema.json",
+  "title": "SGP RMCPRecord v8.4",
+  "description": "Minimum record interface. Conformance does not prove standing, consciousness, wisdom, safety, lawful mandate, or authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "schema_version",
+    "artifact_hash",
+    "record_validity_status",
+    "target_id",
+    "target_type",
+    "collective_or_system_boundary",
+    "evaluation_window",
+    "specification_version",
+    "domain_profile",
+    "capacity_dimensions",
+    "critical_dimension_floors",
+    "evidence_artifacts",
+    "dependence_clusters",
+    "scaffolding_and_external_support",
+    "continuity_basis",
+    "causal_reach",
+    "alternative_explanations",
+    "uncertainty_bounds",
+    "RMCP_profile",
+    "P100_status",
+    "reviewer_panel",
+    "minority_opinion",
+    "revision_triggers",
+    "re_evaluation_date",
+    "weaponization_signatures_checked",
+    "weaponization_flag_status",
+    "affected_use_status",
+    "construct_domain_status",
+    "affected_protected_bearers",
+    "welfare_advocate_engaged",
+    "spr_record_reference",
+    "lawful_mandate_reference",
+    "remediation_and_rereview_reference"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "SGP_RMCP_v8.4"
+    },
+    "artifact_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_validity_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "collective_or_system_boundary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evaluation_window": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specification_version": {
+      "const": "SGP v8.4"
+    },
+    "domain_profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "capacity_dimensions": {
+      "type": "array",
+      "minItems": 1
+    },
+    "critical_dimension_floors": {
+      "type": "array",
+      "minItems": 1
+    },
+    "evidence_artifacts": {
+      "type": "array",
+      "minItems": 1
+    },
+    "dependence_clusters": {
+      "type": "array",
+      "minItems": 1
+    },
+    "scaffolding_and_external_support": {
+      "type": "string",
+      "minLength": 1
+    },
+    "continuity_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "causal_reach": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "minItems": 1
+    },
+    "uncertainty_bounds": {
+      "type": "array",
+      "minItems": 1
+    },
+    "RMCP_profile": {
+      "type": "array",
+      "minItems": 1
+    },
+    "P100_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer_panel": {
+      "type": "array",
+      "minItems": 1
+    },
+    "minority_opinion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision_triggers": {
+      "type": "array",
+      "minItems": 1
+    },
+    "re_evaluation_date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "weaponization_signatures_checked": {
+      "type": "array",
+      "minItems": 1
+    },
+    "weaponization_flag_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "affected_use_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "construct_domain_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "affected_protected_bearers": {
+      "type": "array",
+      "minItems": 1
+    },
+    "welfare_advocate_engaged": {
+      "type": "boolean"
+    },
+    "spr_record_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "lawful_mandate_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "remediation_and_rereview_reference": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

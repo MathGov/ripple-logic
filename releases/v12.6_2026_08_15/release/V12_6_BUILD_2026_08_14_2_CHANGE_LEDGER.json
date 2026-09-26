@@ -1,0 +1,34 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.14.2",
+  "build_id": "2026.08.14.2",
+  "date": "2026-08-14",
+  "change_class": "runtime_companion_successor_integrity_sync",
+  "semantic_versions": {
+    "Canon": "v12.6",
+    "SGP": "v8.5",
+    "Agent System": "v12.5"
+  },
+  "genuine_improvements": [
+    "non-heritable authority across material successors",
+    "successor requalification record",
+    "candidate lock",
+    "bounded unreviewed generation depth",
+    "evaluation-validity expiry",
+    "independent review",
+    "fresh candidate-bound authorization",
+    "preserved Capability Claim Integrity",
+    "preserved Computational Context Preflight"
+  ],
+  "rejected_overreach": [
+    "new MathGov gate",
+    "authority inheritance by lineage",
+    "claim that open-ended recursive self-improvement is established",
+    "universal scalar adaptation-lag score"
+  ],
+  "core_semantics_changed": false,
+  "construct_validity": "UNTESTED",
+  "semantic_versions_changed": true,
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+  "status": "COMPLETE_READY",
+  "semantic_version_change_note": "Canon v12.6 and SGP v8.5 remain unchanged; RippleLogic Agent System advances from v12.4 to v12.5 because the successor-integrity runtime contract is a substantive companion-standard change."
+}

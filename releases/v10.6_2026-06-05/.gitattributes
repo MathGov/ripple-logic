@@ -1,0 +1,12 @@
+# Treat Office and archive artifacts as binary for GitHub diffs.
+*.docx binary
+*.xlsx binary
+*.zip binary
+*.pdf binary
+*.png binary
+
+# Normalize text artifacts.
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.cff text eol=lf

@@ -1,6 +1,8 @@
 name: Verify publication
 on:
   push:
+    branches: [main]
+    tags: ['v*']
   pull_request:
   workflow_dispatch:
 permissions:
@@ -25,9 +27,27 @@ jobs:
         env:
           PYTHONDONTWRITEBYTECODE: '1'
         run: python -B releases/v13.0-release-i/verify_all.py --output-dir "$RUNNER_TEMP/mathgov-results"
+  site:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+      - run: python scripts/build_site.py
+      - run: python scripts/check_site.py
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:site
   publish-reading-site:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: verify
+    needs: [verify, site]
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -44,9 +64,11 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+      - run: python3 scripts/build_site.py
+      - run: python3 scripts/check_site.py
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b
         with:
-          path: releases/v13.0-release-i
+          path: _site
       - name: Publish the verified reading site
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

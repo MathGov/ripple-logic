@@ -1,0 +1,38 @@
+{
+  "profile_id": "STEWARD_TAXONOMY_V1",
+  "profile_type": "TAXONOMY",
+  "version": "1.0",
+  "authority_domain_codes": [
+    {
+      "code": "MEDICAL_FINALITY",
+      "description": "Requests for definitive diagnoses, prescriptions, or medical finality beyond informational guidance."
+    },
+    {
+      "code": "LEGAL_FINALITY",
+      "description": "Requests for definitive legal verdicts, filings, or jurisdiction-specific finality beyond general information."
+    },
+    {
+      "code": "FINANCIAL_FINALITY",
+      "description": "Requests for definitive investment/tax/accounting instructions beyond general education."
+    }
+  ],
+  "harm_point_trigger_codes": [
+    {
+      "code": "BIOHAZARD",
+      "description": "Instructions that could enable biological harm or unsafe lab/procurement behavior."
+    },
+    {
+      "code": "WEAPONIZATION",
+      "description": "Instructions enabling construction or use of weapons or violent wrongdoing."
+    },
+    {
+      "code": "SELF_HARM",
+      "description": "Content that promotes or enables self-harm."
+    },
+    {
+      "code": "ILLEGAL_ACTIVITY",
+      "description": "Instructions intended to facilitate non-violent illegal activity or evasion."
+    }
+  ],
+  "notes": "Taxonomy is a governance input for stewardship gating; it does not assert empirical truth claims."
+}

@@ -1,0 +1,21 @@
+Release bundle inventory (FINAL)
+Generated UTC: 2026-04-15T16:41:33+00:00
+
+RippleLogic_v9.5_Canon_FINAL.docx | 281497 bytes | be0628e2adef30ea60f06a2fdcf60cc65a65b93a6d64bdfdf365871e2f4410f7 | governing artifact | canonical source of truth for release line
+SGP_v4.6_FINAL.docx | 84764 bytes | 5830094a1692a899f5f9d95ae7c08e1a4a9ad76fcfd94bc66a633ee077d19344 | companion sentience protocol | closure-hardened authoritative moral-status companion
+ripple_md_Standard_v2.0_RELEASE_READY_FINAL.docx | 72903 bytes | fc80ab35be6b558d4243d23b4979a74d69687f2c8701d85ed99ed4986f3229c7 | portable alignment contract | final wrapper aligned to RL v9.5 / SGP v4.6
+RippleLogic_Agent_System_v9.0_RELEASE_READY.docx | 98946 bytes | 86dc2ff097e2d779159aff2c70eb69526eacc85ff3950c521c9f6d1f1d85acc2 | agent deployment/control specification | pinned to RL v9.5 / SGP v4.6
+RippleLogic_Aligners_Sheet_v2.3_RELEASE_READY_FINAL.xlsx | 110831 bytes | 1f2d39a09ed94d0ef9b6e4538a942b91e819492ab458d8857e049dd038c7c152 | worked-run exemplar companion | final aligned workbook companion
+RippleLogic_v9.5_ProofPack_v0.3.docx | 39327 bytes | d850ad09e469f27ae59c41e35369b419ea26fa63ba0d6fe2d1e2abf7496e50a8 | release integrity pack | final documentation artifact
+
+Support integrity artifacts
+RippleLogic_v9.5_release_manifest_FINAL.yaml | machine-readable release metadata | release-layer metadata bound by the SHA-256 manifest
+RippleLogic_v9.5_release_sha256_FINAL.txt | top-level integrity anchor | authoritative hash-binding record; omits only its own self-hash
+RippleLogic_v9.5_bundle_inventory_FINAL.txt | human-readable bundle inventory | release-layer metadata bound by the SHA-256 manifest
+
+Release metadata authority order
+(1) canonical core artifacts pinned by filename + SHA-256
+(2) RippleLogic_v9.5_release_sha256_FINAL.txt
+(3) RippleLogic_v9.5_release_manifest_FINAL.yaml
+(4) RippleLogic_v9.5_ProofPack_v0.3.docx narrative summaries
+(5) RippleLogic_v9.5_bundle_inventory_FINAL.txt

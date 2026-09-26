@@ -1,0 +1,22 @@
+name: Release verification
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: sudo apt-get update && sudo apt-get install -y libreoffice-calc
+      - run: python release/VERIFY_CURRENT_PINS.py .
+      - run: python release/VERIFY_SEMANTIC_SURFACES.py .
+      - run: python release/VERIFY_FORMULA_INTERFACE_INTEGRITY.py .
+      - run: python release/VERIFY_WORKBOOK_LIVE_RECALCULATION.py .
+      - run: python release/VERIFY_FORMAT_AND_REPRODUCIBILITY.py .
+      - run: python release/VERIFY_RELEASE.py . --skip-subordinates --skip-hashes

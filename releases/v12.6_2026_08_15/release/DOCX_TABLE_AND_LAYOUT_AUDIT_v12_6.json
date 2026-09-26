@@ -1,0 +1,175 @@
+{
+  "schema_version": "2.2",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+  "audit_date": "2026-08-15",
+  "status": "PASS",
+  "method": "Final DOCX structure recount with python-docx; PDF page recount from final rendered PDFs; changed Canon/SGP/WDBIP pages visually inspected after final rendering; unchanged zero-defect structural fields carried from prior audited publication surfaces.",
+  "totals": {
+    "documents": 15,
+    "tables": 287,
+    "table_rows": 2444,
+    "headings": 1646,
+    "pages": 595,
+    "toc_entries": 125,
+    "comments_parts": 0,
+    "tracked_changes": 0,
+    "content_controls": 0,
+    "drawings": 0,
+    "blank_pdf_pages": 0,
+    "tiny_font_spans_under_6pt": 0,
+    "embedded_pdf_image_blocks": 0,
+    "confirmed_page_boundary_failures": 0
+  },
+  "documents": [
+    {
+      "base": "docs/CORE_COMPONENT_MAP",
+      "tables": 1,
+      "table_rows": 17,
+      "headings": 2,
+      "pages": 2,
+      "toc_entries": 0,
+      "repeating_header_tables": 1,
+      "shaded_header_tables": 1
+    },
+    {
+      "base": "docs/agents/RippleLogic_Agent_System_v12.5",
+      "tables": 38,
+      "table_rows": 428,
+      "headings": 254,
+      "pages": 69,
+      "toc_entries": 0,
+      "repeating_header_tables": 38,
+      "shaded_header_tables": 38
+    },
+    {
+      "base": "docs/canon/RippleLogic_v12.6_Canon",
+      "tables": 130,
+      "table_rows": 1054,
+      "headings": 715,
+      "pages": 277,
+      "toc_entries": 70,
+      "repeating_header_tables": 130,
+      "shaded_header_tables": 130
+    },
+    {
+      "base": "docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6",
+      "tables": 4,
+      "table_rows": 21,
+      "headings": 21,
+      "pages": 5,
+      "toc_entries": 0,
+      "repeating_header_tables": 4,
+      "shaded_header_tables": 4
+    },
+    {
+      "base": "docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.4",
+      "tables": 7,
+      "table_rows": 53,
+      "headings": 20,
+      "pages": 10,
+      "toc_entries": 0,
+      "repeating_header_tables": 7,
+      "shaded_header_tables": 7
+    },
+    {
+      "base": "docs/primer/RippleLogic_Foundations_Primer_v4.4",
+      "tables": 3,
+      "table_rows": 28,
+      "headings": 112,
+      "pages": 28,
+      "toc_entries": 0,
+      "repeating_header_tables": 3,
+      "shaded_header_tables": 3
+    },
+    {
+      "base": "docs/sgp/SGP_v8.5",
+      "tables": 37,
+      "table_rows": 335,
+      "headings": 166,
+      "pages": 55,
+      "toc_entries": 28,
+      "repeating_header_tables": 37,
+      "shaded_header_tables": 37
+    },
+    {
+      "base": "docs/standards/CSV_Gate_Standard_v2.4",
+      "tables": 5,
+      "table_rows": 29,
+      "headings": 23,
+      "pages": 8,
+      "toc_entries": 0,
+      "repeating_header_tables": 5,
+      "shaded_header_tables": 5
+    },
+    {
+      "base": "docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.3",
+      "tables": 6,
+      "table_rows": 65,
+      "headings": 15,
+      "pages": 8,
+      "toc_entries": 0,
+      "repeating_header_tables": 6,
+      "shaded_header_tables": 6
+    },
+    {
+      "base": "docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.3",
+      "tables": 4,
+      "table_rows": 29,
+      "headings": 18,
+      "pages": 6,
+      "toc_entries": 0,
+      "repeating_header_tables": 4,
+      "shaded_header_tables": 4
+    },
+    {
+      "base": "docs/standards/RippleLogic_Cascade_Standard_v2.6",
+      "tables": 2,
+      "table_rows": 10,
+      "headings": 23,
+      "pages": 6,
+      "toc_entries": 0,
+      "repeating_header_tables": 2,
+      "shaded_header_tables": 2
+    },
+    {
+      "base": "docs/standards/Source_Coupling_Integrity_Standard_v2.3",
+      "tables": 3,
+      "table_rows": 20,
+      "headings": 18,
+      "pages": 5,
+      "toc_entries": 0,
+      "repeating_header_tables": 3,
+      "shaded_header_tables": 3
+    },
+    {
+      "base": "docs/standards/ripple_md_Standard_v5.5",
+      "tables": 6,
+      "table_rows": 38,
+      "headings": 92,
+      "pages": 66,
+      "toc_entries": 0,
+      "repeating_header_tables": 6,
+      "shaded_header_tables": 6
+    },
+    {
+      "base": "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6",
+      "tables": 28,
+      "table_rows": 185,
+      "headings": 138,
+      "pages": 34,
+      "toc_entries": 27,
+      "repeating_header_tables": 28,
+      "shaded_header_tables": 22
+    },
+    {
+      "base": "docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_6",
+      "tables": 13,
+      "table_rows": 132,
+      "headings": 29,
+      "pages": 16,
+      "toc_entries": 0,
+      "repeating_header_tables": 13,
+      "shaded_header_tables": 13
+    }
+  ]
+}

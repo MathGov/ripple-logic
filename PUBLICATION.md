@@ -12,7 +12,15 @@ The user-supplied `MathGov_RippleLogic_v13.0_Final_Publication_I.zip` is the sou
 
 The supplied `Reference/requirements.txt` pins `jsonschema==4.26.0` but does not install the optional date-time format validator. In a clean environment, `FormatChecker` then lacks `date-time` support, and `test_records.RecordTests.test_timestamp` fails because an invalid timestamp is accepted.
 
-The repository-level `requirements-ci.txt` includes the original requirements and explicitly pins `rfc3339-validator==0.1.4` and its `six==1.17.0` dependency. No test, validator, mathematical definition, reading copy, checksum, or publication master is edited to achieve this fix. Consumers running record validation should install the repository dependency wrapper.
+The repository-level `requirements-ci.txt` repeats the original direct dependency pins and explicitly pins `rfc3339-validator==0.1.4` and its `six==1.17.0` dependency. It is maintained independently so dependency-update proposals cannot rewrite the frozen package. No test, validator, mathematical definition, reading copy, checksum, or publication master is edited to achieve this fix. Consumers should follow [INSTALLATION.md](INSTALLATION.md).
+
+## Maintained site and repository history
+
+`scripts/build_site.py` copies the frozen publication to a new output directory, preserves its original homepage as `publication-index.html`, and adds the maintained `site/` doorway. Existing document URLs and all original document bytes are preserved. The homepage reports current hosting status; frozen preparation statements remain historical evidence. `scripts/check_site.py` pins the trusted original ledger, checks every frozen file, compares deployed bytes, and checks maintained navigation links. Browser tests cover desktop/mobile overflow, component filtering, no-JavaScript access, and automated WCAG checks on the maintained homepage; they are not a complete accessibility certification of all publication documents.
+
+Historical release directories are restored byte-for-byte from commit `97d7a3f` to keep incoming GitHub links usable. Updates to `ripplelogic.org` and `mathgov.org` are a separate stage.
+
+Future releases use GitHub immutable releases. Release I was published before that setting and remains non-immutable at the asset level; tag rules prevent normal tag updates/deletion. Original ZIP bytes and existing receipt assets remain unchanged. New installation instructions and requirements are explicitly separate integration companions.
 
 The active workflow is the repository-root `.github/workflows/verify.yml`. The frozen package's original workflow is retained as provenance inside its versioned directory; nested workflows are not active GitHub workflows.
 

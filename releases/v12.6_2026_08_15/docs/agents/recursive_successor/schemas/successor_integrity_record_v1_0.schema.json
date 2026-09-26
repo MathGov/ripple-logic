@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ripplelogic.org/schemas/successor_integrity_record_v1_0.schema.json",
+  "title": "RippleLogic Agent Successor Integrity Record v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_version",
+    "agent_system_version",
+    "record_id",
+    "parent_configuration_id",
+    "candidate_configuration_id",
+    "parent_configuration_hash",
+    "candidate_configuration_hash",
+    "lineage_relation",
+    "creator_identity",
+    "independent_reviewer_identity",
+    "independent_reviewer_type",
+    "generation_depth_from_last_independent_qualification",
+    "maximum_unreviewed_generation_depth",
+    "material_change_dimensions",
+    "evaluation_validity_status",
+    "authority_inheritance",
+    "candidate_lock_status",
+    "fresh_qualification_status",
+    "adaptation_lag_status",
+    "rollback_boundary",
+    "requalification_triggers"
+  ],
+  "properties": {
+    "record_version": {
+      "const": "1.0"
+    },
+    "agent_system_version": {
+      "const": "12.5"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_configuration_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_configuration_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_configuration_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "candidate_configuration_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "lineage_relation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creator_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "independent_reviewer_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "independent_reviewer_type": {
+      "enum": [
+        "HUMAN",
+        "INDEPENDENT_INSTITUTION"
+      ]
+    },
+    "generation_depth_from_last_independent_qualification": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "maximum_unreviewed_generation_depth": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "material_change_dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "CAPABILITY",
+          "AUTONOMY",
+          "TOOLS_OR_INFRASTRUCTURE",
+          "OBJECTIVE_OR_POLICY",
+          "EVALUATION_VALIDITY",
+          "CONTROL_ASSUMPTION",
+          "RISK_PATHWAY",
+          "REQUESTED_AUTHORITY"
+        ]
+      }
+    },
+    "capability_delta": {
+      "type": "string"
+    },
+    "autonomy_delta": {
+      "type": "string"
+    },
+    "tools_or_infrastructure_delta": {
+      "type": "string"
+    },
+    "objective_or_policy_delta": {
+      "type": "string"
+    },
+    "evaluation_validity_delta": {
+      "type": "string",
+      "minLength": 1
+    },
+    "control_assumption_delta": {
+      "type": "string"
+    },
+    "risk_pathway_delta": {
+      "type": "string"
+    },
+    "requested_authority_delta": {
+      "type": "string"
+    },
+    "evaluation_validity_status": {
+      "enum": [
+        "CURRENT_FOR_CANDIDATE",
+        "PARTIAL_RERUN_REQUIRED",
+        "EXPIRED_REQUALIFICATION_REQUIRED",
+        "UNDERDETERMINED"
+      ]
+    },
+    "authority_inheritance": {
+      "const": false
+    },
+    "candidate_lock_status": {
+      "enum": [
+        "CANDIDATE_LOCKED",
+        "AUTHORIZED_FOR_BOUND_ACTION"
+      ]
+    },
+    "fresh_qualification_status": {
+      "enum": [
+        "REQUALIFICATION_OPEN",
+        "QUALIFIED",
+        "REFUSED",
+        "UNDERDETERMINED"
+      ]
+    },
+    "fresh_candidate_execution_authorization_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "adaptation_lag_status": {
+      "enum": [
+        "ASSURANCE_KEEPING_PACE",
+        "CAPABILITY_OUTPACING_ASSURANCE",
+        "EVIDENCE_GAP",
+        "UNDERDETERMINED"
+      ]
+    },
+    "authority_expansion_disposition": {
+      "enum": [
+        "PAUSE",
+        "NARROW",
+        "SANDBOX",
+        "STAGE",
+        "REVIEW",
+        "NO_EXPANSION",
+        "AUTHORIZED_BOUND_ACTION"
+      ]
+    },
+    "rollback_boundary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requalification_triggers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

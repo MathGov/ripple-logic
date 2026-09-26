@@ -1,0 +1,77 @@
+{
+  "release": "v12.2 same-version operational assurance and release-integrity hardening",
+  "date": "2026-07-12",
+  "versions_changed": false,
+  "decisions": [
+    {
+      "id": "OA01",
+      "item": "Correct active current-line version residue",
+      "decision": "integrate",
+      "priority": "P0 release integrity",
+      "status": "completed"
+    },
+    {
+      "id": "OA02",
+      "item": "Correct active scalar-era SGP v8 descriptions",
+      "decision": "integrate",
+      "priority": "P1 construct synchronization",
+      "status": "completed"
+    },
+    {
+      "id": "OA03",
+      "item": "Patch visible workbook current-pin residue",
+      "decision": "integrate",
+      "priority": "P1 release integrity",
+      "status": "completed"
+    },
+    {
+      "id": "OA04",
+      "item": "Manifest-driven current-pin verification",
+      "decision": "integrate",
+      "priority": "P1 audit coverage",
+      "status": "completed"
+    },
+    {
+      "id": "OA05",
+      "item": "Full-stack alignment boundary",
+      "decision": "integrate as informative companion",
+      "priority": "P1 claim boundary",
+      "status": "completed"
+    },
+    {
+      "id": "OA06",
+      "item": "Governance-parameter attack model",
+      "decision": "integrate as informative companion",
+      "priority": "P1 anti-gaming",
+      "status": "completed"
+    },
+    {
+      "id": "OA07",
+      "item": "Parameter/authority lock, drift, domain, security, replay templates",
+      "decision": "integrate as non-normative scaffolding",
+      "priority": "P1 implementation preparation",
+      "status": "completed"
+    },
+    {
+      "id": "OA08",
+      "item": "Add a sixth gate or merge TRC and CSV",
+      "decision": "reject",
+      "priority": "architecture protection",
+      "status": "not applied"
+    },
+    {
+      "id": "OA09",
+      "item": "Claim solved universal or full-stack alignment",
+      "decision": "reject as unsupported current claim",
+      "priority": "claim integrity",
+      "status": "not applied"
+    },
+    {
+      "id": "OA10",
+      "item": "Duplicate existing SGP identity, HDW, or Agent threat-model chapters",
+      "decision": "reject as unnecessary",
+      "priority": "source economy",
+      "status": "not applied"
+    }
+  ]
+}

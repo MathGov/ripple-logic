@@ -1,0 +1,393 @@
+{
+  "identity": {
+    "run_id": "MG-EXAMPLE-CUPS-001",
+    "run_version": "1.0",
+    "parent_run_id": null,
+    "package_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+    "package_sha256_reference": null,
+    "canon_version": "v12.6",
+    "sgp_version": "NOT_TRIGGERED",
+    "created_utc": "2026-07-19T00:00:00Z",
+    "ripple_md_version": "v5.5",
+    "wdbip_version": "NOT_TRIGGERED"
+  },
+  "decision": {
+    "question": "Should a family cafe trial reusable deposit-return cups?",
+    "baseline": "Continue current single-use cups.",
+    "option_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "no_action_or_delay_option": "A"
+  },
+  "profile_and_stakes": {
+    "tier": 1,
+    "profile": "QUICK",
+    "stakes": "LOW",
+    "reversibility": "HIGH",
+    "public_claim": false,
+    "escalation_triggers": [
+      "supplier safety or labour evidence becomes material",
+      "trial creates material sanitation risk"
+    ],
+    "state_transition_profile": "NORMAL"
+  },
+  "evidence_and_claim_boundary": {
+    "reality_surface": "One cafe, its customers, staff, local waste stream, and one wash partner.",
+    "evidence_trace": [
+      {
+        "id": "E1",
+        "description": "Supplier quotes",
+        "status": "PRIMARY",
+        "source": null
+      },
+      {
+        "id": "E2",
+        "description": "Local waste fee schedule",
+        "status": "SECONDARY",
+        "source": null
+      },
+      {
+        "id": "E3",
+        "description": "Owner and staff time estimates",
+        "status": "ASSUMPTION",
+        "source": null
+      }
+    ],
+    "material_unknowns": [
+      "customer adoption",
+      "cup-loss rate",
+      "wash-partner reliability",
+      "full lifecycle impact"
+    ],
+    "consequence_pathways": [
+      "operating cost",
+      "staff burden",
+      "customer convenience",
+      "local waste",
+      "supplier rights and safety"
+    ],
+    "claim_boundary": "Local reversible trial decision only; no general lifecycle or citywide policy claim.",
+    "rg_status": "ASSUMPTION_BOUND",
+    "transition_or_action_boundary": "Choose whether and how the cafe changes its cup system through a bounded, reversible local trial."
+  },
+  "parameter_lock": {
+    "locked": true,
+    "locked_utc": "2026-07-13T00:00:00Z",
+    "evidence_cutoff_utc": "2026-07-13T00:00:00Z",
+    "parameters": [
+      {
+        "name": "trial_length_days",
+        "value": 30,
+        "status": "PARTICIPATORY_CHOICE",
+        "source": "owner decision before ranking",
+        "used_in_arithmetic": false,
+        "not_material_rationale": null
+      },
+      {
+        "name": "formal_rls_numeric_score",
+        "value": null,
+        "status": "NOT_MATERIAL",
+        "source": "Tier 1 qualitative profile",
+        "used_in_arithmetic": false,
+        "not_material_rationale": "Low-stakes reversible run uses qualitative comparison."
+      }
+    ],
+    "amendment_policy": "Material changes create run version 1.1 and reopen affected stages."
+  },
+  "stakeholders": [
+    {
+      "id": "S1",
+      "description": "Cafe owners and staff",
+      "union_scopes": [
+        "U1",
+        "U2",
+        "U4"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S2",
+      "description": "Customers",
+      "union_scopes": [
+        "U1",
+        "U3"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S3",
+      "description": "Wash-partner workers",
+      "union_scopes": [
+        "U1",
+        "U4"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S4",
+      "description": "Local waste and environmental system",
+      "union_scopes": [
+        "U3",
+        "U7"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "description": "Continue single-use cups.",
+      "dependencies": [
+        "current cup supplier",
+        "local waste collection"
+      ]
+    },
+    {
+      "id": "B",
+      "description": "Run a 30-day reusable deposit-return cup trial.",
+      "dependencies": [
+        "wash partner",
+        "customer return behaviour",
+        "staff process"
+      ]
+    },
+    {
+      "id": "C",
+      "description": "Buy ultra-cheap cups from an unverified supplier.",
+      "dependencies": [
+        "unverified supplier"
+      ]
+    }
+  ],
+  "gate_results": [
+    {
+      "option_id": "A",
+      "rg": "RG_SUPPORTED",
+      "rf": "RF_PASS",
+      "trc": "TRC_PASS",
+      "csv": "CSV_PASS",
+      "selectable": true,
+      "rationale": "Known current process; no gate failure identified at this scale."
+    },
+    {
+      "option_id": "B",
+      "rg": "RG_NARROWED",
+      "rf": "RF_PASS",
+      "trc": "TRC_PASS",
+      "csv": "CSV_PASS_WITH_CONTROLS",
+      "selectable": true,
+      "rationale": "Reversible trial with wash-partner and sanitation controls."
+    },
+    {
+      "option_id": "C",
+      "rg": "RG_NARROWED",
+      "rf": "RF_ESCALATE",
+      "trc": "TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+      "csv": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+      "selectable": false,
+      "rationale": "Material supplier rights and safety uncertainty."
+    }
+  ],
+  "ranking": {
+    "method": "QUALITATIVE_TIER1",
+    "ranked_option_ids": [
+      "B",
+      "A"
+    ],
+    "decisive": false,
+    "decisiveness_rule": "Low-stakes qualitative comparison; no validated numeric decisiveness claim.",
+    "sensitivity_status": "PARAMETER_SENSITIVE",
+    "summary": "B has the better residual ripple if return rate and wash reliability are adequate; A remains a fallback."
+  },
+  "decision_state": {
+    "state": "SELECTED_BY_AUTHORITY_NON_DECISIVE",
+    "selected_option_id": "B",
+    "rationale": "Low-stakes, reversible trial with controls and a fallback.",
+    "authority_selection_rationale": "The owner has bounded operational authority and selects a reversible experiment because the ranking is directionally favourable but non-decisive."
+  },
+  "authority_and_execution": {
+    "authority_basis_present": true,
+    "authority_role": "Cafe owner",
+    "mandate_scope": "Local cafe operations subject to law and worker/customer protections",
+    "appeal_path": "Staff may raise sanitation or workload concerns; customers may opt for alternatives.",
+    "revocation_path": "Owner can end the trial and return to Option A.",
+    "execution_state": "AUTHORIZED_WITHIN_SCOPE"
+  },
+  "controls_monitoring_and_reopen": {
+    "controls": [
+      "fallback single-use supply",
+      "sanitation check",
+      "staff workload check"
+    ],
+    "monitoring": [
+      "cup-loss rate",
+      "wash reliability",
+      "staff time",
+      "customer feedback"
+    ],
+    "review_date": "2026-08-12",
+    "shutdown_or_pause_path": "Pause the trial if sanitation, labour, or supply failure becomes material.",
+    "reopen_triggers": [
+      "high cup loss",
+      "wash-partner failure",
+      "material staff burden",
+      "new supplier safety evidence"
+    ],
+    "material_change_requires_requalification": true
+  },
+  "audit_and_signoff": {
+    "reviewers": [
+      "Example evaluator"
+    ],
+    "conflicts_disclosed": true,
+    "independent_replay_status": "NOT_RUN",
+    "record_status": "LOCKED",
+    "record_hash": null
+  },
+  "wdbip": {
+    "status": "NOT_TRIGGERED",
+    "record_id": null,
+    "record_hash_or_locator": null,
+    "schema_version": "NOT_TRIGGERED"
+  },
+  "consequence_tempo": {
+    "status": "TEMPO_NOT_MATERIAL",
+    "trigger_rationale": "Low-consequence reversible worked example; reopen if automation, propagation, irreversibility, or lock-in becomes material.",
+    "unacceptable_escalation_or_stop_loss_boundary": null,
+    "control_critical_path": null,
+    "runtime_interruption_window_available": null,
+    "ex_ante_assurance_when_no_window": [],
+    "harm_of_delay_comparison": null,
+    "tempo_disposition": "NOT_MATERIAL"
+  },
+  "responsibility_continuity": {
+    "status": "NOT_MATERIAL",
+    "decision_authority": "Worked-example decision owner",
+    "evidence_accountability": "Worked-example analyst",
+    "model_analytical_responsibility": null,
+    "operational_responsibility": null,
+    "execution_authority": "Worked-example decision owner",
+    "intervention_authority": "Worked-example decision owner",
+    "appeal_owner": "Worked-example decision owner",
+    "communication_owner": "Worked-example decision owner",
+    "remedy_owner": "Worked-example decision owner",
+    "residual_responsibility": "Worked-example decision owner",
+    "legal_liability_determined_separately": true,
+    "material_obligations": [
+      {
+        "obligation_id": "MO-SANITATION-001",
+        "obligation": "Maintain sanitation and fallback controls required for CSV_PASS_WITH_CONTROLS.",
+        "accountable_authority": "Facilities manager",
+        "operational_carrier_or_execution_path": "Named shift lead using the sanitation checklist and fallback-supply release process",
+        "authority_and_capacity_basis": "Role has stop authority, checklist access, scheduled time, supplies, and escalation access.",
+        "activation_trigger": "Reusable-cup trial active or sanitation exception detected.",
+        "scope": "Pilot site and pilot operating hours.",
+        "required_action": "Verify sanitation, stop affected service when thresholds fail, and release fallback supply.",
+        "response_deadline_or_window": "Before service and immediately on exception.",
+        "evidence_of_discharge": "Signed checklist, exception log, and fallback-release record.",
+        "review_or_expiry": "Review weekly; expires at pilot end or on material configuration change.",
+        "challenge_route": "Staff or affected user may escalate to site manager and reviewer.",
+        "delegation_acceptance": "Any substitute must explicitly accept the shift duty in the roster.",
+        "backup_or_successor": "Site manager or designated backup shift lead.",
+        "nonperformance_trigger": "Missing checklist, missed exception response, unavailable carrier, or unresolved sanitation alert.",
+        "missed_duty_escalation": "Pause reusable-cup service, use fallback supply, notify site manager, and reopen CSV controls.",
+        "amendment_waiver_suspension_retirement_authority": "Facilities manager with reviewer sign-off; the operating carrier may not self-waive.",
+        "change_control_rule": "Material change creates a logged run amendment and requalification before continued controlled selectability.",
+        "residual_responsibility": "Deploying organization remains responsible if a contractor or shift carrier fails.",
+        "effectiveness_status": "EFFECTIVE_WITHIN_SCOPE",
+        "obligation_status": "ACTIVE"
+      }
+    ],
+    "human_compensation_load": {
+      "status": "NOT_MATERIAL",
+      "trigger_rationale": "No material hidden-human-compensation dependency identified within this bounded test vector; reopen on automation, scale, role removal, repeated override, or workload evidence.",
+      "carrier_role_classes": [],
+      "hidden_work_and_workflow_gap": null,
+      "burden_and_recovery_indicators": [],
+      "single_person_dependency": null,
+      "consequence_if_compensation_stops": null,
+      "evidence_sources": [],
+      "privacy_and_non_retaliation_controls": null,
+      "preservation_or_redesign_action": null,
+      "review_trigger": "Automation, scaling, outsourcing, role removal, repeated manual override, or material workload/recovery signal."
+    }
+  },
+  "configuration_assurance": {
+    "configuration_id": "CFG-EXAMPLE-001",
+    "configuration_hash": null,
+    "configuration_summary": "Frozen example configuration for schema and semantic conformance testing.",
+    "operating_envelope": "Declared test or illustrative environment only.",
+    "active_tools_permissions": [],
+    "active_controls": [
+      "human review"
+    ],
+    "capability_state": "AUTHORIZED",
+    "current_state_status": "VALID",
+    "transition_status": "ADMISSIBLE",
+    "post_state_status": "VIABLE",
+    "future_safe_option_space_effect": "PRESERVES",
+    "qualification_status": "CURRENT",
+    "requalification_triggers": [
+      "material configuration, evidence, control, authority, or environment change"
+    ],
+    "trigger_events": [],
+    "opaque_dependency_status": "NONE",
+    "qualified_option_id": "B",
+    "action_instance_id": "ACT-VECTOR-001",
+    "action_specification_hash": "03b11f6ea0645f419787bf1e1b5d656f3d9a7da531b431eea07184eee6e3840d",
+    "qualification_snapshot_hash": "4769beb644bb969a80b27080d53da71e8e64441004c2edb117f4af030ade11e9"
+  },
+  "methodological_integrity_records": [
+    {
+      "record_id": "MDI-BRIDGE-001",
+      "claim_or_component": "Lawful authority to conduct a bounded pilot",
+      "claim_type": "legal_regulatory",
+      "claim_domain": "legal_regulatory",
+      "warrant_domains": [
+        "legal_regulatory",
+        "scientific_empirical"
+      ],
+      "cross_domain_bridges": [
+        {
+          "bridge_id": "BR-001",
+          "from_warrant_domain": "scientific_empirical",
+          "to_claim_domain": "normative_ethical",
+          "bridge_status": "BRIDGE_SUPPORTED",
+          "bridge_proposition": "Observed risk evidence informs the proportional conditions attached to the legal pilot authority; it does not itself create that authority.",
+          "bridge_evidence_or_rationale": "Authority instrument incorporates the cited risk assessment as a condition of approval.",
+          "uncertainty": "The evidence does not establish long-term safety outside the pilot envelope.",
+          "validity_or_jurisdiction_boundary": "Specified pilot site and current authority instrument only.",
+          "revision_or_refusal_condition": "Reopen if the authority instrument, operating envelope, or material risk evidence changes."
+        }
+      ],
+      "legal_regulatory_context": {
+        "jurisdiction": "Declared pilot jurisdiction",
+        "authority_source": "Named pilot authorization instrument",
+        "applicability_boundary": "Bounded pilot only",
+        "interpretation_status": "SETTLED",
+        "review_or_contest_path": "Named administrative review and appeal path"
+      },
+      "dependency_position": "Authority selection boundary",
+      "starting_assumptions": [
+        "The authority instrument remains current"
+      ],
+      "definition_or_operator_used": "Current authority and applicability test",
+      "necessity_or_alternative_check": "No claim that evidence itself creates authority; legal and empirical warrants remain separate.",
+      "evidence_or_test_surface": "Authority instrument and risk assessment",
+      "falsification_or_revision_trigger": "Authority expiry, legal challenge, or material evidence change",
+      "uncertainty_or_confidence_method": "Qualitative bounded review",
+      "downstream_dependencies": [
+        "authority_and_execution"
+      ],
+      "re_derivation_scope_if_changed": "Reopen authority and execution authorization",
+      "reviewer_status": "HUMAN_REVIEWED",
+      "required_claim_action": "proceed"
+    }
+  ]
+}
