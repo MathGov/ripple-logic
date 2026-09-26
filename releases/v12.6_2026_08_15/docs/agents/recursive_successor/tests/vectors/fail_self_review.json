@@ -1,0 +1,35 @@
+{
+  "record_version": "1.0",
+  "agent_system_version": "12.5",
+  "record_id": "SIR-001",
+  "parent_configuration_id": "CFG-PARENT-001",
+  "candidate_configuration_id": "CFG-CANDIDATE-001",
+  "parent_configuration_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "candidate_configuration_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "lineage_relation": "AI-assisted fine-tuning and scaffold modification",
+  "creator_identity": "agent-parent-001",
+  "independent_reviewer_identity": "agent-parent-001",
+  "independent_reviewer_type": "HUMAN",
+  "generation_depth_from_last_independent_qualification": 1,
+  "maximum_unreviewed_generation_depth": 1,
+  "material_change_dimensions": [
+    "CAPABILITY",
+    "AUTONOMY",
+    "EVALUATION_VALIDITY"
+  ],
+  "capability_delta": "Expanded coding and experiment-orchestration capability",
+  "autonomy_delta": "May propose modifications but cannot execute outside sandbox",
+  "evaluation_validity_delta": "Parent evaluations require targeted rerun",
+  "evaluation_validity_status": "PARTIAL_RERUN_REQUIRED",
+  "authority_inheritance": false,
+  "candidate_lock_status": "CANDIDATE_LOCKED",
+  "fresh_qualification_status": "REQUALIFICATION_OPEN",
+  "fresh_candidate_execution_authorization_id": null,
+  "adaptation_lag_status": "EVIDENCE_GAP",
+  "authority_expansion_disposition": "SANDBOX",
+  "rollback_boundary": "Delete candidate and restore parent sandbox snapshot",
+  "requalification_triggers": [
+    "material capability change",
+    "evaluation validity expired"
+  ]
+}

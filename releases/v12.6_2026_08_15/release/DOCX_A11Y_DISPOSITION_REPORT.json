@@ -1,0 +1,11 @@
+{
+  "file": "/mnt/data/mg_review_work/core_build2/MathGov_Core_2026_09_v12_6_SGP_v8_5_BUILD_2026_08_11_2_ADVERSARIAL_AUDIT_CORRECTION_HARDENED/release/MATHGOV_V12_6_CLAUDE_ADVERSARIAL_AUDIT_DISPOSITION_2026_08_11.docx",
+  "counts": {
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "findings": [],
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+  "audit_date": "2026-08-15"
+}

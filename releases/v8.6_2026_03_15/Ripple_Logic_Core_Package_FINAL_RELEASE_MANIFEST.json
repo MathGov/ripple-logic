@@ -1,0 +1,64 @@
+{
+  "package_name": "Ripple_Logic_Core_Package",
+  "release_label": "final_audit_ready_canonical_release",
+  "release_date": "2026-03-15",
+  "canonical_sites": [
+    "ripplelogic.org",
+    "mathgov.org"
+  ],
+  "repository": "github.com/MathGov/ripple-logic",
+  "readiness": {
+    "academic_peer_review": "READY",
+    "github_release": "READY",
+    "website_release": "READY",
+    "tier_1_2_pilot_testing": "READY",
+    "tier_3_deployment": "NOT_YET_READY",
+    "institutional_policy_adoption": "NOT_YET_READY"
+  },
+  "notes": [
+    "This manifest locks the five-file publication bundle as a canonical audit-ready release.",
+    "Tier 3 and institutional readiness remain explicitly unclaimed pending empirical validation, UCI instruments, IRR evidence, reference implementation, and backtesting."
+  ],
+  "artifacts": [
+    {
+      "key": "foundation_canon",
+      "filename": "Ripple_Logic_v8.6_CANON_FINAL_RELEASE.docx",
+      "title": "Ripple_Logic Foundation Canon",
+      "version": "v8.6",
+      "sha256": "24741d46339073bb01331e7595e090bae38eadac1ab28e4a4909428d9a4b63b5",
+      "size_bytes": 222372
+    },
+    {
+      "key": "sgp",
+      "filename": "SGP_v4.3_CANON_FINAL_RELEASE.docx",
+      "title": "Sentience Gradient Protocol",
+      "version": "v4.3",
+      "sha256": "656a1542531fdac86b5783b70270137183014347e4eed15e929c04e2d4bdafa9",
+      "size_bytes": 74371
+    },
+    {
+      "key": "ripple_md_standard",
+      "filename": "ripple_md_Standard_v2.0_CANON_FINAL_RELEASE.docx",
+      "title": "ripple.md Standard",
+      "version": "v2.0",
+      "sha256": "49f73382732ac151dc4b1cf5e65aedd33def7bfae327134bffda7664ba1b433d",
+      "size_bytes": 67914
+    },
+    {
+      "key": "agent_system",
+      "filename": "RippleLogic_Agent_System_v8.6_CANON_FINAL_RELEASE.docx",
+      "title": "RippleLogic Agent System",
+      "version": "v8.6",
+      "sha256": "346916c505dd998708d36f6cd2d1d6375942348e7ac066c1fb5d168efa6a223d",
+      "size_bytes": 94227
+    },
+    {
+      "key": "aligners_sheet",
+      "filename": "Ripple_Aligners_Sheet_v2.2_CANON_FINAL_RELEASE.xlsx",
+      "title": "Ripple Aligners Sheet",
+      "version": "v2.2",
+      "sha256": "292c71ae33ad71e8e97c5cad4ca3829ac486de2829c8a8b60346b7ac88bf1037",
+      "size_bytes": 111247
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "record_id": "RMCP-DEMO-001",
+  "schema_version": "SGP_RMCP_v8.3",
+  "artifact_hash": "DECLARED",
+  "record_validity_status": "PROVISIONAL_RESEARCH_RECORD",
+  "target_id": "DEMO_COLLECTIVE",
+  "target_type": "DECLARED",
+  "collective_or_system_boundary": "DECLARED",
+  "evaluation_window": "DECLARED",
+  "specification_version": "SGP v8.3",
+  "domain_profile": "DECLARED",
+  "capacity_dimensions": [
+    "DECLARED"
+  ],
+  "critical_dimension_floors": [
+    "DECLARED"
+  ],
+  "evidence_artifacts": [
+    "DECLARED"
+  ],
+  "dependence_clusters": [
+    "DECLARED"
+  ],
+  "scaffolding_and_external_support": "DECLARED",
+  "continuity_basis": "DECLARED",
+  "causal_reach": "DECLARED",
+  "alternative_explanations": [
+    "DECLARED"
+  ],
+  "uncertainty_bounds": [
+    "DECLARED"
+  ],
+  "RMCP_profile": [
+    "DECLARED"
+  ],
+  "P100_status": "NOT_CLAIMED",
+  "reviewer_panel": [
+    "DECLARED"
+  ],
+  "minority_opinion": "DECLARED",
+  "revision_triggers": [
+    "DECLARED"
+  ],
+  "re_evaluation_date": "DECLARED",
+  "weaponization_flag_status": "NO_CONFIRMED_MISUSE_IN_SYNTHETIC_RECORD",
+  "affected_use_status": "INFORMATIVE_ONLY",
+  "construct_domain_status": "PROVISIONAL",
+  "affected_protected_bearers": [
+    "DECLARED"
+  ],
+  "welfare_advocate_engaged": true,
+  "spr_record_reference": "SPR-DEMO-001",
+  "lawful_mandate_reference": "NOT_APPLICABLE_IN_SYNTHETIC_RECORD",
+  "remediation_and_rereview_reference": "REVIEW-ANNUALLY"
+}

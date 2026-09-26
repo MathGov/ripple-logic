@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+  "workbook": "docs/aligners/RippleLogic_Aligners_Sheet_v5.6.xlsx",
+  "status": "PASS",
+  "worksheet_count": 87,
+  "formula_count": 1643,
+  "formula_error_cells": 0,
+  "serialized_blank_formula_results": 215,
+  "independent_recalculation": {
+    "engine": "LibreOffice isolated temporary profile",
+    "status": "PASS",
+    "formula_count": 1643,
+    "formula_error_cells": 0,
+    "qualification_continuity_cell": "Qualification_Continuity!F28",
+    "qualification_continuity_value": "QUALIFIED_RECORD_COMPLETE",
+    "provenance_note": "Evidence carried forward from the immediately preceding verified formula graph; final build changed no formulas."
+  },
+  "required_sheets": [
+    "Qualification_Continuity",
+    "Outcome_Requalification",
+    "v12_6_Sync"
+  ],
+  "mirror": {
+    "path": "core_15/RippleLogic_Aligners_Sheet_v5.6.xlsx",
+    "byte_identical": true
+  },
+  "interpretation_boundary": "Blank serialized results are formula outputs that are intentionally empty under the worked-run inputs. The independent recalculation, zero-error scan, required-cell checks, and exact mirror check are the controlling freshness tests.",
+  "audit_date": "2026-08-15",
+  "final_build_edit_scope": "Final user-approved workbook differs from the immediately preceding audited workbook only in reader guidance; formula-bearing sheets and load-bearing values are unchanged.",
+  "final_build_artifact_tool_error_scan": "Not re-run in this packaging pass; no spreadsheet formula/value edits were made. Prior independent recalculation evidence is carried forward only because the formula graph is byte-equivalent on formula-bearing sheets.",
+  "final_build_visual_checks": [
+    "How_To_Use",
+    "Release_Boundaries",
+    "RLS",
+    "TRC",
+    "Reproducibility_Check",
+    "Audit_Flags",
+    "Rights_Coverage_View",
+    "Subgroup_Overrides"
+  ]
+}

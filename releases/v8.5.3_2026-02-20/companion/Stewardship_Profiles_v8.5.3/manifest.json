@@ -1,0 +1,22 @@
+{
+  "pack": "Stewardship_Profiles_v8.5.3",
+  "generated_utc": "2026-02-20T13:48:54.074360Z",
+  "entries": [
+    {
+      "path": "DBD_DEFAULT_V1.json",
+      "sha256": "1abc9d68e50465e298cb0fcfad7239fe47a4a1c551c825bcb133ac6c5ae83fa2"
+    },
+    {
+      "path": "IRB_DEFAULT_CAPS_V1.json",
+      "sha256": "70e10dd2f7d892bdc05115583c15900c0e3a31d28a3dd919599819d37abaf66d"
+    },
+    {
+      "path": "STEWARD_TAXONOMY_V1.json",
+      "sha256": "dbfebd41eb2002a07e9ab777195aa837aaa3378291f6c9ad48ae91f356a16556"
+    },
+    {
+      "path": "stewardship_profiles.schema.json",
+      "sha256": "852f137b71c80bc00f1407320fab54969bc5e17b4a8d616243a2d05138fe145d"
+    }
+  ]
+}

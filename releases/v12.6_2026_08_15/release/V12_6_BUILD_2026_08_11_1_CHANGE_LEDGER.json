@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.2",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.11.1",
+  "prior_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.10.2",
+  "core_version": "12.6",
+  "sgp_version": "8.5",
+  "publication_date": "2026-08-11",
+  "semantic_version_changed": false,
+  "build_increment_only": true,
+  "status": "OPEN_SOURCE_RESEARCH_RELEASE",
+  "changes": [
+    {
+      "id": "CPI-01",
+      "area": "Reality Grounding and MFDI",
+      "what": "Added MathGov-native Capability Claim Integrity operationalization and non-substitution rules across Canon, MFDI, Agent, ripple.md, Cascade, Primer, SGP, glossary, schema, fixtures, and MHIOS.",
+      "why": "Material capability language must be bounded by observable evidence, validity conditions, alternatives, falsification, maturity, and explicit nonclaims."
+    },
+    {
+      "id": "PUB-01",
+      "area": "TOC and front matter",
+      "what": "Completed static linked TOCs in Canon, SGP, WDBIP, and MHIOS; removed unusable TOC shells elsewhere; corrected WDBIP front matter and misplaced Agent/ripple.md content.",
+      "why": "SSRN and public readers need reliable navigation and no visible template debris."
+    },
+    {
+      "id": "PUB-02",
+      "area": "Tables, footers, and page layout",
+      "what": "Verified 304 tables across Core plus MHIOS, dynamic page fields, repeated headers, light-blue table hierarchy, complete rendering, and zero clipping or blank pages.",
+      "why": "Publication-ready artifacts must remain clear in DOCX and PDF across long tables and hundreds of pages."
+    },
+    {
+      "id": "REL-01",
+      "area": "Release evidence",
+      "what": "Advanced only the correction build to 2026.08.11.1 and regenerated current manifests, ledgers, accessibility/layout reports, preflight, and master verification.",
+      "why": "Changed bytes require a reproducible identity while semantic versions remain frozen."
+    }
+  ],
+  "explicit_nonchanges": [
+    "No new gate",
+    "No formula or threshold change",
+    "No Union Scope or Welfare Dimension change",
+    "No SGP protection-floor change",
+    "No imported external ontology, formula, taxonomy, verdict system, hardware architecture, or proprietary implementation",
+    "No construct-validity or deployment-readiness claim"
+  ],
+  "validation": {
+    "core_positive_vectors": 6,
+    "core_expected_failure_vectors": 29,
+    "sgp_positive_vectors": 1,
+    "sgp_expected_failure_vectors": 1,
+    "wdbip_positive_vectors": 1,
+    "wdbip_expected_failure_vectors": 17,
+    "workbook_sheets": 87,
+    "workbook_formulas": 1643,
+    "workbook_formula_errors": 0,
+    "primary_core_documents": 15,
+    "core_pdf_pages": 596,
+    "core_tables": 287,
+    "core_table_rows": 2439,
+    "core_headings": 1634,
+    "core_toc_entries": 125,
+    "a11y_high": 0,
+    "a11y_medium": 0,
+    "a11y_low": 76,
+    "construct_validity": "UNTESTED"
+  }
+}

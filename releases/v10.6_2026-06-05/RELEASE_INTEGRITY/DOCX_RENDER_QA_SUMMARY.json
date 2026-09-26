@@ -1,0 +1,35 @@
+{
+  "generated_utc": "2026-06-02T12:28:17.590434Z",
+  "docx_render_pdf_pages": {
+    "agent": {
+      "pdf_present": true,
+      "png_count_render_docx": 50
+    },
+    "ripple": {
+      "pdf_present": true,
+      "png_count_render_docx": 65
+    },
+    "sgp": {
+      "pdf_present": true,
+      "png_count_render_docx": 71
+    },
+    "primer": {
+      "pdf_present": true,
+      "png_count_render_docx": 20
+    },
+    "summary": {
+      "pdf_present": true,
+      "png_count_render_docx": 4
+    },
+    "canon": {
+      "pdf_present": true,
+      "png_count_full_pdftoppm": 228
+    }
+  },
+  "note": "All DOCX artifacts were rendered to PDF/PNG for QA. Canon was rendered to PDF and then full-page PNG via pdftoppm due long-document timeout behavior in render_docx PNG conversion.",
+  "visual_pages_spot_checked": [
+    "Agent pages 69-72 after Appendix G patch",
+    "Workbook Dashboard A1:J70 render",
+    "Canon PDF page count 228"
+  ]
+}

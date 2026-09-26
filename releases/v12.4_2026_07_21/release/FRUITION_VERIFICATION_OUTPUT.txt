@@ -1,0 +1,13 @@
+RUN VERIFY_CURRENT_PINS.py
+PASS current v12.4 / SGP v8.3 pins and 15-artifact core
+RUN VERIFY_SEMANTIC_SURFACES.py
+PASS semantic, cascade, type, claim-boundary, and final-closure surfaces
+RUN VERIFY_FORMULA_INTERFACE_INTEGRITY.py
+PASS formula, severe-rights, PLSS, live-TRC, controlling-CSV, and workbook interface integrity
+RUN VERIFY_FORMAT_AND_REPRODUCIBILITY.py
+PASS DOCX/PDF formatting, schemas, vectors, and bounded replay
+RUN VERIFY_STATE_SEMANTICS_AND_NON_DILUTION.py
+PASS positive conformance vector: tests/run_records/pass_trc_not_triggered.json
+PASS expected rejection vector: tests/run_records/fail_trc_not_triggered_missing_assessment.json
+PASS RG/TRC state semantics, TRC_NOT_TRIGGERED evidence requirement, and catastrophe-profile non-dilution
+PASS complete MathGov v12.4 / SGP v8.3 release verification

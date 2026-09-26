@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.11.2",
+  "build_id": "2026.08.11.2",
+  "semantic_versions_changed": false,
+  "source_audit": {
+    "path": "/mnt/data/MathGov_Core_v12_6_Adversarial_Audit.md",
+    "sha256": "ad78a7f74f5b014408aafc6c638d71774d9e3d414c12df46fa8b50ac22dc77b0"
+  },
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+  "accepted_and_implemented": [
+    {
+      "id": "DECISIVENESS_SENSITIVITY",
+      "change": "Any actually computed governed sensitivity that flips decisive/non-decisive status forces non-decisive treatment regardless of tier; demonstration-only unvalidated uncertainty cannot support unique framework selection.",
+      "surfaces": [
+        "Canon §10.3.2",
+        "Canon §10.4A",
+        "Appendix B.13-B.14",
+        "VALIDATE_MATHGOV_RUN.py",
+        "Aligners Sheet v5.6",
+        "new failure fixture"
+      ]
+    },
+    {
+      "id": "APPENDIX_B_COMPLETENESS",
+      "change": "Restored Q=0, dependence-cluster, non-decisive, empty subgroup, empty containment and all-NA UCI dispositions to the standalone equation pack.",
+      "surfaces": [
+        "Canon Appendix B"
+      ]
+    },
+    {
+      "id": "RIGHTS_RELEVANCE_ROUTING",
+      "change": "Corrected six Appendix AD Rights Floor labels to Rights-relevance cue and required material protected effects in D6/D7 to route into canonical covered dimensions or a governed extension. Canonical C_r sets unchanged.",
+      "surfaces": [
+        "Canon Appendix AD",
+        "AD CSV",
+        "WDBIP v1.6"
+      ]
+    },
+    {
+      "id": "EMERGENCY_CLAMP_TIE",
+      "change": "Added unclamped conservative value as a secondary Emergency Mode ordering key only when the canonical clamp creates a tie.",
+      "surfaces": [
+        "Canon §7.4 area",
+        "Appendix C.6"
+      ]
+    },
+    {
+      "id": "CATASTROPHE_WEIGHT_GOVERNANCE",
+      "change": "Non-default catastrophe weights require ex ante declaration, source justification, symmetric application, non-dilution preservation and high-stakes uniform counterfactual.",
+      "surfaces": [
+        "Canon §8.4",
+        "Appendix B.10"
+      ]
+    },
+    {
+      "id": "THRESHOLD_SCALE",
+      "change": "Declared rights thresholds as post-saturation and documented the expansive-near-zero behavior of tanh(beta*x) at beta=2.",
+      "surfaces": [
+        "Canon §5.5/C.1",
+        "Appendix B/C"
+      ]
+    },
+    {
+      "id": "CCI_DISCOVERABILITY",
+      "change": "Added canonical Capability Claim Integrity naming and Canon §2.1C cross-references.",
+      "surfaces": [
+        "ripple.md v5.5",
+        "SGP v8.5"
+      ]
+    },
+    {
+      "id": "GATE_NUMBERING",
+      "change": "Clarified that formal gate numbering counts RF/NCRC, TRC and CSV; RG is precondition and RLS is ranking.",
+      "surfaces": [
+        "Canon §4.4"
+      ]
+    },
+    {
+      "id": "WORKBOOK_CORRECTION",
+      "change": "Corrected CSV v2.4 pin and changed the worked run to REFUSE_DETERMINISTIC_SELECTION with separate accountable authority selection of A.",
+      "surfaces": [
+        "Aligners Sheet v5.6"
+      ]
+    },
+    {
+      "id": "TOC_REPAGINATION",
+      "change": "Remapped all 70 Canon static linked TOC page numbers to the final 275-page PDF.",
+      "surfaces": [
+        "Canon DOCX/PDF"
+      ]
+    }
+  ],
+  "rejected_or_not_adopted": [
+    {
+      "finding": "All DOCX files are plain text / no PDFs exist",
+      "reason": "The audit reviewed an incomplete selected-file set; the latest complete package has genuine OOXML DOCX and publication PDFs."
+    },
+    {
+      "finding": "README is stale",
+      "reason": "False for the latest source package; only the immutable build identity and current audit link required advancement."
+    },
+    {
+      "finding": "Schemas, validators, fixtures and manifests absent",
+      "reason": "False for the latest complete package."
+    },
+    {
+      "finding": "Extend DIGN to all D6 and ECOL to all D7 scopes",
+      "reason": "Would constitutionalize heterogeneous dimensions without threshold calibration; routing clarification closes the demonstrated underprotection more precisely."
+    },
+    {
+      "finding": "Fixed Delta_min = 0.02",
+      "reason": "Concern accepted, value not empirically calibrated; measurement-resolution and governed sensitivity rules address the actual defect without creating a new arbitrary universal threshold."
+    },
+    {
+      "finding": "Add fullCalcOnLoad metadata",
+      "reason": "Independent isolated live recalculation is stronger and already passes with 1,643 formulas and zero errors."
+    },
+    {
+      "finding": "New cascade graphic is essential",
+      "reason": "Existing Cascade Standard, layer tables, 3R/1-2 doorway and qualification-lifecycle asset already cover the concept; no figure-dependent gap was demonstrated."
+    },
+    {
+      "finding": "Revise MHIOS v0.7",
+      "reason": "No MHIOS content defect was established; it remains a separately distributed pre-1.0 Canon-subordinate candidate companion."
+    }
+  ],
+  "unchanged_invariants": [
+    "five-stage cascade",
+    "seven Union Scopes",
+    "seven Welfare Dimensions",
+    "all equations",
+    "all numerical defaults",
+    "canonical rights-coverage sets",
+    "catastrophe-cell sets",
+    "TRC/CSV separation",
+    "SGP protection floors",
+    "refusal under underdetermination"
+  ],
+  "changed_primary_files": [
+    "docs/canon/RippleLogic_v12.6_Canon.md",
+    "docs/canon/RippleLogic_v12.6_Canon.docx",
+    "docs/canon/RippleLogic_v12.6_Canon.pdf",
+    "docs/canon/AD_49_Cell_Welfare_Dictionary.csv",
+    "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.md",
+    "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.docx",
+    "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.pdf",
+    "docs/standards/ripple_md_Standard_v5.5.md",
+    "docs/standards/ripple_md_Standard_v5.5.docx",
+    "docs/standards/ripple_md_Standard_v5.5.pdf",
+    "docs/sgp/SGP_v8.5.md",
+    "docs/sgp/SGP_v8.5.docx",
+    "docs/sgp/SGP_v8.5.pdf",
+    "docs/aligners/RippleLogic_Aligners_Sheet_v5.6.xlsx",
+    "release/VALIDATE_MATHGOV_RUN.py",
+    "tests/run_records/fail_sensitive_ranking_claims_decisive.json"
+  ],
+  "claim_boundary": "Correction-build conformance does not establish construct validity, evidence truth, physical safety, legal authority, moral truth, framework superiority or deployment readiness."
+}

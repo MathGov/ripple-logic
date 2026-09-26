@@ -1,0 +1,89 @@
+{
+  "release": "v12.3",
+  "sgp": "v8.2",
+  "date": "2026-07-19",
+  "package": "MathGov_Core_2026_09_GitHub_Release_v12_3_SGP_V8_2_TEMPO_RESPONSIBILITY_WDBIP_AND_EXECUTABLE_INTEGRITY_FINAL",
+  "architectural_invariants_preserved": [
+    "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+    "seven Union Scopes",
+    "seven welfare dimensions",
+    "rights and ruin non-compensatory",
+    "UCI/HOI CSV-internal diagnostics",
+    "protection != authority"
+  ],
+  "changes": [
+    {
+      "id": "MG123-001",
+      "severity": "material",
+      "surface": "ripple.md",
+      "change": "Corrected consequence-tempo comparison to unacceptable adverse escalation or irreversible stop-loss boundary and added critical-path timing."
+    },
+    {
+      "id": "MG123-002",
+      "severity": "material",
+      "surface": "Agent/Canon/CSV",
+      "change": "Added typed responsibility continuity and runtime intervention-window assurance."
+    },
+    {
+      "id": "MG123-003",
+      "severity": "release_blocker_fixed",
+      "surface": "run schema and validator",
+      "change": "Added actual Draft 2020-12 schema enforcement and separated R0/R1/R2 claims."
+    },
+    {
+      "id": "MG123-004",
+      "severity": "release_blocker_fixed",
+      "surface": "state algebra",
+      "change": "Canonicalized CSV_REDESIGN_REQUIRED and completed short-circuit and emergency states."
+    },
+    {
+      "id": "MG123-005",
+      "severity": "material",
+      "surface": "WDBIP",
+      "change": "Integrated v1.3 as a Canon-subordinate measurement companion beneath RLS."
+    },
+    {
+      "id": "MG123-006",
+      "severity": "protective",
+      "surface": "SGP",
+      "change": "Added RMCP misuse and weaponization controls without changing FPP/MPS thresholds."
+    },
+    {
+      "id": "MG123-007",
+      "severity": "material",
+      "surface": "Aligners Sheet",
+      "change": "Advanced to v5.3 with workflow, WDBIP, tempo, responsibility, and typed release posture."
+    },
+    {
+      "id": "MG123-008",
+      "severity": "material",
+      "surface": "RLS validation workbook",
+      "change": "Advanced to v0.2 with full-range validation, indeterminate defaults, and study-integrity controls."
+    },
+    {
+      "id": "MG123-009",
+      "severity": "interface",
+      "surface": "component map and hierarchy",
+      "change": "Replaced fixed canonical-core count with typed artifact classes and explicit ownership."
+    },
+    {
+      "id": "MG123-010",
+      "severity": "format",
+      "surface": "DOCX/PDF mirrors",
+      "change": "Synchronized 15 pairs, corrected SGP/WDBIP running version lines, and completed visual/preflight/accessibility review."
+    }
+  ],
+  "verification": {
+    "focused_verifiers": "PASS",
+    "main_run_positive": 1,
+    "main_run_negative": 9,
+    "wdbip_negative": 17,
+    "docx_pdf_pairs": 15,
+    "pdf_pages": 537,
+    "docx_tables": 257,
+    "a11y_high": 0,
+    "a11y_medium": 0,
+    "a11y_low_raw_urls": 74
+  },
+  "claim_boundary": "Procedural and release conformance is not empirical validation, legal authority, physical safety, consciousness detection, metaphysical proof, framework superiority, or moral truth."
+}

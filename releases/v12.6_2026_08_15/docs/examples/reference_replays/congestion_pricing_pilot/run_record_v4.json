@@ -1,0 +1,427 @@
+{
+  "identity": {
+    "run_id": "MG-REF-CONGESTION-001",
+    "run_version": "1.0",
+    "parent_run_id": null,
+    "package_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+    "package_sha256_reference": null,
+    "canon_version": "v12.6",
+    "sgp_version": "NOT_TRIGGERED",
+    "created_utc": "2026-08-14T00:00:00Z",
+    "ripple_md_version": "v5.5",
+    "wdbip_version": "NOT_TRIGGERED"
+  },
+  "decision": {
+    "question": "Should a city authorize a bounded congestion-pricing pilot with equity, accessibility, privacy, appeal, and transit-reinvestment controls?",
+    "baseline": "Continue current traffic-management and transport arrangements without congestion pricing.",
+    "option_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "no_action_or_delay_option": "A"
+  },
+  "profile_and_stakes": {
+    "tier": 2,
+    "profile": "STANDARD",
+    "stakes": "HIGH",
+    "reversibility": "MEDIUM",
+    "public_claim": false,
+    "escalation_triggers": [
+      "exemption or appeal access fails",
+      "traffic displacement materially harms vulnerable neighborhoods",
+      "emergency or disability access is impaired",
+      "camera or billing data use expands",
+      "transit capacity or reinvestment commitments are not carried",
+      "political or legal mandate changes"
+    ],
+    "state_transition_profile": "NORMAL"
+  },
+  "evidence_and_claim_boundary": {
+    "reality_surface": "A synthetic city transport-policy case covering drivers, low-income commuters, disabled travelers, neighborhoods, emergency services, transit agencies, enforcement and appeals functions, and environmental effects.",
+    "evidence_trace": [
+      {
+        "id": "E1",
+        "description": "Illustrative traffic, transit, emissions, accessibility, and household-burden baseline",
+        "status": "MODEL",
+        "source": null
+      },
+      {
+        "id": "E2",
+        "description": "Illustrative legal, privacy, due-process, disability-access, and enforcement review",
+        "status": "EXPERT",
+        "source": null
+      },
+      {
+        "id": "E3",
+        "description": "Illustrative stakeholder consultation and subgroup-impact record",
+        "status": "TESTIMONY",
+        "source": null
+      },
+      {
+        "id": "E4",
+        "description": "Illustrative implementation-capacity and reinvestment-governance assessment",
+        "status": "ASSUMPTION",
+        "source": null
+      }
+    ],
+    "material_unknowns": [
+      "actual diversion routes",
+      "behavioral response",
+      "transit crowding",
+      "administrative burden",
+      "equity and accessibility uptake",
+      "privacy and enforcement error rates",
+      "political durability",
+      "net environmental effect"
+    ],
+    "transition_or_action_boundary": "Select among no change, an unqualified flat charge, or a time-bounded pilot with exemptions, accessibility support, transit reinvestment, appeal, privacy controls, monitoring, and stop/revision authority.",
+    "consequence_pathways": [
+      "household cost and access to work",
+      "disability and emergency access",
+      "traffic and transit performance",
+      "neighborhood displacement",
+      "privacy and due process",
+      "public legitimacy",
+      "health and emissions",
+      "institutional capacity"
+    ],
+    "claim_boundary": "Synthetic public-policy reference replay only. It is not evidence that congestion pricing is lawful, effective, equitable, politically legitimate, or suitable for any real city.",
+    "rg_status": "ASSUMPTION_BOUND",
+    "capability_language_material": false
+  },
+  "parameter_lock": {
+    "locked": true,
+    "locked_utc": "2026-08-14T00:00:00Z",
+    "evidence_cutoff_utc": "2026-08-14T00:00:00Z",
+    "parameters": [
+      {
+        "name": "pilot_duration_months",
+        "value": 12,
+        "status": "PARTICIPATORY_CHOICE",
+        "source": "illustrative authority choice fixed before ranking",
+        "used_in_arithmetic": false,
+        "not_material_rationale": null
+      },
+      {
+        "name": "low_income_exemption_and_support",
+        "value": true,
+        "status": "CONSERVATIVE_BOUND",
+        "source": "constitutive option control",
+        "used_in_arithmetic": false,
+        "not_material_rationale": null
+      },
+      {
+        "name": "formal_rls_numeric_score",
+        "value": null,
+        "status": "NOT_MATERIAL",
+        "source": "illustrative structured qualitative comparison",
+        "used_in_arithmetic": false,
+        "not_material_rationale": "No calibrated city-specific cell scores or probabilities are claimed."
+      }
+    ],
+    "amendment_policy": "Any material change creates run version 1.1 and reopens all affected stages."
+  },
+  "stakeholders": [
+    {
+      "id": "S1",
+      "description": "Low-income commuters, disabled travelers, caregivers, shift workers, and residents with constrained alternatives",
+      "union_scopes": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "subgroup": "Protected and high-burden transport subgroups",
+      "sgp_record_id": null
+    },
+    {
+      "id": "S2",
+      "description": "Residents and businesses in priced and diversion-affected neighborhoods",
+      "union_scopes": [
+        "U1",
+        "U2",
+        "U3",
+        "U4"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S3",
+      "description": "Transit, emergency, enforcement, appeals, privacy, and municipal finance institutions",
+      "union_scopes": [
+        "U4",
+        "U5"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S4",
+      "description": "Wider population, climate, air-quality, and biosphere interests",
+      "union_scopes": [
+        "U5",
+        "U6",
+        "U7"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "description": "No policy change; continue current traffic-management and transport arrangements.",
+      "dependencies": [
+        "current road and transit systems",
+        "current funding and enforcement arrangements"
+      ]
+    },
+    {
+      "id": "B",
+      "description": "Introduce a flat congestion charge without protected-group exemptions, guaranteed transit reinvestment, independent appeal, or strengthened privacy controls.",
+      "dependencies": [
+        "charging and enforcement system",
+        "billing and camera data",
+        "existing transit capacity"
+      ]
+    },
+    {
+      "id": "C",
+      "description": "Authorize a twelve-month pilot with low-income and disability accommodations, emergency-access safeguards, transit reinvestment, privacy minimization, independent appeal, neighborhood-displacement monitoring, published review, and stop/revision authority.",
+      "dependencies": [
+        "charging technology",
+        "appeals and exemption administration",
+        "transit and accessibility capacity",
+        "privacy controls",
+        "reinvestment governance",
+        "neighborhood monitoring"
+      ]
+    }
+  ],
+  "gate_results": [
+    {
+      "option_id": "A",
+      "rg": "RG_SUPPORTED",
+      "rf": "RF_PASS",
+      "trc": "TRC_PASS",
+      "csv": "CSV_PASS",
+      "selectable": true,
+      "rationale": "The status quo is a selectable option, with its own congestion, access, health, and environmental harms carried into ranking."
+    },
+    {
+      "option_id": "B",
+      "rg": "RG_NARROWED",
+      "rf": "RF_ESCALATE",
+      "trc": "TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+      "csv": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+      "selectable": false,
+      "rationale": "Discriminatory burden, access, due process, privacy, and appeal protections are unresolved; aggregate efficiency or emissions benefit cannot compensate."
+    },
+    {
+      "option_id": "C",
+      "rg": "RG_NARROWED",
+      "rf": "RF_PASS",
+      "trc": "TRC_PASS",
+      "csv": "CSV_PASS_WITH_CONTROLS",
+      "selectable": true,
+      "rationale": "Only the controlled pilot configuration is selectable, subject to carried exemptions, accessibility, appeals, privacy, transit, monitoring, and stop obligations."
+    }
+  ],
+  "ranking": {
+    "method": "RLS_DECLARED_METHOD",
+    "ranked_option_ids": [
+      "C",
+      "A"
+    ],
+    "decisive": false,
+    "decisiveness_rule": "Illustrative qualitative ranking only; uncertain diversion, uptake, transit-capacity, equity, and legitimacy effects prevent a deterministic framework-selection claim.",
+    "sensitivity_status": "HYPOTHESIS_SENSITIVE",
+    "summary": "C may produce the better residual ripple if protections and reinvestment work; A remains preferable under adverse diversion, access, burden, privacy, or administrative evidence."
+  },
+  "decision_state": {
+    "state": "SELECTED_BY_AUTHORITY_NON_DECISIVE",
+    "selected_option_id": "C",
+    "rationale": "A bounded pilot can test benefits and harms while preserving a no-action fallback and review path.",
+    "authority_selection_rationale": "A lawfully constituted city authority could select a reversible, rights-screened pilot after public process; the framework does not claim unique selection or confer legal authority."
+  },
+  "authority_and_execution": {
+    "authority_basis_present": true,
+    "authority_role": "Illustrative city transport decision authority",
+    "mandate_scope": "May select a bounded pilot only after separate legal, budgetary, procurement, privacy, accessibility, and public-process requirements are satisfied.",
+    "appeal_path": "Independent exemptions and penalties appeal; public challenge and review; judicial or regulatory routes determined separately.",
+    "revocation_path": "Authorized city body may suspend or terminate the pilot when rights, access, privacy, transit-capacity, diversion, legitimacy, or control conditions fail.",
+    "execution_state": "NOT_AUTHORIZED"
+  },
+  "controls_monitoring_and_reopen": {
+    "controls": [
+      "low-income exemption and support",
+      "disability and medical-access accommodation",
+      "emergency-access safeguard",
+      "independent appeal",
+      "privacy minimization and retention limit",
+      "transit reinvestment lock",
+      "diversion-neighborhood monitoring",
+      "public reporting and stop/revision authority"
+    ],
+    "monitoring": [
+      "travel-time and access by subgroup",
+      "exemption uptake and denial",
+      "appeals and enforcement errors",
+      "traffic diversion",
+      "transit crowding and reliability",
+      "household burden",
+      "privacy incidents",
+      "air quality and emissions",
+      "public legitimacy and trust"
+    ],
+    "review_date": "2026-08-14",
+    "shutdown_or_pause_path": "Suspend or narrow charging and enforcement if access, rights, privacy, transit-capacity, diversion, or control thresholds fail; preserve the no-action fallback and targeted non-charge measures.",
+    "reopen_triggers": [
+      "exemption or appeal access fails",
+      "traffic displacement materially harms vulnerable neighborhoods",
+      "emergency or disability access is impaired",
+      "camera or billing data use expands",
+      "transit capacity or reinvestment commitments are not carried",
+      "political or legal mandate changes"
+    ],
+    "material_change_requires_requalification": true
+  },
+  "audit_and_signoff": {
+    "reviewers": [
+      "Reference-packet compiler"
+    ],
+    "conflicts_disclosed": true,
+    "independent_replay_status": "NOT_RUN",
+    "record_status": "LOCKED",
+    "record_hash": null
+  },
+  "wdbip": {
+    "status": "NOT_TRIGGERED",
+    "record_id": null,
+    "record_hash_or_locator": null,
+    "schema_version": "NOT_TRIGGERED"
+  },
+  "consequence_tempo": {
+    "status": "TEMPO_NOT_MATERIAL",
+    "trigger_rationale": "Illustrative bounded pilot; reopen if propagation speed, automation, irreversibility, emergency conditions, or lock-in becomes material.",
+    "unacceptable_escalation_or_stop_loss_boundary": null,
+    "control_critical_path": null,
+    "runtime_interruption_window_available": null,
+    "ex_ante_assurance_when_no_window": [],
+    "harm_of_delay_comparison": null,
+    "tempo_disposition": "NOT_MATERIAL"
+  },
+  "responsibility_continuity": {
+    "status": "COMPLETE",
+    "decision_authority": "City transport authority subject to lawful mandate and public process",
+    "evidence_accountability": "Independent evaluation and audit lead",
+    "model_analytical_responsibility": "Transport and distributional-analysis team",
+    "operational_responsibility": "Transport agency and designated delivery partners",
+    "execution_authority": "Separate lawfully empowered implementation authority; not yet issued",
+    "intervention_authority": "Named transport, accessibility, privacy, emergency-service, and independent review officials",
+    "appeal_owner": "Independent appeals function",
+    "communication_owner": "City public-information and consultation function",
+    "remedy_owner": "City authority with independent appeals and affected-agency duties",
+    "residual_responsibility": "City and legally accountable public bodies",
+    "legal_liability_determined_separately": true,
+    "material_obligations": [
+      {
+        "obligation_id": "MO-CONGESTION-CONTROLS-001",
+        "obligation": "Maintain the exemptions, accessibility, emergency access, appeal, privacy, transit-reinvestment, monitoring, and stop controls constitutive of Option C.",
+        "accountable_authority": "City transport authority with independent oversight",
+        "operational_carrier_or_execution_path": "Named transport operations, exemptions, appeals, privacy, accessibility, transit, and evaluation roles",
+        "authority_and_capacity_basis": "City transport authority with independent oversight has the declared mandate, resources, stop authority, access to records, and escalation route for this bounded illustrative case.",
+        "activation_trigger": "The selected pilot is approved for activation or a control exception is detected.",
+        "scope": "Declared pilot zone, duration, affected populations, data systems, enforcement rules, and reinvestment commitments",
+        "required_action": "Verify that protections are active before charging, monitor subgroup impacts and errors, correct or remedy failures, and suspend or redesign when thresholds are crossed.",
+        "response_deadline_or_window": "Before activation and immediately upon a material exception.",
+        "evidence_of_discharge": "Published control checklist, exemption and appeal records, accessibility and emergency-service confirmation, privacy log, reinvestment ledger, monitoring report, and stop/redesign record.",
+        "review_or_expiry": "Review at each scheduled checkpoint; expires at pilot end or on any material configuration, evidence, authority, or environment change.",
+        "challenge_route": "Affected person appeal, protected staff challenge, public review, and applicable legal/regulatory routes.",
+        "delegation_acceptance": "Any delegate must explicitly accept the duty in the controlled role register before carrying it.",
+        "backup_or_successor": "Named deputy authority and pre-authorized fallback operators for each critical function.",
+        "nonperformance_trigger": "Missing evidence of discharge, unavailable carrier, unresolved exception, missed response window, or loss of authority/capacity.",
+        "missed_duty_escalation": "Suspend the affected operation, preserve evidence, provide interim access/remedy, notify oversight, and reopen RG/RF/TRC/CSV before continuation.",
+        "amendment_waiver_suspension_retirement_authority": "City transport authority with independent oversight with independent reviewer sign-off; the operating carrier may not self-waive.",
+        "change_control_rule": "Any material amendment, waiver, suspension, or replacement must be logged and independently reviewed; changed conditions reopen affected MathGov stages.",
+        "residual_responsibility": "The deploying institution retains residual responsibility and may not transfer it to a vendor, contractor, or automated system.",
+        "effectiveness_status": "NOT_TESTED",
+        "obligation_status": "ACTIVE"
+      }
+    ],
+    "human_compensation_load": {
+      "status": "OBSERVED_BOUNDED",
+      "trigger_rationale": "The pilot requires real administrative and care work for exemptions, appeals, accessibility, enforcement correction, consultation, and public explanation; it must not be hidden as frictionless automation.",
+      "carrier_role_classes": [
+        "Exemptions staff",
+        "Appeals staff",
+        "Accessibility and transport-support staff",
+        "Privacy and data staff",
+        "Transit operations staff",
+        "Community engagement staff"
+      ],
+      "hidden_work_and_workflow_gap": "Case handling and remedy work can disappear from efficiency claims while being essential to rights-safe operation.",
+      "burden_and_recovery_indicators": [
+        "Case volume and age",
+        "Appeal resolution time",
+        "Staff overtime and turnover",
+        "Accessibility support wait",
+        "Error-correction backlog",
+        "Community complaint burden"
+      ],
+      "single_person_dependency": "No single official may hold the only complete knowledge or authority for exemptions, appeals, privacy incidents, or shutdown.",
+      "consequence_if_compensation_stops": "People may lose access, incorrect penalties may persist, privacy incidents may remain unresolved, and the controlled option may hollow into a flat charge.",
+      "evidence_sources": [
+        "Protected workload records",
+        "Appeal and exemption logs",
+        "Rosters and backup assignments",
+        "Protected staff and affected-person testimony"
+      ],
+      "privacy_and_non_retaliation_controls": "Confidential staff reporting, protected affected-person data, aggregate publication, independent oversight, and no retaliation for stopping or challenging the pilot.",
+      "preservation_or_redesign_action": "Resource the carrier roles, automate only clerical tasks, preserve human appeal and remedy, cap pilot scale, and suspend expansion when workload or recovery limits fail.",
+      "review_trigger": "Any activation, scaling, staffing reduction, automation change, repeated override, backlog, or material burden/recovery signal."
+    }
+  },
+  "configuration_assurance": {
+    "configuration_id": "CFG-CONGESTION-PILOT-001",
+    "configuration_hash": "8ebde11f039123f1f5341adaad1aed4d3a3489ace8c58d47a1141f2980cdb720",
+    "configuration_summary": "Synthetic twelve-month congestion-pricing pilot with protected-group accommodations, emergency safeguards, transit reinvestment, privacy limits, independent appeal, neighborhood monitoring, public review, and stop/revision authority.",
+    "operating_envelope": "Declared pilot zone and period, specified charge and exemptions, fixed data uses and retention, bounded enforcement, monitored transit and diversion capacity, and explicit stop conditions.",
+    "active_tools_permissions": [
+      "calculate declared charges",
+      "verify approved exemptions",
+      "issue notices and receive appeals",
+      "collect bounded monitoring data"
+    ],
+    "active_controls": [
+      "protected-group accommodations",
+      "emergency access",
+      "independent appeal",
+      "privacy minimization",
+      "transit-reinvestment lock",
+      "monitoring and public reporting",
+      "stop/revision authority"
+    ],
+    "capability_state": "SELECTED",
+    "current_state_status": "VALID",
+    "transition_status": "ADMISSIBLE",
+    "post_state_status": "VIABLE",
+    "future_safe_option_space_effect": "PRESERVES",
+    "qualification_status": "CURRENT",
+    "requalification_triggers": [
+      "exemption or appeal access fails",
+      "traffic displacement materially harms vulnerable neighborhoods",
+      "emergency or disability access is impaired",
+      "camera or billing data use expands",
+      "transit capacity or reinvestment commitments are not carried",
+      "political or legal mandate changes"
+    ],
+    "trigger_events": [],
+    "opaque_dependency_status": "SUPPLEMENTARY_ONLY",
+    "qualified_option_id": "C",
+    "action_instance_id": "ACT-CONGESTION-PILOT-001",
+    "action_specification_hash": "2b1ade00e0782be5a02bf49d9dd89a6628eb4c18e3966d4d895b807afb0fae37",
+    "qualification_snapshot_hash": "f1a0be31dcf4907a6f8a7179ff65556b19f570d1d7c5c1e11b7855a87ca011f3"
+  }
+}

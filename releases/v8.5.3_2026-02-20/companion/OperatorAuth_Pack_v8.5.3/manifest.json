@@ -1,0 +1,26 @@
+{
+  "pack": "OperatorAuth_Pack_v8.5.3",
+  "generated_utc": "2026-02-20T13:48:54.073458Z",
+  "entries": [
+    {
+      "path": "VERIFY.md",
+      "sha256": "c5e0a7757469b608bdb4f12f2072848599710514ca4daa958bd4386736c25b0a"
+    },
+    {
+      "path": "command_example_01.json",
+      "sha256": "00cefbf34041d5d6c1679c9d3fd859e5a5ee6f41aec76843e43d2c9f276718e3"
+    },
+    {
+      "path": "jwks.schema.json",
+      "sha256": "03f12f36146b517a953de84cd2626085a119cd8eb372e76b59b46d76e5dcee0b"
+    },
+    {
+      "path": "jwks_example.json",
+      "sha256": "caf89c82e20ac9789870b7a8a1d2005eb6489494334fefcd8f06730e5cfcb91b"
+    },
+    {
+      "path": "operator_command_envelope.schema.json",
+      "sha256": "0fe2c8b4fb0be044325f51f583ee42942f2120645af9722778bcdc7371b51c5b"
+    }
+  ]
+}

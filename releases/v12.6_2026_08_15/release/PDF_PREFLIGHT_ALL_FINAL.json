@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.1",
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+  "status": "PASS",
+  "documents": 16,
+  "pages": 610,
+  "warning_count": 0,
+  "results": [
+    {
+      "path": "docs/CORE_COMPONENT_MAP.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 2,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/agents/RippleLogic_Agent_System_v12.5.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 69,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/canon/RippleLogic_v12.6_Canon.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 277,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 5,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.4.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 10,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/primer/RippleLogic_Foundations_Primer_v4.4.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 28,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/sgp/SGP_v8.5.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 55,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/CSV_Gate_Standard_v2.4.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 8,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.3.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 8,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.3.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 6,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/RippleLogic_Cascade_Standard_v2.6.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 6,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/Source_Coupling_Integrity_Standard_v2.3.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 5,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/ripple_md_Standard_v5.5.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 66,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 34,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_6.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 16,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    },
+    {
+      "path": "release/MATHGOV_V12_6_CLAUDE_ADVERSARIAL_AUDIT_DISPOSITION_2026_08_11.pdf",
+      "ok_open": true,
+      "encrypted": false,
+      "pages": 15,
+      "likely_scanned": false,
+      "xfa_present": false,
+      "warnings": [],
+      "pdffonts_excerpt": null
+    }
+  ]
+}

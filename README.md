@@ -18,6 +18,7 @@ Exact build: `MG-RL-13.0-20260926-RELEASE-I`
 - **Download the publication:** [Release I and its assets](https://github.com/MathGov/ripple-logic/releases/tag/v13.0-20260926-release-i).
 - **Browse every format:** [PDF reading copies](releases/v13.0-release-i/Reading_PDFs/), [Markdown sources](releases/v13.0-release-i/Sources/), and [editable Word/Excel masters](releases/v13.0-release-i/Core_15/).
 - **Review or reproduce:** [Reviewer and testing guide](releases/v13.0-release-i/Publication/Reviewer_And_Testing_Guide.md), [verification workflow](https://github.com/MathGov/ripple-logic/actions/workflows/verify.yml), and [publication integration notes](PUBLICATION.md).
+- **Install from the ZIP or contribute:** [Installation instructions](INSTALLATION.md), [contribution guide](CONTRIBUTING.md), and [security reporting](SECURITY.md).
 
 ## The decision sequence
 
@@ -52,6 +53,6 @@ Use [CITATION.cff](CITATION.cff) or cite **James McGaughran, MathGov / RippleLog
 
 Report reproducible problems through [GitHub Issues](https://github.com/MathGov/ripple-logic/issues). Include the build, component, relevant passage or example, and expected versus observed behavior. Avoid sharing confidential case data.
 
-Earlier publications remain available in [Releases](https://github.com/MathGov/ripple-logic/releases), including [v12.6](https://github.com/MathGov/ripple-logic/releases/tag/v12.6), and in Git history.
+Earlier publications remain available at their original [repository paths](releases/), in [Releases](https://github.com/MathGov/ripple-logic/releases), including [v12.6](https://github.com/MathGov/ripple-logic/releases/tag/v12.6), and in Git history. These snapshots are historical, not the current specification.
 
 Licensed under [Apache 2.0](LICENSE), subject to the retained [NOTICE](NOTICE) and component/third-party rights statements.

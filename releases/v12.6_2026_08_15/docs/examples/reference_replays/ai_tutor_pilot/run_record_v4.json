@@ -1,0 +1,509 @@
+{
+  "identity": {
+    "run_id": "MG-REF-AI-TUTOR-001",
+    "run_version": "1.0",
+    "parent_run_id": null,
+    "package_release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+    "package_sha256_reference": null,
+    "canon_version": "v12.6",
+    "sgp_version": "NOT_TRIGGERED",
+    "created_utc": "2026-08-14T00:00:00Z",
+    "ripple_md_version": "v5.5",
+    "wdbip_version": "NOT_TRIGGERED"
+  },
+  "decision": {
+    "question": "Should a university run a bounded AI-tutor pilot in one high-enrollment module?",
+    "baseline": "Continue existing teaching and support arrangements without an AI tutor.",
+    "option_ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "no_action_or_delay_option": "A"
+  },
+  "profile_and_stakes": {
+    "tier": 2,
+    "profile": "STANDARD",
+    "stakes": "MEDIUM",
+    "reversibility": "MEDIUM",
+    "public_claim": false,
+    "escalation_triggers": [
+      "student data use expands beyond the declared pilot",
+      "the system influences grading or formal academic records",
+      "model, retrieval source, permissions, vendor terms, or oversight capacity changes",
+      "material accessibility, discrimination, privacy, misinformation, or staff-burden evidence appears"
+    ],
+    "state_transition_profile": "NORMAL"
+  },
+  "evidence_and_claim_boundary": {
+    "reality_surface": "A synthetic one-module university pilot involving enrolled students, teaching staff, approved course materials, one configured AI-tutor service, and university support and governance roles.",
+    "evidence_trace": [
+      {
+        "id": "E1",
+        "description": "Illustrative vendor and configuration documentation for model, retrieval, retention, logging, and permissions",
+        "status": "SECONDARY",
+        "source": null
+      },
+      {
+        "id": "E2",
+        "description": "Illustrative university privacy, accessibility, academic-integrity, and procurement review notes",
+        "status": "EXPERT",
+        "source": null
+      },
+      {
+        "id": "E3",
+        "description": "Illustrative teacher-oversight workload and student-support process estimate",
+        "status": "ASSUMPTION",
+        "source": null
+      },
+      {
+        "id": "E4",
+        "description": "Illustrative bounded test protocol for approved-material retrieval, refusal, logging, and escalation",
+        "status": "MODEL",
+        "source": null
+      }
+    ],
+    "material_unknowns": [
+      "actual learning benefit",
+      "actual hallucination and omission rates",
+      "differential accessibility effects",
+      "student trust and reliance",
+      "teacher oversight burden",
+      "vendor and model drift",
+      "long-run institutional dependency"
+    ],
+    "transition_or_action_boundary": "Select whether to remain with current support, adopt an unrestricted general-purpose tutor, or authorize only a bounded non-grading pilot pending separate execution approval.",
+    "consequence_pathways": [
+      "learning support",
+      "privacy and data exposure",
+      "misinformation",
+      "assessment integrity",
+      "accessibility and discrimination",
+      "student agency and appeal",
+      "teacher workload",
+      "vendor dependency"
+    ],
+    "claim_boundary": "Synthetic Tier 2 reference replay only. It supports no claim that AI tutoring improves learning, is generally safe, or is ready for institutional deployment.",
+    "rg_status": "ASSUMPTION_BOUND",
+    "capability_language_material": true
+  },
+  "parameter_lock": {
+    "locked": true,
+    "locked_utc": "2026-08-14T00:00:00Z",
+    "evidence_cutoff_utc": "2026-08-14T00:00:00Z",
+    "parameters": [
+      {
+        "name": "pilot_duration_weeks",
+        "value": 8,
+        "status": "PARTICIPATORY_CHOICE",
+        "source": "illustrative authority choice fixed before ranking",
+        "used_in_arithmetic": false,
+        "not_material_rationale": null
+      },
+      {
+        "name": "formal_rls_numeric_score",
+        "value": null,
+        "status": "NOT_MATERIAL",
+        "source": "illustrative structured qualitative comparison",
+        "used_in_arithmetic": false,
+        "not_material_rationale": "The packet demonstrates the cascade and authority boundary, not validated cardinal RLS measurement."
+      },
+      {
+        "name": "grading_or_record_change_permission",
+        "value": false,
+        "status": "CONSERVATIVE_BOUND",
+        "source": "pilot control envelope",
+        "used_in_arithmetic": false,
+        "not_material_rationale": null
+      }
+    ],
+    "amendment_policy": "Any material change creates run version 1.1 and reopens all affected stages."
+  },
+  "stakeholders": [
+    {
+      "id": "S1",
+      "description": "Students, including disabled, multilingual, low-connectivity, and otherwise differently situated subgroups",
+      "union_scopes": [
+        "U1",
+        "U2",
+        "U3"
+      ],
+      "subgroup": "Protected and differently affected student subgroups",
+      "sgp_record_id": null
+    },
+    {
+      "id": "S2",
+      "description": "Teaching staff and learning-support staff",
+      "union_scopes": [
+        "U1",
+        "U4"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S3",
+      "description": "University academic, privacy, accessibility, procurement, and appeals functions",
+      "union_scopes": [
+        "U4",
+        "U5"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    },
+    {
+      "id": "S4",
+      "description": "Wider education ecosystem and future learners affected by dependency or precedent",
+      "union_scopes": [
+        "U5",
+        "U6"
+      ],
+      "subgroup": null,
+      "sgp_record_id": null
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "description": "Do not deploy an AI tutor; continue current teaching and support arrangements.",
+      "dependencies": [
+        "current staffing",
+        "existing learning systems"
+      ]
+    },
+    {
+      "id": "B",
+      "description": "Deploy a general-purpose AI tutor with broad data access, open-ended responses, and no dedicated teacher-oversight or appeal controls.",
+      "dependencies": [
+        "general-purpose model",
+        "vendor platform",
+        "broad data and tool permissions"
+      ]
+    },
+    {
+      "id": "C",
+      "description": "Run an eight-week bounded AI-tutor pilot using instructor-approved materials, no grading authority, privacy and accessibility controls, teacher oversight, student notice, opt-out, appeal, logging, and a stop path.",
+      "dependencies": [
+        "pinned model and retrieval corpus",
+        "teacher oversight capacity",
+        "privacy and accessibility controls",
+        "appeal and stop process"
+      ]
+    }
+  ],
+  "gate_results": [
+    {
+      "option_id": "A",
+      "rg": "RG_SUPPORTED",
+      "rf": "RF_PASS",
+      "trc": "TRC_PASS",
+      "csv": "CSV_PASS",
+      "selectable": true,
+      "rationale": "Known baseline remains selectable; status-quo burdens remain explicit in ranking."
+    },
+    {
+      "option_id": "B",
+      "rg": "RG_NARROWED",
+      "rf": "RF_ESCALATE",
+      "trc": "TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+      "csv": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE",
+      "selectable": false,
+      "rationale": "Privacy, accessibility, due-process, academic-fairness, and authority conditions are unresolved; later scoring cannot rescue the option."
+    },
+    {
+      "option_id": "C",
+      "rg": "RG_NARROWED",
+      "rf": "RF_PASS",
+      "trc": "TRC_PASS",
+      "csv": "CSV_PASS_WITH_CONTROLS",
+      "selectable": true,
+      "rationale": "Only the bounded configuration is selectable, conditional on constitutive controls, named duties, and separate execution authorization."
+    }
+  ],
+  "ranking": {
+    "method": "RLS_DECLARED_METHOD",
+    "ranked_option_ids": [
+      "C",
+      "A"
+    ],
+    "decisive": false,
+    "decisiveness_rule": "Illustrative structured comparison only; unknown learning benefit, heterogeneous effects, and oversight burden prevent a deterministic framework-selection claim.",
+    "sensitivity_status": "PARAMETER_SENSITIVE",
+    "summary": "C has the stronger conditional residual-ripple profile if its controls and oversight capacity are real; A remains the fallback and may be preferable under adverse pilot evidence."
+  },
+  "decision_state": {
+    "state": "SELECTED_BY_AUTHORITY_NON_DECISIVE",
+    "selected_option_id": "C",
+    "rationale": "A bounded pilot can reduce uncertainty without granting grading authority or unrestricted deployment.",
+    "authority_selection_rationale": "The named academic authority may choose a reversible evidence-generating pilot after the framework reports non-decisiveness; the selection is not an execution mandate."
+  },
+  "authority_and_execution": {
+    "authority_basis_present": true,
+    "authority_role": "Illustrative faculty academic authority",
+    "mandate_scope": "May select a bounded module pilot subject to university privacy, accessibility, procurement, academic-integrity, and appeals requirements.",
+    "appeal_path": "Students and staff may use the pilot appeal and protected reporting route; unresolved rights or safety concerns pause activation.",
+    "revocation_path": "Academic authority, privacy officer, accessibility lead, or designated safety reviewer may suspend the pilot and return to Option A.",
+    "execution_state": "NOT_AUTHORIZED"
+  },
+  "controls_monitoring_and_reopen": {
+    "controls": [
+      "approved-material retrieval only",
+      "no grading or record-change authority",
+      "student notice and opt-out",
+      "privacy minimization and deletion schedule",
+      "accessibility testing",
+      "teacher review and escalation",
+      "logged version and configuration",
+      "immediate suspension path"
+    ],
+    "monitoring": [
+      "unsupported-answer rate",
+      "appeals and corrections",
+      "differential accessibility outcomes",
+      "privacy incidents",
+      "student reliance indicators",
+      "teacher review workload",
+      "model or retrieval drift"
+    ],
+    "review_date": "2026-08-14",
+    "shutdown_or_pause_path": "Disable the tutor and revert to existing support if a rights, privacy, accessibility, academic-integrity, model-drift, or workload threshold is crossed.",
+    "reopen_triggers": [
+      "student data use expands beyond the declared pilot",
+      "the system influences grading or formal academic records",
+      "model, retrieval source, permissions, vendor terms, or oversight capacity changes",
+      "material accessibility, discrimination, privacy, misinformation, or staff-burden evidence appears"
+    ],
+    "material_change_requires_requalification": true
+  },
+  "audit_and_signoff": {
+    "reviewers": [
+      "Reference-packet compiler"
+    ],
+    "conflicts_disclosed": true,
+    "independent_replay_status": "NOT_RUN",
+    "record_status": "LOCKED",
+    "record_hash": null
+  },
+  "wdbip": {
+    "status": "NOT_TRIGGERED",
+    "record_id": null,
+    "record_hash_or_locator": null,
+    "schema_version": "NOT_TRIGGERED"
+  },
+  "consequence_tempo": {
+    "status": "TEMPO_NOT_MATERIAL",
+    "trigger_rationale": "Illustrative bounded pilot; reopen if propagation speed, automation, irreversibility, emergency conditions, or lock-in becomes material.",
+    "unacceptable_escalation_or_stop_loss_boundary": null,
+    "control_critical_path": null,
+    "runtime_interruption_window_available": null,
+    "ex_ante_assurance_when_no_window": [],
+    "harm_of_delay_comparison": null,
+    "tempo_disposition": "NOT_MATERIAL"
+  },
+  "responsibility_continuity": {
+    "status": "COMPLETE",
+    "decision_authority": "Faculty academic authority",
+    "evidence_accountability": "Pilot evaluation lead",
+    "model_analytical_responsibility": "AI-system technical lead",
+    "operational_responsibility": "Module leader and learning-technology operations lead",
+    "execution_authority": "Separate university deployment authority; not yet issued",
+    "intervention_authority": "Module leader, privacy officer, accessibility lead, and designated safety reviewer",
+    "appeal_owner": "Independent student-appeals owner",
+    "communication_owner": "Module leader",
+    "remedy_owner": "Faculty academic authority with privacy/accessibility functions",
+    "residual_responsibility": "University",
+    "legal_liability_determined_separately": true,
+    "material_obligations": [
+      {
+        "obligation_id": "MO-AIT-PRIVACY-001",
+        "obligation": "Maintain data minimization, retention, access, and deletion controls required for the bounded pilot.",
+        "accountable_authority": "University privacy officer",
+        "operational_carrier_or_execution_path": "Named data steward and approved platform configuration",
+        "authority_and_capacity_basis": "University privacy officer has the declared mandate, resources, stop authority, access to records, and escalation route for this bounded illustrative case.",
+        "activation_trigger": "The selected pilot is approved for activation or a control exception is detected.",
+        "scope": "One module, approved pilot participants, declared data fields, and pilot period",
+        "required_action": "Verify minimization and deletion settings, investigate exceptions, and suspend access when the privacy envelope fails.",
+        "response_deadline_or_window": "Before activation and immediately upon a material exception.",
+        "evidence_of_discharge": "Configuration record, access log, deletion evidence, and incident register.",
+        "review_or_expiry": "Review at each scheduled checkpoint; expires at pilot end or on any material configuration, evidence, authority, or environment change.",
+        "challenge_route": "Student or staff challenge to privacy officer and independent appeal owner.",
+        "delegation_acceptance": "Any delegate must explicitly accept the duty in the controlled role register before carrying it.",
+        "backup_or_successor": "Deputy privacy officer or named data steward.",
+        "nonperformance_trigger": "Missing evidence of discharge, unavailable carrier, unresolved exception, missed response window, or loss of authority/capacity.",
+        "missed_duty_escalation": "Suspend the tutor, preserve evidence, notify affected parties under applicable rules, and reopen RG/RF/CSV.",
+        "amendment_waiver_suspension_retirement_authority": "University privacy officer with independent reviewer sign-off; the operating carrier may not self-waive.",
+        "change_control_rule": "Any material amendment, waiver, suspension, or replacement must be logged and independently reviewed; changed conditions reopen affected MathGov stages.",
+        "residual_responsibility": "The deploying institution retains residual responsibility and may not transfer it to a vendor, contractor, or automated system.",
+        "effectiveness_status": "NOT_TESTED",
+        "obligation_status": "ACTIVE"
+      },
+      {
+        "obligation_id": "MO-AIT-OVERSIGHT-002",
+        "obligation": "Maintain teacher oversight, correction, accessibility, opt-out, and appeal capacity required for CSV_PASS_WITH_CONTROLS.",
+        "accountable_authority": "Faculty academic authority",
+        "operational_carrier_or_execution_path": "Named module leader, learning-support team, accessibility contact, and appeal route",
+        "authority_and_capacity_basis": "Faculty academic authority has the declared mandate, resources, stop authority, access to records, and escalation route for this bounded illustrative case.",
+        "activation_trigger": "The selected pilot is approved for activation or a control exception is detected.",
+        "scope": "The bounded pilot and its declared operating hours and course content",
+        "required_action": "Review flagged outputs, correct material errors, protect alternatives, resolve appeals, monitor workload, and stop the pilot when controls cannot be carried.",
+        "response_deadline_or_window": "Before activation and immediately upon a material exception.",
+        "evidence_of_discharge": "Review log, correction log, appeal record, accessibility test record, workload trace, and stop decision when triggered.",
+        "review_or_expiry": "Review at each scheduled checkpoint; expires at pilot end or on any material configuration, evidence, authority, or environment change.",
+        "challenge_route": "Protected student/staff report to independent academic appeal owner.",
+        "delegation_acceptance": "Any delegate must explicitly accept the duty in the controlled role register before carrying it.",
+        "backup_or_successor": "Deputy module leader and central learning-support team.",
+        "nonperformance_trigger": "Missing evidence of discharge, unavailable carrier, unresolved exception, missed response window, or loss of authority/capacity.",
+        "missed_duty_escalation": "Pause the pilot and return to existing support until adequate oversight and accessibility capacity is restored.",
+        "amendment_waiver_suspension_retirement_authority": "Faculty academic authority with independent reviewer sign-off; the operating carrier may not self-waive.",
+        "change_control_rule": "Any material amendment, waiver, suspension, or replacement must be logged and independently reviewed; changed conditions reopen affected MathGov stages.",
+        "residual_responsibility": "The deploying institution retains residual responsibility and may not transfer it to a vendor, contractor, or automated system.",
+        "effectiveness_status": "NOT_TESTED",
+        "obligation_status": "ACTIVE"
+      }
+    ],
+    "human_compensation_load": {
+      "status": "DEPENDENCY_REQUIRES_CONTROLS",
+      "trigger_rationale": "The bounded system may appear capable partly because teachers and support staff review, correct, explain, and absorb exceptions.",
+      "carrier_role_classes": [
+        "Module teachers",
+        "Learning-support staff",
+        "Accessibility staff",
+        "Student-support and appeals staff"
+      ],
+      "hidden_work_and_workflow_gap": "Review, correction, student reassurance, accessibility adjustment, and exception handling may be omitted from headline efficiency claims.",
+      "burden_and_recovery_indicators": [
+        "Review time per active student",
+        "After-hours correction work",
+        "Appeal queue",
+        "Accessibility adaptation time",
+        "Repeated manual overrides"
+      ],
+      "single_person_dependency": "Pilot must not depend on one teacher holding the only complete exception knowledge.",
+      "consequence_if_compensation_stops": "Unsupported answers, unresolved appeals, inaccessible support, or academic-integrity failures may continue while the system appears operational.",
+      "evidence_sources": [
+        "Protected staff workload log",
+        "Appeal and correction records",
+        "Roster and backup coverage",
+        "Protected interviews"
+      ],
+      "privacy_and_non_retaliation_controls": "Aggregate workload reporting, confidential reporting, no retaliation for stopping or challenging the pilot, and student privacy protection.",
+      "preservation_or_redesign_action": "Resource the oversight work, preserve protected reporting and backup roles, cap pilot scale, and pause expansion when burden or recovery thresholds fail.",
+      "review_trigger": "Any proposed activation, scaling, reduction in oversight staffing, repeated manual override, or material workload/recovery signal."
+    }
+  },
+  "configuration_assurance": {
+    "configuration_id": "CFG-AI-TUTOR-PILOT-001",
+    "configuration_hash": "e811a43a77ee302bad37b60e55fe53472b1bb04d1ec5f65ee0520e150133d9aa",
+    "configuration_summary": "Synthetic bounded AI-tutor pilot: pinned model, instructor-approved retrieval corpus, no grading authority, limited data, logged responses, teacher oversight, student opt-out and appeal, accessibility controls, and stop authority.",
+    "operating_envelope": "One module, eight weeks, approved materials, declared students and staff, no grading or formal-record changes, no autonomous external tool use.",
+    "active_tools_permissions": [
+      "read instructor-approved course corpus",
+      "generate explanations and practice prompts",
+      "write audit logs"
+    ],
+    "active_controls": [
+      "no grading or record change",
+      "privacy minimization",
+      "teacher review",
+      "student opt-out and appeal",
+      "accessibility testing",
+      "version/configuration lock",
+      "suspension control"
+    ],
+    "capability_state": "SELECTED",
+    "current_state_status": "VALID",
+    "transition_status": "ADMISSIBLE",
+    "post_state_status": "VIABLE",
+    "future_safe_option_space_effect": "PRESERVES",
+    "qualification_status": "CURRENT",
+    "requalification_triggers": [
+      "student data use expands beyond the declared pilot",
+      "the system influences grading or formal academic records",
+      "model, retrieval source, permissions, vendor terms, or oversight capacity changes",
+      "material accessibility, discrimination, privacy, misinformation, or staff-burden evidence appears"
+    ],
+    "trigger_events": [],
+    "opaque_dependency_status": "SUPPLEMENTARY_ONLY",
+    "qualified_option_id": "C",
+    "action_instance_id": "ACT-AI-TUTOR-PILOT-001",
+    "action_specification_hash": "1e708fb7c3b6ffd93960996c65c8fa47026a9df8fbc35e9cd509516984adb3f9",
+    "qualification_snapshot_hash": "f8874421f6985800fec637c840092936219f2404a411d4951cb62ca90eb2d68b"
+  },
+  "capability_authority_decomposition_records": [
+    {
+      "record_id": "CAD-AI-TUTOR-001",
+      "subject_system_or_configuration_id": "CFG-AI-TUTOR-PILOT-001",
+      "triggering_terms": [
+        "AI tutor",
+        "adaptive educational assistance"
+      ],
+      "candidate_generation_method": "A probabilistic language model generates candidate explanations and practice prompts from the approved course context.",
+      "reference_source": "Instructor-approved course materials, named learning objectives, and the current student request.",
+      "constraint_sources": [
+        "No grading or formal-record changes",
+        "Approved retrieval corpus",
+        "Privacy and accessibility controls",
+        "Teacher oversight and stop authority",
+        "Pilot scope and time limit"
+      ],
+      "objective_source": "Faculty academic authority and module learning objectives.",
+      "objective_change_authority": "Faculty academic authority through logged change control and requalification.",
+      "admissibility_warrant_sources": [
+        "Bounded configuration tests",
+        "Privacy and accessibility review",
+        "Teacher oversight and appeal design",
+        "Run-record qualification"
+      ],
+      "execution_interface": "Student-facing tutor interface with audit logging; no external consequential tools.",
+      "execution_scope": "Generate bounded learning-support outputs inside one module; no grading, enrollment, discipline, formal records, or external actions.",
+      "execution_authority_source": "No execution mandate is issued by this packet; activation requires a separate university deployment authorization.",
+      "revocation_authority": "Module leader, privacy officer, accessibility lead, faculty authority, or designated safety reviewer.",
+      "safe_state_or_shutdown_path": "Disable the tutor and revert to existing human support while preserving logs and appeal access.",
+      "requalification_trigger": "Model, retrieval corpus, permissions, data use, authority, oversight capacity, user population, or operating envelope changes.",
+      "reviewer_status": "HUMAN_REVIEWED",
+      "required_claim_action": "control",
+      "operational_definition": "Within the declared configuration, the system can generate context-sensitive explanations and practice prompts from instructor-approved material, subject to teacher oversight, refusal, logging, and a stop path.",
+      "observable_criteria": [
+        "uses only the approved corpus and declared interface",
+        "does not grade or alter formal records",
+        "produces logged outputs available for review",
+        "routes challenges and material uncertainty to a human",
+        "stops when a binding control or scope condition fails"
+      ],
+      "mechanism_or_system_composition": "Probabilistic language model, retrieval over an approved corpus, policy and permission controls, audit logging, student interface, teacher review, accessibility support, appeals, and institutional authority.",
+      "evidence_surface": [
+        "Configuration inspection",
+        "Bounded scripted tests",
+        "Replayable output and refusal traces",
+        "Human review of pilot design"
+      ],
+      "validity_conditions": [
+        "Pinned model and retrieval corpus",
+        "Declared one-module pilot",
+        "Active privacy, accessibility, oversight, appeal, and stop controls",
+        "No grading or formal-record authority"
+      ],
+      "alternative_explanations": [
+        "Template retrieval rather than general tutoring capability",
+        "Hidden teacher correction producing apparent quality",
+        "Benchmark or scripted-test overfitting",
+        "Student self-selection"
+      ],
+      "falsification_or_revision_trigger": "Material scope violation, failure to use approved sources, inability to refuse or escalate, inaccessible output, unbounded oversight burden, or any configuration/domain change.",
+      "evidence_maturity_stage": "IMPLEMENTATION_CONFORMANCE",
+      "permitted_claim": "The selected configuration is designed as a bounded AI-assisted learning-support pilot under human oversight; it has not been authorized or shown to improve learning.",
+      "explicit_nonclaims": [
+        "consciousness",
+        "personhood",
+        "intrinsic goals",
+        "moral agency",
+        "general intelligence",
+        "general educational effectiveness",
+        "autonomous academic authority",
+        "grading authority",
+        "institutional deployment readiness",
+        "physical or psychological safety beyond the stated evidence"
+      ]
+    }
+  ]
+}

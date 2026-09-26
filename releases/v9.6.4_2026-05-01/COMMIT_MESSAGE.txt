@@ -1,0 +1,3 @@
+Add RippleLogic v9.6.4 core canon and pilot localization pack
+
+Adds the v9.6.4 release tree with canonical core artifacts, synchronized companion set, pilot localization materials for Nepal/Vietnam/New Zealand, release manifests, checksums, and release-manager documentation.

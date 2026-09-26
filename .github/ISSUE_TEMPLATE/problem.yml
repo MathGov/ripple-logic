@@ -1,0 +1,25 @@
+name: Report a reproducible problem
+description: A specification, calculation, citation, workbook, or publication issue.
+body:
+  - type: markdown
+    attributes:
+      value: For security vulnerabilities, use private vulnerability reporting. Do not include confidential case data.
+  - type: input
+    id: version
+    attributes:
+      label: Build and component
+      placeholder: MG-RL-13.0-20260926-RELEASE-I / Canon / section
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and reproduction
+      description: Include the relevant passage, steps or example, expected behavior, observed behavior, and environment when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction or open question
+      description: Distinguish demonstrated findings from interpretation.

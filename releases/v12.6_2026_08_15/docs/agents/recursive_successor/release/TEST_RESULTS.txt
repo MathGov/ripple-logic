@@ -1,0 +1,11 @@
+PASS fail_authorized_with_expired_evaluation.json authorized candidate requires current candidate evaluation
+PASS fail_expand_during_adaptation_gap.json assurance gap blocks authority expansion
+PASS fail_generation_depth.json generation depth exceeds declared bound
+PASS fail_inherited_authority.json False was expected
+PASS fail_qualified_without_authorization.json qualified candidate requires candidate-bound authorization
+PASS fail_same_configuration_hash.json parent and candidate identities must differ
+PASS fail_self_review.json creator or parent may not self-review material successor
+PASS fail_unlocked_unqualified.json unlocked candidate requires fresh qualification; authorized candidate requires current candidate evaluation
+PASS pass_candidate_authorized.json valid
+PASS pass_candidate_locked.json valid
+SUCCESSOR PROFILE VALIDATION: PASS 10/10 vectors

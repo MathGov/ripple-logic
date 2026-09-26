@@ -1,0 +1,33 @@
+{
+  "RippleLogic_v10.6_Canon_FINAL_RELEASE_READY.md": {
+    "7×7": true,
+    "NCRC → TRC → Containment → RLS": true,
+    "−0.71": true,
+    "−0.69": true,
+    "θ_BODY": true,
+    "max(0, −I_prop_base,c": true,
+    "Rockström": true,
+    "Barabási": true,
+    "Üstün": true,
+    "Sörlin": true,
+    "Mané": true
+  },
+  "SGP_v5.3_FINAL_RELEASE_READY.md": {
+    "SG_norm": true,
+    "SG_patient_norm": true,
+    "SG_norm interval notation, raw or Markdown-escaped": true,
+    "Human Plateau": true
+  },
+  "ripple_md_Standard_v3.4_FINAL_RELEASE_READY.md": {
+    "Wrapped audit-packaging flow": true,
+    "NCRC → TRC → Containment → RLS → UCI/HOI": true
+  },
+  "RippleLogic_Agent_System_v10.6_FINAL_RELEASE_READY.md": {
+    "current package-version example set to 10.6": true,
+    "G.3 Historical Version Table": true
+  },
+  "RippleLogic_Foundations_Primer_v2.4_FINAL_RELEASE_READY.md": {
+    "Architecture-final is not ProofPack-final": true,
+    "Canon and companion specifications remain the source of normative force": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3",
+  "build": "2026.08.15.3",
+  "semantic_versions_changed": false,
+  "changes": [
+    {
+      "id": "C-01",
+      "type": "release synchronization",
+      "description": "Closed Computational Context Preflight / consequence-interface / no-sixth-gate release-report verifier contract."
+    },
+    {
+      "id": "C-02",
+      "type": "publication correction",
+      "description": "Removed accidental literal double-backticks from Canon worked-run text."
+    },
+    {
+      "id": "C-03",
+      "type": "publication correction",
+      "description": "Removed accidental literal double-backticks from RLS Validation Protocol."
+    },
+    {
+      "id": "C-07",
+      "type": "QA hardening",
+      "description": "Added narrow publication-markup leakage regression check."
+    },
+    {
+      "id": "C-09",
+      "type": "release engineering",
+      "description": "Added non-normative public deployment checklist to prevent version-identity drift."
+    }
+  ],
+  "no_change": [
+    "cascade",
+    "rights set/thresholds",
+    "TRC mathematics",
+    "CSV semantics",
+    "RLS equations/decisiveness",
+    "SGP typed outputs",
+    "Agent successor controls",
+    "Union Scopes",
+    "Welfare Dimensions"
+  ],
+  "build_id": "2026.08.15.3",
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS"
+}

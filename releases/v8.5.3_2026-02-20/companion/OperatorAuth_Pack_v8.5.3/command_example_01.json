@@ -1,0 +1,24 @@
+{
+  "payload": {
+    "meta": {
+      "schema_version": "OACP-1.0",
+      "jcs": "RFC8785",
+      "sig_alg": "Ed25519",
+      "kid": "oacp_example_kid_01",
+      "nonce": "2026-02-20T00:00:00Z:0001",
+      "issued_utc": "2026-02-20T00:00:00Z",
+      "expires_utc": "2026-03-20T00:00:00Z",
+      "framework_pin": "Ripple_Logic v8.5.3",
+      "agent_system_pin": "RippleLogic_Agent_System_v8.5.3"
+    },
+    "command": {
+      "action": "SET_MODE",
+      "params": {
+        "mode": "OBSERVE"
+      },
+      "reason": "Example operator command vector (OACP-1.0).",
+      "request_id": "EXAMPLE-REQ-0001"
+    }
+  },
+  "sig": "0o84wGYshw8m-Q4kU6vRBnAZ0m4_OjEq7VSx4SoL3LEtd58h8yV1PFa7P3VO-KUCc6a6yQ5bnHjL1KW-axwsCg"
+}

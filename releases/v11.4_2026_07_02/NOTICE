@@ -1,0 +1,11 @@
+MathGov Core Release 2026.09
+
+Copyright (c) James McGaughran.
+
+This public release includes AI-assisted drafting, synthesis, formatting, and review support. Final responsibility for claims, release boundaries, and public publication remains with the human author.
+
+MathGov is the umbrella framework. RippleLogic is the decision architecture inside MathGov. SGP is a companion specification for moral-status and protection-surface evidence.
+
+This release is distributed under the Apache License 2.0 unless otherwise stated. Users should preserve attribution and should not imply MathGov certification, legal authorization, deployment approval, empirical validation, ProofPack status, or Tier 4 status without a separate evidence package.
+
+Related external work notice: MathGov cites Strüver, Alexander Wolfgang. (2026). Source Amnesia: How Civilizations Lose Their Understanding of Generative Structures. Science of Stability. CC BY-NC-ND 4.0, as related external scholarship only. The paper is not bundled, reproduced, adapted, relicensed, or incorporated into this Apache-licensed release. MathGov uses the independent term Source-Coupling Integrity for its native diagnostic.

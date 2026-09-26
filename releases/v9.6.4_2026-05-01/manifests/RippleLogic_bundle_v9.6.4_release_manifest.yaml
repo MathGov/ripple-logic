@@ -1,0 +1,29 @@
+release: RippleLogic v9.6.4
+release_folder: releases/v9.6.4_2026-05-01
+manifest_path_policy: repository-relative paths for the tagged release tree
+canonical_sgp_filename: SGP_v4.7.1.docx
+claim_boundary:
+  tier_1_3: claimable subject to canon and run-level artifact requirements
+  tier_4: not claimable
+  pilot_localization: pilot-grade planning material only, not legal approval
+artifacts:
+- path: core/RippleLogic_Agent_System_v9.2.docx
+  role: core_canonical_artifact
+  canonical: true
+  sha256: 5ae1dde19bd84be732dc61df727c5594e36462bda9e4edde35d1a9943e15f620
+- path: core/RippleLogic_Aligners_Sheet_v2.5.xlsx
+  role: core_canonical_artifact
+  canonical: true
+  sha256: e331258f4287c0e596d25ad34b65eefbab365797a0bd0c0225c17518c3c251ba
+- path: core/RippleLogic_v9.6.4_Canon.docx
+  role: core_canonical_artifact
+  canonical: true
+  sha256: 29453d2c21c2e233a789d5c3763bd3aede274af035dfbc35a02b61859f6b16ec
+- path: core/SGP_v4.7.1.docx
+  role: core_canonical_artifact
+  canonical: true
+  sha256: 4f93044309da5e8e982820d280e88a9661c81f8efdc19b356450736ad942a82e
+- path: core/ripple_md_Standard_v2.2.docx
+  role: core_canonical_artifact
+  canonical: true
+  sha256: 12fb2f3cc9153839c9bdd225818b10b21279ba6dcc9208768b492ccfff35d1e7

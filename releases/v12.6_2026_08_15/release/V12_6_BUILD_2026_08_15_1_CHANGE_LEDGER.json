@@ -1,0 +1,51 @@
+{
+  "release_id": "MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.1",
+  "build_id": "2026.08.15.1",
+  "build_date": "2026-08-15",
+  "semantic_versions_changed": false,
+  "governing_cascade": "RG -> RF/NCRC -> TRC -> CSV -> RLS",
+  "purpose": "Final independent-audit release-integrity closure and freeze build.",
+  "changes": [
+    {
+      "class": "build-correction",
+      "surface": "SGP v8.5 abstract",
+      "change": "Corrected status language to distinguish normative MPS/FPP/GPR/SPR typed outputs from informative ICP/RMCP while preserving that SGP is not a cascade admissibility gate and grants no authority."
+    },
+    {
+      "class": "build-correction",
+      "surface": "Aligners Sheet v5.6",
+      "change": "Corrected false live/formula-source labels on build-frozen calculation surfaces and repaired matching version-pin checks that were incorrectly marked FAIL; no numerical result or decision logic changed."
+    },
+    {
+      "class": "build-correction",
+      "surface": "Public Introduction v12.6",
+      "change": "Removed trailing backtick build artifact."
+    },
+    {
+      "class": "editorial-precision",
+      "surface": "Canon v12.6 phantom calibration rationale",
+      "change": "Clarified that the -0.02 to -0.03 illustrative cumulative range corresponds roughly to five to seven phantom-active cells under uniform 49-cell weights; no parameter or rule changed."
+    },
+    {
+      "class": "release-engineering",
+      "surface": "exact-build package",
+      "change": "Regenerated synchronized publication mirrors, manifests, hashes, and verification evidence for the final freeze-ready build."
+    },
+    {
+      "class": "build-correction",
+      "surface": "Aligners Sheet v5.6 machine-record reference",
+      "change": "Updated the worked-run reproducibility surface from the superseded run-record schema v3 reference to the current mathgov_run_record_v4.schema.json; no formula or decision logic changed."
+    },
+    {
+      "class": "exact-build-compatibility",
+      "surface": "Agent System v12.5 recursive-successor subpackage",
+      "change": "Re-reviewed the unchanged successor-integrity profile against exact Core build +2026.08.15.1, reran all 10 conformance vectors, repinned the tested Core identity, and corrected the governing Agent PDF page count to 69."
+    }
+  ],
+  "rejected_as_not_required": [
+    "No new gate, welfare dimension, right, threshold, ontology, or scoring equation.",
+    "No change to CVaR, RLS, decisiveness, rights coverage, TRC corridors, or successor controls.",
+    "No dedicated D6/D7 machine flag added: protected-interest routing remains a human-evidentiary determination; adding a token without a structured machine-detectable premise would overstate automation coverage."
+  ],
+  "claim_boundary": "This build establishes internal artifact, interface, schema, formula, and procedural conformance only; it does not establish empirical validity, legal authority, physical safety, deployment assurance, or framework superiority."
+}
