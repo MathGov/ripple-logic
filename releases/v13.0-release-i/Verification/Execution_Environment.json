@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-09-19T09:01:22.299549+00:00",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "versions": {
+    "lxml": "6.1.1",
+    "PyMuPDF": "1.26.7",
+    "jsonschema": "4.26.0",
+    "artifact_tool": "not available through distribution metadata"
+  },
+  "word_renderer": "/home/oai/skills/docx/render_docx.py; LibreOffice Writer PDF conversion, not Calc",
+  "spreadsheet": "artifact_tool export rejected; custom scoped full corpus replay verified separately",
+  "native_spreadsheet_parity": "NOT EXECUTED"
+}

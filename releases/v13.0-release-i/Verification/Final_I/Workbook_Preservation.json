@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "baseline_sha256": "fa77dbec19a09e6ebe7b3ba959d0b53f6f8c956c4a8259db3830eb204f097059",
+  "current_sha256": "49d9d8fbeb762cb6cddb3ebab402ded25529639f222b665059db297f33b5282c",
+  "literal_changes": 33,
+  "print_area_scope_changes": 2,
+  "sheets": 95,
+  "formula_cells": 20212,
+  "numerical_fingerprint": "26c17542a44107bb80b4d24bec26c8ad59a55e76be4e05d173a449b155a9ebfb",
+  "all_formulas_and_cached_results_identical": true,
+  "all_sheet_structure_and_styles_identical": true,
+  "method": "Artifact-tool cell edits were exported to staging and their verified changed literals transplanted into the original OOXML container. Only those existing cells and two defined-name scope indices changed; unrelated engine reserialization was not adopted."
+}

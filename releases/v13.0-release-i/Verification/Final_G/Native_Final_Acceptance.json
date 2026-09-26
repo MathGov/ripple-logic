@@ -1,0 +1,371 @@
+{
+  "status": "PASS",
+  "engine": "LibreOffice 25.2.3.2 520(Build:2)",
+  "execution": "UNO calculateAll; each mutation restored before next case; separate saved test copy",
+  "source_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b",
+  "tests": [
+    {
+      "test": "Unmodified hard recalculation: no false staleness",
+      "status": "PASS",
+      "observed": {
+        "value": 0.0,
+        "text": "0",
+        "error": 0
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B38",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1805": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!D38",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1806": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B39",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1807": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!D39",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1808": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B40",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1809": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B41",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1810": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B107",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1811": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B108",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1812": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B109",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1813": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Sanity_Checklist!B111",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1814": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: Parameters!B42",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1815": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Formula replaced by equal literal: NCRC!A5",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1816": {
+          "value": 1.0,
+          "text": "1",
+          "error": 0
+        },
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "valid impact edit",
+      "status": "PASS",
+      "observed": {
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        },
+        "Impact_Input!V7": {
+          "value": 0.09239001586279225,
+          "text": "0.0923900158627923",
+          "error": 0
+        },
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: STALE / REBUILD",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "missing impact",
+      "status": "PASS",
+      "observed": {
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        },
+        "Impact_Input!V7": {
+          "value": 0.0,
+          "text": "UNKNOWN_INPUT",
+          "error": 0
+        },
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: STALE / REBUILD",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "text impact",
+      "status": "PASS",
+      "observed": {
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        },
+        "Impact_Input!V7": {
+          "value": 0.0,
+          "text": "INVALID_INPUT",
+          "error": 0
+        },
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: STALE / REBUILD",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "out-of-range impact",
+      "status": "PASS",
+      "observed": {
+        "Build_Integrity!C14": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        },
+        "Impact_Input!V7": {
+          "value": 0.0,
+          "text": "INVALID_INPUT",
+          "error": 0
+        },
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: STALE / REBUILD",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "unknown integrity",
+      "status": "PASS",
+      "observed": {
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: INTEGRITY UNVERIFIED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "invalid integrity",
+      "status": "PASS",
+      "observed": {
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: INTEGRITY UNVERIFIED",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Checklist unknown class is not reconciled",
+      "status": "PASS",
+      "observed": {
+        "Sanity_Checklist!B41": {
+          "value": 0.0,
+          "text": "REVIEW RECORDS",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Added adverse subgroup record signals stale frozen rights",
+      "status": "PASS",
+      "observed": {
+        "NCRC!A5": {
+          "value": 0.0,
+          "text": "FROZEN RIGHTS TABLE: STALE / REBUILD",
+          "error": 0
+        },
+        "NCRC!B18": {
+          "value": 0.0,
+          "text": "STALE - REBUILD REQUIRED",
+          "error": 0
+        },
+        "Build_Integrity!B28": {
+          "value": 7.0,
+          "text": "7",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Different formula retains presence (honest guard boundary)",
+      "status": "PASS",
+      "observed": {
+        "Workbook_Formula_Guard!D1805": {
+          "value": 0.0,
+          "text": "0",
+          "error": 0
+        }
+      }
+    },
+    {
+      "test": "Restored workbook has no false staleness",
+      "status": "PASS",
+      "observed": {
+        "value": 0.0,
+        "text": "0",
+        "error": 0
+      }
+    }
+  ],
+  "passed": 23,
+  "total": 23,
+  "test_copy": "/mnt/data/_final_g_work/native_current/native/native_final/RippleLogic_Aligners_Sheet_v5.9.xlsx",
+  "boundary": "Native-engine regression checks for these bytes and scenarios, not Microsoft Excel parity, a general editable selector, empirical validation or deployment certification."
+}

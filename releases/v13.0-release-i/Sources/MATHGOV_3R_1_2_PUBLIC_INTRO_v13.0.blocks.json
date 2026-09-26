@@ -1,0 +1,3025 @@
+[
+  {
+    "kind": "paragraph",
+    "id": "p-1",
+    "style": "Heading1",
+    "level": 1,
+    "text": "MathGov 3R / 1-2 Two-Phase Public Introduction",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-2",
+              "style": "Compact",
+              "level": 0,
+              "text": "Integrity surface",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-3",
+              "style": "Compact",
+              "level": 0,
+              "text": "Current requirement",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-4",
+              "style": "Compact",
+              "level": 0,
+              "text": "Claim boundary",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-5",
+              "style": "Compact",
+              "level": 0,
+              "text": "3R",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-6",
+              "style": "Compact",
+              "level": 0,
+              "text": "Reality. Rights. Ripples.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-7",
+              "style": "Compact",
+              "level": 0,
+              "text": "A public doorway, not the complete technical specification.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-8",
+              "style": "Compact",
+              "level": 0,
+              "text": "1-2",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-9",
+              "style": "Compact",
+              "level": 0,
+              "text": "Qualify through RG, RF/NCRC, TRC, and CSV; then rank selectable options through RLS.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-10",
+              "style": "Compact",
+              "level": 0,
+              "text": "Ranking cannot rescue prior failure.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-11",
+              "style": "Compact",
+              "level": 0,
+              "text": "Eligible shorthand",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-12",
+              "style": "Compact",
+              "level": 0,
+              "text": "Eligible(a) is teaching shorthand for survival of the declared qualification sequence.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-13",
+              "style": "Compact",
+              "level": 0,
+              "text": "It is not a sixth gate, new authority predicate, or execution licence.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-14",
+    "style": "Heading2",
+    "level": 2,
+    "text": "A simple new rule: bind claims to the real configuration",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-15",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Do not say only, “the system is safe” or “the system can do this.” Ask:",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-16",
+    "style": "Compact",
+    "level": 0,
+    "text": "Which version, tools, permissions, controls, environment, and authority were tested?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-17",
+    "style": "Compact",
+    "level": 0,
+    "text": "Is the action merely possible, or is it also qualified and authorized?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-18",
+    "style": "Compact",
+    "level": 0,
+    "text": "Is the current state valid, is the transition admissible, and is the resulting state viable?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-19",
+    "style": "Compact",
+    "level": 0,
+    "text": "What change would make the earlier approval expire?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-20",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "MathGov therefore keeps alignment alive through requalification. When the material configuration or evidence changes, the affected checks run again.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-21",
+    "style": "Heading2",
+    "level": 2,
+    "text": "AI systems: two connected governance questions",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-22",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "An AI system may occupy an instrumental tool-role while exhibiting substantial functional intelligence or operational agency. Tool-role tells us how a system is used; it does not establish what the system can do, whether it experiences anything, how it should be protected, or what legitimate authority it may hold.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-23",
+    "style": "BodyText",
+    "level": 0,
+    "text": "MathGov treats AI through two connected tracks inside the existing five-level method. Capability–Consequence Governance asks what the exact configuration can do and cause, and what evidence, controls, permissions, accountability, and authority are required. Possible-Welfare Governance asks how the system should be treated if welfare-bearing states become credible or cannot safely be excluded. Capability is not sentience; possible sentience is not competence or authority; neither track creates a new gate.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-24",
+    "style": "BlockText",
+    "level": 0,
+    "text": "This is the public doorway, not the full specification. Use it to understand the rhythm; use the Canon for conformance. Informative, non-normative public teaching companion. Canon controls if any conflict occurs.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-25",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Use the smallest profile that is safe",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-26",
+    "style": "Compact",
+    "level": 0,
+    "text": "Quick / Tier 1: a short record for low-stakes, reversible choices. A qualitative ruin-trigger screen is required; a material trigger requires escalation and governed TRC assessment.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-27",
+    "style": "Compact",
+    "level": 0,
+    "text": "Standard / Tier 2: evidence, parameters, gates, controls, and uncertainty for material organizational or community choices.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-28",
+    "style": "Compact",
+    "level": 0,
+    "text": "Audit / Tier 3: a full reproducible record, hashes, independent review, and replay for high-stakes or public decisions.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-29",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "The controlling reading specification is Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx. The framework stays the same at every level. Only the documentation burden changes. A user must escalate when rights, ruin, vulnerable groups, physical execution, consequential AI authority, or public validation claims become material.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-30",
+    "style": "Heading2",
+    "level": 2,
+    "text": "The shortest version",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-31",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Reality. Rights. Ripples.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-32",
+    "style": "BodyText",
+    "level": 0,
+    "text": "1. Qualify. Reality. Rights. Ruin. Viability.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-33",
+    "style": "BodyText",
+    "level": 0,
+    "text": "2. Rank. Ripple-score the viable options.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-34",
+    "style": "BodyText",
+    "level": 0,
+    "text": "That is the operating rhythm.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-35",
+    "style": "BodyText",
+    "level": 0,
+    "text": "First make sure the option belongs in the ring. Then find the one that produces the strongest conditional residual ripple among selectable options, if decisive.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-36",
+    "style": "Heading2",
+    "level": 2,
+    "text": "The full formal cascade",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-37",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "RG -> RF -> TRC -> CSV -> RLS",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-38",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Reality Grounding -> Rights Floor -> Tail-Risk Constraint -> Containment and Structural Viability -> RippleLogic Scoring",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-39",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Teaching note: this doorway compresses the architecture into three pillars and two phases. The formal architecture has five levels: one grounding precondition, three qualification gates, and one ranking layer.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-40",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Why this matters",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-41",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "MathGov does not begin by scoring every imagined option. It first asks which options have enough reality, rights protection, ruin control, and viability to enter the decision field. Only then does RippleLogic score the survivors.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-42",
+    "style": "BodyText",
+    "level": 0,
+    "text": "The MathGov answer is: ground the claim, protect the right, bound the ruin, verify the system, make exit and correction real, and rank only what survives qualification.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-43",
+    "style": "Heading2",
+    "level": 2,
+    "text": "The three pillars",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-44",
+              "style": "Compact",
+              "level": 0,
+              "text": "Pillar",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-45",
+              "style": "Compact",
+              "level": 0,
+              "text": "Plain meaning",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-46",
+              "style": "Compact",
+              "level": 0,
+              "text": "Formal location",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-47",
+              "style": "Compact",
+              "level": 0,
+              "text": "Reality",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-48",
+              "style": "Compact",
+              "level": 0,
+              "text": "Do we have contact with what is real, possible, grounded, testable, bounded, auditable, correctable, and viable?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-49",
+              "style": "Compact",
+              "level": 0,
+              "text": "RG opens reality contact. CSV tests operational reality and structural viability. PC-AEP is used when physical or causal execution claims matter.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-50",
+              "style": "Compact",
+              "level": 0,
+              "text": "Rights",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-51",
+              "style": "Compact",
+              "level": 0,
+              "text": "Are protected beings, dignity, consent, thresholds, and non-collapse safeguards protected?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-52",
+              "style": "Compact",
+              "level": 0,
+              "text": "RF/NCRC protects rights directly. TRC protects against ruin pathways that can destroy the conditions for rights and flourishing.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-53",
+              "style": "Compact",
+              "level": 0,
+              "text": "Ripples",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-54",
+              "style": "Compact",
+              "level": 0,
+              "text": "Among the options that survive qualification, which creates the best net flourishing?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-55",
+              "style": "Compact",
+              "level": 0,
+              "text": "RLS ranks only the survivors across affected unions and welfare dimensions.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-56",
+    "style": "Heading2",
+    "level": 2,
+    "text": "rights and ruin hardening",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-57",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Rights hardening: RF/NCRC does not discount a categorical or severe rights violation merely because it is brief or evidence confidence is low. Rights severity, categorical prohibitions, and severe-hazard exposure are checked separately from ordinary welfare timing.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-58",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Tail Emergency Mode: if every rights-safe option exceeds the ruin corridor, the default is redesign, delay, escalation, no-action review, or refusal. A temporary least-CVaR path is allowed only under a governed emergency declaration, absolute exposure cap, independent challenge, time bounds, controls, and exit criteria. It is not ordinary selection, and RLS is not used to rescue it.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-59",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Phase 1: Qualify the options",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-60",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Phase 1 asks: which options are even eligible to be ranked?",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-61",
+              "style": "Compact",
+              "level": 0,
+              "text": "Gate",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-62",
+              "style": "Compact",
+              "level": 0,
+              "text": "Question",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-63",
+              "style": "Compact",
+              "level": 0,
+              "text": "If the answer fails",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-64",
+              "style": "Compact",
+              "level": 0,
+              "text": "RG - Reality Grounding",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-65",
+              "style": "Compact",
+              "level": 0,
+              "text": "Is the option grounded in evidence, real constraints, affected unions, and a clear claim boundary? Can high-consequence claims be tested or warranted, bounded, audited, corrected, and refused?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-66",
+              "style": "Compact",
+              "level": 0,
+              "text": "Do not score fantasy. Narrow, investigate, mark exploratory, escalate, or refuse the stronger claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-67",
+              "style": "Compact",
+              "level": 0,
+              "text": "RF - Rights Floor",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-68",
+              "style": "Compact",
+              "level": 0,
+              "text": "Does the option protect rights, dignity, consent, and non-negotiable safeguards?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-69",
+              "style": "Compact",
+              "level": 0,
+              "text": "Do not average rights away. Redesign, escalate, or refuse.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-70",
+              "style": "Compact",
+              "level": 0,
+              "text": "TRC - Tail-Risk Constraint",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-71",
+              "style": "Compact",
+              "level": 0,
+              "text": "Is catastrophic, irreversible, fat-tail, or system-breaking risk bounded?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-72",
+              "style": "Compact",
+              "level": 0,
+              "text": "Do not gamble ruin for ordinary benefit. Bound, redesign, escalate, or refuse.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-73",
+              "style": "Compact",
+              "level": 0,
+              "text": "CSV - Containment and Structural Viability",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-74",
+              "style": "Compact",
+              "level": 0,
+              "text": "Can the option actually stand, execute, be controlled, monitored, exited, corrected, and remain governable?",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-75",
+              "style": "Compact",
+              "level": 0,
+              "text": "Do not select what cannot stand. Add controls, narrow, redesign, or refuse.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-76",
+    "style": "BodyText",
+    "level": 0,
+    "text": "TRC is the ruin veto. CSV is the viability and control test. They are linked, but they should not be collapsed.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-77",
+    "style": "Heading3",
+    "level": 3,
+    "text": "Reality Grounding hardening",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-78",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "For life-critical systems, weapons, nuclear command and control, planetary-scale cognition, critical infrastructure, medical systems, ecological interventions, or other high-consequence domains, no claim should govern action unless it can be tested or otherwise warranted, bounded to a validity domain, audited with traceable evidence, corrected through monitoring and revision, and refused when the evidence surface is insufficient.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-79",
+    "style": "BodyText",
+    "level": 0,
+    "text": "In public language: ground the claim; protect the right; bound the ruin; verify the system; make exit and correction real; rank only what survives qualification.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-80",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Generate before ranking. Before accepting an apparent trade-off, look for no-action or continuation, delay, staged or reversible trials, redesign, constitutive mitigation, cleaner or safer alternatives, and hybrid or Pareto-improving options. MathGov does not assume every conflict can be made win-win. Where irreducible conflict remains, rights, ruin, distributional burdens, legitimacy, and residual harms remain explicit.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-81",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Phase 2: Rank the survivors",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-82",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Phase 2 asks: among the options that survived qualification, which one creates the strongest conditional residual ripple among selectable options, if decisive?",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-83",
+    "style": "BodyText",
+    "level": 0,
+    "text": "RLS evaluates affected unions, welfare dimensions, evidence, uncertainty, robustness, and decision state.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-84",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Mathematical spine",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-85",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Wrong method:",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-86",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Decision = argmax RLS(a) over all imagined options",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-87",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Correct method:",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-88",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Eligible(a) = RG_qualified(a) AND RF/NCRC(a) AND TRC_qualified(a) AND CSV_qualified(a)",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-89",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Here RG_qualified means RG_SUPPORTED or RG_NARROWED; TRC_qualified means TRC_PASS or a documented TRC_NOT_TRIGGERED assessment. Eligible remains teaching shorthand, not a machine-state token, sixth gate, or execution licence. CSV_qualified means CSV_PASS, CSV_PASS_WITH_CONTROLS, or a documented CSV_NOT_MATERIAL result valid for the declared claim boundary; it does not include CSV_REDESIGN_REQUIRED, CSV_ESCALATE, CSV_FAIL, or CSV_EMERGENCY_PROVISIONAL.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-90",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Define the selectable set:",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-91",
+    "style": "BodyText",
+    "level": 0,
+    "text": "A_sel = {a : RG_qualified(a) AND RF/NCRC(a) AND TRC_qualified(a) AND CSV_qualified(a)}",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-92",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Then apply the decision-state rule:",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-93",
+    "style": "Compact",
+    "level": 0,
+    "text": "If A_sel is empty, redesign, delay, escalate, use the governed emergency pathway where applicable, or refuse the stronger claim.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-94",
+    "style": "Compact",
+    "level": 0,
+    "text": "If RLS is defined and the same leader passes the Canon's signed discrimination test against every other selectable option under every required robustness variant, the framework may return ALLOW_FRAMEWORK_SELECTION. A sole selectable option follows the Canon's sole-survivor rule without a fabricated pairwise test.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-95",
+    "style": "Compact",
+    "level": 0,
+    "text": "If RLS is undefined, tied, close, uncertainty-overlapped, or non-decisive, return REFUSE_DETERMINISTIC_SELECTION. Seek more evidence, preserve multiple options, redesign, or use a separately disclosed AuthoritySelectionRecord within a lawful mandate.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-96",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "A point-score argmax is therefore a comparison aid inside the selectable set. It is not automatic authorization, and it does not erase uncertainty, ties, refusal, or the separation between framework selection and authority selection.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-97",
+    "style": "Heading2",
+    "level": 2,
+    "text": "No RLS rescue",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-98",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "A high RippleLogic score cannot rescue failed reality grounding, a rights violation, an unacceptable ruin path, an unsupported physical-execution claim, or a structurally non-viable option.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-99",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Decision outcomes",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-100",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Public labels such as SELECT are explanatory shorthand only. Canonical emitted states remain ALLOW_FRAMEWORK_SELECTION, REFUSE_DETERMINISTIC_SELECTION, BLOCK/FAIL states, ESCALATE, and separately recorded AuthoritySelectionRecord outcomes; no public label creates execution authority.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-101",
+              "style": "Compact",
+              "level": 0,
+              "text": "Outcome",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-102",
+              "style": "Compact",
+              "level": 0,
+              "text": "Meaning",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-103",
+              "style": "Compact",
+              "level": 0,
+              "text": "SELECT",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-104",
+              "style": "Compact",
+              "level": 0,
+              "text": "Public teaching shorthand: the option is eligible and clearly best among survivors. It does not replace canonical machine-state or authorization tokens.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-105",
+              "style": "Compact",
+              "level": 0,
+              "text": "SELECT WITH CONTROLS",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-106",
+              "style": "Compact",
+              "level": 0,
+              "text": "Public teaching shorthand: the option is eligible only with recorded safeguards, monitoring, or bounds. It is not execution approval.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-107",
+              "style": "Compact",
+              "level": 0,
+              "text": "NARROW",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-108",
+              "style": "Compact",
+              "level": 0,
+              "text": "The claim, scope, domain, or time horizon must be reduced.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-109",
+              "style": "Compact",
+              "level": 0,
+              "text": "REDESIGN",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-110",
+              "style": "Compact",
+              "level": 0,
+              "text": "The option fails but may be improved.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-111",
+              "style": "Compact",
+              "level": 0,
+              "text": "ESCALATE",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-112",
+              "style": "Compact",
+              "level": 0,
+              "text": "Authority, evidence, expertise, or stakeholder participation is insufficient.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-113",
+              "style": "Compact",
+              "level": 0,
+              "text": "REFUSE",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-114",
+              "style": "Compact",
+              "level": 0,
+              "text": "The requested claim, selection, or action is not supportable under the current evidence, authority, or gate state. Record the specific reason.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-115",
+              "style": "Compact",
+              "level": 0,
+              "text": "NON-DECISIVE",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-116",
+              "style": "Compact",
+              "level": 0,
+              "text": "The evidence or scores do not justify deterministic selection.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-117",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Public script",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-118",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "MathGov is a decision architecture, not a claim that every option should be scored. It first qualifies options through reality, rights, ruin, and viability. Then it ranks only the surviving options by their ripple effects across affected unions. In short: qualify before you rank.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-119",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Reading the Matrix and Its Score",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-120",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Union Scope tells us where and at what scale a consequence lands. Welfare Dimension tells us what kind of condition changes. One distinct effect has one primary accounting home; genuine knock-on effects are recorded separately with evidence. The dimensions are distinct lenses connected by real causal relationships, not proven independent compartments.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-121",
+    "style": "BodyText",
+    "level": 0,
+    "text": "The seven scope rows cover Self, Family/Household, Community, Organization, Polity, Humanity / Global Coordination (including the CMIU coordination view), and Biosphere. These are overlapping analytical scopes, not a rigid hierarchy of containers or a closed list of who matters.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-122",
+    "style": "BodyText",
+    "level": 0,
+    "text": "RLS is a weighted, normalized summary of the residual impact field after qualification. It can be decomposed by cell, scope or dimension so the overall number does not conceal its sources. Unknown is not zero; a higher score is not execution permission; a displayed index is not a percentage of moral truth or safety. Read the impact and contribution profiles, affected groups, uncertainty and dependence, and the decisive or non-decisive comparison before interpreting the scalar summary. A larger Gap is not statistical confidence or execution authority.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-123",
+    "style": "Heading2",
+    "level": 2,
+    "text": "The 60-second checklist",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-124",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "1. Qualify",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-125",
+    "style": "Compact",
+    "level": 0,
+    "text": "Is it real?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-126",
+    "style": "Compact",
+    "level": 0,
+    "text": "Are rights protected?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-127",
+    "style": "Compact",
+    "level": 0,
+    "text": "Is ruin bounded?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-128",
+    "style": "Compact",
+    "level": 0,
+    "text": "Can it stand, be monitored, be corrected, and be exited?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-129",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "2. Rank",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-130",
+    "style": "Compact",
+    "level": 0,
+    "text": "Who and what is affected?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-131",
+    "style": "Compact",
+    "level": 0,
+    "text": "Which option creates the strongest conditional residual ripple among selectable options, if decisive among the survivors?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-132",
+    "style": "Compact",
+    "level": 0,
+    "text": "Is the result robust enough to select, or should it be non-decisive?",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-133",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Claim boundary",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-134",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "MathGov Core v13.0 is a proposed Tier 1-3 auditable decision architecture. It is not empirical validation, legal certification, deployment certification, Tier 4 ProofPack, automated moral truth, or physical safety proof. For consequence-bearing physical systems, MathGov requires external domain evidence through PC-AEP; it does not manufacture that evidence by itself.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-135",
+    "style": "Heading2",
+    "level": 2,
+    "text": "What This Edition Adds",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-136",
+    "style": "",
+    "level": 0,
+    "text": "v13.0 keeps the same doorway: Reality first, Rights next, then Ripples — with catastrophic risk and structural viability protecting the path before ranking.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-137",
+    "style": "",
+    "level": 0,
+    "text": "It strengthens one simple rule: the same real harm or benefit should not become larger or smaller just because someone describes it in more boxes, more time slices, a friendlier reference class, or a weaker evidence frame.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-138",
+    "style": "",
+    "level": 0,
+    "text": "The score is a conditional summary, not moral truth. When the result changes under a materially legitimate alternative, RippleLogic shows the disagreement and refuses to pretend there is one uniquely proven answer.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-139",
+    "style": "",
+    "level": 0,
+    "text": "Rights, ruin and structural viability still cannot be traded away. Selection still is not authority, and authority still is not execution permission.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-140",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Final pocket form",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-141",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Reality. Rights. Ripples.\nQualify before you rank.\nRank only what survives.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-142",
+    "style": "Heading2",
+    "level": 2,
+    "text": "SGP v8.8: protection, participation, and power are separate",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-143",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "When a decision may affect a welfare-bearing being, the current SGP interface does not ask one number to answer every question.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-144",
+    "style": "Compact",
+    "level": 0,
+    "text": "MPS asks how strongly evidence supports welfare-bearing experience.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-145",
+    "style": "Compact",
+    "level": 0,
+    "text": "FPP records full non-downgradable rights-of-protection.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-146",
+    "style": "Compact",
+    "level": 0,
+    "text": "GPR asks how the entity can participate directly, with support, or through representation.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-147",
+    "style": "Compact",
+    "level": 0,
+    "text": "SPR asks whether it may hold one specifically named consequential role under strict gates.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-148",
+    "style": "Compact",
+    "level": 0,
+    "text": "ICP describes intelligence and understanding, but cannot establish sentience or authority by itself.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-149",
+    "style": "Compact",
+    "level": 0,
+    "text": "RMCP profiles integrated reality-management capacity; RMCP-P100 is its open reference plateau, not a moral rank. Every human has FPP-100, while humanity collectively is the provisional current RMCP-P100 calibration anchor. Other biological, digital, hybrid, collective, or extraterrestrial intelligences may meet or exceed the same reference-plateau criteria under admissible evidence.",
+    "list": true,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-150",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "RMCP/P100 is not a moral-worth or authority score. The operating rule is: unknown is not zero; capability is not welfare; protection is not authority; full protection does not require human likeness. MPS intervals may inform residual welfare sensitivity only after rights, ruin, and viability qualification.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-151",
+    "style": "BodyText",
+    "level": 0,
+    "text": "SGP interface clarification. MPS is not a cardinal welfare multiplier or moral-worth score. It determines protection posture and which welfare-inclusion hypotheses must be tested. Missing evidence is MPS-NE, not zero.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-152",
+    "style": "Heading1",
+    "level": 1,
+    "text": "APPENDIX RELEASE: Identity, Source Authority and Revision Record",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-153",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Framework release: MathGov/RippleLogic v13.0. Component: MathGov Public Introduction v13.0. Edition-origin preparation: 10 September 2026; the separately identified correction build is dated below. Two-part major.minor component versions are used; preserved historic identifiers are not renumbered.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-154",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Release_H_Verification.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-155",
+    "style": "",
+    "level": 0,
+    "text": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260926-RELEASE-H. Prepared 26 September 2026 from Release G. Only the recorded reading and release-reference corrections were made; component editions are unchanged. The manifest distinguishes corrected components from byte-identical inherited masters by their own source-build IDs and exact hashes. This is a new correction build, not a silent replacement of the earlier artifact. Live publication is not asserted.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-156",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, formulas and worked verdict are unchanged. Release G label, runtime-token and integrity-snapshot corrections remain preserved; this build corrects four principal string cells and their four active snapshot counterparts. See Verification/Final_H/Exact_Workbook_Changes.json. Unmodified Core masters retain their Release G source-build identity.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-157",
+    "style": "",
+    "level": 0,
+    "text": "Verification boundary: Reports/Release_H_Verification.md and Verification/Final_H/ identify the current checks and limits. Earlier G receipts and the rejected compatibility experiment remain source-build evidence, not native-engine certification of changed H bytes. Cache-independent replay and native-application evidence are distinct. Microsoft Excel parity, empirical validation, full external-registry conformance and production authorization are not asserted.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-158",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Package source authority: Core_15 contains 14 DOCX specification masters and one XLSX Aligners frozen worked-run workbook. DOCX files control prose, equations and tables subject to Canon and SGP ownership. The workbook controls only its disclosed exemplar surfaces. Sources, Reading_HTML and Reading_PDFs are generated reading projections, not competing normative masters. The manifest and hashes identify exact bytes; supplemental code and schemas govern only their documented subset. Conflicts require recorded correction against the controlling source.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-159",
+    "style": "BodyText",
+    "level": 0,
+    "text": "License and reuse: consult the package-level LICENSE and NOTICE and retain applicable component-specific and third-party notices. This pointer does not override a valid exception or grant rights over separately supplied private or third-party review material.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-160",
+    "style": "BodyText",
+    "level": 0,
+    "text": "External repository publication and any absent legacy schema/validator/registry are separate authorities/evidence surfaces. The local package does not claim to update a remote repository or reproduce unavailable implementations. Current source pointers in this appendix replace prior front-matter edition pointers for this package; accurate historical source references below are retained as lineage only.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-161",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Preserved invariants: RG -> RF/NCRC -> TRC -> CSV -> RLS; rights non-compensation and unallocated rights effects; existing seven rows and seven dimensions; existing SGP MPS/FPP/GPR/SPR/ICP/RMCP separation; probability ownership, uncertainty, stability and every-contender rules; selection, authority and execution separation.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-162",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Component",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-163",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Current edition",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-164",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Canon",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-165",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v13.0",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-166",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Sentience Gradient Protocol",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-167",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v8.8",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-168",
+              "style": "BodyText",
+              "level": 0,
+              "text": "ripple.md Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-169",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v5.8",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-170",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Agent System",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-171",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v13.0",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-172",
+              "style": "BodyText",
+              "level": 0,
+              "text": "CSV Gate Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-173",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.7",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-174",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Cascade Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-175",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-176",
+              "style": "BodyText",
+              "level": 0,
+              "text": "MathGov Reproducibility and Use Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-177",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v1.7",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-178",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Welfare Dimension Boundary and Interaction Protocol",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-179",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v1.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-180",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RLS Validation Protocol",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-181",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-182",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Foundations Primer",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-183",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v4.7",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-184",
+              "style": "BodyText",
+              "level": 0,
+              "text": "MathGov Public Introduction",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-185",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v13.0",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-186",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Physical/Causal Admissibility Evidence Profile",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-187",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.6",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-188",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Methodological Falsifiability and Dependency Integrity Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-189",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.6",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-190",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Source-Coupling Integrity Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-191",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.6",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-192",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Aligners Sheet",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-193",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v5.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-194",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Change locations and rationales: Reports/Release_H_Adjudication.md; exact edits: Verification/Final_H/Exact_Document_Changes.json and Verification/Final_H/Exact_Workbook_Changes.json. Previous change records remain source-build history. Prior releases and feedback are preserved in the private provenance archive.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-195",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Current proposals are not universal truths. Taxonomy maximality, continuous-time propagation, cross-substrate cardinal welfare, generic susceptibility/shield formulas, autonomous recovery, vendor infrastructure, zero-knowledge circuits and hardware meshes remain unvalidated unless independently demonstrated under a scoped implementation profile.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-196",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Preserved Baseline Release Material (Historical; Non-Controlling)",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": [
+      "MG_HISTORICAL_RELEASE"
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-197",
+    "style": "BodyText",
+    "level": 0,
+    "text": "The following blocks are relocated intact from the recovered baseline. Their edition numbers, release-readiness wording and external-source limitations describe that historical candidate, not current component identity or newly executed verification. Governing current metadata is the matrix above.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-198",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "The historical, unverified implementation reference is docs/reproducibility/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.5.md; its candidate source parity remains to be established. The controlling reading specification is MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx in Core_15; the old path is not a claim of current schema or implementation compatibility.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-199",
+    "style": "Heading2",
+    "level": 2,
+    "text": "v12.8-rc2 Historical Release Integration",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-200",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "HISTORICAL (NON-CONTROLLING): Release: MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2 — Rights Non-Dilution, Representation Integrity, and Robust Selection Release",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-201",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Historical companion pins: Canon v12.8-rc2; SGP v8.7-rc2; ripple.md v5.7-rc2; Agent System v12.7-rc2; CSV v2.6-rc2; Cascade v2.8-rc2; Reproducibility v1.6-rc2; WDBIP v1.8-rc2; RLS Validation v2.8-rc2; Primer v4.6-rc2; Public Introduction v12.8-rc2; PC-AEP/MFDI/Source-Coupling v2.5-rc2; Aligners Sheet v5.8-rc1.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-202",
+              "style": "",
+              "level": 0,
+              "text": "Release control",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-203",
+              "style": "",
+              "level": 0,
+              "text": "Historical value",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-204",
+              "style": "",
+              "level": 0,
+              "text": "Component",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-205",
+              "style": "",
+              "level": 0,
+              "text": "MathGov 3R / 1–2 Public Introduction v12.8-rc2",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-206",
+              "style": "",
+              "level": 0,
+              "text": "Release",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-207",
+              "style": "",
+              "level": 0,
+              "text": "HISTORICAL (NON-CONTROLLING): MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-208",
+              "style": "",
+              "level": 0,
+              "text": "Architecture",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-209",
+              "style": "",
+              "level": 0,
+              "text": "RG → RF/NCRC → TRC → CSV → RLS",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-210",
+              "style": "",
+              "level": 0,
+              "text": "Role",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-211",
+              "style": "",
+              "level": 0,
+              "text": "Shortest informative public doorway to the current RippleLogic Core.",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-212",
+              "style": "",
+              "level": 0,
+              "text": "Claim boundary",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-213",
+              "style": "",
+              "level": 0,
+              "text": "Release candidate for Tier 1–3 research; source/mirror parity and implementation conformance remain separately reviewable; not empirical validation, legal authority, physical-safety certification, deployment authorization, Tier 4, or moral truth.",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-214",
+              "style": "",
+              "level": 0,
+              "text": "Source/render parity",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-215",
+              "style": "",
+              "level": 0,
+              "text": "Versioned semantic source and DOCX/PDF mirrors must agree. Filename, internal version, active pins, manifest, and hashes must agree; mismatch is release-integrity failure.",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": true
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-216",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Historical Release Integration (v12.8-rc2)",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-217",
+    "style": "",
+    "level": 0,
+    "text": "HISTORICAL (NON-CONTROLLING): This candidate advances MathGov 3R / 1–2 Public Introduction from the audited v12.7 baseline to v12.8-rc2 and binds it to MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2. Historical references remain lineage only; unmarked current-release references use the current component matrix in Appendix RELEASE.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-218",
+    "style": "Heading2",
+    "level": 2,
+    "text": "v12.6 Release Note (Lineage)",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-219",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "v12.6 adds configuration-bound assurance and qualification-continuity teaching language while preserving the 3R and MathGov 1-2 structure. The 3R and MathGov 1-2 teaching structure is unchanged.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  }
+]

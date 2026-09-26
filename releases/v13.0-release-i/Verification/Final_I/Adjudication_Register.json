@@ -1,0 +1,118 @@
+{
+  "build_id": "MG-RL-13.0-20260926-RELEASE-I",
+  "low_findings": [
+    {
+      "id": "F-01",
+      "disposition": "ACCEPTED",
+      "location": "Workbook defined names",
+      "change": "Correct two _xlnm.Print_Area localSheetId attributes: 89 to 78 for Build_Snapshot; 90 to 79 for Build_Integrity. Keep the target ranges and all other names unchanged.",
+      "rationale": "The names pointed to sheets other than the ones named in their ranges. XML inspection reproduces the defect; the new regression checks the scope against the actual ordered sheet list."
+    },
+    {
+      "id": "F-02",
+      "disposition": "ACCEPTED, BOUNDED",
+      "location": "Build_Integrity!A2",
+      "change": "Replace the broad local-guard assertion with the actual input/literal, selected-presence and RLS-reconciliation scope; explicitly exclude verdict-display replacement and require the external verifier.",
+      "rationale": "A disposable RLS!B40 overwrite still leaves B14 at zero by design. The display depends on the guard, so including it in the summed guard would introduce a circular reference. A separate actual-byte mutation is rejected by the external manifest verifier."
+    },
+    {
+      "id": "F-03",
+      "disposition": "ACCEPTED WITH NORMATIVE RECONCILIATION",
+      "location": "ripple.md Appendix I1A and Appendix K threshold hierarchy",
+      "change": "Retain Cohen’s kappa >= 0.60 (or the stricter preregistered threshold) as the existing L2/L3 reliability acceptance requirement; also report the Section 12 within-one-point agreement rate. Pin the estimator and weighting before results, and leave unestimable kappa unverified.",
+      "rationale": "The reviewer identifies real ambiguity but its 92%-agreement example conflates agreement with the separate 90% reconstructability threshold. Percent agreement is not substituted for kappa; no new numerical threshold is introduced or empirical validity claimed."
+    },
+    {
+      "id": "F-04",
+      "disposition": "ACCEPTED",
+      "location": "Foundations Primer Section 8, Selected definition",
+      "change": "Distinguish framework selection under the Canon conditions from separately recorded authority selection after a non-decisive result. State that a tie-break preference alone removes neither refusal nor the execution-authorization requirement.",
+      "rationale": "This aligns an informative teaching definition with the already controlling Canon; no new decision state is created."
+    },
+    {
+      "id": "F-05",
+      "disposition": "ACCEPTED",
+      "location": "Foundations Primer Section 10, SGP introduction",
+      "change": "Replace “a construct-valid split” with “an explicit separation of constructs”.",
+      "rationale": "The original phrase suggested empirical construct validity that the Canon, SGP and validation protocol explicitly do not establish."
+    },
+    {
+      "id": "F-06",
+      "disposition": "ACCEPTED",
+      "location": "WDBIP Section 18.2, Primary effect tokens",
+      "change": "Convert the malformed pipe-delimited paragraph into a native four-column table with the same header and eleven effect rows.",
+      "rationale": "The actual DOCX and rendered page reproduce the run-on text. All cell content is preserved; surrounding existing tables are untouched. One page break keeps Section 18.3 and its existing table readable."
+    },
+    {
+      "id": "F-07",
+      "disposition": "ACCEPTED, LOCAL CLASSIFICATION ONLY",
+      "location": "Audit_Flags!F5,F12,F13,F18,F27,F28,F33; A39,A46,D46; Dashboard!I5:I7",
+      "change": "Mark the seven stored emissions TOOL_LOCAL in their existing source-reference cells; spell the full manual-override token in the existing taxonomy row; explain the scope; label dashboard counts as records by severity.",
+      "rationale": "The records are not new canonical tokens or executable detectors. Agent-owned RUNTIME_* labels remain separate from PCC severity. No emitted token, trigger value, severity, count formula or verdict changes."
+    },
+    {
+      "id": "F-18",
+      "disposition": "ACCEPTED",
+      "location": "Sensitivity_Analysis!E13",
+      "change": "Rename the header to ΔRLS (raw). Keep E14=B14-C14 unchanged.",
+      "rationale": "This quantity is a score difference, not the normalized Gap compared with delta. The correct existing RLS and Dashboard labels remain untouched."
+    }
+  ],
+  "observations": [
+    {
+      "id": "F-08",
+      "disposition": "RETAIN SOURCE IDENTITIES",
+      "rationale": "G/H/I source-build differences are explicitly recorded by the current manifest. Eleven correct masters are not rewritten solely to replace their historical preparation context."
+    },
+    {
+      "id": "F-09",
+      "disposition": "NO CORE EDIT",
+      "rationale": "The quoted rc2 “Current” lines are inside marked historical, non-controlling blocks. They are not active release pins."
+    },
+    {
+      "id": "F-10",
+      "disposition": "NO NUMERICAL EDIT",
+      "rationale": "The positive baseline case contributes zero catastrophe loss; different confidence display conventions therefore do not change this result. The existing instance-source context and baseline rules remain controlling."
+    },
+    {
+      "id": "F-11",
+      "disposition": "NO PARAMETER RETUNING",
+      "rationale": "The declared epsilon remains 1e-6. Its effect and sensitivity are already explained in the Canon and the supplied reading guide. No replacement value or scale-relative rule is introduced."
+    },
+    {
+      "id": "F-12",
+      "disposition": "NO FABRICATED DEPENDENCE STUDY",
+      "rationale": "The frozen run already refuses unique selection. No unperformed dependence analysis is relabeled as completed; the adverse-dependence rules remain unchanged."
+    },
+    {
+      "id": "F-13",
+      "disposition": "CLOSED FOR SUPPLIED SURFACES",
+      "rationale": "The exact Office containers, complete body projections, bookmarks and 125 numbered TOC destinations are checked locally. This does not certify all Microsoft Word configurations."
+    },
+    {
+      "id": "F-14",
+      "disposition": "NO UNNECESSARY METADATA ADDITION",
+      "rationale": "Absence of XLSX docProps is not a demonstrated calculation or integrity defect. Do not add components merely to resemble another application’s output."
+    },
+    {
+      "id": "F-15",
+      "disposition": "RETAIN DISCLOSED TWO-LAYER INTEGRITY",
+      "rationale": "Formula presence differs from exact formula identity. The trusted external manifest checks exact bytes, cells and formulas; the internal guard is not expanded into circular self-certification."
+    },
+    {
+      "id": "F-16",
+      "disposition": "NO NEW AGENT SEMANTICS",
+      "rationale": "The mentioned local example label and view-tag omission did not reproduce a changed gate or verdict. Preserve the Agent’s correct runtime and successor rules."
+    },
+    {
+      "id": "F-17",
+      "disposition": "OUTSIDE THIS RELEASE",
+      "rationale": "Duplicate PC-AEP entries in the reviewer’s own project store are not duplicates in the supplied Core_15 directory."
+    },
+    {
+      "id": "F-19",
+      "disposition": "NO INVENTED WEIGHT AUTHORIZATION",
+      "rationale": "The worked-run’s PLSS label is not proof of an external WeightProfileStatus. It remains a bounded, non-decisive exemplar; no authority record is fabricated."
+    }
+  ]
+}

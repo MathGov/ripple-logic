@@ -1,0 +1,479 @@
+MathGov Reproducibility and Use Standard
+
+Integrity surface	Current requirement	Claim boundary
+Validator maturity	V0 schema validity, V1 semantic conformance, and V2 evidence/use review are validator statuses distinct from run maturity R0-R4.	Machine validation does not establish evidence truth or moral correctness.
+Schema enforcement	A conforming validator must apply JSON Schema before semantic cascade checks and reject undeclared additional properties. Its availability and execution must be verified.	Passing proves only conformance for the supplied record.
+Unknowns	Decision-material missingness and uncertainty may not silently become zero, PASS, or an undeclared default.	Insufficient evidence routes to narrow, test, escalate, delay, redesign, or refusal.
+
+Exact-Configuration Replay and Qualification-Continuity Requirements
+
+A reproducible run records the exact decision configuration: software/model/policy versions, hardware where material, parameters, tools, permissions, data and source versions, controls, operating environment, authority state, timestamps, and configuration identifier or hash where feasible.
+
+Replay compares like with like. A materially different configuration is not a replication of the original run; it is a new condition requiring an explicit transfer argument. The run record also declares requalification triggers and whether any trigger fired between selection, authorization, execution, monitoring, and review.
+
+A closed or non-reconstructable component cannot be the sole source of a decisive MathGov warrant. Where inspection is limited, the record must disclose the limitation and increase external testing, independent challenge, containment, fallback, and refusal requirements proportionate to stakes.
+
+Status: Normative implementation companion for RippleLogic Canon. The Canon controls semantics and equations if a conflict occurs. This standard controls the minimum run record, deterministic cascade order, parameter-completeness rules, replay procedure, and proportional-use profiles for this release.
+
+Purpose: Make MathGov easier to use without weakening it. A valid run should be understandable by a first-time user, reproducible by a qualified second implementer, and mechanically rejectable when required inputs, parameters, or decision states are missing or contradictory.
+
+Release boundary: This standard specifies record-completeness and cascade-conformance requirements; validation requires the applicable schema, validator, and execution evidence. It does not prove that evidence is true, measurements are valid, thresholds are justified, rights classifications are legally binding, or the selected action is safe to deploy.
+
+1. The compact operating kernel
+
+Every MathGov run follows the same twelve rules.
+
+Rule ID	Required rule	Failure action
+K01	Identify the decision, baseline, affected stakeholders, tier, stakes, authority boundary, and option set. Where option closure is material, record the generation method and consider no-action or continuation, delay, staged or reversible trial, redesign or constitutive mitigation, cleaner or safer alternatives, and hybrid or challenger options; explain material exclusions.	INCOMPLETE_RUN; OPTION_SET_THIN where required
+K02	Freeze decision-material evidence cutoffs, parameters, weights, thresholds, masks, scenario assumptions, reviewers, and amendment rules before outcome-sensitive ranking.	PARAMETER_LOCK_FAILURE
+K03	Ground the claim. Record the reality surface, evidence trace, material unknowns, consequence pathways, and maximum claim boundary.	Narrow, test, escalate, or REFUSE_INSUFFICIENT_GROUNDING
+K04	Apply RF/NCRC before ordinary trade-off analysis. A failed rights floor cannot be repaired by welfare score.	Exclude, redesign, remedy, or emergency procedure
+K05	Apply TRC to catastrophic, irreversible, or ruin-relevant pathways. Ordinary gain cannot average away inadequately bounded ruin.	Exclude, redesign, control, or escalate
+K06	Apply CSV to containment, reversibility, monitoring, dependency health, structural viability, and execution conditions.	Exclude, redesign, control, or escalate
+K07	Form the selectable set only from options supported by RG, holding RF_PASS, holding a qualifying TRC state (TRC_PASS or documented TRC_NOT_TRIGGERED), and holding a qualifying CSV state (CSV_PASS, CSV_PASS_WITH_CONTROLS, or CSV_NOT_MATERIAL).	NO_SELECTABLE_OPTION if empty
+K08	Apply RLS only to the selectable set. Never score a failed option back into consideration.	CASCADE_ORDER_VIOLATION
+K09	Distinguish decisive ranking, non-decisive ranking, authority selection, refusal, delay, redesign, and emergency-provisional action. Decisiveness requires the Canon's every-contender check, not only a runner-up comparison.	DECISION_STATE_AMBIGUOUS
+K10	Separate selection from lawful authority and execution. A selected option is not automatically authorized or safe to execute.	NO_EXECUTION_AUTHORITY
+K11	Record controls, monitoring, review dates, appeal, shutdown, and reopen triggers proportionate to stakes.	CONTROL_OR_MONITORING_GAP
+K12	Preserve an append-only audit record and rerun affected stages after material evidence, parameter, scope, system, or distribution change.	REQUALIFICATION_REQUIRED
+
+Memory line:
+
+Ground reality. Protect rights. Bound ruin. Preserve the structure. Score the ripples. Authorize and monitor separately.
+
+2. One architecture, three use profiles
+
+The architecture remains comprehensive. The documentation burden changes with stakes.
+
+Profile	Typical use	Minimum burden	Numeric scoring
+Quick / Tier 1	Personal, family, classroom, low-stakes reversible choices	Decision, options, facts/unknowns, rights screen, required qualitative ruin-trigger screen, structural screen, light ripple comparison, conclusion, reopen trigger	Optional; qualitative comparison is permitted
+Standard / Tier 2	Organizational, community, product, programme, or policy analysis with material but bounded consequences	Versioned run record, stakeholder map, evidence register, parameter lock, gate records, controls, uncertainty, RLS method if used, audit rationale	Permitted only with declared method and sensitivity
+Audit / Tier 3	Public, institutional, high-impact, contested, or high-stakes analysis	Full schema, independent review, hashes, source and method records, scenario governance, subgroup analysis, parameter lock, replay packet, authority and execution records	Required when claiming formal RLS ranking; validation maturity must be disclosed
+
+A user MUST NOT choose a lower profile merely to avoid a material right, ruin, structural, evidence, or authority requirement. Any trigger in the next table escalates the run.
+
+Escalation trigger	Minimum response
+Plausible rights-floor violation or severe protected-interest uncertainty	Tier 2 or 3 rights review
+Catastrophic, irreversible, systemic, lock-in, or ruin-relevant pathway	TRC with governed scenario set; normally Tier 3
+Physical, cyber-physical, medical, weapons, critical infrastructure, or irreversible execution	PC-AEP and qualified domain warrant
+Materially affected vulnerable subgroup	Explicit subgroup mapping and distributional review
+AI or agent with consequential autonomy or delegation	Agent System, authority boundary, monitoring, revocation, and security acceptance evidence
+Public conformance, scientific, legal, safety, or deployment claim	Tier 3 evidence and claim-boundary review
+Result changes under admissible assumptions or welfare-inclusion hypotheses	Sensitivity record and non-decisive handling
+
+2A. Typed Records and Reproduction Boundaries (Normative)
+
+Preserve separate observation/evidence, EffectToken, impact-snapshot, decision and intervention/outcome records. Each claim-bearing record binds the run and option, component map, schema, configuration, baseline, units/sign convention, time semantics, evidence posture and source links. Transport event IDs and effect IDs are different: duplicated delivery or an updated observation does not create new impact mass.
+
+A reproducibility pack declares the exact input bytes, code and schema hashes, arithmetic/rounding, model and parameter versions, output bytes, test procedure and environment. Use named U1-U7/D1-D7 keys or pinned ordering. NaN, infinity, out-of-range impacts, unbound thresholds and ambiguous timestamps require rejection or explicit uncertainty routing. An object schema and digital signature do not prove dimensional independence, valid welfare measurement or complete hazard discovery.
+
+Report tests by actual scope: syntax/schema, numerical conformance, semantic fixtures, authority/replay, artifact integrity, visual inspection and empirical validation. The supplied supplemental reference checks cover only the listed equations and record rules; unavailable legacy validators, external deployment systems and domain evidence cannot be treated as tested.
+
+Byte-level workbook checks distinguish literal inputs, formulas and cached results. A recalculation result must name its actual engine and tolerance. Preserve original geometry and formulas except logged repairs. A frozen worked example is not an editable operational selector; any edit invalidates the release-specific verification until rebuilt and checked.
+
+3. Deterministic run state machine
+
+A conforming implementation processes each option in this order:
+
+DECLARED
+
+RG_SUPPORTED, RG_NARROWED, or RG_REFUSED
+
+RF_PASS, RF_FAIL, RF_ESCALATE, or NCRC_UNKNOWN
+
+TRC_PASS, TRC_NOT_TRIGGERED, TRC_FAIL, or TRC_ESCALATE; TRC_NOT_TRIGGERED requires a recorded trigger assessment and is not a CVaR pass
+
+CSV_PASS, CSV_PASS_WITH_CONTROLS, CSV_NOT_MATERIAL, CSV_FAIL, CSV_REDESIGN_REQUIRED, CSV_ESCALATE, or CSV_EMERGENCY_PROVISIONAL. The emergency-provisional state is separately serialized, temporary, time-bounded, authority-bound, and never an ordinary pass-equivalent state. CSV_PASS_HEURISTIC and CSV_PASS_WITH_CONTROLS_HEURISTIC are human-facing Tier 1 teaching labels, not additional canonical machine tokens. Machine export must use the pinned interface while preserving Tier 1 and heuristic evidence maturity. Merely removing a suffix does not establish formal conformance or execution authority; verified interchange requires the applicable registry/schema and replay evidence.
+
+SELECTABLE only when the declared RG/RF/TRC/CSV conditions are satisfied
+
+RLS_RANKED only for selectable options
+
+Final decision state: SELECTED_DECISIVE, SELECTED_BY_AUTHORITY_NON_DECISIVE, PROVISIONAL_WITH_CONTROLS, DELAY, REDESIGN, ESCALATE, REFUSE, NO_SELECTABLE_OPTION, or EMERGENCY_PROVISIONAL
+
+3.1A FrameworkVerdict to run-record decision_state crosswalk (Normative)
+
+Framework / cascade condition	Required decision_state	Notes
+ALLOW_FRAMEWORK_SELECTION with a decisive unique selected option	SELECTED_DECISIVE	Selection remains separate from execution authority.
+REFUSE_DETERMINISTIC_SELECTION plus a separately lawful AuthoritySelectionRecord	SELECTED_BY_AUTHORITY_NON_DECISIVE	Must not be described as framework-determined uniqueness.
+A separately documented ordinary provisional choice with binding controls, not already a decisive framework selection or an authority-selected non-decisive choice	PROVISIONAL_WITH_CONTROLS	Controls are constitutive and failure reopens CSV.
+An explicitly authorized Rights, Tail or CSV emergency-provisional route, or PROVISIONAL_UNDER_REFUSAL under its own prerequisites	EMERGENCY_PROVISIONAL	Temporary, authority-bound, non-precedential, and not an ordinary pass.
+No option holds the complete qualifying state set	NO_SELECTABLE_OPTION	Distinguish from evidential underdetermination.
+Evidence or claim boundary cannot determine the requested state	REFUSE	Includes underdetermination or insufficient grounding; record the refusal reason.
+Redesign is required before qualification can resume	REDESIGN	Reopen all materially dependent stages.
+Additional evidence, review, or authority is required	ESCALATE	Use DELAY only for a governed temporal deferral without substantive redesign.
+
+Crosswalk precedence (Normative). First determine whether an exceptional/provisional route is explicitly justified under its own Canon prerequisites; if so record EMERGENCY_PROVISIONAL and the originating pathway, never ordinary selectability. Otherwise a complete ALLOW_FRAMEWORK_SELECTION record gives SELECTED_DECISIVE, including when the selected option has constitutive CSV_PASS_WITH_CONTROLS. REFUSE_DETERMINISTIC_SELECTION plus a lawful AuthoritySelectionRecord gives SELECTED_BY_AUTHORITY_NON_DECISIVE. Binding controls alone do not select an option or imply PROVISIONAL_WITH_CONTROLS; that label requires a separately documented ordinary provisional choice. For unresolved runs, report the controlling refusal, redesign, escalation, delay or no-selectable-option disposition and preserve all contributing reasons. None of these decision states grants execution authority.
+
+Tie-break serialization. A governed UCI/HOI preference under Canon Section 11.5 does not satisfy the decisive ALLOW row. Retain REFUSE_DETERMINISTIC_SELECTION unless the unique-selection conditions are independently met; only a separate lawful AuthoritySelectionRecord supports SELECTED_BY_AUTHORITY_NON_DECISIVE. A CSV_PASS_WITH_CONTROLS option may still be SELECTED_DECISIVE when all decisive conditions hold; controls alone do not select the provisional row.
+
+Separate execution state: NOT_AUTHORIZED, AUTHORIZED_WITHIN_SCOPE, EXECUTION_BLOCKED, or EXECUTED_UNDER_MONITORING
+
+Reviewer-to-machine status crosswalk (Normative). GROUNDED and ESTIMATED map to RG_SUPPORTED only when the claim stays inside the declared evidence, configuration, and validity boundary. ASSUMPTION_BOUND and OUT_OF_SCOPE_WITH_RATIONALE map to RG_NARROWED only when the narrowed claim, omitted material, downstream restrictions, and reopen trigger are explicit; otherwise they map to RG_REFUSED. DECLARED_UNKNOWN and INSUFFICIENT_GROUNDING map to RG_REFUSED whenever the unresolved fact is material to RF/NCRC, TRC, CSV, deterministic selection, authorization, execution, or public conformance. Implementations MUST NOT choose the mapping that produces the preferred outcome.
+
+3.1 Selectable-set rule
+
+For option a:
+
+SELECTABLE(a) =
+  RG status is RG_SUPPORTED or RG_NARROWED
+  AND RF/NCRC passes
+  AND TRC status is TRC_PASS or documented TRC_NOT_TRIGGERED
+  AND CSV is one of:
+      CSV_PASS
+      CSV_PASS_WITH_CONTROLS
+      CSV_NOT_MATERIAL
+
+No RLS value, benefit claim, popularity, urgency, institutional permission, or superior capability may change a non-selectable option into a selectable option.
+
+3.2 Refusal and unknowns
+
+Missing evidence is not zero. Missing parameters are not defaults unless the controlling source explicitly declares a default. A required unknown produces one of four actions:
+
+narrow the claim;
+
+collect or verify evidence;
+
+apply a governed conservative bound;
+
+refuse or escalate the stronger decision.
+
+3.3 Versioned state algebra and migration
+
+Run-record v4 uses the canonical state registry and transition matrix. CSV_REDESIGN_REQUIRED is the emitted token. The legacy input alias CSV_REDESIGN MAY be accepted only during the declared migration window and SHALL be normalized with a warning.
+
+Normal short-circuit states are deterministic:
+
+RG_REFUSED -> RF_NOT_EVALUATED_AFTER_PRIOR_FAILURE -> TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE -> CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE;
+
+RF_FAIL or RF_ESCALATE -> TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE -> CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE;
+
+TRC_FAIL or TRC_ESCALATE -> CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE.
+
+Emergency provisional action is serialized separately and does not masquerade as an ordinary pass or ranked selection.
+
+3.4 Three-level validator claim boundary
+
+The release validator reports three distinct levels:
+
+V0_SCHEMA_VALID: exact JSON Schema validation, including types, required fields, enums, conditional fields, and additionalProperties restrictions;
+
+V1_SEMANTICALLY_CONFORMANT: option identity, state transitions, gate order, selectable set, ranking, authority, execution, requalification, WDBIP references, and tempo/responsibility contradictions;
+
+V2_EVIDENCE_USE_REVIEWED: a bounded checklist or human-review outcome for evidence quality, domain validity, parameter authority, physical admissibility, reviewer independence, and empirical maturity.
+
+A V0/V1 pass does not imply a V2 pass. None of the three proves evidence truth, legal validity, physical safety, empirical validity, or moral correctness. Run maturity remains separately reported through R0_RECORD_COMPLETE to R4_DEPLOYMENT_ASSURED.
+
+4. Parameter completeness and lock
+
+A calculation-bearing run MUST declare every decision-material parameter before outcome-sensitive ranking. At minimum:
+
+component and package versions;
+
+evidence cutoff;
+
+options and baseline;
+
+stakeholder and subgroup boundaries;
+
+Union Scope and welfare-dimension mappings;
+
+rights floors and categorical prohibitions;
+
+TRC scenario families, probabilities or bounds, dependence assumptions, severity model, alpha, and tolerance;
+
+CSV materiality, controls, monitoring, reversibility, dependency, and tolerance assumptions;
+
+RLS active cells, masks, weights, propagation method, saturation method, uncertainty method, and decisiveness threshold where RLS is used;
+
+SGP records and welfare-inclusion hypotheses where moral-patient uncertainty is material;
+
+authority role, mandate, limits, appeal, and revocation;
+
+permitted amendments and rerun triggers.
+
+A value is valid only when it has a declared source, status, and scope. The allowed status vocabulary is:
+
+CANON_DEFAULT
+
+DOMAIN_STANDARD
+
+EMPIRICALLY_ESTIMATED
+
+EXPERT_JUDGMENT
+
+PARTICIPATORY_CHOICE
+
+CONSERVATIVE_BOUND
+
+ASSUMPTION_BOUND
+
+UNKNOWN
+
+NOT_MATERIAL
+
+UNKNOWN cannot enter arithmetic as zero. NOT_MATERIAL requires a rationale and a reopen trigger.
+
+Any material post-outcome amendment creates a new run version and requires replay of every affected downstream stage.
+
+5. Minimum reproducible run record
+
+The machine-readable minimum is defined by schemas/mathgov_run_record_v4_1.schema.json. A human-readable run MUST expose the same logical fields even when it uses prose or a workbook.
+
+Required top-level objects:
+
+identity
+
+decision
+
+profile_and_stakes
+
+evidence_and_claim_boundary
+
+parameter_lock
+
+stakeholders
+
+options
+
+gate_results
+
+ranking
+
+decision_state
+
+authority_and_execution
+
+controls_monitoring_and_reopen
+
+audit_and_signoff
+
+configuration_assurance
+
+wdbip
+
+consequence_tempo
+
+responsibility_continuity
+
+The evidence_and_claim_boundary object MUST include the six canonical Reality Grounding outputs: reality_surface, evidence_trace, material_unknowns, transition_or_action_boundary, consequence_pathways, and claim_boundary, together with rg_status. A Tier 1 entry may be brief, but the transition under evaluation cannot be silently omitted. Triggered Category Grounding, Source-Coupling, PC-AEP, and MFDI records remain proportional companion surfaces and must be linked or located when their Canon triggers hold.
+
+6. Two-implementer reproducibility protocol
+
+A run is replay-ready when another qualified implementer receives:
+
+the exact source package and hashes;
+
+the locked run record;
+
+the evidence registry or accessible evidence bundle;
+
+the option definitions and baseline;
+
+parameter sources and statuses;
+
+scenario and uncertainty records;
+
+formulas or scoring rules actually used;
+
+reviewer conflicts and authority boundary;
+
+expected intermediate statuses, not only the final answer.
+
+The independent implementer reruns the decision without seeing the original final selection where practical. Differences are classified as:
+
+Difference class	Meaning	Required action
+DATA_DIFFERENCE	Different evidence or extraction	Resolve source and cutoff
+DEFINITION_DIFFERENCE	Different category or boundary	Apply Category Grounding
+PARAMETER_DIFFERENCE	Different threshold, weight, mask, scenario, or assumption	Return to lock record
+OPERATOR_DIFFERENCE	Different formula or gate interpretation	Canon controls; fix implementation
+JUDGMENT_DIFFERENCE	Same inputs, different governed judgment	Record panel disagreement and sensitivity
+AUTHORITY_DIFFERENCE	Different lawful or governed mandate	Separate analysis from execution authority
+WARRANT_DOMAIN_DIFFERENCE	Same claim is supported from different scientific, engineering, legal-regulatory, normative, institutional, or commercial warrant domains, or one replay relies on an undeclared cross-domain bridge.	Record claim type, claim domain, every material warrant domain, and one bridge record per cross-domain relationship; narrow, escalate, or refuse any unsupported bridge.
+IMPLEMENTATION_ERROR	Formula, reference, transcription, or software defect	Correct and rerun affected stages
+
+6.1 Reproducibility outcomes
+
+REPLAY_MATCH: selectable set, gate states, ranking state, and final decision state agree within declared tolerances.
+
+REPLAY_CONDITIONALLY_MATCHES: final state agrees but one or more material intermediate judgments differ and are disclosed.
+
+REPLAY_DIVERGES: selectable set or decision state differs.
+
+REPLAY_INADMISSIBLE: record or evidence bundle is incomplete.
+
+A replay match demonstrates procedural reproducibility for the supplied record. It does not establish empirical validity or moral truth.
+
+7. Mechanical contradiction checks
+
+The release validator MUST reject at least these contradictions:
+
+an option has an RLS rank but is not selectable;
+
+an RF, TRC, or CSV failure is selected through aggregate benefit;
+
+a selected option is marked both authorized and outside mandate;
+
+a required parameter is missing or UNKNOWN but enters arithmetic;
+
+the final state claims decisive ranking although any required leader-versus-rival comparison or robustness variant fails, is incomplete, or changes the leader;
+
+a non-decisive result lacks an authority-selection or refusal rationale;
+
+execution is authorized without an authority basis;
+
+material distribution shift is recorded but requalification is not triggered;
+
+FPP, MPS, ICP, RMCP, P100, GPR, SPR, or CMIU status is used as a substitute for another type;
+
+a public validation or certification claim exceeds the declared evidence maturity.
+
+a CSV_PASS_WITH_CONTROLS option is selectable without a complete material-obligation record;
+
+execution relies on an expired, suspended, escalated, or known-ineffective material obligation;
+
+a material human-compensation dependency is unresolved while execution proceeds;
+
+a material control or carrier changes without governed change control and requalification;
+
+a handoff is treated as complete without affirmative acceptance or retained responsibility.
+
+8. Burden-proportional documentation
+
+The framework is not intended to make ordinary life bureaucratic. The smallest faithful record is:
+
+Decision:
+Options:
+Known / unknown:
+Rights concern:
+Ruin concern:
+Structural concern:
+Best remaining ripple:
+Decision and reason:
+Controls / reopen trigger:
+
+The full Tier 3 record is required only when the stakes, irreversibility, public claim, contestability, or system coupling justify it.
+
+9. Conformance levels
+
+Level	Claim permitted	Required evidence
+R0_RECORD_COMPLETE	The run record contains the required fields and valid status values.	Schema and semantic validator pass
+R1_CASCADE_CONFORMANT	The run followed the five-stage ordering and non-compensation rules.	R0 plus gate/ranking consistency checks
+R2_INDEPENDENTLY_REPLAYED	A second implementer reproduced the declared decision state within tolerance.	R1 plus independent replay record
+R3_EMPIRICALLY_SUPPORTED	The instruments used have relevant reliability/validity evidence for the domain.	External study evidence; not established by this release alone
+R4_DEPLOYMENT_ASSURED	The action has domain-specific engineering, legal, operational, and monitoring assurance.	External domain assurance; not established by this release alone
+
+Do not shorten these to a single word such as “validated.” State the exact level.
+
+10. Source hierarchy and conflict rule
+
+RippleLogic Canon v13.0 controls decision semantics and equations.
+
+SGP v8.8 controls MPS/FPP/GPR/SPR/ICP/RMCP/P100 semantics.
+
+Named companion standards control their bounded interface unless they conflict with the Canon.
+
+This standard controls run-record completeness, replay procedure, and proportional-use profiles.
+
+For this delivered package, Core_15 DOCX files are the controlling prose and table masters under Appendix RELEASE. Markdown, PDF and generated text are reading projections and must be regenerated or corrected when they differ. Repository-source promotion is separately recorded and does not retroactively change the identity or authority of delivered bytes.
+
+Examples and workbooks are informative unless explicitly designated otherwise.
+
+A conflict MUST be logged, not silently harmonized. Use SOURCE_HIERARCHY.md and the normative kernel index to identify the controlling rule.
+
+11. Required release artifacts
+
+A conforming implementation release must provide the following artifacts. Their presence is determined from its actual inventory; the Core 15 document bundle does not itself supply or verify every listed implementation asset:
+
+this standard;
+
+schemas/mathgov_run_record_v4_1.schema.json;
+
+docs/implementation/NORMATIVE_KERNEL_INDEX_v1.1.yaml;
+
+release/VALIDATE_MATHGOV_RUN.py;
+
+a passing worked example;
+
+intentionally failing test vectors;
+
+release verification that checks the files and example results.
+
+When supplied and tested, these artifacts make the specified basic contradictions and missing fields mechanically detectable; a reduced audit model is not the complete conformance validator. They are not a complete reference calculator and do not automate ethical judgment.
+
+Source-Render Parity, Semantic Release Verification, and Hash-Last Rule
+
+A current-release package is non-conformant when a filename version, internal document version, active companion pin, source hierarchy, manifest, hash ledger, workbook synchronization surface, or required semantic token disagrees.
+
+Genuine format rule. Files labeled DOCX SHALL be valid OOXML packages and open through an independent OOXML reader. Files labeled PDF SHALL render. Extensions are not evidence of format.
+
+Common-source rule. Markdown/source, DOCX, PDF, workbook, and machine mirrors SHALL be generated or semantically verified against one frozen release source. The semantic verifier SHALL check required current-version strings, required normative sections and tokens, active pin matrix, source hierarchy, completion boundary, and absence of unmarked stale pins.
+
+Visual parity rule. Derived DOCX/PDF tables SHALL preserve the approved MathGov blue/light-blue information hierarchy, readable cell padding, repeating header rows, and legible page rendering. Visual polish cannot alter semantics.
+
+Spreadsheet rule. Formula workbooks SHALL be recalculated in a calculation engine before release, saved, reopened, scanned for formula errors, and then hashed. A no-error read with missing cached values is not evidence of calculation.
+
+Hash-last rule. Manifests and SHA-256 ledgers are generated only after semantic content, renderings, workbook recalculation, filenames, and package inventory are frozen. Any later byte change invalidates the ledger and requires regeneration.
+
+APPENDIX RELEASE: Identity, Source Authority and Revision Record
+
+Framework release: MathGov/RippleLogic v13.0. Component: MathGov Reproducibility and Use Standard v1.7. Edition-origin preparation: 10 September 2026; the separately identified correction build is dated below. Two-part major.minor component versions are used; preserved historic identifiers are not renumbered.
+
+Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Verification_and_Readiness.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.
+
+Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.
+
+Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.
+
+Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.
+
+Package source authority: Core_15 contains 14 DOCX specification masters and one XLSX Aligners frozen worked-run workbook. DOCX files control prose, equations and tables subject to Canon and SGP ownership. The workbook controls only its disclosed exemplar surfaces. Sources, Reading_HTML and Reading_PDFs are generated reading projections, not competing normative masters. The manifest and hashes identify exact bytes; supplemental code and schemas govern only their documented subset. Conflicts require recorded correction against the controlling source.
+
+License and reuse: consult the package-level LICENSE and NOTICE and retain applicable component-specific and third-party notices. This pointer does not override a valid exception or grant rights over separately supplied private or third-party review material.
+
+External repository publication and any absent legacy schema/validator/registry are separate authorities/evidence surfaces. The local package does not claim to update a remote repository or reproduce unavailable implementations. Current source pointers in this appendix replace prior front-matter edition pointers for this package; accurate historical source references below are retained as lineage only.
+
+Preserved invariants: RG -> RF/NCRC -> TRC -> CSV -> RLS; rights non-compensation and unallocated rights effects; existing seven rows and seven dimensions; existing SGP MPS/FPP/GPR/SPR/ICP/RMCP separation; probability ownership, uncertainty, stability and every-contender rules; selection, authority and execution separation.
+
+Component	Current edition
+RippleLogic Canon	v13.0
+Sentience Gradient Protocol	v8.8
+ripple.md Standard	v5.8
+RippleLogic Agent System	v13.0
+CSV Gate Standard	v2.7
+RippleLogic Cascade Standard	v2.9
+MathGov Reproducibility and Use Standard	v1.7
+Welfare Dimension Boundary and Interaction Protocol	v1.9
+RLS Validation Protocol	v2.9
+RippleLogic Foundations Primer	v4.7
+MathGov Public Introduction	v13.0
+Physical/Causal Admissibility Evidence Profile	v2.6
+Methodological Falsifiability and Dependency Integrity Standard	v2.6
+Source-Coupling Integrity Standard	v2.6
+RippleLogic Aligners Sheet	v5.9
+
+Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.
+
+Current proposals are not universal truths. Taxonomy maximality, continuous-time propagation, cross-substrate cardinal welfare, generic susceptibility/shield formulas, autonomous recovery, vendor infrastructure, zero-knowledge circuits and hardware meshes remain unvalidated unless independently demonstrated under a scoped implementation profile.
+
+Preserved Baseline Release Material (Historical; Non-Controlling)
+
+The following blocks are relocated intact from the recovered baseline. Their edition numbers, release-readiness wording and external-source limitations describe that historical candidate, not current component identity or newly executed verification. Governing current metadata is the matrix above.
+
+v1.6-rc2 Historical Release Integration
+
+HISTORICAL (NON-CONTROLLING): Release: MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2 — Rights Non-Dilution, Representation Integrity, and Robust Selection Release
+
+Historical companion pins: Canon v12.8-rc2; SGP v8.7-rc2; ripple.md v5.7-rc2; Agent System v12.7-rc2; CSV v2.6-rc2; Cascade v2.8-rc2; Reproducibility v1.6-rc2; WDBIP v1.8-rc2; RLS Validation v2.8-rc2; Primer v4.6-rc2; Public Introduction v12.8-rc2; PC-AEP/MFDI/Source-Coupling v2.5-rc2; Aligners Sheet v5.8-rc1.
+
+Release control	Historical value
+Component	MathGov Reproducibility and Use Standard v1.6-rc2
+Release	HISTORICAL (NON-CONTROLLING): MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2
+Architecture	RG → RF/NCRC → TRC → CSV → RLS
+Role	Source/render parity, run replay, version identity, semantic verification, use profiles, and release-integrity discipline.
+Claim boundary	Release candidate for Tier 1–3 research; source/mirror parity and implementation conformance remain separately reviewable; not empirical validation, legal authority, physical-safety certification, deployment authorization, Tier 4, or moral truth.
+Source/render parity	Versioned semantic source and DOCX/PDF mirrors must agree. Filename, internal version, active pins, manifest, and hashes must agree; mismatch is release-integrity failure.
+
+Historical Release Integration (v1.6-rc2)
+
+HISTORICAL (NON-CONTROLLING): This candidate advances MathGov Reproducibility and Use Standard from the audited v1.5 baseline to v1.6-rc2 and binds it to MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2. Historical references remain lineage only; unmarked current-release references use the current component matrix in Appendix RELEASE.

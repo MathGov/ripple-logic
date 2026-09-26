@@ -1,0 +1,90 @@
+{
+  "status": "REJECTED_NOT_USED_FOR_MASTER",
+  "engine": "artifact_tool 2.8.22",
+  "input_workbook_sha256": "4341aae10e91f82976374d3d379e1dfd4fd4abfe169fe8f5a8853929b2fd96cc",
+  "candidate_sha256": "b66c907592b8124e6024a96aa4d2677b09be4cb75f1a44035dd135a2fac89342",
+  "formula_count_before": 20212,
+  "formula_count_after": 20212,
+  "raw_cache_differences": 2047,
+  "empty_string_to_missing_serializations": 215,
+  "other_differences": 1832,
+  "by_sheet": {
+    "Rights_Coverage_View": 16,
+    "Build_Integrity": 2,
+    "Workbook_Formula_Guard": 1814
+  },
+  "formula_error_cells": 0,
+  "examples": [
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "I16",
+      "before": -0.08,
+      "after": -0.15,
+      "formula": "IF(ISNUMBER($K16),$K16,IF($K16=\"INVALID_OVERRIDE\",\"INVALID_OVERRIDE\",IF($G16<0,MAX(-1,'Subgroup_Overrides'!$B$7*$G16),$G16)))"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "K16",
+      "before": -0.08,
+      "after": -0.15,
+      "formula": "IFERROR(IF(COUNTIF('Subgroup_Overrides'!$H$11:$H$100,\"B|\"&$C16&\"|\"&$D16)=0,\"\",IF(AND(COUNTIF('Subgroup_Overrides'!$H$11:$H$100,\"B|\"&$C16&\"|\"&$D16)=1,ISNUMBER(INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C16&\"|\"&$D16,'Subgroup_Overrides'!$H$11:$H$100,0))),NOT(ISBLANK(INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C16&\"|\"&$D16,'Subgroup_Overrides'!$H$11:$H$100,0)))),INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C16&\"|\"&$D16,'Subgroup_Overrides'!$H$11:$H$100,0))>=-1,INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C16&\"|\"&$D16,'Subgroup_Overrides'!$H$11:$H$100,0))<=1,LEN(TRIM(INDEX('Subgroup_Overrides'!$G$11:$G$100,MATCH(\"B|\"&$C16&\"|\"&$D16,'Subgroup_Overrides'!$H$11:$H$100,0))))>0),INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C16&\"|\"&$D16,'Subgroup_Overrides'!$H$11:$H$100,0)),\"INVALID_OVERRIDE\")),\"INVALID_OVERRIDE\")"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "N16",
+      "before": -0.08,
+      "after": -0.15,
+      "formula": "IF(ISNUMBER($I16),$I16,\"\")"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "P16",
+      "before": "ECOL|-80000000000",
+      "after": "ECOL|-150000000000",
+      "formula": "IF(ISNUMBER($N16),$B16&\"|\"&ROUND($N16*1000000000000,0),\"\")"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "I29",
+      "before": -0.12,
+      "after": -0.3,
+      "formula": "IF(ISNUMBER($K29),$K29,IF($K29=\"INVALID_OVERRIDE\",\"INVALID_OVERRIDE\",IF($G29<0,MAX(-1,'Subgroup_Overrides'!$B$7*$G29),$G29)))"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "K29",
+      "before": -0.12,
+      "after": -0.3,
+      "formula": "IFERROR(IF(COUNTIF('Subgroup_Overrides'!$H$11:$H$100,\"B|\"&$C29&\"|\"&$D29)=0,\"\",IF(AND(COUNTIF('Subgroup_Overrides'!$H$11:$H$100,\"B|\"&$C29&\"|\"&$D29)=1,ISNUMBER(INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C29&\"|\"&$D29,'Subgroup_Overrides'!$H$11:$H$100,0))),NOT(ISBLANK(INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C29&\"|\"&$D29,'Subgroup_Overrides'!$H$11:$H$100,0)))),INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C29&\"|\"&$D29,'Subgroup_Overrides'!$H$11:$H$100,0))>=-1,INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C29&\"|\"&$D29,'Subgroup_Overrides'!$H$11:$H$100,0))<=1,LEN(TRIM(INDEX('Subgroup_Overrides'!$G$11:$G$100,MATCH(\"B|\"&$C29&\"|\"&$D29,'Subgroup_Overrides'!$H$11:$H$100,0))))>0),INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"B|\"&$C29&\"|\"&$D29,'Subgroup_Overrides'!$H$11:$H$100,0)),\"INVALID_OVERRIDE\")),\"INVALID_OVERRIDE\")"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "N29",
+      "before": -0.12,
+      "after": -0.3,
+      "formula": "IF(ISNUMBER($I29),$I29,\"\")"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "P29",
+      "before": "NEED|-120000000000",
+      "after": "NEED|-300000000000",
+      "formula": "IF(ISNUMBER($N29),$B29&\"|\"&ROUND($N29*1000000000000,0),\"\")"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "H31",
+      "before": -0.2,
+      "after": -0.15,
+      "formula": "IF(ISNUMBER($J31),$J31,IF($J31=\"INVALID_OVERRIDE\",\"INVALID_OVERRIDE\",IF($F31<0,MAX(-1,'Subgroup_Overrides'!$B$7*$F31),$F31)))"
+    },
+    {
+      "sheet": "Rights_Coverage_View",
+      "cell": "J31",
+      "before": -0.2,
+      "after": -0.15,
+      "formula": "IFERROR(IF(COUNTIF('Subgroup_Overrides'!$H$11:$H$100,\"A|\"&$C31&\"|\"&$D31)=0,\"\",IF(AND(COUNTIF('Subgroup_Overrides'!$H$11:$H$100,\"A|\"&$C31&\"|\"&$D31)=1,ISNUMBER(INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"A|\"&$C31&\"|\"&$D31,'Subgroup_Overrides'!$H$11:$H$100,0))),NOT(ISBLANK(INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"A|\"&$C31&\"|\"&$D31,'Subgroup_Overrides'!$H$11:$H$100,0)))),INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"A|\"&$C31&\"|\"&$D31,'Subgroup_Overrides'!$H$11:$H$100,0))>=-1,INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"A|\"&$C31&\"|\"&$D31,'Subgroup_Overrides'!$H$11:$H$100,0))<=1,LEN(TRIM(INDEX('Subgroup_Overrides'!$G$11:$G$100,MATCH(\"A|\"&$C31&\"|\"&$D31,'Subgroup_Overrides'!$H$11:$H$100,0))))>0),INDEX('Subgroup_Overrides'!$F$11:$F$100,MATCH(\"A|\"&$C31&\"|\"&$D31,'Subgroup_Overrides'!$H$11:$H$100,0)),\"INVALID_OVERRIDE\")),\"INVALID_OVERRIDE\")"
+    }
+  ],
+  "disposition": "Do not replace the preserved workbook or treat this engine output as compatibility verification. No formula was changed to accommodate these discrepancies. Full corpus reference replay is a separate evidence surface."
+}

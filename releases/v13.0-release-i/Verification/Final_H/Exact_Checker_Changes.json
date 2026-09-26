@@ -1,0 +1,32 @@
+[
+  {
+    "file": "check_final_corrections.py",
+    "before": "json.loads((ROOT/'VERSION_MANIFEST.json').read_text())['build_id'] in text(r)",
+    "after": "source_build_id(ROOT,p) in text(r)",
+    "reason": "Check exact manifest-bound component identity, not a cosmetic newer package ID; preserve original semantic assertions."
+  },
+  {
+    "file": "check_reading_integrity.py",
+    "before": "m['build_id']in text",
+    "after": "source_build_id(ROOT,p,m)in text",
+    "reason": "Check exact manifest-bound component identity, not a cosmetic newer package ID; preserve original semantic assertions."
+  },
+  {
+    "file": "check_release_e.py",
+    "before": "json.loads((ROOT/'VERSION_MANIFEST.json').read_text())['build_id'] in text",
+    "after": "source_build_id(ROOT,ROOT/'Core_15'/name) in text",
+    "reason": "Check exact manifest-bound component identity, not a cosmetic newer package ID; preserve original semantic assertions."
+  },
+  {
+    "file": "check_release_f.py",
+    "before": "build in tx(docs[p.name])",
+    "after": "source_build_id(ROOT,p) in tx(docs[p.name])",
+    "reason": "Check exact manifest-bound component identity, not a cosmetic newer package ID; preserve original semantic assertions."
+  },
+  {
+    "file": "check_release_g.py",
+    "before": "json.loads((ROOT/'VERSION_MANIFEST.json').read_text())['build_id']in t",
+    "after": "source_build_id(ROOT,f)in t",
+    "reason": "Check exact manifest-bound component identity, not a cosmetic newer package ID; preserve original semantic assertions."
+  }
+]

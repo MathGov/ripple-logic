@@ -1,0 +1,1276 @@
+[
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "text": "11.1.3A UCI Measurement Maturity Statement (Normative acknowledgement)",
+    "outline_level": 3,
+    "bookmark": "mg_uci_measurement_maturity",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "0) Normative Keywords",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_1",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "1) Scope, Non-Goals, and Design Principles",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_2",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "1.1 Scope",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_3",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "1.2 Non-Goals",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_4",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "1.3 Design Principles",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_5",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2) Core Definitions",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_6",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.1 Alignment (Operational)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_7",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.2 Episode",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_8",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.3 High-Stakes Episode",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_9",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.4 NCRC (Non-Compensatory Rights Constraint)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_10",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.5 Non-Domination",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_11",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.6 TRC (Tail-Risk Constraint)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_12",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.7 Containment and Reversibility",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_13",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.7A Consequence Tempo",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_14",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.7B Constitutional Latency",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_15",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.7C Responsibility Continuity",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_16",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.8 Epistemic Integrity",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_17",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.9 Ripple Lift",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_18",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.10 NCAR Loop",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_19",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.11 Decision Note",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_20",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.12 Assurance-Case Semantics (S,T,K,M,V,E,R,U)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_21",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.13 Falsifier",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_22",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.14 Material Change",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_23",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.15 Qualifying Episode",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_24",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.16 High-Impact Episode / High-Impact Deployment",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_25",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.16A Stakes Ladder (Normative)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_26",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.17 Waiver Record",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_27",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.18 Implementation-Defined Parameters (IDP)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_28",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.19 Emergency Triage",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_29",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "2.20 Emergency Triage Record",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_30",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3) Artifact Role Map",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_31",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3.1 soul.md",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_32",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3.2 ripple.md",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_33",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3.3 PFAP (RLS-RFC-0002)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_34",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3.4 C1–C6 Assurance Framework",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_35",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3.5 RPAP (RLS-RFC-0003)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_36",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "3.6 Composition Rule",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_37",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "4) Rights Baseline (Jurisdiction-Neutral Default)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_38",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "4.1 Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_39",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "4.2 Localization Procedure",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_40",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "4.3 Default Rights Baseline Table",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_41",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "4.4 Interaction with the Constraint Cascade",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_42",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "5) The ripple.md Contract Model",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_43",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "5.1 Contract as an Instruction Surface",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_44",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "5.2 Binding Commitments",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_45",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6) Five-Level Method and Constraint Ordering (Normative Decision Ordering)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_46",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.1 Gate 1 - NCRC (Rights Floor) [G1]",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_47",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.2 Gate 2 - Non-Domination [G2]",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_48",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.3 Gate 3 - TRC (Tail-Risk Bounding) [G3]",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_49",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.4 Gate 4 - CSV-Compatible Containment, Structural Viability, and Reversibility [G4]",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_50",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.5 Gate 5 - Epistemic Integrity [G5]",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_51",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.6 Optimization Within Feasible Set - Ripple Lift",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_52",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "6.7 Oversight and Uncertainty Handling (Modifier)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_53",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "7) Alignment Test Suite (7 Tests) with Falsifiers",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_54",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "8) General Decision Rule (Pass / Partial / Fail / NA / IND)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_55",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "8.1 Scoring Scale",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_56",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "8.2 General Pass Criteria",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_57",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "8.3 Indeterminate and Missing Evidence",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_58",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "8.4 High-Stakes Blocking Rule",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_59",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "8.5 Scoped Conformance / Alignment Claim Taxonomy (Pass / Conditional / Not aligned)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_60",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9) Evidence Sufficiency and Sampling Protocol",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_61",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.1 Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_62",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.2 Evidence Classes (Claim-Specific Warrant Governs)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_63",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.3 Minimum Evidence Coverage",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_64",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.4 Sampling Rule (Anti-Cherry-Picking)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_65",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.5 Reconstruction Sampling",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_66",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.5R Recourse Reconstruction Sampling (Non-Domination evidence)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_67",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "9.6 Change Sampling",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_68",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "10) Assurance-Case Semantics: Mapping 7 Tests to C1–C6",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_69",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "10.1 Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_70",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "10.2 The C1–C6 Claims",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_71",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "10.3 Mapping Table",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_72",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "10.4 Assurance Preconditions (Stop Rule)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_73",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11) Required Artifacts",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_74",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.1 Decision Note",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_75",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.2 Contestability and Appeal",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_76",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.3 Monitoring and Rollback",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_77",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.4 Consequence Tempo and Responsibility Continuity",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_78",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.5 Incident Register and Postmortems",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_79",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.6 Waiver Record",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_80",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "11.7 Emergency Triage Record",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_81",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "12) Conformance Levels (L0–L3) with Minimum Observable Metrics",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_82",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13) Audit Procedure, Reconstructability, and Inter-Rater Reliability",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_83",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.1 Two-Rater Requirement",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_84",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.2 Adjudication",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_85",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.3 Reconstructability Audit",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_86",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.3R Recourse Reconstructability Audit (RT-01R)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_87",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.4 Longitudinal Drift Analysis",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_88",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.5 Auditability Theater Detection",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_89",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "13.6 GSN Interoperability",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_90",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "14) NCAR: Continuous Alignment Duty",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_91",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "15) Oversight and Uncertainty Handling",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_92",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "15.1 Mandatory Review Triggers",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_93",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "15.2 Conservative Defaults",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_94",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "16) Agent Binding Rules",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_95",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "16.1 Practical Local Scope Profile (PLSS) Compatibility",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_96",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "17) Drift Detection and Anti-Theater",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_97",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "17.1 Drift Monitoring Duty",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_98",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "17.2 Drift Indicator Categories",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_99",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "17.3 Response to Detected Drift",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_100",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "17.4 Drift Index (Analytical Use Only)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_101",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "18) Threat Model and Abuse Resistance",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_102",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "19) Security, Privacy, and Redaction Considerations",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_103",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "19.1 Privacy",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_104",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "19.2 Redaction Protocol Requirement (L2/L3)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_105",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "19.3 Security of Audit Artifacts",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_106",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "20) Material Change, Versioning, Update Legitimacy, and Governance of the Standard",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_107",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "20.0 Material Change and Change Classes (Normative)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_108",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "20.1 Semantic Versioning",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_109",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "20.2 Change Control (C6 for the Standard Itself)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_110",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "20.3 Emergency Changes",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_111",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "20.4 Public Comment (Recommended for Major Changes)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_112",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "21) Non-Overclaiming Rules",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_113",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "21.0A Public conformance wording (Normative clarification).",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_114",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "21.1 Prohibited Claims",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_115",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "21.2 Permitted Claims (Honest Alternatives)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_116",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "21.3 Claiming Language",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_117",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "22) Registries and Identifiers",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_118",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "22.1 Union Scope Registry (Default)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_119",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "22.2 Welfare Dimension Registry (Default)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_120",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "22.3 Decision Note Field Registry",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_121",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "22.4 Drift Indicator Registry",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_122",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "22.5 Machine-Readable Registry Identifiers",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_123",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "23) Reference Implementations (Non-normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_124",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "24) References",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_125",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "24.1 Normative References",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_126",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "24.2 Informative References",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_127",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix A: Minimal ripple.md Skeleton (Normative Template)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_128",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix B: Decision Note Field Registry (Normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_129",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix C: Rights Baseline Table (Jurisdiction-Neutral Default)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_130",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix C-2: Wrapped-Deployment Rights Crosswalk (Normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_131",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix D: 7-Test to C1–C6 Mapping Table",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_132",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix E: Drift Indicators and Alignment Degradation Signals",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_133",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix F: Compact Motto (Non-normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_134",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix G: Assurance Preconditions Record (S,T,K,M,V,E,R,U) (Normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_135",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G1. Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_136",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G2. When Required",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_137",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G3. Template (fillable record)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_138",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G3A. Dependency Pin Schema (Normative)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_139",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G3B. Normative Minimal Machine-Readable Schema",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_140",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G3C. Verification Regime Provenance (Normative)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_141",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G4. Stop Rule",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_142",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "G5. Projection Pre-Registration Extension (Normative for high-stakes L2/L3; recommended otherwise)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_143",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix H: Material Change and Change Classes (Normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_144",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H1. Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_145",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H2. Material Change (Definition)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_146",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H3. Change Classes",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_147",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H4. Minimum Change-Control Record (CCR) Fields",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_148",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H5. Approval Thresholds (Multi-key)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_149",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H6. Sunset and Renewal",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_150",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "H7. Suppression Check",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_151",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix I: Minimum Test Suite and Drills per Conformance Level (Normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_152",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I1. Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_153",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I1A. Normative minimum numeric thresholds",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_154",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I2. L0 Minimum Tests (Agent/Individual)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_155",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I3. L1 Minimum Tests (Organization)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_156",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I4. L2 Minimum Tests (Institution/Regulated)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_157",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I5. L3 Minimum Tests (Government/Public Authority)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_158",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "I6. Waivers",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_159",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix J: Registry Identifiers (Normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_160",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J1. Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_161",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J2. Gate IDs (Constraint Cascade)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_162",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J3. Test IDs (7-Test Suite)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_163",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J4. Decision Note Field IDs (DN-##)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_164",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J5. Drift Indicator IDs",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_165",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J6. Threat Model Tags (M-##)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_166",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J7. Change Class Tags (CH-#)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_167",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J8. Implementation-Defined Parameter IDs (IDP-#)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_168",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "J9. Emergency Triage Tags (TRIAGE-#)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_169",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix K: Example Threshold Ranges by Domain (Non-normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_170",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K1. Purpose",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_171",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K2. Disclosure Comprehension Threshold (Test 2)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_172",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K3. Reconstructability Target (Test 6) — historical planning comparators, superseded for current conformance",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_173",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K4. Time-to-Remedy Targets (Tests 2, 7)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_174",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K5. Time-to-Rollback Targets (Test 4)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_175",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K5A. Consequence-Tempo Compatibility (Test 4)",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_176",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K6. Audit Cadence",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_177",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "K7. Usage Rule",
+    "outline_level": 2,
+    "bookmark": "mg_ripple_outline_178",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix L: Machine-Readable YAML Templates (Non-normative)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_179",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix V: Release Metadata and Dependency Pins",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_180",
+    "visual_style_preserved": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "text": "Appendix X: Decision Verdict, Authority-Selection, and Reality-Grounding Wrapper Extension (v4.0)",
+    "outline_level": 1,
+    "bookmark": "mg_ripple_outline_181",
+    "visual_style_preserved": true
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "build_id": "MG-RL-13.0-20260926-RELEASE-I",
+  "status": "PASS",
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.docx",
+      "sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+      "body_text_matches": true,
+      "source_sha256": "b0d14cab995c1f86965e125c234325daf4b267da8e227e9b8fd51397649f349c"
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "sha256": "091962bcbbdd49d29407b8fc305dcd5a988e851c35e8fac25d4307c06884ba87",
+      "body_text_matches": true,
+      "source_sha256": "2f73df7ae2989e44404d198445a641210888799dff8826710c17f797b9f433cf"
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+      "body_text_matches": true,
+      "source_sha256": "fa62f8987a84f6429083a8d6697c904949f255f8a4b5c2010e914be5e674d5f0"
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+      "body_text_matches": true,
+      "source_sha256": "98ff6ca622de5609548bb2b45276b3623823e8647977a5b8e8a9dbb4c35e224a"
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+      "body_text_matches": true,
+      "source_sha256": "8ac0032dc1ee78c1f4954a9aace4aac3a29b07ab0597288e371116b7f2e19e95"
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.docx",
+      "sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+      "body_text_matches": true,
+      "source_sha256": "a11849c2ed4439f3ffa6bc6541db36f1dccd210123e57f50bd81be3b30010391"
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "sha256": "300c48139aad28415bc760eb11a93b6c1982078b8b7a48083385c5be62846506",
+      "body_text_matches": true,
+      "source_sha256": "f31ea4983569f65a8b1e86853a3ac6f60067e311bf2c578637aca45a252a26af"
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+      "sha256": "82d26566f892d08b08681ef191b02509b6d72cecbf29845ac66d122e8c68ac22",
+      "body_text_matches": true,
+      "source_sha256": "1a25ac67eff1cc8b3293897c605e075ed5c235d6746cd8cd24c5ff6af21c46c1"
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+      "body_text_matches": true,
+      "source_sha256": "1db23b730ef4f982ecfc977cb1c9db0de26a0a3b4a5d59ff009ca2256ad07e9f"
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.docx",
+      "sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+      "body_text_matches": true,
+      "source_sha256": "2efa6797ae952e8d6d2d132e511e30c45f27ad5ac26df5bdc8b11d6f048cd5a1"
+    },
+    {
+      "file": "SGP_v8.8.docx",
+      "sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+      "body_text_matches": true,
+      "source_sha256": "12df4029e3106491685532c67c99b592fec63ce7c509881fc08ce3d0f8a5532c"
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+      "sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+      "body_text_matches": true,
+      "source_sha256": "525c3b584b98f43cb6baff28ae8951fbe4897b16449d94c41b78b6831db6f149"
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "sha256": "8cbb044ffaeeece7118cf88a8203cd60c9790de6ff6ba529bf683f6d7284e12c",
+      "body_text_matches": true,
+      "source_sha256": "2c59a6c399808bd31cfa59647e093832ef80472f859443017c2a22549b023c88"
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.docx",
+      "sha256": "c14744884baddd01e7836c7cb0890ee0c082bca7e7c2af086f8d436bf8e11dd1",
+      "body_text_matches": true,
+      "source_sha256": "2f2d1f485cd26cd8be867d0d9cdf83e3e6487fd9cb39ec47b96fc3831fb22edc"
+    }
+  ],
+  "scope": "Exact normalized complete body/table text; not visual identity."
+}

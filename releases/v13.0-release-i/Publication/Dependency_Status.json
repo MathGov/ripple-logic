@@ -1,0 +1,149 @@
+{
+  "build_id": "MG-RL-13.0-20260926-RELEASE-I",
+  "scope": "Dependency inventory only; not a normative registry",
+  "dependencies": [
+    {
+      "artifact": "CANONICAL_STATE_REGISTRY_v1.1.yaml",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "STATE_TRANSITION_MATRIX_v1.1.json",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "CANONICAL_AUDIT_FLAG_REGISTRY_v1.1.yaml",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "docs/implementation/NORMATIVE_KERNEL_INDEX_v1.1.yaml",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "schemas/mathgov_run_record_v4_1.schema.json",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "sgp_rmcp_record_v8_4.schema.json",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "wdbip_record_v1_7.schema.json",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "No new compatibility or normative hash binding asserted by this build.",
+      "claim_effect": "Blocks any claim that relies on this exact external interface. Does not block reading the specification or executing the supplied scoped tests."
+    },
+    {
+      "artifact": "ripple_md_wrapper_v5_0.schema.json",
+      "status": "ROADMAP_NAME_NOT_ESTABLISHED",
+      "binding": "Reviewer-proposed filename, not verified as an existing governing artifact."
+    },
+    {
+      "artifact": "Reference/schemas/effect_transition_1.0.schema.json",
+      "status": "BUNDLED_SUPPLEMENTAL_ONLY",
+      "binding": "Limited illustrative record schema; not a legacy-schema or full state-registry replacement."
+    },
+    {
+      "artifact": "Reference/schemas/qualified_control_1.0.schema.json",
+      "status": "BUNDLED_SUPPLEMENTAL_ONLY",
+      "binding": "Limited illustrative record schema; not a legacy-schema or full state-registry replacement."
+    },
+    {
+      "artifact": "RPAP / PFAP profiles",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "claim_effect": "Any L2/L3 wrapper path requiring one of these profiles remains unavailable for that conformance claim until its active version and evidence are supplied."
+    },
+    {
+      "artifact": "Reference/state_crosswalk.json",
+      "status": "BUNDLED_SCOPED_REFERENCE_ONLY",
+      "claim_effect": "An in-package reading/test subset sourced from Canon and Reproducibility Section 3. Not a replacement for the absent canonical state registry."
+    },
+    {
+      "artifact": "Reference/record_minimums.json",
+      "status": "BUNDLED_SUPPLEMENTAL_ONLY",
+      "binding": "Derived limited view; not a replacement for the absent external canonical registry or mathgov_run_record_v4_1 schema."
+    },
+    {
+      "artifact": "Reference/token_completion.json",
+      "status": "BUNDLED_SUPPLEMENTAL_ONLY",
+      "binding": "Derived limited view; not a replacement for the absent external canonical registry or mathgov_run_record_v4_1 schema."
+    },
+    {
+      "artifact": "Reference/schemas/pcc_minimum_records.schema.json",
+      "status": "BUNDLED_SUPPLEMENTAL_ONLY",
+      "binding": "Derived limited view; not a replacement for the absent external canonical registry or mathgov_run_record_v4_1 schema."
+    },
+    {
+      "artifact": "release/VALIDATE_MATHGOV_RUN.py",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "claim_effect": "No conformance depending on this exact external artifact is established by the supplemental reference implementation."
+    },
+    {
+      "artifact": "validate_wdbip_v1_7.py",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "claim_effect": "No conformance depending on this exact external artifact is established by the supplemental reference implementation."
+    },
+    {
+      "artifact": "wdbip_worked_example_green_corridor_v1_7.json",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "claim_effect": "No conformance depending on this exact external artifact is established by the supplemental reference implementation."
+    },
+    {
+      "artifact": "WDBIP_VALIDATION_STUDY_PROTOCOL_v1.0.md",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "claim_effect": "No conformance depending on this exact external artifact is established by the supplemental reference implementation."
+    },
+    {
+      "artifact": "WDBIP_DIMENSION_SET_MIGRATION_STANDARD_v1.0.md",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "claim_effect": "No conformance depending on this exact external artifact is established by the supplemental reference implementation."
+    },
+    {
+      "artifact": "Reference/full_formula_replay.py",
+      "status": "BUNDLED_SCOPED_REFERENCE_ONLY",
+      "binding": "Reads the exact workbook formula corpus without cached formula dependencies; not a universal spreadsheet engine or native application parity."
+    },
+    {
+      "artifact": "Complete Appendix R machine vector corpus",
+      "status": "NOT_BUNDLED_AS_COMPLETE_CORPUS",
+      "binding": "Selected scoped fixtures are provided, not a complete ProofPack."
+    },
+    {
+      "artifact": "Governed scenario libraries",
+      "status": "NOT_BUNDLED_AS_ACTIVE_GOVERNED_LIBRARY",
+      "binding": "Rules and synthetic examples do not constitute a calibrated library for a real run."
+    },
+    {
+      "artifact": "RLS_Validation_Workbook_v0.3",
+      "status": "EXTERNAL_NOT_BUNDLED_NOT_VERIFIED",
+      "binding": "Prospective rater-study workbook, distinct from frozen Aligners 5.9."
+    },
+    {
+      "artifact": "Complete L1 case/rater execution packet",
+      "status": "NOT_BUNDLED_AS_COMPLETE_STUDY_PACKET",
+      "binding": "The protocol design is specified; actual case packets, study workbook, rater preparation and preregistration require assembly."
+    },
+    {
+      "artifact": "Reference/feedback_sensitivity.py",
+      "status": "BUNDLED_SCOPED_REFERENCE_ONLY",
+      "binding": "Literal-input reconstruction and numerical diagnostics, not a new operational selector."
+    }
+  ],
+  "ancillary_products": [
+    "MHIOS",
+    "Auditable Flourishing",
+    "AIAP"
+  ],
+  "ancillary_assurance": "Outside Core 15. No inherited validation, authority, deployment or release-conformance status."
+}

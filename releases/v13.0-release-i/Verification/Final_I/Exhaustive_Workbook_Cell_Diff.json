@@ -1,0 +1,596 @@
+[
+  {
+    "sheet": "Dashboard",
+    "cell": "I7",
+    "before": {
+      "type": "string",
+      "value": "Canonical Review Flags",
+      "formula": null,
+      "style": "29",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "REVIEW records by severity",
+      "formula": null,
+      "style": "29",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Dashboard",
+    "cell": "I5",
+    "before": {
+      "type": "string",
+      "value": "Canonical Invalid Flags",
+      "formula": null,
+      "style": "29",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "INVALID records by severity",
+      "formula": null,
+      "style": "29",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Dashboard",
+    "cell": "I6",
+    "before": {
+      "type": "string",
+      "value": "Canonical Escalation Flags",
+      "formula": null,
+      "style": "19",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "ESCALATE records by severity",
+      "formula": null,
+      "style": "19",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F5",
+    "before": {
+      "type": "string",
+      "value": "CANON!B13,B76",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; CANON!B13,B76",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F28",
+    "before": {
+      "type": "string",
+      "value": "CANON v13.0 uncertainty fields",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; uncertainty fields",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F12",
+    "before": {
+      "type": "string",
+      "value": "CANON!B73",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; CANON!B73",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F33",
+    "before": {
+      "type": "string",
+      "value": "PLSS_Escalation!B8 / PLSS_Local_Scope!A33:I40",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; PLSS_Escalation!B8",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "D46",
+    "before": {
+      "type": "string",
+      "value": "Manual edits detected in trigger cells; invalidate run output.",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "Workbook-local integrity label; exact file verification is external. Not a live detector.",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F18",
+    "before": {
+      "type": "string",
+      "value": "Self-check + release verifier",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; external verifier",
+      "formula": null,
+      "style": "40",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F13",
+    "before": {
+      "type": "string",
+      "value": "CANON!B10,B26,B137",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; CANON!B10,B26,B137",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "A39",
+    "before": {
+      "type": "string",
+      "value": "Frozen worked records, not live detectors. Rows 29–31 are Agent-owned runtime flags (Canon §14.3A.1); RUNTIME_* severities do not extend the PCC vocabulary. Tool-local integrity checks do not create Canon taxonomy.",
+      "formula": null,
+      "style": "41",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "Frozen records, not detectors. TOOL_LOCAL in column F or below means informative, non-controlling. Rows 29–31 are Agent-owned runtime flags; RUNTIME_* is not PCC severity. Counts group records, not canonical registry coverage.",
+      "formula": null,
+      "style": "41",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F27",
+    "before": {
+      "type": "string",
+      "value": "CANON v13.0 SCI fields",
+      "formula": null,
+      "style": "67",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; SCI fields",
+      "formula": null,
+      "style": "67",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "A46",
+    "before": {
+      "type": "string",
+      "value": "MANUAL_FLAG_OVERRIDE",
+      "formula": null,
+      "style": "41",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "MANUAL_FLAG_OVERRIDE_OR_TOKEN_INTEGRITY_FAILURE",
+      "formula": null,
+      "style": "41",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Sensitivity_Analysis",
+    "cell": "E13",
+    "before": {
+      "type": "string",
+      "value": "Gap",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "ΔRLS (raw)",
+      "formula": null,
+      "style": "44",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5560",
+    "before": {
+      "type": "string",
+      "value": "CANON!B10,B26,B137",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; CANON!B10,B26,B137",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5346",
+    "before": {
+      "type": "string",
+      "value": "Canonical Escalation Flags",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "ESCALATE records by severity",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN10997",
+    "before": {
+      "type": "string",
+      "value": "See Reports/Release_H_Verification.md and Verification/Workbook_Manifest.json.",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "See Reports/Release_I_Verification.md and Verification/Workbook_Manifest.json.",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5512",
+    "before": {
+      "type": "string",
+      "value": "CANON!B13,B76",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; CANON!B13,B76",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5635",
+    "before": {
+      "type": "string",
+      "value": "CANON v13.0 uncertainty fields",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; uncertainty fields",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN10991",
+    "before": {
+      "type": "string",
+      "value": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-H",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-I",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5350",
+    "before": {
+      "type": "string",
+      "value": "Canonical Review Flags",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "REVIEW records by severity",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5343",
+    "before": {
+      "type": "string",
+      "value": "Canonical Invalid Flags",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "INVALID records by severity",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN6290",
+    "before": {
+      "type": "string",
+      "value": "Gap",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "ΔRLS (raw)",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5554",
+    "before": {
+      "type": "string",
+      "value": "CANON!B73",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; CANON!B73",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5690",
+    "before": {
+      "type": "string",
+      "value": "Manual edits detected in trigger cells; invalidate run output.",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "Workbook-local integrity label; exact file verification is external. Not a live detector.",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5687",
+    "before": {
+      "type": "string",
+      "value": "MANUAL_FLAG_OVERRIDE",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "MANUAL_FLAG_OVERRIDE_OR_TOKEN_INTEGRITY_FAILURE",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5665",
+    "before": {
+      "type": "string",
+      "value": "PLSS_Escalation!B8 / PLSS_Local_Scope!A33:I40",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; PLSS_Escalation!B8",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5590",
+    "before": {
+      "type": "string",
+      "value": "Self-check + release verifier",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; external verifier",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5670",
+    "before": {
+      "type": "string",
+      "value": "Frozen worked records, not live detectors. Rows 29–31 are Agent-owned runtime flags (Canon §14.3A.1); RUNTIME_* severities do not extend the PCC vocabulary. Tool-local integrity checks do not create Canon taxonomy.",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "Frozen records, not detectors. TOOL_LOCAL in column F or below means informative, non-controlling. Rows 29–31 are Agent-owned runtime flags; RUNTIME_* is not PCC severity. Counts group records, not canonical registry coverage.",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5629",
+    "before": {
+      "type": "string",
+      "value": "CANON v13.0 SCI fields",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "TOOL_LOCAL; SCI fields",
+      "formula": null,
+      "style": null,
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Build_Integrity",
+    "cell": "A2",
+    "before": {
+      "type": "string",
+      "value": "Frozen-value and formula guards flag ordinary edits. External Workbook_Verifier checks the exact complete file and formula/cache manifest. Neither check establishes truth or deployment safety.",
+      "formula": null,
+      "style": "667",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "Local guards cover retained inputs/literals, selected formula presence and RLS reconciliation—not verdict-display replacement. External Workbook_Verifier checks all bytes. Neither establishes truth or safety.",
+      "formula": null,
+      "style": "667",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B4",
+    "before": {
+      "type": "string",
+      "value": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-H",
+      "formula": null,
+      "style": "1416",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-I",
+      "formula": null,
+      "style": "1416",
+      "cache_present": true
+    }
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B7",
+    "before": {
+      "type": "string",
+      "value": "See Reports/Release_H_Verification.md and Verification/Workbook_Manifest.json.",
+      "formula": null,
+      "style": "1416",
+      "cache_present": true
+    },
+    "after": {
+      "type": "string",
+      "value": "See Reports/Release_I_Verification.md and Verification/Workbook_Manifest.json.",
+      "formula": null,
+      "style": "1416",
+      "cache_present": true
+    }
+  }
+]

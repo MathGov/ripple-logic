@@ -1,0 +1,6 @@
+MathGov / RippleLogic
+Originator and system architect: James McGaughran.
+
+The supplied Canon section 0.7 declares Apache License 2.0 for this release package, absent an explicit exception. LICENSE reproduces that license. Existing source and component attributions are retained; this notice does not grant trademark or professional-certification rights.
+
+Publication-preparation modifications: MG-RL-13.0-20260912-PUBLICATION-B. Exact changes, verification and retained limitations are in Reports and Verification. The public root excludes raw audit conversations and prior-build archives. Separate private provenance materials are not granted additional republication rights by this notice.

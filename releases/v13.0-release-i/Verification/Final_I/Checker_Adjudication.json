@@ -1,0 +1,8 @@
+{
+  "current_candidate_status": "PASS",
+  "prior_assertion_adjustments": [
+    "An H-era test assumed the carried-forward Cascade source-build ID must equal every future package ID. It now verifies the exact unchanged H source identity; the I manifest and unchanged hash are checked independently.",
+    "Three E-era prose assertions expected an obsolete workbook identity sentence. They now accept the explicit I preservation disclosure and exact change-register pointer while retaining the original alternative for carried-forward masters."
+  ],
+  "scope": "No mathematical, authority, snapshot or error-path assertions were removed."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "engine": "LibreOffice 25.2.3.2 520(Build:2)",
+  "input_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b",
+  "native_output_sha256": "1420c571b8f39851890d3c433042f60e1ce5d1d25790a00b59e2ff0aeae44999",
+  "formula_cells_compared": 20212,
+  "native_extra_formula_cells": 18,
+  "formula_cache_mismatches": [],
+  "native_formula_errors": [],
+  "mutation_checks_passed": 23,
+  "mutation_checks_total": 23,
+  "release_workbook_unchanged": true,
+  "boundary": "Engine- and build-specific calculation/cache/mutation evidence. Extra native formulas arise from the engine serialization. No Microsoft Excel parity, empirical validation, general selector or deployment authority claim."
+}

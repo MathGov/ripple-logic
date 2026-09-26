@@ -1,0 +1,110 @@
+{
+  "input": {
+    "synthetic": true,
+    "options": {
+      "A": {
+        "rg": "RG_SUPPORTED",
+        "rf": "RF_PASS",
+        "trc": "TRC_PASS",
+        "csv": "CSV_PASS_WITH_CONTROLS",
+        "qualification_complete": true,
+        "controls_complete": true
+      },
+      "B": {
+        "rg": "RG_SUPPORTED",
+        "rf": "RF_PASS",
+        "trc": "TRC_PASS",
+        "csv": "CSV_PASS_WITH_CONTROLS",
+        "qualification_complete": true,
+        "controls_complete": true
+      },
+      "C": {
+        "rg": "RG_SUPPORTED",
+        "rf": "RF_PASS",
+        "trc": "TRC_PASS",
+        "csv": "CSV_PASS_WITH_CONTROLS",
+        "qualification_complete": true,
+        "controls_complete": true
+      }
+    },
+    "variants": [
+      {
+        "A": [
+          0.060000000000000005,
+          0.0020000000000000005
+        ],
+        "B": [
+          0.030000000000000002,
+          0.0020000000000000005
+        ],
+        "C": [
+          0.02,
+          0.0030000000000000005
+        ]
+      },
+      {
+        "A": [
+          0.060000000000000005,
+          0.004000000000000001
+        ],
+        "B": [
+          0.030000000000000002,
+          0.004000000000000001
+        ],
+        "C": [
+          0.02,
+          0.006000000000000001
+        ]
+      },
+      {
+        "A": [
+          0.060000000000000005,
+          0.008000000000000002
+        ],
+        "B": [
+          0.030000000000000002,
+          0.008000000000000002
+        ],
+        "C": [
+          0.02,
+          0.012000000000000002
+        ]
+      }
+    ],
+    "registered_modules": [
+      "fixture.dependence",
+      "fixture.sigma_stress",
+      "fixture.cross_option"
+    ],
+    "modules": {
+      "fixture.dependence": {
+        "state": "PASS_NO_REVERSAL",
+        "rationale": "Stipulated 49-cell single-cluster interval construction, Canon R.38A."
+      },
+      "fixture.sigma_stress": {
+        "state": "PASS_NO_REVERSAL",
+        "rationale": "Explicitly computed 0.5, 1 and 2 multipliers within the stipulated dependence construction."
+      },
+      "fixture.cross_option": {
+        "state": "NOT_TRIGGERED_WITH_RATIONALE",
+        "rationale": "R.38A stipulates mutually independent option-level symmetric plus/minus half-width generators, repeated perfectly within each option. Synthetic construction only, not inferred from marginal intervals; changing or removing this premise reopens this module."
+      }
+    },
+    "required_variants_complete": true,
+    "uncertainty_warrant_stipulated": true
+  },
+  "expected": {
+    "conditional_framework_verdict": "ALLOW_FRAMEWORK_SELECTION",
+    "conditional_decision_state": "SELECTED_DECISIVE",
+    "selected_option": "A",
+    "tie_break_preference": null,
+    "execution_state": "NOT_AUTHORIZED",
+    "evidence_kind": "SYNTHETIC_STIPULATION",
+    "boundary": "Conditional local fixture only; no actual qualification, complete-registry conformance, or authorization is established.",
+    "arithmetic": {
+      "status": "DECISIVE_ARITHMETIC_ONLY",
+      "leader": "A",
+      "minimum_gap": 2.6413527189768713
+    }
+  }
+}

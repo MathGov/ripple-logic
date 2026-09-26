@@ -1,0 +1,132 @@
+{
+  "status": "DERIVED_SUBSET_NOT_EXTERNAL_CANONICAL_REGISTRY",
+  "source": "Canon §14.3A.2",
+  "entries": [
+    {
+      "token": "BASELINE_RANK_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "An admissible baseline comparison changes ordering or decisiveness.",
+      "action": "Disclose both constructions; retain the gate-controlling floor reference; narrow/refuse unique residual selection pending governed resolution.",
+      "source": "§10.2; R.28"
+    },
+    {
+      "token": "CONFIDENCE_RANK_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "The required adverse-confidence counterfactual changes a preferred option or decisiveness.",
+      "action": "Disclose point and counterfactual results; prohibit unique framework selection while sensitivity remains unresolved.",
+      "source": "§5.2C"
+    },
+    {
+      "token": "GAP_NUMERICAL_GUARD_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "Epsilon treatment changes decisive/non-decisive classification.",
+      "action": "Disclose epsilon and results; refuse unique selection until treatment is governed independently of the preferred outcome.",
+      "source": "§10.3A"
+    },
+    {
+      "token": "MASK_ASYMMETRY_INVALID",
+      "kind_and_severity": "Audit flag / INVALID",
+      "trigger": "Unjustified option-specific masking or denominator manipulation changes the comparative construction.",
+      "action": "Invalidate the comparative RLS claim; repair the common basis and rerun. Non-maskable protections remain active.",
+      "source": "§10.2B; R.29"
+    },
+    {
+      "token": "NORMATIVE_UNDERDETERMINED",
+      "kind_and_severity": "NonDecisiveReason / not a severity",
+      "trigger": "Legitimate ex-ante weight constitutions select different options after the evidence surface is sufficiently closed.",
+      "action": "Retain REFUSE_DETERMINISTIC_SELECTION and this reason; record any separate accountable-authority choice. Do not inflate sigma to stand for normative disagreement.",
+      "source": "§13; B.14A; R.31"
+    },
+    {
+      "token": "OPTION_SET_THIN",
+      "kind_and_severity": "Audit flag / REVIEW",
+      "trigger": "Plausible required alternatives or meaningful challengers are omitted without adequate rationale.",
+      "action": "Permit only bounded exploration; withhold strong unique-selection claims until option closure is reviewed.",
+      "source": "§15.4B; R.32"
+    },
+    {
+      "token": "PARTITION_RANK_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "Admissible representation alternatives change the leader or decisiveness.",
+      "action": "Retain all results and REFUSE_DETERMINISTIC_SELECTION unless representation is resolved independently of the desired result.",
+      "source": "§5.5A; R.22"
+    },
+    {
+      "token": "PROBABILITY_ORDER_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "Evidence-supported selection-material likelihood/order alternatives change the leader or decisiveness.",
+      "action": "Disclose and govern alternative results; no unconditional unique-selection claim.",
+      "source": "§5.2B"
+    },
+    {
+      "token": "REFERENCE_RANK_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "Evidence-supported reference-class alternatives reverse the comparison.",
+      "action": "Retain the reference-family alternatives and refuse reference-invariant unique selection until governed resolution.",
+      "source": "§5.1A; R.27"
+    },
+    {
+      "token": "RIGHTS_PARTITION_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "Scope allocation or partitioning can hide the full unallocated rights harm.",
+      "action": "Evaluate the unallocated token and resolve required rights fields before RF_PASS; ordinary welfare allocation cannot repair the rights claim.",
+      "source": "§7.4.5"
+    },
+    {
+      "token": "RLS_ROBUSTNESS_INCOMPLETE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "A triggered required robustness module is not evaluated or remains unresolved.",
+      "action": "Complete the required record/evaluation; withhold ALLOW_FRAMEWORK_SELECTION while incomplete.",
+      "source": "§10.4B; R.33"
+    },
+    {
+      "token": "TEMPORAL_PARTITION_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "Representation-only temporal re-tokenization changes the decision.",
+      "action": "Restore the governed contiguous-window representation or resolve it independently; no unique selection while sensitive.",
+      "source": "§5.3B; R.23"
+    },
+    {
+      "token": "MANDATORY_TAIL_CATEGORY_MISSING",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "A required tail family is absent without a governed omission disposition.",
+      "action": "Repair the scenario library or establish permitted omission justification and rerun; no complete-TRC or unique-selection claim from the incomplete record.",
+      "source": "§8.3.1; §14.3B; R.19"
+    },
+    {
+      "token": "NORMATIVE_INPUT_PROVENANCE_MISSING",
+      "kind_and_severity": "Audit flag / INVALID",
+      "trigger": "A required normative-input register or material entry lacks provenance.",
+      "action": "Reject the affected run as non-conformant until provenance is restored and affected calculations/claims are rerun.",
+      "source": "§14.3B; Appendix L; R.11"
+    },
+    {
+      "token": "MPS_HYPOTHESIS_SENSITIVE",
+      "kind_and_severity": "Audit flag / ESCALATE",
+      "trigger": "A governed welfare-inclusion hypothesis changes a material conclusion, preferred option or decisiveness.",
+      "action": "Disclose affected stakeholders/hypotheses/results; collect evidence, choose an acceptable precautionary policy, narrow, preserve alternatives or refuse definitive ranking. No convenient intermediate coefficient.",
+      "source": "§12.6; Appendix G; R.15"
+    },
+    {
+      "token": "RIGHTS_EFFECT_TOKEN_MISSING",
+      "kind_and_severity": "Audit flag / INVALID for the rights claim",
+      "trigger": "Required rights-token identity is missing where allocation could affect the result.",
+      "action": "Restore and evaluate the full unallocated token; RF_PASS is unavailable until all material fields are resolved.",
+      "source": "§7.4.5"
+    },
+    {
+      "token": "MANDATORY_TAIL_CATEGORY_MISSING_WITH_JUSTIFICATION",
+      "kind_and_severity": "Audit flag / DISCLOSE",
+      "trigger": "A mandatory-category omission has the justification required by the governing rule.",
+      "action": "Record and review that justification and the scenario-discovery boundary; this flag alone establishes neither completeness nor a pass.",
+      "source": "§8.3.1; §14.3B"
+    },
+    {
+      "token": "MANDATORY_TAIL_PROB_FLOOR_VIOLATION",
+      "kind_and_severity": "Audit flag / INVALID for TRC conformance",
+      "trigger": "A required category’s supported scenario mass does not meet the governed probability floor.",
+      "action": "Repair probabilities/category coverage and rerun TRC; do not count overlapping categories as disjoint probability mass.",
+      "source": "§8.3.1; §14.3B"
+    }
+  ]
+}

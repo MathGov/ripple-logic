@@ -1,0 +1,48 @@
+"""Independent expectations for the scoped formula evaluator, not engine parity."""
+import unittest
+from full_formula_replay import Evaluator,FormulaError,Unsupported
+class FormulaReplayTests(unittest.TestCase):
+ def run_formula(self,formula,cells=None):
+  d={'cells':{'S':{'A1':{'value':2},'A2':{'value':3},'B1':{'value':'x'},'B2':{'value':'y'},**(cells or {}),'Z1':{'formula':formula,'value':'DELIBERATELY WRONG CACHE'}}}}
+  return Evaluator(d).get('S','Z1')
+ def test_arithmetic(self):self.assertEqual(self.run_formula('A1+A2*4'),14)
+ def test_formula_cache_not_used(self):self.assertEqual(self.run_formula('Y1+1',{'Y1':{'formula':'A1+A2','value':9000}}),6)
+ def test_index_vertical_one_based(self):self.assertEqual(self.run_formula('INDEX(A1:A2,2)'),3)
+ def test_index_horizontal_one_based(self):self.assertEqual(self.run_formula('INDEX(A1:B1,2)'),'x')
+ def test_index_match(self):self.assertEqual(self.run_formula('INDEX(A1:A2,MATCH("y",B1:B2,0))'),3)
+ def test_index_blank_reference(self):self.assertTrue(self.run_formula('ISBLANK(INDEX(A1:A3,3))'))
+ def test_index_empty_formula_not_blank(self):self.assertFalse(self.run_formula('ISBLANK(INDEX(A1:A3,3))',{'A3':{'formula':'IF(TRUE(),"",1)','value':''}}))
+ def test_counta_empty_formula(self):self.assertEqual(self.run_formula('COUNTA(A1:A4)',{'A3':{'formula':'IF(TRUE(),"",1)','value':''}}),3)
+ def test_countblank_empty_formula(self):self.assertEqual(self.run_formula('COUNTBLANK(A1:A4)',{'A3':{'formula':'IF(TRUE(),"",1)','value':''}}),2)
+ def test_count_ignores_text_and_bool(self):self.assertEqual(self.run_formula('COUNT(A1:B2)',{'B1':{'value':True}}),2)
+ def test_formula_presence(self):self.assertTrue(self.run_formula('ISFORMULA(A3)',{'A3':{'formula':'2','value':2}}))
+ def test_literal_not_formula(self):self.assertFalse(self.run_formula('ISFORMULA(A1)'))
+ def test_if_short_circuit(self):self.assertEqual(self.run_formula('IF(FALSE(),1/0,9)'),9)
+ def test_iferror_arithmetic_error(self):self.assertEqual(self.run_formula('IFERROR(1/0,"UNKNOWN")'),'UNKNOWN')
+ def test_unknown_function_not_hidden(self):
+  with self.assertRaises(Unsupported):self.run_formula('IFERROR(NOTIMPLEMENTED(A1),0)')
+ def test_match_absent(self):self.assertEqual(self.run_formula('IFERROR(MATCH("z",B1:B2,0),-1)'),-1)
+ def test_approx_match_rejected(self):
+  with self.assertRaises(Unsupported):self.run_formula('MATCH(2,A1:A2,1)')
+ def test_index_bounds(self):self.assertEqual(self.run_formula('IFERROR(INDEX(A1:A2,0),-1)'),-1)
+ def test_case_insensitive_match(self):self.assertEqual(self.run_formula('MATCH("X",B1:B2,0)'),1)
+ def test_exact_case_sensitive(self):self.assertFalse(self.run_formula('EXACT("X",B1)'))
+ def test_round_half_up(self):self.assertEqual(self.run_formula('ROUND(1.25,1)'),1.3)
+ def test_round_negative(self):self.assertEqual(self.run_formula('ROUND(-1.25,1)'),-1.3)
+ def test_sumifs(self):self.assertEqual(self.run_formula('SUMIFS(A1:A2,B1:B2,"y")'),3)
+ def test_countifs(self):self.assertEqual(self.run_formula('COUNTIFS(A1:A2,">=2",B1:B2,"x")'),1)
+ def test_sumproduct(self):self.assertEqual(self.run_formula('SUMPRODUCT(A1:A2,A1:A2)'),13)
+ def test_vlookup_exact(self):self.assertEqual(self.run_formula('VLOOKUP(3,A1:B2,2,FALSE())'),'y')
+ def test_typing_bool(self):self.assertEqual(self.run_formula('TYPE(TRUE())'),4)
+ def test_number_not_bool(self):self.assertFalse(self.run_formula('ISNUMBER(TRUE())'))
+ def test_blank_zero_reference(self):self.assertEqual(self.run_formula('A3+1'),1)
+ def test_circular_rejected(self):
+  with self.assertRaises(FormulaError):self.run_formula('Z1+1')
+ def test_numeric_text_not_silently_coerced(self):
+  with self.assertRaises(FormulaError):self.run_formula('B1+1')
+ def test_search_error_not_silently_value(self):
+  with self.assertRaises(FormulaError):self.run_formula('SEARCH("z","abc")')
+ def test_search_isnumber(self):self.assertFalse(self.run_formula('ISNUMBER(SEARCH("z","abc"))'))
+ def test_search_iferror(self):self.assertEqual(self.run_formula('IFERROR(SEARCH("z","abc"),-1)'),-1)
+ def test_zero_sum_not_unknown(self):self.assertEqual(self.run_formula('A1-A1'),0)
+if __name__=='__main__':unittest.main()

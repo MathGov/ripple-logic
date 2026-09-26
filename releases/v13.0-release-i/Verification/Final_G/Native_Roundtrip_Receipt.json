@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "engine": "LibreOffice 25.2.3.2 520(Build:2)",
+  "input_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b",
+  "calculation_comparisons": 20212,
+  "mutation_checks_passed": 23,
+  "mutation_checks_total": 23,
+  "cold_reopen_formula_comparisons": 20212,
+  "cold_reopen_differences": [],
+  "cold_reopen_errors": [],
+  "core_workbook_unchanged": true,
+  "boundary": "Build-specific Calc calculation and saved/reopened test-copy evidence. The native reserialization is not substituted for the immutable Core master; not Microsoft Excel parity or a general operational-selector certificate."
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "The controlling reading specification is Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx. The framework stays the same at every level. Only the documentation burden changes. A user must escalate when rights, ruin, vulnerable groups, physical execution, consequential AI authority, or public validation claims become material. See the current MathGov Reproducibility and Use Standard. The historical, unverified implementation reference is docs/reproducibility/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.5.md; its candidate source parity remains to be established. The controlling reading specification is MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx in Core_15; the old path is not a claim of current schema or implementation compatibility.",
+    "after": "The controlling reading specification is Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx. The framework stays the same at every level. Only the documentation burden changes. A user must escalate when rights, ruin, vulnerable groups, physical execution, consequential AI authority, or public validation claims become material.",
+    "reason": "Remove historical implementation aside from current reading route without changing operative requirements."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "location": "Preserved Baseline Release Material",
+    "before": null,
+    "after": "The historical, unverified implementation reference is docs/reproducibility/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.5.md; its candidate source parity remains to be established. The controlling reading specification is MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx in Core_15; the old path is not a claim of current schema or implementation compatibility.",
+    "reason": "Retain the complete historical reference and compatibility warning in the existing history section."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "RLS is a weighted, normalized summary of the residual impact field after qualification. It can be decomposed by cell, scope or dimension so the overall number does not conceal its sources. Unknown is not zero; a higher score is not execution permission; a displayed index is not a percentage of moral truth or safety.",
+    "after": "RLS is a weighted, normalized summary of the residual impact field after qualification. It can be decomposed by cell, scope or dimension so the overall number does not conceal its sources. Unknown is not zero; a higher score is not execution permission; a displayed index is not a percentage of moral truth or safety. Read the impact and contribution profiles, affected groups, uncertainty and dependence, and the decisive or non-decisive comparison before interpreting the scalar summary. A larger Gap is not statistical confidence or execution authority.",
+    "reason": "Surface the existing Canon profile-first rule in the public explanation."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "location": "Public script heading",
+    "before": "Inherited pagination",
+    "after": "pageBreakBefore",
+    "reason": "Prevent the orphan heading reproduced during the prior rendering pass after necessary text reflow."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Verification_and_Readiness.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.",
+    "after": "Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Release_H_Verification.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260926-RELEASE-H. Prepared 26 September 2026 from Release G. Only the recorded reading and release-reference corrections were made; component editions are unchanged. The manifest distinguishes corrected components from byte-identical inherited masters by their own source-build IDs and exact hashes. This is a new correction build, not a silent replacement of the earlier artifact. Live publication is not asserted.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, formulas and worked verdict are unchanged. Release G label, runtime-token and integrity-snapshot corrections remain preserved; this build corrects four principal string cells and their four active snapshot counterparts. See Verification/Final_H/Exact_Workbook_Changes.json. Unmodified Core masters retain their Release G source-build identity.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.",
+    "after": "Verification boundary: Reports/Release_H_Verification.md and Verification/Final_H/ identify the current checks and limits. Earlier G receipts and the rejected compatibility experiment remain source-build evidence, not native-engine certification of changed H bytes. Cache-independent replay and native-application evidence are distinct. Microsoft Excel parity, empirical validation, full external-registry conformance and production authorization are not asserted.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "before": "Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.",
+    "after": "Change locations and rationales: Reports/Release_H_Adjudication.md; exact edits: Verification/Final_H/Exact_Document_Changes.json and Verification/Final_H/Exact_Workbook_Changes.json. Previous change records remain source-build history. Prior releases and feedback are preserved in the private provenance archive.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "before": "The controlling reading specification is Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx. The cascade is easy to state but must not be implemented loosely. A conforming implementation uses the deterministic run-state and parameter-completeness rules in the current MathGov Reproducibility and Use Standard. The historical, unverified implementation reference is docs/reproducibility/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.5.md; its candidate source parity remains to be established. In particular, an option may enter RLS only after its RG, RF/NCRC, TRC, and CSV states establish selectability; missing decision-material parameters cannot silently become zero or an undeclared default; and selection remains separate from authority and execution. The controlling reading specification is MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx in Core_15; the old path is not a claim of current schema or implementation compatibility.",
+    "after": "The controlling reading specification is Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx. The cascade is easy to state but must not be implemented loosely. A conforming implementation uses the deterministic run-state and parameter-completeness rules in the current MathGov Reproducibility and Use Standard. In particular, an option may enter RLS only after its RG, RF/NCRC, TRC, and CSV states establish selectability; missing decision-material parameters cannot silently become zero or an undeclared default; and selection remains separate from authority and execution.",
+    "reason": "Remove historical implementation aside from current reading route without changing operative requirements."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "location": "Preserved Baseline Release Material",
+    "before": null,
+    "after": "The historical, unverified implementation reference is docs/reproducibility/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.5.md; its candidate source parity remains to be established. The controlling reading specification is MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx in Core_15; the old path is not a claim of current schema or implementation compatibility.",
+    "reason": "Retain the complete historical reference and compatibility warning in the existing history section."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "before": "Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Verification_and_Readiness.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.",
+    "after": "Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Release_H_Verification.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260926-RELEASE-H. Prepared 26 September 2026 from Release G. Only the recorded reading and release-reference corrections were made; component editions are unchanged. The manifest distinguishes corrected components from byte-identical inherited masters by their own source-build IDs and exact hashes. This is a new correction build, not a silent replacement of the earlier artifact. Live publication is not asserted.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "before": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, formulas and worked verdict are unchanged. Release G label, runtime-token and integrity-snapshot corrections remain preserved; this build corrects four principal string cells and their four active snapshot counterparts. See Verification/Final_H/Exact_Workbook_Changes.json. Unmodified Core masters retain their Release G source-build identity.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.",
+    "after": "Verification boundary: Reports/Release_H_Verification.md and Verification/Final_H/ identify the current checks and limits. Earlier G receipts and the rejected compatibility experiment remain source-build evidence, not native-engine certification of changed H bytes. Cache-independent replay and native-application evidence are distinct. Microsoft Excel parity, empirical validation, full external-registry conformance and production authorization are not asserted.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "before": "Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.",
+    "after": "Change locations and rationales: Reports/Release_H_Adjudication.md; exact edits: Verification/Final_H/Exact_Document_Changes.json and Verification/Final_H/Exact_Workbook_Changes.json. Previous change records remain source-build history. Prior releases and feedback are preserved in the private provenance archive.",
+    "reason": "Necessary current evidence/source-build synchronization for the corrected component only."
+  }
+]

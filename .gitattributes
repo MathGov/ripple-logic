@@ -1,0 +1,5 @@
+# Preserve hash-pinned text bytes as well as Office/PDF binary bytes.
+* -text
+*.docx binary
+*.xlsx binary
+*.pdf binary

@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "difference_count": 8,
+  "unexpected_changes": 0,
+  "differences": [
+    {
+      "sheet": "Sanity_Checklist",
+      "cell": "G2",
+      "before": {
+        "type": "string",
+        "value": "Baseline review: 2026-07-23. Current build: 2026-09-12; see Appendix_Release and external receipts.",
+        "formula": null,
+        "style": "75",
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "Baseline review: 2026-07-23. Current build: see Appendix_Release and the package manifest.",
+        "formula": null,
+        "style": "75",
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Build_Snapshot",
+      "cell": "CN10997",
+      "before": {
+        "type": "string",
+        "value": "See Reports/Verification_and_Readiness.md and Verification/Workbook_Verification.json.",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "See Reports/Release_H_Verification.md and Verification/Workbook_Manifest.json.",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Build_Snapshot",
+      "cell": "CN10991",
+      "before": {
+        "type": "string",
+        "value": "2026-09-23; build MG-RL-13.0-20260923-RELEASE-G",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-H",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Build_Snapshot",
+      "cell": "CN1466",
+      "before": {
+        "type": "string",
+        "value": "python3 verify_release.py --recalc",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "python -B verify_all.py",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Build_Snapshot",
+      "cell": "CN666",
+      "before": {
+        "type": "string",
+        "value": "Baseline review: 2026-07-23. Current build: 2026-09-12; see Appendix_Release and external receipts.",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "Baseline review: 2026-07-23. Current build: see Appendix_Release and the package manifest.",
+        "formula": null,
+        "style": null,
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Config",
+      "cell": "B27",
+      "before": {
+        "type": "string",
+        "value": "python3 verify_release.py --recalc",
+        "formula": null,
+        "style": "44",
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "python -B verify_all.py",
+        "formula": null,
+        "style": "44",
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Appendix_Release",
+      "cell": "B7",
+      "before": {
+        "type": "string",
+        "value": "See Reports/Verification_and_Readiness.md and Verification/Workbook_Verification.json.",
+        "formula": null,
+        "style": "1416",
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "See Reports/Release_H_Verification.md and Verification/Workbook_Manifest.json.",
+        "formula": null,
+        "style": "1416",
+        "cache_present": true
+      }
+    },
+    {
+      "sheet": "Appendix_Release",
+      "cell": "B4",
+      "before": {
+        "type": "string",
+        "value": "2026-09-23; build MG-RL-13.0-20260923-RELEASE-G",
+        "formula": null,
+        "style": "1416",
+        "cache_present": true
+      },
+      "after": {
+        "type": "string",
+        "value": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-H",
+        "formula": null,
+        "style": "1416",
+        "cache_present": true
+      }
+    }
+  ]
+}

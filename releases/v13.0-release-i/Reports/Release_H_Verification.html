@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release H verification and readiness</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../Publication/guide.css" />
+</head>
+<body>
+<h1 id="release-h-verification-and-readiness">Release H verification and
+readiness</h1>
+<p><strong>MathGov/RippleLogic v13.0 —
+MG-RL-13.0-20260926-RELEASE-H.</strong> All component editions are
+unchanged. The manifest identifies twelve byte-preserved G masters and
+three narrowly corrected H masters.</p>
+<h2 id="verification-scope">Verification scope</h2>
+<p>Checks cover the supplied artifact identities, complete document-body
+projections, existing equations and synthetic semantic fixtures, the
+frozen workbook's calculation corpus, reference/navigation integrity and
+static dashboard behavior. They do not certify every possible
+implementation or real-world evidence.</p>
+<p>The 15 separately uploaded Core files match the supplied ZIP. The
+source archive passes ZIP CRC. Only the two recorded DOCX files and
+workbook have new Core bytes. All 336 existing document tables and
+section geometry remain unchanged. All 20,212 workbook formula texts and
+cached results, numerical inputs, styles, sheet order and geometry are
+preserved. Eight literal-string cells changed.</p>
+<h2 id="current-execution-record">Current execution record</h2>
+<p>The current machine execution receipt is
+<code>Verification/Final_H/Local_Suite_Receipt.json</code>. Final
+fresh-extraction checks are additionally recorded in the delivery
+receipt outside the immutable public ZIP. Those receipts identify the
+actual executed commands, result totals and whether the package remained
+unchanged. Results are scoped tests, not empirical validation.</p>
+<h3 id="executed-pre-freeze-results">Executed pre-freeze results</h3>
+<p>All <strong>18 substantive commands passed</strong>, and the runner
+confirmed that package files were unchanged during execution. The final
+frozen archive is independently extracted and the full 19-command suite,
+including the final hash ledger, is executed again; that result is
+recorded in the external delivery receipt.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Executed result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unit tests</td>
+<td>301 passed, including 28 new sensitivity/identity tests</td>
+</tr>
+<tr class="even">
+<td>Workbook formula replay</td>
+<td>20,212 formula cells; zero cached-formula dependencies; zero
+mismatches</td>
+</tr>
+<tr class="odd">
+<td>Independent workbook arithmetic</td>
+<td>900 / 900</td>
+</tr>
+<tr class="even">
+<td>Workbook publication / mutation / stored-formula checks</td>
+<td>55 / 55; 12 / 12; 10 / 10</td>
+</tr>
+<tr class="odd">
+<td>Retained correction suites</td>
+<td>80 / 80; 77 / 77; 74 / 74; 290 / 290; 857 / 857; 91 / 91</td>
+</tr>
+<tr class="even">
+<td>New targeted H artifact assertions</td>
+<td>60 / 60</td>
+</tr>
+<tr class="odd">
+<td>Static numbered TOC references</td>
+<td>125 / 125</td>
+</tr>
+<tr class="even">
+<td>Document-body / reading-link integrity</td>
+<td>798 / 798 in this pre-freeze suite</td>
+</tr>
+<tr class="odd">
+<td>Dashboard tests</td>
+<td>15 / 15</td>
+</tr>
+</tbody>
+</table>
+<p>Both amended DOCX masters were rendered and all 19 pages visually
+inspected. No clipping, overlapping content or broken table layout was
+observed. Twelve unchanged masters and their mirrors were preserved
+byte-for-byte, rather than claimed to have received a new full visual
+proofread. All 14 complete body projections and the 125 numbered
+references are checked by the supplied tools. These counts describe the
+executed tests, not exhaustive scientific correctness.</p>
+<h2 id="native-application-and-tool-boundary">Native application and
+tool boundary</h2>
+<p><strong>No new H native spreadsheet recalculation/save/reopen was
+executed.</strong> G's LibreOffice Calc receipt is retained under
+Final_G for G's exact bytes, not relabeled as native H acceptance.
+Literal-only OOXML changes preserve the original workbook; no full XLSX
+export, formula rewrite or spreadsheet conversion was used. Fresh
+cache-independent formula replay and exact formula/cache preservation
+are separate evidence from native application parity. Microsoft Excel
+and arbitrary spreadsheet-engine compatibility are not claimed.</p>
+<p>The working session was interrupted during preparation. The
+deliverable was rebuilt from the exact original ZIP, not from an assumed
+surviving temporary directory; the final receipts apply to the recovered
+deliverable. No lost/interrupted test is counted as a completed new
+test.</p>
+<h2 id="remaining-evidence-boundaries">Remaining evidence
+boundaries</h2>
+<p>No independent human rater study, empirical welfare calibration,
+completed L1 case/rater study packet, full production runtime, complete
+external canonical registry/schema conformance, active RPAP/PFAP bundle,
+legal authority, physical-safety certification, deployment authorization
+or Tier-4 ProofPack is established. The dependency inventory and each
+controlling component specify these boundaries.</p>
+<p>No GitHub upload, hosted workflow, site promotion or hosted hash-back
+verification was performed. Those need a separate actual publication
+receipt. A trusted archive/ledger hash must be retained independently; a
+ledger and payload obtained from the same untrusted source are not
+independent evidence of authenticity.</p>
+<h2 id="reproduce">Reproduce</h2>
+<p>From the publication root, install the pinned
+<code>Reference/requirements.txt</code> dependencies and provide Node
+for the dashboard test. Run:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-B</span> verify_all.py <span class="at">--output-dir</span> ../mathgov-test-results</span></code></pre></div>
+<p>Logs must stay outside the immutable package. Any later material edit
+creates a new exact build, requires affected checks and regenerates the
+hash ledger. Readiness here means readiness for the declared
+research/teaching publication, outside expert review and supplied scoped
+tests, not completion of the stronger unperformed claims above.</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "build_id": "MG-RL-13.0-20260923-RELEASE-G",
+  "current_receipts": [
+    "Verification/Final_G/Independent_P_R19_R38_Reproduction.json",
+    "Verification/Final_G/Native_Cold_Reopen_Results.json",
+    "Verification/Final_G/Native_Engine_Receipt.json",
+    "Verification/Final_G/Native_Final_Acceptance.json",
+    "Verification/Final_G/Native_Roundtrip_Receipt.json",
+    "Verification/Final_G/OOXML_Reader_Check.json",
+    "Verification/Final_G/Prepackage_Suite_Receipt.json",
+    "Verification/Final_G/Render_Comparison.json",
+    "Verification/Final_G/Visual_Review.json"
+  ],
+  "inherited_receipts": "Other named release/freeze-era receipts remain historical and do not certify modified bytes.",
+  "complete_history": "Exact input ZIP preserved under Private_Provenance in the Complete archive.",
+  "fresh_final_zip_receipt": "Delivered separately alongside archives, to avoid circular hash claims."
+}

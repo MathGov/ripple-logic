@@ -1,0 +1,36 @@
+# Release I: GitHub publication integration
+
+The user-supplied `MathGov_RippleLogic_v13.0_Final_Publication_I.zip` is the source of the frozen directory `releases/v13.0-release-i/`.
+
+- Build: `MG-RL-13.0-20260926-RELEASE-I`
+- Original archive SHA-256: `c7ece3a604980fa859e41cd63bbebe6d9adc0953e795737c8a38c16b82ac4d85`
+- Inventory: 288 files, including 287 files controlled by `SHA256SUMS.txt`.
+- The supplied publication files, including their historical preparation statements, are unchanged. Actual hosted publication evidence belongs in release assets and GitHub Actions records.
+- Private provenance is not part of this publication.
+
+## Reproducibility correction outside the frozen publication
+
+The supplied `Reference/requirements.txt` pins `jsonschema==4.26.0` but does not install the optional date-time format validator. In a clean environment, `FormatChecker` then lacks `date-time` support, and `test_records.RecordTests.test_timestamp` fails because an invalid timestamp is accepted.
+
+The repository-level `requirements-ci.txt` includes the original requirements and explicitly pins `rfc3339-validator==0.1.4` and its `six==1.17.0` dependency. No test, validator, mathematical definition, reading copy, checksum, or publication master is edited to achieve this fix. Consumers running record validation should install the repository dependency wrapper.
+
+The active workflow is the repository-root `.github/workflows/verify.yml`. The frozen package's original workflow is retained as provenance inside its versioned directory; nested workflows are not active GitHub workflows.
+
+## Platform scope
+
+The supplied loopback HTTP test can race with Windows file locking when it deletes a file immediately after serving it. The reference CI therefore uses the publication's intended Ubuntu environment. A Windows file-lock failure must not be described as a successful run. No new native Excel or LibreOffice recalculation is claimed.
+
+## Release and hosted-byte evidence
+
+The release uses the distinct tag `v13.0-20260926-release-i`. The original uploaded ZIP remains the trusted archive; the repository's surrounding integration files are a separate layer. Previous releases and tags are preserved.
+
+Verification should record the tag, final commit, workflow URLs, and the result of downloading the hosted files against the local trusted ledger. The package provides:
+
+```sh
+python -B releases/v13.0-release-i/Publication/verify_hosted.py \
+  --base-url https://raw.githubusercontent.com/MathGov/ripple-logic/COMMIT/releases/v13.0-release-i/ \
+  --all-files --commit COMMIT --tag v13.0-20260926-release-i \
+  --output ../hosted-publication-receipt.json
+```
+
+The hosted verifier checks file identity. Its output does not itself check GitHub Actions or establish scientific validity.

@@ -1,0 +1,118 @@
+[
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 8,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "byte_identical": false,
+    "changed_zip_parts": [
+      "word/document.xml"
+    ],
+    "tables_preserved": 6,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 9,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 9,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 6,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 42,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "byte_identical": false,
+    "changed_zip_parts": [
+      "word/document.xml"
+    ],
+    "tables_preserved": 5,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 6,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 16,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 143,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 41,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 5,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 32,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "byte_identical": true,
+    "changed_zip_parts": [],
+    "tables_preserved": 8,
+    "table_content_and_format_unchanged": true,
+    "section_geometry_unchanged": true
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "location": "Section 8: Selected teaching definition",
+    "operation": "text_replacement",
+    "before": "Selected. The option is chosen from the selectable set after RLS, tie-break, and any required escalation disposition.",
+    "after": "Selected. The option is chosen from the selectable set. Record whether this is framework selection under the Canon’s selection conditions or separate authority selection after a non-decisive result. A tie-break preference alone does not remove framework refusal or grant execution authority."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "location": "Section 10: SGP introduction",
+    "operation": "text_replacement",
+    "before": "SGP v8.8 is the canonical companion specification for moral patienthood and rights-of-protection under uncertainty. It replaces the former minimum of Awareness, Agency, and Union Participation with a construct-valid split:",
+    "after": "SGP v8.8 is the canonical companion specification for moral patienthood and rights-of-protection under uncertainty. It replaces the former minimum of Awareness, Agency, and Union Participation with an explicit separation of constructs:"
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "location": "Appendix RELEASE: delivery identity",
+    "operation": "text_replacement",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260926-RELEASE-I. Prepared 26 September 2026 from the supplied Release H publication package. Only reproduced errata and necessary source/evidence synchronization were patched; component editions are unchanged. The manifest identifies each component’s exact bytes and source build. Live publication is not asserted."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "location": "Appendix RELEASE: carried-forward component identity",
+    "operation": "text_replacement",
+    "before": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.",
+    "after": "Component/build identity. The manifest distinguishes this correction build from unchanged Release G and H masters. Aligners Sheet v5.9 keeps its numerical inputs, formulas, cached results and worked verdict; text and print-area errata are itemized in Verification/Final_I/Exact_Workbook_Changes.json. A filename or component edition alone is not exact file identity."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "location": "Appendix RELEASE: verification boundary",
+    "operation": "text_replacement",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.",
+    "after": "Verification boundary: Reports/Release_I_Verification.md and Verification/Final_I/ identify the checks performed on this package and their limits. Prior-build receipts do not certify changed bytes. Cache-independent replay and spreadsheet-application recalculation are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "location": "Appendix RELEASE: exact change pointers",
+    "operation": "text_replacement",
+    "before": "Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.",
+    "after": "Change locations and rationales: Reports/Release_I_Adjudication.md; exact edits: Verification/Final_I/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and preservation records are separate. The untouched prior publication and original feedback are preserved in the complete provenance archive."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "Appendix I1A: reliability acceptance and measurement distinction",
+    "operation": "text_replacement",
+    "before": "Unless a stricter implementation-defined threshold is declared ex ante in V, the following minimums apply for L2/L3 claims: • inter-rater reliability target = Cohen’s kappa ≥ 0.60 for the primary test battery; • reconstructability audit pass rate ≥ 90% of sampled qualifying episodes within documented tolerances; and • audit sample size n = max(30, 5% of qualifying episodes) per audit period. Implementations MUST record any overridden threshold values in Appendix G field V. Auditors MUST treat missing threshold declarations as audit-incomplete.",
+    "after": "Unless a stricter implementation-defined threshold is declared ex ante in V, the following minimums apply for L2/L3 claims: • inter-rater reliability target = Cohen’s kappa ≥ 0.60 for the primary test battery; • reconstructability audit pass rate ≥ 90% of sampled qualifying episodes within documented tolerances; and • audit sample size n = max(30, 5% of qualifying episodes) per audit period. Implementations MUST record any overridden threshold values in Appendix G field V. Auditors MUST treat missing threshold declarations as audit-incomplete. For L2/L3 ordered rubric outputs, report the within-one-point agreement rate required by Section 12 and also satisfy this appendix’s Cohen’s kappa minimum of 0.60 (or the stricter preregistered threshold). Preregister the kappa estimator, including any weighting, in V; do not switch estimators after viewing results. Percent agreement alone does not establish this reliability requirement. If kappa is not estimable, record the limitation and leave this requirement unverified rather than substituting percent agreement. The 90% reconstructability pass-rate requirement is separate from inter-rater agreement."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "Appendix K: Reconstructability threshold hierarchy",
+    "operation": "text_replacement",
+    "before": "L1 uses the general minimum of at least 70%. L2 and L3 use the mandatory threshold of at least 90%; older 85% high-stakes guidance is a planning comparator and does not lower the L2/L3 requirement. Percent agreement within one point is the primary operational metric for ordered rubric outputs; Cohen's kappa is reported where categorical or ordinal labels make it appropriate. The metric and threshold used MUST be declared before review.",
+    "after": "L1 uses the general minimum of at least 70%. L2 and L3 use the mandatory threshold of at least 90%; older 85% high-stakes guidance is a planning comparator and does not lower the L2/L3 requirement. Percent agreement within one point is the primary descriptive agreement metric for ordered rubric outputs. For L2/L3 reliability acceptance, Appendix I1A additionally requires the preregistered Cohen’s kappa threshold; the descriptive rate does not replace it. The percentages above govern reconstructability pass rates, not a conversion between agreement and kappa. Metrics, estimators and thresholds MUST be declared before review."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "Appendix RELEASE: delivery identity",
+    "operation": "text_replacement",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260926-RELEASE-I. Prepared 26 September 2026 from the supplied Release H publication package. Only reproduced errata and necessary source/evidence synchronization were patched; component editions are unchanged. The manifest identifies each component’s exact bytes and source build. Live publication is not asserted."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "Appendix RELEASE: carried-forward component identity",
+    "operation": "text_replacement",
+    "before": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.",
+    "after": "Component/build identity. The manifest distinguishes this correction build from unchanged Release G and H masters. Aligners Sheet v5.9 keeps its numerical inputs, formulas, cached results and worked verdict; text and print-area errata are itemized in Verification/Final_I/Exact_Workbook_Changes.json. A filename or component edition alone is not exact file identity."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "Appendix RELEASE: verification boundary",
+    "operation": "text_replacement",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.",
+    "after": "Verification boundary: Reports/Release_I_Verification.md and Verification/Final_I/ identify the checks performed on this package and their limits. Prior-build receipts do not certify changed bytes. Cache-independent replay and spreadsheet-application recalculation are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "Appendix RELEASE: exact change pointers",
+    "operation": "text_replacement",
+    "before": "Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.",
+    "after": "Change locations and rationales: Reports/Release_I_Adjudication.md; exact edits: Verification/Final_I/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and preservation records are separate. The untouched prior publication and original feedback are preserved in the complete provenance archive."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "location": "Section 18.2 Primary effect tokens",
+    "operation": "malformed_pipe_paragraph_to_native_table",
+    "before": "| Token | Primary dimension | Scope treatment | Evidence posture | |---|---|---| | Tree-canopy coverage increases | D7 Environment | U3 Community | Direct observation / modeled projection | | Roadside particulate exposure decreases | D7 Environment | U3 Community | Empirical estimate | | Heat exposure during school travel decreases | D7 Environment | U3 Community | Modeled and monitored | | Respiratory symptoms decrease | D2 Health | U1 Self; downstream household/community effects require separate tokens | Longitudinal health evidence required | | Walking activity increases | D2 Health | U1 Self | Behavioral observation | | Safe route choice increases | D5 Agency | U1 Self primary; DEDUPLICATION across U1/U2 | Accessibility and choice evidence | | Community use of shared space increases | D3 Social | U3 Community | Observation and affected-party evidence | | Environmental learning opportunities increase | D4 Knowledge | U3 Community | Program and learning evidence | | Individual nature connection increases | D6 Meaning | U1 Self | Validated or mixed-method evidence | | Community place identity increases | D6 Meaning | U3 Community | Validated or mixed-method evidence | | Construction and maintenance costs increase | D1 Material | U5 Polity | Budget evidence |",
+    "after_rows": [
+      [
+        "Token",
+        "Primary dimension",
+        "Scope treatment",
+        "Evidence posture"
+      ],
+      [
+        "Tree-canopy coverage increases",
+        "D7 Environment",
+        "U3 Community",
+        "Direct observation / modeled projection"
+      ],
+      [
+        "Roadside particulate exposure decreases",
+        "D7 Environment",
+        "U3 Community",
+        "Empirical estimate"
+      ],
+      [
+        "Heat exposure during school travel decreases",
+        "D7 Environment",
+        "U3 Community",
+        "Modeled and monitored"
+      ],
+      [
+        "Respiratory symptoms decrease",
+        "D2 Health",
+        "U1 Self; downstream household/community effects require separate tokens",
+        "Longitudinal health evidence required"
+      ],
+      [
+        "Walking activity increases",
+        "D2 Health",
+        "U1 Self",
+        "Behavioral observation"
+      ],
+      [
+        "Safe route choice increases",
+        "D5 Agency",
+        "U1 Self primary; DEDUPLICATION across U1/U2",
+        "Accessibility and choice evidence"
+      ],
+      [
+        "Community use of shared space increases",
+        "D3 Social",
+        "U3 Community",
+        "Observation and affected-party evidence"
+      ],
+      [
+        "Environmental learning opportunities increase",
+        "D4 Knowledge",
+        "U3 Community",
+        "Program and learning evidence"
+      ],
+      [
+        "Individual nature connection increases",
+        "D6 Meaning",
+        "U1 Self",
+        "Validated or mixed-method evidence"
+      ],
+      [
+        "Community place identity increases",
+        "D6 Meaning",
+        "U3 Community",
+        "Validated or mixed-method evidence"
+      ],
+      [
+        "Construction and maintenance costs increase",
+        "D1 Material",
+        "U5 Polity",
+        "Budget evidence"
+      ]
+    ],
+    "note": "Exact header and eleven effect rows retained; only pipe/separator markup removed. Existing tables untouched."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "location": "Appendix RELEASE: delivery identity",
+    "operation": "text_replacement",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260926-RELEASE-I. Prepared 26 September 2026 from the supplied Release H publication package. Only reproduced errata and necessary source/evidence synchronization were patched; component editions are unchanged. The manifest identifies each component’s exact bytes and source build. Live publication is not asserted."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "location": "Appendix RELEASE: carried-forward component identity",
+    "operation": "text_replacement",
+    "before": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.",
+    "after": "Component/build identity. The manifest distinguishes this correction build from unchanged Release G and H masters. Aligners Sheet v5.9 keeps its numerical inputs, formulas, cached results and worked verdict; text and print-area errata are itemized in Verification/Final_I/Exact_Workbook_Changes.json. A filename or component edition alone is not exact file identity."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "location": "Appendix RELEASE: verification boundary",
+    "operation": "text_replacement",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.",
+    "after": "Verification boundary: Reports/Release_I_Verification.md and Verification/Final_I/ identify the checks performed on this package and their limits. Prior-build receipts do not certify changed bytes. Cache-independent replay and spreadsheet-application recalculation are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "location": "Appendix RELEASE: exact change pointers",
+    "operation": "text_replacement",
+    "before": "Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.",
+    "after": "Change locations and rationales: Reports/Release_I_Adjudication.md; exact edits: Verification/Final_I/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and preservation records are separate. The untouched prior publication and original feedback are preserved in the complete provenance archive."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "location": "18.3 Interaction records",
+    "operation": "pagination_property",
+    "property": "pageBreakBefore",
+    "before": null,
+    "after": true,
+    "why": "Keep the heading with its content after the reproduced errata repair; inherited table content and formatting remain unchanged."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "location": "I3. L1 Minimum Tests (Organization)",
+    "operation": "pagination_property",
+    "property": "keepNext",
+    "before": null,
+    "after": true,
+    "why": "Keep the heading with its content after the reproduced errata repair; inherited table content and formatting remain unchanged."
+  }
+]

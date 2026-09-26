@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "unchanged": 11,
+  "changed": 4,
+  "versions_unchanged": true,
+  "components": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.docx",
+      "baseline_sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+      "current_sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+      "unchanged": true
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "baseline_sha256": "091962bcbbdd49d29407b8fc305dcd5a988e851c35e8fac25d4307c06884ba87",
+      "current_sha256": "091962bcbbdd49d29407b8fc305dcd5a988e851c35e8fac25d4307c06884ba87",
+      "unchanged": true
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "baseline_sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+      "current_sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+      "unchanged": true
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "baseline_sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+      "current_sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+      "unchanged": true
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "baseline_sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+      "current_sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+      "unchanged": true
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.docx",
+      "baseline_sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+      "current_sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+      "unchanged": true
+    },
+    {
+      "file": "RippleLogic_Aligners_Sheet_v5.9.xlsx",
+      "baseline_sha256": "fa77dbec19a09e6ebe7b3ba959d0b53f6f8c956c4a8259db3830eb204f097059",
+      "current_sha256": "49d9d8fbeb762cb6cddb3ebab402ded25529639f222b665059db297f33b5282c",
+      "unchanged": false
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "baseline_sha256": "300c48139aad28415bc760eb11a93b6c1982078b8b7a48083385c5be62846506",
+      "current_sha256": "300c48139aad28415bc760eb11a93b6c1982078b8b7a48083385c5be62846506",
+      "unchanged": true
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+      "baseline_sha256": "b1b7922a1c7f625501dcfc75427a1d9c1f1b09b2a3ca9fa379e62ebd434ee4dd",
+      "current_sha256": "82d26566f892d08b08681ef191b02509b6d72cecbf29845ac66d122e8c68ac22",
+      "unchanged": false
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "baseline_sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+      "current_sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+      "unchanged": true
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.docx",
+      "baseline_sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+      "current_sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+      "unchanged": true
+    },
+    {
+      "file": "SGP_v8.8.docx",
+      "baseline_sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+      "current_sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+      "unchanged": true
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+      "baseline_sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+      "current_sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+      "unchanged": true
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "baseline_sha256": "caf0345c241ef52b5acdbe33a8b0406a5735636bbddeca38ad6403ef946e0459",
+      "current_sha256": "8cbb044ffaeeece7118cf88a8203cd60c9790de6ff6ba529bf683f6d7284e12c",
+      "unchanged": false
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.docx",
+      "baseline_sha256": "28797bb802194a454a36ef60672640f3222e6cfc7ed87bfb74a89278d02a8b27",
+      "current_sha256": "c14744884baddd01e7836c7cb0890ee0c082bca7e7c2af086f8d436bf8e11dd1",
+      "unchanged": false
+    }
+  ]
+}

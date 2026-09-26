@@ -1,0 +1,92 @@
+[
+  {
+    "upload": "CSV_Gate_Standard_v2.7(3).docx",
+    "master": "CSV_Gate_Standard_v2.7.docx",
+    "sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+    "matches_archive": true
+  },
+  {
+    "upload": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0(3).docx",
+    "master": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "sha256": "1da245964d65a457595ed927515a29706fdbaf6566fe035fa7d12e9ce5323995",
+    "matches_archive": true
+  },
+  {
+    "upload": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7(3).docx",
+    "master": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+    "matches_archive": true
+  },
+  {
+    "upload": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6(3).docx",
+    "master": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+    "matches_archive": true
+  },
+  {
+    "upload": "Physical_Causal_Admissibility_Evidence_Profile_v2.6(3).docx",
+    "master": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+    "matches_archive": true
+  },
+  {
+    "upload": "ripple_md_Standard_v5.8(5).docx",
+    "master": "ripple_md_Standard_v5.8.docx",
+    "sha256": "28797bb802194a454a36ef60672640f3222e6cfc7ed87bfb74a89278d02a8b27",
+    "matches_archive": true
+  },
+  {
+    "upload": "RippleLogic_Agent_System_v13.0(5).docx",
+    "master": "RippleLogic_Agent_System_v13.0.docx",
+    "sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+    "matches_archive": true
+  },
+  {
+    "upload": "RippleLogic_Aligners_Sheet_v5.9(6).xlsx",
+    "master": "RippleLogic_Aligners_Sheet_v5.9.xlsx",
+    "sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b",
+    "matches_archive": true
+  },
+  {
+    "upload": "RippleLogic_Cascade_Standard_v2.9(3).docx",
+    "master": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "sha256": "19fb59e6b44be3a7cbc054a1c2da3c7c66e282ed22fae8de74775ff9b9b7cca4",
+    "matches_archive": true
+  },
+  {
+    "upload": "RippleLogic_Foundations_Primer_v4.7(3).docx",
+    "master": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "sha256": "b1b7922a1c7f625501dcfc75427a1d9c1f1b09b2a3ca9fa379e62ebd434ee4dd",
+    "matches_archive": true
+  },
+  {
+    "upload": "RippleLogic_RLS_Validation_Protocol_v2.9(3).docx",
+    "master": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+    "matches_archive": true
+  },
+  {
+    "upload": "RippleLogic_v13.0_Canon(20260926-075132).docx",
+    "master": "RippleLogic_v13.0_Canon.docx",
+    "sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+    "matches_archive": true
+  },
+  {
+    "upload": "SGP_v8.8(20260926-075146).docx",
+    "master": "SGP_v8.8.docx",
+    "sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+    "matches_archive": true
+  },
+  {
+    "upload": "Source_Coupling_Integrity_Standard_v2.6(3).docx",
+    "master": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+    "matches_archive": true
+  },
+  {
+    "upload": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9(3).docx",
+    "master": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "sha256": "caf0345c241ef52b5acdbe33a8b0406a5735636bbddeca38ad6403ef946e0459",
+    "matches_archive": true
+  }
+]

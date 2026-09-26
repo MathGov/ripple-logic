@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.docx",
+      "baseline_sha256": "283e758fb1686705e96c8c076ef40e04056fc29fd01dc2aa0c48701524175ca7",
+      "current_sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+      "inherited_tables": 8,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "baseline_sha256": "ccfb0ff948b0797233db05a4117ce9fd6d8648decf7770d44833febbceeb3f3f",
+      "current_sha256": "1da245964d65a457595ed927515a29706fdbaf6566fe035fa7d12e9ce5323995",
+      "inherited_tables": 6,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "baseline_sha256": "e9ac7d6cd624a1f90049f72222672313654ce15563158e463f9456178978841f",
+      "current_sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+      "inherited_tables": 9,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "baseline_sha256": "50a0ba349ff2ff939c80f9fd720423768bd52337e17742b853318b2740261674",
+      "current_sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+      "inherited_tables": 9,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "baseline_sha256": "b06239d41d833bc82d69356d8d362fa0d3cea0872bc833906454f12cb6403039",
+      "current_sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+      "inherited_tables": 6,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.docx",
+      "baseline_sha256": "41ba34caf81dac8ef7930356875d87c175845750abfbc7faa53cb7548b428c33",
+      "current_sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+      "inherited_tables": 42,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "baseline_sha256": "936f8a745c15e8d1dd5a1918c0134c869457fd1f8d7e7bf4df6e60d919274017",
+      "current_sha256": "19fb59e6b44be3a7cbc054a1c2da3c7c66e282ed22fae8de74775ff9b9b7cca4",
+      "inherited_tables": 5,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+      "baseline_sha256": "fcc1f050929bf83b605607a500113821bc6477ec52ab33d0587a70ce1c792ba4",
+      "current_sha256": "b1b7922a1c7f625501dcfc75427a1d9c1f1b09b2a3ca9fa379e62ebd434ee4dd",
+      "inherited_tables": 6,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "baseline_sha256": "5b25bca8c022808b995f97a435d674bb8ccc4f692acf3b9f3d962e3381b317ea",
+      "current_sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+      "inherited_tables": 16,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.docx",
+      "baseline_sha256": "e477e628c9d3b52ab7e0a24c665bceb7556dabc1af2cf949a9f6d69c4af26095",
+      "current_sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+      "inherited_tables": 143,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "SGP_v8.8.docx",
+      "baseline_sha256": "78148385fa69fa713373f0b79021a1c2ae4f1e7d935f540babe483d44fc64d99",
+      "current_sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+      "inherited_tables": 41,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+      "baseline_sha256": "837b28a4d2736dbd2042b7baad8da0b3e5e9867ba1555ee00edfaf5c42aaa6e3",
+      "current_sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+      "inherited_tables": 5,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "baseline_sha256": "ed5128e4114974c6dfa0e6cebe1a4a6ad0a7d0e27ef5bb451bb451b4086e3c55",
+      "current_sha256": "caf0345c241ef52b5acdbe33a8b0406a5735636bbddeca38ad6403ef946e0459",
+      "inherited_tables": 32,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.docx",
+      "baseline_sha256": "ec853585c18211a738daaf1d8eeeac3cdc4abac7c7ecf573eec97ee8d876dbd8",
+      "current_sha256": "28797bb802194a454a36ef60672640f3222e6cfc7ed87bfb74a89278d02a8b27",
+      "inherited_tables": 8,
+      "table_format_properties_preserved": true,
+      "section_geometry_preserved": true,
+      "supporting_parts_preserved": true,
+      "changed_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ]
+    }
+  ],
+  "tables_preserved": 336
+}

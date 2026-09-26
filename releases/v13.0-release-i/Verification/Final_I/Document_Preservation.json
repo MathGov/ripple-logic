@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.docx",
+      "original_tables": 8,
+      "current_tables": 8,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 124
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "original_tables": 6,
+      "current_tables": 6,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 118
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "original_tables": 9,
+      "current_tables": 9,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 190
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "original_tables": 9,
+      "current_tables": 9,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 64
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "original_tables": 6,
+      "current_tables": 6,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 78
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.docx",
+      "original_tables": 42,
+      "current_tables": 42,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 1082
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "original_tables": 5,
+      "current_tables": 5,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 103
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+      "original_tables": 6,
+      "current_tables": 6,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [
+        "word/document.xml"
+      ],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 483
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "original_tables": 16,
+      "current_tables": 16,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 150
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.docx",
+      "original_tables": 143,
+      "current_tables": 143,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 4295
+    },
+    {
+      "file": "SGP_v8.8.docx",
+      "original_tables": 41,
+      "current_tables": 41,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 586
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+      "original_tables": 5,
+      "current_tables": 5,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 85
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "original_tables": 32,
+      "current_tables": 33,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [
+        "word/document.xml",
+        "docProps/app.xml"
+      ],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 823
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.docx",
+      "original_tables": 8,
+      "current_tables": 8,
+      "original_tables_preserved": true,
+      "section_geometry_preserved": true,
+      "changed_zip_parts": [
+        "word/document.xml"
+      ],
+      "supporting_parts_preserved": true,
+      "crc": "PASS",
+      "ooxml_reader_paragraphs": 1057
+    }
+  ],
+  "original_tables_preserved": 336,
+  "new_tables": 1,
+  "scope": "Exact canonical XML of every inherited document table; unchanged supporting Word ZIP parts other than document.xml and recorded app metadata; all original section properties. Not a claim that pagination was unchanged."
+}

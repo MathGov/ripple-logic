@@ -1,0 +1,37 @@
+{
+  "inspected_core_pages": [
+    {
+      "file": "RippleLogic_v13.0_Canon.pdf",
+      "page": 3,
+      "observation": "Relevant text/table visible; no clipping observed on this page."
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.pdf",
+      "page": 236,
+      "observation": "Relevant text/table visible; no clipping observed on this page."
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.pdf",
+      "page": 18,
+      "observation": "Relevant text/table visible; no clipping observed on this page."
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.pdf",
+      "page": 25,
+      "observation": "Relevant text/table visible; no clipping observed on this page."
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.pdf",
+      "page": 35,
+      "observation": "Relevant text/table visible; no clipping observed on this page."
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.pdf",
+      "page": 4,
+      "observation": "Updated conditional field explanation visible; no clipping observed."
+    }
+  ],
+  "inspected_report_page": "Audit_Adjudication_and_Changes.pdf page 1",
+  "automated_all_page_scan": "PDF_Page_Scan.json",
+  "limits": "Targeted visual inspection and all-page boundary scan, not a pixel-level certification of all pages or an interactive browser/Word test."
+}

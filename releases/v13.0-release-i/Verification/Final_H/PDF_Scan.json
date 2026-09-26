@@ -1,0 +1,91 @@
+{
+  "documents": 14,
+  "pages": 686,
+  "results": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.pdf",
+      "pages": 12,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.pdf",
+      "pages": 9,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.pdf",
+      "pages": 15,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.pdf",
+      "pages": 13,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.pdf",
+      "pages": 9,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.pdf",
+      "pages": 84,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.pdf",
+      "pages": 10,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.pdf",
+      "pages": 35,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.pdf",
+      "pages": 21,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.pdf",
+      "pages": 296,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "SGP_v8.8.pdf",
+      "pages": 60,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.pdf",
+      "pages": 9,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.pdf",
+      "pages": 41,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.pdf",
+      "pages": 72,
+      "blank_pages": [],
+      "out_of_page_text_pages": []
+    }
+  ],
+  "boundary": "Automated text-bounds/blank-page scan; not exhaustive human proofreading."
+}

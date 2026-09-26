@@ -1,0 +1,29 @@
+{
+  "changed_docx": [
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "pages": 9,
+      "all_rendered_pages_visually_inspected": true
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "pages": 10,
+      "all_rendered_pages_visually_inspected": true
+    }
+  ],
+  "dpi": 105,
+  "result": "No observed clipping, overlap or broken table layout. Public script heading reflow fixed.",
+  "unchanged_master_boundary": "Twelve masters and their original reading copies preserved; no new exhaustive visual proofreading claimed.",
+  "current_report_pdfs": [
+    {
+      "file": "Reports/Release_H_Verification.pdf",
+      "pages": 2,
+      "all_pages_visually_reviewed": true
+    },
+    {
+      "file": "Reports/Release_H_Adjudication.pdf",
+      "pages": 3,
+      "all_pages_visually_reviewed": true
+    }
+  ]
+}

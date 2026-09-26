@@ -1,0 +1,26 @@
+[
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "anchor": "mg_toc_039",
+    "label": "APPENDIX R: TIER 1–3 REFERENCE TEST VECTORS (NORMATIVE)",
+    "before": 217,
+    "after": 218,
+    "operation": "static_TOC_page_label_only"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "anchor": "mg_toc_044",
+    "label": "APPENDIX W: SCHEMA OWNERSHIP, REGISTRIES, AND MACHINE-VERIFIABLE SURFACES",
+    "before": 235,
+    "after": 236,
+    "operation": "static_TOC_page_label_only"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "anchor": "mg_toc_048",
+    "label": "APPENDIX AA: PACKAGE-CONTENT BOUNDARY AND TOOLING LINE SEPARATION (CARRIED-FORWARD ORIGIN; ACTIVE REQUIREMENTS)",
+    "before": 239,
+    "after": 240,
+    "operation": "static_TOC_page_label_only"
+  }
+]
