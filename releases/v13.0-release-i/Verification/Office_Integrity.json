@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "SGP_v8.8.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.docx",
+      "zip_crc": "PASS",
+      "xml_parts": 18,
+      "tracked_changes": 0,
+      "comments": false,
+      "macros": false
+    }
+  ]
+}

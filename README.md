@@ -1,98 +1,56 @@
-# MathGov Core 2026.09 v12.6 / SGP v8.5
+# MathGov / RippleLogic
 
-**Exact release identity:** `MathGov_Core_2026_09_v12.6_SGP_v8.5+2026.08.15.3`  
-**License:** Apache-2.0 except where a file states otherwise
+**A rights-constrained, uncertainty-aware decision framework for research and teaching.**
 
-**Reality -> Rights -> Ripples. Qualify -> Rank.**
+RippleLogic asks whether an option is grounded in evidence, respects rights, meets tail-risk and structural-viability constraints, and only then how it compares with other qualifying options.
 
-MathGov is an open-source, rights-constrained governance framework. Its fixed five-stage cascade is:
+**Current publication: v13.0 / SGP v8.8 — Release I**
 
-`RG -> RF/NCRC -> TRC -> CSV -> RLS`
+Exact build: `MG-RL-13.0-20260926-RELEASE-I`
 
-## What v12.6 improves
-
-v12.6 closes the gap between selecting a qualified option and carrying out a real action. A consequence-bearing action must now remain bound to the option, configuration, transition, post-state, capability state, and qualification snapshot that were actually reviewed. A mismatch blocks execution. Material outcomes or context changes reopen qualification.
-
-The release also strengthens physical-causal warrant boundaries, claim-domain bridges, carried obligations, hidden human compensation checks, source-coupling integrity, and transparent workbook assurance. It adds no sixth gate, no eighth welfare dimension, and no new authority layer.
-
-![Qualification lifecycle](release/assets/qualification_lifecycle.png)
-
-![Canonical cascade](release/assets/cascade_overview.png)
-
-## Computational Context clarification
-
-For consequential computational systems, the Agent System and ripple.md now expose a compact derived view of the computational problem/object, exact architecture/configuration, demonstrated capability, assigned task, deployment domain, evidence standard, consequence interface, and separate legitimate authority basis. The view does not add a gate or create authority. Its critical rule is: **Consequence interface is not legitimate authority.**
-
-## Canon v12.6 stabilization window
-
-**Public stabilization window: 15 August 2026 through 15 February 2027.** During this period, Canon v12.6 is frozen against speculative feature accretion. Same-line corrections are limited to demonstrated correctness, rights, interpretability, security, citation/release-integrity defects, or material legal/scientific evidence. New constructs and discretionary extensions belong in the roadmap until supported by a clearly superior formally justified design. The primary development emphasis now shifts to independent replay, inter-rater studies, RLS/WDBIP/UCI measurement work, and bounded institutional pilots.
+[![Publication verification](https://github.com/MathGov/ripple-logic/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/MathGov/ripple-logic/actions/workflows/verify.yml)
 
 ## Start here
 
-- Public introduction: `docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6.md`
-- Governing Canon: `docs/canon/RippleLogic_v12.6_Canon.md`
-- SGP: `docs/sgp/SGP_v8.5.md`
-- Exact Core 15 bundle: `core_15/`
-- Component map: `docs/CORE_COMPONENT_MAP.md`
-- Current adversarial-audit disposition: `release/MATHGOV_V12_6_CLAUDE_ADVERSARIAL_AUDIT_DISPOSITION_2026_08_11.md`
-- Prior change and independence report: `release/MATHGOV_V12_6_AND_MHIOS_V0_7_INDEPENDENT_RELEASE_REPORT.md`
-- Final verification: `release/FINAL_VERIFICATION_REPORT.md`
-- Source verification log: `release/SOURCE_VERIFICATION_LOG.md`
-- Examples and reference replays: `docs/examples/README.md`
-- Negative-example catalog: `docs/examples/NEGATIVE_EXAMPLES_INDEX.md`
-- Evidence-stage maturity ladder: `docs/assurance/SCIENTIFIC_MATURITY_LADDER.md`
-- High-stakes physical/causal worked example: `docs/examples/PC_AEP_HIGH_STAKES_WORKED_EXAMPLE.md`
-- Physical execution boundary guide: `docs/guides/PHYSICAL_ADMISSIBILITY_AND_EXECUTION_BOUNDARY.md`
-- Safety-conformance vectors: `docs/validation/V12_6_SAFETY_CONFORMANCE_VECTORS.md`
+- **New to the framework:** [Public Introduction](releases/v13.0-release-i/Sources/MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.md), then the [Foundations Primer](releases/v13.0-release-i/Sources/RippleLogic_Foundations_Primer_v4.7.md).
+- **Read the controlling specification:** [RippleLogic Canon v13.0](releases/v13.0-release-i/Sources/RippleLogic_v13.0_Canon.md) and [Sentience Gradient Protocol v8.8](releases/v13.0-release-i/Sources/SGP_v8.8.md).
+- **Download the publication:** [Release I and its assets](https://github.com/MathGov/ripple-logic/releases/tag/v13.0-20260926-release-i).
+- **Browse every format:** [PDF reading copies](releases/v13.0-release-i/Reading_PDFs/), [Markdown sources](releases/v13.0-release-i/Sources/), and [editable Word/Excel masters](releases/v13.0-release-i/Core_15/).
+- **Review or reproduce:** [Reviewer and testing guide](releases/v13.0-release-i/Publication/Reviewer_And_Testing_Guide.md), [verification workflow](https://github.com/MathGov/ripple-logic/actions/workflows/verify.yml), and [publication integration notes](PUBLICATION.md).
 
-## Core 15 pins
+## The decision sequence
 
-| Component | Version | Governing source |
-|---|---:|---|
-| RippleLogic Canon | 12.6 | `docs/canon/RippleLogic_v12.6_Canon.md` |
-| Sentience Gradient Protocol | 8.5 | `docs/sgp/SGP_v8.5.md` |
-| ripple.md Standard | 5.5 | `docs/standards/ripple_md_Standard_v5.5.md` |
-| RippleLogic Agent System | 12.5 | `docs/agents/RippleLogic_Agent_System_v12.5.md` |
-| CSV Gate Standard | 2.4 | `docs/standards/CSV_Gate_Standard_v2.4.md` |
-| RippleLogic Cascade Standard | 2.6 | `docs/standards/RippleLogic_Cascade_Standard_v2.6.md` |
-| Reproducibility and Use Standard | 1.4 | `docs/implementation/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.4.md` |
-| WDBIP | 1.6 | `docs/standards/wdbip/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.6.md` |
-| RLS Validation Protocol | 2.6 | `docs/validation/rls/RippleLogic_RLS_Validation_Protocol_v2_6.md` |
-| Foundations Primer | 4.4 | `docs/primer/RippleLogic_Foundations_Primer_v4.4.md` |
-| Public Introduction | 12.6 | `docs/guides/MATHGOV_3R_1_2_PUBLIC_INTRO_v12_6.md` |
-| PC-AEP | 2.3 | `docs/standards/Physical_Causal_Admissibility_Evidence_Profile_v2.3.md` |
-| MFDI Standard | 2.3 | `docs/standards/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.3.md` |
-| Source-Coupling Integrity Standard | 2.3 | `docs/standards/Source_Coupling_Integrity_Standard_v2.3.md` |
-| RippleLogic Aligners Sheet | 5.6 | `docs/aligners/RippleLogic_Aligners_Sheet_v5.6.xlsx` |
+**RG → RF/NCRC → TRC → CSV → RLS**
 
-## Extended support surfaces
+Reality grounding → rights floor / non-compensable rights constraint → tail-risk constraint → containment and structural viability → comparison of qualifying options using the RippleLogic Score.
 
-- Run-record schema v4: `schemas/mathgov_run_record_v4.schema.json`
-- Run validator: `release/VALIDATE_MATHGOV_RUN.py`
-- RLS Validation Workbook v0.3: `docs/validation/rls/RLS_Validation_Workbook_v0_3.xlsx`
-- State, transition, and audit-flag registries: `docs/implementation/`
-- Machine vectors: `tests/`
-- Reproducibility, integrity, and hash checks: `release/`
+## What this release contains
 
-## Separate MHIOS companion
+The complete Core 15 consists of fourteen Word documents and the Aligners Excel workbook, with synchronized reading formats, worked examples, scoped reference implementations, and reproducibility checks. Release I records eight reproduced errata and their associated corrections; see the [change report](releases/v13.0-release-i/Reports/Release_I_Adjudication.md).
 
-MHIOS v0.8 is distributed separately as a pre-1.0 candidate human-interface and orchestration companion. It is not a Core 15 governing source and does not add a cascade stage. If MHIOS conflicts with the RippleLogic Canon, the Canon controls.
+The supplied publication is preserved byte-for-byte under [`releases/v13.0-release-i/`](releases/v13.0-release-i/). Repository navigation and GitHub integration live outside that frozen directory. The [manifest](releases/v13.0-release-i/VERSION_MANIFEST.json), [SHA-256 ledger](releases/v13.0-release-i/SHA256SUMS.txt), and [freeze record](releases/v13.0-release-i/FINAL_FREEZE.md) identify the exact files.
 
-## Verify
+## Reproduce the checks
 
-Install the release dependencies from `requirements.txt`, then run:
+Use Python 3.13 and Node.js 22 on Linux for the hosted reference environment:
 
-```bash
-python release/VERIFY_RELEASE.py
+```sh
+python -m pip install -r requirements-ci.txt
+python -B releases/v13.0-release-i/verify_all.py --output-dir ../mathgov-results
 ```
 
-## Claim boundary
+The repository dependency wrapper adds the RFC 3339 date-time validator required by the supplied record tests. See [PUBLICATION.md](PUBLICATION.md) for the dependency correction and Windows test limitation. Test output belongs outside the frozen directory.
 
-Passing the included checks establishes package, schema, formula, rendering, and tested-interface conformance. It does not prove evidence truth, empirical effectiveness, physical safety, legal authority, consciousness, moral truth, framework superiority, or deployment readiness.
-## Related MathGov Repositories
+## Scope and limitations
 
-- **MHIOS — MathGov Human Interface and Orchestration Standard**  
-  Operationalizes the human-interface, orchestration, authority, computational-context, and execution-control layer around MathGov / RippleLogic decisions.  
-  https://github.com/MathGov/mhios
+This is a Tier 1–3 research-and-teaching specification with a bounded worked example and scoped tests. Passing those tests does not establish empirical validity, production readiness, Microsoft Excel certification, legal authority, physical-safety certification, or permission to execute decisions. See the [claim boundary](releases/v13.0-release-i/Publication/Conformance_Boundary.md) and [dependency limits](releases/v13.0-release-i/Publication/Dependency_Status.json).
 
-MHIOS does not redefine the RippleLogic Canon. It provides a distinct implementation and orchestration layer synchronized with the current MathGov Core baseline.
+## Citation, feedback, and history
+
+Use [CITATION.cff](CITATION.cff) or cite **James McGaughran, MathGov / RippleLogic v13.0, Release I, 26 September 2026**, with the exact build and [versioned release URL](https://github.com/MathGov/ripple-logic/releases/tag/v13.0-20260926-release-i).
+
+Report reproducible problems through [GitHub Issues](https://github.com/MathGov/ripple-logic/issues). Include the build, component, relevant passage or example, and expected versus observed behavior. Avoid sharing confidential case data.
+
+Earlier publications remain available in [Releases](https://github.com/MathGov/ripple-logic/releases), including [v12.6](https://github.com/MathGov/ripple-logic/releases/tag/v12.6), and in Git history.
+
+Licensed under [Apache 2.0](LICENSE), subject to the retained [NOTICE](NOTICE) and component/third-party rights statements.

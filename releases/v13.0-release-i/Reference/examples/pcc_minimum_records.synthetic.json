@@ -1,0 +1,638 @@
+[
+  {
+    "record_id": "SYNTHETIC-EffectTokenRegistry",
+    "record_type": "EffectTokenRegistry",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a72.2A.4A; \u00a75.0C; \u00a75.5A"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "tokens": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "identity_and_revision_rules": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "primary_home_and_scope_treatment": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "allocation_and_pathway_links": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "granularity_review": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-RightsEffectTokenRecord",
+    "record_type": "RightsEffectTokenRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a77.3\u2013\u00a77.4.5"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "rights_token_id": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "bearer_and_rights": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "unallocated_effect": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "channel_evidence_and_results": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "allocation_links": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-PartitionInvarianceTest",
+    "record_type": "PartitionInvarianceTest",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a75.5A; R.22"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "trigger": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "representations": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "invariants_held": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "comparative_results": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "reversal_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-ProbabilityOrderReview",
+    "record_type": "ProbabilityOrderReview",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a75.2B"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "effect_and_event_refs": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "likelihood_semantics": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "probability_ownership": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "operator_order": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "alternative_results_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-AdverseConfidenceCounterfactual",
+    "record_type": "AdverseConfidenceCounterfactual",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a75.2C"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "trigger": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "affected_instances": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "point_configuration": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "counterfactual_configuration": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "comparative_results_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-TemporalBurdenReview",
+    "record_type": "TemporalBurdenReview",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a75.3\u2013\u00a75.3B"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "effect_refs": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "window_and_trajectory": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "recurrence_and_cumulative_burden": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "peak_terminal_irreversibility": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "sensitivity_and_routing": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-DistributionalBurdenReview",
+    "record_type": "DistributionalBurdenReview",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a72.4A; \u00a79.8"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "subgroup_refs": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "burden_profiles": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "concentration_and_viability": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "controls_and_capacity": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "csv_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-SubgroupClosureRecord",
+    "record_type": "SubgroupClosureRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a72.4A; \u00a77.3"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "population_boundary": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "search_sources_and_method": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "groups_and_omissions": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "material_gaps": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "review_and_closure": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-ReferenceFamilyRecord",
+    "record_type": "ReferenceFamilyRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a75.1A; R.27"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "reference_construct": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "ex_ante_family_and_basis": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "included_and_rejected_alternatives": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "comparative_results": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "sensitivity_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-BaselineFamilyRecord",
+    "record_type": "BaselineFamilyRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a75.1A; \u00a710.2; R.28"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "baseline_construct": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "ex_ante_family_and_basis": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "floor_and_continuation_roles": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "comparative_results": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "sensitivity_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-ComparisonMaskRecord",
+    "record_type": "ComparisonMaskRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a710.2B"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "common_mask": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "active_and_nonmaskable_cells": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "effective_mass_by_option": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "exceptions_and_review": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "common_basis_sensitivity": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-GapSensitivityRecord",
+    "record_type": "GapSensitivityRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a710.3\u2013\u00a710.4B"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "ranking_basis_and_contenders": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "uncertainty_method_scale_and_evidence": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "within_option_dependence": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "cross_option_dependence": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "epsilon_delta_and_variants": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "pairwise_results_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-WeightProfileRecord",
+    "record_type": "WeightProfileRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a710.1\u2013\u00a710.2A; \u00a713"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "profiles_and_floors": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "authority_and_provenance": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "ex_ante_lock": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "effective_weights_and_mass": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "alternative_results_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-OptionClosureRecord",
+    "record_type": "OptionClosureRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a715.4B"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "decision_boundary": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "candidate_options": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "required_alternative_families": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "accept_reject_rationales": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "challenger_review_and_closure": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  },
+  {
+    "record_id": "SYNTHETIC-RLSRobustnessRecord",
+    "record_type": "RLSRobustnessRecord",
+    "run_id": "SYNTHETIC-NOT-A-REAL-DECISION",
+    "configuration_ref": "synthetic-configuration",
+    "source_clauses": [
+      "\u00a710.4B"
+    ],
+    "applicability": {
+      "triggered": true,
+      "rationale": "Synthetic structural fixture"
+    },
+    "review_status": "SYNTHETIC_STRUCTURAL_TEST_ONLY",
+    "evidence_refs": [
+      {
+        "id": "synthetic-test-input",
+        "sha256": "e9661c6c8d8a21741462e3cea6ae00a302091bcb39a2c73f646117ab10134cf4"
+      }
+    ],
+    "result": {
+      "evaluated": true,
+      "unresolved": [],
+      "disposition": "Recorded; no authority or real-world validation"
+    },
+    "content": {
+      "module_registry": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "module_states_and_reasons": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "variant_refs": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "leader_and_comparison_results": {
+        "synthetic": "For testing field presence, not evidence truth"
+      },
+      "eligibility_and_disposition": {
+        "synthetic": "For testing field presence, not evidence truth"
+      }
+    }
+  }
+]

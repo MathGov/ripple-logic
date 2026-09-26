@@ -1,0 +1,478 @@
+[
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-02: specify compatible joint robustness coverage without changing nominal Gap",
+    "operation": "insert_paragraph_after",
+    "anchor": "Admissible-alternative bound. An alternative construction enters the robustness set only when it is evidence-supported, selection-material, independently motivated rather than invented after outcome inspection, and accepted through the declared adjudication process. Rejected alternatives SHALL be logged with rationale. This closes both under-testing and indefinite adversarial over-testing.",
+    "after": "Joint-stress rule (Normative clarification). Required uncertainty-scale variants SHALL be evaluated within each required dependence treatment using that treatment’s governing joint model or bound. Other required robustness perturbations SHALL also be evaluated jointly when they are mutually compatible, can plausibly coexist and their interaction can be selection-material. Do not double-count the same uncertainty source or combine logically incompatible models. Record the joint constructions and justified exclusions in the existing RLSRobustnessRecord and GapSensitivityRecord under the admissible-alternative bound; a material unresolved interaction blocks unique selection. This requires justified joint coverage, not an indiscriminate Cartesian product of all modules."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-02: explicitly bind R.38A cross-option construction; no outcome-selected exemption",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3613]",
+    "before": "Synthetic fixture, not empirical calibration: three options A, B and C have the same 49 active cells and uniform effective weights. Every final-impact cell is respectively 0.060, 0.030 and 0.020. Method A synthetic final-impact intervals are [0.056,0.064], [0.026,0.034] and [0.014,0.026], respectively. Treat all 49 cell uncertainties as one perfectly dependent cluster, giving sigma_RLS=0.004, 0.004 and 0.006. Use delta=2 and epsilon=0.000001. Assume the explicitly stipulated RG, RF, TRC and CSV passing records are complete for this fixture; all applicable robustness modules must be evaluated or have a justified non-trigger record. No real-world evidence or authorizer is supplied. Nonnegative normalized weight variants leave these uniform fields unchanged. The signed gaps A-B and A-C are 5.222330 and 5.494423; with all interval half-widths doubled, they remain 2.641353 and 2.766858. Given those complete stipulated conformance inputs, a conforming scoped selection implementation MUST emit ALLOW_FRAMEWORK_SELECTION and SELECTED_DECISIVE for A, while execution remains NOT_AUTHORIZED. An implementation that always refuses fails this positive-control test. This tests the decision rule on synthetic stipulated evidence, not a live scientific selection claim. Demonstration-only/unsupported uncertainty or a missing required robustness result blocks this unique-selection claim; a failed qualification removes the affected option before reranking. Expired execution authority blocks execution, not an otherwise unchanged framework-selection result, unless the expiry also invalidates a relied-upon qualification or control condition. The packaged reference fixture checks the arithmetic and declared summary resolver only; it does not certify absent external registries or real evidence.",
+    "after": "Synthetic fixture, not empirical calibration: three options A, B and C have the same 49 active cells and uniform effective weights. Every final-impact cell is respectively 0.060, 0.030 and 0.020. Method A synthetic final-impact intervals are [0.056,0.064], [0.026,0.034] and [0.014,0.026], respectively. Treat all 49 cell uncertainties as one perfectly dependent cluster, giving sigma_RLS=0.004, 0.004 and 0.006. Use delta=2 and epsilon=0.000001. Assume the explicitly stipulated RG, RF, TRC and CSV passing records are complete for this fixture; all applicable robustness modules must be evaluated or have a justified non-trigger record. No real-world evidence or authorizer is supplied. Cross-option disposition for this fixture is NOT_TRIGGERED_WITH_RATIONALE: its synthetic option-level error generators are stipulated mutually independent, with symmetric values plus or minus the stated half-width, repeated identically across the 49 cells within each option. The scale variants multiply those generators by the same declared factor. Thus cross-option covariance is zero by fixture construction, not inferred from marginal intervals or from absent evidence. The stipulated fixture designer supplies the rationale; changing the joint construction or removing this premise reopens the dependence module and can change the expected verdict. Nonnegative normalized weight variants leave these uniform fields unchanged. The signed gaps A-B and A-C are 5.222330 and 5.494423; with all interval half-widths doubled, they remain 2.641353 and 2.766858. Given those complete stipulated conformance inputs, a conforming scoped selection implementation MUST emit ALLOW_FRAMEWORK_SELECTION and SELECTED_DECISIVE for A, while execution remains NOT_AUTHORIZED. An implementation that always refuses fails this positive-control test. This tests the decision rule on synthetic stipulated evidence, not a live scientific selection claim. Demonstration-only/unsupported uncertainty or a missing required robustness result blocks this unique-selection claim; a failed qualification removes the affected option before reranking. Expired execution authority blocks execution, not an otherwise unchanged framework-selection result, unless the expiry also invalidates a relied-upon qualification or control condition. The packaged reference fixture checks the arithmetic and declared summary resolver only; it does not certify absent external registries or real evidence."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-01: correct informative numerator source",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3345]",
+    "before": "The nonzero weighted numerator from Table P-8 is:",
+    "after": "The nonzero weighted numerator from Table P-4 is:"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-02: declare the same confidence used by P.8",
+    "operation": "insert_paragraph_after",
+    "anchor": "• Duration t = 5 years (τ = 0.550)",
+    "after": "• Confidence c_k = 0.85; reach and adjustment are 1 as declared for this demonstration."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-02: include the confidence factor in the forward construction",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3243]",
+    "before": "Î_dir(u,d,a) = τ · ℓ · μ",
+    "after": "Î_dir(u,d,a) = τ · ℓ · c_k · μ"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-02: reconcile the inverse construction with c_k=0.85 and ℓ=1",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3247]",
+    "before": "μ = atanh(I_prop) / (β_sat · τ)",
+    "after": "μ = atanh(I_prop) / (β_sat · τ · ℓ · c_k)"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-09: explain the zero-input demonstration without changing the uncertainty equation",
+    "operation": "insert_paragraph_after",
+    "anchor": "Any active cell not materially affected by the decision is assigned 0.000 explicitly below.",
+    "after": "Synthetic-zero uncertainty boundary. The zero cells are stipulated exact demonstration inputs for this worked vector’s legacy Method B proxy. In empirical runs, an assessed-zero point effect does not imply zero uncertainty: Section 10.3’s measurement-resolution and transformation-consistency rules remain controlling. This stipulation neither supplies empirical evidence nor licenses a unique operational selection claim."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-06: clarify the tier and final-weight basis of the cross-reference",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1558]",
+    "before": "Floor lock (Normative). Democratic tuning operates only over allocable mass above constitutional floors. No democratic proposal may reduce any scope or dimension below its Section 13.1 floor. Where a ballot pattern would place a component within 0.02 of its floor, the Section 13.5 supermajority safeguard applies.",
+    "after": "Floor lock (Normative). Democratic tuning operates only over allocable mass above constitutional floors. No democratic proposal may reduce any scope or dimension below its Section 13.1 floor. For Tier 3 HDW runs, where a ballot-derived proposal would reduce a final combined weight w_u or v_d to at or within 0.02 above its constitutional floor, the Section 13.5 supermajority safeguard applies. Evaluate the final proposed weight after the declared HDW combination, not an unblended ballot share. Stricter applicable governance requirements remain binding."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-06: synchronize the controlling safeguard and retain its threshold",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1568]",
+    "before": "Supermajority lock near floors: Any proposal reducing a weight to within 0.02 of its floor requires ≥2/3 approval.",
+    "after": "Supermajority lock near floors: Any Tier 3 proposal reducing a final combined weight w_u or v_d to at or within 0.02 above its floor requires ≥2/3 approval. The test uses the final proposed weight, not an unblended proposal share."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-03: replace rounded-weight drift with the independently recomputed active mass",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3346]",
+    "before": "Q(B) = Σ_(u,d) q_ud(B) = 0.681990.",
+    "after": "Q(B) = Σ_(u,d) q_ud(B) = 20886/30625 ≈ 0.681991836735 (0.681992 at six decimals; use the unrounded floor-plus-residual weights)."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-03: round the U6×D5 pre-confidence contribution consistently",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:tbl[104]/w:tr[6]/w:tc[2]/w:p",
+    "before": "0.017653",
+    "after": "0.017652"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-03: use the full-precision uncertainty result before display rounding",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3592]",
+    "before": "Thus sigma_RLS(C)=sqrt(sum(q*sigma)^2)/Q=0.000502302, reported as 0.000502. This derivation uses pre-saturation x_k values as required by Section 10.3.2; using post-saturation impacts directly would be non-conformant. Since |A_sel|=1, no pairwise discrimination statistic is required; C is the sole selectable option under the vector inputs.",
+    "after": "Thus sigma_RLS(C)=sqrt(sum(q*sigma)^2)/Q=0.000502303633, reported as 0.000502. The replay uses unrounded weights and contributions; the table entries are rounded for display. This derivation uses pre-saturation x_k values as required by Section 10.3.2; using post-saturation impacts directly would be non-conformant. Since |A_sel|=1, no pairwise discrimination statistic is required; C is the sole selectable option under the vector inputs."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "A-09: apply the same exact-synthetic-zero boundary to R.19.7",
+    "operation": "insert_paragraph_after",
+    "anchor": "Thus sigma_RLS(C)=sqrt(sum(q*sigma)^2)/Q=0.000502303633, reported as 0.000502. The replay uses unrounded weights and contributions; the table entries are rounded for display. This derivation uses pre-saturation x_k values as required by Section 10.3.2; using post-saturation impacts directly would be non-conformant. Since |A_sel|=1, no pairwise discrimination statistic is required; C is the sole selectable option under the vector inputs.",
+    "after": "The remaining zero cells are stipulated exact synthetic inputs for this proxy calculation only. An empirical zero estimate retains any material elicitation, measurement, coding, model and anchor-resolution uncertainty under Section 10.3; absence of ledger rows is not evidence of exactness."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-04: use the canonical skipped-layer token",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:tbl[88]/w:tr[2]/w:tc[5]/w:p",
+    "before": "NOT_EVALUATED_AFTER_PRIOR_ELIMINATION",
+    "after": "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-04: align prior-gate description with the canonical short-circuit trace",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:tbl[88]/w:tr[2]/w:tc[2]/w:p",
+    "before": "Eliminated by NCRC and TRC",
+    "after": "Eliminated by NCRC; TRC audit-only"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "B-04: preserve distinction between canonical short-circuit and audit-only computation",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[3342]",
+    "before": "Option A remains excluded by NCRC and TRC. Option C is excluded before RLS and may re-enter only after redesign and a fresh run through every affected upstream level. If the CSV evidence were insufficient to distinguish pass-equivalent status from redesign, escalation, or refusal, the run would refuse an ordinary selection claim rather than proceed.",
+    "after": "Option A remains excluded by NCRC; its separate audit-only TRC calculation does not change the skipped-layer state. Option C is excluded before RLS and may re-enter only after redesign and a fresh run through every affected upstream level. If the CSV evidence were insufficient to distinguish pass-equivalent status from redesign, escalation, or refusal, the run would refuse an ordinary selection claim rather than proceed."
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "reason": "B-01: backend recovery cannot restore the previous execution mode",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[612]",
+    "before": "43.1 LLM Backend Unavailable: Log BACKEND_UNAVAILABLE. In MODE 0-1, silently wait and retry. In MODE 2+, cease posting immediately, log DEGRADED_MODE_ENTERED, notify operator if outage exceeds 30 minutes. Do not generate responses from cached outputs or fallback models unless explicitly configured with their own eval pass. Resume when backend returns; do not catch up on missed interactions.",
+    "after": "43.1 LLM Backend Unavailable: Log BACKEND_UNAVAILABLE and enter MODE 0 under Section 8; cease posting and consequence-bearing agent action. Record DEGRADED_MODE_ENTERED and notify the operator if the outage exceeds 30 minutes. The orchestrator may wait and retry the backend connection; retries do not restore agent permissions. Do not generate responses from cached outputs or fallback models unless explicitly configured with their own eval pass. Backend return permits recovery checks only. Remain in MODE 0 until log integrity, configuration, current authority and affected qualification are reconciled under Section 23.7 and the Section 8 re-entry requirements, including authenticated operator approval, are satisfied. Do not catch up on missed interactions."
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "reason": "B-01: align network recovery with the invariant, mode ladder and qualified recovery",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[617]",
+    "before": "43.4 Network Connectivity Loss: Suspend all operations. Log locally if possible. On reconnection, verify log integrity, record gap marker, resume in prior mode.",
+    "after": "43.4 Network Connectivity Loss: Suspend agent operations and enter MODE 0. Infrastructure may log locally where possible. On reconnection, verify log integrity, record the gap marker and reconcile configuration, evidence, current authority and affected qualification under Section 23.7. Reconnection alone does not restore the prior mode, stale PASS states or expired approvals. Remain in MODE 0 until the Section 8 gated re-entry requirements, including authenticated operator approval, are satisfied. Independently qualified protective interlocks retain only their own existing authority and safe-state duties."
+  },
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[109]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[110]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[111]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[100]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[101]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[102]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[175]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[176]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[177]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[49]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[50]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[51]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[63]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[64]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[65]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1060]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1061]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1062]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[87]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[88]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[89]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[459]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[460]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[461]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[132]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[133]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[134]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[4283]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[4284]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[4285]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[574]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[575]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[576]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[70]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[71]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[72]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[807]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[808]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[809]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "reason": "Release identity: bind this correction build without incrementing component editions",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1032]",
+    "before": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260919-RELEASE-F. Prepared 19 September 2026 from the supplied Core 15 and verified Release E distribution. The separately uploaded Canon is text-identical to Release E but has different Office presentation bytes; those supplied presentation settings are preserved. Component editions are unchanged; manifest hashes identify the exact current bytes. Prior builds are provenance, not current test receipts. Live publication is not asserted.",
+    "after": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "reason": "Release identity: disclose the changed workbook bytes rather than claim unchanged carry-forward",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1033]",
+    "before": "Carry-forward identity. The unchanged Aligners Sheet v5.9 retains its embedded Release-D source-build identifier. The current package manifest binds those exact carried-forward workbook bytes to this build; no workbook recalculation or source-build relabeling is implied. Document and package identity are distinguished from component edition.",
+    "after": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "reason": "Release verification: remove stale acceptance claims and point to current evidence",
+    "operation": "replace_text",
+    "xml_path": "/w:document/w:body/w:p[1034]",
+    "before": "Verification boundary: Reports/Verification_and_Readiness.md records the actual checks and limits of this build. A cache-independent replay evaluates the frozen workbook’s complete stored-formula corpus without consuming formula caches. A separate artifact_tool recalculation/export is retained as a rejected compatibility experiment because some results diverged; it is not substituted for the master. Microsoft Excel/LibreOffice parity, full external-registry conformance, empirical validation and production authorization remain unclaimed. The workbook’s exact source hash is unchanged. No prior engine receipt is presented as new verification of changed bytes.",
+    "after": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted."
+  }
+]

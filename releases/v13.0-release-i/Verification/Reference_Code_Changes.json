@@ -1,0 +1,96 @@
+{
+  "build_id": "MG-RL-13.0-20260923-RELEASE-G",
+  "files": [
+    {
+      "path": "Native_Verification/native_reopen_worker.py",
+      "baseline_sha256": null,
+      "sha256": "9b5d8ab90dfc2a1166f2226d3a190b7ae0407574660b86ad0f67dc0499890fd9",
+      "new_file": true
+    },
+    {
+      "path": "Native_Verification/verify_native_roundtrip.py",
+      "baseline_sha256": null,
+      "sha256": "3818cf6639b6c8b1e4c52aa67d4a16d29f3f3638a420f52ef6e0d0a5ae69b955",
+      "new_file": true
+    },
+    {
+      "path": "Publication/verify_hosted.py",
+      "baseline_sha256": null,
+      "sha256": "cd571c9d9467c19d3576a5d5d05bc6c0739cb5cebc5f0a503c941be01852c570",
+      "new_file": true
+    },
+    {
+      "path": "Reference/README.md",
+      "baseline_sha256": "5c9ace8bc668699f64929e7be38ec3117e0f07b5192d76aff64c2c832559c70e",
+      "sha256": "661dad3eddda7abe7d8e11e4da99364bd128b7636df4c4b094c74261219bbbad",
+      "new_file": false
+    },
+    {
+      "path": "Reference/Workbook_Verifier.py",
+      "baseline_sha256": "188810cdc8d5c472653ce65363c9e3cc016e98e9ccd61dff9256390402c3a8e0",
+      "sha256": "7eb10dda122f7cc695965b85c1736a6703d33f21f58d277519093484cafdeabf",
+      "new_file": false
+    },
+    {
+      "path": "Reference/check_release_e.py",
+      "baseline_sha256": "81e04ab418e1b349dd1dc36b2415571f596b4454cdf2e3c3be53e25fdcae231a",
+      "sha256": "feebb12cc585d651786942108008f8b5af1fb2bbfd4b64e6df21d37b9a55bd1a",
+      "new_file": false
+    },
+    {
+      "path": "Reference/check_release_f.py",
+      "baseline_sha256": "911135b88f9fbaca7c637010491113c90cd6ab4410caa47f3f3f44ddc2896084",
+      "sha256": "38a90b3c217b9eb11c9c844885f3cd1ed8fccc549b7f315dc4a4da0884759099",
+      "new_file": false
+    },
+    {
+      "path": "Reference/check_release_g.py",
+      "baseline_sha256": null,
+      "sha256": "7562f6babfa479a6705e7f8b9a307701d412dc8c1b6014d29b86b9ec37f41b19",
+      "new_file": true
+    },
+    {
+      "path": "Reference/decision_fixture.py",
+      "baseline_sha256": "9487f63d72f9f97df7f4bdd05100fcc6fbc7076939f7d031c285549bc4ad458d",
+      "sha256": "ab84040178cf0af2bf317f328d4f07f3720e361852a90fd06cff58637f012f56",
+      "new_file": false
+    },
+    {
+      "path": "Reference/examples/r38a_joint_basis.synthetic.json",
+      "baseline_sha256": null,
+      "sha256": "1a773890f0aff8036b6cebbe468db3e526be02925338ba6e7e3533ce14fc9570",
+      "new_file": true
+    },
+    {
+      "path": "Reference/final_patch_checks.py",
+      "baseline_sha256": null,
+      "sha256": "9229cb87aff9621e3dfc37c8e39cb72c3f196d09e773d7b29b8554fb12d8e1e1",
+      "new_file": true
+    },
+    {
+      "path": "Reference/review_dashboard.js",
+      "baseline_sha256": "e1efd59b102875c18cb0615fb35074578dc6fd0f5299d1189af77994f4bde1c0",
+      "sha256": "3a312a7f626ae006e2730ffb30f80680309b6a558094b01897339f059fcc9a5c",
+      "new_file": false
+    },
+    {
+      "path": "Reference/test_final_patch_checks.py",
+      "baseline_sha256": null,
+      "sha256": "a40546bcd072e65d128e39435f4c4480752a07de477b6d22c149b31809c73eb8",
+      "new_file": true
+    },
+    {
+      "path": "Reference/test_hosted_verifier.py",
+      "baseline_sha256": null,
+      "sha256": "cba21649c0e1203f99be2ed621929d9a1147be5edb734c8491a43f3e2fbbe1bf",
+      "new_file": true
+    },
+    {
+      "path": "verify_all.py",
+      "baseline_sha256": "54fd2c9816bd9a2a2cabfb9ecc271f81cd6c017709777c279fb7df67097e94c5",
+      "sha256": "5094aa4704f59e8178496fc5af1662399186c722ecd41aa108b98297ee43d67a",
+      "new_file": false
+    }
+  ],
+  "scope": "Current changed/additional reference, fixture and read-only verification tools; exact diff accompanies this inventory."
+}

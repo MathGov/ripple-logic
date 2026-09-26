@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release H: feedback adjudication and exact improvements</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../Publication/guide.css" />
+</head>
+<body>
+<h1 id="release-h-feedback-adjudication-and-exact-improvements">Release
+H: feedback adjudication and exact improvements</h1>
+<h2 id="verdict-and-preserved-scope">Verdict and preserved scope</h2>
+<p>The feedback supports a small correction pass, not a new
+architecture. The separately uploaded 15 Core masters match the supplied
+ZIP. <strong>Twelve masters, including Canon v13.0 and SGP v8.8, remain
+byte-identical.</strong> Only Public Introduction v13.0, Cascade
+Standard v2.9 and Aligners v5.9 have new bytes. Existing component
+editions, numerical inputs/defaults, formulas, cached results, tables
+and section geometry remain unchanged.</p>
+<h2 id="accepted-qualified-and-rejected-suggestions">Accepted, qualified
+and rejected suggestions</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Feedback</th>
+<th>Disposition and rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Active zero-valued cells influence uncertainty/Gap</td>
+<td>Accept a clearer explanation and numerical regression tests. Do not
+automatically reduce sigma for a zero mean or alter the frozen Method C
+fixture. The evidence meaning and weight/dependence basis matter.</td>
+</tr>
+<tr class="even">
+<td>Epsilon changes the nominal comparison by about 2.4%</td>
+<td>Verified at 2.3816%. Preserve the existing Canon disclosure; do not
+retune epsilon after observing the result. Even epsilon zero does not
+rescue the doubled-sigma comparison. Prospective alternatives are
+research, not this correction.</td>
+</tr>
+<tr class="odd">
+<td>Five catastrophe floors imply .10 disjoint probability and
+necessarily swamp ordinary decisions</td>
+<td>Reject the universal conclusion. Applicable categories may overlap,
+have context-specific exceptions, and sit within a declared exposure
+domain. Truly disjoint applicable floors do sum, but the actual loss
+distribution determines CVaR.</td>
+</tr>
+<tr class="even">
+<td>Make TRC loss reference explicit</td>
+<td>Already controlled by Canon §8.4 / D.6: scenario-conditioned
+residual safe-corridor-relative Base-stream loss. Incremental
+continuation diagnostics do not replace it. Add a reading pointer, not a
+new loss definition.</td>
+</tr>
+<tr class="odd">
+<td>Lead public reporting with profiles, not scalar</td>
+<td>Accept a short Public Introduction clarification consistent with
+Canon §§10.0A–10.1A. A larger Gap is not statistical confidence or
+authority.</td>
+</tr>
+<tr class="even">
+<td>Add a parameter rationale annex</td>
+<td>Accept an informative table of existing values, rationale, source
+and sensitivity, explicitly preserving absent empirical calibration. No
+invented justification or numerical optimum.</td>
+</tr>
+<tr class="odd">
+<td>Merge state vocabularies</td>
+<td>Accept a typed crosswalk; reject a universal interchangeable enum.
+Existing framework verdicts, formal decision/execution states, teaching
+labels, wrapper claims and capability states answer different
+questions.</td>
+</tr>
+<tr class="even">
+<td>Use one shared emergency record</td>
+<td>Accept only an optional cover index linking existing evidence and
+pathway records. Do not weaken rights/tail/CSV/wrapper prerequisites or
+create a common emergency permit.</td>
+</tr>
+<tr class="odd">
+<td>State ripple.md's current dependency boundary</td>
+<td>Already stated near the beginning, before the abstract. Preserve the
+correct Core file; surface the conditional L0/L1 versus
+companion-dependent stronger-path boundary in the publication
+guide.</td>
+</tr>
+<tr class="even">
+<td>Referenced manifest/verification/calculator are absent</td>
+<td>Partly a reviewer-access limitation. The full ZIP contains
+manifests, ledgers, scoped executable code and receipts. Exact external
+full interfaces, libraries and the prospective rater workbook are not
+supplied. The guide/inventory distinguishes presence from claimed
+completeness.</td>
+</tr>
+<tr class="odd">
+<td>Stale workbook current-build date</td>
+<td>Correct it to an authoritative release-appendix/manifest pointer;
+synchronize its typed snapshot.</td>
+</tr>
+<tr class="even">
+<td>Historical worksheet/section names are stale</td>
+<td>Preserve their lineage/reference role. No renaming without a
+functional need.</td>
+</tr>
+<tr class="odd">
+<td>Historical unverified v1.5 implementation pointer is in the public
+reading route</td>
+<td>Relocate the complete pointer and caveat to the existing historical
+appendix in Public Introduction and Cascade. Keep v1.7 prominent.</td>
+</tr>
+<tr class="even">
+<td>Delete repeated release/history appendices</td>
+<td>Do not perform a wholesale restructuring of already-correct masters
+in this freeze. Preserve standalone provenance and existing
+collapsed-history HTML reading behavior.</td>
+</tr>
+<tr class="odd">
+<td>Begin empirical L1 validation</td>
+<td>Accept as the next study stage, not a completed result. The design
+is specified; actual case/rater execution materials and data must be
+separately prepared and frozen. Local computation is not empirical
+validation.</td>
+</tr>
+</tbody>
+</table>
+<p>The source review's broad claims of superiority over other methods
+and lack of published results are not independently established by this
+correction pass. No such comparative or publication-status assertion is
+added. Hypothesis identifiers are kept document-specific: the RLS
+Validation Protocol's H3 is legibility and H5 is OptionClosureRecord
+improvement.</p>
+<h2 id="exact-changed-core-surfaces">Exact changed Core surfaces</h2>
+<p><strong>Public Introduction:</strong> remove the historical v1.5
+aside and duplicate compatibility caveat from the current v1.7 reading
+route; preserve both sentences in the historical appendix. Add one
+profile/uncertainty/decisiveness reading instruction. Update only
+necessary current-build/evidence pointers. A targeted page break keeps
+the “Public script” heading with its paragraph after the required
+reflow.</p>
+<p><strong>Cascade Standard:</strong> relocate the same historical
+pointer/caveat out of its “Reproducible run interface” paragraph and
+into history. Preserve all operative requirements. Update only necessary
+current-build/evidence pointers. No cascade, state, equation or table
+changes.</p>
+<p><strong>Aligners workbook:</strong> four principal literal strings
+and four typed snapshot counterparts:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Current cell</th>
+<th>Repair</th>
+<th>Active counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sanity_Checklist!G2</td>
+<td>Replace stale current date with Appendix_Release/manifest
+pointer</td>
+<td>Build_Snapshot!CN666</td>
+</tr>
+<tr class="even">
+<td>Config!B27</td>
+<td>Replace unsupported <code>python3 verify_release.py --recalc</code>
+with <code>python -B verify_all.py</code></td>
+<td>Build_Snapshot!CN1466</td>
+</tr>
+<tr class="odd">
+<td>Appendix_Release!B4</td>
+<td>Identify exact H build, retaining edition 5.9</td>
+<td>Build_Snapshot!CN10991</td>
+</tr>
+<tr class="even">
+<td>Appendix_Release!B7</td>
+<td>Reference current H report and actual Workbook_Manifest.json</td>
+<td>Build_Snapshot!CN10997</td>
+</tr>
+</tbody>
+</table>
+<p>The obsolete command and missing Workbook_Verification.json reference
+were additional directly reproduced defects. Historical
+Build_Snapshot!B27 is deliberately untouched. All <strong>20,212
+formulas/caches, numerical inputs and 95-sheet structure</strong> are
+preserved. All <strong>336 existing DOCX tables</strong>, including
+content and formatting, are unchanged.</p>
+<p>Full before/after strings, source locations and rationale are in
+<code>Verification/Final_H/Exact_Document_Changes.json</code> and
+<code>Exact_Workbook_Changes.json</code>; independent preservation
+records sit alongside them.</p>
+<h2 id="publication-and-executable-checks">Publication and executable
+checks</h2>
+<p><code>Publication/Feedback_Clarifications.md</code> gathers the
+accepted explanations without duplicating new mandatory architecture.
+Current root pages, dependency inventory and manifests identify H
+separately from inherited G source components and retained historical
+receipts.</p>
+<p>Five inherited build-ID assertions are adapted to check each exact
+manifest-bound <strong>component source ID</strong>, not to require
+rewriting good G masters to display the later package date. Strict
+count, path, two-part version, size and hash checks remain. All previous
+semantic assertions and tolerances remain. New tests reproduce the
+feedback arithmetic and reject invalid inputs and malformed component
+identity. The change does not accept numerical drift.</p>
+<h2 id="identity-and-limits">Identity and limits</h2>
+<p><strong>MathGov/RippleLogic v13.0 —
+MG-RL-13.0-20260926-RELEASE-H.</strong> Same component editions; a
+distinct exact correction build, not replacement of a prior immutable
+archive. Source originals and raw review are retained privately. This is
+a research/teaching publication and scoped executable-test package, not
+empirical calibration, full production runtime, full external
+registry/schema conformance, domain authorization, new native H
+application certification or a Tier-4 ProofPack. Current verification is
+in <code>Release_H_Verification.md</code>.</p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "packages": {
+    "docx": "1.2.0",
+    "fitz": "1.26.7",
+    "lxml": "6.1.1"
+  },
+  "node": "v22.16.0",
+  "libreoffice_writer_renderer": "LibreOffice 25.2.3.2 520(Build:2)",
+  "native_spreadsheet_recalculation": "NOT_EXECUTED_IN_THIS_PASS"
+}

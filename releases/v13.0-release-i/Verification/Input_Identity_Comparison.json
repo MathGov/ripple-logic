@@ -1,0 +1,107 @@
+{
+  "SGP_v8.8.docx": [
+    {
+      "name": "SGP_v8.8(20260919-081911).docx",
+      "sha256": "fc1eed3738f470c82c7766f2aa84e41b10009368f3aa4eaa43cbed63d1b7144b",
+      "matches_baseline": true
+    }
+  ],
+  "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx": [
+    {
+      "name": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0(2).docx",
+      "sha256": "21db5ef4d35dc81f15ab6da384644f72e92587d50b998b21e59b2e2feb1a76ec",
+      "matches_baseline": true
+    }
+  ],
+  "RippleLogic_v13.0_Canon.docx": [
+    {
+      "name": "RippleLogic_v13.0_Canon(20260919-081913).docx",
+      "sha256": "f18a45255cd8f2fe32bdca4b708b31910b320ea674eac131aebd832d5f566234",
+      "matches_baseline": false
+    }
+  ],
+  "Source_Coupling_Integrity_Standard_v2.6.docx": [
+    {
+      "name": "Source_Coupling_Integrity_Standard_v2.6(2).docx",
+      "sha256": "1e3491a0569a834af343d70fb39bb399eb62e28979f93da34eeeaf3840027271",
+      "matches_baseline": true
+    }
+  ],
+  "RippleLogic_Cascade_Standard_v2.9.docx": [
+    {
+      "name": "RippleLogic_Cascade_Standard_v2.9(2).docx",
+      "sha256": "93fe24b1ccdcaf93c7e959853fb071863945e25f682f4c7b722fd551dbcecf46",
+      "matches_baseline": true
+    }
+  ],
+  "CSV_Gate_Standard_v2.7.docx": [
+    {
+      "name": "CSV_Gate_Standard_v2.7(2).docx",
+      "sha256": "27f6633a52e497c2379e4f9bdb7da52a8ed9a0d038f9cd6330207963228b89c9",
+      "matches_baseline": true
+    }
+  ],
+  "RippleLogic_RLS_Validation_Protocol_v2.9.docx": [
+    {
+      "name": "RippleLogic_RLS_Validation_Protocol_v2.9(2).docx",
+      "sha256": "94d147f056bd2e07e2a1b27d7b06d6a3ad34092572aecc072cba4fee228fd233",
+      "matches_baseline": true
+    }
+  ],
+  "RippleLogic_Aligners_Sheet_v5.9.xlsx": [
+    {
+      "name": "RippleLogic_Aligners_Sheet_v5.9(3).xlsx",
+      "sha256": "4341aae10e91f82976374d3d379e1dfd4fd4abfe169fe8f5a8853929b2fd96cc",
+      "matches_baseline": true
+    }
+  ],
+  "RippleLogic_Foundations_Primer_v4.7.docx": [
+    {
+      "name": "RippleLogic_Foundations_Primer_v4.7(2).docx",
+      "sha256": "73cf1aed989142f216e665180d73436687cc2272ed2de9c11f4388ef30f8c266",
+      "matches_baseline": true
+    }
+  ],
+  "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx": [
+    {
+      "name": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9(2).docx",
+      "sha256": "6af9136f83789e71c4a9c3d0d28c2b641002994ca9c2b90194134b3c0651df93",
+      "matches_baseline": true
+    }
+  ],
+  "ripple_md_Standard_v5.8.docx": [
+    {
+      "name": "ripple_md_Standard_v5.8(3).docx",
+      "sha256": "e1c9193bd486afa9680e47783664258bfcb0aa09db8a08d81d8f9a609d946abe",
+      "matches_baseline": true
+    }
+  ],
+  "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx": [
+    {
+      "name": "Physical_Causal_Admissibility_Evidence_Profile_v2.6(2).docx",
+      "sha256": "f0403ccd7d9cbcd261c200a818f91a21587065370f37d9abe6b4a3badff990df",
+      "matches_baseline": true
+    }
+  ],
+  "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx": [
+    {
+      "name": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6(2).docx",
+      "sha256": "ee84bcd9212bd6ea9df46ca2eef0b19e4de9fdbfb64aaea8aa164923a30baa33",
+      "matches_baseline": true
+    }
+  ],
+  "RippleLogic_Agent_System_v13.0.docx": [
+    {
+      "name": "RippleLogic_Agent_System_v13.0(3).docx",
+      "sha256": "acf0fc40175cc288233ac8883265aee9264663e63f9f513d336f24d95d5d86d6",
+      "matches_baseline": true
+    }
+  ],
+  "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx": [
+    {
+      "name": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7(2).docx",
+      "sha256": "a20aa904fbc556b52b157d73979e682ffc34bd29a6bfc8c7a86baadc5e4bfc2f",
+      "matches_baseline": true
+    }
+  ]
+}

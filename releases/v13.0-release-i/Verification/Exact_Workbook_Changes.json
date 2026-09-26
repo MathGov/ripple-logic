@@ -1,0 +1,182 @@
+[
+  {
+    "sheet": "RLS",
+    "cell": "A35",
+    "kind": "approved_literal",
+    "before": "Gap",
+    "after": "ΔRLS (raw)",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Config",
+    "cell": "C22",
+    "kind": "approved_literal",
+    "before": "(Gap/σ > δ for decisive)",
+    "after": "SignedGap > δ in every required comparison",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "RLS",
+    "cell": "F67",
+    "kind": "approved_literal",
+    "before": "Decisive under declared demonstration inputs",
+    "after": "Nominal demo only; see final verdict",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "C29",
+    "kind": "approved_literal",
+    "before": "INVALID",
+    "after": "RUNTIME_BLOCK",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "C30",
+    "kind": "approved_literal",
+    "before": "ESCALATE",
+    "after": "RUNTIME_BLOCK",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "C31",
+    "kind": "approved_literal",
+    "before": "INVALID",
+    "after": "RUNTIME_INVALID",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "A39",
+    "kind": "approved_literal",
+    "before": "This workbook emits (1) Canon-aligned audit flags and (2) tool-local integrity flags. Tool-local flags protect the workbook/PCC emitter and do not create new RippleLogic normative taxonomy.",
+    "after": "Frozen worked records, not live detectors. Rows 29–31 are Agent-owned runtime flags (Canon §14.3A.1); RUNTIME_* severities do not extend the PCC vocabulary. Tool-local integrity checks do not create Canon taxonomy.",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B4",
+    "kind": "approved_literal",
+    "before": "2026-09-15; build MG-RL-13.0-20260915-RELEASE-D",
+    "after": "2026-09-23; build MG-RL-13.0-20260923-RELEASE-G",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B28",
+    "kind": "approved_literal",
+    "before": "Authoring: artifact_tool with format-preserving cell assembly. Calculation caches: named LibreOffice hard-recalculation, followed by independent arithmetic and mutation checks. Microsoft Excel parity remains untested.",
+    "after": "Authoring: artifact_tool with format-preserving cell assembly. Current native calculation, save/reopen and independent replay evidence: Reports/Verification_and_Readiness.md. Microsoft Excel parity remains untested.",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B35",
+    "kind": "approved_literal",
+    "before": "TOC-NAVIGATION-REPAIR-1 / Release C is the baseline. Exact source hashes are in Publication/Build_Provenance.json; prior tests do not certify changed bytes.",
+    "after": "Baseline: supplied MG-RL-13.0-20260920-PUBLICATION-READY archive, preserving frozen Release F and carried-forward Release-D workbook. Exact source hashes: Publication/Build_Provenance.json. Prior tests do not certify changed bytes.",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN1454",
+    "kind": "required_snapshot_mirror",
+    "before": "(Gap/σ > δ for decisive)",
+    "after": "SignedGap > δ in every required comparison",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5044",
+    "kind": "required_snapshot_mirror",
+    "before": "Gap",
+    "after": "ΔRLS (raw)",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5174",
+    "kind": "required_snapshot_mirror",
+    "before": "Decisive under declared demonstration inputs",
+    "after": "Nominal demo only; see final verdict",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5638",
+    "kind": "required_snapshot_mirror",
+    "before": "INVALID",
+    "after": "RUNTIME_BLOCK",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5644",
+    "kind": "required_snapshot_mirror",
+    "before": "ESCALATE",
+    "after": "RUNTIME_BLOCK",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5650",
+    "kind": "required_snapshot_mirror",
+    "before": "INVALID",
+    "after": "RUNTIME_INVALID",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5670",
+    "kind": "required_snapshot_mirror",
+    "before": "This workbook emits (1) Canon-aligned audit flags and (2) tool-local integrity flags. Tool-local flags protect the workbook/PCC emitter and do not create new RippleLogic normative taxonomy.",
+    "after": "Frozen worked records, not live detectors. Rows 29–31 are Agent-owned runtime flags (Canon §14.3A.1); RUNTIME_* severities do not extend the PCC vocabulary. Tool-local integrity checks do not create Canon taxonomy.",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN10991",
+    "kind": "required_snapshot_mirror",
+    "before": "2026-09-15; build MG-RL-13.0-20260915-RELEASE-D",
+    "after": "2026-09-23; build MG-RL-13.0-20260923-RELEASE-G",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN11039",
+    "kind": "required_snapshot_mirror",
+    "before": "Authoring: artifact_tool with format-preserving cell assembly. Calculation caches: named LibreOffice hard-recalculation, followed by independent arithmetic and mutation checks. Microsoft Excel parity remains untested.",
+    "after": "Authoring: artifact_tool with format-preserving cell assembly. Current native calculation, save/reopen and independent replay evidence: Reports/Verification_and_Readiness.md. Microsoft Excel parity remains untested.",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN11053",
+    "kind": "required_snapshot_mirror",
+    "before": "TOC-NAVIGATION-REPAIR-1 / Release C is the baseline. Exact source hashes are in Publication/Build_Provenance.json; prior tests do not certify changed bytes.",
+    "after": "Baseline: supplied MG-RL-13.0-20260920-PUBLICATION-READY archive, preserving frozen Release F and carried-forward Release-D workbook. Exact source hashes: Publication/Build_Provenance.json. Prior tests do not certify changed bytes.",
+    "style_unchanged": true,
+    "source": "artifact_tool authored value; targeted OOXML assembly preserves all other cells"
+  }
+]

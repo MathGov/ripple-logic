@@ -1,0 +1,104 @@
+{
+  "total_pages": 686,
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.pdf",
+      "pages": 12,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.pdf",
+      "pages": 9,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.pdf",
+      "pages": 15,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.pdf",
+      "pages": 13,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.pdf",
+      "pages": 9,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.pdf",
+      "pages": 84,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.pdf",
+      "pages": 10,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.pdf",
+      "pages": 35,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.pdf",
+      "pages": 21,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.pdf",
+      "pages": 296,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "SGP_v8.8.pdf",
+      "pages": 60,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.pdf",
+      "pages": 9,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.pdf",
+      "pages": 41,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.pdf",
+      "pages": 72,
+      "empty_pages": [],
+      "text_outside_page": [],
+      "replacement_character_pages": []
+    }
+  ],
+  "boundary": "Automated empty-page, page-edge and replacement-character scan is not an exhaustive visual proof."
+}

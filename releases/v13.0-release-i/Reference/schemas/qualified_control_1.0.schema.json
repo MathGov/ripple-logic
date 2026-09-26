@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathgov:qualified-control:1.0",
+  "title": "Qualified control evidence envelope: scoped supplemental record",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "release_id": {
+      "const": "MathGov/RippleLogic v13.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "configuration_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "evidence_maturity": {
+      "enum": [
+        "SYNTHETIC",
+        "OBSERVED_UNVALIDATED",
+        "DOMAIN_VALIDATED"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "received_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "record_type": {
+      "const": "QualifiedControlRecord"
+    },
+    "control_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "hazard_endpoint_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "action_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trigger_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "control_time_upper": {
+      "type": "number",
+      "minimum": 0
+    },
+    "harm_time_lower": {
+      "type": "number",
+      "minimum": 0
+    },
+    "safety_margin": {
+      "type": "number",
+      "minimum": 0
+    },
+    "time_unit": {
+      "enum": [
+        "seconds",
+        "minutes",
+        "hours",
+        "days"
+      ]
+    },
+    "prevention_evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "other_mitigation_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "expiry": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fallback_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_verification_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution_authorized": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "release_id",
+    "run_id",
+    "configuration_hash",
+    "evidence_maturity",
+    "observed_at",
+    "received_at",
+    "record_type",
+    "control_id",
+    "hazard_endpoint_ref",
+    "action_ref",
+    "authority_ref",
+    "resource_ref",
+    "trigger_ref",
+    "control_time_upper",
+    "harm_time_lower",
+    "safety_margin",
+    "time_unit",
+    "prevention_evidence_ref",
+    "other_mitigation_refs",
+    "expiry",
+    "fallback_ref",
+    "outcome_verification_ref",
+    "execution_authorized"
+  ],
+  "additionalProperties": false
+}

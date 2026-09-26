@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "release_id": "MathGov/RippleLogic v13.0",
+  "run_id": "SYNTHETIC-13-01",
+  "configuration_hash": "3c403016e05315bd568551addd6a2a266b78c0f56e2e0bcd7804b0450feae632",
+  "evidence_maturity": "SYNTHETIC",
+  "observed_at": "2026-09-10T09:00:00Z",
+  "received_at": "2026-09-10T09:00:01Z",
+  "record_type": "EffectTransitionRecord",
+  "observation_id": "obs-001",
+  "effect_token_id": "effect-001",
+  "revision": 1,
+  "supersedes": null,
+  "bearer_ref": "synthetic-stakeholder-01",
+  "state_construct": "household cost increase",
+  "baseline_ref": "synthetic-continuation",
+  "primary_home": {
+    "scope": "U2",
+    "dimension": "D1"
+  },
+  "u6_view": "NOT_APPLICABLE",
+  "interpretation": "DIRECT_WELFARE",
+  "signed_impact": {
+    "status": "KNOWN",
+    "value": -0.1,
+    "lower": -0.2,
+    "upper": 0,
+    "evidence_ref": "synthetic-fixture"
+  },
+  "pathway_ref": "synthetic-cost-path",
+  "parent_effect_ids": [],
+  "window_ref": "synthetic-year-1",
+  "probability_owner": "NONE_ALREADY_EXPECTED",
+  "evidence_refs": [
+    "synthetic-fixture"
+  ],
+  "execution_authorized": false
+}

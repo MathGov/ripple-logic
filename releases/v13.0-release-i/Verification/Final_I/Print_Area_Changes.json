@@ -1,0 +1,14 @@
+[
+  {
+    "name": "_xlnm.Print_Area",
+    "target": "'Build_Snapshot'!$A$1:$CJ$90",
+    "before_localSheetId": "89",
+    "after_localSheetId": "78"
+  },
+  {
+    "name": "_xlnm.Print_Area",
+    "target": "'Build_Integrity'!$A$1:$F$39",
+    "before_localSheetId": "90",
+    "after_localSheetId": "79"
+  }
+]

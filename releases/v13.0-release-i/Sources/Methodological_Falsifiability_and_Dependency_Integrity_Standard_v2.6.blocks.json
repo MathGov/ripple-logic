@@ -1,0 +1,4742 @@
+[
+  {
+    "kind": "paragraph",
+    "id": "p-1",
+    "style": "Heading1",
+    "level": 1,
+    "text": "Methodological Falsifiability and Dependency Integrity Standard",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-2",
+              "style": "Compact",
+              "level": 0,
+              "text": "Integrity surface",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-3",
+              "style": "Compact",
+              "level": 0,
+              "text": "Current requirement",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-4",
+              "style": "Compact",
+              "level": 0,
+              "text": "Claim boundary",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-5",
+              "style": "Compact",
+              "level": 0,
+              "text": "Claim typing",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-6",
+              "style": "Compact",
+              "level": 0,
+              "text": "Material empirical, causal, formal, operational, legal-regulatory, normative, and metaphysical-horizon claims declare their evidence and authority boundaries.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-7",
+              "style": "Compact",
+              "level": 0,
+              "text": "The protocol does not make every legal or normative commitment physically falsifiable.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-8",
+              "style": "Compact",
+              "level": 0,
+              "text": "Warrant-domain bridge",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-9",
+              "style": "Compact",
+              "level": 0,
+              "text": "A material conclusion identifies the domain of the offered warrant and any bridge required when the conclusion crosses scientific, engineering, legal-regulatory, institutional, or normative domains.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-10",
+              "style": "Compact",
+              "level": 0,
+              "text": "Authority, compliance, certification, performance, and rhetoric cannot silently change claim type.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-11",
+              "style": "Compact",
+              "level": 0,
+              "text": "Dependency integrity",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-12",
+              "style": "Compact",
+              "level": 0,
+              "text": "Starting assumptions, definitions, models, thresholds, and inherited sources are versioned; material changes trigger re-derivation.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-13",
+              "style": "Compact",
+              "level": 0,
+              "text": "Silent retrofitting is prohibited.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-14",
+              "style": "Compact",
+              "level": 0,
+              "text": "Revision trigger",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-15",
+              "style": "Compact",
+              "level": 0,
+              "text": "A claim identifies evidence or conditions that would force revision, narrowing, rerun, or retirement.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-16",
+              "style": "Compact",
+              "level": 0,
+              "text": "Fluency and coherence are not external confirmation.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-17",
+              "style": "Compact",
+              "level": 0,
+              "text": "Capability claim integrity",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-18",
+              "style": "Compact",
+              "level": 0,
+              "text": "A material capability term is operationally defined and bound to observable criteria, mechanism or system composition, evidence, validity conditions, alternatives, a falsifier, evidence maturity, permitted wording, and explicit nonclaims.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-19",
+              "style": "Compact",
+              "level": 0,
+              "text": "Neither component reduction nor anthropomorphic language settles the capability claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-20",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Source-boundary rule: If this compact standard conflicts with the RippleLogic Canon, the Canon controls.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-21",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Frozen Evaluation Binding and Milestone Claim Discipline",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-22",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Before consequential evaluation, the run freezes and versions the decision question, system boundary, configuration, evidence schema, stakeholder scope, rights interpretation, scenario families, thresholds, uncertainty treatment, weighting protocol, control requirements, stopping conditions, and authorization pathway. For a confirmatory operator or performance test it also freezes a finite, enumerated or formally bounded admissible falsification family and a stopping/attribution rule. A material post-result alteration creates a new run or declared revision branch; it cannot turn a failed original prescription into a successful original test.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-23",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Implementation milestones are classified narrowly. Successful formal derivation, compilation, synthesis, simulation, hardware implementation, or integration may defeat a specific impossibility hypothesis, but it does not prove empirical superiority, domain validity, physical safety, ontology, rights compatibility, or deployment readiness. Claims must name the exact falsification criterion tested and the alternatives that remain open.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-24",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Purpose",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-25",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "This compact standard defines the methodological integrity discipline for MathGov and RippleLogic. It adopts the bounded principle that claim-bearing elements must not survive merely because they are plausible, fluent, approved, compliant, or locally useful. A material claim must declare what kind of claim it is, what it depends on, what would force revision, what alternatives remain open, and what downstream elements must be rerun if the foundation changes.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-26",
+    "style": "BodyText",
+    "level": 0,
+    "text": "It is not a sixth gate. It does not replace Reality Grounding, RF/NCRC, TRC, CSV, SGP, RLS, PC-AEP, domain science, or external validation.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-27",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Adopted principles and bounded non-claims",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-28",
+              "style": "Compact",
+              "level": 0,
+              "text": "Item",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-29",
+              "style": "Compact",
+              "level": 0,
+              "text": "MathGov integration",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-30",
+              "style": "Compact",
+              "level": 0,
+              "text": "Adopted principle",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-31",
+              "style": "Compact",
+              "level": 0,
+              "text": "Material claims need external contact, falsification or revision triggers, explicit dependencies, and no hidden assumption authority.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-32",
+              "style": "Compact",
+              "level": 0,
+              "text": "Adopted principle",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-33",
+              "style": "Compact",
+              "level": 0,
+              "text": "If a starting assumption, definition, threshold, operator, or model basis changes, the affected downstream chain must be rerun or claim strength must be narrowed.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-34",
+              "style": "Compact",
+              "level": 0,
+              "text": "Bounded non-claim",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-35",
+              "style": "Compact",
+              "level": 0,
+              "text": "Not every normative definition is physically falsifiable. Normative commitments are audited for coherence, rights compatibility, stakeholder challenge, and application integrity.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-36",
+              "style": "Compact",
+              "level": 0,
+              "text": "Bounded non-claim",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-37",
+              "style": "Compact",
+              "level": 0,
+              "text": "Probabilistic evidence is not invalid. It is required where uncertainty is real, but uncertainty must be disclosed and cannot be laundered into certainty.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-38",
+              "style": "Compact",
+              "level": 0,
+              "text": "Bounded non-claim",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-39",
+              "style": "Compact",
+              "level": 0,
+              "text": "Governance may act proportionately under serious uncertainty to protect rights, bound ruin, require evidence, authorize bounded testing, or impose controls. Such action does not prove that the uncertain capability exists or that uncertainty has been reduced.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-40",
+              "style": "Compact",
+              "level": 0,
+              "text": "Bounded non-claim",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-41",
+              "style": "Compact",
+              "level": 0,
+              "text": "Model revision is not forbidden. Silent retrofitting is forbidden. Revision must be versioned, disclosed, and rechecked.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-42",
+              "style": "Compact",
+              "level": 0,
+              "text": "Bounded non-claim",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-43",
+              "style": "Compact",
+              "level": 0,
+              "text": "System-level operational capabilities may emerge from coordinated probabilistic, deterministic, memory, planning, feedback, tool, and human-control components. Component decomposition does not by itself refute the bounded capability, and the bounded capability does not establish consciousness, moral agency, generality, or authority.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-44",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Required Methodological Integrity Record",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-45",
+              "style": "Compact",
+              "level": 0,
+              "text": "Field",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-46",
+              "style": "Compact",
+              "level": 0,
+              "text": "Required content",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-47",
+              "style": "Compact",
+              "level": 0,
+              "text": "claim_or_component",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-48",
+              "style": "Compact",
+              "level": 0,
+              "text": "The claim, definition, threshold, operator, indicator, model, SGP interpretation, gate decision, validation result, or public release claim under review.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-49",
+              "style": "Compact",
+              "level": 0,
+              "text": "claim_type",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-50",
+              "style": "Compact",
+              "level": 0,
+              "text": "empirical, causal, formal, operational, legal_regulatory, normative, or metaphysical_horizon. The display labels “legal-regulatory” and “metaphysical-horizon” MAY be used in prose; validator-facing records MUST use legal_regulatory and metaphysical_horizon.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-51",
+              "style": "Compact",
+              "level": 0,
+              "text": "claim_domain",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-52",
+              "style": "Compact",
+              "level": 0,
+              "text": "The primary authority domain in which the conclusion is asserted: scientific_empirical, engineering_operational, formal_mathematical, legal_regulatory, normative_ethical, institutional_governance, commercial_descriptive, anthropomorphic_social, or metaphysical_horizon. A materially mixed conclusion SHOULD be split into separately typed claims.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-53",
+              "style": "Compact",
+              "level": 0,
+              "text": "warrant_domains",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-54",
+              "style": "Compact",
+              "level": 0,
+              "text": "One or more domains from which support derives. Multiple domains MAY support one claim, but each material cross-domain relationship requires its own bridge record.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-55",
+              "style": "Compact",
+              "level": 0,
+              "text": "cross_domain_bridges",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-56",
+              "style": "Compact",
+              "level": 0,
+              "text": "Zero or more bridge records. Each record contains from_warrant_domain, to_claim_domain, bridge_status, bridge_proposition, bridge_evidence_or_rationale, uncertainty, validity_or_jurisdiction_boundary, and revision_or_refusal_condition.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-57",
+              "style": "Compact",
+              "level": 0,
+              "text": "dependency_position",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-58",
+              "style": "Compact",
+              "level": 0,
+              "text": "Where the claim sits in the cascade, standard, SGP flow, workbook, validation protocol, or public release surface.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-59",
+              "style": "Compact",
+              "level": 0,
+              "text": "starting_assumptions",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-60",
+              "style": "Compact",
+              "level": 0,
+              "text": "Assumptions, definitions, priors, sources, thresholds, scope boundaries, or model premises that carry the claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-61",
+              "style": "Compact",
+              "level": 0,
+              "text": "definition_or_operator_used",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-62",
+              "style": "Compact",
+              "level": 0,
+              "text": "The material definition, operator, threshold, indicator, or procedure being applied.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-63",
+              "style": "Compact",
+              "level": 0,
+              "text": "necessity_or_alternative_check",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-64",
+              "style": "Compact",
+              "level": 0,
+              "text": "Whether necessity is claimed, what alternatives remain plausible, and why the stronger claim is or is not warranted.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-65",
+              "style": "Compact",
+              "level": 0,
+              "text": "evidence_or_test_surface",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-66",
+              "style": "Compact",
+              "level": 0,
+              "text": "The observation, measurement, replication, derivation, simulation, formal proof, expert review, stakeholder challenge, or audit surface used.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-67",
+              "style": "Compact",
+              "level": 0,
+              "text": "falsification_or_revision_trigger",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-68",
+              "style": "Compact",
+              "level": 0,
+              "text": "What result, evidence, challenge, failure, or domain change would force revision, narrowing, escalation, or refusal.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-69",
+              "style": "Compact",
+              "level": 0,
+              "text": "uncertainty_or_confidence_method",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-70",
+              "style": "Compact",
+              "level": 0,
+              "text": "How uncertainty, confidence, model limits, disagreement, or unresolved evidence is represented.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-71",
+              "style": "Compact",
+              "level": 0,
+              "text": "downstream_dependencies",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-72",
+              "style": "Compact",
+              "level": 0,
+              "text": "Gates, scores, SGP outputs, claims, controls, authority actions, or release statements affected if this element changes.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-73",
+              "style": "Compact",
+              "level": 0,
+              "text": "re_derivation_scope_if_changed",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-74",
+              "style": "Compact",
+              "level": 0,
+              "text": "Local patch, threshold update, gate rerun, TRC reopening, CSV rerun, SGP rerun, RLS recalculation, release versioning, or full refusal.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-75",
+              "style": "Compact",
+              "level": 0,
+              "text": "reviewer_status",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-76",
+              "style": "Compact",
+              "level": 0,
+              "text": "reviewer-visible, contested, independently checked, domain-expert-warranted, or pending.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-77",
+              "style": "Compact",
+              "level": 0,
+              "text": "required_claim_action",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-78",
+              "style": "Compact",
+              "level": 0,
+              "text": "proceed, narrow, control, redesign, escalate, or refuse.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-79",
+              "style": "Compact",
+              "level": 0,
+              "text": "operational_definition (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-80",
+              "style": "Compact",
+              "level": 0,
+              "text": "The measurable functional meaning of the capability term in the pinned configuration and domain.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-81",
+              "style": "Compact",
+              "level": 0,
+              "text": "observable_criteria (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-82",
+              "style": "Compact",
+              "level": 0,
+              "text": "The observations that would count as demonstration, non-demonstration, or failure of the capability.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-83",
+              "style": "Compact",
+              "level": 0,
+              "text": "mechanism_or_system_composition (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-84",
+              "style": "Compact",
+              "level": 0,
+              "text": "The components and interactions that instantiate the claimed capability without assuming any single component supplies the whole.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-85",
+              "style": "Compact",
+              "level": 0,
+              "text": "evidence_surface (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-86",
+              "style": "Compact",
+              "level": 0,
+              "text": "The logs, trials, benchmarks, traces, inspections, or other evidence that support the bounded claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-87",
+              "style": "Compact",
+              "level": 0,
+              "text": "validity_conditions (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-88",
+              "style": "Compact",
+              "level": 0,
+              "text": "Configuration, domain, environment, time, operator, and control conditions inside which the claim is licensed.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-89",
+              "style": "Compact",
+              "level": 0,
+              "text": "alternative_explanations (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-90",
+              "style": "Compact",
+              "level": 0,
+              "text": "Simpler or rival explanations such as scripting, operator intervention, memorization, benchmark fit, or interface effects.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-91",
+              "style": "Compact",
+              "level": 0,
+              "text": "falsification_or_revision_trigger (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-92",
+              "style": "Compact",
+              "level": 0,
+              "text": "Reuses the general falsification_or_revision_trigger field. For a capability claim, that same field must also identify the observation or boundary violation that would narrow, revise, suspend or refute the capability claim. Do not serialize a second property with the same name.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-93",
+              "style": "Compact",
+              "level": 0,
+              "text": "evidence_maturity_stage (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-94",
+              "style": "Compact",
+              "level": 0,
+              "text": "Definition/derivation, computational realization, implementation conformance, projection/calibration lock, controlled empirical contact, operational qualification, or outcome/requalification evidence.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-95",
+              "style": "Compact",
+              "level": 0,
+              "text": "permitted_claim (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-96",
+              "style": "Compact",
+              "level": 0,
+              "text": "The strongest wording licensed by the present evidence and maturity stage.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-97",
+              "style": "Compact",
+              "level": 0,
+              "text": "explicit_nonclaims (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-98",
+              "style": "Compact",
+              "level": 0,
+              "text": "Stronger inferences not licensed, including consciousness, personhood, intrinsic goals, moral agency, generality, unrestricted autonomy, safety, legality, or authority where applicable.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-99",
+              "style": "Compact",
+              "level": 0,
+              "text": "target_of_understanding (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-100",
+              "style": "Compact",
+              "level": 0,
+              "text": "The target object, process, system, proposition, or domain state that is claimed to be understood.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-101",
+              "style": "Compact",
+              "level": 0,
+              "text": "relation_claimed (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-102",
+              "style": "Compact",
+              "level": 0,
+              "text": "The relation asserted, such as explanation, prediction, counterfactual manipulation, intervention, correction, or transfer.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-103",
+              "style": "Compact",
+              "level": 0,
+              "text": "distance_from_training_or_known_exemplars (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-104",
+              "style": "Compact",
+              "level": 0,
+              "text": "How the test distinguishes transfer or novel application from retrieval, memorization, contamination, or benchmark fit.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-105",
+              "style": "Compact",
+              "level": 0,
+              "text": "scaffolding_and_tools (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-106",
+              "style": "Compact",
+              "level": 0,
+              "text": "Prompts, retrieval, memory, tools, human assistance, environmental feedback, or other scaffolding required for the demonstrated performance.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-107",
+              "style": "Compact",
+              "level": 0,
+              "text": "transfer_conditions (conditional)",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-108",
+              "style": "Compact",
+              "level": 0,
+              "text": "The contexts, perturbations, reduced-scaffolding conditions, or domain shifts across which the understanding claim is expected to hold.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-109",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Dependency-localized failure propagation",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-110",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "If a premise, primitive, definition, operator, evidence source, control, or inherited dependency fails, every materially dependent gate result, score, SGP output, authorization, validation claim, or public statement must be reopened, narrowed, suspended, rerun, or withdrawn. The record must identify the dependency path and re-derivation scope.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-111",
+    "style": "BodyText",
+    "level": 0,
+    "text": "A component with an independent evidence and derivation path does not fail merely because another part of the framework fails. This rule prevents both monolithic immunity—protecting dependent claims after foundation failure—and indiscriminate whole-framework rejection—discarding independently supported components without testing their actual dependencies.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-112",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Taxonomy, Formalization and Engineering Claim Discipline (Normative)",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-113",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Orthogonality, independence, irreducibility, optimality, observability and controllability claims must state their exact mathematical or operational meaning, object, assumptions, scope and falsifier. Conceptual distinction, uncorrelated variables, statistical independence, causal separation and non-duplicated accounting are not equivalent. A useful architectural vocabulary is not a proved theorem.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-114",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Do not claim that seven dimensions/scopes are maximally complete or irreducible from symmetry, selected examples or an uncalibrated sum of loss criteria. Preregister plausible merges/splits and report the trade-offs separately. An aggregation rule, unit test or constrained counterexample establishes only its stated proposition.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-115",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Production readiness, zero data loss, privacy, cryptographic security, exact recovery, real-time performance and successful hardware deployment require exact executable artifacts and corresponding evidence. Source code, mock logs, invented signatures and illustrative scenario parameters do not establish these claims. Cryptographic verification proves a declared formal relation under assumptions, not measurement truth, lawful authority, empirical welfare or absence of omitted harms.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-116",
+    "style": "BodyText",
+    "level": 0,
+    "text": "The proposed control envelopes, degraded-mode and privacy interfaces strengthen existing records. The speculative susceptibility formula, automatic 90-percent counter-injection, multiplication-based identity commitment, sacred quorum/latency constants and biosphere/light-cone identity are not adopted. Research branches preserve failed tests and must not redefine success after observing outcomes.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-117",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Status values",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-118",
+              "style": "Compact",
+              "level": 0,
+              "text": "Status",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-119",
+              "style": "Compact",
+              "level": 0,
+              "text": "Meaning",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-120",
+              "style": "Compact",
+              "level": 0,
+              "text": "Default action",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-121",
+              "style": "Compact",
+              "level": 0,
+              "text": "METHOD_SUPPORTED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-122",
+              "style": "Compact",
+              "level": 0,
+              "text": "Evidence, dependency, and revision conditions support the declared claim boundary.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-123",
+              "style": "Compact",
+              "level": 0,
+              "text": "Proceed within boundary.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-124",
+              "style": "Compact",
+              "level": 0,
+              "text": "ASSUMPTION_BOUND",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-125",
+              "style": "Compact",
+              "level": 0,
+              "text": "Claim depends on visible assumptions that could affect strength or gate status.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-126",
+              "style": "Compact",
+              "level": 0,
+              "text": "Narrow or monitor.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-127",
+              "style": "Compact",
+              "level": 0,
+              "text": "ALT_EXPLANATION_OPEN",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-128",
+              "style": "Compact",
+              "level": 0,
+              "text": "Plausible alternatives can explain the same result.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-129",
+              "style": "Compact",
+              "level": 0,
+              "text": "Downgrade necessity claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-130",
+              "style": "Compact",
+              "level": 0,
+              "text": "TEST_REQUIRED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-131",
+              "style": "Compact",
+              "level": 0,
+              "text": "Stronger evidence, derivation, replication, simulation, or review is needed.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-132",
+              "style": "Compact",
+              "level": 0,
+              "text": "Escalate before strong claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-133",
+              "style": "Compact",
+              "level": 0,
+              "text": "CONTESTED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-134",
+              "style": "Compact",
+              "level": 0,
+              "text": "Evidence, interpretation, stakeholder challenge, or expert judgment materially disputes the claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-135",
+              "style": "Compact",
+              "level": 0,
+              "text": "Escalate, narrow, or redesign.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-136",
+              "style": "Compact",
+              "level": 0,
+              "text": "REVISION_REQUIRED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-137",
+              "style": "Compact",
+              "level": 0,
+              "text": "A starting assumption, definition, threshold, operator, or model basis has failed or changed.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-138",
+              "style": "Compact",
+              "level": 0,
+              "text": "Rerun affected chain.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-139",
+              "style": "Compact",
+              "level": 0,
+              "text": "REFUSE_STRONGER_CLAIM",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-140",
+              "style": "Compact",
+              "level": 0,
+              "text": "The requested public, deployment, validation, deterministic-selection, or safety claim exceeds support.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-141",
+              "style": "Compact",
+              "level": 0,
+              "text": "Refuse the stronger claim.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-142",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Claim-type rules",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-143",
+              "style": "Compact",
+              "level": 0,
+              "text": "Claim type",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-144",
+              "style": "Compact",
+              "level": 0,
+              "text": "Evidence discipline",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-145",
+              "style": "Compact",
+              "level": 0,
+              "text": "Empirical",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-146",
+              "style": "Compact",
+              "level": 0,
+              "text": "Observation, measurement, replication, current source, or empirical warrant.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-147",
+              "style": "Compact",
+              "level": 0,
+              "text": "Causal",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-148",
+              "style": "Compact",
+              "level": 0,
+              "text": "A claim-specific identification plan links mechanism, intervention and comparator to a target estimand, population and time horizon; declares identification assumptions, selection/confounding and interference treatment, measurement and uncertainty; and states the identification-status verdict and resulting claim boundary.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-149",
+              "style": "Compact",
+              "level": 0,
+              "text": "Formal",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-150",
+              "style": "Compact",
+              "level": 0,
+              "text": "Explicit assumptions, definitions, derivation, proof, or formal verification.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-151",
+              "style": "Compact",
+              "level": 0,
+              "text": "Operational",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-152",
+              "style": "Compact",
+              "level": 0,
+              "text": "Reproducible procedure, audit trail, role assignment, and reviewable outputs.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-153",
+              "style": "Compact",
+              "level": 0,
+              "text": "Legal-regulatory",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-154",
+              "style": "Compact",
+              "level": 0,
+              "text": "Current authority source, jurisdiction, applicability boundary, interpretation status, and contest or review path.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-155",
+              "style": "Compact",
+              "level": 0,
+              "text": "Normative",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-156",
+              "style": "Compact",
+              "level": 0,
+              "text": "Declared ethical commitment, rights compatibility, consistency, stakeholder challenge, and auditability of application.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-157",
+              "style": "Compact",
+              "level": 0,
+              "text": "Metaphysical-horizon",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-158",
+              "style": "Compact",
+              "level": 0,
+              "text": "Humility and meaning orientation only; no Tier 1-3 evidence, gate override, or authority by itself.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-159",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Claim-domain and warrant-domain non-substitution",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-160",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "A material claim MUST distinguish its claim_type, its primary claim_domain, and every material warrant_domain offered in support. Scientific or empirical evidence can support bounded descriptive or causal claims but does not by itself create legal authority or ethical legitimacy. Engineering performance can support bounded operational capability but does not by itself establish rights compatibility, lawful permission, or safety outside the tested envelope. Legal, regulatory, institutional, certification, compliance, or policy authority can govern permission, procedure, responsibility, testing, or review but does not by itself establish empirical truth, causal validity, technical capability, physical safety, or reduced epistemic uncertainty. Commercial or anthropomorphic terminology creates no stronger evidence or authority by itself.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-161",
+    "style": "BodyText",
+    "level": 0,
+    "text": "When a conclusion draws on more than one warrant domain, the record MUST list all material warrant domains. For every warrant domain that differs from the claim domain, it MUST create a separate bridge record stating the bridge proposition, evidence or rationale, uncertainty, relevant validity or jurisdiction boundary, and the condition that would narrow, revise, or refuse the bridge. BRIDGE_PARTIAL permits only the supported narrower claim. BRIDGE_UNSUPPORTED requires narrowing, escalation, redesign, or refusal of the cross-domain conclusion and triggers CROSS_DOMAIN_WARRANT_SUBSTITUTION if the stronger claim is nevertheless asserted.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-162",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Non-retrofitting rule",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-163",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "A failed test, falsified prediction, changed foundation, or challenged dependency must not be hidden by silent tuning. Preserve the outcome of the locked original operational prescription even when attribution to a general operator remains unresolved. The run must version the change, record the affected dependencies, and rerun every materially dependent gate, SGP interpretation, calculation, authority action, or public claim. A repaired version needs its own declared test; its success does not erase the original failure.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-164",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Proportionality rule",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-165",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "Methodological rigor is proportional to stakes. Tier 1 and low-stakes Tier 2 uses may use lighter records. Tier 3, public conformance, institutional deployment, high-stakes SGP use, validation claims, and physical/causal actions require stronger records.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-166",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Physical-admissibility claim discipline",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-167",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "A claim that a physical execution is safe, admissible, stable, reliable, or deployment-ready is a material claim and must name its external evidence surface. Governance permission, compliance status, documentation, certification, monitoring, and authority are not sufficient evidence surfaces by themselves. They may support procedural legitimacy, but they do not compute physics or establish biological, mechanical, medical, infrastructural, or cyber-physical safety.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-168",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Determinism boundary. Deterministic verification is valuable where the specification, state space, and transition relation support it, but it is neither universally available nor sufficient by itself. Safety-critical justification may legitimately combine formal proof, probabilistic risk analysis, empirical testing, simulation, safety cases, redundancy, bounded operating envelopes, monitoring, fail-safe behavior, and accountable residual-risk authorization. The required warrant strength is proportionate to consequence, uncertainty, reversibility, and domain practice. A deterministic proof of the wrong specification does not establish safety; a probabilistic warrant is not invalid merely because uncertainty remains.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-169",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Computational-source discipline. A material execution claim SHOULD distinguish the source that generated the candidate action from the source that warrants the action. If candidate generation and admissibility warrant are supplied by the same system, the claim record SHOULD state how circular self-confirmation is prevented and what independent check, validity-domain limit, or refusal condition applies.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-170",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Formal-conformance layer rule. A proof that an implementation satisfies a formal specification supports only the formal-conformance claim established by that proof. A physical or causal claim additionally requires a justified specification-to-reality mapping, declared validity domain, boundary conditions, uncertainty treatment, and domain evidence. Failure at the correspondence layer reopens every downstream claim that relied on the formal model as a physical warrant. Institutionalized-uncertainty boundary. A policy, risk acceptance, certification, or approval process that assigns responsibility without establishing the relevant operating envelope may govern who may test, monitor, stop, or review a system, but it MUST NOT be presented as reducing the underlying epistemic uncertainty unless new evidence actually does so.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-171",
+    "style": "BodyText",
+    "level": 0,
+    "text": "If a physical-admissibility claim changes its model, validity domain, threshold, controller envelope, failure-mode account, or monitoring/shutoff assumptions, affected downstream gates must be rerun. Silent tuning may improve wording, but it does not preserve the original claim.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-172",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Capability Claim Integrity",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-173",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "When a material decision or public statement depends on a capability term such as agentic, autonomous, reasoning, understanding, self-improving, or intelligent, the record MUST state an operational definition and observable criteria before the term receives gate, authority, deployment, conformance, or communication weight. The strongest permitted claim is limited by the declared evidence surface, validity conditions, and evidence maturity stage.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-174",
+    "style": "BodyText",
+    "level": 0,
+    "text": "A coordinated system MAY possess a bounded system-level operational capability even when the capability is implemented through ordinary components such as probabilistic inference, memory, planning, deterministic constraints, tool interfaces, environmental feedback, and human controls. Decomposing the system into those components does not by itself refute the system-level capability. At the same time, fluency, anthropomorphic language, market labels, task success, or user impression does not establish consciousness, personhood, intrinsic goals, moral agency, unrestricted autonomy, general intelligence, safety, lawful mandate, or ethical authority.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-175",
+    "style": "BodyText",
+    "level": 0,
+    "text": "The record MUST test material alternative explanations and state a falsification or revision trigger. If the evidence cannot distinguish the claimed capability from a materially simpler explanation, the claim must be narrowed, marked assumption-bound or contested, restricted to exploratory use, or refused at the stronger level.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-176",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Instrumental tool-role claim. A statement that a system occupies a tool-role is an operational or institutional claim about deployment, objectives, permissions, responsibility, and control. It does not by itself establish low intelligence, absence of agency, absence of possible sentience, safety, moral status, or legitimate authority. The record should name the deploying actor, assigned ends, permission structure, responsibility chain, and control boundary.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-177",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Functional-understanding claim. When “understanding” is material, the record MUST identify the exact configuration, target, relation claimed, domain, evaluation conditions, permitted scaffolding, distance from memorized exemplars, transfer conditions, alternative explanations, and failure boundary. Fluent explanation, retrieval, benchmark success, or correct answers alone cannot support a domain-general or phenomenal-understanding claim.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-178",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Claim-type examples",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-179",
+              "style": "Compact",
+              "level": 0,
+              "text": "Claim type",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-180",
+              "style": "Compact",
+              "level": 0,
+              "text": "Example",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-181",
+              "style": "Compact",
+              "level": 0,
+              "text": "Minimum discipline",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-182",
+              "style": "Compact",
+              "level": 0,
+              "text": "Empirical",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-183",
+              "style": "Compact",
+              "level": 0,
+              "text": "“Injury rates decreased after the intervention.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-184",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires evidence contact, baseline, uncertainty, and alternative-explanation review.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-185",
+              "style": "Compact",
+              "level": 0,
+              "text": "Causal",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-186",
+              "style": "Compact",
+              "level": 0,
+              "text": "“The policy caused the decrease.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-187",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires the claim-specific causal identification plan and its supported claim boundary. A positive pre/post change may coexist with a harmful incremental effect; mechanism language or a comparator recommendation alone does not identify causation. Without adequate identification, restrict the conclusion to supported descriptive, predictive or procedural claims.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-188",
+              "style": "Compact",
+              "level": 0,
+              "text": "Formal",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-189",
+              "style": "Compact",
+              "level": 0,
+              "text": "“CVaR was computed by the declared algorithm.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-190",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires definitions, assumptions, formula, inputs, and reproducible calculation surface.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-191",
+              "style": "Compact",
+              "level": 0,
+              "text": "Operational",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-192",
+              "style": "Compact",
+              "level": 0,
+              "text": "“The system is operationally autonomous within the declared pilot envelope.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-193",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires an operational definition, observable criteria, system composition, evidence trace, alternatives, validity conditions, falsifier, explicit nonclaims, controls, and authority boundary.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-194",
+              "style": "Compact",
+              "level": 0,
+              "text": "Legal-regulatory",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-195",
+              "style": "Compact",
+              "level": 0,
+              "text": "“This agency may lawfully authorize the trial.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-196",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires current authority, jurisdiction, applicability analysis, interpretation status, and challenge or review path.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-197",
+              "style": "Compact",
+              "level": 0,
+              "text": "Normative",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-198",
+              "style": "Compact",
+              "level": 0,
+              "text": "“This rights floor is adopted as non-compensatory.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-199",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires declared ethical commitment, consistency check, rights compatibility, and challenge pathway.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-200",
+              "style": "Compact",
+              "level": 0,
+              "text": "Metaphysical horizon",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-201",
+              "style": "Compact",
+              "level": 0,
+              "text": "“AIU language is used as a humility horizon.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-202",
+              "style": "Compact",
+              "level": 0,
+              "text": "May guide meaning and restraint, but creates no Tier 1-3 evidence or gate authority.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-203",
+              "style": "Compact",
+              "level": 0,
+              "text": "Operational / institutional",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-204",
+              "style": "Compact",
+              "level": 0,
+              "text": "“The AI system occupies an instrumental tool-role in this workflow.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-205",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires the deploying actor, assigned ends, objective and permission sources, responsibility and control arrangement, and explicit nonclaims concerning capability, sentience, safety, moral status, and authority.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-206",
+              "style": "Compact",
+              "level": 0,
+              "text": "Functional capability",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-207",
+              "style": "Compact",
+              "level": 0,
+              "text": "“The configured system functionally understands target T in domain D for relation R.”",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 2,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-208",
+              "style": "Compact",
+              "level": 0,
+              "text": "Requires configuration identity, target and relation, evaluation conditions, scaffolding, novel or transfer tests, alternatives, failure boundary, and explicit nonclaim of phenomenal understanding.",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-209",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Admissible Alternative Construction and Robustness Adjudication",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-210",
+    "style": "",
+    "level": 0,
+    "text": "An alternative construction blocks unique selection only when it is evidence-supported, selection-material, independently motivated rather than invented after result inspection, and accepted through a declared adjudication process.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-211",
+    "style": "",
+    "level": 0,
+    "text": "The record SHALL identify the alternative, evidence basis, domain validity, independence from the interested option owner, expected affected calculations, selection effect, reviewer, disposition, and reopen condition. Rejected alternatives SHALL remain visible with rationale.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-212",
+    "style": "",
+    "level": 0,
+    "text": "The Canonical Robustness Module Registry is finite for a release. New domain-mandated modules may be added only through a versioned rule or declared domain standard; an analyst cannot create an unlimited veto set after seeing results. This selection rule does not itself define a theory-level falsification family: confirmatory operator attribution uses the separately frozen finite or formally bounded family and stopping rule. Unexamined alternatives leave attribution unresolved; they do not annul a failed locked prescription or justify an unqualified performance claim.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-213",
+    "style": "",
+    "level": 0,
+    "text": "A module marked NOT_TRIGGERED_WITH_RATIONALE requires the trigger examined, evidence basis, reviewer status, and reopen condition. REQUIRED_NOT_EVALUATED is distinct from not triggered and blocks unique framework selection.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-214",
+              "style": "",
+              "level": 0,
+              "text": "Alternative status",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-215",
+              "style": "",
+              "level": 0,
+              "text": "Selection effect",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-216",
+              "style": "",
+              "level": 0,
+              "text": "ADMISSIBLE_REQUIRED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-217",
+              "style": "",
+              "level": 0,
+              "text": "Evidence-supported, material, independently motivated; must be evaluated",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-218",
+              "style": "",
+              "level": 0,
+              "text": "ADMISSIBLE_RESOLVED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-219",
+              "style": "",
+              "level": 0,
+              "text": "Evaluated and adjudicated; retain trace",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-220",
+              "style": "",
+              "level": 0,
+              "text": "REJECTED_WITH_RATIONALE",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-221",
+              "style": "",
+              "level": 0,
+              "text": "Not sufficiently supported/material/independent; retain log",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-222",
+              "style": "",
+              "level": 0,
+              "text": "POSTHOC_OUTCOME_DRIVEN",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-223",
+              "style": "",
+              "level": 0,
+              "text": "Inadmissible for current unique-selection claim",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-224",
+              "style": "",
+              "level": 0,
+              "text": "REQUIRED_NOT_EVALUATED",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-225",
+              "style": "",
+              "level": 0,
+              "text": "Robustness incomplete; no unique selection",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-226",
+    "style": "Heading1",
+    "level": 1,
+    "text": "APPENDIX RELEASE: Identity, Source Authority and Revision Record",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-227",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Framework release: MathGov/RippleLogic v13.0. Component: Methodological Falsifiability and Dependency Integrity Standard v2.6. Edition-origin preparation: 10 September 2026; the separately identified correction build is dated below. Two-part major.minor component versions are used; preserved historic identifiers are not renumbered.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-228",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Status: integrated research and teaching specification with a bounded worked-example and scoped reference implementation. Readiness is limited to the checks in Reports/Verification_and_Readiness.md. No empirical validation, independent human validation, full production runtime, physical-safety certification, legal authority, deployment authorization or Tier-4 ProofPack status is implied by the edition number.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-229",
+    "style": "",
+    "level": 0,
+    "text": "Delivery identity: MathGov/RippleLogic v13.0, build MG-RL-13.0-20260923-RELEASE-G. Prepared 23 September 2026 from the supplied frozen publication archive. Only reproduced defects and approved clarifications were patched; component editions are unchanged. The manifest identifies the exact current bytes and the preserved baseline. This is a new correction build, not a silent replacement of the earlier frozen artifact. Live publication is not asserted.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-230",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Component/build identity. Aligners Sheet v5.9 retains its component edition but carries this correction build’s identifier. Its numerical inputs, calculation formulas and worked verdict are unchanged; label, runtime-token and integrity-snapshot corrections are itemized in Verification/Exact_Workbook_Changes.json. Exact hashes, rather than filenames or edition labels alone, distinguish the new bytes from Release D and the previous frozen publication.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-231",
+    "style": "",
+    "level": 0,
+    "text": "Verification boundary: Reports/Verification_and_Readiness.md and Verification/Final_G/ contain the current build’s executed checks and limitations. Earlier verification and the rejected compatibility experiment belong to the preserved baseline and do not certify changed bytes. Cache-independent replay, stored-formula and native-engine results are separate evidence surfaces. Microsoft Excel parity, full external-registry conformance, empirical validation and production authorization are not asserted.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-232",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Package source authority: Core_15 contains 14 DOCX specification masters and one XLSX Aligners frozen worked-run workbook. DOCX files control prose, equations and tables subject to Canon and SGP ownership. The workbook controls only its disclosed exemplar surfaces. Sources, Reading_HTML and Reading_PDFs are generated reading projections, not competing normative masters. The manifest and hashes identify exact bytes; supplemental code and schemas govern only their documented subset. Conflicts require recorded correction against the controlling source.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-233",
+    "style": "BodyText",
+    "level": 0,
+    "text": "License and reuse: consult the package-level LICENSE and NOTICE and retain applicable component-specific and third-party notices. This pointer does not override a valid exception or grant rights over separately supplied private or third-party review material.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-234",
+    "style": "BodyText",
+    "level": 0,
+    "text": "External repository publication and any absent legacy schema/validator/registry are separate authorities/evidence surfaces. The local package does not claim to update a remote repository or reproduce unavailable implementations. Current source pointers in this appendix replace prior front-matter edition pointers for this package; accurate historical source references below are retained as lineage only.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-235",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Preserved invariants: RG -> RF/NCRC -> TRC -> CSV -> RLS; rights non-compensation and unallocated rights effects; existing seven rows and seven dimensions; existing SGP MPS/FPP/GPR/SPR/ICP/RMCP separation; probability ownership, uncertainty, stability and every-contender rules; selection, authority and execution separation.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-236",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Component",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-237",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Current edition",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-238",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Canon",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-239",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v13.0",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-240",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Sentience Gradient Protocol",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-241",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v8.8",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-242",
+              "style": "BodyText",
+              "level": 0,
+              "text": "ripple.md Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-243",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v5.8",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-244",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Agent System",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-245",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v13.0",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-246",
+              "style": "BodyText",
+              "level": 0,
+              "text": "CSV Gate Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-247",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.7",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-248",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Cascade Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-249",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-250",
+              "style": "BodyText",
+              "level": 0,
+              "text": "MathGov Reproducibility and Use Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-251",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v1.7",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-252",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Welfare Dimension Boundary and Interaction Protocol",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-253",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v1.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-254",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RLS Validation Protocol",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-255",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-256",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Foundations Primer",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-257",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v4.7",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-258",
+              "style": "BodyText",
+              "level": 0,
+              "text": "MathGov Public Introduction",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-259",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v13.0",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-260",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Physical/Causal Admissibility Evidence Profile",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-261",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.6",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-262",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Methodological Falsifiability and Dependency Integrity Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-263",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.6",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-264",
+              "style": "BodyText",
+              "level": 0,
+              "text": "Source-Coupling Integrity Standard",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-265",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v2.6",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-266",
+              "style": "BodyText",
+              "level": 0,
+              "text": "RippleLogic Aligners Sheet",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-267",
+              "style": "BodyText",
+              "level": 0,
+              "text": "v5.9",
+              "list": false,
+              "historical_release_zone": false,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": false
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-268",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Change locations and rationales: Reports/Audit_Adjudication_and_Changes.md; exact edits: Verification/Exact_Document_Changes.json and Exact_Workbook_Changes.json. Navigation and metadata records are separate. Prior releases and feedback are preserved in the complete provenance archive.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-269",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Current proposals are not universal truths. Taxonomy maximality, continuous-time propagation, cross-substrate cardinal welfare, generic susceptibility/shield formulas, autonomous recovery, vendor infrastructure, zero-knowledge circuits and hardware meshes remain unvalidated unless independently demonstrated under a scoped implementation profile.",
+    "list": false,
+    "historical_release_zone": false,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-270",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Preserved Baseline Release Material (Historical; Non-Controlling)",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": [
+      "MG_HISTORICAL_RELEASE"
+    ]
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-271",
+    "style": "BodyText",
+    "level": 0,
+    "text": "The following blocks are relocated intact from the recovered baseline. Their edition numbers, release-readiness wording and external-source limitations describe that historical candidate, not current component identity or newly executed verification. Governing current metadata is the matrix above.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-272",
+    "style": "Heading2",
+    "level": 2,
+    "text": "v2.5-rc2 Historical Release Integration",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-273",
+    "style": "FirstParagraph",
+    "level": 0,
+    "text": "HISTORICAL (NON-CONTROLLING): Release: MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2 — Controlled Adversarial-Audit Correction Candidate",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "table",
+    "rows": [
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-274",
+              "style": "",
+              "level": 0,
+              "text": "Release control",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-275",
+              "style": "",
+              "level": 0,
+              "text": "Historical value",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-276",
+              "style": "",
+              "level": 0,
+              "text": "Component",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-277",
+              "style": "",
+              "level": 0,
+              "text": "Methodological Falsifiability and Dependency Integrity Standard v2.5-rc2",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-278",
+              "style": "",
+              "level": 0,
+              "text": "Release",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-279",
+              "style": "",
+              "level": 0,
+              "text": "HISTORICAL (NON-CONTROLLING): MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-280",
+              "style": "",
+              "level": 0,
+              "text": "Architecture",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-281",
+              "style": "",
+              "level": 0,
+              "text": "RG → RF/NCRC → TRC → CSV → RLS",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-282",
+              "style": "",
+              "level": 0,
+              "text": "Role",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-283",
+              "style": "",
+              "level": 0,
+              "text": "Claim typing, alternative-model admissibility, falsification, dependency, re-derivation, and methodological refusal discipline.",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-284",
+              "style": "",
+              "level": 0,
+              "text": "Claim boundary",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-285",
+              "style": "",
+              "level": 0,
+              "text": "Controlled Tier 1–3 research specification candidate; not empirical validation, legal authority, physical-safety certification, deployment authorization, Tier 4, or moral truth.",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "col": 0,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-286",
+              "style": "",
+              "level": 0,
+              "text": "Source/render parity",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        },
+        {
+          "col": 1,
+          "colspan": 1,
+          "vmerge": null,
+          "blocks": [
+            {
+              "kind": "paragraph",
+              "id": "p-287",
+              "style": "",
+              "level": 0,
+              "text": "Versioned semantic source and DOCX/PDF mirrors must agree. Filename, internal version, active pins, manifest, and hashes must agree; mismatch is release-integrity failure.",
+              "list": false,
+              "historical_release_zone": true,
+              "bookmarks": []
+            }
+          ]
+        }
+      ]
+    ],
+    "historical_release_zone": true
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-288",
+    "style": "Heading2",
+    "level": 2,
+    "text": "Historical Release Integration (v2.5-rc2)",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-289",
+    "style": "",
+    "level": 0,
+    "text": "HISTORICAL (NON-CONTROLLING): This controlled candidate advances Methodological Falsifiability and Dependency Integrity Standard from v2.4 to v2.5-rc2 and binds it to MathGov Core Release 2026.09 — RippleLogic Canon v12.8-rc2 / SGP v8.7-rc2. The original release is preserved. Historical references remain lineage only; active references use the candidate component-version map. Publication, semantic-source parity and implementation conformance are not established by this reading-copy candidate.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  },
+  {
+    "kind": "paragraph",
+    "id": "p-290",
+    "style": "BodyText",
+    "level": 0,
+    "text": "Historical companion pins: Canon v12.8-rc2; SGP v8.7-rc2; ripple.md v5.7-rc2; Agent System v12.7-rc2; CSV v2.6-rc2; Cascade v2.8-rc2; Reproducibility v1.6-rc2; WDBIP v1.8-rc2; RLS Validation v2.8-rc2; Primer v4.6-rc2; Public Introduction v12.8-rc2; PC-AEP/MFDI/Source-Coupling v2.5-rc2; Aligners Sheet v5.8-rc1.",
+    "list": false,
+    "historical_release_zone": true,
+    "bookmarks": []
+  }
+]

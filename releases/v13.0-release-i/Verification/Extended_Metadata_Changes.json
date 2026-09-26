@@ -1,0 +1,308 @@
+[
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "property": "Words",
+    "before": "4143",
+    "after": "4180"
+  },
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "property": "CharactersWithSpaces",
+    "before": "33407",
+    "after": "33585"
+  },
+  {
+    "file": "CSV_Gate_Standard_v2.7.docx",
+    "property": "Characters",
+    "before": "29265",
+    "after": "29346"
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "property": "Words",
+    "before": "3074",
+    "after": "3095"
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "property": "CharactersWithSpaces",
+    "before": "23028",
+    "after": "23178"
+  },
+  {
+    "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "property": "Characters",
+    "before": "19955",
+    "after": "20036"
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "property": "Words",
+    "before": "4145",
+    "after": "4211"
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "property": "CharactersWithSpaces",
+    "before": "34152",
+    "after": "34472"
+  },
+  {
+    "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "property": "Characters",
+    "before": "29989",
+    "after": "30070"
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "property": "Words",
+    "before": "3941",
+    "after": "3982"
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "property": "CharactersWithSpaces",
+    "before": "33006",
+    "after": "33302"
+  },
+  {
+    "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "property": "Characters",
+    "before": "29066",
+    "after": "29305"
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "property": "Words",
+    "before": "3095",
+    "after": "3122"
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "property": "CharactersWithSpaces",
+    "before": "25019",
+    "after": "25137"
+  },
+  {
+    "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "property": "Characters",
+    "before": "21925",
+    "after": "22006"
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "property": "Words",
+    "before": "31648",
+    "after": "32167"
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "property": "CharactersWithSpaces",
+    "before": "246686",
+    "after": "248274"
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "property": "Characters",
+    "before": "214861",
+    "after": "215607"
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "property": "Paragraphs",
+    "before": "2510",
+    "after": "2511"
+  },
+  {
+    "file": "RippleLogic_Agent_System_v13.0.docx",
+    "property": "Pages",
+    "before": "83",
+    "after": "84"
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "property": "Words",
+    "before": "3589",
+    "after": "3620"
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "property": "CharactersWithSpaces",
+    "before": "28008",
+    "after": "28179"
+  },
+  {
+    "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+    "property": "Characters",
+    "before": "24420",
+    "after": "24501"
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "property": "Words",
+    "before": "15730",
+    "after": "15798"
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "property": "CharactersWithSpaces",
+    "before": "112956",
+    "after": "113625"
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "property": "Characters",
+    "before": "97204",
+    "after": "97728"
+  },
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+    "property": "Pages",
+    "before": "34",
+    "after": "35"
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "property": "Words",
+    "before": "6659",
+    "after": "6690"
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "property": "CharactersWithSpaces",
+    "before": "51941",
+    "after": "52074"
+  },
+  {
+    "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "property": "Characters",
+    "before": "45283",
+    "after": "45364"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "property": "Pages",
+    "before": "285",
+    "after": "296"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "property": "Words",
+    "before": "138858",
+    "after": "120140"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "property": "Characters",
+    "before": "791491",
+    "after": "804450"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "property": "Paragraphs",
+    "before": "1856",
+    "after": "7988"
+  },
+  {
+    "file": "RippleLogic_v13.0_Canon.docx",
+    "property": "CharactersWithSpaces",
+    "before": "928493",
+    "after": "925416"
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "property": "Words",
+    "before": "20898",
+    "after": "20945"
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "property": "Characters",
+    "before": "143467",
+    "after": "143548"
+  },
+  {
+    "file": "SGP_v8.8.docx",
+    "property": "CharactersWithSpaces",
+    "before": "164364",
+    "after": "164615"
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "property": "Words",
+    "before": "2969",
+    "after": "3005"
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "property": "CharactersWithSpaces",
+    "before": "23663",
+    "after": "23828"
+  },
+  {
+    "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+    "property": "Characters",
+    "before": "20695",
+    "after": "20776"
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "property": "Words",
+    "before": "12741",
+    "after": "13026"
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "property": "CharactersWithSpaces",
+    "before": "100689",
+    "after": "102745"
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "property": "Characters",
+    "before": "87942",
+    "after": "89275"
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "property": "Paragraphs",
+    "before": "1444",
+    "after": "1453"
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "property": "Pages",
+    "before": "40",
+    "after": "41"
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "property": "Words",
+    "before": "27840",
+    "after": "28187"
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "property": "CharactersWithSpaces",
+    "before": "225929",
+    "after": "226950"
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "property": "Characters",
+    "before": "197857",
+    "after": "198290"
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "property": "Paragraphs",
+    "before": "1230",
+    "after": "1231"
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.docx",
+    "property": "Pages",
+    "before": "71",
+    "after": "72"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "file": "RippleLogic_Foundations_Primer_v4.7.pdf",
+    "baseline_pages": 35,
+    "current_pages": 35,
+    "different_page_positions_at_72dpi": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "comparison": "Positional raster comparison; added page causes subsequent page positions to differ. Not an automated semantic alignment."
+  },
+  {
+    "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.pdf",
+    "baseline_pages": 41,
+    "current_pages": 42,
+    "different_page_positions_at_72dpi": [
+      2,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "comparison": "Positional raster comparison; added page causes subsequent page positions to differ. Not an automated semantic alignment."
+  },
+  {
+    "file": "ripple_md_Standard_v5.8.pdf",
+    "baseline_pages": 72,
+    "current_pages": 72,
+    "different_page_positions_at_72dpi": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      69,
+      70,
+      71,
+      72
+    ],
+    "comparison": "Positional raster comparison; added page causes subsequent page positions to differ. Not an automated semantic alignment."
+  }
+]

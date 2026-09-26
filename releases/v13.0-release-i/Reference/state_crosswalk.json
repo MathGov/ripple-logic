@@ -1,0 +1,28 @@
+{
+  "name": "In-package reading and test crosswalk",
+  "framework": "MathGov/RippleLogic v13.0",
+  "status": "SCOPED_REFERENCE_NOT_EXTERNAL_REGISTRY",
+  "sources": ["Canon Section 0.3", "Canon Section 11.5", "Canon Appendix AF.2", "Reproducibility and Use Standard 1.7 Section 3 and Section 3.1A"],
+  "external_registry": "CANONICAL_STATE_REGISTRY_v1.1.yaml is not bundled or verified; this file does not assert equivalence or replace it.",
+  "gate_tokens": {
+    "RG": ["RG_SUPPORTED", "RG_NARROWED", "RG_REFUSED"],
+    "RF": ["RF_PASS", "RF_FAIL", "RF_ESCALATE", "NCRC_UNKNOWN", "RF_NOT_EVALUATED_AFTER_PRIOR_FAILURE"],
+    "TRC": ["TRC_PASS", "TRC_NOT_TRIGGERED", "TRC_FAIL", "TRC_ESCALATE", "TRC_NOT_EVALUATED_AFTER_PRIOR_FAILURE"],
+    "CSV": ["CSV_PASS", "CSV_PASS_WITH_CONTROLS", "CSV_NOT_MATERIAL", "CSV_FAIL", "CSV_REDESIGN_REQUIRED", "CSV_ESCALATE", "CSV_EMERGENCY_PROVISIONAL", "CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE"]
+  },
+  "ordinary_decision_rules": [
+    {"condition": "Complete decisive ALLOW_FRAMEWORK_SELECTION, including an option with valid constitutive controls", "decision_state": "SELECTED_DECISIVE"},
+    {"condition": "Non-decisive tie-break preference without a separate lawful authority selection", "framework_verdict": "REFUSE_DETERMINISTIC_SELECTION", "decision_state": "REFUSE", "qualification": "Preserve the actual governing refusal or escalation disposition, not an invented successful decision."},
+    {"condition": "REFUSE_DETERMINISTIC_SELECTION plus a separate lawful AuthoritySelectionRecord", "decision_state": "SELECTED_BY_AUTHORITY_NON_DECISIVE"},
+    {"condition": "A separately documented ordinary provisional choice, neither a decisive selection nor an authority-selected non-decisive choice", "decision_state": "PROVISIONAL_WITH_CONTROLS"}
+  ],
+  "other_decision_tokens": ["DELAY", "REDESIGN", "ESCALATE", "REFUSE", "NO_SELECTABLE_OPTION", "EMERGENCY_PROVISIONAL"],
+  "execution_tokens": ["NOT_AUTHORIZED", "AUTHORIZED_WITHIN_SCOPE", "EXECUTION_BLOCKED", "EXECUTED_UNDER_MONITORING"],
+  "limits": [
+    "This is not an exhaustive normative transition graph.",
+    "Gate tokens cannot be accepted without their evidence, scope and prerequisites.",
+    "The synthetic decision fixture does not implement every emergency, sole-survivor or run-record path.",
+    "A decision state is not execution authorization.",
+    "Exact external-schema or full-registry conformance remains unverified."
+  ]
+}

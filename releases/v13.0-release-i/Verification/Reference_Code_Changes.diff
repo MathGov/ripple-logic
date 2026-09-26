@@ -1,0 +1,624 @@
+--- baseline/Native_Verification/native_reopen_worker.py
++++ current/Native_Verification/native_reopen_worker.py
+@@ -0,0 +1,28 @@
++import json,sys,time,hashlib,uno
++from pathlib import Path
++from com.sun.star.beans import PropertyValue
++port=int(sys.argv[1]);src=Path(sys.argv[2]).resolve();cellsfile=Path(sys.argv[3]);out=Path(sys.argv[4])
++def p(n,v):x=PropertyValue();x.Name=n;x.Value=v;return x
++ctx=uno.getComponentContext();resolver=ctx.ServiceManager.createInstanceWithContext('com.sun.star.bridge.UnoUrlResolver',ctx)
++for i in range(100):
++ try:r=resolver.resolve(f'uno:socket,host=localhost,port={port};urp;StarOffice.ComponentContext');break
++ except Exception:time.sleep(.1)
++else:raise RuntimeError('Could not connect to Calc')
++desk=r.ServiceManager.createInstanceWithContext('com.sun.star.frame.Desktop',r)
++doc=desk.loadComponentFromURL(uno.systemPathToFileUrl(str(src)),'_blank',0,(p('Hidden',True),p('ReadOnly',True),p('MacroExecutionMode',uno.getConstantByName('com.sun.star.document.MacroExecMode.NEVER_EXECUTE')),p('UpdateDocMode',uno.getConstantByName('com.sun.star.document.UpdateDocMode.NO_UPDATE'))))
++if doc is None:raise RuntimeError('Native saved XLSX did not reopen')
++try:
++ doc.calculateAll()
++ result={};errors=[]
++ for sn,addrs in json.loads(cellsfile.read_text()).items():
++  sheet=doc.Sheets.getByName(sn);result[sn]={}
++  for addr in addrs:
++   cell=sheet.getCellRangeByName(addr);v=cell.getDataArray()[0][0];err=cell.getError()
++   result[sn][addr]={'value':v,'error':err}
++   if err:errors.append([sn,addr,err])
++ named={}
++ for sn,addr in [('Build_Integrity','B14'),('Build_Integrity','C14'),('Build_Integrity','B6'),('NCRC','A5'),('Sanity_Checklist','B41'),('RLS','B5'),('RLS','B32')]:
++  c=doc.Sheets.getByName(sn).getCellRangeByName(addr);named[sn+'!'+addr]={'value':c.getValue(),'text':c.getString(),'error':c.getError()}
++ out.write_text(json.dumps({'native_file':str(src),'native_file_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'formula_results':result,'errors':errors,'named':named,'boundary':'Saved Calc XLSX reloaded in a fresh process; read-only, macros disabled, external updates disabled, calculateAll executed.'},indent=2))
++ print(json.dumps({'formula_cells':sum(map(len,result.values())),'errors':errors,'named':named},indent=2))
++finally:doc.close(True)
+--- baseline/Native_Verification/verify_native_roundtrip.py
++++ current/Native_Verification/verify_native_roundtrip.py
+@@ -0,0 +1,51 @@
++"""Repeat native Calc recalculation, save, cold reopen and comparison on test copies.
++Run from the publication root:
++python -B Native_Verification/verify_native_roundtrip.py --output-dir ../native-acceptance
++Requires LibreOffice and a Python interpreter with UNO. Never edits Core_15.
++"""
++from pathlib import Path
++import sys,subprocess,socket,tempfile,argparse,json,os,math,hashlib
++ROOT=Path(__file__).resolve().parents[1]
++sys.path.insert(0,str(ROOT/'Reference'))
++from Workbook_Verifier import inspect
++
++def main(out,engine,uno_python):
++    out=out.resolve()
++    if out==ROOT or ROOT in out.parents:raise ValueError('Output must be outside the immutable publication root')
++    out.mkdir(parents=True,exist_ok=True)
++    env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1')
++    cmd=[sys.executable,'-B',str(ROOT/'Reference/verify_libreoffice.py'),'--output-dir',str(out/'native'),'--engine',engine,'--uno-python',uno_python]
++    run=subprocess.run(cmd,cwd=ROOT,env=env,capture_output=True,text=True,timeout=240)
++    (out/'native_console.log').write_text(run.stdout+'\n'+run.stderr)
++    if run.returncode:raise RuntimeError('Native recalculation did not pass; see native_console.log')
++    base=ROOT/'Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx';data=inspect(base)
++    requests={sn:[a for a,c in cells.items() if c['formula'] is not None]for sn,cells in data['cells'].items()}
++    (out/'formula_cells.json').write_text(json.dumps(requests))
++    saved=out/'native/native_final'/base.name
++    with socket.socket() as sock:sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
++    with tempfile.TemporaryDirectory(prefix='mathgov-cold-reopen-')as profile:
++        proc=subprocess.Popen([engine,'-env:UserInstallation='+Path(profile).as_uri(),'--headless',f'--accept=socket,host=localhost,port={port};urp;StarOffice.ServiceManager','--norestore','--nodefault','--nofirststartwizard'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
++        try:
++            worker=subprocess.run([uno_python,'-B',str(ROOT/'Native_Verification/native_reopen_worker.py'),str(port),str(saved),str(out/'formula_cells.json'),str(out/'cold_reopen.json')],capture_output=True,text=True,timeout=180)
++            (out/'cold_reopen.log').write_text(worker.stdout+'\n'+worker.stderr)
++            if worker.returncode:raise RuntimeError('Cold reopen failed; see cold_reopen.log')
++        finally:
++            proc.terminate()
++            try:proc.wait(timeout=10)
++            except subprocess.TimeoutExpired:proc.kill();proc.wait()
++    native=json.loads((out/'cold_reopen.json').read_text()); differences=[]; count=0
++    for sn,cells in native['formula_results'].items():
++        for addr,record in cells.items():
++            count+=1;x=data['cells'][sn][addr]['value'];y=record['value']
++            same=math.isclose(x,y,rel_tol=1e-12,abs_tol=1e-12)if type(x)in(int,float)and type(y)in(int,float)else x==y
++            if not same:differences.append({'sheet':sn,'cell':addr,'original':x,'native':y})
++    unchanged=hashlib.sha256(base.read_bytes()).hexdigest()==data['sha256']
++    old=json.loads((out/'native/Native_Engine_Receipt.json').read_text())
++    result={'status':'PASS'if not differences and not native['errors']and unchanged else'FAIL','engine':old['engine'],'input_sha256':data['sha256'],'calculation_comparisons':old['formula_cells_compared'],'mutation_checks_passed':old['mutation_checks_passed'],'mutation_checks_total':old['mutation_checks_total'],'cold_reopen_formula_comparisons':count,'cold_reopen_differences':differences,'cold_reopen_errors':native['errors'],'core_workbook_unchanged':unchanged,'boundary':'Build-specific Calc calculation and saved/reopened test-copy evidence. The native reserialization is not substituted for the immutable Core master; not Microsoft Excel parity or a general operational-selector certificate.'}
++    (out/'Native_Roundtrip_Receipt.json').write_text(json.dumps(result,indent=2))
++    return result
++if __name__=='__main__':
++    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--output-dir',required=True,type=Path);ap.add_argument('--engine',default='libreoffice');ap.add_argument('--uno-python',default='/usr/bin/python3');a=ap.parse_args()
++    try:r=main(a.output_dir,a.engine,a.uno_python)
++    except Exception as e:r={'status':'UNVERIFIED','error':str(e)}
++    print(json.dumps(r,indent=2));sys.exit(0 if r['status']=='PASS'else 1)
+--- baseline/Publication/verify_hosted.py
++++ current/Publication/verify_hosted.py
+@@ -0,0 +1,84 @@
++"""Download public artifacts and compare them with a locally trusted manifest.
++
++No upload, remote mutation, credential handling, or hosted-CI claim is performed.
++Default: verify all 15 hosted Core files. --all-files verifies the public inventory.
++A checksum verifies bytes, not empirical claims or independently trusted origin.
++"""
++from __future__ import annotations
++from pathlib import Path, PurePosixPath
++from urllib.parse import urlsplit, urljoin, quote
++from urllib.request import Request, urlopen
++import argparse, hashlib, json, time
++ROOT = Path(__file__).resolve().parents[1]
++
++def safe_relative(path: str) -> str:
++    if not isinstance(path,str) or not path or '\\' in path:
++        raise ValueError('Invalid relative artifact path')
++    p=PurePosixPath(path)
++    if p.is_absolute() or '..' in p.parts or '.' in p.parts or p.as_posix()!=path:
++        raise ValueError('Unsafe or noncanonical relative artifact path')
++    return path
++
++def validate_base(base: str, allow_local_http: bool=False) -> str:
++    p=urlsplit(base)
++    if p.username or p.password or p.query or p.fragment or not p.hostname:
++        raise ValueError('Use a public directory URL without credentials/query/fragment')
++    local=p.hostname in {'localhost','127.0.0.1','::1'}
++    if p.scheme!='https' and not (p.scheme=='http' and local and allow_local_http):
++        raise ValueError('HTTPS required; loopback HTTP is allowed only for explicit local tests')
++    return base.rstrip('/')+'/'
++
++def compare_downloads(base: str, artifacts: list[dict], *, allow_local_http: bool=False, timeout: float=20.0) -> dict:
++    base=validate_base(base,allow_local_http)
++    if not isinstance(timeout,(int,float)) or timeout<=0 or timeout>300:
++        raise ValueError('timeout must be in (0,300] seconds')
++    rows=[]
++    for a in artifacts:
++        path=safe_relative(a['path']);expected=a['sha256'];size=a['bytes']
++        if not isinstance(size,int) or not 0<=size<=100_000_000 or len(expected)!=64:
++            raise ValueError('Invalid trusted inventory entry')
++        requested=urljoin(base,quote(path,safe='/'))
++        start=time.monotonic()
++        try:
++            request=Request(requested,headers={'User-Agent':'MathGov-Frozen-Publication-Verification','Cache-Control':'no-cache'})
++            with urlopen(request,timeout=timeout)as r:
++                final=r.geturl();content=r.read(size+1)
++            digest=hashlib.sha256(content).hexdigest()
++            ok=len(content)==size and digest==expected
++            row={'path':path,'requested_url':requested,'returned_url':final,'status':'PASS'if ok else'FAIL','expected_sha256':expected,'received_sha256':digest,'expected_bytes':size,'received_bytes':len(content)}
++        except Exception as exc:
++            row={'path':path,'requested_url':requested,'status':'FAIL','error':str(exc),'expected_sha256':expected,'expected_bytes':size}
++        row['elapsed_seconds']=round(time.monotonic()-start,3);rows.append(row)
++    return {'status':'PASS'if rows and all(x['status']=='PASS'for x in rows)else'FAIL',
++       'verification_surface':'LOCAL_LOOPBACK_TEST'if urlsplit(base).hostname in {'localhost','127.0.0.1','::1'}else'HOSTED_BYTES',
++       'base_url':base,'checked':len(rows),'matched':sum(x['status']=='PASS'for x in rows),'results':rows,
++       'scope':'Transport and exact-byte verification against a locally trusted manifest; not independent host ownership, hosted CI, full implementation conformance or empirical validation.'}
++
++def main():
++    ap=argparse.ArgumentParser(description=__doc__)
++    ap.add_argument('--base-url',required=True);ap.add_argument('--output',type=Path,required=True)
++    ap.add_argument('--all-files',action='store_true');ap.add_argument('--allow-local-http',action='store_true')
++    ap.add_argument('--commit',default=None);ap.add_argument('--tag',default=None)
++    args=ap.parse_args();out=args.output.resolve()
++    if out==ROOT or ROOT in out.parents:raise ValueError('Write the receipt outside this immutable package')
++    # Verify local immutable inventory before using its manifest as a download reference.
++    import sys, subprocess
++    checked=subprocess.run([sys.executable,'-B',str(ROOT/'Reference/verify_release.py')],cwd=ROOT,capture_output=True,text=True)
++    if checked.returncode:raise ValueError('Local publication identity failed verification')
++    manifest=json.loads((ROOT/'VERSION_MANIFEST.json').read_text())
++    items=manifest['components']
++    if args.all_files:
++        items=[]
++        for line in (ROOT/'SHA256SUMS.txt').read_text().splitlines():
++            expected,rel=line.split('  ',1)
++            items.append({'path':rel,'sha256':expected,'bytes':(ROOT/rel).stat().st_size})
++    result=compare_downloads(args.base_url,items,allow_local_http=args.allow_local_http)
++    result['publication_id']=manifest['build_id']
++    result['operator_supplied_metadata']={'commit':args.commit,'tag':args.tag,'independently_verified':False}
++    result['hosted_workflow_status']='NOT_CHECKED'
++    out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(result,indent=2),encoding='utf-8')
++    print(json.dumps({k:v for k,v in result.items()if k!='results'},indent=2))
++    return 0 if result['status']=='PASS'else 1
++if __name__=='__main__':
++    try:raise SystemExit(main())
++    except (OSError,ValueError,KeyError)as e:print(json.dumps({'status':'FAIL','error':str(e)}));raise SystemExit(1)
+--- baseline/Reference/README.md
++++ current/Reference/README.md
+@@ -13,8 +13,13 @@
+ Release E adds dependence_sensitivity.py (bounded pairwise sensitivity only), minimum_records.py and schemas/pcc_minimum_records.schema.json (supplemental content serialization), and derived record/token indexes. These do not establish the complete external canonical state/audit registry or v4.1 run schema. See their local boundaries and positive/negative fixtures.
+ 
+ 
+-Release F evidence note: full_formula_replay.py evaluates the complete stored-formula corpus without caches. The separate artifact_tool export failed parity and was rejected. Native spreadsheet parity, empirical validation and external interface conformance remain unclaimed. See the current verification report.
++Historical Release F evidence note: its separate artifact_tool export failed parity and was rejected. That experiment is retained as history. The current Release G workbook passed the separately recorded native Calc calculation/save/cold-reopen checks. Microsoft Excel parity, empirical validation and complete external interface conformance remain unclaimed. See the current verification report.
+ 
+ ## Full stored-formula replay
+ 
+ `full_formula_replay.py` shares only the safe parser and OOXML inventory reader with older tools. Its evaluation path recursively computes all formula dependencies from literals, not caches; unsupported syntax raises an error rather than taking a stored value. It supports the exact function corpus and tested forms used by this frozen workbook, not arbitrary Excel features. `test_full_formula_replay.py` supplies independent expected values for blank handling, exact lookup, formula identity/presence, error routing, arithmetic and rounding. Outputs are a saved/reopened JSON ledger; no master is edited.
++
++## Final micro-patch tests
++`final_patch_checks.py` and its tests implement only synthetic recovery and joint-stress predicates. `check_release_g.py` checks the actual amended artifacts and independent example arithmetic. Existing semantic tests remain; historical byte-identity assertions in Release E/F checks now compare the current manifest and the unchanged full formula/cache fingerprint, because approved literal labels changed. This is not permission to regenerate a manifest after an unexplained numerical mismatch.
++
++Native Calc tests are a separate command in `Native_Verification/`; they operate on disposable copies and leave Core masters untouched. A successful local test suite is not hosted CI or deployment authorization.
+--- baseline/Reference/Workbook_Verifier.py
++++ current/Reference/Workbook_Verifier.py
+@@ -75,6 +75,13 @@
+     if not a['counter_check']['cache_matches']:guard_bad+=1
+     result={'status':'PASS' if count==0 and guard_bad==0 and not a['formula_errors'] else 'FAIL','bytes':a['bytes'],'sha256':a['sha256'],'sheets':len(a['sheet_order']),'formula_cells':a['formula_count'],'protected_formula_checks':len(a['formula_guards']),'internal_guard_scope':'Formula presence only; exact identity verified here against trusted reference','protected_formula_failures':guard_bad,'structural_count_check':a['counter_check'],'formula_error_cells':a['formula_errors'],'difference_count':count,'differences_first_30':issues,'boundary':'Frozen-file integrity only; no evidence-truth, general Excel recalculation, production or authority claim.'}
+     return result
++
++
++def numerical_fingerprint(data):
++    import hashlib,json
++    rows=[(s,a,c['formula'],c['type'],c['value']) for s,cs in data['cells'].items() for a,c in cs.items() if c['formula'] is not None]
++    return hashlib.sha256(json.dumps(rows,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
++
+ if __name__=='__main__':
+     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('workbook');parser.add_argument('manifest',nargs='?',default=str(Path(__file__).resolve().parents[1]/'Verification/Workbook_Manifest.json'));parser.add_argument('--write-manifest',action='store_true');args=parser.parse_args()
+     if args.write_manifest:
+--- baseline/Reference/check_release_e.py
++++ current/Reference/check_release_e.py
+@@ -14,7 +14,7 @@
+  for name,x in docs.items():
+   text=txt(x)
+   ck(name+' synchronized package identity',json.loads((ROOT/'VERSION_MANIFEST.json').read_text())['build_id'] in text)
+-  ck(name+' unchanged workbook origin disclosed','retains its embedded Release-D source-build identifier'in text)
++  ck(name+' corrected workbook build disclosed','Aligners Sheet v5.9 retains its component edition but carries this correction build'in text)
+   starts=x.xpath('//w:bookmarkStart/@w:name',namespaces=N);anchors=x.xpath('//w:hyperlink/@w:anchor',namespaces=N)
+   ck(name+' bookmarks resolve',not (set(anchors)-set(starts)))
+   ck(name+' no PAGEREF',not any('PAGEREF'in s for s in x.xpath('//w:instrText/text()',namespaces=N)))
+@@ -43,7 +43,7 @@
+   p=next(p for p in x.xpath('//w:body/w:p',namespaces=N)if item['bookmark']in p.xpath('./w:bookmarkStart/@w:name',namespaces=N))
+   ck('Outline '+item['file']+' '+item['text'],p.xpath('./w:pPr/w:outlineLvl/@w:val',namespaces=N)==[str(item['outline_level']-1)])
+  ck('Run family pin explicit','v4 family, with the v4.1 external schema pin'in rt)
+- ck('Workbook bytes carried forward',hashlib.sha256((ROOT/'Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx').read_bytes()).hexdigest()=='4341aae10e91f82976374d3d379e1dfd4fd4abfe169fe8f5a8853929b2fd96cc')
++ ck('Workbook current component identity',hashlib.sha256((ROOT/'Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx').read_bytes()).hexdigest()==next(c['sha256']for c in json.loads((ROOT/'VERSION_MANIFEST.json').read_text())['components']if c['path'].endswith('.xlsx')))
+  ck('Exact verifier present',(ROOT/'Reference/Workbook_Verifier.py').is_file()and(ROOT/'Verification/Workbook_Manifest.json').is_file())
+  html=(ROOT/'Reading_HTML/ripple_md_Standard_v5.8.html').read_text()
+  ck('ripple normative sections promoted in projection','>2.15 Qualifying Episode</h2>'in html and '>6.3 Gate 3' in html)
+--- baseline/Reference/check_release_f.py
++++ current/Reference/check_release_f.py
+@@ -5,7 +5,7 @@
+ from zipfile import ZipFile
+ from lxml import etree as E
+ import hashlib,json,re
+-from Workbook_Verifier import inspect
++from Workbook_Verifier import inspect,numerical_fingerprint
+ from full_formula_replay import Evaluator
+ ROOT=Path(__file__).resolve().parents[1];N={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
+ def tx(e):return ''.join(e.xpath('.//w:t/text()',namespaces=N))
+@@ -56,7 +56,7 @@
+   # Exact headings are stable; duplicate identical heading labels may exist.
+   ck('Uploaded heading role '+item['text'],[str(item['outline_level']-1)] in roles)
+  data=inspect(ROOT/'Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx');ev=Evaluator(data)
+- ck('Workbook exact original preserved',data['sha256']=='4341aae10e91f82976374d3d379e1dfd4fd4abfe169fe8f5a8853929b2fd96cc')
++ ck('Original formula text and cached results preserved',numerical_fingerprint(data)==json.loads((ROOT/'Verification/Baseline_Numerical_Fingerprint.json').read_text())['formula_and_cache_sha256'])
+  ck('Full current formula count',data['formula_count']==20212)
+  for sn,cl in [('RLS','B5'),('RLS','B6'),('Build_Integrity','B14')]:ck('Fresh recursive value '+sn+'!'+cl,ev.get(sn,cl)==data['cells'][sn][cl]['value'])
+  # Full dependency evaluation rather than the former limited probe/cache mixture.
+--- baseline/Reference/check_release_g.py
++++ current/Reference/check_release_g.py
+@@ -0,0 +1,82 @@
++"""Independent current-source assertions for the approved final micro-patch.
++
++Reads actual DOCX/XLSX; exercises the recorded numerical construction and scoped
++mutation checks. It does not certify arbitrary implementations or evidence truth.
++"""
++from pathlib import Path
++from zipfile import ZipFile
++from lxml import etree as E
++from fractions import Fraction as F
++import hashlib,json,math,re
++from Workbook_Verifier import inspect,numerical_fingerprint
++from full_formula_replay import Evaluator
++from final_patch_checks import crossed_pair,recovery_mode,RECOVERY_CHECKS
++from decision_fixture import r38a_serialization_fixture,serialize_fixture
++ROOT=Path(__file__).resolve().parents[1];N={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
++def text(p):return ''.join(p.xpath('.//w:t/text()',namespaces=N))
++def main():
++ checks=[]
++ def ck(label,value):checks.append({'check':label,'passed':bool(value)})
++ docs={}
++ for f in(ROOT/'Core_15').glob('*.docx'):
++  with ZipFile(f)as z:
++   ck('Genuine OOXML '+f.name,z.testzip()is None and '[Content_Types].xml'in z.namelist());docs[f.name]=E.fromstring(z.read('word/document.xml'))
++  t=text(docs[f.name]);ck('Same current build '+f.name,json.loads((ROOT/'VERSION_MANIFEST.json').read_text())['build_id']in t)
++  ck('Workbook corrected build disclosed '+f.name,'label, runtime-token and integrity-snapshot corrections'in t)
++ c=docs['RippleLogic_v13.0_Canon.docx'];a=docs['RippleLogic_Agent_System_v13.0.docx'];ct=text(c);at=text(a)
++ cp=[text(p)for p in c.xpath('//w:body//w:p',namespaces=N)];ap=[text(p)for p in a.xpath('//w:body//w:p',namespaces=N)]
++ for prefix in['43.1 LLM Backend Unavailable:','43.4 Network Connectivity Loss:']:
++  par=next(p for p in ap if p.startswith(prefix))
++  ck(prefix+' no automatic prior-mode resume','resume in prior mode'not in par.lower()and'resume when backend returns'not in par.lower())
++  ck(prefix+' explicit MODE 0 and operator approval','MODE 0'in par and'operator approval'in par and'Section 8'in par and'Section 23.7'in par)
++ ck('Joint scaling under each dependence treatment','Required uncertainty-scale variants SHALL be evaluated within each required dependence treatment'in ct)
++ ck('Joint construction excludes incompatible/double-counted sources','Do not double-count the same uncertainty source or combine logically incompatible models'in ct)
++ fixture=next(p for p in cp if p.startswith('Synthetic fixture, not empirical calibration:'))
++ ck('Cross-option disposition explicit','Cross-option disposition for this fixture is NOT_TRIGGERED_WITH_RATIONALE'in fixture)
++ ck('Independent generators explicitly stipulated','stipulated mutually independent'in fixture and'not inferred from marginal intervals'in fixture)
++ ck('Changed fixture reopens claim','removing this premise reopens the dependence module'in fixture)
++ ck('P.8 reference repaired','Table P-8'not in ct and'The nonzero weighted numerator from Table P-4'in ct)
++ ck('P.3 forward confidence included','Î_dir(u,d,a) = τ · ℓ · c_k · μ'in ct)
++ ck('P.3 inverse confidence included','μ = atanh(I_prop) / (β_sat · τ · ℓ · c_k)'in ct)
++ ck('Zero means exact only in the synthetic vector','Synthetic-zero uncertainty boundary.'in ct and'An empirical zero estimate retains any material'in ct)
++ ck('General Method B equation unchanged','σ(u,d,a) = (1 − c(u,d,a)) × A_cell(u,d,a)'in ct)
++ ck('Tier and final-weight basis explicit','For Tier 3 HDW runs, where a ballot-derived proposal'in ct and'Evaluate the final proposed weight after the declared HDW combination'in ct)
++ ck('No obsolete skipped state','NOT_EVALUATED_AFTER_PRIOR_ELIMINATION'not in ct)
++ ck('CSV skipped state used',ct.count('CSV_NOT_EVALUATED_AFTER_PRIOR_FAILURE')>=2)
++ ck('P prior failure not double-counted','TRC audit-only'in ct)
++ # Full-precision equations independently rebuilt from rational floor constructions.
++ w0=list(map(F,['.2','.06','.06','.06','.08','.1','.1']));v0=list(map(F,['.08','.1','.08','.08','.1','.06','.1']))
++ w=[x+(1-sum(w0))/7 for x in w0];v=[x+(1-sum(v0))/7 for x in v0]
++ start=cp.index('Table P-4. I_prop(u,d,a) for the 33 active cells');vals=[]
++ for p in cp[start+1:start+38]:
++  m=re.fullmatch(r'U(\d)×D(\d)\s+([+\-]?[0-9.]+)\s+([+\-]?[0-9.]+)\s+([+\-]?[0-9.]+)',p)
++  if m:vals.append((int(m[1])-1,int(m[2])-1,float(m[4])))
++ ck('P has 33 active rows',len(vals)==33)
++ q=sum(w[u]*v[d]for u,d,_ in vals);n=sum(float(w[u]*v[d])*i for u,d,i in vals)
++ ck('Exact P Q in source',q==F(20886,30625)and'20886/30625'in ct)
++ ck('P normalized result unchanged',math.isclose(n/float(q),.0066483769031887375,abs_tol=1e-15))
++ r19=[(0,4,.05),(3,0,.3),(3,4,.12),(4,4,.08),(5,4,.03)]
++ sig=math.sqrt(sum((float(w[u]*v[d])*.15*abs(math.atanh(i)/(2*.85)))**2 for u,d,i in r19))
++ ck('R19 precise sigma in source','0.000502303633'in ct and math.isclose(sig,.0005023036327425277,abs_tol=1e-15))
++ ck('R19 final-digit value repaired','0.017653'not in ct and'0.017652'in ct)
++ # Actual workbook surfaces; no cached formula values used for the mutations.
++ d=inspect(ROOT/'Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx');cs=d['cells'];ev=Evaluator(d)
++ expected={('RLS','A35'):'ΔRLS (raw)',('RLS','F67'):'Nominal demo only; see final verdict',('Config','C22'):'SignedGap > δ in every required comparison',('Audit_Flags','C29'):'RUNTIME_BLOCK',('Audit_Flags','C30'):'RUNTIME_BLOCK',('Audit_Flags','C31'):'RUNTIME_INVALID'}
++ for (s,a),v in expected.items():ck(s+'!'+a+' corrected label',cs[s][a]['value']==v)
++ ck('Runtime severities not PCC','do not extend the PCC vocabulary'in cs['Audit_Flags']['A39']['value'])
++ ck('All 95 sheets preserved',len(d['sheet_order'])==95)
++ fp=json.loads((ROOT/'Verification/Baseline_Numerical_Fingerprint.json').read_text())
++ ck('All 20212 formulas and their caches unchanged',d['formula_count']==20212 and numerical_fingerprint(d)==fp['formula_and_cache_sha256'])
++ ck('Current integrity intact',ev.get('Build_Integrity','B14')==0)
++ for (s,a),v in expected.items():
++  qev=ev.clone_with(s,a,v+' CHANGED');ck('Changed literal is detected '+s+'!'+a,qev.get('Build_Integrity','B14')>0)
++ ck('Original result A',math.isclose(ev.get('RLS','B5'),.0153129427168233,abs_tol=1e-14))
++ ck('Original result B',math.isclose(ev.get('RLS','B6'),-.00112238738505248,abs_tol=1e-14))
++ for k in RECOVERY_CHECKS:
++  m=dict.fromkeys(RECOVERY_CHECKS,True);m[k]=False;ck('Missing '+k+' blocks reentry',recovery_mode(4,m)['permitted_mode_ceiling']==0)
++ r=crossed_pair(.06,.03,.004,.004,[1,2],[0,-1],model_warranted=True)
++ ck('Joint negative case refuses',not r['comparison_survives'])
++ ck('Stipulated positive case still selects',serialize_fixture(r38a_serialization_fixture())['conditional_decision_state']=='SELECTED_DECISIVE')
++ out={'status':'PASS'if all(x['passed']for x in checks)else'FAIL','executed':len(checks),'passed':sum(x['passed']for x in checks),'failures':[x for x in checks if not x['passed']],'scope':'Actual artifact assertions, independent finite arithmetic and synthetic predicates; native-engine evidence is separately recorded.'}
++ print(json.dumps(out,indent=2));return out
++if __name__=='__main__':raise SystemExit(0 if main()['status']=='PASS'else 1)
+--- baseline/Reference/decision_fixture.py
++++ current/Reference/decision_fixture.py
+@@ -77,6 +77,6 @@
+     from publication_checks import r38a_fixture
+     f=r38a_fixture()
+     return {'synthetic':True,'options':{a:{'rg':'RG_SUPPORTED','rf':'RF_PASS','trc':'TRC_PASS','csv':'CSV_PASS_WITH_CONTROLS','qualification_complete':True,'controls_complete':True}for a in f['records']},
+-            'variants':f['variants'],'registered_modules':['fixture.dependence','fixture.sigma_stress'],
+-            'modules':{'fixture.dependence':{'state':'PASS_NO_REVERSAL','rationale':'Stipulated 49-cell single-cluster interval construction, Canon R.38A.'},'fixture.sigma_stress':{'state':'PASS_NO_REVERSAL','rationale':'Explicitly computed 0.5, 1 and 2 multipliers.'}},
++            'variants':f['variants'],'registered_modules':['fixture.dependence','fixture.sigma_stress','fixture.cross_option'],
++            'modules':{'fixture.dependence':{'state':'PASS_NO_REVERSAL','rationale':'Stipulated 49-cell single-cluster interval construction, Canon R.38A.'},'fixture.sigma_stress':{'state':'PASS_NO_REVERSAL','rationale':'Explicitly computed 0.5, 1 and 2 multipliers within the stipulated dependence construction.'},'fixture.cross_option':{'state':'NOT_TRIGGERED_WITH_RATIONALE','rationale':'R.38A stipulates mutually independent option-level symmetric plus/minus half-width generators, repeated perfectly within each option. Synthetic construction only, not inferred from marginal intervals; changing or removing this premise reopens this module.'}},
+             'required_variants_complete':True,'uncertainty_warrant_stipulated':True}
+--- baseline/Reference/examples/r38a_joint_basis.synthetic.json
++++ current/Reference/examples/r38a_joint_basis.synthetic.json
+@@ -0,0 +1,110 @@
++{
++  "input": {
++    "synthetic": true,
++    "options": {
++      "A": {
++        "rg": "RG_SUPPORTED",
++        "rf": "RF_PASS",
++        "trc": "TRC_PASS",
++        "csv": "CSV_PASS_WITH_CONTROLS",
++        "qualification_complete": true,
++        "controls_complete": true
++      },
++      "B": {
++        "rg": "RG_SUPPORTED",
++        "rf": "RF_PASS",
++        "trc": "TRC_PASS",
++        "csv": "CSV_PASS_WITH_CONTROLS",
++        "qualification_complete": true,
++        "controls_complete": true
++      },
++      "C": {
++        "rg": "RG_SUPPORTED",
++        "rf": "RF_PASS",
++        "trc": "TRC_PASS",
++        "csv": "CSV_PASS_WITH_CONTROLS",
++        "qualification_complete": true,
++        "controls_complete": true
++      }
++    },
++    "variants": [
++      {
++        "A": [
++          0.060000000000000005,
++          0.0020000000000000005
++        ],
++        "B": [
++          0.030000000000000002,
++          0.0020000000000000005
++        ],
++        "C": [
++          0.02,
++          0.0030000000000000005
++        ]
++      },
++      {
++        "A": [
++          0.060000000000000005,
++          0.004000000000000001
++        ],
++        "B": [
++          0.030000000000000002,
++          0.004000000000000001
++        ],
++        "C": [
++          0.02,
++          0.006000000000000001
++        ]
++      },
++      {
++        "A": [
++          0.060000000000000005,
++          0.008000000000000002
++        ],
++        "B": [
++          0.030000000000000002,
++          0.008000000000000002
++        ],
++        "C": [
++          0.02,
++          0.012000000000000002
++        ]
++      }
++    ],
++    "registered_modules": [
++      "fixture.dependence",
++      "fixture.sigma_stress",
++      "fixture.cross_option"
++    ],
++    "modules": {
++      "fixture.dependence": {
++        "state": "PASS_NO_REVERSAL",
++        "rationale": "Stipulated 49-cell single-cluster interval construction, Canon R.38A."
++      },
++      "fixture.sigma_stress": {
++        "state": "PASS_NO_REVERSAL",
++        "rationale": "Explicitly computed 0.5, 1 and 2 multipliers within the stipulated dependence construction."
++      },
++      "fixture.cross_option": {
++        "state": "NOT_TRIGGERED_WITH_RATIONALE",
++        "rationale": "R.38A stipulates mutually independent option-level symmetric plus/minus half-width generators, repeated perfectly within each option. Synthetic construction only, not inferred from marginal intervals; changing or removing this premise reopens this module."
++      }
++    },
++    "required_variants_complete": true,
++    "uncertainty_warrant_stipulated": true
++  },
++  "expected": {
++    "conditional_framework_verdict": "ALLOW_FRAMEWORK_SELECTION",
++    "conditional_decision_state": "SELECTED_DECISIVE",
++    "selected_option": "A",
++    "tie_break_preference": null,
++    "execution_state": "NOT_AUTHORIZED",
++    "evidence_kind": "SYNTHETIC_STIPULATION",
++    "boundary": "Conditional local fixture only; no actual qualification, complete-registry conformance, or authorization is established.",
++    "arithmetic": {
++      "status": "DECISIVE_ARITHMETIC_ONLY",
++      "leader": "A",
++      "minimum_gap": 2.6413527189768713
++    }
++  }
++}--- baseline/Reference/final_patch_checks.py
++++ current/Reference/final_patch_checks.py
+@@ -0,0 +1,47 @@
++"""Read-only, scoped models for the Release-G recovery and stress clarifications.
++
++No result authorizes a real action or warrants empirical error distributions.
++The joint model, applicability and admissible variant set are caller evidence.
++"""
++from __future__ import annotations
++from collections.abc import Mapping, Sequence
++import itertools, math
++from dependence_sensitivity import number, signed_gap
++
++RECOVERY_CHECKS=('logs_reconciled','configuration_reconciled','authority_current',
++                 'affected_qualification_complete','reentry_gate_complete','operator_approved')
++
++def recovery_mode(requested_mode:int, checks:Mapping[str,bool]) -> dict:
++    """Synthetic gated-reentry predicate: connectivity itself is not an input."""
++    if type(requested_mode)is not int or not 0<=requested_mode<=4:
++        raise ValueError('requested mode must be an integer from 0 to 4')
++    if not isinstance(checks,Mapping)or any(type(v)is not bool for v in checks.values()):
++        raise ValueError('recovery checks must be explicit Booleans')
++    complete=all(checks.get(k)is True for k in RECOVERY_CHECKS)
++    return {'permitted_mode_ceiling':requested_mode if complete else 0,
++            'reentry_supported_by_stipulated_checks':complete,
++            'execution_authorized':False,'scope':'Synthetic recovery predicate only'}
++
++def crossed_pair(score_a:float,score_b:float,sigma_a:float,sigma_b:float,
++                 scales:Sequence[float],rhos:Sequence[float],*,model_warranted:bool,
++                 comparisons_complete:bool=True,delta:float=2.,epsilon:float=1e-6)->dict:
++    """Cross all declared compatible scale/dependence inputs for one pair.
++
++    Accepts only an explicitly warranted final-score error model. It is not a
++    covariance interpretation for arbitrary interval or heuristic half-widths.
++    A pairwise adverse bound does not assert joint all-options anticorrelation.
++    """
++    d=number(delta,'delta')
++    if d<=0 or type(model_warranted)is not bool or type(comparisons_complete)is not bool:
++        raise ValueError('positive delta and Boolean claims required')
++    if not scales or not rhos:raise ValueError('nonempty declared variant sets required')
++    ks=[number(k,'scale')for k in scales];rs=[number(r,'rho')for r in rhos]
++    if any(k<=0 for k in ks)or any(not -1<=r<=1 for r in rs):raise ValueError('invalid variant')
++    nominal=signed_gap(score_a,score_b,sigma_a,sigma_b,0,epsilon)
++    if not model_warranted:
++        return {'status':'UNVERIFIED_MODEL','comparisons':[],'comparison_survives':False,'authority':'NONE'}
++    rows=[{'scale':k,'rho':r,'signed_gap':signed_gap(score_a,score_b,k*sigma_a,k*sigma_b,r,epsilon)}
++          for k,r in itertools.product(ks,rs)]
++    survives=comparisons_complete and nominal>d and all(x['signed_gap']>d for x in rows)
++    return {'status':'COMPARISON_RECORDED'if survives else'NON_DECISIVE',
++            'nominal':nominal,'comparisons':rows,'comparison_survives':survives,'authority':'NONE'}
+--- baseline/Reference/review_dashboard.js
++++ current/Reference/review_dashboard.js
+@@ -1,6 +1,6 @@
+ /* Local review aid. No network, authority grant, actuator or claimed live telemetry. */
+ 'use strict';
+-const DEMO = {"kind": "FROZEN_WORKED_EXAMPLE", "source_workbook": "Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx", "source_sha256": "4341aae10e91f82976374d3d379e1dfd4fd4abfe169fe8f5a8853929b2fd96cc", "evidence_status": "Synthetic worked-run judgments; not empirical calibration", "framework_verdict": "REFUSE_DETERMINISTIC_SELECTION", "authority_note": "Point-score leader A; unvalidated Method C uncertainty flips under the \u03c3\u00d72 stress, so RippleLogic refuses deterministic selection. Option A is separately selected by accountable authority for the bounded worked-run demonstration.", "options": {"A": {"impacts": [[0.0, 0.0, 0.0, 0.0, 0.2490078843274226, 0.1432598557931445, 0.0], [0.046162176234088866, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [-0.01979527432216163, 0.0, -0.08072568681553846, 0.0, 0.0, 0.0, 0.0], [-0.08556943629589667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01531651795735988]], "weights": [[0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034], [0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306], [0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444], [0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673], [0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054], [0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586], [0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387]]}, "B": {"impacts": [[0.0, 0.0, 0.0, 0.0, -0.046333567670633624, 0.0, 0.0], [-0.01847590043753792, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.013197807340577457, 0.0, 0.06151557221350915, 0.0, 0.0, 0.0, 0.0], [0.010211455619172161, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.010211455619172184]], "weights": [[0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034], [0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306], [0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444], [0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673], [0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054], [0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586], [0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387]]}}, "appendix_release": {"framework": "MathGov/RippleLogic v13.0", "profile": "Local review interface 1.0"}};
++const DEMO = {"kind": "FROZEN_WORKED_EXAMPLE", "source_workbook": "Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx", "source_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b", "evidence_status": "Synthetic worked-run judgments; not empirical calibration", "framework_verdict": "REFUSE_DETERMINISTIC_SELECTION", "authority_note": "Point-score leader A; unvalidated Method C uncertainty flips under the \u03c3\u00d72 stress, so RippleLogic refuses deterministic selection. Option A is separately selected by accountable authority for the bounded worked-run demonstration.", "options": {"A": {"impacts": [[0.0, 0.0, 0.0, 0.0, 0.2490078843274226, 0.1432598557931445, 0.0], [0.046162176234088866, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [-0.01979527432216163, 0.0, -0.08072568681553846, 0.0, 0.0, 0.0, 0.0], [-0.08556943629589667, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01531651795735988]], "weights": [[0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034], [0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306], [0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444], [0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673], [0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054], [0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586], [0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387]]}, "B": {"impacts": [[0.0, 0.0, 0.0, 0.0, -0.046333567670633624, 0.0, 0.0], [-0.01847590043753792, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.013197807340577457, 0.0, 0.06151557221350915, 0.0, 0.0, 0.0, 0.0], [0.010211455619172161, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.010211455619172184]], "weights": [[0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034, 0.043952380952381034], [0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306, 0.022333333333333306], [0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444, 0.017476190476190444], [0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673, 0.01666666666666673], [0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054, 0.013047619047619054], [0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586, 0.014771428571428586], [0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387, 0.01460952380952387]]}}, "appendix_release": {"framework": "MathGov/RippleLogic v13.0", "profile": "Local review interface 1.0"}};
+ const DIMS=['Material','Health','Social','Knowledge','Agency','Meaning','Environment'];
+ const SCOPES=['Self','Family / Household','Community','Organization','Polity','Humanity / CMIU views','Biosphere'];
+ function computeField(input){
+--- baseline/Reference/test_final_patch_checks.py
++++ current/Reference/test_final_patch_checks.py
+@@ -0,0 +1,67 @@
++import copy,itertools,math,unittest
++from final_patch_checks import recovery_mode, crossed_pair, RECOVERY_CHECKS
++from decision_fixture import r38a_serialization_fixture,serialize_fixture
++from dependence_sensitivity import covariance_valid
++
++class RecoveryTests(unittest.TestCase):
++ def full(self):return dict.fromkeys(RECOVERY_CHECKS,True)
++ def test_connectivity_alone_cannot_restore(self):self.assertEqual(recovery_mode(4,{'connected':True})['permitted_mode_ceiling'],0)
++ def test_no_automatic_authority(self):self.assertFalse(recovery_mode(4,self.full())['execution_authorized'])
++ def test_all_conditions_needed(self):
++  for k in RECOVERY_CHECKS:
++   x=self.full();x[k]=False
++   with self.subTest(check=k):self.assertEqual(recovery_mode(4,x)['permitted_mode_ceiling'],0)
++ def test_missing_checks_stay_zero(self):
++  for k in RECOVERY_CHECKS:
++   x=self.full();del x[k]
++   with self.subTest(check=k):self.assertEqual(recovery_mode(3,x)['permitted_mode_ceiling'],0)
++ def test_valid_reentry_ceiling(self):self.assertEqual(recovery_mode(3,self.full())['permitted_mode_ceiling'],3)
++ def test_boolean_strings_rejected(self):
++  with self.assertRaises(ValueError):recovery_mode(4,{'operator_approved':'true'})
++ def test_invalid_modes_rejected(self):
++  for m in[-1,5,True,1.5]:
++   with self.subTest(m=m),self.assertRaises(ValueError):recovery_mode(m,self.full())
++
++class JointStressTests(unittest.TestCase):
++ def test_one_at_a_time_can_miss_joint_failure(self):
++  sigma= crossed_pair(.06,.03,.004,.004,[2],[0],model_warranted=True)
++  dep= crossed_pair(.06,.03,.004,.004,[1],[-1],model_warranted=True)
++  joint=crossed_pair(.06,.03,.004,.004,[1,2],[0,-1],model_warranted=True)
++  self.assertTrue(sigma['comparison_survives']);self.assertTrue(dep['comparison_survives']);self.assertFalse(joint['comparison_survives'])
++  self.assertAlmostEqual(min(r['signed_gap']for r in joint['comparisons']),1.871348584655416)
++ def test_second_rival_joint_failure(self):
++  r=crossed_pair(.06,.02,.004,.006,[2],[-1],model_warranted=True)
++  self.assertAlmostEqual(r['comparisons'][0]['signed_gap'],1.9975046777556895);self.assertFalse(r['comparison_survives'])
++ def test_nontriggered_synthetic_fixture_still_selects(self):
++  f=r38a_serialization_fixture();m=f['modules']['fixture.cross_option']
++  self.assertEqual(m['state'],'NOT_TRIGGERED_WITH_RATIONALE');self.assertIn('independent',m['rationale'])
++  self.assertEqual(serialize_fixture(f)['conditional_decision_state'],'SELECTED_DECISIVE')
++ def test_removed_stipulation_precludes_unique_claim(self):
++  f=r38a_serialization_fixture();f['modules']['fixture.cross_option']={'state':'UNRESOLVED','rationale':'Joint construction no longer warranted.'}
++  self.assertEqual(serialize_fixture(f)['conditional_framework_verdict'],'REFUSE_DETERMINISTIC_SELECTION')
++ def test_unjustified_nontrigger_rejected(self):
++  f=r38a_serialization_fixture();f['modules']['fixture.cross_option']['rationale']=''
++  with self.assertRaises(ValueError):serialize_fixture(f)
++ def test_no_operational_authority(self):self.assertEqual(serialize_fixture(r38a_serialization_fixture())['execution_state'],'NOT_AUTHORIZED')
++ def test_stipulated_joint_distribution_has_zero_covariance(self):
++  widths=[.004,.004,.006];points=[[a*w for a,w in zip(s,widths)]for s in itertools.product([-1,1],repeat=3)]
++  cov=[[sum(row[i]*row[j]for row in points)/8 for j in range(3)]for i in range(3)]
++  self.assertTrue(covariance_valid(cov))
++  for i in range(3):
++   for j in range(3):self.assertAlmostEqual(cov[i][j],widths[i]**2 if i==j else 0)
++ def test_within_option_cluster_doubled_under_each_basis(self):
++  r=crossed_pair(.06,.03,.004,.004,[.5,1,2],[0],model_warranted=True)
++  self.assertTrue(r['comparison_survives']);self.assertAlmostEqual(r['comparisons'][-1]['signed_gap'],2.6413527189768713)
++ def test_unwarranted_model_refuses(self):self.assertFalse(crossed_pair(.06,.03,.004,.004,[1],[0],model_warranted=False)['comparison_survives'])
++ def test_incomplete_joint_set_refuses(self):self.assertFalse(crossed_pair(.06,.03,.004,.004,[1],[0],model_warranted=True,comparisons_complete=False)['comparison_survives'])
++ def test_favorable_covariance_cannot_rescue_nominal(self):self.assertFalse(crossed_pair(.03,.025,.004,.004,[1],[1],model_warranted=True)['comparison_survives'])
++ def test_nonfinite_refused(self):
++  with self.assertRaises(ValueError):crossed_pair(.1,0,float('nan'),.01,[1],[0],model_warranted=True)
++ def test_empty_variant_refused(self):
++  with self.assertRaises(ValueError):crossed_pair(.1,0,.01,.01,[],[0],model_warranted=True)
++ def test_invalid_rho_refused(self):
++  with self.assertRaises(ValueError):crossed_pair(.1,0,.01,.01,[1],[-2],model_warranted=True)
++ def test_negative_scale_refused(self):
++  with self.assertRaises(ValueError):crossed_pair(.1,0,.01,.01,[-1],[0],model_warranted=True)
++
++if __name__=='__main__':unittest.main()
+--- baseline/Reference/test_hosted_verifier.py
++++ current/Reference/test_hosted_verifier.py
+@@ -0,0 +1,28 @@
++"""Loopback-only transport tests; no real external publication is asserted."""
++import unittest,sys,tempfile,hashlib,threading
++from pathlib import Path
++from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
++from functools import partial
++sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'Publication'))
++from verify_hosted import compare_downloads,safe_relative,validate_base
++class Quiet(SimpleHTTPRequestHandler):
++    def log_message(self,*args):pass
++class HostedVerifierTests(unittest.TestCase):
++    def test_matching_corrupt_missing(self):
++        with tempfile.TemporaryDirectory()as d:
++            p=Path(d)/'file.bin';p.write_bytes(b'original')
++            artifact={'path':'file.bin','bytes':8,'sha256':hashlib.sha256(b'original').hexdigest()}
++            server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=d));t=threading.Thread(target=server.serve_forever,daemon=True);t.start()
++            try:
++                base=f'http://127.0.0.1:{server.server_port}/'
++                self.assertEqual(compare_downloads(base,[artifact],allow_local_http=True)['status'],'PASS')
++                p.write_bytes(b'changed!');self.assertEqual(compare_downloads(base,[artifact],allow_local_http=True)['status'],'FAIL')
++                p.unlink();self.assertEqual(compare_downloads(base,[artifact],allow_local_http=True)['status'],'FAIL')
++            finally:server.shutdown();server.server_close();t.join()
++    def test_reject_path_escape(self):
++        for p in ['../x','/x','a/../b','a\\b','']:
++            with self.assertRaises(ValueError):safe_relative(p)
++    def test_reject_cleartext_and_credentials(self):
++        for url in ['http://example.test/','https://user:pass@example.test/','https://example.test/?key=x']:
++            with self.assertRaises(ValueError):validate_base(url)
++if __name__=='__main__':unittest.main()
+--- baseline/verify_all.py
++++ current/verify_all.py
+@@ -29,6 +29,7 @@
+       ('release_e_corrections',[sys.executable,'-B','Reference/check_release_e.py']),
+         ('full_formula_replay',py+['Reference/full_formula_replay.py']),
+       ('release_f_corrections',py+['Reference/check_release_f.py']),
++      ('final_micro_patch',py+['Reference/check_release_g.py']),
+       ('document_navigation',py+['Reference/document_navigation.py']),
+       ('reading_integrity',py+['Reference/check_reading_integrity.py']),
+       ('dashboard',['node','Reference/test_review_dashboard.js']),

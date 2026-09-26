@@ -1,0 +1,172 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Release I Verification</title><link rel="stylesheet" href="release_report.css"></head><body><p><a href="../index.html">Publication home</a></p><h1>Verification and readiness</h1>
+<h2>MathGov / RippleLogic v13.0 — Release I</h2>
+<p>Exact build: <strong>MG-RL-13.0-20260926-RELEASE-I</strong>. Component editions are unchanged. Local candidate-suite status: <strong>PASS</strong>.</p>
+<h2>1. What was inspected</h2>
+<p>The supplied H publication archive was reopened and CRC-tested; its original ledger and nineteen-command suite passed before editing. All fifteen individual Core uploads matched its component bytes. The current files are genuine OOXML containers; all fourteen DOCX masters open through an independent Office reader.</p>
+<p>The change scope is four Core files. Eleven masters retain exact H bytes and their own G/H source identity. The current component manifest binds every file. Both the older review and the current execution records are restricted to the versions and surfaces actually tested.</p>
+<h2>2. Preservation evidence</h2>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Component editions</td>
+<td>All 15 unchanged</td>
+</tr>
+<tr>
+<td>Core masters untouched</td>
+<td>11 of 15, including Canon and SGP</td>
+</tr>
+<tr>
+<td>Inherited Word table XML structures</td>
+<td>336 of 336 preserved</td>
+</tr>
+<tr>
+<td>New table</td>
+<td>One four-column WDBIP table; header plus 11 effects</td>
+</tr>
+<tr>
+<td>Word supporting parts and section geometry</td>
+<td>Preserved in the recorded comparisons</td>
+</tr>
+<tr>
+<td>Workbook sheets</td>
+<td>95; order, styles and geometry preserved</td>
+</tr>
+<tr>
+<td>Numerical inputs, formulas and cached formula results</td>
+<td>Unchanged</td>
+</tr>
+<tr>
+<td>Formula cells</td>
+<td>20,212</td>
+</tr>
+<tr>
+<td>Existing workbook string-cell edits</td>
+<td>33 (17 direct, 16 matching snapshot records)</td>
+</tr>
+<tr>
+<td>Print-area name scopes</td>
+<td>Two corrected attributes</td>
+</tr>
+<tr>
+<td>Core PDF reading pages</td>
+<td>687 across 14 documents</td>
+</tr>
+<tr>
+<td>Numbered TOC destinations</td>
+<td>125 of 125 matched</td>
+</tr>
+<tr>
+<td>Static TOC changes</td>
+<td>Five WDBIP labels; Canon/SGP untouched</td>
+</tr>
+</tbody>
+</table>
+<p>The full numerical fingerprint is identical before and after. The only workbook ZIP changes are the recorded existing string cells and print-area scope attributes; the artifact-engine staging export was not adopted wholesale. Exact source edits, per-component hashes and exhaustive cell comparisons are retained under <code>Verification/Final_I/</code>.</p>
+<h2>3. Current supplied-suite results</h2>
+<p>The candidate acceptance run below excludes only the final hash-ledger command because the report and ledger must be frozen afterward. It preserves the complete original suite and adds the Release-I regression group. The separate final delivery receipt records the full post-packaging execution, including the final ledger, from an actual extraction of the completed ZIP. A packaged test file is not itself evidence of execution.</p>
+<table>
+<thead>
+<tr>
+<th>Command group</th>
+<th>Executed result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>core_manifest</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>unit_tests</td>
+<td>PASS; 319 tests</td>
+</tr>
+<tr>
+<td>workbook_identity</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>workbook_arithmetic</td>
+<td>PASS; 900/900 checks</td>
+</tr>
+<tr>
+<td>workbook_publication</td>
+<td>PASS; 55/55 checks</td>
+</tr>
+<tr>
+<td>workbook_mutations</td>
+<td>PASS; 12/12 checks</td>
+</tr>
+<tr>
+<td>stored_formula_probe</td>
+<td>PASS; 10/10 checks</td>
+</tr>
+<tr>
+<td>final_corrections</td>
+<td>PASS; 80/80 checks</td>
+</tr>
+<tr>
+<td>release_c_corrections</td>
+<td>PASS; 77/77 checks</td>
+</tr>
+<tr>
+<td>release_d_corrections</td>
+<td>PASS; 74/74 checks</td>
+</tr>
+<tr>
+<td>release_e_corrections</td>
+<td>PASS; 290/290 checks</td>
+</tr>
+<tr>
+<td>full_formula_replay</td>
+<td>PASS; 20,212 formula cells, cache-independent</td>
+</tr>
+<tr>
+<td>release_f_corrections</td>
+<td>PASS; 857/857 checks</td>
+</tr>
+<tr>
+<td>final_micro_patch</td>
+<td>PASS; 91/91 checks</td>
+</tr>
+<tr>
+<td>release_h_feedback</td>
+<td>PASS; 59/59 checks</td>
+</tr>
+<tr>
+<td>release_i_errata</td>
+<td>PASS; 99/99 checks</td>
+</tr>
+<tr>
+<td>document_navigation</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>reading_integrity</td>
+<td>PASS; 802/802 checks</td>
+</tr>
+<tr>
+<td>dashboard</td>
+<td>PASS; 15/15 checks</td>
+</tr>
+</tbody>
+</table>
+<p>There are eighteen additional unit tests for this pass, including actual file tampering, print-scope ownership, semantic source assertions, unchanged calculations, seven local classifications and bounded wrapper metric fixtures. The standalone I artifact checker also tests actual input/snapshot paths rather than relying only on a manually asserted PASS.</p>
+<h2>4. The local verdict-display limitation remains explicit</h2>
+<p>A disposable overwrite of <code>RLS!B40</code> with <code>SELECTED_DECISIVE</code> leaves the local <code>Build_Integrity!B14</code> result at zero. This is the documented non-circular guard boundary, not a repaired detector. The separate actual-file mutation test verifies that <code>Workbook_Verifier</code> rejects the mutated XLSX against the trusted manifest. Equal-result alternative formulas and jointly edited snapshots likewise require the external integrity layer. File integrity is not evidence truth, rights compliance or execution permission.</p>
+<p>The original worked result remains RLS(A) = 0.0153129427168233 and RLS(B) = -0.00112238738505248. Nominal Gap is approximately 3.56552 and the doubled-uncertainty value is approximately 1.81508. The framework therefore retains <code>REFUSE_DETERMINISTIC_SELECTION</code>, with authority choice separately disclosed. No patch manufactured a framework winner.</p>
+<h2>5. Rendering and document checks</h2>
+<p>Only the three edited Core DOCX files were regenerated: Primer 35 pages, ripple.md 72 pages, WDBIP 42 pages. The other eleven Office masters and PDF mirrors are byte-identical to H. All 125 numbered opening references were compared to their actual packaged PDF destinations and visible numbers; internal bookmark targets were also checked. No live Canon PAGEREF restoration occurred.</p>
+<p>Automated PDF checks found no blank page or text block outside page bounds. All 149 amended-document pages were rendered; targeted changed text, the new table, nearby pagination, release appendices and changed-page contact sheets were visually reviewed. This is not exhaustive human proofreading of every character on all 687 pages, nor certification that every Word/font environment will paginate identically.</p>
+<h2>6. Native-engine and other limits</h2>
+<p><strong>No new native Excel or LibreOffice spreadsheet recalculation was executed on the I workbook.</strong> Current numerical evidence is exact input/formula/cache preservation, fresh cache-independent replay and scoped mutation checks. The supplied reviewer reports a successful native Calc recalculation/save/reopen of H, identified by SHA-256 <code>fa77dbec19a09e6ebe7b3ba959d0b53f6f8c956c4a8259db3830eb204f097059</code>; that is a reviewer-reported H result, not newly executed I evidence. Earlier packaged native receipts retain their original input identities. LibreOffice Writer rendering of DOCX documents is a separate operation.</p>
+<p>No Microsoft Excel parity, interactive-browser test, hosted GitHub workflow, live site upload, empirical measurement study, complete external-registry/WDBIP machine conformance, RPAP/PFAP-dependent L2/L3 pathway, Tier-4 ProofPack, legal authority, physical safety or production/domain authorization is claimed.</p>
+<h2>7. Freeze and delivery sequence</h2>
+<p>Complete semantic edits, projections, reports and inventory first. Generate the final SHA-256 ledger last. Create the ZIP, extract it into a clean directory, run the full suite including the ledger, and compare the extracted inventory before and after. The external delivery receipt states archive byte sizes, file counts, hashes, CRC results and actual fresh-extraction results without introducing a circular hash inside the ZIP.</p>
+<p>Publish under the distinct exact build identity rather than silently replace a previous frozen artifact. Download hosted copies and compare them with the trusted local ledger, then record actual repository/tag/commit and hosted workflow results separately. The Complete archive’s private provenance is not for automatic public upload.</p>
+</body></html>

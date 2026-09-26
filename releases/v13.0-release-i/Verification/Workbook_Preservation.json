@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_sha256": "4341aae10e91f82976374d3d379e1dfd4fd4abfe169fe8f5a8853929b2fd96cc",
+  "current_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b",
+  "sheets": 95,
+  "formula_count": 20212,
+  "formulas_changed": 0,
+  "styles_unchanged": true,
+  "sheet_geometry_unchanged": true,
+  "changed_literals": 20,
+  "cache_refreshes": 0,
+  "other_cells_unchanged": true
+}

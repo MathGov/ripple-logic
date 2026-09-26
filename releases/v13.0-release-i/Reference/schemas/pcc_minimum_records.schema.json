@@ -1,0 +1,2075 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathgov:release-e:supplemental-pcc-minimum-records",
+  "title": "Supplemental H.10 record view",
+  "description": "One concrete serialization of semantic minimums. Not the external mathgov_run_record_v4_1 schema or an evidence-truth/authority validator.",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "run_id",
+    "configuration_ref",
+    "source_clauses",
+    "applicability",
+    "review_status",
+    "result",
+    "evidence_refs"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "configuration_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_type": {
+      "enum": [
+        "EffectTokenRegistry",
+        "RightsEffectTokenRecord",
+        "PartitionInvarianceTest",
+        "ProbabilityOrderReview",
+        "AdverseConfidenceCounterfactual",
+        "TemporalBurdenReview",
+        "DistributionalBurdenReview",
+        "SubgroupClosureRecord",
+        "ReferenceFamilyRecord",
+        "BaselineFamilyRecord",
+        "ComparisonMaskRecord",
+        "GapSensitivityRecord",
+        "WeightProfileRecord",
+        "OptionClosureRecord",
+        "RLSRobustnessRecord"
+      ]
+    },
+    "source_clauses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "applicability": {
+      "type": "object",
+      "required": [
+        "triggered",
+        "rationale"
+      ],
+      "properties": {
+        "triggered": {
+          "type": "boolean"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "sha256"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": [
+        "evaluated",
+        "unresolved",
+        "disposition"
+      ],
+      "properties": {
+        "evaluated": {
+          "type": "boolean"
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "disposition": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "content": {
+      "type": "object"
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "EffectTokenRegistry"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "tokens",
+              "identity_and_revision_rules",
+              "primary_home_and_scope_treatment",
+              "allocation_and_pathway_links",
+              "granularity_review"
+            ],
+            "properties": {
+              "tokens": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "identity_and_revision_rules": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "primary_home_and_scope_treatment": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "allocation_and_pathway_links": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "granularity_review": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "RightsEffectTokenRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "rights_token_id",
+              "bearer_and_rights",
+              "unallocated_effect",
+              "channel_evidence_and_results",
+              "allocation_links",
+              "disposition"
+            ],
+            "properties": {
+              "rights_token_id": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "bearer_and_rights": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "unallocated_effect": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "channel_evidence_and_results": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "allocation_links": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "PartitionInvarianceTest"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "trigger",
+              "representations",
+              "invariants_held",
+              "comparative_results",
+              "reversal_and_disposition"
+            ],
+            "properties": {
+              "trigger": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "representations": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "invariants_held": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "comparative_results": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "reversal_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "ProbabilityOrderReview"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "effect_and_event_refs",
+              "likelihood_semantics",
+              "probability_ownership",
+              "operator_order",
+              "alternative_results_and_disposition"
+            ],
+            "properties": {
+              "effect_and_event_refs": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "likelihood_semantics": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "probability_ownership": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "operator_order": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "alternative_results_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "AdverseConfidenceCounterfactual"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "trigger",
+              "affected_instances",
+              "point_configuration",
+              "counterfactual_configuration",
+              "comparative_results_and_disposition"
+            ],
+            "properties": {
+              "trigger": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "affected_instances": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "point_configuration": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "counterfactual_configuration": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "comparative_results_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "TemporalBurdenReview"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "effect_refs",
+              "window_and_trajectory",
+              "recurrence_and_cumulative_burden",
+              "peak_terminal_irreversibility",
+              "sensitivity_and_routing"
+            ],
+            "properties": {
+              "effect_refs": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "window_and_trajectory": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "recurrence_and_cumulative_burden": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "peak_terminal_irreversibility": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "sensitivity_and_routing": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "DistributionalBurdenReview"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "subgroup_refs",
+              "burden_profiles",
+              "concentration_and_viability",
+              "controls_and_capacity",
+              "csv_disposition"
+            ],
+            "properties": {
+              "subgroup_refs": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "burden_profiles": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "concentration_and_viability": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "controls_and_capacity": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "csv_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "SubgroupClosureRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "population_boundary",
+              "search_sources_and_method",
+              "groups_and_omissions",
+              "material_gaps",
+              "review_and_closure"
+            ],
+            "properties": {
+              "population_boundary": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "search_sources_and_method": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "groups_and_omissions": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "material_gaps": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "review_and_closure": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "ReferenceFamilyRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "reference_construct",
+              "ex_ante_family_and_basis",
+              "included_and_rejected_alternatives",
+              "comparative_results",
+              "sensitivity_and_disposition"
+            ],
+            "properties": {
+              "reference_construct": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "ex_ante_family_and_basis": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "included_and_rejected_alternatives": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "comparative_results": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "sensitivity_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "BaselineFamilyRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "baseline_construct",
+              "ex_ante_family_and_basis",
+              "floor_and_continuation_roles",
+              "comparative_results",
+              "sensitivity_and_disposition"
+            ],
+            "properties": {
+              "baseline_construct": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "ex_ante_family_and_basis": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "floor_and_continuation_roles": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "comparative_results": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "sensitivity_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "ComparisonMaskRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "common_mask",
+              "active_and_nonmaskable_cells",
+              "effective_mass_by_option",
+              "exceptions_and_review",
+              "common_basis_sensitivity"
+            ],
+            "properties": {
+              "common_mask": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "active_and_nonmaskable_cells": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "effective_mass_by_option": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "exceptions_and_review": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "common_basis_sensitivity": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "GapSensitivityRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "ranking_basis_and_contenders",
+              "uncertainty_method_scale_and_evidence",
+              "within_option_dependence",
+              "cross_option_dependence",
+              "epsilon_delta_and_variants",
+              "pairwise_results_and_disposition"
+            ],
+            "properties": {
+              "ranking_basis_and_contenders": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "uncertainty_method_scale_and_evidence": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "within_option_dependence": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "cross_option_dependence": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "epsilon_delta_and_variants": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "pairwise_results_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "WeightProfileRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "profiles_and_floors",
+              "authority_and_provenance",
+              "ex_ante_lock",
+              "effective_weights_and_mass",
+              "alternative_results_and_disposition"
+            ],
+            "properties": {
+              "profiles_and_floors": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "authority_and_provenance": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "ex_ante_lock": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "effective_weights_and_mass": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "alternative_results_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "OptionClosureRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "decision_boundary",
+              "candidate_options",
+              "required_alternative_families",
+              "accept_reject_rationales",
+              "challenger_review_and_closure"
+            ],
+            "properties": {
+              "decision_boundary": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "candidate_options": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "required_alternative_families": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "accept_reject_rationales": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "challenger_review_and_closure": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "RLSRobustnessRecord"
+          },
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": true
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "content"
+        ],
+        "properties": {
+          "content": {
+            "type": "object",
+            "required": [
+              "module_registry",
+              "module_states_and_reasons",
+              "variant_refs",
+              "leader_and_comparison_results",
+              "eligibility_and_disposition"
+            ],
+            "properties": {
+              "module_registry": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "module_states_and_reasons": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "variant_refs": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "leader_and_comparison_results": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              },
+              "eligibility_and_disposition": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 1
+                  },
+                  {
+                    "type": "object",
+                    "minProperties": 1
+                  }
+                ]
+              }
+            }
+          },
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "applicability": {
+            "properties": {
+              "triggered": {
+                "const": true
+              }
+            }
+          },
+          "result": {
+            "properties": {
+              "evaluated": {
+                "const": false
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "properties": {
+              "unresolved": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

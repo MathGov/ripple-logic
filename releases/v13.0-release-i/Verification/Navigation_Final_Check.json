@@ -1,0 +1,1928 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.docx",
+      "pdf_pages": 12,
+      "app_pages": 12,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+      "pdf_pages": 9,
+      "app_pages": 9,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+      "pdf_pages": 15,
+      "app_pages": 15,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+      "pdf_pages": 13,
+      "app_pages": 13,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+      "pdf_pages": 9,
+      "app_pages": 9,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.docx",
+      "pdf_pages": 84,
+      "app_pages": 84,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.docx",
+      "pdf_pages": 10,
+      "app_pages": 10,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.docx",
+      "pdf_pages": 35,
+      "app_pages": 35,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+      "pdf_pages": 21,
+      "app_pages": 21,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.docx",
+      "pdf_pages": 296,
+      "app_pages": 296,
+      "page_metadata_matches": true,
+      "toc_entries": 70,
+      "toc": [
+        {
+          "anchor": "mg_toc_001",
+          "label": "SECTION 1: INTRODUCTION: THE NEED FOR A GENERAL-PURPOSE ETHICAL OPERATING SYSTEM",
+          "shown": 5,
+          "destination_page": 5,
+          "rendered_page_labels": [
+            5
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_002",
+          "label": "SECTION 2: ONTOLOGICAL FOUNDATIONS: UNION-BASED REALITY (UBR)",
+          "shown": 9,
+          "destination_page": 9,
+          "rendered_page_labels": [
+            9
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_003",
+          "label": "SECTION 3: NORMATIVE FOUNDATIONS: UNION-BASED ETHICS (UBE)",
+          "shown": 25,
+          "destination_page": 25,
+          "rendered_page_labels": [
+            25
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_004",
+          "label": "3.0A Ethical Reality",
+          "shown": 25,
+          "destination_page": 25,
+          "rendered_page_labels": [
+            25
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_005",
+          "label": "SECTION 4: SYSTEM OVERVIEW: THE RIPPLELOGIC ARCHITECTURE",
+          "shown": 29,
+          "destination_page": 29,
+          "rendered_page_labels": [
+            29
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_006",
+          "label": "SECTION 5: WELFARE IMPACT CONSTRUCTION (CALCULABLE)",
+          "shown": 40,
+          "destination_page": 40,
+          "rendered_page_labels": [
+            40
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_007",
+          "label": "SECTION 6: RIPPLE PROPAGATION: KERNEL AND EPISTEMIC HUMILITY",
+          "shown": 53,
+          "destination_page": 53,
+          "rendered_page_labels": [
+            53
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_008",
+          "label": "SECTION 7: RIGHTS LAYER: NON-COMPENSATORY RIGHTS CONSTRAINT (NCRC)",
+          "shown": 57,
+          "destination_page": 57,
+          "rendered_page_labels": [
+            57
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_009",
+          "label": "SECTION 8: CATASTROPHIC RISK LAYER: TAIL-RISK CONSTRAINT (TRC)",
+          "shown": 66,
+          "destination_page": 66,
+          "rendered_page_labels": [
+            66
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_010",
+          "label": "SECTION 9: CSV GATE: CONTAINMENT AND STRUCTURAL VIABILITY",
+          "shown": 73,
+          "destination_page": 73,
+          "rendered_page_labels": [
+            73
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_011",
+          "label": "SECTION 10: OPTIMIZATION LAYER: RIPPLELOGIC SCORE (RLS)",
+          "shown": 81,
+          "destination_page": 81,
+          "rendered_page_labels": [
+            81
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_012",
+          "label": "SECTION 11: TIE-BREAKS, HOLLOWING DIAGNOSTICS, AND STRUCTURAL MONITORING",
+          "shown": 97,
+          "destination_page": 97,
+          "rendered_page_labels": [
+            97
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_013",
+          "label": "SECTION 12: MORAL STATUS, PROTECTION, PARTICIPATION, REALITY-MANAGEMENT CAPACITY, AND POWER: SGP v8.8 INTEGRATION (BINDING INTERFACE)",
+          "shown": 102,
+          "destination_page": 102,
+          "rendered_page_labels": [
+            102
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_014",
+          "label": "SECTION 13: WEIGHT GOVERNANCE: HYBRID DEMOCRATIC WEIGHTING (HDW)",
+          "shown": 106,
+          "destination_page": 106,
+          "rendered_page_labels": [
+            106
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_015",
+          "label": "SECTION 14: AUDITABILITY AND DETERMINISM: PCC AND AIL (TIER 1-3; TIER 4 TARGET)",
+          "shown": 110,
+          "destination_page": 110,
+          "rendered_page_labels": [
+            110
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_016",
+          "label": "SECTION 15: IMPLEMENTATION GUIDANCE AND TIERS (NORMATIVE)",
+          "shown": 124,
+          "destination_page": 124,
+          "rendered_page_labels": [
+            124
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_017",
+          "label": "SECTION 16: RELATIONSHIP TO EXISTING FRAMEWORKS (INFORMATIVE)",
+          "shown": 129,
+          "destination_page": 129,
+          "rendered_page_labels": [
+            129
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_018",
+          "label": "SECTION 17: VALIDATION, FALSIFICATION, AND RESEARCH PROGRAM (NORMATIVE FOR CLAIMS)",
+          "shown": 131,
+          "destination_page": 131,
+          "rendered_page_labels": [
+            131
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_019",
+          "label": "SECTION 18: APPLICATIONS AND USE CASES (INFORMATIVE)",
+          "shown": 137,
+          "destination_page": 137,
+          "rendered_page_labels": [
+            137
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_020",
+          "label": "SECTION 19: LIMITATIONS AND NON-TARGETS (NORMATIVE BOUNDARIES)",
+          "shown": 138,
+          "destination_page": 138,
+          "rendered_page_labels": [
+            138
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_021",
+          "label": "SECTION 20: CONCLUSION: PROSPEROUS FUTURES FOR INTELLIGENCES",
+          "shown": 139,
+          "destination_page": 139,
+          "rendered_page_labels": [
+            139
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_022",
+          "label": "APPENDIX A: SYMBOLS AND NOTATION (v12.0)",
+          "shown": 142,
+          "destination_page": 142,
+          "rendered_page_labels": [
+            142
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_023",
+          "label": "APPENDIX B: CANONICAL EQUATIONS (TIER 1-3 EXECUTABLE)",
+          "shown": 148,
+          "destination_page": 148,
+          "rendered_page_labels": [
+            148
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_024",
+          "label": "APPENDIX C: RIGHTS / NCRC CANON PACK (TIER 1-3)",
+          "shown": 154,
+          "destination_page": 154,
+          "rendered_page_labels": [
+            154
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_025",
+          "label": "APPENDIX D: TRC AND SCENARIO GOVERNANCE CANON PACK (TIER 1-3)",
+          "shown": 157,
+          "destination_page": 157,
+          "rendered_page_labels": [
+            157
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_026",
+          "label": "APPENDIX E: UCI OPERATIONALIZATION PACK (TIER 1-3)",
+          "shown": 160,
+          "destination_page": 160,
+          "rendered_page_labels": [
+            160
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_027",
+          "label": "APPENDIX F: FAILURE MODES AND ANTI-GAMING CONTROLS (v12.0)",
+          "shown": 164,
+          "destination_page": 164,
+          "rendered_page_labels": [
+            164
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_028",
+          "label": "APPENDIX G: SGP v8.8 INTEGRATION BINDING (NORMATIVE INTERFACE)",
+          "shown": 166,
+          "destination_page": 166,
+          "rendered_page_labels": [
+            166
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_029",
+          "label": "APPENDIX H: PCC TEMPLATE AND AUDIT FLAGS CANON PACK (TIER 2-3)",
+          "shown": 169,
+          "destination_page": 169,
+          "rendered_page_labels": [
+            169
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_030",
+          "label": "APPENDIX I: TIER-4 DESIGN TARGET (NOT CLAIMABLE IN THE CURRENT RELEASE)",
+          "shown": 184,
+          "destination_page": 184,
+          "rendered_page_labels": [
+            184
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_031",
+          "label": "APPENDIX J: VALIDATION PROTOCOL PACK",
+          "shown": 185,
+          "destination_page": 185,
+          "rendered_page_labels": [
+            185
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_032",
+          "label": "APPENDIX K: STARTER KERNEL COMPANION PACK (INFORMATIVE)",
+          "shown": 187,
+          "destination_page": 187,
+          "rendered_page_labels": [
+            187
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_033",
+          "label": "APPENDIX L: GLOSSARY (v12.0)",
+          "shown": 188,
+          "destination_page": 188,
+          "rendered_page_labels": [
+            188
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_034",
+          "label": "APPENDIX M: LINEAGE AND VERSION HISTORY (v13.0 CURRENT LINE; PRIOR LINES RETAINED) - INFORMATIVE",
+          "shown": 192,
+          "destination_page": 192,
+          "rendered_page_labels": [
+            192
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_035",
+          "label": "APPENDIX N: STEWARDSHIP PACK CANON (v12.0) - NORMATIVE",
+          "shown": 197,
+          "destination_page": 197,
+          "rendered_page_labels": [
+            197
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_036",
+          "label": "APPENDIX O: CONFORMANCE REFERENCE MAP (v12.0; Informative)",
+          "shown": 201,
+          "destination_page": 201,
+          "rendered_page_labels": [
+            201
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_037",
+          "label": "APPENDIX P: FULL TIER 2 WORKED RUN (Informative) - “Digital Rights & Platform Governance”",
+          "shown": 202,
+          "destination_page": 202,
+          "rendered_page_labels": [
+            202
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_038",
+          "label": "APPENDIX Q: QUICK REFERENCE CARD (INFORMATIVE)",
+          "shown": 213,
+          "destination_page": 213,
+          "rendered_page_labels": [
+            213
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_039",
+          "label": "APPENDIX R: TIER 1–3 REFERENCE TEST VECTORS (NORMATIVE)",
+          "shown": 218,
+          "destination_page": 218,
+          "rendered_page_labels": [
+            218
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_040",
+          "label": "APPENDIX S: INTEROPERABILITY: RIPPLE.MD WRAPPED DEPLOYMENT ASSURANCE (INFORMATIVE)",
+          "shown": 229,
+          "destination_page": 229,
+          "rendered_page_labels": [
+            229
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_041",
+          "label": "Appendix T: Qualification Continuity for Consequence-Bearing Action (Normative for Tier 2-3 execution)",
+          "shown": 230,
+          "destination_page": 230,
+          "rendered_page_labels": [
+            230
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_042",
+          "label": "Appendix U: Outcome Observation and Requalification (Normative for consequence-bearing action)",
+          "shown": 231,
+          "destination_page": 231,
+          "rendered_page_labels": [
+            231
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_043",
+          "label": "APPENDIX V: Measurement Maturity and Deployment Context Hardening",
+          "shown": 232,
+          "destination_page": 232,
+          "rendered_page_labels": [
+            232
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_044",
+          "label": "APPENDIX W: SCHEMA OWNERSHIP, REGISTRIES, AND MACHINE-VERIFIABLE SURFACES",
+          "shown": 236,
+          "destination_page": 236,
+          "rendered_page_labels": [
+            236
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_045",
+          "label": "APPENDIX X: REFERENCE CALCULATOR, MACHINE VECTORS, AND PROOFPACK-PREP ROADMAP",
+          "shown": 237,
+          "destination_page": 237,
+          "rendered_page_labels": [
+            237
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_toc_046",
+          "label": "Appendix Y: Precision Patch - Legitimacy, Evidence Status, Validation, and Adoption Profiles",
+          "shown": 238,
+          "destination_page": 238,
+          "rendered_page_labels": [
+            238
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_047",
+          "label": "Appendix Z: Integration-Hardening Addendum",
+          "shown": 239,
+          "destination_page": 239,
+          "rendered_page_labels": [
+            239
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_048",
+          "label": "APPENDIX AA: PACKAGE-CONTENT BOUNDARY AND TOOLING LINE SEPARATION (CARRIED-FORWARD ORIGIN; ACTIVE REQUIREMENTS)",
+          "shown": 240,
+          "destination_page": 240,
+          "rendered_page_labels": [
+            240
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_049",
+          "label": "APPENDIX AB: REFERENCE STRUCTURE PROTOCOL",
+          "shown": 240,
+          "destination_page": 240,
+          "rendered_page_labels": [
+            240
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_050",
+          "label": "APPENDIX AC: SPECIFICATION CONTRACT, RELEASE METADATA, AND CLAIM BOUNDARY",
+          "shown": 242,
+          "destination_page": 242,
+          "rendered_page_labels": [
+            242
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_051",
+          "label": "CARRIED-FORWARD v10.8 HUMAN PLATEAU / CMIU CALIBRATION AND SGP v5.6 SYNCHRONIZATION NOTICE",
+          "shown": 243,
+          "destination_page": 243,
+          "rendered_page_labels": [
+            243
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_052",
+          "label": "SECTION 0: SPECIFICATION CONTRACT (NORMATIVE)",
+          "shown": 246,
+          "destination_page": 246,
+          "rendered_page_labels": [
+            246
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_053",
+          "label": "APPENDIX AD: 49-CELL WELFARE DICTIONARY (CANONICAL INTERPRETIVE REFERENCE)",
+          "shown": 253,
+          "destination_page": 253,
+          "rendered_page_labels": [
+            253
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_054",
+          "label": "APPENDIX AE: Carried-Forward v10.8 Layer-Discipline, Falsification, and Adaptive Reserve Addendum (Origin retained; active requirements governed by Appendix RELEASE)",
+          "shown": 265,
+          "destination_page": 265,
+          "rendered_page_labels": [
+            265
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_055",
+          "label": "APPENDIX AF: Decision Verdict Semantics, Projection Freeze, Closure Status, and Authority-Selection Separation",
+          "shown": 267,
+          "destination_page": 267,
+          "rendered_page_labels": [
+            267
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_056",
+          "label": "APPENDIX AG: CARRIED-FORWARD v10.8 REALITY GROUNDING AND LEAN CASCADE PATCH (CURRENTLY PRESERVED THROUGH v13.0)",
+          "shown": 270,
+          "destination_page": 270,
+          "rendered_page_labels": [
+            270
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_057",
+          "label": "APPENDIX AH: CATEGORY GROUNDING AND PRIMITIVE AUDIT PROTOCOL",
+          "shown": 270,
+          "destination_page": 270,
+          "rendered_page_labels": [
+            270
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_058",
+          "label": "APPENDIX AI: TERM DISCRIMINATION AND SEMANTIC STABILITY PROTOCOL",
+          "shown": 273,
+          "destination_page": 273,
+          "rendered_page_labels": [
+            273
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_059",
+          "label": "Appendix AJ: Public Release Hardening Addendum (v12.0)",
+          "shown": 276,
+          "destination_page": 276,
+          "rendered_page_labels": [
+            276
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_060",
+          "label": "Appendix AK: Computability vs Realizability Bridge",
+          "shown": 278,
+          "destination_page": 278,
+          "rendered_page_labels": [
+            278
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_061",
+          "label": "Appendix AL: Source-Coupling Integrity and Generative-Source Traceability (Normative Hardening Patch)",
+          "shown": 279,
+          "destination_page": 279,
+          "rendered_page_labels": [
+            279
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_062",
+          "label": "Appendix AM: Physical/Causal Admissibility Evidence Profile (Normative Hardening Patch)",
+          "shown": 280,
+          "destination_page": 280,
+          "rendered_page_labels": [
+            280
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_063",
+          "label": "Appendix AN: Methodological Falsifiability and Dependency Integrity Standard (Normative Hardening Patch)",
+          "shown": 281,
+          "destination_page": 281,
+          "rendered_page_labels": [
+            281
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_064",
+          "label": "Appendix AO: Physical Execution Boundary (Normative Hardening Patch)",
+          "shown": 282,
+          "destination_page": 282,
+          "rendered_page_labels": [
+            282
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_065",
+          "label": "APPENDIX AP: CURRENT RULES-ONLY NAVIGATION (v13.0) - INFORMATIVE",
+          "shown": 283,
+          "destination_page": 283,
+          "rendered_page_labels": [
+            283
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_066",
+          "label": "APPENDIX AQ: CURRENT CANONICAL MACHINE-STATE AND MATURITY CONTRACT (v13.0) - NORMATIVE INTERFACE",
+          "shown": 284,
+          "destination_page": 284,
+          "rendered_page_labels": [
+            284
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_067",
+          "label": "APPENDIX AQ-1: CONFIGURATION-BOUND ASSURANCE AND READER NAVIGATION (CURRENT)",
+          "shown": 285,
+          "destination_page": 285,
+          "rendered_page_labels": [
+            285
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_068",
+          "label": "APPENDIX AR: VERSION HISTORY AND MIGRATION NOTES (v13.0) - INFORMATIVE",
+          "shown": 288,
+          "destination_page": 288,
+          "rendered_page_labels": [
+            288
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_069",
+          "label": "APPENDIX AX: NORMATIVE AND CLAIM-AUTHORITY CLARIFICATION PATCH",
+          "shown": 291,
+          "destination_page": 291,
+          "rendered_page_labels": [
+            291
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        },
+        {
+          "anchor": "mg_toc_070",
+          "label": "FINAL DOCUMENT COMPLETION STATEMENT",
+          "shown": 292,
+          "destination_page": 292,
+          "rendered_page_labels": [
+            292
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            4
+          ]
+        }
+      ],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "SGP_v8.8.docx",
+      "pdf_pages": 60,
+      "app_pages": 60,
+      "page_metadata_matches": true,
+      "toc_entries": 28,
+      "toc": [
+        {
+          "anchor": "mg_sgp_toc_001",
+          "label": "1. Purpose, Scope, and Claim Boundary",
+          "shown": 4,
+          "destination_page": 4,
+          "rendered_page_labels": [
+            4
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_002",
+          "label": "2. Category Grounding: What SGP Measures and Does Not Measure",
+          "shown": 4,
+          "destination_page": 4,
+          "rendered_page_labels": [
+            4
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_003",
+          "label": "3. Ethical Foundations",
+          "shown": 7,
+          "destination_page": 7,
+          "rendered_page_labels": [
+            7
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_004",
+          "label": "4. Canonical Architecture",
+          "shown": 8,
+          "destination_page": 8,
+          "rendered_page_labels": [
+            8
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_005",
+          "label": "5. Moral Patienthood Surface: Evidence Model",
+          "shown": 11,
+          "destination_page": 11,
+          "rendered_page_labels": [
+            11
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_006",
+          "label": "6. MPS Bands, Protection Postures, and Full Protection Plateau",
+          "shown": 14,
+          "destination_page": 14,
+          "rendered_page_labels": [
+            14
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_007",
+          "label": "7. Governance Participation Readiness",
+          "shown": 17,
+          "destination_page": 17,
+          "rendered_page_labels": [
+            17
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_008",
+          "label": "8. Stewardship/Power Readiness",
+          "shown": 19,
+          "destination_page": 19,
+          "rendered_page_labels": [
+            19
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_009",
+          "label": "9. Humans, Biological Animals, Classes, Reality Management, and Continuity",
+          "shown": 20,
+          "destination_page": 20,
+          "rendered_page_labels": [
+            20
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_010",
+          "label": "10. Artificial and Digital Systems",
+          "shown": 23,
+          "destination_page": 23,
+          "rendered_page_labels": [
+            23
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_011",
+          "label": "11. Integration with MathGov and RippleLogic",
+          "shown": 25,
+          "destination_page": 25,
+          "rendered_page_labels": [
+            25
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_012",
+          "label": "12. Evidence Governance and Uncertainty",
+          "shown": 27,
+          "destination_page": 27,
+          "rendered_page_labels": [
+            27
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_013",
+          "label": "13. Evaluation Methods and Ethical Safeguards",
+          "shown": 28,
+          "destination_page": 28,
+          "rendered_page_labels": [
+            28
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_014",
+          "label": "14. Registry, Review, Appeals, and Public Communication",
+          "shown": 30,
+          "destination_page": 30,
+          "rendered_page_labels": [
+            30
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_015",
+          "label": "15. Validation, Calibration, and Falsification",
+          "shown": 31,
+          "destination_page": 31,
+          "rendered_page_labels": [
+            31
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_016",
+          "label": "16. Limitations and Research Programme",
+          "shown": 34,
+          "destination_page": 34,
+          "rendered_page_labels": [
+            34
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_017",
+          "label": "17. Conclusion",
+          "shown": 35,
+          "destination_page": 35,
+          "rendered_page_labels": [
+            35
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_018",
+          "label": "Appendix A: Rapid Evaluator Checklist",
+          "shown": 35,
+          "destination_page": 35,
+          "rendered_page_labels": [
+            35
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_019",
+          "label": "Appendix B: Detailed Evidence Anchors",
+          "shown": 36,
+          "destination_page": 36,
+          "rendered_page_labels": [
+            36
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_020",
+          "label": "Appendix C: Minimum Record Schemas",
+          "shown": 38,
+          "destination_page": 38,
+          "rendered_page_labels": [
+            38
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_021",
+          "label": "Appendix D: Worked Illustrative Profiles",
+          "shown": 39,
+          "destination_page": 39,
+          "rendered_page_labels": [
+            39
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_022",
+          "label": "Appendix E: Version History and Crosswalk",
+          "shown": 42,
+          "destination_page": 42,
+          "rendered_page_labels": [
+            42
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_023",
+          "label": "Appendix F: Protection Bundle Matrix",
+          "shown": 50,
+          "destination_page": 50,
+          "rendered_page_labels": [
+            50
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_024",
+          "label": "Appendix G: Responsible Sentience Research Protocol",
+          "shown": 52,
+          "destination_page": 52,
+          "rendered_page_labels": [
+            52
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_025",
+          "label": "Appendix H: Glossary of Symbols and Statuses",
+          "shown": 52,
+          "destination_page": 52,
+          "rendered_page_labels": [
+            52
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_026",
+          "label": "Appendix I: Interface Conformance Test Vectors",
+          "shown": 53,
+          "destination_page": 53,
+          "rendered_page_labels": [
+            53
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_027",
+          "label": "Appendix J: References",
+          "shown": 55,
+          "destination_page": 55,
+          "rendered_page_labels": [
+            55
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        },
+        {
+          "anchor": "mg_sgp_toc_028",
+          "label": "APPENDIX Z: CAPABILITY-LANGUAGE AND PHENOMENOLOGY BOUNDARY",
+          "shown": 56,
+          "destination_page": 56,
+          "rendered_page_labels": [
+            56
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            3
+          ]
+        }
+      ],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.docx",
+      "pdf_pages": 9,
+      "app_pages": 9,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+      "pdf_pages": 41,
+      "app_pages": 41,
+      "page_metadata_matches": true,
+      "toc_entries": 27,
+      "toc": [
+        {
+          "anchor": "mg_wdbip_001",
+          "label": "Source-boundary and integration-status rule",
+          "shown": 3,
+          "destination_page": 3,
+          "rendered_page_labels": [
+            3
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_002",
+          "label": "Executive standard",
+          "shown": 3,
+          "destination_page": 3,
+          "rendered_page_labels": [
+            3
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_003",
+          "label": "1. Purpose and problem",
+          "shown": 4,
+          "destination_page": 4,
+          "rendered_page_labels": [
+            4
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_004",
+          "label": "2. Authority, placement, and non-claims",
+          "shown": 4,
+          "destination_page": 4,
+          "rendered_page_labels": [
+            4
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_005",
+          "label": "3. Canonical welfare dimensions and boundary rules",
+          "shown": 6,
+          "destination_page": 6,
+          "rendered_page_labels": [
+            6
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_006",
+          "label": "4. Welfare Dimension Profile",
+          "shown": 10,
+          "destination_page": 10,
+          "rendered_page_labels": [
+            10
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_007",
+          "label": "5. Token-level cross-dimensional and cross-scope interaction records",
+          "shown": 12,
+          "destination_page": 12,
+          "rendered_page_labels": [
+            12
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_008",
+          "label": "6. Double-counting and dependence control",
+          "shown": 15,
+          "destination_page": 15,
+          "rendered_page_labels": [
+            15
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_009",
+          "label": "7. Health boundary protocol",
+          "shown": 16,
+          "destination_page": 16,
+          "rendered_page_labels": [
+            16
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_010",
+          "label": "8. Meaning, spiritual experience, and metaphysical claims",
+          "shown": 17,
+          "destination_page": 17,
+          "rendered_page_labels": [
+            17
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_011",
+          "label": "9. Environmental boundary protocol",
+          "shown": 19,
+          "destination_page": 19,
+          "rendered_page_labels": [
+            19
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_012",
+          "label": "10. Dimension-specific minimum profiles",
+          "shown": 20,
+          "destination_page": 20,
+          "rendered_page_labels": [
+            20
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_013",
+          "label": "11. Interaction matrix",
+          "shown": 21,
+          "destination_page": 21,
+          "rendered_page_labels": [
+            21
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_014",
+          "label": "12. Evidence and uncertainty protocol",
+          "shown": 22,
+          "destination_page": 22,
+          "rendered_page_labels": [
+            22
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_015",
+          "label": "13. Tier-proportional implementation",
+          "shown": 24,
+          "destination_page": 24,
+          "rendered_page_labels": [
+            24
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_016",
+          "label": "14. Record status and routing",
+          "shown": 25,
+          "destination_page": 25,
+          "rendered_page_labels": [
+            25
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_017",
+          "label": "15. Validation, falsification, and dimension-set migration",
+          "shown": 25,
+          "destination_page": 25,
+          "rendered_page_labels": [
+            25
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_018",
+          "label": "16. Conformance requirements",
+          "shown": 28,
+          "destination_page": 28,
+          "rendered_page_labels": [
+            28
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_019",
+          "label": "17. Deterministic conformance vectors",
+          "shown": 28,
+          "destination_page": 28,
+          "rendered_page_labels": [
+            28
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_020",
+          "label": "18. Worked example: school green-corridor program",
+          "shown": 31,
+          "destination_page": 31,
+          "rendered_page_labels": [
+            31
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_021",
+          "label": "19. Compact implementation template",
+          "shown": 32,
+          "destination_page": 32,
+          "rendered_page_labels": [
+            32
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_022",
+          "label": "20. Diamond summary",
+          "shown": 33,
+          "destination_page": 33,
+          "rendered_page_labels": [
+            33
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_023",
+          "label": "21. Version history and change control",
+          "shown": 33,
+          "destination_page": 33,
+          "rendered_page_labels": [
+            33
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_024",
+          "label": "References",
+          "shown": 36,
+          "destination_page": 36,
+          "rendered_page_labels": [
+            36
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_025",
+          "label": "Appendix A. Machine-readable companion",
+          "shown": 36,
+          "destination_page": 36,
+          "rendered_page_labels": [
+            36
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_026",
+          "label": "Appendix B. Framework registration entry",
+          "shown": 37,
+          "destination_page": 37,
+          "rendered_page_labels": [
+            37
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        },
+        {
+          "anchor": "mg_wdbip_027",
+          "label": "Appendix C. Compact reader glossary and ownership pointers",
+          "shown": 37,
+          "destination_page": 37,
+          "rendered_page_labels": [
+            37
+          ],
+          "rendered_label_matches": true,
+          "matched": true,
+          "source_pages": [
+            2
+          ]
+        }
+      ],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.docx",
+      "pdf_pages": 72,
+      "app_pages": 72,
+      "page_metadata_matches": true,
+      "toc_entries": 0,
+      "toc": [],
+      "broken_anchors": [],
+      "pageref_fields": [],
+      "changes": [],
+      "scope": "DOCX TOC labels and visible rendered PDF labels each checked against actual PDF hyperlink destinations; internal bookmark existence is checked separately. DOCX pagination in untested Word configurations is not certified."
+    }
+  ],
+  "toc_entries": 125,
+  "changes": []
+}

@@ -1,0 +1,12 @@
+{
+  "old_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b",
+  "new_sha256": "fa77dbec19a09e6ebe7b3ba959d0b53f6f8c956c4a8259db3830eb204f097059",
+  "changed_literal_cells": 8,
+  "formula_count": 20212,
+  "formula_cache_fingerprint": "26c17542a44107bb80b4d24bec26c8ad59a55e76be4e05d173a449b155a9ebfb",
+  "formula_texts_and_caches_unchanged": true,
+  "numerical_inputs_unchanged": true,
+  "sheet_order_styles_geometry_unchanged": true,
+  "method": "Targeted literal OOXML replacement; no full workbook reserialization or numerical revision.",
+  "native_H_recalculation": "NOT_EXECUTED"
+}

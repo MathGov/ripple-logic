@@ -1,0 +1,233 @@
+[
+  {
+    "sheet": "Build_Integrity",
+    "cell": "A2",
+    "before": "Frozen-value and formula guards flag ordinary edits. External Workbook_Verifier checks the exact complete file and formula/cache manifest. Neither check establishes truth or deployment safety.",
+    "after": "Local guards cover retained inputs/literals, selected formula presence and RLS reconciliation—not verdict-display replacement. External Workbook_Verifier checks all bytes. Neither establishes truth or safety.",
+    "reason": "F-02: narrow the local integrity coverage claim; no circular guard added"
+  },
+  {
+    "sheet": "Sensitivity_Analysis",
+    "cell": "E13",
+    "before": "Gap",
+    "after": "ΔRLS (raw)",
+    "reason": "F-18: column contains a raw score difference, not normalized Gap"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F5",
+    "before": "CANON!B13,B76",
+    "after": "TOOL_LOCAL; CANON!B13,B76",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F12",
+    "before": "CANON!B73",
+    "after": "TOOL_LOCAL; CANON!B73",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F13",
+    "before": "CANON!B10,B26,B137",
+    "after": "TOOL_LOCAL; CANON!B10,B26,B137",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F18",
+    "before": "Self-check + release verifier",
+    "after": "TOOL_LOCAL; external verifier",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F27",
+    "before": "CANON v13.0 SCI fields",
+    "after": "TOOL_LOCAL; SCI fields",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F28",
+    "before": "CANON v13.0 uncertainty fields",
+    "after": "TOOL_LOCAL; uncertainty fields",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "F33",
+    "before": "PLSS_Escalation!B8 / PLSS_Local_Scope!A33:I40",
+    "after": "TOOL_LOCAL; PLSS_Escalation!B8",
+    "reason": "F-07: explicitly classify the exact emitted label as workbook-local, not a canonical-registry addition"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "A39",
+    "before": "Frozen worked records, not live detectors. Rows 29–31 are Agent-owned runtime flags (Canon §14.3A.1); RUNTIME_* severities do not extend the PCC vocabulary. Tool-local integrity checks do not create Canon taxonomy.",
+    "after": "Frozen records, not detectors. TOOL_LOCAL in column F or below means informative, non-controlling. Rows 29–31 are Agent-owned runtime flags; RUNTIME_* is not PCC severity. Counts group records, not canonical registry coverage.",
+    "reason": "F-07: explain local label ownership and bounded severity counts"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "A46",
+    "before": "MANUAL_FLAG_OVERRIDE",
+    "after": "MANUAL_FLAG_OVERRIDE_OR_TOKEN_INTEGRITY_FAILURE",
+    "reason": "F-07: taxonomy entry must name the actual existing label, not an unused shortened name"
+  },
+  {
+    "sheet": "Audit_Flags",
+    "cell": "D46",
+    "before": "Manual edits detected in trigger cells; invalidate run output.",
+    "after": "Workbook-local integrity label; exact file verification is external. Not a live detector.",
+    "reason": "F-07: keep coverage statement consistent with frozen records and external verification"
+  },
+  {
+    "sheet": "Dashboard",
+    "cell": "I5",
+    "before": "Canonical Invalid Flags",
+    "after": "INVALID records by severity",
+    "reason": "F-07: stored severity counts are not proof of canonical registry coverage"
+  },
+  {
+    "sheet": "Dashboard",
+    "cell": "I6",
+    "before": "Canonical Escalation Flags",
+    "after": "ESCALATE records by severity",
+    "reason": "F-07: stored severity counts are not proof of canonical registry coverage"
+  },
+  {
+    "sheet": "Dashboard",
+    "cell": "I7",
+    "before": "Canonical Review Flags",
+    "after": "REVIEW records by severity",
+    "reason": "F-07: stored severity counts are not proof of canonical registry coverage"
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B4",
+    "before": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-H",
+    "after": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-I",
+    "reason": "Exact corrected-source identity; component version remains 5.9"
+  },
+  {
+    "sheet": "Appendix_Release",
+    "cell": "B7",
+    "before": "See Reports/Release_H_Verification.md and Verification/Workbook_Manifest.json.",
+    "after": "See Reports/Release_I_Verification.md and Verification/Workbook_Manifest.json.",
+    "reason": "Current acceptance evidence pointer"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN6290",
+    "before": "Gap",
+    "after": "ΔRLS (raw)",
+    "reason": "Synchronize literal snapshot for Sensitivity_Analysis!E13"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5512",
+    "before": "CANON!B13,B76",
+    "after": "TOOL_LOCAL; CANON!B13,B76",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F5"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5554",
+    "before": "CANON!B73",
+    "after": "TOOL_LOCAL; CANON!B73",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F12"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5560",
+    "before": "CANON!B10,B26,B137",
+    "after": "TOOL_LOCAL; CANON!B10,B26,B137",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F13"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5590",
+    "before": "Self-check + release verifier",
+    "after": "TOOL_LOCAL; external verifier",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F18"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5629",
+    "before": "CANON v13.0 SCI fields",
+    "after": "TOOL_LOCAL; SCI fields",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F27"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5635",
+    "before": "CANON v13.0 uncertainty fields",
+    "after": "TOOL_LOCAL; uncertainty fields",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F28"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5665",
+    "before": "PLSS_Escalation!B8 / PLSS_Local_Scope!A33:I40",
+    "after": "TOOL_LOCAL; PLSS_Escalation!B8",
+    "reason": "Synchronize literal snapshot for Audit_Flags!F33"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5670",
+    "before": "Frozen worked records, not live detectors. Rows 29–31 are Agent-owned runtime flags (Canon §14.3A.1); RUNTIME_* severities do not extend the PCC vocabulary. Tool-local integrity checks do not create Canon taxonomy.",
+    "after": "Frozen records, not detectors. TOOL_LOCAL in column F or below means informative, non-controlling. Rows 29–31 are Agent-owned runtime flags; RUNTIME_* is not PCC severity. Counts group records, not canonical registry coverage.",
+    "reason": "Synchronize literal snapshot for Audit_Flags!A39"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5687",
+    "before": "MANUAL_FLAG_OVERRIDE",
+    "after": "MANUAL_FLAG_OVERRIDE_OR_TOKEN_INTEGRITY_FAILURE",
+    "reason": "Synchronize literal snapshot for Audit_Flags!A46"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5690",
+    "before": "Manual edits detected in trigger cells; invalidate run output.",
+    "after": "Workbook-local integrity label; exact file verification is external. Not a live detector.",
+    "reason": "Synchronize literal snapshot for Audit_Flags!D46"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5343",
+    "before": "Canonical Invalid Flags",
+    "after": "INVALID records by severity",
+    "reason": "Synchronize literal snapshot for Dashboard!I5"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5346",
+    "before": "Canonical Escalation Flags",
+    "after": "ESCALATE records by severity",
+    "reason": "Synchronize literal snapshot for Dashboard!I6"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN5350",
+    "before": "Canonical Review Flags",
+    "after": "REVIEW records by severity",
+    "reason": "Synchronize literal snapshot for Dashboard!I7"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN10991",
+    "before": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-H",
+    "after": "2026-09-26; build MG-RL-13.0-20260926-RELEASE-I",
+    "reason": "Synchronize literal snapshot for Appendix_Release!B4"
+  },
+  {
+    "sheet": "Build_Snapshot",
+    "cell": "CN10997",
+    "before": "See Reports/Release_H_Verification.md and Verification/Workbook_Manifest.json.",
+    "after": "See Reports/Release_I_Verification.md and Verification/Workbook_Manifest.json.",
+    "reason": "Synchronize literal snapshot for Appendix_Release!B7"
+  }
+]

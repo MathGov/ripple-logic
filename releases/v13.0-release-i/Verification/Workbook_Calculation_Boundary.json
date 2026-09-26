@@ -1,0 +1,11 @@
+{
+  "master": "unchanged",
+  "successful": "cache-independent reference replay of all 20,212 stored formulas; saved/reopened JSON results; independent expected-value unit tests and fault probes",
+  "rejected": "artifact_tool 2.8.22 export/reopen: stored results diverged. Candidate retained only in private provenance.",
+  "not_executed": [
+    "Microsoft Excel recalculation",
+    "LibreOffice Calc recalculation",
+    "native-engine parity certification"
+  ],
+  "release_rule": "The existing workbook recalculation rule is not weakened. The scoped replay does not establish complete native spreadsheet-engine release acceptance or editable operational-selector readiness."
+}

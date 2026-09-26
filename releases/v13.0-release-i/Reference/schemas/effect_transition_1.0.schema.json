@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathgov:effect-transition:1.0",
+  "title": "Effect transition: scoped supplemental record",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "release_id": {
+      "const": "MathGov/RippleLogic v13.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "configuration_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "evidence_maturity": {
+      "enum": [
+        "SYNTHETIC",
+        "OBSERVED_UNVALIDATED",
+        "DOMAIN_VALIDATED"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "received_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "record_type": {
+      "const": "EffectTransitionRecord"
+    },
+    "observation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "effect_token_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "supersedes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bearer_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state_construct": {
+      "type": "string",
+      "minLength": 1
+    },
+    "baseline_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primary_home": {
+      "type": "object",
+      "properties": {
+        "scope": {
+          "enum": [
+            "U1",
+            "U2",
+            "U3",
+            "U4",
+            "U5",
+            "U6",
+            "U7"
+          ]
+        },
+        "dimension": {
+          "enum": [
+            "D1",
+            "D2",
+            "D3",
+            "D4",
+            "D5",
+            "D6",
+            "D7"
+          ]
+        }
+      },
+      "required": [
+        "scope",
+        "dimension"
+      ],
+      "additionalProperties": false
+    },
+    "u6_view": {
+      "enum": [
+        "U6_HUMANITY",
+        "U6_COORDINATION",
+        "U6_MIXED_WITH_DECOMPOSITION",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "interpretation": {
+      "enum": [
+        "DIRECT_WELFARE",
+        "COLLECTIVE_FUNCTIONING",
+        "ENABLING_CONDITION",
+        "STRUCTURAL_INTEGRITY",
+        "ECOLOGICAL_CONDITION",
+        "EPISTEMIC_OBSERVATION_CAPACITY",
+        "SYMBOLIC_MEANING_CONDITION"
+      ]
+    },
+    "signed_impact": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "const": "KNOWN"
+            },
+            "value": {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            "lower": {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            "upper": {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            "evidence_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "value",
+            "lower",
+            "upper",
+            "evidence_ref"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "UNKNOWN",
+                "CONTESTED",
+                "NOT_APPLICABLE"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "status",
+            "reason"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "pathway_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_effect_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "window_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "probability_owner": {
+      "enum": [
+        "NONE_ALREADY_EXPECTED",
+        "INSTANCE",
+        "SCENARIO"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "execution_authorized": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "release_id",
+    "run_id",
+    "configuration_hash",
+    "evidence_maturity",
+    "observed_at",
+    "received_at",
+    "record_type",
+    "observation_id",
+    "effect_token_id",
+    "revision",
+    "supersedes",
+    "bearer_ref",
+    "state_construct",
+    "baseline_ref",
+    "primary_home",
+    "u6_view",
+    "interpretation",
+    "signed_impact",
+    "pathway_ref",
+    "parent_effect_ids",
+    "window_ref",
+    "probability_owner",
+    "evidence_refs",
+    "execution_authorized"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "primary_home": {
+            "properties": {
+              "scope": {
+                "const": "U6"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "u6_view": {
+            "enum": [
+              "U6_HUMANITY",
+              "U6_COORDINATION",
+              "U6_MIXED_WITH_DECOMPOSITION"
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "u6_view": {
+            "const": "NOT_APPLICABLE"
+          }
+        }
+      }
+    }
+  ]
+}

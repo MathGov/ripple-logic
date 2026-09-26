@@ -1,0 +1,188 @@
+{
+  "status": "SUPPLEMENTAL_PACKAGE_PROJECTION_NOT_EXTERNAL_SCHEMA",
+  "source": "Canon H.10.1–H.10.3",
+  "records": [
+    {
+      "name": "EffectTokenRegistry",
+      "fields": [
+        "tokens",
+        "identity_and_revision_rules",
+        "primary_home_and_scope_treatment",
+        "allocation_and_pathway_links",
+        "granularity_review"
+      ],
+      "source": "§2.2A.4A; §5.0C; §5.5A",
+      "meaning": "For each token: stable ID, bearer/class, changed state, option, baseline, contiguous window, scenario and evidence references; one primary home or permitted conserved allocation; secondary views; distinct downstream links; identity/revision and granularity adjudication."
+    },
+    {
+      "name": "RightsEffectTokenRecord",
+      "fields": [
+        "rights_token_id",
+        "bearer_and_rights",
+        "unallocated_effect",
+        "channel_evidence_and_results",
+        "allocation_links",
+        "disposition"
+      ],
+      "source": "§7.3–§7.4.5",
+      "meaning": "Bind the rights token to its bearer, protected rights, evidence and any parent effects; retain unallocated severity/exposure and the applicable floor, categorical and severe-hazard channel inputs/results, subgroup denominators, unresolved fields and subsequent allocation links."
+    },
+    {
+      "name": "PartitionInvarianceTest",
+      "fields": [
+        "trigger",
+        "representations",
+        "invariants_held",
+        "comparative_results",
+        "reversal_and_disposition"
+      ],
+      "source": "§5.5A; R.22",
+      "meaning": "Record trigger, declared and evidence-supported challenger representations, invariant facts/evidence/options/weights/parameters, outputs for each representation, any leader or decisiveness reversal, and outcome-independent resolution or refusal."
+    },
+    {
+      "name": "ProbabilityOrderReview",
+      "fields": [
+        "effect_and_event_refs",
+        "likelihood_semantics",
+        "probability_ownership",
+        "operator_order",
+        "alternative_results_and_disposition"
+      ],
+      "source": "§5.2B",
+      "meaning": "Identify affected effects/events, likelihood semantics, scenario-versus-instance probability ownership, and operator order. Record the double-counting check and all selection-material admissible alternative interpretations with their outputs and disposition."
+    },
+    {
+      "name": "AdverseConfidenceCounterfactual",
+      "fields": [
+        "trigger",
+        "affected_instances",
+        "point_configuration",
+        "counterfactual_configuration",
+        "comparative_results_and_disposition"
+      ],
+      "source": "§5.2C",
+      "meaning": "Identify adverse ordinary-welfare instances and confidences, preserve the declared point construction, specify the c_k=1 adverse counterfactual, hold unaffected inputs fixed, and report changed scores, leaders, Gaps, mitigation/control claims and disposition."
+    },
+    {
+      "name": "TemporalBurdenReview",
+      "fields": [
+        "effect_refs",
+        "window_and_trajectory",
+        "recurrence_and_cumulative_burden",
+        "peak_terminal_irreversibility",
+        "sensitivity_and_routing"
+      ],
+      "source": "§5.3–§5.3B",
+      "meaning": "Bind effects to their contiguous decision-relevant windows and trajectories; record recurrence, cumulative and terminal burdens, peak severity and irreversible endpoints, required temporal sensitivities, mitigation and routing to rights/TRC/CSV where material."
+    },
+    {
+      "name": "DistributionalBurdenReview",
+      "fields": [
+        "subgroup_refs",
+        "burden_profiles",
+        "concentration_and_viability",
+        "controls_and_capacity",
+        "csv_disposition"
+      ],
+      "source": "§2.4A; §9.8",
+      "meaning": "Identify affected subgroups and concentrated burdens, reported profiles and worst-off cases, material dependencies/viability effects, control and capacity evidence, and the resulting existing CSV disposition. It is not a new gate."
+    },
+    {
+      "name": "SubgroupClosureRecord",
+      "fields": [
+        "population_boundary",
+        "search_sources_and_method",
+        "groups_and_omissions",
+        "material_gaps",
+        "review_and_closure"
+      ],
+      "source": "§2.4A; §7.3",
+      "meaning": "Record the protected/affected-population boundary, subgroup discovery methods and sources, groups considered, plausible omissions with rationale, material unknowns, review and closure status. An unsearched population is not an empty reviewed set."
+    },
+    {
+      "name": "ReferenceFamilyRecord",
+      "fields": [
+        "reference_construct",
+        "ex_ante_family_and_basis",
+        "included_and_rejected_alternatives",
+        "comparative_results",
+        "sensitivity_and_disposition"
+      ],
+      "source": "§5.1A; R.27",
+      "meaning": "Identify the normalized construct and ex-ante reference family, legitimacy/evidence basis, admitted and rejected reference alternatives, fixed comparison inputs, and each alternative’s impacts, ranking/decisiveness and sensitivity disposition."
+    },
+    {
+      "name": "BaselineFamilyRecord",
+      "fields": [
+        "baseline_construct",
+        "ex_ante_family_and_basis",
+        "floor_and_continuation_roles",
+        "comparative_results",
+        "sensitivity_and_disposition"
+      ],
+      "source": "§5.1A; §10.2; R.28",
+      "meaning": "Identify ex-ante baseline alternatives and their evidence/authority basis; distinguish floor/safe-corridor references from status-quo or continuation comparisons; retain each ranking result and disposition without replacing the controlling gate baseline."
+    },
+    {
+      "name": "ComparisonMaskRecord",
+      "fields": [
+        "common_mask",
+        "active_and_nonmaskable_cells",
+        "effective_mass_by_option",
+        "exceptions_and_review",
+        "common_basis_sensitivity"
+      ],
+      "source": "§10.2B",
+      "meaning": "Record the common 49-cell comparison mask, active and non-maskable cells, effective mass Q, and any justified option-specific structural exceptions with evidence and reviewer status; retain the common-basis sensitivity and its result."
+    },
+    {
+      "name": "GapSensitivityRecord",
+      "fields": [
+        "ranking_basis_and_contenders",
+        "uncertainty_method_scale_and_evidence",
+        "within_option_dependence",
+        "cross_option_dependence",
+        "epsilon_delta_and_variants",
+        "pairwise_results_and_disposition"
+      ],
+      "source": "§10.3–§10.4B",
+      "meaning": "Record the ranking basis/contenders, final-score uncertainty interpretation and evidence, within-option clusters, cross-option joint-error treatment or justified non-materiality, epsilon/delta and required variants, and every contender’s signed comparison, leader and disposition."
+    },
+    {
+      "name": "WeightProfileRecord",
+      "fields": [
+        "profiles_and_floors",
+        "authority_and_provenance",
+        "ex_ante_lock",
+        "effective_weights_and_mass",
+        "alternative_results_and_disposition"
+      ],
+      "source": "§10.1–§10.2A; §13",
+      "meaning": "Identify w, v, m and kappa profiles, floors, effective weights and Q, legitimate authority/provenance, ex-ante lock, competing legitimate profiles and resulting rankings. Normative disagreement is not converted into statistical uncertainty."
+    },
+    {
+      "name": "OptionClosureRecord",
+      "fields": [
+        "decision_boundary",
+        "candidate_options",
+        "required_alternative_families",
+        "accept_reject_rationales",
+        "challenger_review_and_closure"
+      ],
+      "source": "§15.4B",
+      "meaning": "Record the decision boundary, candidate options, no-action/delay/redesign/mitigation/hybrid and challenger paths considered, evidence-supported inclusion/exclusion rationales, independent challenge where required, and remaining option-set limitations."
+    },
+    {
+      "name": "RLSRobustnessRecord",
+      "fields": [
+        "module_registry",
+        "module_states_and_reasons",
+        "variant_refs",
+        "leader_and_comparison_results",
+        "eligibility_and_disposition"
+      ],
+      "source": "§10.4B",
+      "meaning": "Use the existing finite module registry and its five states, with triggers/non-trigger reasons, supporting variant records, leader and every-contender results, unresolved modules, and resulting unique-selection eligibility/disposition. Do not substitute a blanket PASS."
+    }
+  ]
+}

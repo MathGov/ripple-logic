@@ -1,0 +1,4 @@
+-r releases/v13.0-release-i/Reference/requirements.txt
+# Enable jsonschema's date-time checker; omitted by the original package.
+rfc3339-validator==0.1.4
+six==1.17.0

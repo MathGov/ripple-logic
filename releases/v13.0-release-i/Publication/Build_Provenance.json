@@ -1,0 +1,15 @@
+{
+  "build_id": "MG-RL-13.0-20260926-RELEASE-I",
+  "prepared_date": "2026-09-26",
+  "source_build": "MG-RL-13.0-20260926-RELEASE-H",
+  "baseline_archive": "MathGov_RippleLogic_v13.0_Final_Publication_H(1).zip",
+  "baseline_sha256": "4745c4bdd96ba27849e68561b60b9e8ec8efab5f8241cd4b104c0d92307e61e2",
+  "feedback_file": "Final Claude Feedback v13.0.docx",
+  "feedback_sha256": "da91c5a23a956b6b526c70d11cab122ee501ed0a943320860c79b6ee0bf46a65",
+  "versions_unchanged": true,
+  "unchanged_core_files": 11,
+  "corrected_core_files": 4,
+  "publication": "PREPARED_NOT_PUBLISHED",
+  "native_I": "NOT_EXECUTED; replay and preservation are current evidence; reviewer-reported native H result is not native I certification",
+  "previous_evidence": "Original H ZIP, unchanged, is preserved in the complete archive; prior reports remain source-build records, not rerun claims."
+}

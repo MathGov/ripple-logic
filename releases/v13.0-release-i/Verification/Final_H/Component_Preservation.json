@@ -1,0 +1,152 @@
+[
+  {
+    "component": "RippleLogic Canon",
+    "version": "13.0",
+    "path": "Core_15/RippleLogic_v13.0_Canon.docx",
+    "bytes": 548898,
+    "sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "b730ddeec4c15e0c7cb8393651f38f347e683b6b9a2670e224951dfd3f01857b"
+  },
+  {
+    "component": "Sentience Gradient Protocol",
+    "version": "8.8",
+    "path": "Core_15/SGP_v8.8.docx",
+    "bytes": 126169,
+    "sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "b0485246bb35fff9313bc47a5e7a3295a648de168714618b76ba9fb8cfe54c6f"
+  },
+  {
+    "component": "RippleLogic Agent System",
+    "version": "13.0",
+    "path": "Core_15/RippleLogic_Agent_System_v13.0.docx",
+    "bytes": 154354,
+    "sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "ffa5b98c0020d1073c1443692fe6478f1b2ecd3a8111a9ff3eeb4c9c5ae4b896"
+  },
+  {
+    "component": "ripple.md Standard",
+    "version": "5.8",
+    "path": "Core_15/ripple_md_Standard_v5.8.docx",
+    "bytes": 107641,
+    "sha256": "28797bb802194a454a36ef60672640f3222e6cfc7ed87bfb74a89278d02a8b27",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "28797bb802194a454a36ef60672640f3222e6cfc7ed87bfb74a89278d02a8b27"
+  },
+  {
+    "component": "CSV Gate Standard",
+    "version": "2.7",
+    "path": "Core_15/CSV_Gate_Standard_v2.7.docx",
+    "bytes": 29329,
+    "sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "1528fea2965e0fd4643412828f1c8bfaf83518cf801e7191bebe1313fc824df8"
+  },
+  {
+    "component": "RippleLogic Cascade Standard",
+    "version": "2.9",
+    "path": "Core_15/RippleLogic_Cascade_Standard_v2.9.docx",
+    "bytes": 27998,
+    "sha256": "300c48139aad28415bc760eb11a93b6c1982078b8b7a48083385c5be62846506",
+    "source_build_id": "MG-RL-13.0-20260926-RELEASE-H",
+    "carried_forward_unchanged": false,
+    "baseline_sha256": "19fb59e6b44be3a7cbc054a1c2da3c7c66e282ed22fae8de74775ff9b9b7cca4"
+  },
+  {
+    "component": "Reproducibility and Use Standard",
+    "version": "1.7",
+    "path": "Core_15/MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.docx",
+    "bytes": 34969,
+    "sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "813ee630db3d96589a87854fe250a4edd7e09d950bc831b145e447d222fcd776"
+  },
+  {
+    "component": "WDBIP",
+    "version": "1.9",
+    "path": "Core_15/Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.docx",
+    "bytes": 80113,
+    "sha256": "caf0345c241ef52b5acdbe33a8b0406a5735636bbddeca38ad6403ef946e0459",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "caf0345c241ef52b5acdbe33a8b0406a5735636bbddeca38ad6403ef946e0459"
+  },
+  {
+    "component": "RLS Validation Protocol",
+    "version": "2.9",
+    "path": "Core_15/RippleLogic_RLS_Validation_Protocol_v2.9.docx",
+    "bytes": 44958,
+    "sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "26d882cfd80def9c20fdcb07fcd63949e30280f6ea48dbf9654168ecc39274c5"
+  },
+  {
+    "component": "Foundations Primer",
+    "version": "4.7",
+    "path": "Core_15/RippleLogic_Foundations_Primer_v4.7.docx",
+    "bytes": 64231,
+    "sha256": "b1b7922a1c7f625501dcfc75427a1d9c1f1b09b2a3ca9fa379e62ebd434ee4dd",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "b1b7922a1c7f625501dcfc75427a1d9c1f1b09b2a3ca9fa379e62ebd434ee4dd"
+  },
+  {
+    "component": "Public Introduction",
+    "version": "13.0",
+    "path": "Core_15/MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.docx",
+    "bytes": 26285,
+    "sha256": "091962bcbbdd49d29407b8fc305dcd5a988e851c35e8fac25d4307c06884ba87",
+    "source_build_id": "MG-RL-13.0-20260926-RELEASE-H",
+    "carried_forward_unchanged": false,
+    "baseline_sha256": "1da245964d65a457595ed927515a29706fdbaf6566fe035fa7d12e9ce5323995"
+  },
+  {
+    "component": "PC-AEP",
+    "version": "2.6",
+    "path": "Core_15/Physical_Causal_Admissibility_Evidence_Profile_v2.6.docx",
+    "bytes": 26544,
+    "sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "21228e927180d78dc9bd6b5898c96e23f585fcc0a1b597ae75ff3c30a031c493"
+  },
+  {
+    "component": "MFDI",
+    "version": "2.6",
+    "path": "Core_15/Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.docx",
+    "bytes": 31136,
+    "sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "12ef950fa8cae4cc769ccaa3f2e13c650f098d2c79c2957c9a85d2d54ce3a49e"
+  },
+  {
+    "component": "Source-Coupling Integrity",
+    "version": "2.6",
+    "path": "Core_15/Source_Coupling_Integrity_Standard_v2.6.docx",
+    "bytes": 25468,
+    "sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce",
+    "source_build_id": "MG-RL-13.0-20260923-RELEASE-G",
+    "carried_forward_unchanged": true,
+    "baseline_sha256": "bd5b1eb7f4b358fa5b97d93b80fb51e86b6fddcf0a5b3c9158c7b2121a7383ce"
+  },
+  {
+    "component": "Aligners Sheet",
+    "version": "5.9",
+    "path": "Core_15/RippleLogic_Aligners_Sheet_v5.9.xlsx",
+    "bytes": 1266882,
+    "sha256": "fa77dbec19a09e6ebe7b3ba959d0b53f6f8c956c4a8259db3830eb204f097059",
+    "carried_forward_unchanged": false,
+    "source_build_id": "MG-RL-13.0-20260926-RELEASE-H",
+    "baseline_sha256": "f6476e9192004fca887520d1144475bb62a7659ac7950b01d1c916882d7c2a5b"
+  }
+]

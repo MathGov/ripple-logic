@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "total_pages": 687,
+  "documents": [
+    {
+      "file": "CSV_Gate_Standard_v2.7.pdf",
+      "pages": 12,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "e7e40dc5a7a342e2356914b0de53562967ba0e11b540aa4ab8fdde039566ee14",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.pdf",
+      "pages": 9,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "c7a0e31afdac035581116fa59dbed64c1e4f2ad216b2d1aa250d313e177ea4b2",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "MATHGOV_REPRODUCIBILITY_AND_USE_STANDARD_v1.7.pdf",
+      "pages": 15,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "2b5d4fef1a12aa565e6b43a4d36cf7209c3aca4b4367192664bfee74e955127a",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "Methodological_Falsifiability_and_Dependency_Integrity_Standard_v2.6.pdf",
+      "pages": 13,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "1c0e70a45f91b5354e77f9f8e67c9d0f431e3faabdf4317c92b2e1edbbcc5c96",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "Physical_Causal_Admissibility_Evidence_Profile_v2.6.pdf",
+      "pages": 9,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "d86919001a53d65d35fd614c9f7ae75c8cd627da0e1a93660ae9ca92d5f2c1f0",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "RippleLogic_Agent_System_v13.0.pdf",
+      "pages": 84,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "bf0ead9b5832bd43fb41b38714799fcb14e320ab64274f3fcf4c8550c316d90c",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "RippleLogic_Cascade_Standard_v2.9.pdf",
+      "pages": 10,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "bbe934768451e6aafdf03997defef97059a3956aa677f78fd21ce0857dcfd801",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "RippleLogic_Foundations_Primer_v4.7.pdf",
+      "pages": 35,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "b3bb893bf024782bbaabeb0757dc774a8f7177a9bd63d8b4658ad8910c44cf9e",
+      "unchanged_from_H": false
+    },
+    {
+      "file": "RippleLogic_RLS_Validation_Protocol_v2.9.pdf",
+      "pages": 21,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "6685a0b0158be83febe8a77831d9500cb3ce760d0ab9a032dc4acf0cdce252fd",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "RippleLogic_v13.0_Canon.pdf",
+      "pages": 296,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "2a3e6edad39fd65f0ff0b7adab81b7169c08ecd177876b46772dc137910b4a52",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "SGP_v8.8.pdf",
+      "pages": 60,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "9eff430dd8a52809c3ed60d7c50a09a5765fd79943f8ce5821c7eb84f0853470",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "Source_Coupling_Integrity_Standard_v2.6.pdf",
+      "pages": 9,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "bafecfbdc52adfee44e8336ee8deab6e706ae66e59de574f37197f66b542c568",
+      "unchanged_from_H": true
+    },
+    {
+      "file": "Welfare_Dimension_Boundary_and_Interaction_Protocol_v1.9.pdf",
+      "pages": 42,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "de3f11d643acff706c3fe5ad3a0808c4bfc405c5c9eca8c8ea7eafa7101baa21",
+      "unchanged_from_H": false
+    },
+    {
+      "file": "ripple_md_Standard_v5.8.pdf",
+      "pages": 72,
+      "blank_pages": [],
+      "out_of_page_text_blocks": [],
+      "sha256": "d51fb99c2e672baf9608e74f58d3b2b49284be7527fbd834a35def7335cad0d9",
+      "unchanged_from_H": false
+    }
+  ],
+  "scope": "Automated text-block bounds and blank-page check; targeted rendered pages separately reviewed, not exhaustive human proofreading."
+}

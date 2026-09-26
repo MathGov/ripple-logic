@@ -1,0 +1,33 @@
+{
+  "build_id": "MG-RL-13.0-20260926-RELEASE-I",
+  "current_receipts": [
+    "Verification/Final_I/Adjudication_Register.json",
+    "Verification/Final_I/Checker_Adjudication.json",
+    "Verification/Final_I/Component_Preservation.json",
+    "Verification/Final_I/Document_Preservation.json",
+    "Verification/Final_I/Exact_Document_Changes.json",
+    "Verification/Final_I/Exact_Workbook_Changes.json",
+    "Verification/Final_I/Execution_Environment.json",
+    "Verification/Final_I/Exhaustive_Workbook_Cell_Diff.json",
+    "Verification/Final_I/Input_Core_Parity.json",
+    "Verification/Final_I/Input_Identity.json",
+    "Verification/Final_I/Local_Suite_Receipt.json",
+    "Verification/Final_I/Metadata_Changes.json",
+    "Verification/Final_I/Navigation_Final_Check.json",
+    "Verification/Final_I/Navigation_PreRefresh.json",
+    "Verification/Final_I/PDF_Scan.json",
+    "Verification/Final_I/Print_Area_Changes.json",
+    "Verification/Final_I/Prior_VERSION_MANIFEST.json",
+    "Verification/Final_I/Reference_Code_Changes.json",
+    "Verification/Final_I/Rendered_Page_Changes.json",
+    "Verification/Final_I/Visual_Review.json",
+    "Verification/Final_I/Workbook_Preservation.json"
+  ],
+  "current_root_evidence": [
+    "Verification/Workbook_Manifest.json",
+    "Verification/Source_Projection_Parity.json",
+    "VERSION_MANIFEST.json"
+  ],
+  "prior_evidence": "Directories Final_G and Final_H, earlier named correction records and native receipts retain their own source builds and scope. They are not native I certification.",
+  "final_fresh_zip_receipt": "Delivered outside the immutable publication ZIP; records post-archive extraction tests and exact archive hashes."
+}
