@@ -2,7 +2,7 @@
 
 Start with the [current publication](README.md) and [source hierarchy](releases/v13.0-release-i/SOURCE_HIERARCHY.md). Do not edit frozen files under `releases/` in place. Propose specification corrections in an issue or separately versioned publication; navigation, site, and CI changes belong outside those snapshots.
 
-Run the checks in [INSTALLATION.md](INSTALLATION.md). For presentation changes, also run `python scripts/build_site.py`, `python scripts/check_site.py`, `npm ci`, `npx playwright install chromium`, and `npm run test:site`. The builder requires an unused output directory. Hosted checks use Ubuntu, Python 3.13, and Node.js 22.
+Run the checks in [INSTALLATION.md](INSTALLATION.md). For presentation changes, install `requirements-site.txt`, then run `python scripts/build_site.py`, `python scripts/check_site.py`, `npm ci`, `npx playwright install chromium`, and `npm run test:site`. The builder requires an unused output directory. Hosted checks use Ubuntu, Python 3.13, and Node.js 22.
 
 Contributions should identify the affected artifact, cite the relevant Canon section, and distinguish content changes from release-engineering changes.
 
