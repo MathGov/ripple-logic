@@ -13,6 +13,7 @@ Exact build: `MG-RL-13.0-20260926-RELEASE-I`
 ## Start here
 
 - **Read online:** [The publication reading site](https://mathgov.github.io/ripple-logic/) brings together HTML, PDF, and editable formats.
+- **Find a passage:** [Search all 14 specification documents](https://mathgov.github.io/ripple-logic/search.html), or use the mobile-friendly reader linked from each library card. Frozen HTML copies remain available from every reader.
 - **New to the framework:** [Public Introduction](releases/v13.0-release-i/Sources/MATHGOV_3R_1_2_PUBLIC_INTRO_v13.0.md), then the [Foundations Primer](releases/v13.0-release-i/Sources/RippleLogic_Foundations_Primer_v4.7.md).
 - **Read the controlling specification:** [RippleLogic Canon v13.0](releases/v13.0-release-i/Sources/RippleLogic_v13.0_Canon.md) and [Sentience Gradient Protocol v8.8](releases/v13.0-release-i/Sources/SGP_v8.8.md).
 - **Download the publication:** [Release I and its assets](https://github.com/MathGov/ripple-logic/releases/tag/v13.0-20260926-release-i).

@@ -29,7 +29,14 @@ On Windows use `Get-FileHash -Algorithm SHA256 <zip-path>` and compare with the 
 c7ece3a604980fa859e41cd63bbebe6d9adc0953e795737c8a38c16b82ac4d85
 ```
 
-Extract to a new directory. In the extracted directory containing `verify_all.py` and `Reference/`, create and activate a virtual environment **outside** the extracted publication, then run:
+Extract to a new directory. Create and activate a virtual environment **outside** the extracted publication. For the maintained environment, download the current [requirements-ci.txt](https://github.com/MathGov/ripple-logic/blob/main/requirements-ci.txt) alongside that environment. Install it, then run the verifier from the extracted directory containing `verify_all.py`:
+
+```sh
+python -m pip install -r /path/to/downloaded/requirements-ci.txt
+python -B verify_all.py --output-dir ../mathgov-results
+```
+
+Replace `/path/to/downloaded/requirements-ci.txt` with your actual path. The maintained environment updates lxml and PyMuPDF separately from the frozen specification, and every update must pass the supplied checks. The original release assets retain the first publication environment. To reproduce that historical dependency set specifically:
 
 ```sh
 python -m pip install -r Reference/requirements.txt
@@ -37,7 +44,7 @@ python -m pip install rfc3339-validator==0.1.4 six==1.17.0
 python -B verify_all.py --output-dir ../mathgov-results
 ```
 
-The original requirements omit the optional RFC 3339 validator. Without it, JSON Schema date-time validation is not enforced and the invalid-timestamp test fails. The two additional pins correct the environment; they do not modify the frozen ZIP or specification. The release's `requirements-ci.txt` companion contains the complete direct dependency set and may instead be installed from outside the extraction.
+The original requirements omit the optional RFC 3339 validator. Without it, JSON Schema date-time validation is not enforced and the invalid-timestamp test fails. The two additional pins correct the environment; they do not modify the frozen ZIP or specification. The release's initial `requirements-ci.txt` companion records that original corrected environment; use the repository version for maintained dependencies.
 
 Keep generated results and virtual environments outside the frozen publication. Scoped test success does not establish empirical validity, certification, native Excel recalculation, or production readiness. Read the [verification report](https://mathgov.github.io/ripple-logic/Reports/Release_I_Verification.html).
 
@@ -46,6 +53,7 @@ Keep generated results and virtual environments outside the frozen publication. 
 With Python and Node.js available, run:
 
 ```sh
+python -m pip install -r requirements-site.txt
 python scripts/build_site.py
 python scripts/check_site.py
 npm ci
@@ -53,4 +61,4 @@ npx playwright install chromium
 npm run test:site
 ```
 
-The builder copies the frozen publication to a new `_site/` directory, preserves its homepage as `publication-index.html`, and adds the maintained doorway. It refuses an existing output directory. For a fresh subsequent build, choose a new directory with `--output <new-directory>` or remove only your disposable `_site/` output. Tests use the default `_site/` location.
+The builder copies the frozen publication to a new `_site/` directory, preserves its homepage as `publication-index.html`, and adds maintained readers under `read/`, the formatted installation guide, and a local text-search index. Original `Reading_HTML/` files remain unchanged. It refuses an existing output directory. For a fresh subsequent build, choose a new directory with `--output <new-directory>` or remove only your disposable `_site/` output. Tests use the default `_site/` location.
