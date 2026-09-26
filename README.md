@@ -56,4 +56,14 @@ Report reproducible problems through [GitHub Issues](https://github.com/MathGov/
 
 Earlier publications remain available at their original [repository paths](releases/), in [Releases](https://github.com/MathGov/ripple-logic/releases), including [v12.6](https://github.com/MathGov/ripple-logic/releases/tag/v12.6), and in Git history. These snapshots are historical, not the current specification.
 
+## Related research
+
+[ORSH / AIU Research](https://mathgov.github.io/ORSH-AIU/) is the separate home for
+*Frame-Aligned Records* and *Absolute Infinite Union*: five works on quantum
+records, locality and philosophical foundations, with papers, data, code and
+reproduction guidance. [Browse its repository](https://github.com/MathGov/ORSH-AIU)
+or [download a fixed edition](https://github.com/MathGov/ORSH-AIU/releases/latest).
+Its scientific and philosophical claims are distinct from the RippleLogic
+decision specification, and its research/code licenses are stated in that repository.
+
 Licensed under [Apache 2.0](LICENSE), subject to the retained [NOTICE](NOTICE) and component/third-party rights statements.
