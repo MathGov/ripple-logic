@@ -1,5 +1,12 @@
 ## Problem and resulting behavior
 
+Change-Class: maintenance
+
+Owner-Authorization:
+
+Change the class to `normative` when applicable. For owner maintenance, reference
+the bounded authorization record; other contributors follow the human-review route.
+
 Describe the trigger, affected build/component, and proposed correction. Identify normative versus presentation/integration changes.
 
 ## Evidence and validation
