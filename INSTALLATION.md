@@ -75,3 +75,9 @@ npm run test:site
 ```
 
 The builder copies the frozen publication to a new `_site/` directory, preserves its homepage as `publication-index.html`, and adds maintained readers under `read/`, the formatted installation guide, and a local text-search index. Original `Reading_HTML/` files remain unchanged. It refuses an existing output directory. For a fresh subsequent build, choose a new directory with `--output <new-directory>` or remove only your disposable `_site/` output. Tests use the default `_site/` location.
+
+Before creating output, the builder verifies the pinned ledger, exact 288-file
+inventory and every original checksum. Extra local files cause a failure rather
+than being copied into the public site. Preserve such files outside the release
+tree; do not delete them merely to satisfy a check. Build from a clean checkout
+when provenance is uncertain. See [current publication status](https://github.com/MathGov/ripple-logic/blob/main/PUBLICATION_STATUS.md).

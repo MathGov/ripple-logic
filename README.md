@@ -56,6 +56,9 @@ Report reproducible problems through [GitHub Issues](https://github.com/MathGov/
 
 Earlier publications remain available at their original [repository paths](releases/), in [Releases](https://github.com/MathGov/ripple-logic/releases), including [v12.6](https://github.com/MathGov/ripple-logic/releases/tag/v12.6), and in Git history. These snapshots are historical, not the current specification.
 
+For current hosting, integrity, Windows setup and review-policy information, see
+the [publication status and maintenance record](PUBLICATION_STATUS.md).
+
 ## Related research
 
 [ORSH / AIU Research](https://mathgov.github.io/ORSH-AIU/) is the separate home for
