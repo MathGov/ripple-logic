@@ -6,6 +6,7 @@ import shutil
 import markdown
 from pathlib import Path
 from reading import BASE, PublicationText, reader
+from frozen_inventory import verify as verify_frozen
 
 ROOT = Path(__file__).resolve().parents[1]
 FROZEN = ROOT / 'releases/v13.0-release-i'
@@ -14,6 +15,7 @@ def build(destination):
     destination = destination.resolve()
     if destination.exists():
         raise SystemExit('Use an empty output directory; the builder never deletes files.')
+    verify_frozen(FROZEN)
     shutil.copytree(FROZEN, destination)
     (destination / 'index.html').rename(destination / 'publication-index.html')
     manifest = json.loads((FROZEN / 'VERSION_MANIFEST.json').read_text(encoding='utf-8'))

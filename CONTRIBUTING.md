@@ -19,3 +19,11 @@ Signed-off-by: Your Name <your.email@example.com>
 ```
 
 Use `git commit -s` to add the line. Sign-off asserts that you have the right to submit the contribution under Apache-2.0; it is not a claim that MathGov has validated or certified the contribution.
+
+The required `contribution-policy` check validates sign-off trailers, protects
+existing release directories and applies the review rules in `GOVERNANCE.md`.
+Add `Change-Class: maintenance` or `Change-Class: normative` to the PR body.
+Owner-authorized maintenance must include `Owner-Authorization:` with a reference
+to the bounded instruction/review record. Other contributors and normative/new
+release changes require a current-head approval from another trusted human.
+Do not describe owner delegation as independent scientific review.

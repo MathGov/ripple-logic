@@ -24,7 +24,12 @@ Text search indexes anchored current passages from the fourteen HTML specificati
 
 Historical release directories are restored byte-for-byte from commit `97d7a3f` to keep incoming GitHub links usable. Updates to `ripplelogic.org` and `mathgov.org` are a separate stage.
 
-Future releases use GitHub immutable releases. Release I was published before that setting and remains non-immutable at the asset level; tag rules prevent normal tag updates/deletion. Original ZIP bytes and existing receipt assets remain unchanged. New installation instructions and requirements are explicitly separate integration companions.
+GitHub reports Release I itself as immutable, confirmed on 27 September 2026.
+Its release assets and version tag are protected; version-tag rules also prevent
+normal tag updates and deletion. Earlier wording that only future releases were
+immutable is superseded by this current check. The original ZIP bytes and receipt
+assets remain unchanged. Maintained installation instructions and requirements
+are separate integration companions. See [current publication status](PUBLICATION_STATUS.md).
 
 The active workflow is the repository-root `.github/workflows/verify.yml`. The frozen package's original workflow is retained as provenance inside its versioned directory; nested workflows are not active GitHub workflows.
 
